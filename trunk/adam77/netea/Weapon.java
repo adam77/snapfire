@@ -45,6 +45,7 @@ public enum Weapon {
 	TWIN_LASCANNON(			Range._45,	null,	_4		),
 	TWIN_TYPHOON_MISSLE(	Range._45,	_3,		_5		),
 	VANQUISHER(				Range._75,	_4,		_2		),
+	VOLCANO_CANNON(			Range._90,	_2,		_2,		MACRO, TITAN_KILLER_D3),
 	// BARRAGE
 	HEAVY_MORTAR(			Range._30,	Barrage._1,		INDIRECT),
 	ROCKET_LAUNCHER(		Range._150,	Barrage._2,		INDIRECT, SLOW_FIRING, DISRUPT),
@@ -123,7 +124,9 @@ public enum Weapon {
 		INDIRECT,
 		MACRO,
 		ONE_SHOT,
-		SLOW_FIRING;
+		SLOW_FIRING,
+		TITAN_KILLER_D3,
+		;
 	}
 
 	public enum Barrage {
