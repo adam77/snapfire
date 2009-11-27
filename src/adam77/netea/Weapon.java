@@ -32,6 +32,7 @@ public enum Weapon {
 	DEATHWIND(				Range._15, 	_5,		_5,		ONE_SHOT),
 	DEMOLISHER(				Range._30, 	_3,		_4,		IGNORE_COVER),
 	EARTHSHAKER(Type.RANGED,Range._120, _4,		_4,		null, Barrage._1, INDIRECT),
+	GATLING_BLASTER(		Range._60,	_4,		_4,		X4_BARRELS),	
 	HEAVY_BOLTER(			Range._30, 	_5,		null		),
 	HELLSTRIKE(				Range._120,	null,	_2,		ONE_SHOT),
 	HUNTER_KILLER(			Range._60, 	null,	_4,		_4	),
@@ -44,6 +45,7 @@ public enum Weapon {
 	PLASMA_CANNON(			Range._30,	_4,		_4,		SLOW_FIRING),
 	PLASMA_GUNS(			Range._15,	_5,		_5			),
 	SNIPER_RIFLES(			Range._45,	_5,		null		),
+	TURBO_LASER_DESTRUCTOR(	Range._60,	_5,		_3,		X4_BARRELS),	
 	TWIN_AUTOCANNON(		Range._45,	_4,		_5			),
 	TWIN_HEAVY_BOLTER(		Range._30,	_4,		null		),
 	TWIN_HEAVY_BOLTER_B(	Range._30,	_4,		null,	_5	),
@@ -132,6 +134,8 @@ public enum Weapon {
 		ONE_SHOT,
 		SLOW_FIRING,
 		TITAN_KILLER_D3,
+		X2_BARRELS,
+		X4_BARRELS,
 		;
 	}
 
