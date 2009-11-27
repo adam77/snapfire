@@ -1,6 +1,6 @@
 package adam77.netea;
 
-import com.google.collect.*;
+import com.google.common.collect.*;
 import adam77.netea.Dice;
 import adam77.netea.Weapon;
 
@@ -47,8 +47,7 @@ public enum Unit {
 	final D6 armour;
 	final D6 cc;
 	final D6 ff;
-	final Weapon[] weapons; // THIS IS OF TYPE 'BAG'
-	final Multimap<Weapon, Mount> weapons2 = null;
+	final Multimap<Weapon, Mount> weapons;
 	final Special[] special;
 
 	Unit(Type type, int speed, int armour, int cc, int ff, Special... specials) {
