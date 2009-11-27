@@ -1,8 +1,13 @@
 package adam77.netea;
 
+import adam77.netea.Dice;
+import adam77.netea.Weapon;
+
+import static adam77.netea.Dice.*;
+
 public enum Unit {
 	
-	Test,
+	
 	;
 
 	final Type type;
@@ -13,29 +18,29 @@ public enum Unit {
 	final Weapon[] weapons;
 	final Special[] special;
 
-	public Unit(Type type, int speed, int armour, int cc, int ff, Special... specials) {
+	Unit(Type type, Speed speed, int armour, int cc, int ff, Special... specials) {
 		this(type, speed, armour, cc, ff, new Weapon[] {}, specials);
 	}
 
-	public Unit(Type type, int speed, int armour, int cc, int ff, Weapon weapon, Special... specials) {
+	Unit(Type type, Speed speed, int armour, int cc, int ff, Weapon weapon, Special... specials) {
 		this(type, speed, armour, cc, ff, new Weapon[] {weapon}, specials);
 	}
 
-	public Unit(Type type, int speed, int armour, int cc, int ff, Weapon weapon, Weapon weapon2, Special... specials) {
+	Unit(Type type, Speed speed, int armour, int cc, int ff, Weapon weapon, Weapon weapon2, Special... specials) {
 		this(type, speed, armour, cc, ff, new Weapon[] {weapon, weapon2}, specials);
 	}
 
-	public Unit(Type type, int speed, int armour, int cc, int ff, Weapon weapon, Weapon weapon2, Weapon weapon3, Special... specials) {
+	Unit(Type type, Speed speed, int armour, int cc, int ff, Weapon weapon, Weapon weapon2, Weapon weapon3, Special... specials) {
 		this(type, speed, armour, cc, ff, new Weapon[] {weapon, weapon2, weapon3}, specials);
 	}
 
-	public Unit(Type type, int speed, int armour, int cc, int ff, Weapon weapon, Weapon weapon2, Weapon weapon3, Weapon weapon4, Special... specials) {
+	Unit(Type type, Speed speed, int armour, int cc, int ff, Weapon weapon, Weapon weapon2, Weapon weapon3, Weapon weapon4, Special... specials) {
 		this(type, speed, armour, cc, ff, new Weapon[] {weapon, weapon2, weapon3, weapon4}, specials);
 	}
 
-	public Unit(Type type, int speed, int armour, int cc, int ff, Weapon[] weapons, Special... specials) {
+	Unit(Type type, Speed speed, int armour, int cc, int ff, Weapon[] weapons, Special... specials) {
 		this.type = type;
-		this.speed = Speed.forInt(speed);
+		this.speed = speed;
 		this.armour = D6.forInt(armour);
 		this.cc = D6.forInt(cc);
 		this.ff = D6.forInt(ff);

@@ -1,7 +1,10 @@
 package adam77.netea;
 
+import adam77.netea.Dice;
+
 import static adam77.netea.Weapon.Special.*;
-import static adam77.netea.Weapon.D6.*;
+import static adam77.netea.Dice.*;
+import static adam77.netea.Dice.D6.*;
 
 public enum Weapon {
 	////////////////////////////////////////////////////////////////////////////////////
@@ -149,17 +152,7 @@ public enum Weapon {
 		_90,
 		_120,
 		_150;		
-	}
-
-	public enum D6 {
-		_1,
-		_2,
-		_3,
-		_4,
-		_5,
-		_6;
-	}
-		
+	}		
 
 	public static void main(String[] args) {
 		System.out.println(Weapon.BOLTER.type);
