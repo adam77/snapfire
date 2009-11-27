@@ -1,5 +1,8 @@
 package adam77.netea;
 
+import java.util.Arrays;
+import java.util.Map;
+import java.util.Map.Entry;
 import com.google.common.collect.*;
 import adam77.netea.Dice;
 import adam77.netea.Weapon;
@@ -8,6 +11,7 @@ import static adam77.netea.Dice.*;
 import static adam77.netea.Weapon.*;
 import static adam77.netea.Unit.Special.*;
 import static adam77.netea.Unit.Type.*;
+import static adam77.netea.Unit.FireArc.*;
 
 public enum Unit {	
 	///////////////////////////////////////////////////////////////////////////////////////////
@@ -37,6 +41,12 @@ public enum Unit {
 	RHINO(			ARMOURED_VEHICLE,	30,	5,	6,	6,	STORM_BOLTER, TRANSPORT_2),
 	VINDICATOR(		ARMOURED_VEHICLE,	20,	4,	6,	4,	DEMOLISHER),
 	WHIRLWIND(		ARMOURED_VEHICLE,	30,	5,	6,	5,	Weapon.WHIRLWIND),
+	LANDING_CRAFT(	WAR_ENGINE,			Speed.BOMBER,	4,	5,	3,
+				new ImmutableMultimap.Builder<Weapon, FireArc>().putAll(TWIN_LASCANNON, _360, _360).putAll(TWIN_HEAVY_BOLTER_C, _360, _360, _360).put(STORM_BOLTER, _360).build(),
+				PLANETFALL, TRANSPORT_6, REINFORCED_ARMOUR, FEARLESS),				
+	THUNDERHAWK(	WAR_ENGINE,			Speed.BOMBER,	4,	6,	4,
+				ImmutableMultimap.of(BATTLE_CANNON, FxF, TWIN_HEAVY_BOLTER_B, FxF, TWIN_HEAVY_BOLTER_B, FxF, TWIN_HEAVY_BOLTER_C, RIGHT, TWIN_HEAVY_BOLTER_C, LEFT),
+				PLANETFALL, TRANSPORT_6, REINFORCED_ARMOUR),
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////
 	// GUARD
 	///////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -47,44 +57,43 @@ public enum Unit {
 	final D6 armour;
 	final D6 cc;
 	final D6 ff;
-	final Multimap<Weapon, Mount> weapons;
+	final ImmutableMultimap<Weapon, FireArc> weapons;
 	final Special[] special;
+//	final int damageCapacity;
+//	final int transportCapacity;
 
 	Unit(Type type, int speed, int armour, int cc, int ff, Special... specials) {
-		this(type, speed, armour, cc, ff, new Weapon[] {}, specials);
+		this(type, speed, armour, cc, ff, ImmutableMultimap.<Weapon, FireArc>of(), specials);
 	}
 
 	Unit(Type type, int speed, int armour, int cc, int ff, Weapon weapon, Special... specials) {
-		this(type, speed, armour, cc, ff, new Weapon[] {weapon}, specials);
+		this(type, speed, armour, cc, ff, ImmutableMultimap.of(weapon, _360), specials);
 	}
 
 	Unit(Type type, int speed, int armour, int cc, int ff, Weapon weapon, Weapon weapon2, Special... specials) {
-		this(type, speed, armour, cc, ff, new Weapon[] {weapon, weapon2}, specials);
+		this(type, speed, armour, cc, ff, ImmutableMultimap.of(weapon, _360, weapon2, _360), specials);
 	}
 
 	Unit(Type type, int speed, int armour, int cc, int ff, Weapon weapon, Weapon weapon2, Weapon weapon3, Special... specials) {
-		this(type, speed, armour, cc, ff, new Weapon[] {weapon, weapon2, weapon3}, specials);
+		this(type, speed, armour, cc, ff, ImmutableMultimap.of(weapon, _360, weapon2, _360, weapon3, _360), specials);
 	}
 
 	Unit(Type type, int speed, int armour, int cc, int ff, Weapon weapon, Weapon weapon2, Weapon weapon3, Weapon weapon4, Special... specials) {
-		this(type, speed, armour, cc, ff, new Weapon[] {weapon, weapon2, weapon3, weapon4}, specials);
+		this(type, speed, armour, cc, ff, ImmutableMultimap.of(weapon, _360, weapon2, _360, weapon3, _360, weapon4, _360), specials);
 	}
 
-	Unit(Type type, int speed, int armour, int cc, int ff, Weapon[] weapons, Special... specials) {
+	Unit(Type type, int speed, int armour, int cc, int ff, ImmutableMultimap<Weapon, FireArc> weapons, Special... specials) {
 		this(type, Speed.forInt(speed), armour, cc, ff, weapons, specials);
 	}
 
-	Unit(Type type, Speed speed, int armour, int cc, int ff, Weapon[] weapons, Special... specials) {
+	Unit(Type type, Speed speed, int armour, int cc, int ff, ImmutableMultimap<Weapon, FireArc> weapons, Special... specials) {
 		this.type = type;
 		this.speed = speed;
 		this.armour = D6.forInt(armour);
 		this.cc = D6.forInt(cc);
 		this.ff = D6.forInt(ff);
 		this.special = specials;
-		this.weapons = ArrayListMultimap.create();
-		for(Weapon weapon : weapons) {
-			this.weapons.put(weapon, Mount._360);
-		}
+		this.weapons = weapons;
 	}
 
 	public enum Type {
@@ -97,12 +106,14 @@ public enum Unit {
 
 	public enum Special {
 		COMMANDER,
+		FEARLESS,
 		INFILTRATORS,
 		INSPIRING,
 		INVULNERABLE_SAVE,
 		JUMP_PACKS,
 		LEADER,
 		MOUNTED,
+		PLANETFALL,
 		REINFORCED_ARMOUR,
 		SCOUT,
 		SKIMMER,
@@ -111,6 +122,7 @@ public enum Unit {
 		THICK_REAR_ARMOUR,
 		TRANSPORT_1,
 		TRANSPORT_2,
+		TRANSPORT_6,
 		WALKER,
 		;
 	}
@@ -120,20 +132,31 @@ public enum Unit {
 		_20,
 		_25,
 		_30,
+		_35,
 		_40,
-		_50;
+		_50,
+		BOMBER;
 
 		public static Speed forInt(int i) {
 			return i == 0 ? null : Speed.valueOf("_" + i);
 		}
 	}
 
-	public enum Mount {
+	public enum FireArc {
 		_360,
 		FxF,
 		FwA,
 		LEFT,
 		RIGHT,
 		;
+	}
+
+	public static void main(String[] args) {
+		for (Map.Entry<Weapon, FireArc> weapon : Unit.LANDING_CRAFT.weapons.entries()) {
+			System.out.println(weapon.getKey() + " " + weapon.getValue());
+		}
+		for (Map.Entry<Weapon, FireArc> weapon : Unit.THUNDERHAWK.weapons.entries()) {
+			System.out.println(weapon.getKey() + " " + weapon.getValue());
+		}
 	}
 }
