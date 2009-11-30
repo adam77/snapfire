@@ -26,7 +26,7 @@
 \newcommand\weaponTable{	\begin{tabular}{@{} p{3cm} p{1.5cm} p{3cm} p{3cm}}
 								\thead{Weapon} 	& \thead{Range} & \thead{Firepower}	& \thead{Notes}		\\ \hline	}
 \newcommand\weapon[4]{			\tdata{#1}		& \tdata{#2}	& \tfire{#3}		& \tnotes{#4}		\\			}	
-\newcommand\weaponsEND[1]{	\end{tabular} & \imageCell{#1}\\ }
+\newcommand\image[1]{		\end{tabular} & \imageCell{#1}\\ }
 % notes and comments
 \newcommand\comment[1]{		\multicolumn{2}{@{}p{16cm}}{ \vspace{-1mm} \tdata{#1} } \\ }
 \newcommand\notes[1]{ 		\comment{ \thead{Notes:} \tnotes{#1} } }
