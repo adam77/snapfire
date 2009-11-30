@@ -1,0 +1,44 @@
+% Package for formating unit data tables
+% author: adam77
+%
+\ProvidesPackage{codex}
+
+\usepackage{graphicx}
+\usepackage{multicol}
+\setlength{\parindent}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MACROS
+%
+% styles...
+\newcommand\tdata[1]{\footnotesize{#1}}
+\newcommand\tnotes[1]{\emph{\tdata{#1}}}
+\newcommand\tfire[1]{\scriptsize{#1}}
+\newcommand\thead[1]{\footnotesize{\textbf{#1}}}
+% unit data table...
+\newcommand\unitTable[5]{	\begin{tabular*}{12cm}{@{} p{2.5cm} @{\extracolsep{\fill}} l c c c @{}}
+								\thead{Type} 	& \thead{Speed} & \thead{Armour} 	& \thead{Close Combat} 	& \thead{Firefight}	\\ \hline
+								\tdata{#1}		& \tdata{#2}	& \tdata{#3}		& \tdata{#4}			& \tdata{#5}		\\
+							\end{tabular*}}
+% image
+\newcommand\imageCell[1]{ 	\vspace{0mm}\includegraphics[clip, width=4cm, height=2cm]{#1}}
+% weapon table...
+\newcommand\weaponTable{	\begin{tabular}{@{} p{3.5cm} p{1cm} p{3cm} p{3cm}}
+								\thead{Weapon} 	& \thead{Range} & \thead{Firepower}	& \thead{Notes}		\\ \hline	}
+\newcommand\weapon[4]{			\tdata{#1}		& \tdata{#2}	& \tfire{#3}		& \tnotes{#4}		\\			}	
+\newcommand\weaponsEND[1]{	\end{tabular} & \imageCell{#1}\\ }
+% notes and comments
+\newcommand\comment[1]{		\multicolumn{2}{@{}p{16cm}}{ \vspace{-1mm} \tdata{#1} } \\ }
+\newcommand\notes[1]{ 		\comment{ \thead{Notes:} \tnotes{#1} } }
+% outer table...
+\newcommand\stats[5]{		\begin{tabular}{@{} p{12cm} p{4cm} @{}}
+								\vspace{0mm}
+								\unitTable{#1}{#2}{#3}{#4}{#5} 	\vspace{1mm}
+								\par \weaponTable }					
+\newcommand\statsEND{		\end{tabular} \vspace{5mm}}
+% unit name and description...
+\newcommand\unitname[1]{	\begin{center}\textbf{#1}\end{center}}
+\newcommand\unit[2]{		\begin{multicols}{2}
+								\unitname{#1}
+								\vspace{-2mm} \footnotesize{#2}
+							\end{multicols}}

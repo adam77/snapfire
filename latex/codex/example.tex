@@ -1,0 +1,48 @@
+% Example codex.tex usage
+% author:adam77
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PREAMBLE
+%
+\documentclass[a4paper]{article}
+\usepackage[left=2.2cm, right=2.2cm]{geometry}
+
+\usepackage{codex}							% this package contains the macros
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT
+%
+\begin{document}
+ 
+\section*{Nurglish Units...}
+
+% an example unit...
+\unit{Death Guard Marines}{
+	Nurgle empowers those who would see every accomplishment of Mankind reduced to mouldering ruin.
+	He is the Lord of Decay, and his servants spread disease and contagion throughout the moral realm in the name of their festering master.
+	Nurgle’s appearance is the most abhorrent of the Chaos gods. His bloated body is home to every form of corruption imaginable, and his skin is covered in weeping sores.
+	Foul Nurglings cavort amongst Nurgle’s exposed organs, giggling with insane delight at the latest pestilence inflicted upon Mankind by their master.
+	blah blah blah, blah blah.blah blah blah, blah blah.blah blah blah, blah blah.blah blah blah, blah blah.
+}
+\stats{Infantry}{15cm}{3+}{4+}{5+}
+\weapon{Twin Lascannon}{30cm}{AT4+/AP4+}{-}
+\weapon{Twin Lascannon}{30cm}{AT4+/AP4+}{-}
+\weapon{Heavy Bolter}{45cm}{AT4+/AP4+/AA3+}{blah blah}
+\weaponsEND{test.png}
+\notes{Some notes go here... Some notes go here...Some notes go here... Some notes go here...Some notes go here...Some notes go here...Some notes go here...Some notes go here...}
+\statsEND
+
+
+% unit template (copy and paste)...
+\unit{Nurgloid} {							% required
+	---description goes here---
+}
+\stats{type}{speed}{armour}{cc}{ff}			% required
+\weapon{name}{range}{tohit}{notes}			% 1 or more...
+\weaponsEND{test.png}						% required
+\comment{...comment...}						% can be left out
+\notes{...notes...}							% can be left out
+\statsEND									% required
+
+
+\end{document}
