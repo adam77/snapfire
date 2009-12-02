@@ -6,6 +6,7 @@
 \usepackage{colortbl}
 \usepackage{graphicx}
 \usepackage{multicol}
+\usepackage{framed}
 \setlength{\parindent}{0pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -49,23 +50,26 @@
 %
 % ARMY LIST MACROS
 %
+% header
+\newcommand\armylist[2]{	\pagebreak	\centering
+							{\LARGE \textbf{#1}} \vspace{3mm}
+							\parbox[b]{12cm}{\tdata{#2}} }
 % formations...
-\newcommand\formations[2]{	\vspace{5mm}
-							\begin{tabular}{p{3.5cm}p{4cm}p{4.5cm}p{2.5cm}}
+\newcommand\formations[2]{	
+							\begin{framed}
+							\begin{tabular}{p{3.5cm}p{4cm}p{4.3cm}p{2.5cm}}
 								\multicolumn{4}{c}{\textbf{#1}} \\
-								\multicolumn{4}{c}{\tnotes{#2}} \\
-								\multicolumn{4}{c}{ } \\								
-								\rowcolor[gray]{.9}
-								\thead{FORMATION NAME} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} 		\\ \hline }
-\newcommand\formation[4]{		\tdata{#1} & 				\tdata{#2} 		& \tdata{#3} 		& \tdata{#4} \\ }
-\newcommand\formationsEND{	\end{tabular} \vspace{5mm} }
+								\multicolumn{4}{c}{\tnotes{#2}} \\			
+%								\rowcolor[gray]{.9}
+								\thead{FORMATION NAME} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{4ex}	\\ \hline }
+\newcommand\formation[4]{		\tdata{#1} & 				\tdata{#2} 		& \tdata{#3} 		& \tdata{#4} 					\\ }
+\newcommand\formationsEND{	\end{tabular} \end{framed} }
 % upgrades...
-\newcommand\upgrades[2]{	\vspace{5mm}
-							\begin{tabular}{p{3.5cm}p{8.8cm}p{2.5cm}}
+\newcommand\upgrades[2]{					
+							\begin{framed}	
+							\begin{tabular}{p{3.5cm}p{8.5cm}p{2.5cm}}
 								\multicolumn{3}{c}{\textbf{#1}} \\
-								\multicolumn{3}{c}{\tnotes{#2}} \\
-								\multicolumn{3}{c}{ } \\ 								
-								\rowcolor[gray]{.9}
+								\multicolumn{3}{c}{\tnotes{#2}} \vspace{2mm} \\				
 								\thead{UPGRADE NAME} 	& \thead{UNITS}	& \thead{COST}	\\ \hline }
 \newcommand\upgrade[3]{			\tdata{#1} 				& \tdata{#2}	& \tdata{#3}	\\ }		
-\newcommand\upgradesEND{	\end{tabular} \vspace{5mm}}
+\newcommand\upgradesEND{	\end{tabular} \end{framed}}
