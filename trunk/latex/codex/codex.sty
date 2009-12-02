@@ -3,11 +3,34 @@
 %
 \ProvidesPackage{codex}
 
+\usepackage[left=2.2cm, right=2.2cm]{geometry}
+\usepackage{bookman}
 \usepackage{colortbl}
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{framed}
 \setlength{\parindent}{0pt}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% STYLING MACROS
+%
+% Add DG to section numbers...
+\renewcommand*{\@seccntformat}[1]{%
+  DG\csname the#1\endcsname \quad
+}
+% A column spanning title...
+\newcommand\codexTitle[2]{	
+	\twocolumn[
+				\begin{@twocolumnfalse}
+				\begin{center}
+					{\huge\textbf{\underline{#1}}} \par
+					{\huge\textbf{\underline{#2}}}	
+					\vspace{3mm}
+				\end{center}
+				\end{@twocolumnfalse}
+			  ] }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DATFAX MACROS
@@ -23,9 +46,9 @@
 								\tdata{#1}		& \tdata{#2}	& \tdata{#3}		& \tdata{#4}			& \tdata{#5}		\\
 							\end{tabular*}}
 % image
-\newcommand\imageCell[1]{ 	\vspace{0mm}\includegraphics[width=4cm]{#1}}
+\newcommand\imageCell[1]{ 	\vspace{0mm}\includegraphics[width=4cm, keepaspectratio]{#1}}
 % weapon table...
-\newcommand\weaponTable{	\begin{tabular}{@{} p{3cm} p{1.5cm} p{3cm} p{3cm}}
+\newcommand\weaponTable{	\begin{tabular}{@{} p{3cm} p{1.6cm} p{2.9cm} p{3cm}}
 								\thead{Weapon} 	& \thead{Range} & \thead{Firepower}	& \thead{Notes}	\\ \hline	}
 \newcommand\weapon[4]{			\tdata{#1}		& \tdata{#2}	& \tfire{#3}		& \tnotes{#4}	\\			}	
 \newcommand\image[1]{		\end{tabular} & \imageCell{#1}\\ }
@@ -51,13 +74,13 @@
 % ARMY LIST MACROS
 %
 % header
-\newcommand\armylist[2]{	\pagebreak	\centering
+\newcommand\armylist[2]{	\clearpage \onecolumn \centering
 							{\LARGE \textbf{#1}} \vspace{3mm}
 							\parbox[b]{12cm}{\tdata{#2}} }
 % formations...
 \newcommand\formations[2]{	
 							\begin{framed}
-							\begin{tabular}{p{3.5cm}p{4cm}p{4.3cm}p{2.5cm}}
+							\begin{tabular}{p{3.5cm}p{4.1cm}p{4.2cm}p{2.3cm}}
 								\multicolumn{4}{c}{\textbf{#1}} \\
 								\multicolumn{4}{c}{\tnotes{#2}} \\			
 %								\rowcolor[gray]{.9}
@@ -67,7 +90,7 @@
 % upgrades...
 \newcommand\upgrades[2]{					
 							\begin{framed}	
-							\begin{tabular}{p{3.5cm}p{8.5cm}p{2.5cm}}
+							\begin{tabular}{p{3.5cm}p{8.5cm}p{2.3cm}}
 								\multicolumn{3}{c}{\textbf{#1}} \\
 								\multicolumn{3}{c}{\tnotes{#2}} \vspace{2mm} \\				
 								\thead{UPGRADE NAME} 	& \thead{UNITS}	& \thead{COST}	\\ \hline }
