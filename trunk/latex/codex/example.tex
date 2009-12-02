@@ -9,16 +9,19 @@
 \usepackage{bookman}
 \usepackage{codex}							% this package contains the macros
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DOCUMENT
 %
 \begin{document}
+\section{The Death Guard}
+blah blah
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % UNITS
 %
 \pagebreak
-\section*{Nurglish Units...}
+\section{Death Guard New Units}
 
 % an example unit...
 \unit{Death Guard Marines}{
@@ -49,14 +52,23 @@
 \statsEND									% required
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% ARMY LISTS
+% ARMY LIST
 %
 \pagebreak
-\section*{DG3.0 Death Guard Chaos Space Marine Army}
+\section{Death Guard Chaos Space Marine Army}
 blah blah ...
 \subsection{Using the Army List}
 blah blah ...
 
+% header...
+\armylist{Death Guard Chaos Space Marine Army List}{
+	All Death Guard, Daemon and Titan Legion formations have an initiative rating of 1+.
+	Chaos Navy formations have an initiative rating of 2+. Death Guard armies have a
+	strategy rating of 4.
+
+	One of the Death Guard Lords in the army must be Warlord.
+}
+% formations...
 \formations{DEATH GUARD CORE RETINUES}{}
 \formation{Death Guard Retinue}
 		{One Death Guard Lord. Four Death Guard Chaos Marine and two Plague Marines units.}
@@ -65,16 +77,23 @@ blah blah ...
 \formation{...name...}{...units...}{...upgrades...}{.pts.}
 \formation{...name...}{...units...}{...upgrades...}{.pts.}
 \formationsEND
-
+% support...
 \formations{DEATH GUARD SUPPORT RETINUES}{One per Death Guard Retinue or Death Guard Heavy Retinue}
 \formation{Assault Retinue}{Up to three Plague Reapers.}{Support Vehicles}{275 points each}
 \formation{...name...}{...units...}{...upgrades...}{.pts.}
 \formation{...name...}{...units...}{...upgrades...}{.pts.}
 \formation{...name...}{...units...}{...upgrades...}{.pts.}
 \formationsEND
-
+% upgrades...
 \upgrades{DEATH GUARD UPGRADES}{Each upgrade may only be taken once if formation allows taking it}
 \upgrade{Chaos Champion}{Adds a Chaos Champion to a unit in the formation}{50 points}
+\upgrade{...name...}{...units...}{.pts.}
+\upgrade{...name...}{...units...}{.pts.}
+\upgrade{...name...}{...units...}{.pts.}
+\upgradesEND
+% assets...
+\upgrades{DEATH GUARD TITANS, SPACECRAFT AND NAVY ASSETS}{Up to a third of points}
+\upgrade{Banelord Titan}{One Banelord Titan}{850 points}
 \upgrade{...name...}{...units...}{.pts.}
 \upgrade{...name...}{...units...}{.pts.}
 \upgrade{...name...}{...units...}{.pts.}
