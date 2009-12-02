@@ -4,23 +4,26 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PREAMBLE
 %
-\documentclass[a4paper]{article}
-\usepackage[left=2.2cm, right=2.2cm]{geometry}
-\usepackage{bookman}
-\usepackage{codex}							% this package contains the macros
-
+\documentclass[a4paper, twocolumn]{article}
+\usepackage{codex}									% this package contains the macros
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DOCUMENT
 %
 \begin{document}
+\codexTitle{Death Guard}{Experimental Army List}
+
 \section{The Death Guard}
-blah blah
+blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah
+blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah
+blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah
  
+\subsection{Death Guard Special Rules}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % UNITS
 %
-\pagebreak
+\clearpage \onecolumn
 \section{Death Guard New Units}
 
 % an example unit...
@@ -39,6 +42,16 @@ blah blah
 \notes{Some notes go here... Some notes go here...Some notes go here... Some notes go here...Some notes go here...Some notes go here...Some notes go here...Some notes go here...}
 \statsEND
 
+% unit template (copy and paste)...
+\unit{Nurgloid} {							% required
+	---description goes here---
+}
+\stats{type}{speed}{armour}{cc}{ff}			% required
+\weapon{name}{range}{tohit}{notes}			% 1 or more...
+\image{test.png}							% required
+\comment{...comment...}						% can be left out
+\notes{...notes...}							% can be left out
+\statsEND									% required
 
 % unit template (copy and paste)...
 \unit{Nurgloid} {							% required
@@ -51,11 +64,12 @@ blah blah
 \notes{...notes...}							% can be left out
 \statsEND									% required
 
+\twocolumn
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ARMY LIST
 %
-\pagebreak
-\section{Death Guard Chaos Space Marine Army}
+\clearpage
+\section{Death Guard Army}
 blah blah ...
 \subsection{Using the Army List}
 blah blah ...
@@ -98,5 +112,7 @@ blah blah ...
 \upgrade{...name...}{...units...}{.pts.}
 \upgrade{...name...}{...units...}{.pts.}
 \upgradesEND
+
+\twocolumn			% required after the army list
 
 \end{document}
