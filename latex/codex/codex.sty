@@ -3,12 +3,13 @@
 %
 \ProvidesPackage{codex}
 
+\usepackage{colortbl}
 \usepackage{graphicx}
 \usepackage{multicol}
 \setlength{\parindent}{0pt}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% MACROS
+% DATFAX MACROS
 %
 % styles...
 \newcommand\tdata[1]{\footnotesize{#1}}
@@ -21,7 +22,7 @@
 								\tdata{#1}		& \tdata{#2}	& \tdata{#3}		& \tdata{#4}			& \tdata{#5}		\\
 							\end{tabular*}}
 % image
-\newcommand\imageCell[1]{ 	\vspace{0mm}\includegraphics[clip, width=4cm, height=2cm]{#1}}
+\newcommand\imageCell[1]{ 	\vspace{0mm}\includegraphics[width=4cm]{#1}}
 % weapon table...
 \newcommand\weaponTable{	\begin{tabular}{@{} p{3cm} p{1.5cm} p{3cm} p{3cm}}
 								\thead{Weapon} 	& \thead{Range} & \thead{Firepower}	& \thead{Notes}	\\ \hline	}
@@ -42,3 +43,29 @@
 								\unitname{#1}
 								\vspace{-2mm} \footnotesize{#2}
 							\end{multicols}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% ARMY LIST MACROS
+%
+% formations...
+\newcommand\formations[2]{	\vspace{5mm}
+							\begin{tabular}{p{3.5cm}p{4cm}p{4.5cm}p{2.5cm}}
+								\multicolumn{4}{c}{\textbf{#1}} \\
+								\multicolumn{4}{c}{\tnotes{#2}} \\
+								\multicolumn{4}{c}{ } \\								
+								\rowcolor[gray]{.9}
+								\thead{FORMATION NAME} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} 		\\ \hline }
+\newcommand\formation[4]{		\tdata{#1} & 				\tdata{#2} 		& \tdata{#3} 		& \tdata{#4} \\ }
+\newcommand\formationsEND{	\end{tabular} \vspace{5mm} }
+% upgrades...
+\newcommand\upgrades[2]{	\vspace{5mm}
+							\begin{tabular}{p{3.5cm}p{8.8cm}p{2.5cm}}
+								\multicolumn{3}{c}{\textbf{#1}} \\
+								\multicolumn{3}{c}{\tnotes{#2}} \\
+								\multicolumn{3}{c}{ } \\ 								
+								\rowcolor[gray]{.9}
+								\thead{UPGRADE NAME} 	& \thead{UNITS}	& \thead{COST}	\\ \hline }
+\newcommand\upgrade[3]{			\tdata{#1} 				& \tdata{#2}	& \tdata{#3}	\\ }		
+\newcommand\upgradesEND{	\end{tabular} \vspace{5mm}}
