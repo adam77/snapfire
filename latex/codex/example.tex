@@ -1,6 +1,6 @@
 % Example codex.tex usage
 % author:adam77
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % PREAMBLE
 %
@@ -17,29 +17,39 @@
 blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah
 blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah
 blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blah
- 
+
 \subsection{Death Guard Special Rules}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % UNITS
 %
 \clearpage \onecolumn
-\section{Death Guard New Units}
+\section{Death Guard Units}
 
-% an example unit...
-\unit{Death Guard Marines}{
-	Nurgle empowers those who would see every accomplishment of Mankind reduced to mouldering ruin.
-	He is the Lord of Decay, and his servants spread disease and contagion throughout the moral realm in the name of their festering master.
-	Nurgle’s appearance is the most abhorrent of the Chaos gods. His bloated body is home to every form of corruption imaginable, and his skin is covered in weeping sores.
-	Foul Nurglings cavort amongst Nurgle’s exposed organs, giggling with insane delight at the latest pestilence inflicted upon Mankind by their master.
-	blah blah blah, blah blah.blah blah blah, blah blah.blah blah blah, blah blah.blah blah blah, blah blah.
+\subsection{New units}
+
+\unit{Death Guard Lord}{}
+\stats{Character}{-}{-}{-}{-}
+\weapon{Man Reaper}{(base contact)}{Assault Weapons}{Extra Attacks(+1), Macro-Weapon}
+\weapon{Warp Bold}{(15cm))}{Small Arms}{Extra Attacks(+1), Macro-Weapon}
+\image{test.png}
+\notes{\emph{Death Guard Lords are one of three types, Plaguelord, Sorcerer Lord and Nurgle Warlord. All are} Characters \emph{and have the}Invulnerable Save
+\emph{and} Leader \emph{abilities. Plaguelords have the} Commander \emph{ability. Sorcerer Lords have the} Warp Bolt \emph{attack(listed in the weapons section above). Nurgle
+Warlord has the} Supreme Commander \emph{ability.}
+}
+\statsEND
+
+\unit{Death Guard Chaos Marines}{
+  Death Guard Chaos Marines are Chaos Marines who have started to embrace the pestilence of father Nurgle. Many of
+  those who start this process to become Plague Marine won't survive the decay and disease bestowed upon them
+  but many still crave for the power it grants them.
 }
 \stats{Infantry}{15cm}{3+}{4+}{5+}
-\weapon{Twin Lascannon}{30cm}{AT4+/AP4+}{-}
-\weapon{Twin Lascannon}{Small arms}{AT4+/AP4+}{-}
-\weapon{Heavy Bolter}{45cm}{2 x AT4+/AP4+/AA3+}{blah blah}
+\weapon{Bolters}{(15cm))}{Small Arms}{-}
+\weapon{Plague Knives}{(base contact)}{Assault Weapons}{-}
+\weapon{Plasma gun}{15cm}{AP5+/AT5+}{-}
 \image{test.png}
-\notes{Some notes go here... Some notes go here...Some notes go here... Some notes go here...Some notes go here...Some notes go here...Some notes go here...Some notes go here...}
+\notes{Stubborn}
 \statsEND
 
 % unit template (copy and paste)...
@@ -52,6 +62,8 @@ blah blah blah blahblah blah blah blahblah blah blah blahblah blah blah blahblah
 \comment{...comment...}						% can be left out
 \notes{...notes...}							% can be left out
 \statsEND									% required
+
+\subsection{Black Legion experimental units}
 
 % unit template (copy and paste)...
 \unit{Nurgloid} {							% required
@@ -85,32 +97,61 @@ blah blah ...
 % formations...
 \formations{DEATH GUARD CORE RETINUES}{}
 \formation{Death Guard Retinue}
-		{One Death Guard Lord. Four Death Guard Chaos Marine and two Plague Marines units.}
-		{Any except Dreadclaws}{250 points}
-\formation{...name...}{...units...}{...upgrades...}{.pts.}
-\formation{...name...}{...units...}{...upgrades...}{.pts.}
-\formation{...name...}{...units...}{...upgrades...}{.pts.}
+          {One Death Guard Lord. Four Death Guard Chaos Marine and two Plague Marines units.}
+          {Any except Dreadclaws}
+          {250 points}
+\formation{Death Guard Heavy Retinue}
+          {One Death Guard Lord. Six Death Guard Marines units.}
+          {Any except Dreadclaws}
+          {350 points}
+\formation{0 - 2 Death Guard Terminator Retinue}
+          {One Death Guard Lord. Between four to seven Death Guard Terminator units.}
+          {Chaos Champion, Dreadnoughts, Dreadclaws, Daemonic Pact, Daemon Prince, Icon Bearer, Transport}
+          {50 points + 100 per Terminator unit}
+\formation{0 - 2 Plague Zombie Infestation}
+          {D6 + 7 Plague Zombie units.}
+          {}
+          {200 points}
 \formationsEND
 % support...
 \formations{DEATH GUARD SUPPORT RETINUES}{One per Death Guard Retinue or Death Guard Heavy Retinue}
+\formation{Death Guard Drop Retinue}
+          {One Death Guard Lord. Four Death Guard Chaos Marine and two Plague Marines units.}
+          {Chaos Champion, Daemonic Pact, Daemon Prince, Death Guard Havocs, Dreadclaws, Icon Bearer, Plague Marines}
+          {250 points}
+\formation{Armoured Company}
+          {Four to six vehicles (may choose either Chaos Predators or Chaos Land Raiders or any mix of two).}
+          {}
+          {50 points per Predator 100 points per Land Raider}
 \formation{Assault Retinue}{Up to three Plague Reapers.}{Support Vehicles}{275 points each}
-\formation{...name...}{...units...}{...upgrades...}{.pts.}
-\formation{...name...}{...units...}{...upgrades...}{.pts.}
-\formation{...name...}{...units...}{...upgrades...}{.pts.}
+\formation{Plague Towers}{Up to two Plague Towers}{}{325 points each}
+\formation{Four Blight Drones}{Blight Drone Swarm}{}{200 points}
+\formation{Four Contagion Towers}{Contagion Towers}{}{325 points}
 \formationsEND
 % upgrades...
 \upgrades{DEATH GUARD UPGRADES}{Each upgrade may only be taken once if formation allows taking it}
 \upgrade{Chaos Champion}{Adds a Chaos Champion to a unit in the formation}{50 points}
-\upgrade{...name...}{...units...}{.pts.}
-\upgrade{...name...}{...units...}{.pts.}
-\upgrade{...name...}{...units...}{.pts.}
+\upgrade{Chaos Spawn}{Add up to three Chaos Spawn to the formation}{25 points each}
+\upgrade{Demonic Pact}{Allows the formation to summon Demons from the Demon Pool}{25 points}
+\upgrade{0 – 1 Demon Prince}{Replace the unit with Death Guard Lord character with the Daemon Prince unit.}{50 points}
+\upgrade{Dreadclaw}{Equips the formation with Dreadclaw Assault Boats. There must be at least enough to transport all units in formation.}{25 points per 4 units}
+\upgrade{Death Guard Havocs}{Add four Death Guard Havocs to the formation}{200 points}
+\upgrade{Icon Bearer}{Add an Icon Bearer to a unit in the formation}{50 points}
+\upgrade{Plague Marines}{Add four Plague Marines to the formation}{150 points}
+\upgrade{Transport}
+        {Add Rhinos and/or Death Guard Land Raiders to the formation. You can take only minimum to transport the
+         formation (including any transport capable unit taken from Support Vehicle Upgrade).}
+        {10 per Rhino 75 points per Land Raider}
 \upgradesEND
 % assets...
 \upgrades{DEATH GUARD TITANS, SPACECRAFT AND NAVY ASSETS}{Up to a third of points}
 \upgrade{Banelord Titan}{One Banelord Titan}{850 points}
-\upgrade{...name...}{...units...}{.pts.}
-\upgrade{...name...}{...units...}{.pts.}
-\upgrade{...name...}{...units...}{.pts.}
+\upgrade{Ravager Titan}{One Ravager Titan}{625 points}
+\upgrade{Feral Titan Pack}{One to two Feral Scout Titans}{325 each}
+\upgrade{Hellblade}{Three Hellblade Fighters}{200 points}
+\upgrade{Helltalon}{Two Helltalon Fighter-Bombers}{200 points}
+\upgrade{Devastation}{One Devastation class Cruiser}{250 points}
+\upgrade{Despoiler}{One Despoiler class Battleship}{250 points}
 \upgradesEND
 
 \twocolumn			% required after the army list
