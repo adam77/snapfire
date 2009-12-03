@@ -3,7 +3,7 @@
 %
 \ProvidesPackage{codex}
 
-\usepackage[left=2.2cm, right=2.2cm]{geometry}
+\usepackage[left=1.8cm, right=1.8cm, top=2cm, bottom=2cm]{geometry}
 \usepackage{bookman}
 \usepackage{colortbl}
 \usepackage{graphicx}
@@ -21,12 +21,12 @@
   DG\csname the#1\endcsname \quad
 }
 % A column spanning title...
-\newcommand\codexTitle[2]{	
+\newcommand\codexTitle[2]{
 	\twocolumn[
 				\begin{@twocolumnfalse}
 				\begin{center}
 					{\huge\textbf{\underline{#1}}} \par
-					{\huge\textbf{\underline{#2}}}	
+					{\huge\textbf{\underline{#2}}}
 					\vspace{3mm}
 				\end{center}
 				\end{@twocolumnfalse}
@@ -50,7 +50,7 @@
 % weapon table...
 \newcommand\weaponTable{	\begin{tabular}{@{} p{3cm} p{1.6cm} p{2.9cm} p{3cm}}
 								\thead{Weapon} 	& \thead{Range} & \thead{Firepower}	& \thead{Notes}	\\ \hline	}
-\newcommand\weapon[4]{			\tdata{#1}		& \tdata{#2}	& \tfire{#3}		& \tnotes{#4}	\\			}	
+\newcommand\weapon[4]{			\tdata{#1}		& \tdata{#2}	& \tfire{#3}		& \tnotes{#4}	\\			}
 \newcommand\image[1]{		\end{tabular} & \imageCell{#1}\\ }
 % notes and comments
 \newcommand\comment[1]{		\multicolumn{2}{@{}p{16cm}}{ \vspace{-1mm} \tdata{#1} } \\ }
@@ -59,7 +59,7 @@
 \newcommand\stats[5]{		\begin{tabular}{@{} p{12cm} p{4cm} @{}}
 								\vspace{0mm}
 								\unitTable{#1}{#2}{#3}{#4}{#5} 	\vspace{1mm}
-								\par \weaponTable }					
+								\par \weaponTable }
 \newcommand\statsEND{		\end{tabular} \vspace{5mm}}
 % unit name and description...
 \newcommand\unitname[1]{	\begin{center}\textbf{#1}\end{center}}
@@ -77,22 +77,23 @@
 \newcommand\armylist[2]{	\clearpage \onecolumn \centering
 							{\LARGE \textbf{#1}} \vspace{3mm}
 							\parbox[b]{12cm}{\tdata{#2}} }
+
 % formations...
-\newcommand\formations[2]{	
+\newcommand\formations[2]{
 							\begin{framed}
-							\begin{tabular}{p{3.5cm}p{4.1cm}p{4.2cm}p{2.3cm}}
+							\begin{tabular}{p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}}
 								\multicolumn{4}{c}{\textbf{#1}} \\
-								\multicolumn{4}{c}{\tnotes{#2}} \\			
+								\multicolumn{4}{c}{\tnotes{#2}} \\
 %								\rowcolor[gray]{.9}
 								\thead{FORMATION NAME} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{4ex}	\\ \hline }
 \newcommand\formation[4]{		\tdata{#1} & 				\tdata{#2} 		& \tdata{#3} 		& \tdata{#4} 					\\ }
 \newcommand\formationsEND{	\end{tabular} \end{framed} }
 % upgrades...
-\newcommand\upgrades[2]{					
-							\begin{framed}	
-							\begin{tabular}{p{3.5cm}p{8.5cm}p{2.3cm}}
+\newcommand\upgrades[2]{
+							\begin{framed}
+							\begin{tabular}{p{3cm}p{8.6cm}p{3.4cm}}
 								\multicolumn{3}{c}{\textbf{#1}} \\
-								\multicolumn{3}{c}{\tnotes{#2}} \vspace{2mm} \\				
-								\thead{UPGRADE NAME} 	& \thead{UNITS}	& \thead{COST}	\\ \hline }
-\newcommand\upgrade[3]{			\tdata{#1} 				& \tdata{#2}	& \tdata{#3}	\\ }		
+								\multicolumn{3}{c}{\tnotes{#2}} \vspace{2mm} \\
+								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}	\\ \hline }
+\newcommand\upgrade[3]{			\tdata{#1} 				& \tdata{#2}	& \tdata{#3}	\\ }
 \newcommand\upgradesEND{	\end{tabular} \end{framed}}
