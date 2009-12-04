@@ -9,16 +9,19 @@
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{framed}
-\setlength{\parindent}{0pt}
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % STYLING MACROS
 %
-% Add DG to section numbers...
+% no paragraph indents...
+\setlength\parindent{0pt}
+\setlength\parskip{2mm} 
+% section header prefix...
+\newcommand\setNumberingPrefix[1]{
+	\newcommand\numberingPrefix{#1}
+}
 \renewcommand*{\@seccntformat}[1]{%
-  DG\csname the#1\endcsname \quad
+  \numberingPrefix\csname the#1\endcsname \quad
 }
 % A column spanning title...
 \newcommand\codexTitle[2]{
@@ -32,41 +35,43 @@
 				\end{@twocolumnfalse}
 			  ] }
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % DATFAX MACROS
 %
 % styles...
-\newcommand\tdata[1]{\footnotesize{#1}}
-\newcommand\tnotes[1]{\emph{\tdata{#1}}}
-\newcommand\tfire[1]{\scriptsize{#1}}
-\newcommand\thead[1]{\footnotesize{\textbf{#1}}}
+\newcommand\tdata[1]{	\footnotesize{#1}}%
+\newcommand\tpara[1]{	\raggedright\tdata{#1}}%
+\newcommand\tnotes[1]{	\tdata{\emph{#1}}	}
+\newcommand\thead[1]{	\footnotesize{\textbf{#1}}	}
 % unit data table...
-\newcommand\unitTable[5]{	\begin{tabular*}{12cm}{@{} p{2.5cm} @{\extracolsep{\fill}} l c c c @{}}
+\newcommand\unitTable[5]{	\begin{tabular*}{12.8cm}{@{} p{3cm} @{\extracolsep{\fill}} l c c c @{}}
 								\thead{Type} 	& \thead{Speed} & \thead{Armour} 	& \thead{Close Combat} 	& \thead{Firefight}	\\ \hline
 								\tdata{#1}		& \tdata{#2}	& \tdata{#3}		& \tdata{#4}			& \tdata{#5}		\\
 							\end{tabular*}}
 % image
 \newcommand\imageCell[1]{ 	\vspace{0mm}\includegraphics[width=4cm, keepaspectratio]{#1}}
 % weapon table...
-\newcommand\weaponTable{	\begin{tabular}{@{} p{3cm} p{1.6cm} p{2.9cm} p{3cm}}
+\newcommand\weaponTable{	\begin{tabular}{@{} p{3.0cm} p{2.0cm} p{3.0cm} p{3.3cm}}
 								\thead{Weapon} 	& \thead{Range} & \thead{Firepower}	& \thead{Notes}	\\ \hline	}
-\newcommand\weapon[4]{			\tdata{#1}		& \tdata{#2}	& \tfire{#3}		& \tnotes{#4}	\\			}
+\newcommand\weapon[4]{			\tpara{#1}		& \tpara{#2}	& \tpara{#3}		& \tpara{\emph{#4}}	\tabularnewline	} % use 'tabularnewline' in place of '\\' because 'raggedright' changes meaning of '\\'
 \newcommand\image[1]{		\end{tabular} & \imageCell{#1}\\ }
 % notes and comments
-\newcommand\comment[1]{		\multicolumn{2}{@{}p{16cm}}{ \vspace{-1mm} \tdata{#1} } \\ }
-\newcommand\notes[1]{ 		\comment{ \thead{Notes:} \tnotes{#1} } }
+\newcommand\comment[1]{		\multicolumn{2}{@{}p{16.8cm}}{ \vspace{-1mm} \tdata{#1} } \\ }
+\newcommand\notes[1]{ 		\comment{ \thead{Notes:} #1 } }
 % outer table...
-\newcommand\stats[5]{		\begin{tabular}{@{} p{12cm} p{4cm} @{}}
+\newcommand\stats[5]{		\begin{tabular}{@{} p{12.8cm} p{4cm} @{}}
 								\vspace{0mm}
 								\unitTable{#1}{#2}{#3}{#4}{#5} 	\vspace{1mm}
 								\par \weaponTable }
-\newcommand\statsEND{		\end{tabular} \vspace{5mm}}
+\newcommand\statsEND{		\end{tabular} \vspace{5mm} }
 % unit name and description...
 \newcommand\unitname[1]{	\begin{center}\textbf{#1}\end{center}}
-\newcommand\unit[2]{		\begin{multicols}{2}
+\newcommand\unit[2]{		
+							\begin{multicols}{2}
 								\unitname{#1}
 								\vspace{-2mm} \footnotesize{#2}
-							\end{multicols}}
+							\end{multicols} \nopagebreak}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -74,10 +79,9 @@
 % ARMY LIST MACROS
 %
 % header
-\newcommand\armylist[2]{	\clearpage \onecolumn \centering
-							{\LARGE \textbf{#1}} \vspace{3mm}
-							\parbox[b]{12cm}{\tdata{#2}} }
-
+\newcommand\armylist[2]{	\clearpage \onecolumn
+							{\centering \subsection{#1}}
+							#2 }
 % formations...
 \newcommand\formations[2]{
 							\begin{framed}
@@ -85,15 +89,15 @@
 								\multicolumn{4}{c}{\textbf{#1}} \\
 								\multicolumn{4}{c}{\tnotes{#2}} \\
 %								\rowcolor[gray]{.9}
-								\thead{FORMATION NAME} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{4ex}	\\ \hline }
-\newcommand\formation[4]{		\tdata{#1} & 				\tdata{#2} 		& \tdata{#3} 		& \tdata{#4} 					\\ }
+								\thead{FORMATION NAME} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{3ex}	\\ \hline }
+\newcommand\formation[4]{		\tpara{#1}				&	\tpara{#2} 		& \tpara{#3} 		& \tpara{#4} 					\tabularnewline }
 \newcommand\formationsEND{	\end{tabular} \end{framed} }
 % upgrades...
 \newcommand\upgrades[2]{
 							\begin{framed}
 							\begin{tabular}{p{3cm}p{8.6cm}p{3.4cm}}
-								\multicolumn{3}{c}{\textbf{#1}} \\
-								\multicolumn{3}{c}{\tnotes{#2}} \vspace{2mm} \\
-								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}	\\ \hline }
-\newcommand\upgrade[3]{			\tdata{#1} 				& \tdata{#2}	& \tdata{#3}	\\ }
+								\multicolumn{3}{c}{\textbf{#1}} 								\\
+								\multicolumn{3}{c}{\tnotes{#2}}				 					\\
+								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}	\rule{0pt}{3ex}	\\ \hline }
+\newcommand\upgrade[3]{			\tpara{#1} 		& \tpara{#2}	& \tpara{#3}					\tabularnewline }
 \newcommand\upgradesEND{	\end{tabular} \end{framed}}
