@@ -9,10 +9,18 @@
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{framed}
+\usepackage{ifthen}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % STYLING MACROS
 %
+% table banding...
+\newcounter{toggle}
+\newcommand\resetBanding[0]{ \setcounter{toggle}{1} }
+\newcommand\banding[0]{	\ifcase\arabic{toggle}%
+						\or \rowcolor[rgb]{0.90, 0.9, 0.9}\setcounter{toggle}{2}%
+						\or \rowcolor[rgb]{0.95, 0.95, 0.95}\setcounter{toggle}{1}%
+						\fi }
 % no paragraph indents...
 \setlength\parindent{0pt}
 \setlength\parskip{2mm} 
@@ -84,21 +92,22 @@
 							{\centering \subsection{#1}}
 							#2 }
 % formations...
-\newcommand\formations[2]{
-							\begin{framed}
+\newcommand\formations[2]{	\begin{framed} 
+							\resetBanding
 							\begin{tabular}{p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}}
 								\multicolumn{4}{c}{\textbf{#1}} \\
 								\multicolumn{4}{c}{\tnotes{#2}} \\
-%								\rowcolor[gray]{.9}
-								\thead{FORMATION NAME} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{3ex}	\\ \hline }
-\newcommand\formation[4]{		\tpara{#1}				&	\tpara{#2} 		& \tpara{#3} 		& \tpara{#4} 					\tabularnewline }
+								\thead{FORMATION NAME} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{3ex}	\tabularnewline \hline }
+\newcommand\formation[4]{		\banding
+								\tpara{#1}				&	\tpara{#2} 		& \tpara{#3} 		& \tpara{#4} 					\tabularnewline }
 \newcommand\formationsEND{	\end{tabular} \end{framed} }
 % upgrades...
-\newcommand\upgrades[2]{
-							\begin{framed}
+\newcommand\upgrades[2]{	\begin{framed}
+							\resetBanding
 							\begin{tabular}{p{3cm}p{8.6cm}p{3.4cm}}
 								\multicolumn{3}{c}{\textbf{#1}} 								\\
 								\multicolumn{3}{c}{\tnotes{#2}}				 					\\
 								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}	\rule{0pt}{3ex}	\\ \hline }
-\newcommand\upgrade[3]{			\tpara{#1} 		& \tpara{#2}	& \tpara{#3}					\tabularnewline }
+\newcommand\upgrade[3]{			\banding
+								\tpara{#1} 		& \tpara{#2}	& \tpara{#3}					\tabularnewline }
 \newcommand\upgradesEND{	\end{tabular} \end{framed}}
