@@ -10,6 +10,7 @@
 \usepackage{multicol}
 \usepackage{framed}
 \usepackage{ifthen}
+\usepackage{color}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % STYLING MACROS
@@ -46,10 +47,16 @@
 }
 % special rule box
 \newcommand\specRuleBox[2]{
-	\framebox{
-		\sebsection{#1} \par
-		#2
-	}
+	\begin{figure}[h]
+		\begin{center}
+		\fcolorbox[rgb]{0,0,0}{0.95, 0.95, 0.95}{
+			\parbox{8cm}{
+				\begin{center}\textbf{Special Rule: #1}\end{center}
+				#2
+			}
+		}
+		\end{center}
+	\end{figure}	
 }
 
 
@@ -62,14 +69,14 @@
 \newcommand\tnotes[1]{	\tdata{\emph{#1}}	}
 \newcommand\thead[1]{	\footnotesize{\textbf{#1}}	}
 % unit data table...
-\newcommand\unitTable[5]{	\begin{tabular*}{12.8cm}{@{} p{2.6cm} @{\extracolsep{\fill}} l c c c @{}}
+\newcommand\unitTable[5]{	\begin{tabular*}{13.6cm}{@{} p{2.6cm} @{\extracolsep{\fill}} l c c c p{0.3cm} @{}}
 								\thead{Type} 	& \thead{Speed} & \thead{Armour} 	& \thead{Close Combat} 	& \thead{Firefight}	\\ \hline
 								\tdata{#1}		& \tdata{#2}	& \tdata{#3}		& \tdata{#4}			& \tdata{#5}		\\
 							\end{tabular*}}
 % image
-\newcommand\imageCell[1]{ 	\vspace{0mm}\includegraphics[width=3cm]{#1} }
+\newcommand\imageCell[1]{ 	\vspace{0mm}\includegraphics[width=3.8cm]{#1} }
 % weapon table...
-\newcommand\weaponTable{	\begin{tabular}{@{} p{3.5cm} p{2.0cm} p{3.0cm} p{4.5cm}}
+\newcommand\weaponTable{	\begin{tabular}{@{} p{3.3cm} p{1.9cm} p{2.4cm} p{4.5cm}}
 								\thead{Weapon} 	& \thead{Range} & \thead{Firepower}	& \thead{Notes}	\\ \hline	}
 \newcommand\weapon[4]{			\tpara{#1}		& \tpara{#2}	& \tpara{#3}		& \tpara{\emph{#4}}	\tabularnewline	} % use 'tabularnewline' in place of '\\' because 'raggedright' changes meaning of '\\'
 \newcommand\image[1]{		\end{tabular} & \imageCell{#1}	\\ }
@@ -78,7 +85,7 @@
 \newcommand\notes[1]{ 		\comment{ \thead{Notes:} #1 } }
 % outer table...
 \newcommand\stats[5]{		\vspace{-4mm}
-							\begin{tabular}{@{} p{12.8cm} p{4cm} @{}}
+							\begin{tabular}{@{} p{13.6cm} p{3.8cm} @{}}
 								\vspace{0mm}
 								\unitTable{#1}{#2}{#3}{#4}{#5}	\vspace{1mm}	\par
 								\weaponTable }
