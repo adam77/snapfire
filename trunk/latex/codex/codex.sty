@@ -45,18 +45,24 @@
 				\end{@twocolumnfalse}
 	]
 }
-% special rule box
-\newcommand\specRuleBox[2]{
+% special rule and design concept boxes
+\newcommand\callout[4]{
 	\begin{figure}[h]
 		\begin{center}
-		\fcolorbox[rgb]{0,0,0}{0.95, 0.95, 0.95}{
+		\fcolorbox[rgb]{0,0,0}{#4}{
 			\parbox{8cm}{
-				\begin{center}\textbf{Special Rule: #1}\end{center}
+				\begin{center}\textbf{#3: #1}\end{center}
 				#2
 			}
 		}
 		\end{center}
 	\end{figure}	
+}
+\newcommand\specialRule[2]{
+	\callout{#1}{#2}{Special Rule}{0.95, 0.95, 0.95}
+}
+\newcommand\designConcept[2]{
+	\callout{#1}{#2}{Design Concept}{0.8, 0.8, 0.8}
 }
 
 
@@ -82,6 +88,7 @@
 \newcommand\image[1]{		\end{tabular} & \imageCell{#1}	\\ }
 % notes and comments
 \newcommand\comment[1]{		\multicolumn{2}{@{}p{16.8cm}}{ \vspace{-2mm} \tdata{#1} } \\ }
+\newcommand\wenote[2]{		\comment{ \thead{Damage Capacity:} #1. \thead{Critical Hit Effect:} #2 } }
 \newcommand\notes[1]{ 		\comment{ \thead{Notes:} #1 } }
 % outer table...
 \newcommand\stats[5]{		\vspace{-4mm}
