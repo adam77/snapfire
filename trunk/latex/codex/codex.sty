@@ -3,7 +3,7 @@
 %
 \ProvidesPackage{codex}
 
-\usepackage[left=1.8cm, right=1.8cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[left=1.5cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
 \usepackage{bookman}
 \usepackage{colortbl}
 \usepackage{graphicx}
@@ -23,7 +23,7 @@
 						\fi }
 % no paragraph indents...
 \setlength\parindent{0pt}
-\setlength\parskip{2mm} 
+\setlength\parskip{2mm}
 % section header prefix...
 \newcommand\setNumberingPrefix[1]{
 	\newcommand\numberingPrefix{#1}
@@ -32,20 +32,29 @@
   \numberingPrefix\csname the#1\endcsname \quad
 }
 % A column spanning title...
-\newcommand\codexTitle[2]{
+\newcommand\codexTitle[3]{
 	\twocolumn[
 				\begin{@twocolumnfalse}
 				\begin{center}
 					{\huge\textbf{\underline{#1}}} \par
-					{\huge\textbf{\underline{#2}}}
+					{\huge\textbf{\underline{#2}}} \par
+					{\footnotesize{#3}}
 					\vspace{3mm}
 				\end{center}
 				\end{@twocolumnfalse}
-			  ] }
+	]
+}
+% special rule box
+\newcommand\specRuleBox[2]{
+	\framebox{
+		\sebsection{#1} \par
+		#2
+	}
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% DATFAX MACROS
+% DATAFAX MACROS
 %
 % styles...
 \newcommand\tdata[1]{	\footnotesize{#1}}%
@@ -58,9 +67,9 @@
 								\tdata{#1}		& \tdata{#2}	& \tdata{#3}		& \tdata{#4}			& \tdata{#5}		\\
 							\end{tabular*}}
 % image
-\newcommand\imageCell[1]{ 	\vspace{0mm}\includegraphics[width=4cm]{#1} }
+\newcommand\imageCell[1]{ 	\vspace{0mm}\includegraphics[width=3cm]{#1} }
 % weapon table...
-\newcommand\weaponTable{	\begin{tabular}{@{} p{3.0cm} p{2.0cm} p{3.0cm} p{3.3cm}}
+\newcommand\weaponTable{	\begin{tabular}{@{} p{3.5cm} p{2.0cm} p{3.0cm} p{4.5cm}}
 								\thead{Weapon} 	& \thead{Range} & \thead{Firepower}	& \thead{Notes}	\\ \hline	}
 \newcommand\weapon[4]{			\tpara{#1}		& \tpara{#2}	& \tpara{#3}		& \tpara{\emph{#4}}	\tabularnewline	} % use 'tabularnewline' in place of '\\' because 'raggedright' changes meaning of '\\'
 \newcommand\image[1]{		\end{tabular} & \imageCell{#1}	\\ }
@@ -92,7 +101,7 @@
 							{\centering \subsection{#1}}
 							#2 }
 % formations...
-\newcommand\formations[2]{	\begin{framed} 
+\newcommand\formations[2]{	\begin{framed}
 							\resetBanding
 							\begin{tabular}{p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}}
 								\multicolumn{4}{c}{\textbf{#1}} \\
