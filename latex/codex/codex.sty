@@ -51,15 +51,15 @@
 		\begin{center}
 		\fcolorbox[rgb]{0,0,0}{#4}{
 			\parbox{8cm}{
-				\begin{center}\textbf{#3: #1}\end{center}
+				\begin{center}\textbf{#3} \par \textbf{#1}\end{center}
 				#2
 			}
 		}
 		\end{center}
-	\end{figure}	
+	\end{figure}
 }
 \newcommand\specialRule[2]{
-	\callout{#1}{#2}{Special Rule}{0.95, 0.95, 0.95}
+	\callout{\subsubsection{#1}}{#2}{Special Rule}{0.95, 0.95, 0.95}
 }
 \newcommand\designConcept[2]{
 	\callout{#1}{#2}{Design Concept}{0.8, 0.8, 0.8}
@@ -117,7 +117,7 @@
 % formations...
 \newcommand\formations[2]{	\begin{framed}
 							\resetBanding
-							\begin{tabular}{p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}}
+							\begin{tabular}{p{3cm}p{4.5cm}p{4.7cm}p{3.4cm}} % p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}
 								\multicolumn{4}{c}{\textbf{#1}} \\
 								\multicolumn{4}{c}{\tnotes{#2}} \\
 								\thead{FORMATION NAME} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{3ex}	\tabularnewline \hline }
@@ -127,7 +127,7 @@
 % upgrades...
 \newcommand\upgrades[2]{	\begin{framed}
 							\resetBanding
-							\begin{tabular}{p{3cm}p{8.6cm}p{3.4cm}}
+							\begin{tabular}{p{3cm}p{9.6cm}p{3.4cm}} % p{3cm}p{8.6cm}p{3.4cm}
 								\multicolumn{3}{c}{\textbf{#1}} 								\\
 								\multicolumn{3}{c}{\tnotes{#2}}				 					\\
 								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}	\rule{0pt}{3ex}	\\ \hline }

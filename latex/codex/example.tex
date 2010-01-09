@@ -162,7 +162,6 @@ the units that make up the upgrade. Note that these will
 sometimes replace units in the formations they are taken for,
 and sometimes adds additional units to the formation. Each
 upgrade may be taken \underline{once} per formation.
-
 \specialRule{Stubborn}{
  Nurgle’s
  followers are inured against pain, implacable
@@ -197,30 +196,50 @@ upgrade may be taken \underline{once} per formation.
           {One Death Guard Lord. Six Death Guard Marines units.}
           {Any except Dreadclaws}
           {350 points}
-\formation{0 - 2 Death Guard Terminator Retinue}
-          {One Death Guard Lord. Between four to seven Death Guard Terminator units.}
-          {Chaos Champion, Dreadnoughts, Dreadclaws, Daemonic Pact, Daemon Prince, Icon Bearer, Transport}
-          {50 points \newline +100 points per unit}
-\formation{0 - 2 Plague Zombie Infestation}
-          {D6 + 7 Plague Zombie units.}
+\formation{Demon Pool}
+          {Greater Demon \newline Lesser Demon}
           {}
-          {200 points}
+          {75 points \newline 15 points}
 \formationsEND
+
 % support...
-\formations{DEATH GUARD SUPPORT RETINUES}{One per Death Guard Retinue or Death Guard Heavy Retinue}
+\formations{DEATH GUARD INFANTRY SUPPORT}{One per Death Guard Core Retinue}
 \formation{Death Guard Drop Retinue}
           {One Death Guard Lord. Four Death Guard Chaos Marine and two Plague Marines units.}
-          {Chaos Champion, Daemonic Pact, Daemon Prince, Death Guard Havocs, Dreadclaws, Icon Bearer, Plague Marines}
+          {Chaos Champion, Daemonic Pact, Daemon Prince, Death Guard Havocs, Dreadclaws, Icon Bearer, Plague Marines, Walkers}
           {250 points}
-\formation{Armoured Company}
-          {Four to six vehicles (may choose either Chaos Predators or Chaos Land Raiders or any mix of two).}
+\formation{Death Guard Terminator Retinue}
+          {One Death Guard Lord. Between four to seven Death Guard Terminator units.}
+          {Chaos Champion, Daemonic Pact, Daemon Prince, Icon Bearer, Transport, Walkers}
+          {50 points \newline +100 points per unit}
+\formation{Plague Zombie Infestation}
+          {D6 + 7 Plague Zombie units.}
           {}
-          {50 per Predator \newline 100 per Land Raider}
-\formation{Assault Retinue}{Up to three Plague Reapers.}{Support Vehicles}{275 points each}
-\formation{Plague Towers}{Up to two Plague Towers.}{}{325 points each}
-\formation{Blight Drone Swarm}{Four Blight Drones.}{}{200 points}
-\formation{Contagion Towers}{Four Contagion Towers.}{}{325 points}
+          {175 points}
 \formationsEND
+\formations{DEATH GUARD VEHICLE SUPPORT}{One per Death Guard Core Retinue}
+\formation{Armoured Company}
+          {Four units from following list: Predators, Land Raiders}
+          {Support Vehicles}
+          {50 points per Predator \newline 100 points per Land Raider}
+\formation{Assault Retinue}{Up to three Plague Reapers.}{Support Vehicles, Walkers}{275 points each}
+\formation{Blight Drone Swarm}{Five Blight Drones.}{}{250 points}
+\formation{Contagion Towers}{Four Contagion Towers.}{}{325 points}
+\formation{Plague Towers}{Up to three Plague Towers.}{}{325 points each}
+\formation{Defilers Assault Pack}{Four Defilers.}{Walkers}{275 points each}
+\formationsEND
+
+% assets...
+\upgrades{DEATH GUARD TITANS, SPACECRAFT AND NAVY ASSETS}{Up to a third of points}
+\upgrade{Plaguelord Titan}{One Plaguelord Titan}{850 points}
+\upgrade{Repugnant Titan}{One Repugnant Titan}{650 points}
+\upgrade{Fester Titan Pack}{One to two Fester Scout Titans}{300 points each}
+\upgrade{Hellblade}{Three Hellblade Fighters}{200 points}
+\upgrade{Helltalon}{Two Helltalon Fighter-Bombers}{200 points}
+\upgrade{Devastation}{One Devastation class Cruiser}{250 points}
+\upgrade{Despoiler}{One Despoiler class Battleship}{250 points}
+\upgradesEND
+
 % upgrades...
 \upgrades{DEATH GUARD UPGRADES}{Each upgrade may only be taken once if formation allows taking it}
 \upgrade{Chaos Champion}{Adds a Chaos Champion to a unit in the formation}{50 points}
@@ -232,22 +251,19 @@ upgrade may be taken \underline{once} per formation.
 \upgrade{Icon Bearer}{Add an Icon Bearer to a unit in the formation}{50 points}
 \upgrade{Plague Marines}{Add four Plague Marines to the formation}{150 points}
 \upgrade{Support Vehicles}
-        {Add up to three units}
+        {\begin{tabular}{@{} l r @{}}Add up to three units & Predator, Stalker \\ & Land Raider
+         \end{tabular}
+        }
         {50 points \newline 75 points}
 \upgrade{Transport}
-        {Add Rhinos and/or Death Guard Land Raiders to the formation. You can take only minimum to transport the
+        {Add Rhinos and/or Land Raiders to the formation. You can take only minimum to transport the
          formation (including any transport capable unit taken from Support Vehicle Upgrade).}
         {10 per Rhino \newline 75 per Land Raider}
-\upgradesEND
-% assets...
-\upgrades{DEATH GUARD TITANS, SPACECRAFT AND NAVY ASSETS}{Up to a third of points}
-\upgrade{Banelord Titan}{One Banelord Titan}{850 points}
-\upgrade{Ravager Titan}{One Ravager Titan}{625 points}
-\upgrade{Feral Titan Pack}{One to two Feral Scout Titans}{325 each}
-\upgrade{Hellblade}{Three Hellblade Fighters}{200 points}
-\upgrade{Helltalon}{Two Helltalon Fighter-Bombers}{200 points}
-\upgrade{Devastation}{One Devastation class Cruiser}{250 points}
-\upgrade{Despoiler}{One Despoiler class Battleship}{250 points}
+\upgrade{Walkers}
+        {\begin{tabular}{@{} l r @{}}Add up to three units & Dreadnought  \\ & Defiler, Desecrator
+         \end{tabular}
+        }
+        {50 points \newline 75 points}
 \upgradesEND
 
 \twocolumn			% required after the army list
