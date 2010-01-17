@@ -19,8 +19,8 @@
 \newcounter{toggle}
 \newcommand\resetBanding[0]{ \setcounter{toggle}{1} }
 \newcommand\banding[0]{	\ifcase\arabic{toggle}%
-						\or \rowcolor[rgb]{0.90, 0.9, 0.9}\setcounter{toggle}{2}%
-						\or \rowcolor[rgb]{0.95, 0.95, 0.95}\setcounter{toggle}{1}%
+						\or \rowcolor[rgb]{0.9, 0.9, 0.9} \setcounter{toggle}{2}%
+						\or \rowcolor[rgb]{0.95, 0.95, 0.95} \setcounter{toggle}{1}%
 						\fi }
 % no paragraph indents...
 \setlength\parindent{0pt}
@@ -51,7 +51,7 @@
 		\begin{center}
 		\fcolorbox[rgb]{0,0,0}{#4}{
 			\parbox{8cm}{
-				\begin{center}\textbf{#3} \par \textbf{#1}\end{center}
+				\begin{center}\textbf{#3}\textbf{#1}\end{center}
 				#2
 			}
 		}
@@ -59,10 +59,10 @@
 	\end{figure}
 }
 \newcommand\specialRule[2]{
-	\callout{\subsubsection{#1}}{#2}{Special Rule}{0.95, 0.95, 0.95}
+	\callout{\subsubsection{#1}}{#2}{SPECIAL RULE\vspace{-5mm}}{0.95, 0.95, 0.95}
 }
 \newcommand\designConcept[2]{
-	\callout{#1}{#2}{Design Concept}{0.8, 0.8, 0.8}
+	\callout{#1}{#2}{DESIGN CONCEPT \\}{0.8, 0.8, 0.8}
 }
 
 
@@ -111,9 +111,14 @@
 % ARMY LIST MACROS
 %
 % header
-\newcommand\armylist[2]{	\clearpage \onecolumn
-							{\centering \subsection{#1}}
-							#2 }
+\newcommand\armylist[3]{	\clearpage \onecolumn
+							\begin{tabular}{@{}p{2.2cm}p{12.8cm}p{2.2cm}@{}}
+								\vspace{-10mm}\includegraphics[width=2.2cm]{#2} &
+								{\centering \subsection{#1}} &
+								\vspace{-10mm}\includegraphics[width=2.2cm]{#2} \\
+							\end{tabular}				
+							#3 												
+							}
 % formations...
 \newcommand\formations[2]{	\begin{framed}
 							\resetBanding
@@ -132,5 +137,7 @@
 								\multicolumn{3}{c}{\tnotes{#2}}				 					\\
 								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}	\rule{0pt}{3ex}	\\ \hline }
 \newcommand\upgrade[3]{			\banding
-								\tpara{#1} 		& \tpara{#2}	& \tpara{#3}					\tabularnewline }
+								\tpara{#1} 		& 
+								\tpara{#2}		&
+								\tpara{#3}	\tabularnewline }
 \newcommand\upgradesEND{	\end{tabular} \end{framed}}
