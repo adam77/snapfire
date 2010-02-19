@@ -52,7 +52,7 @@
 		\fcolorbox[rgb]{0,0,0}{#4}{
 			\parbox{8cm}{
 				\begin{center}\textbf{#3}\textbf{#1}\end{center}
-				#2
+				\emph{#2}
 			}
 		}
 		\end{center}
@@ -70,10 +70,10 @@
 % DATAFAX MACROS
 %
 % styles...
-\newcommand\tdata[1]{	\footnotesize{#1}}%
+\newcommand\tdata[1]{	\scriptsize{#1}}%\footnotesize{#1}}
 \newcommand\tpara[1]{	\raggedright\tdata{#1}}%
 \newcommand\tnotes[1]{	\tdata{\emph{#1}}	}
-\newcommand\thead[1]{	\footnotesize{\textbf{#1}}	}
+\newcommand\thead[1]{	\textbf{\tdata{#1}}	}% \footnotesize{\textbf{#1}}	}
 % unit data table...
 \newcommand\unitTable[5]{	\begin{tabular*}{13.6cm}{@{} p{2.6cm} @{\extracolsep{\fill}} l c c c p{0.3cm} @{}}
 								\thead{Type} 	& \thead{Speed} & \thead{Armour} 	& \thead{Close Combat} 	& \thead{Firefight}	\\ \hline
@@ -114,30 +114,35 @@
 \newcommand\armylist[3]{	\clearpage \onecolumn
 							\begin{tabular}{@{}p{2.2cm}p{12.8cm}p{2.2cm}@{}}
 								\vspace{-10mm}\includegraphics[width=2.2cm]{#2} &
-								{\centering \subsection{#1}} &
+								\vspace{-15mm}{\centering \subsection{#1} \tdata{#3} } &
 								\vspace{-10mm}\includegraphics[width=2.2cm]{#2} \\
-							\end{tabular}				
-							#3 												
+							\end{tabular}
+							% #3
 							}
 % formations...
+\newcommand\mainformation[2]{	\begin{framed}
+							\resetBanding
+							\begin{tabular}{p{2.3cm}p{4.9cm}p{5cm}p{3.4cm}} % p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}
+								\multicolumn{4}{c}{\textbf{#1}} \\
+								\thead{FORMATION} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{3ex}	\tabularnewline \hline }
 \newcommand\formations[2]{	\begin{framed}
 							\resetBanding
-							\begin{tabular}{p{3cm}p{4.5cm}p{4.7cm}p{3.4cm}} % p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}
+							\begin{tabular}{p{2.3cm}p{4.9cm}p{5cm}p{3.4cm}} % p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}
 								\multicolumn{4}{c}{\textbf{#1}} \\
 								\multicolumn{4}{c}{\tnotes{#2}} \\
-								\thead{FORMATION NAME} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{3ex}	\tabularnewline \hline }
+								\thead{FORMATION} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{3ex}	\tabularnewline \hline }
 \newcommand\formation[4]{		\banding
 								\tpara{#1}				&	\tpara{#2} 		& \tpara{#3} 		& \tpara{#4} 					\tabularnewline }
 \newcommand\formationsEND{	\end{tabular} \end{framed} }
 % upgrades...
 \newcommand\upgrades[2]{	\begin{framed}
 							\resetBanding
-							\begin{tabular}{p{3cm}p{9.6cm}p{3.4cm}} % p{3cm}p{8.6cm}p{3.4cm}
+							\begin{tabular}{p{2.3cm}p{10.2cm}p{3.4cm}} % p{3cm}p{8.6cm}p{3.4cm}
 								\multicolumn{3}{c}{\textbf{#1}} 								\\
 								\multicolumn{3}{c}{\tnotes{#2}}				 					\\
 								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}	\rule{0pt}{3ex}	\\ \hline }
 \newcommand\upgrade[3]{			\banding
-								\tpara{#1} 		& 
+								\tpara{#1} 		&
 								\tpara{#2}		&
 								\tpara{#3}	\tabularnewline }
 \newcommand\upgradesEND{	\end{tabular} \end{framed}}
