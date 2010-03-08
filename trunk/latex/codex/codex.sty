@@ -120,12 +120,14 @@
 								\vspace{-10mm}\includegraphics[width=2.2cm]{#2} \\
 							\end{tabular}
 							% #3
-							}
+							% table row height
+							\renewcommand\arraystretch{0.8}% (MyValue=1.0 is for standard spacing)
+}
 % formations...
-\newcommand\formations[2]{	\begin{framed}
+\newcommand\formations[2]{	\begin{framed}							
 							\resetBanding
 							\begin{tabular}{p{2.3cm}p{4.9cm}p{5cm}p{3.4cm}} % p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}
-								\multicolumn{4}{c}{\textbf{#1}\vspace{-1mm}} \\
+								\multicolumn{4}{c}{\textbf{#1}} \\
 								\multicolumn{4}{c}{\tnotes{#2}} \\
 								\thead{FORMATION} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST}	\tabularnewline \hline }
 \newcommand\formation[4]{		\banding
@@ -135,7 +137,7 @@
 \newcommand\upgrades[2]{	\begin{framed}
 							\resetBanding
 							\begin{tabular}{p{2.3cm}p{10.2cm}p{3.4cm}} % p{3cm}p{8.6cm}p{3.4cm}
-								\multicolumn{3}{c}{\textbf{#1}\vspace{-1mm}}					\\
+								\multicolumn{3}{c}{\textbf{#1}}					\\
 								\multicolumn{3}{c}{\tnotes{#2}}				 					\\
 								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}					\\ \hline }
 \newcommand\upgrade[3]{			\banding
