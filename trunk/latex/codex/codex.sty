@@ -52,7 +52,7 @@
 		\fcolorbox[rgb]{0,0,0}{#4}{
 			\parbox{8cm}{
 				\begin{center}\textbf{#3}\textbf{#1}\end{center}
-				\emph{#2}
+				{\em #2 }
 			}
 		}
 		\end{center}
@@ -110,6 +110,8 @@
 %
 % ARMY LIST MACROS
 %
+% multiline right justification
+\newcommand\pushRight[0]{ \rule{0pt}{1ex} \hspace{\stretch{1}} }
 % header
 \newcommand\armylist[3]{	\clearpage \onecolumn
 							\begin{tabular}{@{}p{2.2cm}p{12.8cm}p{2.2cm}@{}}
@@ -120,29 +122,22 @@
 							% #3
 							}
 % formations...
-\newcommand\mainformation[2]{	\begin{framed}
-							\resetBanding
-							\begin{tabular}{p{2.3cm}p{4.9cm}p{5cm}p{3.4cm}} % p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}
-								\multicolumn{4}{c}{\textbf{#1}} \\
-								\thead{FORMATION} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{3ex}	\tabularnewline \hline }
 \newcommand\formations[2]{	\begin{framed}
 							\resetBanding
 							\begin{tabular}{p{2.3cm}p{4.9cm}p{5cm}p{3.4cm}} % p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}
-								\multicolumn{4}{c}{\textbf{#1}} \\
+								\multicolumn{4}{c}{\textbf{#1}\vspace{-1mm}} \\
 								\multicolumn{4}{c}{\tnotes{#2}} \\
-								\thead{FORMATION} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST} \rule{0pt}{3ex}	\tabularnewline \hline }
+								\thead{FORMATION} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST}	\tabularnewline \hline }
 \newcommand\formation[4]{		\banding
-								\tpara{#1}				&	\tpara{#2} 		& \tpara{#3} 		& \tpara{#4} 					\tabularnewline }
+								\tpara{#1}			&	\tpara{#2} 		& \tpara{#3} 		& \tpara{#4}	\tabularnewline }
 \newcommand\formationsEND{	\end{tabular} \end{framed} }
 % upgrades...
 \newcommand\upgrades[2]{	\begin{framed}
 							\resetBanding
 							\begin{tabular}{p{2.3cm}p{10.2cm}p{3.4cm}} % p{3cm}p{8.6cm}p{3.4cm}
-								\multicolumn{3}{c}{\textbf{#1}} 								\\
+								\multicolumn{3}{c}{\textbf{#1}\vspace{-1mm}}					\\
 								\multicolumn{3}{c}{\tnotes{#2}}				 					\\
-								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}	\rule{0pt}{3ex}	\\ \hline }
+								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}					\\ \hline }
 \newcommand\upgrade[3]{			\banding
-								\tpara{#1} 		&
-								\tpara{#2}		&
-								\tpara{#3}	\tabularnewline }
+								\tpara{#1} 		& \tpara{#2}	& \tpara{#3}					\tabularnewline }
 \newcommand\upgradesEND{	\end{tabular} \end{framed}}
