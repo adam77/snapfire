@@ -21,20 +21,20 @@ var speeders =			{label:'Speeders'};
 var vindicator = 		{label:'Vindicator',						pts:75, upto:2};
 
 // DETACHMENTS
-var assaultD = 			{label:'Assault', 		pts:175, upgrades:[commander, vindicator]};
-var bikeD = 			{label:'Bike', 			pts:200, upgrades:[attackBike, commander]};
-var devastatorD = 		{label:'Devastator',	pts:250, upgrades:[commander, razorbacks, dreadnought, hunter, landRaiders]};
-var landRaiderD = 		{label:'Land Raider',	pts:400, upgrades:[commander, hunter, vindicator]};
-var landSpeederD =		{label:'Land Speeder',	pts:200, upgrades:[commander, speeders]};
+var assaultD = 			{label:'Assault Detachment', 		pts:175, upgrades:[commander, vindicator]};
+var bikeD = 			{label:'Bike Detachment', 			pts:200, upgrades:[attackBike, commander]};
+var devastatorD = 		{label:'Devastator Detachment',	pts:250, upgrades:[commander, razorbacks, dreadnought, hunter, landRaiders]};
+var landRaiderD = 		{label:'Land Raiders',	pts:400, upgrades:[commander, hunter, vindicator]};
+var landSpeederD =		{label:'Land Speeders',	pts:200, upgrades:[commander, speeders]};
 var landingCraftD =		{label:'Landing Craft',	pts:350, upgrades:[]};
 var predatorsD =		{label:'Predators',		pts:300, upgrades:[commander, hunter, vindicator]};
-var scoutD =			{label:'Scout',			pts:150, upgrades:[commander, razorbacks, sniper]};
+var scoutD =			{label:'Scout Detachment',			pts:150, upgrades:[commander, razorbacks, sniper]};
 var strikeCruiserD =	{label:'Strike Cruiser',pts:200, upgrades:[battleBarge]}; 
-var tacticalD =			{label:'Tactical',		pts:300, upgrades:[commander, razorbacks, dreadnought, hunter, vindicator]};
-var terminatorD =		{label:'Terminator',	pts:325, upgrades:[commander, vindicator, dreadnought, landRaiders]};
+var tacticalD =			{label:'Tactical Detachment',		pts:300, upgrades:[commander, razorbacks, dreadnought, hunter, vindicator]};
+var terminatorD =		{label:'Terminator Detachment',	pts:325, upgrades:[commander, vindicator, dreadnought, landRaiders]};
 var thunderhawkD =		{label:'Thunderhawk',	pts:200, upgrades:[]};
-var vindicatorD =		{label:'Vindicator',	pts:300, upgrades:[commander, hunter]};
-var whirlwindD =		{label:'Whirlwind',		pts:300, upgrades:[commander, hunter]};
+var vindicatorD =		{label:'Vindicators',	pts:300, upgrades:[commander, hunter]};
+var whirlwindD =		{label:'Whirlwinds',		pts:300, upgrades:[commander, hunter]};
 var detachmentList =	{label:'DETACHMENTS', options:[assaultD, bikeD, devastatorD, landRaiderD, landSpeederD, landingCraftD, predatorsD, scoutD, strikeCruiserD, tacticalD, terminatorD, thunderhawkD, vindicatorD, whirlwindD]};
 
 // NAVY
