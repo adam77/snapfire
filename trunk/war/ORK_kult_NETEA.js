@@ -55,8 +55,10 @@ var warbandList =		{label:'FORMATIONS', options:[warband, bigWarband, ugeWarband
 // OTHER
 var fightaSquadron = 	{label:'Fighta Squadron',	pts:150, upgrades:[fightaBomba], limited:true};
 var landa =				{label:'Landa',				pts:200, upgrades:[], limited:true};
-var killKroozer =		{label:'Kill Kroozer',		pts:200, upgrades:[battlekrooza], limited:true};
-var othersList = 		{label:'AIRCRAFT and SPACECRAFT', options:[fightaSquadron, landa, killKroozer], limited:true};
+var spacecraft =		{label:'Spacecraft',	upto:1};
+var killKroozer =		{label:'Kill Kroozer',		pts:200, upgrades:[], limited:true, group:spacecraft};
+var battleKroozer =		{label:'Battle Kroozer',	pts:250, upgrades:[], limited:true, group:spacecraft};
+var othersList = 		{label:'AIRCRAFT and SPACECRAFT', options:[fightaSquadron, landa, killKroozer, battleKroozer], limited:true};
 
 // DETAILS
 var listData = {

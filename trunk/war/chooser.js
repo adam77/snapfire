@@ -256,12 +256,20 @@ function checkFormationConstraints() {
 		var constraints = '';
 		// check 'upto' constraint
 		var formationData = option.formationData;
+		var groupData = option.formationData.group;
 		if (formationData.upto) {
 			var count = formationRows.findAll(function(x) {return x.formationData === formationData;}).size(); 
 			if (count >= formationData.upto) {
 				constraints += '[max ' + formationData.upto + ']';
 			}
 		}		
+		// check 'upto' GROUP constraint
+		if (groupData && groupData.upto) {
+			var group = formationRows.findAll(function (x) {return x.formationData.group === groupData;});
+			if (group.size() >= groupData.upto) {
+				constraints += ' [max ' + groupData.upto + ' ' + groupData.label + ']';
+			}
+		}
 		// update UI
 		if (constraints == '') {
 			activate(option);

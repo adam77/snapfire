@@ -12,8 +12,10 @@ var companyUpgrades = 	{label:'Upgrades', upto:3};
 	var hydra =				{label:'Hydra',								pts:50, upto:1, group:companyUpgrades};
 	companyUpgrades.options = [fireSupport, infantry, tankSquadron, demolisher, hellhounds, griffons, snipers, ogryns, hydra];
 var valkyrie =			{label:'Valkyrie Transport',				pts:150, upto:1};
+var emperor =				{label:'Emperor Class',						pts:150, upto:1};
 
 // SUPPORT (2 per company, no upgrades allowed)
+var spacecraft = {label:'Spacecraft', upto:1};
 var roughRider =	{label:'Rough Rider Platoon', 			pts:150, upgrades:[], restricted:true};
 var stormTrooper =	{label:'Storm Trooper Platoon',			pts:200, upgrades:[valkyrie], restricted:true};
 var basilisk =		{label:'Artillery Battery (Basilisk)',	pts:250, upgrades:[], restricted:true};
@@ -23,8 +25,8 @@ var sentinel =		{label:'Sentinel Squadron',				pts:100, upgrades:[], restricted:
 var deathstrike =	{label:'Deathstrike Missile Battery',	pts:200, upgrades:[], upto:1, restricted:true};
 var baneblade =		{label:'Super-heavy Tank Platoon (Baneblade)', pts:200, upgrades:[], restricted:true};
 var shadowsword =	{label:'Super-heavy Tank Platoon (Shadowsword)', pts:200, upgrades:[], restricted:true};
-var lunar =			{label:'Orbital Support (Lunar Class)',	pts:150, upgrades:[], restricted:true};
-var emperor =		{label:'Orbital Support (Emperor Class)',pts:300, upgrades:[], restricted:true};
+var lunar =			{label:'Orbital Support (Lunar Class)',	pts:150, upgrades:[emperor], restricted:true, group:spacecraft};
+var emperor =		{label:'Orbital Support (Emperor Class)',pts:300, upgrades:[], restricted:true, group:spacecraft};
 var flak =			{label:'Flak Battery',					pts:150, upgrades:[], restricted:true};
 var vulture =		{label:'Vulture Squadron',				pts:300, upgrades:[], restricted:true};
 var supportList =	{label:'SUPPORT FORMATIONS', options:[roughRider, stormTrooper, basilisk, bombard, manticore, sentinel, deathstrike, baneblade, shadowsword, lunar, emperor, flak, vulture]};
