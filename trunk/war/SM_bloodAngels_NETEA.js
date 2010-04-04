@@ -41,18 +41,18 @@ var speeders = 			{label:'Speeders'};
 	speeders.options = 		[tornado, typhoon];
 
 // DETACHMENTS
-var assaultD = 			{label:'Assault', 		pts:275, upgrades:[commander, fastAttack, heavySupport, hunter, assault, dreads]};
-var bikeD = 			{label:'Bike', 			pts:200, upgrades:[commander, fastAttack, attackBike]};
+var assaultD = 			{label:'Assault Detachment', 		pts:275, upgrades:[commander, fastAttack, heavySupport, hunter, assault, dreads]};
+var bikeD = 			{label:'Bike Detachment', 			pts:200, upgrades:[commander, fastAttack, attackBike]};
 var deathCompanyD =		{label:'Death Company',	pts:100, upgrades:[deathUnit]};
-var devastatorD = 		{label:'Devastator',	pts:250, upgrades:[commander, heavySupport, hunter, razorbacks, dreads]};
-var landSpeederD =		{label:'Land Speeder',	pts:200, upgrades:[commander, tornado, typhoon]};
+var devastatorD = 		{label:'Devastator Detachment',	pts:250, upgrades:[commander, heavySupport, hunter, razorbacks, dreads]};
+var landSpeederD =		{label:'Land Speeders',	pts:200, upgrades:[commander, tornado, typhoon]};
 var landingCraftD =		{label:'Landing Craft',	pts:375, upgrades:[]};
-var scoutD =			{label:'Scout',			pts:150, upgrades:[storm, sniper]};
+var scoutD =			{label:'Scout Detachment',			pts:150, upgrades:[storm, sniper]};
 var strikeCruiserD =	{label:'Strike Cruiser',pts:200, upgrades:[battleBarge], upto:1}; 
-var tacticalD =			{label:'Tactical',		pts:300, upgrades:[commander, assault, razorbacks, dreads, hunter, fastAttack, heavySupport]};
-var terminatorD =		{label:'Terminator',	pts:325, upgrades:[commander, dreads, termRaiders]};
+var tacticalD =			{label:'Tactical Detachment',		pts:300, upgrades:[commander, assault, razorbacks, dreads, hunter, fastAttack, heavySupport]};
+var terminatorD =		{label:'Terminator Detachment',	pts:325, upgrades:[commander, dreads, termRaiders]};
 var thunderhawkD =		{label:'Thunderhawk',	pts:200, upgrades:[]};
-var whirlwindD =		{label:'Whirlwind',		pts:300, upgrades:[hunter]};
+var whirlwindD =		{label:'Whirlwinds',		pts:300, upgrades:[hunter]};
 var detachments =		{label:'DETACHMENTS', options:[assaultD, bikeD, devastatorD, landSpeederD, landingCraftD, scoutD, strikeCruiserD, tacticalD, terminatorD, thunderhawkD, whirlwindD]};
 
 // ALLIES
