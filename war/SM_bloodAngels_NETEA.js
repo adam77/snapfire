@@ -2,7 +2,6 @@
 var deathUnit =			{label:'Additional Unit',					pts:75};
 var assault =			{label:'Assault',							pts:75};
 var attackBike =		{label:'Attack Bike', 						pts:0};
-var battleBarge =		{label:'Battle Barge',						pts:150, upto:1};
 var commander =			{label:'Cmdr', upto:1};
 	var captain = 			{label:'Captain',			pts:50, group:commander};
 	var chaplain = 			{label:'Chaplain', 			pts:50, group:commander};
@@ -48,12 +47,14 @@ var devastatorD = 		{label:'Devastator Detachment',	pts:250, upgrades:[commander
 var landSpeederD =		{label:'Land Speeders',	pts:200, upgrades:[commander, tornado, typhoon]};
 var landingCraftD =		{label:'Landing Craft',	pts:375, upgrades:[]};
 var scoutD =			{label:'Scout Detachment',			pts:150, upgrades:[storm, sniper]};
-var strikeCruiserD =	{label:'Strike Cruiser',pts:200, upgrades:[battleBarge], upto:1}; 
+var spacecraft = 		{label:'Spacecraft', upto:1};
+var strikeCruiserD =	{label:'Strike Cruiser',pts:200, upgrades:[], group:spacecraft}; 
+var battleBargeD =		{label:'Battle Barge',pts:350, upgrades:[], group:spacecraft}; 
 var tacticalD =			{label:'Tactical Detachment',		pts:300, upgrades:[commander, assault, razorbacks, dreads, hunter, fastAttack, heavySupport]};
 var terminatorD =		{label:'Terminator Detachment',	pts:325, upgrades:[commander, dreads, termRaiders]};
 var thunderhawkD =		{label:'Thunderhawk',	pts:200, upgrades:[]};
 var whirlwindD =		{label:'Whirlwinds',		pts:300, upgrades:[hunter]};
-var detachments =		{label:'DETACHMENTS', options:[assaultD, bikeD, devastatorD, landSpeederD, landingCraftD, scoutD, strikeCruiserD, tacticalD, terminatorD, thunderhawkD, whirlwindD]};
+var detachments =		{label:'DETACHMENTS', options:[assaultD, battleBargeD, bikeD, devastatorD, landSpeederD, landingCraftD, scoutD, strikeCruiserD, tacticalD, terminatorD, thunderhawkD, whirlwindD]};
 
 // ALLIES
 var thunderbolt = 		{label:'Thunderbolt Fighters',	pts:150, upgrades:[], limited:true};
