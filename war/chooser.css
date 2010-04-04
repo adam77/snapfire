@@ -1,0 +1,162 @@
+/* GENERIC */
+body {
+	background-color:olive;
+	margin:10mm;
+}
+table {
+	border-collapse:collapse;
+}
+th, td {
+	padding:0.5em 1em 0.5em 1em;
+}
+tr.interactive:hover {
+	cursor:pointer;
+	background-color:#333;
+	color:orange;
+}
+.inactive {
+	cursor:auto;
+	font-style:italic;
+	color:#666;
+}
+
+/* ORBAT */
+#orbat > * > tr > td, #orbat th {
+	padding-left:8mm;
+	padding-right:8mm;
+}
+#orbatTitle {
+	text-align:left;
+}
+#orbat {
+	font-family:sans-serif;
+	background-color:#fff;
+	border:3px solid black;
+	width:60%;
+}
+#orbatListName {
+	font-style:italic;
+	font-size:x-small;
+}
+#orbat tr.orbatFormation td {
+	padding-bottom:0;
+}
+#orbat tr.orbatUpgrade td.points {
+	padding-left:8mm;
+}
+#orbat tr.orbatUpgrade td {
+	font-size:small;
+	padding-left:12mm;
+	padding-top:0;
+	padding-bottom:0;
+}
+#orbat tbody {
+	border-top:solid 1px black;			
+}
+.points {
+	padding-left:0;	
+	text-align:right;
+}
+#orbatTotal {
+	vertical-align:top;
+	text-align:right;
+}
+#formationDivider {
+	border-bottom:1px dotted gray;
+}
+#formationDivider td {
+	padding:0.3em;
+}
+#controls a {
+	padding-right:1em;
+}
+#controls a.selected {
+	text-decoration:none;
+	cursor:auto;
+	color:#363;
+}
+#controls {
+	font-family:monospace;
+	font-size:small;
+	margin-top:0.5em;
+}
+#warnings {
+	color:#aa0000;
+	font-size:x-small;
+	font-weight:normal;
+}
+
+
+/* DROP DOWN */
+div.dropDown {
+	cursor:auto;
+	position:absolute;
+	z-index:99;
+	width:44%;
+	margin-left:10em;
+	margin-top:-4px;
+}
+
+/* ARMY LISTS */
+#armyList {
+	padding:0 1em 1em 1em;			
+	position:fixed;
+	right:0;
+	top:0;
+	height:100%;
+	width:33%;
+	overflow:auto;
+}
+#armyList .listDiv {
+	margin-top:2em;
+}
+.listDiv {
+	padding:0.5em 1em 1em 1em;
+	border:1px solid #222;
+	background-color:#ddd;
+	color:#222;
+	font-family:serif;
+	font-size:small;
+	box-shadow:black 5px 5px 5px;
+	-webkit-box-shadow: black 5px 5px 5px;
+	-moz-box-shadow: black 5px 5px 5px;
+}
+.listDiv table {
+	width:100%;
+}
+.listDiv table td {
+	padding:0 1em 0 1em;
+}
+.listDiv td.points {
+	padding-left:0;
+	text-align:right;
+}
+.listDiv table th {
+	border-bottom:1px solid #222;
+}
+.listDiv .constraint {
+	float:right;
+}
+.even {
+	background-color:#ccc;
+}
+
+@media print {
+	body {
+		background-color:white;
+	}
+	#armyList, #controls, div.dropDown {
+		display:none;
+	}
+	#orbat {
+		width:100%;
+	}
+}
+
+#importDiv {
+	margin-bottom:1em;
+}
+#importDiv textarea {
+	width:30em;
+	height:25em;
+}

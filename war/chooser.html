@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<title>Army Picker</title>
+	<link rel="stylesheet" type="text/css" href="chooser.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js"></script>
+	<script type="text/javascript" src="./chooser.js"></script>
+</head>
+<body>
+	<div id="armyList">
+	</div>
+	<table id="orbat" class="viewDiv">
+		<thead id="orbatHeader">
+			<tr class="interactive">
+				<th id="orbatTitle">
+					<span id="orbatName">&lt;click to edit name&gt;</span><br>
+					<span id="orbatListName">loading...</span><br>
+					<span id="warnings"></span>
+				</th>
+				<th id="orbatTotal"><span id="totalPts">0</span><br>pts</th>
+			</tr>
+		</thead>
+		<tfoot>
+			<tr><td></td><td></td></tr>
+		</tfoot>
+		<tbody id="orbatBody">
+			<tr id="formationDivider"><td></td><td></td></tr>
+		</tbody>
+	</table>
+	<div id="controls">
+		<div id="plainTextDiv" class="viewDiv" style="display:none">
+		</div>
+		<div id="importDiv" class="viewDiv" style="display:none">
+			<textarea id="importText" rows="20" cols="40">&lt;paste list here&gt;</textarea><br>
+			<input id="doImport" type="submit" value="Import List">
+		</div>
+		<a id="viewTable" href="javascript:void(0)">table view</a>
+		<a id="viewText" href="javascript:void(0)">plain text</a>
+		<a id="viewImport" href="javascript:void(0)">import</a>
+	</div>
+</body>
+</html>
