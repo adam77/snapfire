@@ -38,8 +38,12 @@ tr.interactive:hover {
 	font-style:italic;
 	font-size:x-small;
 }
+#orbat tr {
+	border-bottom:none;
+}
 #orbat tr.orbatFormation td {
 	padding-bottom:0;
+	border-bottom:none;
 }
 #orbat span.upgradeMultiplier {
 	float:left;
@@ -64,11 +68,8 @@ tr.interactive:hover {
 	vertical-align:top;
 	text-align:right;
 }
-#formationDivider {
+#orbat #formationDivider {
 	border-bottom:1px dotted gray;
-}
-#formationDivider td {
-	padding:0.3em;
 }
 #controls a {
 	padding-right:1em;
