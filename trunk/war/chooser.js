@@ -208,7 +208,7 @@ function removeUpgrade(upgradeRow, formationId) {
 			multiplier.remove();
 		}
 		else {
-			multiplier.update(count + '&nbsp;x&nbsp;');
+			multiplier.update(count + 'x&nbsp;');
 		}
 		upgradeRow.childElements()[1].update(count * upgradeRow.upgradeData.pts);
 	}
@@ -252,11 +252,11 @@ function addUpgrade(event, formationId, upgradeData) {
 		// at least 1 existing upgrade of this type
 		if (!existingUpgrade.down().down()) {
 			// exactly 1 existing upgrade of this type
-			var newMultiplier = new Element('span', {'class':'upgradeMultiplier'}).update('1&nbsp;x&nbsp;');
+			var newMultiplier = new Element('span', {'class':'upgradeMultiplier'}).update('1x&nbsp;');
 			existingUpgrade.down().insert(newMultiplier);
 		}
 		var count = 1 + upgradeMultiplier(existingUpgrade);
-		existingUpgrade.down().down().update(count + '&nbsp;x&nbsp;');
+		existingUpgrade.down().down().update(count + 'x&nbsp;');
 		existingUpgrade.childElements()[1].update(count * upgradeData.pts);
 	}
 
@@ -334,7 +334,7 @@ function upgradeMultiplier(upgradeRow) {
 		return 0;
 	}
 	else if (upgradeRow.down().down()) {
-		return parseInt(upgradeRow.down().down().innerHTML.replace('&nbsp;x&nbsp;',''));
+		return parseInt(upgradeRow.down().down().innerHTML.replace('x&nbsp;',''));
 	}
 	else {
 		return 1;
