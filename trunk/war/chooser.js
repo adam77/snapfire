@@ -120,12 +120,20 @@ function doImport() { // todo: mandatory formations break because they are not l
 					$('orbatName').update(orbatName);
 				}
 				else if(line.include(' +')) {
-					var label = line.sub( /[0-9 \+]+/, '');
-					// alert(label + ':' + line);
+					var label = line.sub( /[0-9]+ \+/, '');
+					var count = 1;
+					var multiplierIdx = label.indexOf('x ');
+					if (multiplierIdx > 0) {
+						count = parseInt(label.substr(0,multiplierIdx));
+						label = label.substr(multiplierIdx+2);	
+					}
+					//alert(label + ':' + count + ':' + line);
 					var upgradeData = $(currentFormation + 'upgradeOptions').childElements().slice(1).find(function(x) {
 						return x.upgradeData.label == label;
 					}).upgradeData;
-					addUpgrade(null, currentFormation, upgradeData);
+					for (var i=0; i<count; i++) {
+						addUpgrade(null, currentFormation, upgradeData);
+					}
 				}
 				else {
 					var label = line.sub( /[0-9 ]+/, '');
@@ -157,7 +165,8 @@ function viewPlainText() {
 			txt.insert(new Element('br'));
 		}
 		else if (x.hasClassName('orbatUpgrade')) {
-			txt.insert(padPoints(x.upgradeData.pts) + ' +' + x.upgradeData.label);
+			var joiner = '&nbsp;+' + ((upgradeMultiplier(x) > 1) ? upgradeMultiplier(x) + 'x&nbsp;' : '');
+			txt.insert(padPoints(x.upgradeData.pts) + joiner + x.upgradeData.label);
 			txt.insert(new Element('br'));	
 		}		
 		else if (x == $('formationDivider')) {
@@ -191,8 +200,24 @@ function addPoints(toAdd) {
 }
 
 function removeUpgrade(upgradeRow, formationId) {
+	var multiplier = upgradeRow.down().down();
+	// 2 or more?
+	if (multiplier) {
+		var count = upgradeMultiplier(upgradeRow) - 1;
+		if (count == 1) {
+			multiplier.remove();
+		}
+		else {
+			multiplier.update(count + '&nbsp;x&nbsp;');
+		}
+		upgradeRow.childElements()[1].update(count * upgradeRow.upgradeData.pts);
+	}
+	// only 1
+	else {
+		upgradeRow.remove();
+	}
+
 	addPoints(-upgradeRow.upgradeData.pts);
-	upgradeRow.remove();
 	checkUpgradeConstraints(formationId, upgradeRow.upgradeData);
 	checkArmyConstraints();
 }
@@ -200,7 +225,7 @@ function removeUpgrade(upgradeRow, formationId) {
 function removeFormation(formationRow, pts) {
 	formationRow.remove();
 	$$('.' + formationRow.identify()).each(function(upgrade) {
-		addPoints(-upgrade.upgradeData.pts);
+		addPoints(-parseInt(upgrade.childElements()[1].innerHTML));
 		upgrade.remove();
 	});
 	addPoints(-pts);
@@ -209,17 +234,34 @@ function removeFormation(formationRow, pts) {
 }
 
 function addUpgrade(event, formationId, upgradeData) {
-	var newRow = new Element('tr', {'class':'interactive orbatUpgrade ' + formationId}).update(
-					new Element('td').update(upgradeData.label))
-				.insert(
-					new Element('td', {'class':'points'}).update(upgradeData.pts));
 
-	newRow.upgradeData = upgradeData;
-	$(formationId).insert({after:newRow});
-	addPoints(upgradeData.pts);
-	newRow.observe('click', removeUpgrade.bind(this, newRow, formationId));	
+	var upgrades = $$('.' + formationId);
+	var existingUpgrade = upgrades.find( function(x) {return x.upgradeData === upgradeData;} );
+
+	if (!existingUpgrade) {
+		var newRow = new Element('tr', {'class':'interactive orbatUpgrade ' + formationId}).update(
+						new Element('td').update(upgradeData.label))
+					.insert(
+						new Element('td', {'class':'points'}).update(upgradeData.pts));
+
+		newRow.upgradeData = upgradeData;
+		$(formationId).insert({after:newRow});
+		newRow.observe('click', removeUpgrade.bind(this, newRow, formationId));	
+	}
+	else {
+		// at least 1 existing upgrade of this type
+		if (!existingUpgrade.down().down()) {
+			// exactly 1 existing upgrade of this type
+			var newMultiplier = new Element('span', {'class':'upgradeMultiplier'}).update('1&nbsp;x&nbsp;');
+			existingUpgrade.down().insert(newMultiplier);
+		}
+		var count = 1 + upgradeMultiplier(existingUpgrade);
+		existingUpgrade.down().down().update(count + '&nbsp;x&nbsp;');
+		existingUpgrade.childElements()[1].update(count * upgradeData.pts);
+	}
 
 	// constraints
+	addPoints(upgradeData.pts);
 	checkUpgradeConstraints(formationId);
 	checkArmyConstraints();
 }
@@ -280,6 +322,25 @@ function checkFormationConstraints() {
 	});
 }
 
+// upgrades of a given type for a given formation
+function countUpgrades(upgradeData, formationId) {
+	var upgradeRow = $$('.' + formationId).find(function(x) {return x.upgradeData === upgradeData;});
+	return upgradeMultiplier(upgradeRow);
+}
+
+// upgrades of a given type
+function upgradeMultiplier(upgradeRow) {
+	if (!upgradeRow) {
+		return 0;
+	}
+	else if (upgradeRow.down().down()) {
+		return parseInt(upgradeRow.down().down().innerHTML.replace('&nbsp;x&nbsp;',''));
+	}
+	else {
+		return 1;
+	}
+}
+
 function checkUpgradeConstraints(formationId) {
 	var upgradeRows = $$('.' + formationId);
 	var upgradeOptions = $(formationId + 'upgradeOptions').childElements().slice(1); // remove header row
@@ -290,7 +351,7 @@ function checkUpgradeConstraints(formationId) {
 		var groupData = option.upgradeData.group;
 		// check 'upto' constraint	
 		if (upgradeData.upto) {		
-			var numUpgrades = upgradeRows.findAll(function (x) {return x.upgradeData === upgradeData;}).size();
+			var numUpgrades = countUpgrades(upgradeData, formationId);
 			if (numUpgrades >= upgradeData.upto) {
 				constraints += '[max ' + upgradeData.upto + ']';
 			}
@@ -298,7 +359,11 @@ function checkUpgradeConstraints(formationId) {
 		// check 'upto' GROUP constraint
 		if (groupData && groupData.upto) {
 			var group = upgradeRows.findAll(function (x) {return x.upgradeData.group === groupData;});
-			if (group.size() >= groupData.upto) {
+			var numUpgrades = 0;
+			group.each(function(x) {
+				numUpgrades += countUpgrades(x.upgradeData, formationId);
+			});
+			if (numUpgrades >= groupData.upto) {
 				constraints += ' [max ' + groupData.upto + ' ' + groupData.label + ']';
 			}
 		}
