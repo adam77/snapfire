@@ -41,6 +41,9 @@ tr.interactive:hover {
 #orbat tr.orbatFormation td {
 	padding-bottom:0;
 }
+#orbat span.upgradeMultiplier {
+	float:left;
+}
 #orbat tr.orbatUpgrade td.points {
 	padding-left:8mm;
 }
