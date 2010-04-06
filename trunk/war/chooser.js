@@ -165,8 +165,9 @@ function viewPlainText() {
 			txt.insert(new Element('br'));
 		}
 		else if (x.hasClassName('orbatUpgrade')) {
-			var joiner = '&nbsp;+' + ((upgradeMultiplier(x) > 1) ? upgradeMultiplier(x) + 'x&nbsp;' : '');
-			txt.insert(padPoints(x.upgradeData.pts) + joiner + x.upgradeData.label);
+			var multiplier = upgradeMultiplier(x);
+			var joiner = '&nbsp;+' + (multiplier > 1 ? multiplier + 'x&nbsp;' : '');
+			txt.insert(padPoints(x.upgradeData.pts * multiplier) + joiner + x.upgradeData.label);
 			txt.insert(new Element('br'));	
 		}		
 		else if (x == $('formationDivider')) {
