@@ -21,6 +21,9 @@ tr.interactive:hover {
 }
 
 /* ORBAT */
+#orbat th {
+//	background-color:#CCFFCC;
+}
 #orbat > * > tr > td, #orbat th {
 	padding-left:8mm;
 	padding-right:8mm;
@@ -52,13 +55,13 @@ tr.interactive:hover {
 	padding-left:8mm;
 }
 #orbat tr.orbatUpgrade td {
-	font-size:small;
-	padding-left:12mm;
+	font-size:x-small;
+	padding-left:8mm;
 	padding-top:0;
 	padding-bottom:0;
 }
 #orbat tbody {
-	border-top:solid 1px black;			
+	border-top:dotted 1px gray;			
 }
 .points {
 	padding-left:0;	
@@ -83,6 +86,7 @@ tr.interactive:hover {
 	font-family:monospace;
 	font-size:small;
 	margin-top:0.5em;
+	margin-bottom:10em;
 }
 #warnings {
 	color:#aa0000;
