@@ -9,10 +9,10 @@ table {
 th, td {
 	padding:0.5em 1em 0.5em 1em;
 }
-tr.interactive:hover {
+tr.interactive:hover > td {
 	cursor:pointer;
 	background-color:#333;
-	color:orange;
+	color:orange !important;
 }
 .inactive {
 	cursor:auto;
@@ -21,17 +21,14 @@ tr.interactive:hover {
 }
 
 /* ORBAT */
-#orbat th {
-//	background-color:#CCFFCC;
-}
-#orbat > * > tr > td, #orbat th {
+.orbat > * > tr > td, .orbat th {
 	padding-left:8mm;
 	padding-right:8mm;
 }
 #orbatTitle {
 	text-align:left;
 }
-#orbat {
+.orbat {
 	font-family:sans-serif;
 	background-color:#fff;
 	border:3px solid black;
@@ -41,26 +38,31 @@ tr.interactive:hover {
 	font-style:italic;
 	font-size:x-small;
 }
-#orbat tr {
+.orbat tr {
 	border-bottom:none;
 }
-#orbat tr.orbatFormation td {
+.orbat tr.orbatFormation td {
 	padding-bottom:0;
 	border-bottom:none;
 }
-#orbat span.upgradeMultiplier {
+.orbat span.upgradeMultiplier {
 	float:left;
 }
-#orbat tr.orbatUpgrade td.points {
+tr.orbatUpgrade > td.points {
 	padding-left:8mm;
+	color:white;
 }
-#orbat tr.orbatUpgrade td {
+tr.orbatUpgrade > td {
 	font-size:x-small;
 	padding-left:8mm;
 	padding-top:0;
 	padding-bottom:0;
+	color:#444444;
 }
-#orbat tbody {
+tr.optionalUnit > td {
+	color:black;
+}
+.orbat tbody {
 	border-top:dotted 1px gray;			
 }
 .points {
@@ -71,7 +73,7 @@ tr.interactive:hover {
 	vertical-align:top;
 	text-align:right;
 }
-#orbat #formationDivider {
+#formationDivider {
 	border-bottom:1px dotted gray;
 }
 #controls a {
@@ -92,6 +94,10 @@ tr.interactive:hover {
 	color:#aa0000;
 	font-size:x-small;
 	font-weight:normal;
+}
+.units {
+	font-size:x-small;
+//	color:black;
 }
 
 

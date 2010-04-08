@@ -201,12 +201,13 @@ function addPoints(toAdd) {
 }
 
 function removeUpgrade(upgradeRow, formationId) {
-	var multiplier = upgradeRow.down().down();
+	var multiplier = upgradeRow.multiplierSpan;
 	// 2 or more?
 	if (multiplier) {
 		var count = upgradeMultiplier(upgradeRow) - 1;
 		if (count == 1) {
 			multiplier.remove();
+			upgradeRow.multiplierSpan = null;
 		}
 		else {
 			multiplier.update(count + 'x&nbsp;');
@@ -219,6 +220,7 @@ function removeUpgrade(upgradeRow, formationId) {
 	}
 
 	addPoints(-upgradeRow.upgradeData.pts);
+	updateFormationPoints(formationId, -upgradeRow.upgradeData.pts);
 	checkUpgradeConstraints(formationId, upgradeRow.upgradeData);
 	checkArmyConstraints();
 }
@@ -234,34 +236,54 @@ function removeFormation(formationRow, pts) {
 	checkArmyConstraints();
 }
 
+function updateFormationPoints(formationId, pts) {
+	var ptsCell = $(formationId).childElements()[1];
+	ptsCell.update( parseInt(ptsCell.innerHTML) + pts );
+}
+
 function addUpgrade(event, formationId, upgradeData) {
 
 	var upgrades = $$('.' + formationId);
 	var existingUpgrade = upgrades.find( function(x) {return x.upgradeData === upgradeData;} );
 
 	if (!existingUpgrade) {
-		var newRow = new Element('tr', {'class':'interactive orbatUpgrade ' + formationId}).update(
-						new Element('td').update(upgradeData.label))
-					.insert(
+		var newCell = new Element('td').update(upgradeData.label);
+		var clazz = 'interactive orbatUpgrade ' + formationId + (upgradeData.optional ? ' optionalUnit' : '');
+		var newRow = new Element('tr', {'class':clazz}).update(
+						newCell 
+					 ).insert(
 						new Element('td', {'class':'points'}).update(upgradeData.pts));
 
 		newRow.upgradeData = upgradeData;
 		$(formationId).insert({after:newRow});
-		newRow.observe('click', removeUpgrade.bind(this, newRow, formationId));	
+		// delete event
+		if (!upgradeData.optional) {
+			newRow.observe('click', removeUpgrade.bind(this, newRow, formationId));	
+		}
+		// dropdown
+		if (upgradeData.optional) {
+			var dropDown = createOptionals(upgradeData.group.options.without(upgradeData), formationId, newRow);			
+			newCell.insert(dropDown);
+			dropDown.hide();
+			newRow.observe('mouseover', function() { dropDown.show(); });
+			newRow.observe('mouseout', function() { dropDown.hide(); });
+		}
 	}
 	else {
 		// at least 1 existing upgrade of this type
-		if (!existingUpgrade.down().down()) {
+		if (!existingUpgrade.multiplierSpan) {
 			// exactly 1 existing upgrade of this type
 			var newMultiplier = new Element('span', {'class':'upgradeMultiplier'}).update('1x&nbsp;');
+			existingUpgrade.multiplierSpan = newMultiplier;
 			existingUpgrade.down().insert(newMultiplier);
 		}
 		var count = 1 + upgradeMultiplier(existingUpgrade);
-		existingUpgrade.down().down().update(count + 'x&nbsp;');
+		$(existingUpgrade.multiplierSpan).update(count + 'x&nbsp;');
 		existingUpgrade.childElements()[1].update(count * upgradeData.pts);
 	}
 
 	// constraints
+	updateFormationPoints(formationId, upgradeData.pts);
 	addPoints(upgradeData.pts);
 	checkUpgradeConstraints(formationId);
 	checkArmyConstraints();
@@ -334,8 +356,8 @@ function upgradeMultiplier(upgradeRow) {
 	if (!upgradeRow) {
 		return 0;
 	}
-	else if (upgradeRow.down().down()) {
-		return parseInt(upgradeRow.down().down().innerHTML.replace('x&nbsp;',''));
+	else if (upgradeRow.multiplierSpan) {
+		return parseInt(upgradeRow.multiplierSpan.innerHTML.replace('x&nbsp;',''));
 	}
 	else {
 		return 1;
@@ -343,45 +365,47 @@ function upgradeMultiplier(upgradeRow) {
 }
 
 function checkUpgradeConstraints(formationId) {
-	var upgradeRows = $$('.' + formationId);
-	var upgradeOptions = $(formationId + 'upgradeOptions').childElements().slice(1); // remove header row
+	if ($(formationId).formationData.upgrades.size() > 0) {
+		var upgradeRows = $$('.' + formationId);
+		var upgradeOptions = $(formationId + 'upgradeOptions').childElements().slice(1); // remove header row
 
-	upgradeOptions.each(function(option) {
-		var constraints = '';
-		var upgradeData = option.upgradeData;
-		var groupData = option.upgradeData.group;
-		// check 'upto' constraint	
-		if (upgradeData.upto) {		
-			var numUpgrades = countUpgrades(upgradeData, formationId);
-			if (numUpgrades >= upgradeData.upto) {
-				constraints += '[max ' + upgradeData.upto + ']';
+		upgradeOptions.each(function(option) {
+			var constraints = '';
+			var upgradeData = option.upgradeData;
+			var groupData = option.upgradeData.group;
+			// check 'upto' constraint	
+			if (upgradeData.upto) {		
+				var numUpgrades = countUpgrades(upgradeData, formationId);
+				if (numUpgrades >= upgradeData.upto) {
+					constraints += '[max ' + upgradeData.upto + ']';
+				}
+			}		
+			// check 'upto' GROUP constraint
+			if (groupData && groupData.upto) {
+				var group = upgradeRows.findAll(function (x) {return x.upgradeData.group === groupData;});
+				var numUpgrades = 0;
+				group.each(function(x) {
+					numUpgrades += countUpgrades(x.upgradeData, formationId);
+				});
+				if (numUpgrades >= groupData.upto) {
+					constraints += ' [max ' + groupData.upto + ' ' + groupData.label + ']';
+				}
 			}
-		}		
-		// check 'upto' GROUP constraint
-		if (groupData && groupData.upto) {
-			var group = upgradeRows.findAll(function (x) {return x.upgradeData.group === groupData;});
-			var numUpgrades = 0;
-			group.each(function(x) {
-				numUpgrades += countUpgrades(x.upgradeData, formationId);
-			});
-			if (numUpgrades >= groupData.upto) {
-				constraints += ' [max ' + groupData.upto + ' ' + groupData.label + ']';
+			// update UI
+			if (constraints == '') {
+				activate(option);
 			}
-		}
-		// update UI
-		if (constraints == '') {
-			activate(option);
-		}
-		else {
-			deactivate(option, constraints);
-		}
-	});
+			else {
+				deactivate(option, constraints);
+			}
+		});
+	}
 }
 
 function wrapActivatableHandler(element, handler) {
-	return handler.wrap(function(proceed, arg1, arg2, arg3) {
+	return handler.wrap(function(proceed, arg1, arg2, arg3, arg4) {
 		if (!element.hasClassName('inactive')) {
-			proceed(arg1, arg2, arg3);
+			proceed(arg1, arg2, arg3, arg4);
 		}
 	});
 }
@@ -406,9 +430,14 @@ function activate(row) {
 function addFormation(event, formation) {
 	var formationId = 'formation' + formationIdCounter++;
 	var dropDown = createUpgrades(flattenUpgrades(formation), formationId);
+	var labelCell = new Element('td').update(formation.label).insert( dropDown );
+	if (formation.units) {
+		labelCell.insert(
+			new Element('div', {'class':'units'}).update(formation.units));
+	}
 	var newRow = new Element('tr', {'class':'orbatFormation interactive', id:formationId}).update(
-					new Element('td').update(formation.label).insert( dropDown )
-				).insert(
+					labelCell
+				 ).insert(
 					new Element('td', {'class':'points'}).update(formation.pts) );
 
 	if (formation.restricting) {	// todo: remove the class names and just use the row.formationData?
@@ -431,11 +460,22 @@ function addFormation(event, formation) {
 	newRow.observe('mouseover', function() { dropDown.show(); });
 	newRow.observe('mouseout', function() { dropDown.hide(); });
 	newRow.observe('click', removeFormation.bind(this, newRow, formation.pts));		
+
 	newRow.formationData = formation;
 	addPoints(formation.pts);
 	resetFormationDivider();
+	
 	checkFormationConstraints();
 	checkArmyConstraints();
+
+	if (formation.defaults) {
+		formation.defaults.each(function(x) {
+			for (i=0;i<x.count;i++) {
+				addUpgrade(null, formationId, x.unit);
+			}
+		});
+	}
+	
 	return newRow;
 }
 
@@ -444,6 +484,45 @@ function resetFormationDivider() {
 	if ($$('.limited').any()) {
 		$$('.limited').first().addClassName('formationDivider');
 	}
+}
+
+function addOptional(event, formationId, upgradeData, upgradeRow) {	
+	addUpgrade(event, formationId, upgradeData);
+	removeUpgrade(upgradeRow, formationId);
+}
+
+function createOptionals(upgrades, formationId, upgradeRow) {
+	var newTable = new Element('table', {id:formationId + 'unitOptions'}).update(
+						new Element('tr').update(
+							new Element('th', {colspan:2}).update('REPLACE WITH...') ));
+
+	if (upgrades.length < 1) {	
+		var listItem = new Element('tr', {'class':'listItem even'}).update(
+							new Element('td', {colspan:'2', 'class':'inactive'}).update('None available') );
+		newTable.insert(listItem);		
+	};
+
+	upgrades.each(function(x) {
+		var upgradeOption = new Element('tr', {'class':'interactive listItem even'}).update(
+								new Element('td').update(x.label)
+							).insert(
+								new Element('td', {'class':'points'}).update(x.pts) );
+
+		upgradeOption.upgradeData = x;
+		newTable.insert(upgradeOption);		
+		upgradeOption.observe('click',
+				wrapActivatableHandler(upgradeOption, addOptional)
+					.bindAsEventListener(this, formationId, x, upgradeRow));
+	});
+	
+	newTable.childElements().eachSlice(2, function(x) {
+		x[0].removeClassName('even');
+	});
+
+	var dropDown = new Element('div', {'class':'dropDown'}).update(
+						new Element('div', {'class':'listDiv'}).update(newTable));
+	dropDown.observe('click', Event.stop.bindAsEventListener(this)); // prevent bubbling up
+	return dropDown;
 }
 
 function createUpgrades(upgrades, formationId) {
