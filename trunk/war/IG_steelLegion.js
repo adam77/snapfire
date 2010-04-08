@@ -1,3 +1,25 @@
+// UNIT OPTIONS
+var lemanRuss =			{label:'Leman Russ',	upto:10,	minimum:10};
+	var russ =				{label:'Leman Russ',	pts:0,	group:lemanRuss,	optional:true};
+	var vanquisher =		{label:'Vanquisher',	pts:0,	group:lemanRuss,	optional:true};
+	lemanRuss.options =		[russ, vanquisher];
+var superh =			{label:'Super Heavys',	upto:3,		minimum:3};
+	var bane =				{label:'Baneblade',		pts:0,	group:superh,	optional:true};
+	var sword =				{label:'Shadowsword',	pts:0,	group:superh,	optional:true};
+	superh.options =		[bane, sword];
+var superP =			{label:'Super Heavy',	upto:1,		minimum:1};
+	var bane2 =				{label:'Baneblade',		pts:0,	group:superP,	optional:true};
+	var sword2 =			{label:'Shadowsword',	pts:0,	group:superP,	optional:true};
+	superP.options =		[bane2, sword2];
+var artilleryOpts =		{label:'Artillery',		upto:9,		minimum:9};
+	var basil =				{label:'Basilisk',		pts:0,	group:artilleryOpts,optional:true};
+	var manti =				{label:'Manticore',		pts:0,	group:artilleryOpts,optional:true};
+	artilleryOpts.options =	[basil, manti];
+var spacecraft = 		{label:'Spacecraft', 	upto:1,		minimum:1};
+	var lunar =				{label:'Lunar Class',	pts:0,	group:spacecraft,	optional:true};
+	var emperor	=			{label:'Emperor Class',	pts:150,group:spacecraft,	optional:true};
+	spacecraft.options =	[lunar, emperor];
+
 // UPGRADES (upto 3 per company)
 var companyUpgrades = 	{label:'Upgrades', upto:3};
 	var chimera =			{label:'Chimera',							pts:25}; // only applies to snipers & ogryns
@@ -15,34 +37,31 @@ var valkyrie =			{label:'Valkyrie Transport',				pts:150, upto:1};
 var emperor =				{label:'Emperor Class',						pts:150, upto:1};
 
 // SUPPORT (2 per company, no upgrades allowed)
-var spacecraft = {label:'Spacecraft', upto:1};
-var roughRider =	{label:'Rough Rider Platoon', 			pts:150, upgrades:[], restricted:true};
-var stormTrooper =	{label:'Storm Trooper Platoon',			pts:200, upgrades:[valkyrie], restricted:true};
-var basilisk =		{label:'Artillery Battery (Basilisk)',	pts:250, upgrades:[], restricted:true};
-var bombard =		{label:'Artillery Battery (Bombard)',	pts:250, upgrades:[], restricted:true};
-var manticore =		{label:'Artillery Battery (Manticore)',	pts:250, upgrades:[], restricted:true};
-var sentinel =		{label:'Sentinel Squadron',				pts:100, upgrades:[], restricted:true};
-var deathstrike =	{label:'Deathstrike Missile Battery',	pts:200, upgrades:[], upto:1, restricted:true};
-var baneblade =		{label:'Super-heavy Tank Platoon (Baneblade)', pts:200, upgrades:[], restricted:true};
-var shadowsword =	{label:'Super-heavy Tank Platoon (Shadowsword)', pts:200, upgrades:[], restricted:true};
-var lunar =			{label:'Orbital Support (Lunar Class)',	pts:150, upgrades:[], restricted:true, group:spacecraft};
-var emperor =		{label:'Orbital Support (Emperor Class)',pts:300, upgrades:[], restricted:true, group:spacecraft};
-var flak =			{label:'Flak Battery',					pts:150, upgrades:[], restricted:true};
-var vulture =		{label:'Vulture Squadron',				pts:300, upgrades:[], restricted:true};
-var supportList =	{label:'SUPPORT FORMATIONS', options:[roughRider, stormTrooper, basilisk, bombard, manticore, sentinel, deathstrike, baneblade, shadowsword, lunar, emperor, flak, vulture]};
+var roughRider =	{label:'Rough Rider Platoon', 			pts:150, upgrades:[], restricted:true, units:'6 Rough Riders'};
+var stormTrooper =	{label:'Storm Trooper Platoon',			pts:200, upgrades:[valkyrie], restricted:true, units:'8 Storm Troopers'};
+var basilisk =		{label:'Artillery Battery (Basilisk)',	pts:250, upgrades:[], restricted:true, units:'3 Basilisks'};
+var bombard =		{label:'Artillery Battery (Bombard)',	pts:250, upgrades:[], restricted:true, units:'3 Bombards'};
+var manticore =		{label:'Artillery Battery (Manticore)',	pts:250, upgrades:[], restricted:true, units:'3 Manticores'};
+var sentinel =		{label:'Sentinel Squadron',				pts:100, upgrades:[], restricted:true, units:'4 Sentinels'};
+var deathstrike =	{label:'Deathstrike Missile Battery',	pts:200, upgrades:[], restricted:true, upto:1, units:'2 Deathstrike Missile Launchers'};
+var baneblade =		{label:'Super-heavy Tank Platoon', 		pts:200, upgrades:[], restricted:true, defaults:[{unit:bane2, count:1}]};
+var orbital =		{label:'Orbital Support',				pts:150, upgrades:[], restricted:true, upto:1, defaults:[{unit:lunar,count:1}]};
+var flak =			{label:'Flak Battery',					pts:150, upgrades:[], restricted:true, units:'3 Hydra'};
+var vulture =		{label:'Vulture Squadron',				pts:300, upgrades:[], restricted:true, units:'4 Vultures'};
+var supportList =	{label:'SUPPORT FORMATIONS', options:[basilisk, bombard, manticore, deathstrike, flak, orbital, roughRider, sentinel, stormTrooper, baneblade, vulture]};
 
 // COMPANIES
-var hq = 			{label:'Regimental HQ', pts:500, upgrades:[chimera, companyUpgrades], upto:1, restricting:true};
-var infantryCoy = 	{label:'Infantry Company', pts:250, upgrades:[chimera, companyUpgrades], restricting:true};
-var mechCoy = 		{label:'Mechanised Infantry Company', pts:400, upgrades:[chimera, companyUpgrades], restricting:true};
-var tankCoy = 		{label:'Tank Company', pts:650, upgrades:[chimera, companyUpgrades], restricting:true};
-var superCoy = 		{label:'Super-heavy Tank Company', pts:500, upgrades:[chimera, companyUpgrades], restricting:true};
-var artilleryCoy = 	{label:'Artillery Company', pts:650, upgrades:[chimera, companyUpgrades], restricting:true};
+var hq = 			{label:'Regimental HQ', 				pts:500, upgrades:[chimera, companyUpgrades], restricting:true, upto:1, units:'Supreme Commander, 12 Imperial Guard Infantry, 7 Chimera'};
+var infantryCoy = 	{label:'Infantry Company', 				pts:250, upgrades:[chimera, companyUpgrades], restricting:true, units:'Commander, 12 Imperial Guard Infantry'};
+var mechCoy = 		{label:'Mechanised Infantry Company', 	pts:400, upgrades:[chimera, companyUpgrades], restricting:true, units:'Commander, 12 Imperial Guard Infantry, 7 Chimera'};
+var tankCoy = 		{label:'Tank Company', 					pts:650, upgrades:[chimera, companyUpgrades], restricting:true, defaults:[{unit:russ, count:10}]};
+var superCoy = 		{label:'Super-heavy Tank Company', 		pts:500, upgrades:[chimera, companyUpgrades], restricting:true, defaults:[{unit:bane, count:3}]};
+var artilleryCoy = 	{label:'Artillery Company', 			pts:650, upgrades:[chimera, companyUpgrades], restricting:true, defaults:[{unit:basil, count:9}]};
 var companyList =	{label:'COMPANIES', options:[hq, infantryCoy, mechCoy, tankCoy, superCoy, artilleryCoy]};
 
 // NAVY
-var thunderbolt = 		{label:'Thunderbolt Fighters',	pts:150, upgrades:[], limited:true};
-var marauder =			{label:'Marauder Bombers',		pts:300, upgrades:[], limited:true};
+var thunderbolt = 		{label:'Thunderbolt Fighters',	pts:150, upgrades:[], limited:true, units:'2 Thunderbolts'};
+var marauder =			{label:'Marauder Bombers',		pts:300, upgrades:[], limited:true, units:'2 Marauders'};
 var navyList =			{label:'IMPERIAL NAVY', options:[thunderbolt, marauder]};
 
 // TITANS
