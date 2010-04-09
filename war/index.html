@@ -2,50 +2,130 @@
 <html>
 <head>
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+	<link rel="icon" type="image/png" href="./favicon.ico">
 	<title>Army Lists</title>
+	<style>
+body {
+	background-color:olive;
+	font-size:small;
+	padding:2em;
+}
+h2 {
+//	margin-top:0;
+}
+div.box {
+	text-align:center;
+	border:1em black solid;
+	padding:1em;
+	-moz-border-radius:1.8em;
+	-webkit-border-radius:1.8em;
+	border-radius:1.8em;
+//	margin:1em;
+	background-color:white;
+}
+td {
+//	text-align:left;
+//	border:1px gray solid;
+	vertical-align:top;
+	padding:.8em;
+	background-color:#dddddd;
+}
+th {
+//	border:1px gray solid;
+	font-size:large;
+	padding:.8em;
+	vertical-align:top;
+//	background-color:#ddd;
+//	text-align:left;
+}
+.topLeft {
+	background-color:inherit;
+}
+#main {
+	max-width:98%;
+	width:70em;
+	margin:auto;
+}
+.topRow th {
+//	border-bottom:2px solid black;
+//	padding-left:.8em;
+//	text-align:center;
+}
+th {
+//	padding-left:0;
+//	text-align:right;
+}
+	</style>
 </head>
-<body style="font-size:small;padding:20px">
+<body>
+	<div id="main">
 
-	<div style="float:right; width:33%;">
-	<h2>GW</h2>
-	<p>
-	<a href="./chooser.html?list=SM_codex">Codex Astartes (EA Rulebook Oct09)</a><br>
-	<a href="./chooser.html?list=IG_steelLegion">Steel Legion (EA Rulebook Oct09)</a><br>
-	</p>
-	</div>
-	<div style="float:right; width:33%">
-	<h2>Epic UK</h2>
-	<p>
-	<a href="./chooser.html?list=SM_bloodAngels_EPICUK">Blood Angels (Epic UK v010409)</a><br>
-	</p>
-	</div>
-	<div style="width:33%;">
-	<h2>NetEA</h2>
-	<p>
-	<a href="./chooser.html?list=SM_codex_NETEA">Codex Astartes (NetEA FINAL)</a><br>
-	<a href="./chooser.html?list=SM_bloodAngels_NETEA">Blood Angels (NetEA v2.08)</a><br>
-	<a href="./chooser.html?list=ORK_ghazgkhull_NETEA">Ghazgkhull Thraka's Warhorde (NetEA FINAL)</a><br>
-	<a href="./chooser.html?list=ORK_kult_NETEA">Speed Freakz (NetEA FINAL)</a><br>
-	<a href="./chooser.html?list=EL_bieltan_NETEA">Biel-Tan Warhost (NetEA FINAL)</a><br>
-	</p>
+			<div class="box">
+				<h1>Available Army Lists</h1>
+				<table id="tab" style="width:100%;">
+					<tr class="topRow">
+						<th class="topLeft">&nbsp;</th>
+						<th>NetEA</th>
+						<th>GW</th>
+						<th>Epic UK</th>
+					</tr>
+					<tr>
+						<th>Marine</th>
+						<td>
+							<a href="./chooser.html?list=SM_codex_NETEA">Codex Astartes (FINAL)</a><br>
+							<a href="./chooser.html?list=SM_bloodAngels_NETEA">Blood Angels (v2.08)</a><br>
+						</td>
+						<td>
+							<a href="./chooser.html?list=SM_codex">Codex Astartes (Oct09)</a><br>
+						</td>
+						<td>
+							<a href="./chooser.html?list=SM_bloodAngels_EPICUK">Blood Angels (v010409)</a><br>
+						</td>
+					</tr>
+					<tr>
+						<th>Guard</th>
+						<td></td>
+						<td>
+							<a href="./chooser.html?list=IG_steelLegion">Steel Legion (Oct09)</a><br>
+						</td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Orc</th>
+						<td>
+							<a href="./chooser.html?list=ORK_ghazgkhull_NETEA">Ghazgkhull's Warhorde (FINAL)</a><br>
+							<a href="./chooser.html?list=ORK_kult_NETEA">Speed Freakz (FINAL)</a><br>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<th>Eldar</th>
+						<td>
+							<a href="./chooser.html?list=EL_bieltan_NETEA">Biel-Tan Warhost (FINAL)</a>
+						</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table>
+			</div>
+
+				<p style="margin-top:3em">
+				Refer here for comments, feedback and errors: 
+				<a href="http://www.tacticalwargames.net/taccmd/viewtopic.php?f=4&t=18045">Tactical Command</a>.
+				<br>
+				Note that the picker won't work on out of date browsers (particularly IE7/6).
+				</p>
+				<p>
+				todo:<br>
+				!option constraints incl. min (prevent delete); max (deactivate in 'replace with...' drop down)<br>
+				!new upgrades appear at top of list instead of bottom<br>
+				!import<br>
+				!add unit descriptions to upgrades<br>
+				!(add activations?)<br>
+				</p>
 
 	</div>
-	<p style="margin-top:6em">
-	Refer here for comments, feedback and errors: 
-	<a href="http://www.tacticalwargames.net/taccmd/viewtopic.php?f=4&t=18045">Tactical Command</a>.
-	<br>
-	Note that the picker won't work on out of date browsers (particularly IE7/6).
-	</p>
-	<p>
-	todo:<br>
-	!ally upgrades don't count towards ally points<br>
-	!option constraints<br>
-	!include option points as discounts to formation points (see Swords of Vaul)<br>
-	!new upgrades appear at top of list instead of bottom<br>
-	!import<br>
-	!print button<br>
-	!add unit descriptions to upgrades<br>
-	</p>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

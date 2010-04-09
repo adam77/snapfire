@@ -1,4 +1,4 @@
-// UPGRADES
+// OPTIONALS
 var aspects =	{label:'Aspect Warrior', upto:8, minimum:8};
 	var dire	 =	{label:'Dire Avenger',		pts:0,	group:aspects, optional:true};
 	var sscorpion =	{label:'Striking Scorpion',	pts:0,	group:aspects, optional:true};
@@ -9,23 +9,10 @@ var aspects =	{label:'Aspect Warrior', upto:8, minimum:8};
 	var hawks =		{label:'Swooping Hawk',	pts:0,	group:aspects, optional:true};
 	var spears =	{label:'Shining Spear',	pts:0,	group:aspects, optional:true};
 	aspects.options = [dire, sscorpion, banshees, dragons, spiders, reapers, hawks, spears];
-var exarchs =	{label:'Exarch', upto:2};
-	var exarch =	{label:'Exarch', 	pts:25, group:exarchs};
-	var autarch =	{label:'Autarch', 	pts:75, group:exarchs, upto:1};
-	exarchs.options = [exarch, autarch];
-var waveserpent =	{label:'Wave Serpent',	pts:50};
-var falcon =		{label:'Falcon',		pts:65};
-
 var guardianOpts =	{label:'Guardians',	upto:7, minimum:7};
 	var guards =		{label:'Guardians',				pts:0, group:guardianOpts, optional:true};
 	var heavyweapon =	{label:'Heavy Weapon Platform',	pts:0, group:guardianOpts, optional:true, upto:3};
 	guardianOpts.options = [guards, heavyweapon];
-
-var supportweapon =	{label:'Support Weapon Platforms',	pts:50,	upto:1};
-var wraithguard =	{label:'Wraithguard',	pts:50,	upto:3};
-var wraithlords =	{label:'Wraithlords',	pts:175, upto:1};
-var ranger =		{label:'Extra Ranger',		pts:25,	upto:4};
-var warwalker =		{label:'Extra War Walker',	pts:35,	upto:2};
 var jetbikers = 		{label:'Bikes',	upto:6, minimum:6};
 	var jetbike =		{label:'Jetbike', 	pts:0, group:jetbikers, optional:true};
 	var vyper =			{label:'Vyper', 	pts:0, group:jetbikers, optional:true};
@@ -35,20 +22,33 @@ var falcons =	{label:'Falcons', upto:6, minimum:5};
 	var firestorm =		{label:'Fire Storm', 	pts:50, group:falcons, optional:true, upto:2};
 	var fireprism =		{label:'Fire Prism',	pts:65, group:falcons, optional:true};
 	falcons.options =	[falcon2, firestorm, fireprism];
-var engines =		{label:'Engines of Vaul', upto:3};
-	var cobra =			{label:'Cobra',			pts:250, group:engines};
-	var scorpion =		{label:'Scorpion',		pts:250, group:engines};
-	var storm =			{label:'Storm Serpent',	pts:250, group:engines};
-	var spinner =		{label:'Void Spinner',	pts:250, group:engines};
+var engines =		{label:'Engines of Vaul', upto:3, minimum:1};
+	var cobra =			{label:'Cobra',			pts:250, group:engines, optional:true};
+	var scorpion =		{label:'Scorpion',		pts:250, group:engines, optional:true};
+	var storm =			{label:'Storm Serpent',	pts:250, group:engines, optional:true};
+	var spinner =		{label:'Void Spinner',	pts:250, group:engines, optional:true};
 	engines.options = [cobra, scorpion, storm, spinner];
+
+// UPGRADES
+var exarchs =	{label:'Exarch', upto:2};
+	var exarch =	{label:'Exarch', 	pts:25, group:exarchs};
+	var autarch =	{label:'Autarch', 	pts:75, group:exarchs, upto:1};
+	exarchs.options = [exarch, autarch];
+var waveserpent =	{label:'Wave Serpent',	pts:50};
+var falcon =		{label:'Falcon',		pts:65};
+var supportweapon =	{label:'Support Weapon Platforms',	pts:50,	upto:1};
+var wraithguard =	{label:'Wraithguard',	pts:50,	upto:3};
+var wraithlords =	{label:'Wraithlords',	pts:175, upto:1};
+var ranger =		{label:'Extra Ranger',		pts:25,	upto:4};
+var warwalker =		{label:'Extra War Walker',	pts:35,	upto:2};
 
 // TROUPES (3 per warhost)
 var rangers =		{label:'Ranger Troupe',					pts:100, units:'4 Rangers', upgrades:[ranger], restricted:true};
 var warwalkers =	{label:'War Walker Troupe',				pts:140, units:'4 Warwalkers', upgrades:[warwalker], restricted:true};
 var windrider =		{label:'Windrider Troupe',				pts:200, defaults:[{unit:jetbike, count:6}], upgrades:[], restricted:true};
-var swords =		{label:'Swords of Vaul Troupe',			pts:0, 	 defaults:[{unit:falcon2, count:5}], upgrades:[falcon2], restricted:true};
+var swords =		{label:'Swords of Vaul Troupe',			pts:0, 	 displayPts:250, defaults:[{unit:falcon2,count:5}], upgrades:[falcon2], restricted:true};
 var nightspinner =	{label:'Night Spinner Troupe',			pts:175, units:'3 Night Spinners', upgrades:[], restricted:true};
-var cobraT =		{label:'Engine of Vaul Troupe',			pts:0, 	upgrades:[engines], restricted:true};
+var cobraT =		{label:'Engine of Vaul Troupe',			pts:0, 	displayPts:250, defaults:[{unit:cobra,count:1}], upgrades:[engines], restricted:true};
 var troupeList = 	{label:'TROUPES', options:[rangers, warwalkers, windrider, swords, nightspinner, cobraT]};
 
 // INDIVIDUALS
