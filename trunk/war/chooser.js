@@ -255,7 +255,16 @@ function addUpgrade(event, formationId, upgradeData) {
 						new Element('td', {'class':'points'}).update(upgradeData.pts));
 
 		newRow.upgradeData = upgradeData;
-		$(formationId).insert({after:newRow});
+		
+		// insert new row after last upgrade
+		if ($$('.' + formationId).size() > 0) {
+			$$('.' + formationId).last().insert({after:newRow});
+		}
+		else {
+			$(formationId).insert({after:newRow});
+		}
+		
+
 		// delete event
 		if (!upgradeData.optional) {
 			newRow.observe('click', removeUpgrade.bind(this, newRow, formationId));	
@@ -294,7 +303,12 @@ function checkArmyConstraints() {
 	var warnings = [];
 	// 1/3 points constraint
 	var count = 0;	// todo (include upgrade points too)
-	$$('.limited').each(function(x) {count += x.formationData.pts});
+	$$('.limited').each(function(x) {
+		count += x.formationData.pts
+		$$('.' + x.identify()).each(function(x) {
+			count += x.upgradeData.pts * upgradeMultiplier(x);
+		});
+	});
 	if (count > totalPoints() / 3.0) {
 		warnings.push('Over 1/3 of points is spent on War Engines/Allies!');
 	}
@@ -569,7 +583,7 @@ function createList(list) {
 		var listItem = new Element('tr', {'class':'interactive listItem even formationOption'}).update(
 							new Element('td').update(x.label)
 						).insert(
-							new Element('td', {'class':'points'}).update(x.pts) );
+							new Element('td', {'class':'points'}).update(x.displayPts ? x.displayPts : x.pts) );
 
 		listItem.formationData = x;
 		newTable.insert(listItem);
