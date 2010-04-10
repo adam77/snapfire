@@ -8,27 +8,38 @@
 body {
 	background-color:olive;
 	font-size:small;
-	padding:2em;
+	padding:0 2em;
+	margin:0;
+//	text-align:center;
 }
-h2 {
-//	margin-top:0;
+h1 {
+//	margin-left:5em;
+	margin-bottom:2em;
 }
 div.box {
-	text-align:center;
-	border:1em black solid;
-	padding:1em;
-	-moz-border-radius:1.8em;
-	-webkit-border-radius:1.8em;
-	border-radius:1.8em;
-//	margin:1em;
+	text-align:left;
+	border:1px gray solid;
+	padding:4em 2em 3em 2em;
+//	-moz-border-radius:0 0 2em 2em;
+	-webkit-border-radius:0 0 2em 2em;
+	border-radius:0 0 2em 2em;
+	margin-top:-5px;
 	background-color:white;
+	box-shadow:black 5px 5px 5px, red -5px 5px;
+	-webkit-box-shadow: black .5em .5em 1em;//, black -5px 5px 25px;
+	-moz-box-shadow: black .3em .3em 1em;//, black -5px 5px 25px;
 }
 td {
-//	text-align:left;
-//	border:1px gray solid;
+	text-align:center;
+	bo
+//	border:1px gray dotted;
+//	border-top:1px gray dotted;
+	border-left:1px gray solid;
+	border-right:1px gray solid;
+	border-bottom:1px gray dotted;
 	vertical-align:top;
 	padding:.8em;
-	background-color:#dddddd;
+	background-color:#eeeecc;
 }
 th {
 //	border:1px gray solid;
@@ -49,12 +60,45 @@ th {
 .topRow th {
 //	border-bottom:2px solid black;
 //	padding-left:.8em;
-//	text-align:center;
+	text-align:center;
+//	display:block;
 }
-th {
+th {	
+//	display:none;
 //	padding-left:0;
-//	text-align:right;
+	text-align:right;
+//	color:#404000;
+//	font-size:normal;
+//	text-decoration:underline;
+//	border-bottom:1px black solid;	
+	background-color:#eeeecc;
+//	border:1px gray dotted;
+	border-top:1px gray dotted;
+	border-left:1px gray solid;
+	border-right:1px gray solid;
+	border-bottom:1px gray dotted;
 }
+#tab {
+//	background-color:#eee;
+	border:1px gray solid;
+//	border-top:1px black solid;
+//	border-left:1px black solid;
+//	border-right:1px black solid;
+//	border-bottom:1px black solid;
+	font-family:sans-serif;
+	text-align:center;
+	border-collapse:collapse;
+//	border-spacing:1em 2px;
+}
+th.army {	
+	display:none;
+	border-right:1px solid black;
+	border-bottom:none;
+	border-top:none;
+	font-size:small;
+	text-align:center;
+}
+
 	</style>
 </head>
 <body>
@@ -64,13 +108,13 @@ th {
 				<h1>Available Army Lists</h1>
 				<table id="tab" style="width:100%;">
 					<tr class="topRow">
-						<th class="topLeft">&nbsp;</th>
-						<th>NetEA</th>
-						<th>GW</th>
-						<th>Epic UK</th>
+				<!--		<th class="topLeft">&nbsp;</th>-->	
+						<th style="width:30%">NetEA</th>
+						<th style="width:30%">GW</th>
+						<th style="width:30%">Epic UK</th>
 					</tr>
-					<tr>
-						<th>Marine</th>
+					<tr class="odd">
+						<th class="army">MARINES</th>
 						<td>
 							<a href="./chooser.html?list=SM_codex_NETEA">Codex Astartes (FINAL)</a><br>
 							<a href="./chooser.html?list=SM_bloodAngels_NETEA">Blood Angels (v2.08)</a><br>
@@ -83,15 +127,15 @@ th {
 						</td>
 					</tr>
 					<tr>
-						<th>Guard</th>
+						<th class="army">GUARD</th>
 						<td></td>
 						<td>
 							<a href="./chooser.html?list=IG_steelLegion">Steel Legion (Oct09)</a><br>
 						</td>
 						<td></td>
 					</tr>
-					<tr>
-						<th>Orc</th>
+					<tr class="odd">
+						<th class="army">ORC</th>
 						<td>
 							<a href="./chooser.html?list=ORK_ghazgkhull_NETEA">Ghazgkhull's Warhorde (FINAL)</a><br>
 							<a href="./chooser.html?list=ORK_kult_NETEA">Speed Freakz (FINAL)</a><br>
@@ -100,7 +144,7 @@ th {
 						<td></td>
 					</tr>
 					<tr>
-						<th>Eldar</th>
+						<th class="army">ELDAR</th>
 						<td>
 							<a href="./chooser.html?list=EL_bieltan_NETEA">Biel-Tan Warhost (FINAL)</a>
 						</td>
@@ -114,12 +158,12 @@ th {
 				Refer here for comments, feedback and errors: 
 				<a href="http://www.tacticalwargames.net/taccmd/viewtopic.php?f=4&t=18045">Tactical Command</a>.
 				<br>
-				Note that the picker won't work on out of date browsers (particularly IE7/6).
+				Note that the picker won't work on out of date browsers (particularly IE7/6).<br>
+				v0.91<br>
 				</p>
 				<p>
 				todo:<br>
-				!option constraints incl. min (prevent delete); max (deactivate in 'replace with...' drop down)<br>
-				!new upgrades appear at top of list instead of bottom<br>
+				!army constraint: 1 per army<br>
 				!import<br>
 				!add unit descriptions to upgrades<br>
 				!(add activations?)<br>
