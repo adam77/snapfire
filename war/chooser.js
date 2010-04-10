@@ -201,28 +201,43 @@ function addPoints(toAdd) {
 }
 
 function removeUpgrade(upgradeRow, formationId) {
-	var multiplier = upgradeRow.multiplierSpan;
-	// 2 or more?
-	if (multiplier) {
-		var count = upgradeMultiplier(upgradeRow) - 1;
-		if (count == 1) {
-			multiplier.remove();
-			upgradeRow.multiplierSpan = null;
-		}
-		else {
-			multiplier.update(count + 'x&nbsp;');
-		}
-		upgradeRow.childElements()[1].update(count * upgradeRow.upgradeData.pts);
-	}
-	// only 1
-	else {
-		upgradeRow.remove();
-	}
+	var data = upgradeRow.upgradeData;	
+	var allowRemoval = true;
 
-	addPoints(-upgradeRow.upgradeData.pts);
-	updateFormationPoints(formationId, -upgradeRow.upgradeData.pts);
-	checkUpgradeConstraints(formationId, upgradeRow.upgradeData);
-	checkArmyConstraints();
+	// check minimum constraint
+	if (data.group && data.group.minimum) {
+		var total = 0;
+		data.group.options.each(function(x) {
+			total += countUpgrades(x, formationId);
+		});
+		allowRemoval = total > data.group.minimum;
+	}	
+
+	if (allowRemoval) {
+		var multiplier = upgradeRow.multiplierSpan;
+		// 2 or more?
+		if (multiplier) {
+			var count = upgradeMultiplier(upgradeRow) - 1;
+			if (count == 1) {
+				multiplier.remove();
+				upgradeRow.multiplierSpan = null;
+			}
+			else {
+				multiplier.update(count + 'x&nbsp;');
+			}
+			upgradeRow.childElements()[1].update(count * data.pts);
+		}
+		// only 1
+		else {
+			upgradeRow.remove();
+		}
+
+		addPoints(-data.pts);
+		updateFormationPoints(formationId, -data.pts);
+		checkUpgradeConstraints(formationId, data);
+		checkOptionalConstraints(formationId);
+		checkArmyConstraints();
+	}
 }
 
 function removeFormation(formationRow, pts) {
@@ -266,11 +281,9 @@ function addUpgrade(event, formationId, upgradeData) {
 		
 
 		// delete event
-		if (!upgradeData.optional) {
-			newRow.observe('click', removeUpgrade.bind(this, newRow, formationId));	
-		}
+		newRow.observe('click', removeUpgrade.bind(this, newRow, formationId));	
 		// dropdown
-		if (upgradeData.optional) {
+		if (upgradeData.optional && upgradeData.group.options.size() > 1) {
 			var dropDown = createOptionals(upgradeData.group.options.without(upgradeData), formationId, newRow);			
 			newCell.insert(dropDown);
 			dropDown.hide();
@@ -294,6 +307,7 @@ function addUpgrade(event, formationId, upgradeData) {
 	// constraints
 	updateFormationPoints(formationId, upgradeData.pts);
 	addPoints(upgradeData.pts);
+	checkOptionalConstraints(formationId);
 	checkUpgradeConstraints(formationId);
 	checkArmyConstraints();
 }
@@ -376,6 +390,35 @@ function upgradeMultiplier(upgradeRow) {
 	else {
 		return 1;
 	}
+}
+
+function checkOptionalConstraints(formationId) {
+	var upgradeRows = $$('.' + formationId);
+	upgradeRows.each(function(x) {
+		if (x.upgradeData.optional && x.upgradeData.group.options.size() > 1) {
+			var optionalOptions = x.down().down().down().down().childElements().slice(1); // remove header row
+			
+			optionalOptions.each(function(option) {
+				var constraints = '';
+				var upgradeData = option.upgradeData;
+				// check upto constraint
+				if (upgradeData.upto) {
+					var numUpgrades = countUpgrades(upgradeData, formationId);
+					if (numUpgrades >= upgradeData.upto) {
+						constraints += '[max ' + upgradeData.upto + ']';
+					}
+				}
+				// update UI
+				if (constraints == '') {
+					activate(option);
+				}
+				else {
+					deactivate(option, constraints);
+				}
+			});
+		}
+	});
+
 }
 
 function checkUpgradeConstraints(formationId) {

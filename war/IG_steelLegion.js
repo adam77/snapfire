@@ -1,7 +1,7 @@
 // UNIT OPTIONS
 var lemanRuss =			{label:'Leman Russ',	upto:10,	minimum:10};
 	var russ =				{label:'Leman Russ',	pts:0,	group:lemanRuss,	optional:true};
-	var vanquisher =		{label:'Vanquisher',	pts:0,	group:lemanRuss,	optional:true};
+	var vanquisher =		{label:'Vanquisher',	pts:0,	group:lemanRuss,	optional:true, upto:1};
 	lemanRuss.options =		[russ, vanquisher];
 var superh =			{label:'Super Heavys',	upto:3,		minimum:3};
 	var bane =				{label:'Baneblade',		pts:0,	group:superh,	optional:true};
@@ -34,7 +34,7 @@ var companyUpgrades = 	{label:'Upgrades', upto:3};
 	var hydra =				{label:'Hydra',								pts:50, upto:1, group:companyUpgrades};
 	companyUpgrades.options = [fireSupport, infantry, tankSquadron, demolisher, hellhounds, griffons, snipers, ogryns, hydra];
 var valkyrie =			{label:'Valkyrie Transport',				pts:150, upto:1};
-var emperor =				{label:'Emperor Class',						pts:150, upto:1};
+var emperor =			{label:'Emperor Class',						pts:150, upto:1};
 
 // SUPPORT (2 per company, no upgrades allowed)
 var roughRider =	{label:'Rough Rider Platoon', 			pts:150, upgrades:[], restricted:true, units:'6 Rough Riders'};
