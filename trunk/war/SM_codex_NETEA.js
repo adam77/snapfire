@@ -1,8 +1,12 @@
 // UPGRADES
+var transport =			{label:'Transport', upto:1};
+	var rhinos =			{label:'Rhinos',		pts:0, optional:true, group:transport};
+	var pods =				{label:'Drop Pods',		pts:0, optional:true, group:transport};
+	transport.options =		[rhinos, pods];
 var bikes = 			{label:'Bikes',	upto:5, minimum:5};
 	var attackBike =		{label:'Attack Bike', 	pts:0, optional:true, group:bikes};
 	var bike =				{label:'Bike Unit',		pts:0, optional:true, group:bikes};
-	bikes.options = [attackBike, bike];
+	bikes.options = 		[attackBike, bike];
 var commander =			{label:'Cmdr', upto:1};
 	var captain = 			{label:'Captain',			pts:50, group:commander};
 	var chaplain = 			{label:'Chaplain', 			pts:50, group:commander};
@@ -30,16 +34,16 @@ var vindicator = 		{label:'Vindicator',						pts:75, upto:2};
 // DETACHMENTS
 var assaultD = 			{label:'Assault Detachment', 		pts:175, units:'4 Assault Units', upgrades:[commander, vindicator]};
 var bikeD = 			{label:'Bike Detachment', 			pts:200, defaults:[{unit:bike,count:5}], upgrades:[commander]};
-var devastatorD = 		{label:'Devastator Detachment',		pts:250, units:'4 Devastators', upgrades:[commander, razorbacks, dreadnought, hunter, landRaiders]};
+var devastatorD = 		{label:'Devastator Detachment',		pts:250, units:'4 Devastators', defaults:[{unit:rhinos,count:1}], upgrades:[commander, razorbacks, dreadnought, hunter, landRaiders, rhinos]};
 var landRaiderD = 		{label:'Land Raiders',				pts:350, units:'4 Land Raiders', upgrades:[commander, hunter, vindicator]};
 var landSpeederD =		{label:'Land Speeders',				pts:200, defaults:[{unit:speeder,count:5}], upgrades:[commander]};
 var landingCraftD =		{label:'Landing Craft',				pts:350, upgrades:[]};
 var predatorsD =		{label:'Predators',					pts:275, defaults:[{unit:predatorA,count:4}], upgrades:[commander, hunter, vindicator]};
-var scoutD =			{label:'Scout Detachment',			pts:150, units:'4 Scouts', upgrades:[commander, razorbacks, sniper]};
+var scoutD =			{label:'Scout Detachment',			pts:150, units:'4 Scouts', defaults:[{unit:rhinos,count:1}], upgrades:[commander, razorbacks, sniper, rhinos]};
 var spacecraft = 		{label:'Spacecraft', upto:1};
 var strikeCruiserD =	{label:'Strike Cruiser',			pts:200, upgrades:[], group:spacecraft}; 
 var battleBargeD =		{label:'Battle Barge',				pts:350, upgrades:[], group:spacecraft}; 
-var tacticalD =			{label:'Tactical Detachment',		pts:300, units:'6 Tacticals', upgrades:[commander, razorbacks, dreadnought, hunter, vindicator]};
+var tacticalD =			{label:'Tactical Detachment',		pts:300, units:'6 Tacticals', defaults:[{unit:rhinos,count:1}], upgrades:[commander, razorbacks, dreadnought, hunter, vindicator, rhinos]};
 var terminatorD =		{label:'Terminator Detachment',		pts:350, units:'4 Terminators', upgrades:[commander, vindicator, dreadnought, landRaiders]};
 var thunderhawkD =		{label:'Thunderhawk',				pts:200, upgrades:[]};
 var vindicatorD =		{label:'Vindicators',				pts:275, units:'4 Vindicators', upgrades:[commander, hunter]};

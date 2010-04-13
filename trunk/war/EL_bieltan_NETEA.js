@@ -42,7 +42,7 @@ var exarchs =	{label:'Exarch', upto:2};
 	exarchs.options = [exarch, autarch];
 var waveserpent =	{label:'Wave Serpent',	pts:50};
 var falcon =		{label:'Falcon',		pts:65};
-var supportweapon =	{label:'Support Weapon Platforms',	pts:50,	upto:1};
+var supportweapon =	{label:'3 Support Weapon Platforms',pts:50,	upto:1};
 var wraithguard =	{label:'Wraithguard',	pts:50,	upto:3};
 var wraithlords =	{label:'Wraithlords',	pts:175, upto:1};
 
