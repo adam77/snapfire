@@ -273,7 +273,21 @@ function addUpgrade(event, formationId, upgradeData) {
 		
 		// insert new row after last upgrade
 		if ($$('.' + formationId).size() > 0) {
-			$$('.' + formationId).last().insert({after:newRow});
+			// place new optionals after optionals but before other upgrades
+			if (upgradeData.optional) {
+				var firstUpgrade = $$('.' + formationId).find(function(x) {
+					return !x.upgradeData.optional;				
+				});
+				if (firstUpgrade) {
+					firstUpgrade.insert({before:newRow});
+				}
+				else {
+					$$('.' + formationId).last().insert({after:newRow});
+				}
+			}
+			else {
+				$$('.' + formationId).last().insert({after:newRow});
+			}
 		}
 		else {
 			$(formationId).insert({after:newRow});
@@ -560,10 +574,14 @@ function createOptionals(upgrades, formationId, upgradeRow) {
 	};
 
 	upgrades.each(function(x) {
+		var points = x.pts - upgradeRow.upgradeData.pts;
+		if (points > 0) {
+			points = '+' + points;
+		}
 		var upgradeOption = new Element('tr', {'class':'interactive listItem even'}).update(
 								new Element('td').update(x.label)
 							).insert(
-								new Element('td', {'class':'points'}).update(x.pts) );
+								new Element('td', {'class':'points'}).update(points) );
 
 		upgradeOption.upgradeData = x;
 		newTable.insert(upgradeOption);		
