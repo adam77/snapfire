@@ -161,18 +161,21 @@ function viewPlainText() {
 	$('orbatBody').childElements().each(function (x) {
 		if (x.hasClassName('orbatFormation')) {
 			txt.insert(new Element('br'));
-			txt.insert(padPoints(x.formationData.pts) + ' ' + x.formationData.label);
+			txt.insert(x.formationData.label.toUpperCase() + ' ['+x.childElements()[1].innerHTML+']');
 			txt.insert(new Element('br'));
+			if (x.formationData.units) {
+				txt.insert(x.formationData.units).insert(new Element('br'));
+			}
 		}
 		else if (x.hasClassName('orbatUpgrade')) {
 			var multiplier = upgradeMultiplier(x);
-			var joiner = '&nbsp;+' + (multiplier > 1 ? multiplier + 'x&nbsp;' : '');
-			txt.insert(padPoints(x.upgradeData.pts * multiplier) + joiner + x.upgradeData.label);
+			var joiner = (x.upgradeData.optional ? '' : '+') + (multiplier > 1 ? multiplier + 'x&nbsp;' : '');
+			txt.insert(joiner + x.upgradeData.label);
 			txt.insert(new Element('br'));	
 		}		
-		else if (x == $('formationDivider')) {
-			txt.insert(new Element('br')).insert('-----');
-		}
+//		else if (x == $('formationDivider')) {
+//			txt.insert(new Element('br')).insert('-----');
+//		}
 	});
 	txt.insert(new Element('br')).insert(new Element('br'));
 	$('plainTextDiv').show();
