@@ -1,7 +1,7 @@
 /* GENERIC */
 body {
 	background-color:olive;
-	margin:10mm;
+	margin:0.2em 2em 2em 2em;
 }
 table {
 	border-collapse:collapse;
@@ -19,8 +19,13 @@ tr.interactive:hover > td {
 	font-style:italic;
 	color:#666;
 }
-
+.viewDiv {
+//	margin-top:1em;
+}
 /* ORBAT */
+#orbat {
+	margin-bottom:15em;
+}
 .orbat > * > tr > td, .orbat th {
 	padding-left:8mm;
 	padding-right:8mm;
@@ -88,7 +93,7 @@ tr.optionalUnit > td {
 	font-family:monospace;
 	font-size:small;
 	margin-top:0.5em;
-	margin-bottom:12em;
+	margin-bottom:0.5em;
 }
 #warnings {
 	color:#aa0000;

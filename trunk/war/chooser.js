@@ -161,7 +161,7 @@ function viewPlainText() {
 	$('orbatBody').childElements().each(function (x) {
 		if (x.hasClassName('orbatFormation')) {
 			txt.insert(new Element('br'));
-			txt.insert(x.formationData.label.toUpperCase() + ' ['+x.childElements()[1].innerHTML+']');
+			txt.insert(x.formationData.label.toUpperCase() +' '+x.childElements()[1].innerHTML);
 			txt.insert(new Element('br'));
 			if (x.formationData.units) {
 				txt.insert(x.formationData.units).insert(new Element('br'));
