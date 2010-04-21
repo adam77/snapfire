@@ -11,6 +11,18 @@
 <body>
 	<div id="armyList">
 	</div>
+	<div id="controls">
+		<a id="viewTable" href="javascript:void(0)">table view</a>
+		<a id="viewText" href="javascript:void(0)">plain text</a>
+		<a id="viewImport" href="javascript:void(0)">import</a>
+		<br><br>
+		<div id="plainTextDiv" class="viewDiv" style="display:none">
+		</div>
+		<div id="importDiv" class="viewDiv" style="display:none">
+			<textarea id="importText" rows="20" cols="40">&lt;paste list here&gt;</textarea><br>
+			<input id="doImport" type="submit" value="Import List">
+		</div>
+	</div>
 	<table id="orbat" class="viewDiv orbat">
 		<thead id="orbatHeader">
 			<tr class="interactive">
@@ -29,17 +41,6 @@
 			<tr id="formationDivider"><td></td><td></td></tr>
 		</tbody>
 	</table>
-	<div id="controls">
-		<div id="plainTextDiv" class="viewDiv" style="display:none">
-		</div>
-		<div id="importDiv" class="viewDiv" style="display:none">
-			<textarea id="importText" rows="20" cols="40">&lt;paste list here&gt;</textarea><br>
-			<input id="doImport" type="submit" value="Import List">
-		</div>
-		<a id="viewTable" href="javascript:void(0)">table view</a>
-		<a id="viewText" href="javascript:void(0)">plain text</a>
-		<a id="viewImport" href="javascript:void(0)">import</a>
-	</div>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
