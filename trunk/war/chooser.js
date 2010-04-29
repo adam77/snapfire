@@ -1,10 +1,19 @@
 
 document.observe('dom:loaded', initPage );
 var formationIdCounter = 0;
+var url = '';
+var params = {};
+var allFormations = {};
+var allUpgrades = {};
 
 function initPage() {
-	var head = $$('head')[0];
-	var listFile = new String(window.location).split('list=')[1] + '.js';
+	var head = $$('head')[0];	
+	url = new String(window.location).split('?')[0]	
+	var paramString = new String(window.location).split('?')[1]
+	paramString.split('&').each(function(param) {
+		params[param.split('=')[0]] = param.split('=')[1];
+	});
+	var listFile = params.list + '.js';
     script = new Element('script', { type: 'text/javascript', src: listFile });
     head.appendChild(script);
 }
@@ -14,14 +23,27 @@ function renderListName() {
 }
 
 function listLoaded() {
+	listData.sublists.each(function(x) {
+		x.options.each(function(formation) {
+			allFormations[formation.id] = formation
+			flattenUpgrades(formation).each(function(upgrade) {
+				allUpgrades[upgrade.id] = upgrade
+			});
+			flattenDefaults(formation).each(function(upgrade) {
+				allUpgrades[upgrade.id] = upgrade
+			});
+		});
+	});	
 	$('orbatListName').update( renderListName() );
 	$('viewText').observe('click', viewPlainText);
 	$('viewTable').observe('click', viewTable);
-	$('viewImport').observe('click', viewImport);
-	$('doImport').observe('click', doImport);
+	$('viewImport').observe('click', viewLink);
 	$('orbatTitle').observe('click', toggleNameEditor);
 	listData.sublists.each( createList );
-	if (listData.mandatoryFormations) {
+	if (params.force) {
+		unpickle(params.force);
+	}
+	else if (listData.mandatoryFormations) {
 		listData.mandatoryFormations.each(function(x) {
 			var newRow = addFormation(null, x);
 			newRow.stopObserving('click');
@@ -77,6 +99,14 @@ function viewTable() {
 	resetViews();
 	$('orbat').show();
 	$('viewTable').addClassName('selected');
+}
+
+function viewLink() {
+	resetViews();
+	$('importDiv').show();
+	$('viewImport').addClassName('selected');
+	$('importText').update(pickle());
+	$('importText').activate();
 }
 
 function viewImport() {
@@ -152,6 +182,42 @@ function doImport() { // todo: mandatory formations break because they are not l
 	}
 }
 
+function unpickle(pickled) {
+	var doneName = false
+	var currentFormation = null
+	decodeURIComponent(pickled).split('~').each(function(x) {
+		if (!doneName) {
+			$('orbatName').update(x)
+			doneName = true
+		}
+		else {
+			var id = parseInt(x.split('x')[0])
+			if (id > 500) {
+				currentFormation = addFormation(null, allFormations[id], true).identify()
+			}
+			else {
+				var count = parseInt(x.split('x')[1])
+				for (var i=0;i<count;i++) {
+					addUpgrade(null, currentFormation, allUpgrades[id])
+				}
+			}
+		}			
+	})	
+}
+
+function pickle() {
+	var out = $('orbatName').innerHTML
+	$('orbatBody').childElements().each(function(x) {
+		if (x.hasClassName('orbatFormation')) {
+			out += '~' + x.formationData.id
+		}
+		else if (x.hasClassName('orbatUpgrade')) {
+			out += '~' + x.upgradeData.id + 'x' + upgradeMultiplier(x)
+		}
+	});	
+	return url + '?list=' + params.list + '&force=' + encodeURIComponent(out)
+}
+
 function viewPlainText() {
 	resetViews();
 	var txt = $('plainTextDiv').update();//new Element('div', {id:'plainTextDiv'});
@@ -161,7 +227,7 @@ function viewPlainText() {
 	$('orbatBody').childElements().each(function (x) {
 		if (x.hasClassName('orbatFormation')) {
 			txt.insert(new Element('br'));
-			txt.insert(x.formationData.label.toUpperCase() +' '+x.childElements()[1].innerHTML);
+			txt.insert(x.formationData.label.toUpperCase() +' - '+x.childElements()[1].innerHTML +'');
 			txt.insert(new Element('br'));
 			if (x.formationData.units) {
 				txt.insert(x.formationData.units).insert(new Element('br'));
@@ -180,6 +246,21 @@ function viewPlainText() {
 	txt.insert(new Element('br')).insert(new Element('br'));
 	$('plainTextDiv').show();
 	$('viewText').addClassName('selected');
+}
+
+function flattenDefaults(formation) {
+	var upgrades = []
+	if (formation.defaults) {
+		formation.defaults.each(function(x) {
+			if (x.unit.group) {
+				upgrades = upgrades.concat(x.unit.group.options)
+			}
+			else {
+				upgrades.push(x.unit)
+			}
+		})
+	}
+	return upgrades
 }
 
 function flattenUpgrades(formation) {
@@ -501,7 +582,7 @@ function activate(row) {
 	}
 }
 
-function addFormation(event, formation) {
+function addFormation(event, formation, noDefaults) {
 	var formationId = 'formation' + formationIdCounter++;
 	var dropDown = createUpgrades(flattenUpgrades(formation), formationId);
 	var labelCell = new Element('td').update(formation.label).insert( dropDown );
@@ -542,7 +623,7 @@ function addFormation(event, formation) {
 	checkFormationConstraints();
 	checkArmyConstraints();
 
-	if (formation.defaults) {
+	if (formation.defaults && !noDefaults) {
 		formation.defaults.each(function(x) {
 			for (i=0;i<x.count;i++) {
 				addUpgrade(null, formationId, x.unit);
