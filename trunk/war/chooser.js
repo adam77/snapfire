@@ -22,17 +22,22 @@ function renderListName() {
 	return listData.id + ' (' + listData.version + ')';
 }
 
+function initIds(formation) {
+	allFormations[formation.id] = formation
+	flattenUpgrades(formation).each(function(upgrade) {
+		allUpgrades[upgrade.id] = upgrade
+	});
+	flattenDefaults(formation).each(function(upgrade) {
+		allUpgrades[upgrade.id] = upgrade
+	});
+}
+
 function listLoaded() {
+	if (listData.mandatoryFormations) {
+		listData.mandatoryFormations.each( initIds )
+	}
 	listData.sublists.each(function(x) {
-		x.options.each(function(formation) {
-			allFormations[formation.id] = formation
-			flattenUpgrades(formation).each(function(upgrade) {
-				allUpgrades[upgrade.id] = upgrade
-			});
-			flattenDefaults(formation).each(function(upgrade) {
-				allUpgrades[upgrade.id] = upgrade
-			});
-		});
+		x.options.each( initIds )
 	});	
 	$('orbatListName').update( renderListName() );
 	$('viewText').observe('click', viewPlainText);
@@ -192,7 +197,7 @@ function unpickle(pickled) {
 		}
 		else {
 			var id = parseInt(x.split('x')[0])
-			if (id > 500) {
+			if (id >= 500) {
 				currentFormation = addFormation(null, allFormations[id], true).identify()
 			}
 			else {
