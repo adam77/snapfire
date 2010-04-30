@@ -118,7 +118,7 @@ var othersList = 		{id:524, label:'AIRCRAFT, SPACECRAFT &amp; GARGANTS', options
 
 // DETAILS
 var listData = {
-	id:'Ghazgkhull Thraka\'s War Horde', version:'NetEA FINAL',
+	id:'Ghazgkhull Thraka\'s War Horde', version:'NetEA Compendium 1.0',
 	sublists:[warbandList, othersList]};
 
 // CALLBACK

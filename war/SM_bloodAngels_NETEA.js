@@ -14,29 +14,29 @@ var commander =			{id:15, label:'Cmdr', upto:1};
 	var chaplainSupreme =	{id:20, label:'Chaplain (Supreme Commander)',	pts:100, group:commander};
 	var librarianSupreme =	{id:21, label:'Librarian (Supreme Commander)', pts:100, group:commander};
 	commander.options = 	[captain, chaplain, librarian, captainSupreme, chaplainSupreme, librarianSupreme];
-var dreads = 			{id:22, label:'Dreadnoughts', upto:2};
+var dreads = 			{id:22, label:'Dreadnoughts', upto:3};
 	var dreadnought = 		{id:23, label:'Dreadnought (Vulcan)', 				pts:75, group:dreads};
 	var furioso =	 		{id:24, label:'Dreadnought (Furioso)',				pts:75, group:dreads};
 	dreads.options = 		[dreadnought, furioso];
 var fastAttack = 		{id:25, label:'Fast Attack', upto:1};
 	var landSpeeder =		{id:26, label:'Fast Attack (2 Land Speeders)',		pts:100, group:fastAttack};
-	var bike =				{id:27, label:'Fast Attack (2 Bikes)',				pts:100, group:fastAttack};
-	var bike =				{id:28, label:'Fast Attack (3 Attack Bikes)',		pts:100, group:fastAttack};
+	var bike =				{id:27, label:'Fast Attack (3 Bikes)',				pts:100, group:fastAttack};
+	var bike =				{id:28, label:'Fast Attack (4 Attack Bikes)',		pts:100, group:fastAttack};
 	fastAttack.options = 	[landSpeeder, bike];
-var heavySupport = 		{id:29, label:'Heavy Support', upto:2};
-	var vindicators = 		{id:30, label:'Heavy Support (2 Baal Vindicators)',	pts:100, group:heavySupport};
-	var destructors =		{id:31, label:'Heavy Support (2 Baal Destructors)',	pts:125, group:heavySupport};
-	var annihilators =		{id:32, label:'Heavy Support (2 Baal Annihilators)',	pts:150, group:heavySupport};
-	var baals =				{id:33, label:'Heavy Support (2 Baal Predators)',		pts:150, group:heavySupport};
-	var landRaiders =		{id:34, label:'Heavy Support (2 Land Raiders)',		pts:175, group:heavySupport};
-	var redeemers =			{id:35, label:'Heavy Support (2 Land Raider Redeemers)',pts:175, group:heavySupport};
+var heavySupport = 		{id:29, label:'Heavy Support'};
+	var vindicators = 		{id:30, label:'Heavy Support (Vindicator)',				pts:50, group:heavySupport, upto:3};
+//	var destructors =		{id:31, label:'Heavy Support (2 Baal Destructors)',		pts:125, group:heavySupport};
+//	var annihilators =		{id:32, label:'Heavy Support (2 Baal Annihilators)',	pts:150, group:heavySupport};
+	var baals =				{id:33, label:'Heavy Support (Baal Predator)',			pts:75, group:heavySupport, upto:3};
+	var landRaiders =		{id:34, label:'Heavy Support (Land Raider)',			pts:75, group:heavySupport};
+//	var redeemers =			{id:35, label:'Heavy Support (2 Land Raider Redeemers)',pts:175, group:heavySupport};
 	heavySupport.options =	[vindicators, destructors, annihilators, baals, landRaiders, redeemers];
 var hunter = 			{id:36, label:'Baal Hunter', 							pts:75, upto:1};
 var termRaiders = 		{id:37, label:'Land Raiders', mini:2, upto:1};
 	var landRaiders2 =		{id:38, label:'Land Raiders',						pts:300, group:termRaiders};
 //	var redeemers =			{id:, label:'Land Raider (Redeemers)',			pts:125, group:termRaiders};
 	termRaiders.options = 	[landRaiders2];
-var storm =				{id:39, label:'Land Speeder Storms',				pts:100, upto:1};
+var storm =				{id:39, label:'Stormraven',								pts:75, overhead:25};
 var razorbacks =		{id:40, label:'Baal Razorback',							pts:25};
 var speeders = 			{id:41, label:'Speeders', upto:5, minimum:5};
 	var speeder =			{id:42, label:'Land Speeder',						pts:0, group:speeders, optional:true};
@@ -46,7 +46,8 @@ var speeders = 			{id:41, label:'Speeders', upto:5, minimum:5};
 
 // DETACHMENTS
 var assaultD = 			{id:500, label:'Assault Detachment', 		pts:250, units:'6 Assault Units', upgrades:[commander, fastAttack, heavySupport, hunter, assault, dreads]};
-var deathCompanyD =		{id:501, label:'Death Company',				pts:300, units:'Chaplain, 4 Death Company', defaults:[{unit:rhinos,count:1}], upgrades:[dreads, rhinos], upto:1};
+var deathCompanyD =		{id:501, label:'Death Company',				pts:275, units:'Chaplain, 4 Death Company', defaults:[{unit:rhinos,count:1}], upgrades:[dreads, storms, rhinos], upto:1};
+var deathAssaultD =		{id:520, label:'Death Company (Assault)',	pts:300, units:'Chaplain, 4 Assault Death Company', defaults:[], upgrades:[dreads, storms], upto:1};
 var devastatorD = 		{id:502, label:'Devastator Detachment',		pts:250, units:'4 Devastators', defaults:[{unit:rhinos,count:1}], upgrades:[commander, heavySupport, hunter, razorbacks, dreads, rhinos]};
 var landSpeederD =		{id:503, label:'Land Speeders',				pts:200, defaults:[{unit:speeder,count:5}], upgrades:[commander]};
 var landingCraftD =		{id:504, label:'Landing Craft',				pts:350, upgrades:[]};
@@ -67,7 +68,7 @@ var alliesList = 		{id:516, label:'ALLIES', options:[thunderbolt, marauder]};
 
 // DETAILS
 var listData =	{
-	id:'Blood Angels', version:'NetEA v2.08',
+	id:'Blood Angels', version:'NetEA v2.09',
 	sublists:[detachments, alliesList]
 };
 
