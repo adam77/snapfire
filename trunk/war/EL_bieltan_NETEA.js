@@ -80,7 +80,7 @@ var allyList = 		{id:523, label:'SPACESHIPS, AIRCRAFT &amp; TITANS', options:[wr
 
 // DETAILS
 var listData = {
-	id:'Biel-Tan Craftworld', version:'NetEA FINAL',
+	id:'Biel-Tan Craftworld', version:'NetEA Compendium 1.0',
 	sublists:[individualList, warhostList, troupeList, allyList],
 	restriction:{limit:3, restricting:'Warhost', restricted:'Troupes'}};
 

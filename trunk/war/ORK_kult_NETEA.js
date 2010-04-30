@@ -138,7 +138,7 @@ var othersList = 		{id:521, label:'AIRCRAFT and SPACECRAFT', options:[fightaSqua
 
 // DETAILS
 var listData = {
-	id:'Burning Death Speed Freeks', version:'NetEA FINAL',
+	id:'Burning Death Speed Freeks', version:'NetEA Compendium 1.0',
 	sublists:[warbandList, othersList]};
 
 // CALLBACK

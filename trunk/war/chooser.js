@@ -188,26 +188,30 @@ function doImport() { // todo: mandatory formations break because they are not l
 }
 
 function unpickle(pickled) {
-	var doneName = false
-	var currentFormation = null
-	decodeURIComponent(pickled).split('~').each(function(x) {
-		if (!doneName) {
-			$('orbatName').update(x)
-			doneName = true
-		}
-		else {
-			var id = parseInt(x.split('x')[0])
-			if (id >= 500) {
-				currentFormation = addFormation(null, allFormations[id], true).identify()
+	try {
+		var doneName = false
+		var currentFormation = null
+		decodeURIComponent(pickled).split('~').each(function(x) {
+			if (!doneName) {
+				$('orbatName').update(x)
+				doneName = true
 			}
 			else {
-				var count = parseInt(x.split('x')[1])
-				for (var i=0;i<count;i++) {
-					addUpgrade(null, currentFormation, allUpgrades[id])
+				var id = parseInt(x.split('x')[0])
+				if (id >= 500) {
+					currentFormation = addFormation(null, allFormations[id], true).identify()
 				}
-			}
-		}			
-	})	
+				else {
+					var count = parseInt(x.split('x')[1])
+					for (var i=0;i<count;i++) {
+						addUpgrade(null, currentFormation, allUpgrades[id])
+					}
+				}
+			}			
+		})	
+	} catch(err) {
+			alert('Sorry, there was an error loading the army.');
+	}
 }
 
 function pickle() {
