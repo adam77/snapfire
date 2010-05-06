@@ -7,12 +7,12 @@
 	<style>
 body {
 //	background-color:olive;
-	font-size:small;
+//	font-size:small;
 	padding:0 2em;
 	margin:0;
 }
 h1 {
-	margin-bottom:2em;
+//	margin-bottom:2em;
 }
 div.box {
 	text-align:left;
@@ -26,16 +26,16 @@ div.box {
 }
 td {
 	text-align:center;
-	border-left:1px gray solid;
-	border-right:1px gray solid;
-	border-bottom:1px gray dotted;
+//	border-left:1px gray solid;
+//	border-right:1px gray solid;
+//	border-bottom:1px gray dotted;
 	vertical-align:top;
-	padding:.8em;
+	padding:.5em;
 	background-color:#eeeecc;
 }
 th {
 	font-size:large;
-	padding:.8em;
+	padding:.5em;
 	vertical-align:top;
 }
 .topLeft {
@@ -49,15 +49,17 @@ th {
 .topRow th {
 	text-align:center;
 }
-th {	
-	text-align:right;
-	background-color:#eeeecc;
-	border-top:1px gray dotted;
-	border-left:1px gray solid;
-	border-right:1px gray solid;
-	border-bottom:1px gray dotted;
+th {
+	font-size:small;	
+//	text-align:right;
+//	background-color:#eeeecc;
+//	border-top:1px gray dotted;
+//	border-left:1px gray solid;
+//	border-right:1px gray solid;
+//	border-bottom:1px gray dotted;
 }
 #tab {
+	margin-bottom:1em;
 	border:1px gray solid;
 	font-family:sans-serif;
 	text-align:center;
@@ -71,80 +73,106 @@ th.army {
 	font-size:small;
 	text-align:center;
 }
-
+#tab td {
+	padding-top:.5em;
+	padding-bottom:.5em;
+}
+td.force {
+	padding-left:4em;
+	padding-right:4em;
+}
+.marines, .marines a {
+	color:blue;
+}
+.orcs, .orcs a {
+	color:green;
+}
+.guard, .guard a {
+	color:#666;
+}
+.eldar, .eldar a {
+	color:purple;
+}
+a:hover { color:orange }
+tr {
+	border-top:solid 1px white;
+}
+table {
+	border-collapse:collapse;
+}
+td a {
+	font-size:small;
+	font-family:sans-serif;
+}
+td.todo a {
+	color:lightgray;
+	text-decoration:none;
+	cursor:inherit;
+}	
 	</style>
 </head>
 <body>
 	<div id="main">
 
 			<div class="box">
-				<h1>Available Army Lists...</h1>
-				<table id="tab" style="width:100%;">
-					<tr class="topRow">
-				<!--		<th class="topLeft">&nbsp;</th>-->	
-						<th style="width:30%">NetEA</th>
-						<th style="width:30%">GW</th>
-						<th style="width:30%">Epic UK</th>
+				<h1>Army Lists...</h1>
+				<table id="ab">
+					<tr class="marines">
+						<td class="force">Codex Astartes</td>
+						<td><a href="./chooser.html?list=SM_codex">GW</a></td>
+						<td><a href="./chooser.html?list=SM_codex_NETEA">NetEA</a></td>
+						<td><a href="./chooser.html?list=SM_codex_EPICUK">EpicUK</a></td>
 					</tr>
-					<tr class="odd">
-						<th class="army">MARINES</th>
-						<td>
-							<a href="./chooser.html?list=SM_codex_NETEA">Codex Astartes</a><br>
-							White Scars<br>
-							Blood Angels<br>
-							<!-- <a href="./chooser.html?list=SM_bloodAngels_NETEA">Blood Angels (v2.09)</a><br> -->
-						</td>
-						<td>
-							<a href="./chooser.html?list=SM_codex">Codex Astartes (Oct09)</a><br>
-							White Scars<br>
-						</td>
-						<td>
-							<a href="./chooser.html?list=SM_codex_EPICUK">Codex Astartes (v010409)</a><br>
-							White Scars<br>
-							<a href="./chooser.html?list=SM_bloodAngels_EPICUK">Blood Angels (v010409)</a><br>
-						</td>
+					<tr class="marines">
+						<td class="force">Blood Angels</td>
+						<td></td>
+						<td class="todo"><a href="">NetEA</a></td>
+						<td><a href="./chooser.html?list=">EpicUK</a></td>
 					</tr>
-					<tr>
-						<th class="army">GUARD</th>
-						<td>
-							<a href="./chooser.html?list=IG_steelLegion_NETEA">Steel Legion</a><br>						
-						</td>
-						<td>
-							<a href="./chooser.html?list=IG_steelLegion">Steel Legion (Oct09)</a><br>
-						</td>
-						<td>
-							<a href="./chooser.html?list=IG_steelLegion_EPICUK">Steel Legion (v301209)</a><br>						
-						</td>
+					<tr class="marines">
+						<td class="force">White Scars</td>
+						<td class="todo"><a href="">GW</a></td>
+						<td class="todo"><a href="">NetEA</a></td>
+						<td class="todo"><a href="">EpicUK</a></td>
 					</tr>
-					<tr class="odd">
-						<th class="army">ORC</th>
-						<td>
-							<a href="./chooser.html?list=ORK_ghazgkhull_NETEA">Ghazgkhull's Warhorde</a><br>
-							<a href="./chooser.html?list=ORK_kult_NETEA">Speed Freakz</a><br>
-							Feral Orks<br>
-						</td>
-						<td>
-							<a href="./chooser.html?list=ORK_ghazgkhull">Ghazgkhull's Warhorde (Oct09)</a><br>
-							<a href="./chooser.html?list=ORK_kult">Speed Freakz (WD291)</a><br>
-							Feral Orks<br>
-						</td>
-						<td>
-							<a href="./chooser.html?list=ORK_ghazgkhull_EPICUK">Ghazgkhull's Warhorde (v100909)</a><br>
-							<a href="./chooser.html?list=ORK_kult_EPICUK">Speed Freakz (v100909)</a><br>
-							Feral Orks<br>
-						</td>
+					<tr><th colspan="4"></th></tr>
+					<tr class="guard top">
+						<td class="force">Steel Legion</td>
+						<td><a href="./chooser.html?list=">GW</a></td>
+						<td><a href="./chooser.html?list=">NetEA</a></td>
+						<td><a href="./chooser.html?list=">EpicUK</a></td>
 					</tr>
-					<tr>
-						<th class="army">ELDAR</th>
-						<td>
-							<a href="./chooser.html?list=EL_bieltan_NETEA">Biel-Tan Warhost</a><br>
-						</td>
-						<td>
-							Biel-Tan Warhost<br>
-						</td>
-						<td>
-							Biel-Tan Warhost<br>
-						</td>
+					<tr class="guard">
+						<td class="force">Baran Seige Masters</td>
+						<td class="todo"><a href="">GW</a></td>
+						<td class="todo"><a href="">NetEA</a></td>
+						<td class="todo"><a href="">EpicUK</a></td>
+					</tr>
+					<tr><th colspan="4"></th></tr>
+					<tr class="orcs top">
+						<td class="force">Ghazgkhull's Warhorde</td>
+						<td><a href="./chooser.html?list=">GW</a></td>
+						<td><a href="./chooser.html?list=">NetEA</a></td>
+						<td><a href="./chooser.html?list=">EpicUK</a></td>
+					</tr>
+					<tr class="orcs">
+						<td class="force">Speed Freakz</td>
+						<td><a href="./chooser.html?list=ORK_kult">GW</a></td>
+						<td><a href="./chooser.html?list=ORK_kult_NETEA">NetEA</a></td>
+						<td><a href="./chooser.html?list=ORK_kult_EPICUK">EpicUK</a></td>
+					</tr>
+					<tr class="orcs">
+						<td class="force">Feral Orks</td>
+						<td class="todo"><a href="">GW</a></td>
+						<td class="todo"><a href="">NetEA</a></td>
+						<td class="todo"><a href="">EpicUK</a></td>
+					</tr>
+					<tr><th colspan="4"></th></tr>
+					<tr class="eldar top">
+						<td class="force">Biel-Tan</td>
+						<td class="todo"><a href="">GW</a></td>
+						<td><a href="./chooser.html?list=">NetEA</a></td>
+						<td class="todo"><a href="">EpicUK</a></td>
 					</tr>
 				</table>
 				<p style="margin-top:3em">
