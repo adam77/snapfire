@@ -9,8 +9,11 @@ body {
 	padding:0 2em;
 	margin:0;
 }
+p {
+	font-size:small;
+}
 div.box {
-	text-align:left;
+	text-align:center;
 	padding:4em 2em 3em 2em;
 	margin-top:-5px;
 	background-color:white;
@@ -55,15 +58,19 @@ td.force {
 }
 #ab a:hover { color:orange }
 tr {
-	border-top:solid 1px white;
+	border-top:solid 2px white;
 }
 table {
+	margin:auto;
 	border-collapse:collapse;
 }
 #ab td a {
 	color:gray;
 	font-size:small;
 	font-family:sans-serif;
+}
+#ab .todo {
+	color:lightgray;
 }
 #ab td.todo a {
 	color:lightgray;
@@ -76,58 +83,58 @@ table {
 	<div id="main">
 
 			<div class="box">
-				<h1>Army Lists...</h1>
+				<h1>&nbsp;</h1>
 				<table id="ab">
 					<tr class="marines">
 						<td class="force">Codex Astartes</td>
 						<td><a href="./chooser.html?list=SM_codex">GW</a></td>
 						<td><a href="./chooser.html?list=SM_codex_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=SM_codex_EPICUK">EpicUK</a></td>
+						<td><a href="./chooser.html?list=SM_codex_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
 					<tr class="marines">
 						<td class="force">Blood Angels</td>
 						<td></td>
 						<td class="todo"><a href="">NetEA</a></td>
-						<td><a href="./chooser.html?list=">EpicUK</a></td>
+						<td><a href="./chooser.html?list=">EpicUK</a>&nbsp;</td>
 					</tr>
 					<tr class="marines">
 						<td class="force">White Scars</td>
-						<td class="todo"><a href="">GW</a></td>
-						<td class="todo"><a href="">NetEA</a></td>
-						<td class="todo"><a href="">EpicUK</a></td>
+						<td><a href="./chooser.html?list=SM_scars">GW</a></td>
+						<td><a href="./chooser.html?list=SM_scars_NETEA">NetEA</a></td>
+						<td><a href="./chooser.html?list=SM_scars_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
 					<tr><th colspan="4"></th></tr>
 					<tr class="guard top">
 						<td class="force">Steel Legion</td>
-						<td><a href="./chooser.html?list=">GW</a></td>
-						<td><a href="./chooser.html?list=">NetEA</a></td>
-						<td><a href="./chooser.html?list=">EpicUK</a></td>
+						<td><a href="./chooser.html?list=IG_steelLegion">GW</a></td>
+						<td><a href="./chooser.html?list=IG_steelLegion_NETEA">NetEA</a></td>
+						<td><a href="./chooser.html?list=IG_steelLegion_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
-<!--					<tr class="guard">
-						<td class="force">Baran Siege Masters</td>
+					<tr class="guard">
+						<td class="force todo">Baran Siege Masters</td>
 						<td class="todo"><a href="">GW</a></td>
 						<td class="todo"><a href="">NetEA</a></td>
-						<td class="todo"><a href="">EpicUK</a></td>
-					</tr>-->
+						<td class="todo"><a href="">EpicUK</a>&nbsp;</td>
+					</tr>
 					<tr><th colspan="4"></th></tr>
 					<tr class="orcs top">
 						<td class="force">Ghazgkhull's Warhorde</td>
-						<td><a href="./chooser.html?list=">GW</a></td>
-						<td><a href="./chooser.html?list=">NetEA</a></td>
-						<td><a href="./chooser.html?list=">EpicUK</a></td>
+						<td><a href="./chooser.html?list=ORK_ghazgkhull">GW</a></td>
+						<td><a href="./chooser.html?list=ORK_ghazgkhull_NETEA">NetEA</a></td>
+						<td><a href="./chooser.html?list=ORK_ghazgkhull_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
 					<tr class="orcs">
 						<td class="force">Speed Freakz</td>
 						<td><a href="./chooser.html?list=ORK_kult">GW</a></td>
 						<td><a href="./chooser.html?list=ORK_kult_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=ORK_kult_EPICUK">EpicUK</a></td>
+						<td><a href="./chooser.html?list=ORK_kult_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
-<!--					<tr class="orcs">
-						<td class="force">Feral Orks</td>
+					<tr class="orcs">
+						<td class="force todo">Feral Orks</td>
 						<td class="todo"><a href="">GW</a></td>
 						<td class="todo"><a href="">NetEA</a></td>
-						<td class="todo"><a href="">EpicUK</a></td>
-					</tr>-->
+						<td class="todo"><a href="">EpicUK</a>&nbsp;</td>
+					</tr>
 					<tr><th colspan="4"></th></tr>
 					<tr class="eldar top">
 						<td class="force">Biel-Tan</td>
@@ -136,12 +143,13 @@ table {
 						<td></td>
 					</tr>
 				</table>
-				<p style="margin-top:3em">
+				<p style="margin-top:5em">
 				Check out the discussion on	<a href="http://www.tacticalwargames.net/taccmd/viewtopic.php?f=4&t=18310">Tactical Command</a> for comments, feedback and errors. 
 				<br>
 				Note that the picker won't work on out of date browsers (particularly IE7/6).<br>
 				</p>
 				<p>
+				This website is unofficial and in no way endorsed by Games Workshop Limited.
 				<!-- todo:<br>
 				(!overhead for individual units)<br>
 				(!army constraint: 1 per army upgrades)<br>

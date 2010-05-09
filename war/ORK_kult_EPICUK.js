@@ -147,7 +147,7 @@ var othersList = 		{id:521, label:'AIRCRAFT and SPACECRAFT', options:[fightaSqua
 
 // DETAILS
 var listData = {
-	id:'Burning Death Speed Freeks', version:'White Dwarf 291',
+	id:'Burning Death Speed Freeks', version:'Epic UK v100909',
 	sublists:[warbandList, othersList]};
 
 // CALLBACK
