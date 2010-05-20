@@ -430,8 +430,9 @@ function checkArmyConstraints() {
 			count += x.upgradeData.pts * upgradeMultiplier(x);
 		});
 	});
-	if (count > totalPoints() / 3.0) {
-		warnings.push('Over 1/3 of points is spent on War Engines/Allies!');
+	var ratio = listData.limitRatio ? listData.limitRatio : 3.0
+	if (count > totalPoints() / ratio) {
+		warnings.push('Over 1/'+ratio+' of points is spent on War Engines/Allies!');
 	}
 	// restricted formations
 	if (listData.restriction) {
