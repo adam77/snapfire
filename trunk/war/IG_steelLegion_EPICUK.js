@@ -61,7 +61,7 @@ var companyList =	{id:518, label:'COMPANIES', options:[hq, infantryCoy, mechCoy,
 
 // NAVY
 var thunderbolt = 		{id:519, label:'Thunderbolt Fighters',	pts:150, upgrades:[], limited:true, units:'2 Thunderbolts'};
-var marauder =			{id:520, label:'Marauder Bombers',		pts:300, upgrades:[], limited:true, units:'2 Marauders'};
+var marauder =			{id:520, label:'Marauder Bombers',		pts:250, upgrades:[], limited:true, units:'2 Marauders'};
 var navyList =			{id:521, label:'IMPERIAL NAVY', options:[thunderbolt, marauder]};
 
 // TITANS
