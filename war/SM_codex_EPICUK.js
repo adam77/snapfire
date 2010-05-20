@@ -53,7 +53,7 @@ var detachmentList =	{id:516, label:'DETACHMENTS', options:[assaultD, battleBarg
 
 // NAVY
 var thunderbolt = 		{id:517, label:'Thunderbolt Fighters',	pts:150, units:'2 Fighters', upgrades:[], limited:true};
-var marauder =			{id:518, label:'Marauder Bombers',		pts:300, units:'2 Bombers', upgrades:[], limited:true};
+var marauder =			{id:518, label:'Marauder Bombers',		pts:250, units:'2 Bombers', upgrades:[], limited:true};
 var navyList =			{id:519, label:'IMPERIAL NAVY', options:[thunderbolt, marauder]};
 
 // TITANS
