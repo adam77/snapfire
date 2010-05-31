@@ -37,14 +37,14 @@ var lesser =			{id:52, label:'Lesser Daemon', pts:20};
 
 // DETACHMENTS
 var detachmentList =	{id:500, label:'DETACHMENTS', options:[
-	{id:501, label:'Raptor Cult', 				pts:0, upto:1, displayPts:140, defaults:[{unit:lord, count:1}, {unit:raptor,count:4}], upgrades:[raptor, pact]},
-	{id:502, label:'Chaos Terminators',			pts:0, upto:2, displayPts:260, defaults:[{unit:lord, count:1}, {unit:term,count:4}], upgrades:[term, dread, defiler, raiders, claws, obliterator, pact, champion, icon]},
-	{id:503, label:'Black Legion Retinue',		pts:275, units:'8 Chaos Space Marines', defaults:[{unit:lord, count:1}], upgrades:[rhino, havoc, cultmarine, dread, defiler, raiders, claws, obliterator, pact, champion, icon]},
-	{id:504, label:'Forlorn Hope Retinue',		pts:125, units:'4 Chaos Space Marines', upto:1, upgrades:[rhino, dread, pact]},
-	{id:505, label:'Bike Company',				pts:300, units:'8 Chaos Space Marines Bikes', defaults:[{unit:lord, count:1}], upgrades:[icon, pact]},
 	{id:506, label:'Armoured Company',			pts:0, displayPts:200, defaults:[{unit:pred, count:4}], upgrades:[pred, raider2, defiler]},
 	{id:507, label:'Assault Company',			pts:0, displayPts:225, upto:2, defaults:[{unit:decimator2, count:1}], upgrades:[decimator2, wheel, defiler]},
-	{id:508, label:'Daemon Pool',				pts:0, upto:1, upgrades:[greater, lesser]}
+	{id:505, label:'Bike Company',				pts:300, units:'8 Chaos Space Marines Bikes', defaults:[{unit:lord, count:1}], upgrades:[icon, pact]},
+	{id:503, label:'Black Legion Retinue',		pts:275, units:'8 Chaos Space Marines', defaults:[{unit:lord, count:1}], upgrades:[rhino, havoc, cultmarine, dread, defiler, raiders, claws, obliterator, pact, champion, icon]},
+	{id:502, label:'Chaos Terminators',			pts:0, upto:2, displayPts:260, defaults:[{unit:lord, count:1}, {unit:term,count:4}], upgrades:[term, dread, defiler, raiders, claws, obliterator, pact, champion, icon]},
+	{id:508, label:'Daemon Pool',				pts:0, upto:1, upgrades:[greater, lesser]},
+	{id:504, label:'Forlorn Hope Retinue',		pts:125, units:'4 Chaos Space Marines', upto:1, upgrades:[rhino, dread, pact]},
+	{id:501, label:'Raptor Cult', 				pts:0, upto:1, displayPts:140, defaults:[{unit:lord, count:1}, {unit:raptor,count:4}], upgrades:[raptor, pact]},
 ]};
 
 // NAVY
