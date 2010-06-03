@@ -16,8 +16,8 @@ var armour =		{id:19, label:'Vehicles', upto:8, minimum:4};
 	var raider2 =	{id:21, label:'Chaos Land Raider', pts:75, optional:true, group:armour};
 	armour.options = [pred, raider2];
 var assault =		{id:22, label:'Vehicles', upto:3, minimum:1};
-	var decimator2 =		{id:23, label:'Decimator', pts:225, optional:true, group:assault};
-	var wheel =	{id:24, label:'Death Wheel', pts:275, optional:true, group:assault};
+	var decimator2 ={id:23, label:'Decimator', pts:225, optional:true, group:assault};
+	var wheel =		{id:24, label:'Death Wheel', pts:275, optional:true, group:assault};
 	assault.options = [decimator2, wheel];
 
 // UPGRADES
@@ -48,18 +48,20 @@ var detachmentList =	{id:500, label:'DETACHMENTS', options:[
 ]};
 
 // NAVY
-var intercept = 		{id:530, label:'Swiftdeath Interceptor',	pts:200, units:'3 Interceptors', upgrades:[], limited:true};
-var bomber =			{id:531, label:'Helltalon Fighter-bomber',	pts:300, units:'2 Bombers', upgrades:[], limited:true};
 var spacecraft = 		{id:532, label:'Spacecraft', upto:1};
-var cruiser =			{id:533, label:'Devastation Class Cruiser',	pts:150, upgrades:[], group:spacecraft, limited:true}; 
-var despoiler =			{id:534, label:'Despoiler Class Battleship',pts:250, upgrades:[], group:spacecraft, limited:true}; 
-var navyList =			{id:535, label:'CHAOS NAVY', options:[intercept, bomber, cruiser, despoiler]};
+var navyList =			{id:535, label:'CHAOS NAVY', options:[
+	{id:530, label:'Swiftdeath Interceptor',	pts:200, units:'3 Interceptors', upgrades:[], limited:true},
+	{id:531, label:'Helltalon Fighter-bomber',	pts:300, units:'2 Bombers', upgrades:[], limited:true},
+	{id:533, label:'Devastation Class Cruiser',	pts:150, upgrades:[], group:spacecraft, limited:true}, 
+	{id:534, label:'Despoiler Class Battleship',pts:250, upgrades:[], group:spacecraft, limited:true}
+]};
 
 // TITANS
-var banelord =			{id:520, label:'Banelord Titan',	pts:800, upgrades:[], limited:true};
-var ravager =			{id:521, label:'Ravager Titan',		pts:650, upgrades:[], limited:true};
-var feral =				{id:522, label:'Feral Titan',		pts:300, upgrades:[], limited:true};
-var titanList = 		{id:523, label:'WAR ENGINES', options:[banelord, ravager, feral]};
+var titanList = 		{id:523, label:'WAR ENGINES', options:[
+	{id:520, label:'Banelord Titan',	pts:800, upgrades:[], limited:true},
+	{id:521, label:'Ravager Titan',		pts:650, upgrades:[], limited:true},
+	{id:522, label:'Feral Titan',		pts:300, upgrades:[], limited:true}
+]};
 
 // DETAILS
 var listData = {
