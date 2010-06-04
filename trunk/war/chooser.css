@@ -6,8 +6,11 @@ body {
 table {
 	border-collapse:collapse;
 }
-th, td {
+th {
 	padding:0.5em 1em 0.5em 1em;
+}
+td {
+	padding:0.7em 1em 0.5em 1em;
 }
 tr.interactive:hover > td {
 	cursor:pointer;
@@ -32,6 +35,8 @@ tr.interactive:hover > td {
 }
 #orbatTitle {
 	text-align:left;
+	font-weight:bold;
+	font-size:normal;
 }
 .orbat {
 	font-family:sans-serif;
@@ -42,6 +47,7 @@ tr.interactive:hover > td {
 #orbatListName {
 	font-style:italic;
 	font-size:x-small;
+	font-weight:normal;
 }
 .orbat tr {
 	border-bottom:none;
@@ -49,6 +55,8 @@ tr.interactive:hover > td {
 .orbat tr.orbatFormation td {
 	padding-bottom:0;
 	border-bottom:none;
+	font-weight:bold;
+	font-size:small;
 }
 .orbat span.upgradeMultiplier {
 	float:left;
@@ -73,10 +81,12 @@ tr.optionalUnit > td {
 .points {
 	padding-left:0;	
 	text-align:right;
+	vertical-align:top;
 }
 #orbatTotal {
 	vertical-align:top;
 	text-align:right;
+//s	font-weight:normal;
 }
 #formationDivider {
 	border-bottom:1px dotted gray;
@@ -102,6 +112,7 @@ tr.optionalUnit > td {
 }
 .units {
 	font-size:x-small;
+	font-weight:normal;
 //	color:black;
 }
 
@@ -114,6 +125,10 @@ div.dropDown {
 	width:44%;
 	margin-left:10%;
 	margin-top:-4px;
+}
+
+div.dropDown .listDiv table td {
+	font-weight:normal;
 }
 
 /* ARMY LISTS */
