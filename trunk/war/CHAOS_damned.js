@@ -58,7 +58,7 @@ var companyList =	{id:530, label:'FORMATIONS', options:[
 	{id:534, label:'Stigmatus Coven (Tzeentch)',		pts:35, displayPts:200, restricting:true, defaults:[{unit:demagogue,count:1},{unit:cultist,count:11}], upgrades:[cultist, mutant, bigMutant, pact, icon, spawn, hound, altar, tanks, fireSup, griffon, hellhound, hydra, chimera, transports]},
 	{id:535, label:'Stigmatus Coven (Undivided)',		pts:35, displayPts:200, restricting:true, defaults:[{unit:demagogue,count:1},{unit:cultist,count:11}], upgrades:[cultist, mutant, bigMutant, pact, icon, spawn, hound, altar, tanks, fireSup, griffon, hellhound, hydra, chimera, transports]},
 	{id:536, label:'Plague Zombie Infestation',			pts:175, units:'3D6 Plague Zombie Units', upto:2, upgrades:[]},
-	{id:537, label:'Daemon Pool',						pts:0, upto:1, upgrades:[greater, lesser]},
+	{id:537, label:'Daemon Pool',						pts:0, upto:1, upgrades:[greater, lesser]}
 ]};
 
 // SUPPORT (1 per coven, no upgrades allowed)
