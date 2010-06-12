@@ -3,7 +3,7 @@ var bikes = 			{id:13, label:'Bikes',	upto:5, minimum:5};
 	var attackBike =		{id:14, label:'Attack Bike', 	pts:0, optional:true, group:bikes};
 	var bike =				{id:15, label:'Bike Unit',		pts:0, optional:true, group:bikes};
 	bikes.options = [attackBike, bike];
-var speeders =			{id:16, label:'Speeders', upto:5, minimum:5};
+var speeders =			{id:16, label:'Speeders', upto:2, minimum:2};
 	var speeder =			{id:17, label:'Land Speeder',					pts:0, group:speeders, optional:true};
 	var tornado =			{id:18, label:'Tornado',						pts:10, group:speeders, optional:true};
 	var typhoon = 			{id:19, label:'Typhoon',						pts:25, group:speeders, optional:true};
@@ -28,8 +28,8 @@ var vindicator = 		{id:35, label:'Vindicator',							pts:50, upto:2};
 
 // DETACHMENTS
 var assaultD = 			{id:500, label:'Assault Detachment', 		pts:175, units:'4 Assault Units', upgrades:[commander, vindicator]};
-var bikeD = 			{id:501, label:'Bike Detachment', 			pts:200, defaults:[{unit:bike,count:5}], upgrades:[commander]};
-var devastatorD = 		{id:502, label:'Devastator Detachment',		pts:250, units:'4 Devastators, Transport', upgrades:[commander, razorbacks, dreadnought, hunter, landRaiders, vindicator]};
+var deathD = 			{id:501, label:'Deathwing',		 			pts:350, units:'4 Deathwing Terminators', upgrades:[commander, landRaiders, dreadnought, vindicator]};
+var devastatorD = 		{id:502, label:'Devastator Detachment',		pts:300, units:'4 Devastators, Transport', upgrades:[commander, razorbacks, dreadnought, landRaiders, vindicator]};
 var landRaiderD = 		{id:503, label:'Land Raiders',				pts:350, units:'4 Land Raiders', upgrades:[commander, hunter, vindicator]};
 var landSpeederD =		{id:504, label:'Land Speeders',				pts:200, defaults:[{unit:speeder,count:5}], upgrades:[commander]};
 var landingCraftD =		{id:505, label:'Landing Craft',				pts:350, upgrades:[]};
@@ -43,24 +43,14 @@ var terminatorD =		{id:512, label:'Terminator Detachment',		pts:350, units:'4 Te
 var thunderhawkD =		{id:513, label:'Thunderhawk',				pts:200, upgrades:[]};
 var vindicatorD =		{id:514, label:'Vindicators',				pts:250, units:'4 Vindicators', upgrades:[commander, hunter]};
 var whirlwindD =		{id:515, label:'Whirlwinds',				pts:300, units:'4 Whirlwinds', upgrades:[commander, hunter]};
-var detachmentList =	{id:516, label:'DETACHMENTS', options:[assaultD, battleBargeD, bikeD, devastatorD, landRaiderD, landSpeederD, landingCraftD, predatorsD, scoutD, strikeCruiserD, tacticalD, terminatorD, thunderhawkD, vindicatorD, whirlwindD]};
+var ravenD =			{id:517, label:'Ravenwing',					pts:400, units:'4 Bikes, 2 Attack Bikes', defaults:[{unit:speeder,count:2}], upgrades:[commander]};
+var detachmentList =	{id:516, label:'DETACHMENTS', options:[assaultD, battleBargeD, deathD, devastatorD, landRaiderD, landSpeederD, landingCraftD, predatorsD, ravenD, scoutD, strikeCruiserD, tacticalD, terminatorD, thunderhawkD, vindicatorD, whirlwindD]};
 
-// NAVY
-var thunderbolt = 		{id:517, label:'Thunderbolt Fighters',	pts:150, units:'2 Fighters', upgrades:[], limited:true};
-var marauder =			{id:518, label:'Marauder Bombers',		pts:250, units:'2 Bombers', upgrades:[], limited:true};
-var navyList =			{id:519, label:'IMPERIAL NAVY', options:[thunderbolt, marauder]};
-
-// TITANS
-var warlord =			{id:520, label:'Warlord Class Titan',	pts:850, upgrades:[], limited:true};
-var reaver =			{id:521, label:'Reaver Class Titan',	pts:650, upgrades:[], limited:true};
-var warhounds =			{id:524, label:'Warhound Pack',			pts:500, upgrades:[], limited:true, units:'2 Warhounds'};
-var warhound =			{id:522, label:'Warhound Titan',		pts:275, upgrades:[], limited:true};
-var titanList = 		{id:523, label:'TITAN LEGIONS', options:[warlord, reaver, warhounds, warhound]};
 
 // DETAILS
 var listData = {
-	id:'Codex Astartes', version:'Epic UK v010409',
-	sublists:[detachmentList, navyList, titanList]};
+	id:'Dark Angels', version:'Epic UK v010409',
+	sublists:[detachmentList]};
 
 // CALLBACK
 listLoaded();
