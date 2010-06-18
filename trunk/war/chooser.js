@@ -360,7 +360,7 @@ function addUpgrade(event, formationId, upgradeData) {
 		var newRow = new Element('tr', {'class':clazz}).update(
 						newCell 
 					 ).insert(
-						new Element('td', {'class':'points'}).update(upgradeData.pts));
+						new Element('td', {'class':'points'}).update(' '));//upgradeData.pts));
 
 		newRow.upgradeData = upgradeData;
 		
@@ -408,7 +408,7 @@ function addUpgrade(event, formationId, upgradeData) {
 		}
 		var count = 1 + upgradeMultiplier(existingUpgrade);
 		$(existingUpgrade.multiplierSpan).update(count + 'x&nbsp;');
-		existingUpgrade.childElements()[1].update(count * upgradeData.pts);
+		//existingUpgrade.childElements()[1].update(count * upgradeData.pts);
 	}
 
 	// constraints

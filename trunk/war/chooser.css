@@ -184,6 +184,10 @@ div.dropDown .listDiv table td {
 	}
 	#orbat {
 		width:100%;
+		margin-bottom:1em;
+	}
+	.orbatUpgrade td.points {
+		color:white;
 	}
 }
 
