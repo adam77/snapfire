@@ -62,9 +62,9 @@ var supportList =	{id:510, label:'SUPPORT GROUPS', options:[
 ]};
 
 // CADRES
-var companyList =	{id:510, label:'CADRES', options:[
-	{id:511, label:'Fire Warrior Cadre',		pts:225, upgrades:[ethereal,warrior,fishes,skyray,finders,drone,piranha,hammer,team,broad], restricting:true, defaults:[{unit:warrior8,count:1}]},
-	{id:512, label:'Crisis Battlesuit Cadre',	pts:50, displayPts:250, defaults:[{unit:suit,count:4}], upgrades:[suit,commander,supreme], restricting:true}
+var companyList =	{id:530, label:'CADRES', options:[
+	{id:531, label:'Fire Warrior Cadre',		pts:225, upgrades:[ethereal,warrior,fishes,skyray,finders,drone,piranha,hammer,team,broad], restricting:true, defaults:[{unit:warrior8,count:1}]},
+	{id:532, label:'Crisis Battlesuit Cadre',	pts:50, displayPts:250, defaults:[{unit:suit,count:4}], upgrades:[suit,commander,supreme], restricting:true}
 ]};
 
 // AIR CASTE
