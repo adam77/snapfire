@@ -6,63 +6,36 @@
 	<title>ArmyForge - EA Army Lists</title>
 	<style>
 body {
-	padding:0 2em;
+	padding:0;
 	margin:0;
 }
 p {
 	font-size:small;
 }
-div.box {
+.ab td {
 	text-align:center;
-	padding:4em 2em 4em 2em;
-	margin-top:-5px;
-	background-color:white;
-}
-td {
-//	background: -moz-linear-gradient(top, blue,white);
-	text-align:center;
-	vertical-align:top;
+	vertical-align:center;
 	padding:.3em;
 	background-color:#eeeecc;
-}
-th {
-	padding:.3em;
-	vertical-align:top;
-}
-.topLeft {
-	background-color:inherit;
 }
 #main {
 	max-width:98%;
 	width:70em;
 	margin:auto;
+	text-align:center;
 }
 .topRow th {
 	text-align:center;
 }
 td.force {
-//	color:#555;
-	padding-left:0.5em;
-	padding-right:4em;
+	vertical-align:center;
+	font-size:small;
+	padding-left:0;
+	padding-right:1.5em;
 	font-family:sans-serif;
 	text-align:left;
 }
-.marines td{
-//	color:#009;
-//	background-color:lightBlue;
-}
-.orcs, .orcs td {
-//	color:green;
-//	background-color:palegreen;
-}
-.guard, .guard td {
-	//color:#555;
-//	background-color:lightgray;
-}
-.eldar, .eldar {
-	//color:purple;
-}
-#ab a:hover { color:orange }
+.ab a:hover { color:orange }
 tr {
 	border-top:solid 0.1em white;
 }
@@ -70,48 +43,48 @@ table {
 	margin:auto;
 	border-collapse:collapse;
 }
-#ab td a {
+.ab td a {
 	color:#555;
 	font-size:small;
 	font-family:sans-serif;
-	text-decoration:none;
+//	text-decoration:none;
 }
-#ab .todo {
+.ab .todo {
 	color:lightgray;
 }
-#ab td.todo a {
+.ab td.todo a {
 	color:lightgray;
 	text-decoration:none;
 	cursor:inherit;
 }	
 img.icon {
 	opacity:1;
-	margin-left:1em;
-	margin-right:1em;
+	margin-left:0.3em;
+	margin-right:0.3em;
 	height:1em;
 	vertical-align:middle;
-//	float:left;
-}
-tr.top {
-//	border-top:5px solid gray;
 }
 td.uk {
-	padding-right:1em;
+	padding-right:0.5em;
+}
+#layout > tbody > tr > td {
+	padding:4em 2em 2em 2em;
+	width:50%;
+	vertical-align:top;
 }
 	</style>
 </head>
 <body>
 	<div id="main">
-
-			<div class="box">
-				<table id="ab">
+			<table id="layout">
+				<tr><td>
+				<table class="ab">
 					<tr class="marines">
 						<td><img class="icon" src="imperial_eagle.png"/></td>
 						<td class="force">Black Templars</td>
 						<td></td>
 						<td class="todo"><a href="">NetEA</a></td>
 						<td class="uk"><a href="./chooser.html?list=SM_templars_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="imperial_eagle.png"/></td>-->
 					</tr>
 					<tr class="marines">
 						<td><img class="icon" src="imperial_eagle.png"/></td>
@@ -119,7 +92,6 @@ td.uk {
 						<td></td>
 						<td class="todo"><a href="">NetEA</a></td>
 						<td class="uk"><a href="./chooser.html?list=SM_bloodAngels_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="imperial_eagle.png"/></td>-->
 					</tr>
 					<tr class="marines">
 						<td><img class="icon" src="imperial_eagle.png"/></td>
@@ -127,7 +99,6 @@ td.uk {
 						<td><a href="./chooser.html?list=SM_codex">GW</a></td>
 						<td><a href="./chooser.html?list=SM_codex_NETEA">NetEA</a></td>
 						<td class="uk"><a href="./chooser.html?list=SM_codex_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="imperial_eagle.png"/></td>-->
 					</tr>
 					<tr class="marines">
 						<td><img class="icon" src="imperial_eagle.png"/></td>
@@ -135,7 +106,6 @@ td.uk {
 						<td>&nbsp;</td>
 						<td class="todo"><a href="">NetEA</a></td>
 						<td class="uk"><a href="./chooser.html?list=SM_dark_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="imperial_eagle.png"/></td>-->
 					</tr>
 					<tr class="marines">
 						<td><img class="icon" src="imperial_eagle.png"/></td>
@@ -143,31 +113,6 @@ td.uk {
 						<td><a href="./chooser.html?list=SM_scars">GW</a></td>
 						<td><a href="./chooser.html?list=SM_scars_NETEA">NetEA</a></td>
 						<td class="uk"><a href="./chooser.html?list=SM_scars_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="imperial_eagle.png"/></td>-->
-					</tr>
-					<tr class="orcs top">
-						<td><img class="icon" src="ork_icon.png"/></td>
-						<td class="force">Feral Orks</td>
-						<td><a href="./chooser.html?list=ORK_feral">GW</a></td>
-						<td><a href="./chooser.html?list=ORK_feral_NETEA">NetEA</a></td>
-						<td class="uk"><a href="./chooser.html?list=ORK_feral_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="ork_icon.png"/></td>-->
-					</tr>
-					<tr class="orcs">
-						<td><img class="icon" src="ork_icon.png"/></td>
-						<td class="force">Ghazgkhull's Warhorde</td>
-						<td><a href="./chooser.html?list=ORK_ghazgkhull">GW</a></td>
-						<td><a href="./chooser.html?list=ORK_ghazgkhull_NETEA">NetEA</a></td>
-						<td class="uk"><a href="./chooser.html?list=ORK_ghazgkhull_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="ork_icon.png"/></td>-->
-					</tr>
-					<tr class="orcs">
-						<td><img class="icon" src="ork_icon.png"/></td>
-						<td class="force">Speed Freakz</td>
-						<td><a href="./chooser.html?list=ORK_kult">GW</a></td>
-						<td><a href="./chooser.html?list=ORK_kult_NETEA">NetEA</a></td>
-						<td class="uk"><a href="./chooser.html?list=ORK_kult_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="ork_icon.png"/></td>-->
 					</tr>
 					<tr class="guard top">
 						<td><img class="icon" src="ig_icon.png"/></td>
@@ -175,7 +120,6 @@ td.uk {
 						<td><a href="./chooser.html?list=IG_siege">GW</a></td>
 						<td><a href="./chooser.html?list=IG_siege_NETEA">NetEA</a></td>
 						<td class="uk"><a href="./chooser.html?list=IG_siege_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="ig_icon.png"/></td>-->
 					</tr>
 					<tr class="guard">
 						<td><img class="icon" src="ig_icon.png"/></td>
@@ -183,7 +127,6 @@ td.uk {
 						<td><a href="./chooser.html?list=IG_steelLegion">GW</a></td>
 						<td><a href="./chooser.html?list=IG_steelLegion_NETEA">NetEA</a></td>
 						<td class="uk"><a href="./chooser.html?list=IG_steelLegion_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="ig_icon.png"/></td>-->
 					</tr>
 					<tr class="guard">
 						<td><img class="icon" src="ig_icon.png"/></td>
@@ -191,7 +134,6 @@ td.uk {
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td class="uk"><a href="./chooser.html?list=IG_ulani_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="ig_icon.png"/></td>-->
 					</tr>
 					<tr class="guard">
 						<td><img class="icon" src="ig_icon.png"/></td>
@@ -199,7 +141,30 @@ td.uk {
 						<td>&nbsp;</td>
 						<td>&nbsp;</td>
 						<td class="uk"><a href="./chooser.html?list=IG_vanaheim_EPICUK">EpicUK</a>&nbsp;</td>
-<!--						<td><img class="icon" src="ig_icon.png"/></td>-->
+					</tr>
+				</table>
+			</td><td>
+				<table class="ab">
+					<tr class="orcs top">
+						<td><img class="icon" src="ork_icon.png"/></td>
+						<td class="force">Feral Orks</td>
+						<td><a href="./chooser.html?list=ORK_feral">GW</a></td>
+						<td><a href="./chooser.html?list=ORK_feral_NETEA">NetEA</a></td>
+						<td class="uk"><a href="./chooser.html?list=ORK_feral_EPICUK">EpicUK</a>&nbsp;</td>
+					</tr>
+					<tr class="orcs">
+						<td><img class="icon" src="ork_icon.png"/></td>
+						<td class="force">Ghazgkhull's Warhorde</td>
+						<td><a href="./chooser.html?list=ORK_ghazgkhull">GW</a></td>
+						<td><a href="./chooser.html?list=ORK_ghazgkhull_NETEA">NetEA</a></td>
+						<td class="uk"><a href="./chooser.html?list=ORK_ghazgkhull_EPICUK">EpicUK</a>&nbsp;</td>
+					</tr>
+					<tr class="orcs">
+						<td><img class="icon" src="ork_icon.png"/></td>
+						<td class="force">Speed Freakz</td>
+						<td><a href="./chooser.html?list=ORK_kult">GW</a></td>
+						<td><a href="./chooser.html?list=ORK_kult_NETEA">NetEA</a></td>
+						<td class="uk"><a href="./chooser.html?list=ORK_kult_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
 					<tr class="eldar top">
 						<td><img class="icon" src="eldar_icon.png"/></td>
@@ -207,7 +172,6 @@ td.uk {
 						<td><a href="./chooser.html?list=EL_bieltan">GW</a></td>
 						<td><a href="./chooser.html?list=EL_bieltan_NETEA">NetEA</a></td>
 						<td class="uk"></td>
-<!--						<td><img class="icon" src="eldar_icon.png"/></td>-->
 					</tr>
 					<tr class="eldar top">
 						<td><img class="icon" src="eldar_icon.png"/></td>
@@ -215,7 +179,6 @@ td.uk {
 						<td>&nbsp;</td>
 						<td><a href="./chooser.html?list=EL_dark_NETEA">NetEA</a></td>
 						<td class="uk">&nbsp;</td>
-<!--						<td><img class="icon" src="eldar_icon.png"/></td>-->
 					</tr>
 					<tr class="chaos top">
 						<td><img class="icon" src="chaos_icon.png"/></td>
@@ -232,14 +195,16 @@ td.uk {
 						<td class="uk"></td>
 					</tr>
 					<tr class="tau top">
-						<td><img class="icon" src=""/></td>
+						<td><div style="height:0.5em;float:none;top:-0.32em;position:relative;font-size:xx-large">&#x2623</span></td>
 						<td class="force">Tau</td>
 						<td>&nbsp;</td>
 						<td><a href="./chooser.html?list=XENOS_tau_NETEA">NetEA</a></td>
 						<td class="uk">&nbsp;</td>
 					</tr>
 				</table>
-				<p style="margin-top:4em">
+			</td></tr>
+		</table>
+				<p>
 				Check out the discussion on	<a href="http://www.tacticalwargames.net/taccmd/viewtopic.php?f=4&t=18623">Tactical Command</a> for comments, feedback and errors. 
 				<br>
 				Note that the picker won't work on out of date browsers (particularly IE7/6).<br>
@@ -256,7 +221,6 @@ td.uk {
 				!grots in orc lists
 				 -->
 				</p>
-			</div>
 	</div>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
