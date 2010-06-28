@@ -336,7 +336,8 @@ function removeUpgrade(upgradeRow, formationId) {
 function removeFormation(formationRow, pts) {
 	formationRow.remove();
 	$$('.' + formationRow.identify()).each(function(upgrade) {
-		addPoints(-parseInt(upgrade.childElements()[1].innerHTML));
+		var upgradePts = countUpgrades(upgrade.upgradeData,formationRow.identify()) * upgrade.upgradeData.pts;
+		addPoints(-upgradePts);
 		upgrade.remove();
 	});
 	addPoints(-pts);
