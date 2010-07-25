@@ -318,7 +318,7 @@ function removeUpgrade(upgradeRow, formationId) {
 			else {
 				multiplier.update(count + 'x&nbsp;');
 			}
-			upgradeRow.childElements()[1].update(count * data.pts);
+			//upgradeRow.childElements()[1].update(count * data.pts);
 		}
 		// only 1
 		else {
@@ -441,6 +441,13 @@ function checkArmyConstraints() {
 		var allowed = listData.restriction.limit * $$('.restricting').size();
 		if (count > allowed) {
 			warnings.push('More than ' + listData.restriction.limit + ' ' + listData.restriction.restricted + ' per ' + listData.restriction.restricting + '!');
+		}
+	}
+	if (listData.restriction2) {
+		var count = $$('.restricted2').size();
+		var allowed = listData.restriction2.limit * $$('.restricting').size();
+		if (count > allowed) {
+			warnings.push('More than ' + listData.restriction2.limit + ' ' + listData.restriction2.restricted + ' per ' + listData.restriction2.restricting + '!');
 		}
 	}
 
@@ -611,6 +618,9 @@ function addFormation(event, formation, noDefaults) {
 	}
 	else if (formation.restricted) {
 		newRow.addClassName('restricted');
+	}
+	else if (formation.restricted2) {
+		newRow.addClassName('restricted2');
 	}
 
 	if (formation.limited) {
