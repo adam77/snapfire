@@ -41,6 +41,15 @@ var madOp =				{id:34, label:'Madboyz', 	minimum:6, upto:12};
 var steamOp =			{id:36, label:'Gargants', 	minimum:1, upto:3};
 	var steam1 =		{id:37, label:'Steam Gargant',	pts:150, optional:true, group:steamOp};
 	steamOp.options = 	[steam1];
+var grotzOp =			{id:38, label:'Grotz', 	minimum:2};
+	var grotz1 =		{id:39, label:'Grotz',	pts:0, optional:true, group:grotzOp};
+	grotzOp.options = 	[grotz1];
+var grotzOp2 =			{id:40, label:'Grotz', 	minimum:4};
+	var grotz2 =		{id:41, label:'Grotz',	pts:0, optional:true, group:grotzOp2};
+	grotzOp2.options = 	[grotz2];
+var grotzOp3 =			{id:42, label:'Grotz', 	minimum:6};
+	var grotz3 =		{id:43, label:'Grotz',	pts:0, optional:true, group:grotzOp3};
+	grotzOp3.options = 	[grotz3];
 
 // UPGRADES
 var boyz =				{id:50, label:'Boyz', 							pts:25};
@@ -63,9 +72,9 @@ var junkaNob3 =			{id:66, label:'Junkatrukk and Nob',				pts:35, upto:3};
 var warlord =			{id:67, label:'Warlord',						pts:0, 	upto:1, perArmy:1};
 
 // WARBANDS
-var warband =			{id:500, label:'Warband',				pts:-20,	displayPts:200,		defaults:[{unit:nob1,count:2},{unit:boy1,count:6}], upgrades:[nobzOp, boyzOp, wildboyz, katapult, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]};
-var bigWarband =		{id:501, label:'Warband (Big)',			pts:-90, 	displayPts:350,		defaults:[{unit:nob2,count:4},{unit:boy2,count:12}], upgrades:[nobzOp2, boyzOp2, wildboyz, katapult, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]};
-var ugeWarband =		{id:502, label:'Warband (\'Uge)',		pts:-160, 	displayPts:500,		defaults:[{unit:nob3,count:6},{unit:boy3,count:18}], upgrades:[nobzOp3, boyzOp3, wildboyz, katapult, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]};
+var warband =			{id:500, label:'Warband',				pts:-20,	displayPts:200,		defaults:[{unit:nob1,count:2},{unit:boy1,count:6},{unit:grotz1,count:2}], upgrades:[nobzOp, boyzOp, grotzOp, wildboyz, katapult, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]};
+var bigWarband =		{id:501, label:'Warband (Big)',			pts:-90, 	displayPts:350,		defaults:[{unit:nob2,count:4},{unit:boy2,count:12},{unit:grotz2,count:4}], upgrades:[nobzOp2, boyzOp2, grotzOp2, wildboyz, katapult, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]};
+var ugeWarband =		{id:502, label:'Warband (\'Uge)',		pts:-160, 	displayPts:500,		defaults:[{unit:nob3,count:6},{unit:boy3,count:18},{unit:grotz3,count:6}], upgrades:[nobzOp3, boyzOp3, grotzOp3, wildboyz, katapult, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]};
 var wildboyzmob =		{id:503, label:'Wildboyz',				pts:5,		displayPts:150,		defaults:[{unit:nob1,count:2},{unit:wildboy1,count:3}], upgrades:[nobzOp, wildOp, katapult, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]};
 var bigwildboyz =		{id:504, label:'Wildboyz (Big)',		pts:-40, 	displayPts:250,		defaults:[{unit:nob2,count:4},{unit:wildboy2,count:6}], upgrades:[nobzOp2, wildOp2, katapult, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]};
 var ugewildboyz =		{id:505, label:'Wildboyz (\'Uge)',		pts:-85, 	displayPts:350,		defaults:[{unit:nob3,count:6},{unit:wildboy3,count:9}], upgrades:[nobzOp3, wildOp3, katapult, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]};

@@ -6,6 +6,7 @@
 	<title>ArmyForge - EA Army Lists</title>
 	<style>
 body {
+	background-color:olive;
 	padding:0;
 	margin:0;
 }
@@ -16,7 +17,7 @@ p {
 	text-align:center;
 	vertical-align:center;
 	padding:.3em;
-	background-color:#eeeecc;
+	background-color:#eeeecb;
 }
 #main {
 	max-width:98%;
@@ -31,13 +32,16 @@ td.force {
 	vertical-align:center;
 	font-size:small;
 	padding-left:0;
-	padding-right:1.5em;
+	padding-right:2.5em;
 	font-family:sans-serif;
 	text-align:left;
 }
-.ab a:hover { color:orange }
+.ab a:hover { 
+	color:orange;
+	text-decoration:underline;
+}
 tr {
-	border-top:solid 0.1em white;
+	border-top:solid 0.1em olive;
 }
 table {
 	margin:auto;
@@ -47,13 +51,13 @@ table {
 	color:#555;
 	font-size:small;
 	font-family:sans-serif;
-//	text-decoration:none;
+	text-decoration:none;
 }
 .ab .todo {
-	color:lightgray;
+	color:gray;
 }
 .ab td.todo a {
-	color:lightgray;
+	color:#eeeecb;
 	text-decoration:none;
 	cursor:inherit;
 }	
@@ -68,7 +72,7 @@ td.uk {
 	padding-right:0.5em;
 }
 #layout > tbody > tr > td {
-	padding:4em 2em 2em 2em;
+	padding:4em 1.5em 2em 1.5em;
 	width:50%;
 	vertical-align:top;
 }
@@ -82,15 +86,15 @@ td.uk {
 					<tr class="marines">
 						<td><img class="icon" src="imperial_eagle.png"/></td>
 						<td class="force">Black Templars</td>
-						<td></td>
-						<td class="todo"><a href="">NetEA</a></td>
+						<td class="todo">-</td>
+						<td class="todo">-</td>
 						<td class="uk"><a href="./chooser.html?list=SM_templars_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
 					<tr class="marines">
 						<td><img class="icon" src="imperial_eagle.png"/></td>
 						<td class="force">Blood Angels</td>
-						<td></td>
-						<td class="todo"><a href="">NetEA</a></td>
+						<td class="todo">-</td>
+						<td class="todo">-</td>
 						<td class="uk"><a href="./chooser.html?list=SM_bloodAngels_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
 					<tr class="marines">
@@ -103,8 +107,8 @@ td.uk {
 					<tr class="marines">
 						<td><img class="icon" src="imperial_eagle.png"/></td>
 						<td class="force">Dark Angels</td>
-						<td>&nbsp;</td>
-						<td class="todo"><a href="">NetEA</a></td>
+						<td class="todo">-</td>
+						<td class="todo">-</td>
 						<td class="uk"><a href="./chooser.html?list=SM_dark_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
 					<tr class="marines">
@@ -131,15 +135,15 @@ td.uk {
 					<tr class="guard">
 						<td><img class="icon" src="ig_icon.png"/></td>
 						<td class="force">Ulani Tank Regiment</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
+						<td class="todo">-</td>
+						<td class="todo">-</td>
 						<td class="uk"><a href="./chooser.html?list=IG_ulani_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
 					<tr class="guard">
 						<td><img class="icon" src="ig_icon.png"/></td>
 						<td class="force">Vanaheim Air Cavalry</td>
-						<td>&nbsp;</td>
-						<td>&nbsp;</td>
+						<td class="todo">-</td>
+						<td class="todo">-</td>
 						<td class="uk"><a href="./chooser.html?list=IG_vanaheim_EPICUK">EpicUK</a>&nbsp;</td>
 					</tr>
 				</table>
@@ -171,35 +175,35 @@ td.uk {
 						<td class="force">Biel-Tan</td>
 						<td><a href="./chooser.html?list=EL_bieltan">GW</a></td>
 						<td><a href="./chooser.html?list=EL_bieltan_NETEA">NetEA</a></td>
-						<td class="uk"></td>
+						<td class="todo uk">-</td>
 					</tr>
 					<tr class="eldar top">
 						<td><img class="icon" src="eldar_icon.png"/></td>
 						<td class="force">Dark Eldar</td>
-						<td>&nbsp;</td>
+						<td class="todo">-</td>
 						<td><a href="./chooser.html?list=EL_dark_NETEA">NetEA</a></td>
-						<td class="uk">&nbsp;</td>
+						<td class="todo uk">-</td>
 					</tr>
 					<tr class="chaos top">
 						<td><img class="icon" src="chaos_icon.png"/></td>
 						<td class="force">Black Legion</td>
 						<td><a href="./chooser.html?list=CHAOS_legion">GW</a></td>
-						<td class="todo"><a href="">NetEA</a></td>
-						<td class="uk"></td>
+						<td class="todo">-</td>
+						<td class="todo uk">-</td>
 					</tr>
 					<tr class="chaos top">
 						<td><img class="icon" src="chaos_icon.png"/></td>
 						<td class="force">Lost &amp; Damned</td>
 						<td><a href="./chooser.html?list=CHAOS_damned">GW</a></td>
-						<td class="todo"><a href="">NetEA</a></td>
-						<td class="uk"></td>
+						<td class="todo">-</td>
+						<td class="todo uk">-</td>
 					</tr>
 					<tr class="tau top">
 						<td><div style="height:0.5em;float:none;top:-0.32em;position:relative;font-size:xx-large">&#x2623</span></td>
 						<td class="force">Tau</td>
-						<td>&nbsp;</td>
+						<td class="todo">-</td>
 						<td><a href="./chooser.html?list=XENOS_tau_NETEA">NetEA</a></td>
-						<td class="uk">&nbsp;</td>
+						<td class="todo uk">-</td>
 					</tr>
 				</table>
 			</td></tr>

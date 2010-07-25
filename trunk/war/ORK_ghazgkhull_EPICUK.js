@@ -87,11 +87,12 @@ var supaStompa2 =		{id:78, label:'Supa Stompa',					pts:250, upto:2};
 var supaStompa3 =		{id:79, label:'Supa Stompa',					pts:250, upto:3};
 var battlekrooza =		{id:80, label:'Battlekrooza',					pts:100, upto:1};
 var warlord =			{id:81, label:'Warlord',						pts:0, upto:1};
+var grotz =				{id:82, label:'Grotz',							pts:0};
 
 // WARBANDS
-var warband =			{id:500, label:'Warband',				pts:200, units:'2 Nobz, 6 Boyz, 2 Grotz', upgrades:[warlord, boyz, commandos, stormboyz, buggy, warbike, skorcha, bigGun, killaKan, battlewagon, dethKopta, dreadnought, flakwagon, gunwagon, nobz2, oddboy1, stompa, battleFortress, gunFortress]};
-var bigWarband =		{id:501, label:'Warband (Big)',			pts:350, units:'4 Nobz, 12 Boyz, 4 Grotz', upgrades:[warlord, boyz, commandos, stormboyz, buggy, warbike, skorcha, bigGun, killaKan, battlewagon, dethKopta, dreadnought, flakwagon, gunwagon, nobz4, oddboy2, stompa, battleFortress, gunFortress]};
-var ugeWarband =		{id:502, label:'Warband (\'Uge)',		pts:500, units:'6 Nobz, 18 Boyz, 6 Grotz', upgrades:[warlord, boyz, commandos, stormboyz, buggy, warbike, skorcha, bigGun, killaKan, battlewagon, dethKopta, dreadnought, flakwagon, gunwagon, nobz6, oddboy3, stompa, battleFortress, gunFortress]};
+var warband =			{id:500, label:'Warband',				pts:200, units:'2 Nobz, 6 Boyz, 2 Grotz', upgrades:[warlord, boyz, grotz, commandos, stormboyz, buggy, warbike, skorcha, bigGun, killaKan, battlewagon, dethKopta, dreadnought, flakwagon, gunwagon, nobz2, oddboy1, stompa, battleFortress, gunFortress]};
+var bigWarband =		{id:501, label:'Warband (Big)',			pts:350, units:'4 Nobz, 12 Boyz, 4 Grotz', upgrades:[warlord, boyz, grotz, commandos, stormboyz, buggy, warbike, skorcha, bigGun, killaKan, battlewagon, dethKopta, dreadnought, flakwagon, gunwagon, nobz4, oddboy2, stompa, battleFortress, gunFortress]};
+var ugeWarband =		{id:502, label:'Warband (\'Uge)',		pts:500, units:'6 Nobz, 18 Boyz, 6 Grotz', upgrades:[warlord, boyz, grotz, commandos, stormboyz, buggy, warbike, skorcha, bigGun, killaKan, battlewagon, dethKopta, dreadnought, flakwagon, gunwagon, nobz6, oddboy3, stompa, battleFortress, gunFortress]};
 var stormboyzBand =		{id:503, label:'Stormboyz Warhorde',	pts:0,		displayPts:150, defaults:[{unit:stormboyz2,count:6}], upgrades:[stormboyz2, commandoz2, buggy, warbike, skorcha, dethKopta]};
 var kult =				{id:504, label:'Kult of Speed',			pts:0,		displayPts:200, defaults:[{unit:buggy2, count:8}], upgrades:[buggy2, warbike2, skorcha2, dethKopta, flakwagon, gunwagon, oddboy1]};
 var bigKult =			{id:505, label:'Kult of Speed (Big)',	pts:-50,	displayPts:350, defaults:[{unit:buggy3, count:16}], upgrades:[buggy3, warbike3, skorcha3, dethKopta, flakwagon, gunwagon, oddboy2]};
