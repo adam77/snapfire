@@ -1,10 +1,10 @@
 // OPTIONALS
 var faction =		{id:10,	label:'Faction',	upto:1,	minimum:1};
-	var khorne =	{id:11,	label:'~ Khorne ~',		pts:0,	optional:true, group:faction};
-	var nurgle =	{id:12,	label:'~ Nurgle ~',		pts:0,	optional:true, group:faction};
-	var slaanesh =	{id:13,	label:'~ Slaanesh ~',	pts:0,	optional:true, group:faction};
-	var tzeentch =	{id:14,	label:'~ Tzeentch ~',	pts:0,	optional:true, group:faction};
-	var undivided =	{id:15,	label:'~ Chaos Undivided ~',	pts:0,	optional:true, group:faction};
+	var khorne =	{id:11,	label:'(Khorne)',		pts:0,	optional:true, group:faction};
+	var nurgle =	{id:12,	label:'(Nurgle)',		pts:0,	optional:true, group:faction};
+	var slaanesh =	{id:13,	label:'(Slaanesh)',	pts:0,	optional:true, group:faction};
+	var tzeentch =	{id:14,	label:'(Tzeentch)',	pts:0,	optional:true, group:faction};
+	var undivided =	{id:15,	label:'(Chaos Undivided)',	pts:0,	optional:true, group:faction};
 	faction.options = [khorne,nurgle,slaanesh,tzeentch,undivided];
 var lords = 		{id:16, label:'Lord', upto:1, minimum:1};
 	var lord = 		{id:17, label:'Chaos Lord', 	pts:0, optional:true, group:lords};
@@ -61,7 +61,7 @@ var elite =	{id:502, label:'ELITE', options:[
 var support =	{id:506, label:'SUPPORT', options:[
 	{id:507, label:'Armoured Company',		restricted2:true,	pts:0, displayPts:200, defaults:[{unit:pred, count:4},{unit:undivided,count:1}], upgrades:[pred, raider2, defiler]},
 	{id:508, label:'Bike Company',			restricted2:true,	pts:300, units:'8 Chaos Space Marines Bikes', defaults:[{unit:lord, count:1},{unit:undivided,count:1}], upgrades:[icon, pact]},
-	{id:509, label:'Defiler Assault Pack',	restricted2:true,	pts:275, units:'4 Defilers', upgrades:[]},
+	{id:509, label:'Defiler Assault Pack',	restricted2:true,	pts:275, units:'4 Defilers', defaults:[{unit:undivided,count:1}], upgrades:[]},
 	{id:510, label:'Raptor Cult', 			restricted2:true,	pts:35, displayPts:175, defaults:[{unit:lord, count:1}, {unit:raptor,count:4},{unit:undivided,count:1}], upgrades:[raptor, pact]}
 ]};
 
