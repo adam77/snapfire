@@ -31,7 +31,7 @@ var terms = 		{id:31, label:'Terminators', upto:6, minimum:4};
 	terms.options = [term];
 
 // UPGRADES
-var greater =			{id:50, label:'Greater Daemon', pts:100};
+var greater =			{id:50, label:'Greater Daemon', pts:75};
 var lesser =			{id:51, label:'Lesser Daemon', pts:20};
 var champion =			{id:52, label:'Chaos Champion', upto:1, pts:50};
 var raiders =			{id:53, label:'Chaos Land Raider', upto:4, pts:75};
