@@ -22,23 +22,33 @@ function renderListName() {
 	return listData.id + ' (' + listData.version + ')';
 }
 
-function initIds(formation) {
+function initFormation(formation) {
+	// initalise id maps
 	allFormations[formation.id] = formation
 	flattenUpgrades(formation).each(function(upgrade) {
 		allUpgrades[upgrade.id] = upgrade
 	});
-	flattenDefaults(formation).each(function(upgrade) {
-		allUpgrades[upgrade.id] = upgrade
+	// initalise group<->option circular reference
+	formation.upgrades.each(function(grp) {
+		if (grp.options) {
+			grp.options.each(function(opt) {
+				opt.group = grp;
+			});
+		}
 	});
+	
+//	flattenDefaults(formation).each(function(upgrade) {
+//		allUpgrades[upgrade.id] = upgrade
+//	});
 }
 
 function listLoaded() {
 	if (listData.mandatoryFormations) {
-		listData.mandatoryFormations.each( initIds )
+		listData.mandatoryFormations.each( initFormation )
 	}
 	listData.sublists.each(function(x) {
-		x.options.each( initIds )
-	});	
+		x.options.each( initFormation )
+	});
 	$('orbatListName').update( renderListName() );
 	$('viewText').observe('click', viewPlainText);
 	$('viewTable').observe('click', viewTable);
@@ -276,7 +286,9 @@ function flattenUpgrades(formation) {
 	var upgrades = [];
 	formation.upgrades.each(function(x) {
 		if (x.options) {
-			upgrades = upgrades.concat(x.options);
+			if (x.minimum != x.upto) {
+				upgrades = upgrades.concat(x.options);
+			}
 		}
 		else {
 			upgrades.push(x);
@@ -297,8 +309,12 @@ function removeUpgrade(upgradeRow, formationId) {
 	var data = upgradeRow.upgradeData;	
 	var allowRemoval = true;
 
-	// check minimum constraint
-	if (data.group && data.group.minimum) {
+	// check minimum constraint (individuals)
+	if (data.minimum) {
+		allowRemoval = data.minimum < countUpgrades(data, formationId);
+	}
+	// check minimum constraint (individuals)
+	else if (data.group && data.group.minimum) {
 		var total = 0;
 		data.group.options.each(function(x) {
 			total += countUpgrades(x, formationId);
@@ -391,7 +407,7 @@ function addUpgrade(event, formationId, upgradeData) {
 		// delete event
 		newRow.observe('click', removeUpgrade.bind(this, newRow, formationId));	
 		// dropdown
-		if (upgradeData.optional && upgradeData.group.options.size() > 1) {
+		if (upgradeData.optional && upgradeData.group && upgradeData.group.options.size() > 1) {
 			var dropDown = createOptionals(upgradeData.group.options.without(upgradeData), formationId, newRow);			
 			newCell.insert(dropDown);
 			dropDown.hide();
@@ -511,7 +527,7 @@ function upgradeMultiplier(upgradeRow) {
 function checkOptionalConstraints(formationId) {
 	var upgradeRows = $$('.' + formationId);
 	upgradeRows.each(function(x) {
-		if (x.upgradeData.optional && x.upgradeData.group.options.size() > 1) {
+		if (x.upgradeData.optional && x.upgradeData.group && x.upgradeData.group.options.size() > 1) {
 			var optionalOptions = x.down().down().down().down().childElements().slice(1); // remove header row
 			
 			optionalOptions.each(function(option) {
@@ -538,7 +554,7 @@ function checkOptionalConstraints(formationId) {
 }
 
 function checkUpgradeConstraints(formationId) {
-	if ($(formationId).formationData.upgrades.size() > 0) {
+	if (flattenUpgrades($(formationId).formationData).size() > 0) {
 		var upgradeRows = $$('.' + formationId);
 		var upgradeOptions = $(formationId + 'upgradeOptions').childElements().slice(1); // remove header row
 
@@ -644,10 +660,19 @@ function addFormation(event, formation, noDefaults) {
 	checkFormationConstraints();
 	checkArmyConstraints();
 
-	if (formation.defaults && !noDefaults) {
-		formation.defaults.each(function(x) {
-			for (i=0;i<x.count;i++) {
-				addUpgrade(null, formationId, x.unit);
+	if (!noDefaults) {
+		// mandatory units in groups
+		formation.upgrades.each(function(x) {
+			if (x.options && x.minimum) {
+				for (i=0;i<x.minimum;i++) {
+					addUpgrade(null, formationId, x.options[0]);
+				}
+			}
+		});
+		// mandatory units not in groups
+		flattenUpgrades(formation).each(function(x) {
+			for (i=0;i<x.minimum;i++) {
+				addUpgrade(null, formationId, x);
 			}
 		});
 	}
