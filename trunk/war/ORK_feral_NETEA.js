@@ -1,55 +1,21 @@
-// OPTIONALS
-var boyzOp =			{id:10, label:'Boyz', 	minimum:6};
-	var boy1 =			{id:11, label:'Boyz',	pts:25, optional:true, group:boyzOp};
-	boyzOp.options = 	[boy1];
-var nobzOp =			{id:12, label:'Nobz', 	minimum:2, upto:3};
-	var nob1 =			{id:13, label:'Nobz',	pts:35, optional:true, group:nobzOp};
-	nobzOp.options = 	[nob1];
-var boyzOp2 =			{id:14, label:'Boyz', 	minimum:12};
-	var boy2 =			{id:15, label:'Boyz',	pts:25, optional:true, group:boyzOp2};
-	boyzOp2.options = 	[boy2];
-var nobzOp2 =			{id:16, label:'Nobz', 	minimum:4, upto:6};
-	var nob2 =			{id:17, label:'Nobz',	pts:35, optional:true, group:nobzOp2};
-	nobzOp2.options = 	[nob2];
-var boyzOp3 =			{id:18, label:'Boyz', 	minimum:18};
-	var boy3 =			{id:19, label:'Boyz',	pts:25, optional:true, group:boyzOp3};
-	boyzOp3.options = 	[boy3];
-var nobzOp3 =			{id:20, label:'Nobz', 	minimum:6, upto:9};
-	var nob3 =			{id:21, label:'Nobz',	pts:35, optional:true, group:nobzOp3};
-	nobzOp3.options = 	[nob3];
-var wildOp =			{id:22, label:'Two Wildboyz Units', 	minimum:3};
-	var wildboy1 =		{id:23, label:'Two Wildboyz Units',	pts:25, optional:true, group:wildOp};
-	wildOp.options = 	[wildboy1];
-var wildOp2 =			{id:24, label:'Two Wildboyz Units', 	minimum:6};
-	var wildboy2 =		{id:25, label:'Two Wildboyz Units',	pts:25, optional:true, group:wildOp2};
-	wildOp2.options = 	[wildboy2];
-var wildOp3 =			{id:26, label:'Two Wildboyz Units', 	minimum:9};
-	var wildboy3 =		{id:27, label:'Two Wildboyz Units',	pts:25, optional:true, group:wildOp3};
-	wildOp3.options = 	[wildboy3];
-var boarOp = 			{id:28, label:'Boarboyz',	minimum:5};
-	var boar1 =			{id:29, label:'Boarboyz',	pts:25,	optional:true, group:boarOp};
-	boarOp.options =	[boar1];
-var boarOp2 = 			{id:30, label:'Boarboyz',	minimum:10};
-	var boar2 =			{id:31, label:'Boarboyz',	pts:25,	optional:true, group:boarOp2};
-	boarOp2.options =	[boar2];
-var boarOp3 = 			{id:32, label:'Boarboyz',	minimum:15};
-	var boar3 =			{id:33, label:'Boarboyz',	pts:25,	optional:true, group:boarOp3};
-	boarOp3.options =	[boar3];
-var madOp =				{id:34, label:'Madboyz', 	minimum:6, upto:12};
-	var mad1 =			{id:35, label:'Madboyz',	pts:15, optional:true, group:madOp};
-	madOp.options = 	[mad1];
-var steamOp =			{id:36, label:'Gargants', 	minimum:1, upto:3};
-	var steam1 =		{id:37, label:'Steam Gargant',	pts:150, optional:true, group:steamOp};
-	steamOp.options = 	[steam1];
-var grotzOp =			{id:38, label:'Grotz', 	minimum:2};
-	var grotz1 =		{id:39, label:'Grotz',	pts:0, optional:true, group:grotzOp};
-	grotzOp.options = 	[grotz1];
-var grotzOp2 =			{id:40, label:'Grotz', 	minimum:4};
-	var grotz2 =		{id:41, label:'Grotz',	pts:0, optional:true, group:grotzOp2};
-	grotzOp2.options = 	[grotz2];
-var grotzOp3 =			{id:42, label:'Grotz', 	minimum:6};
-	var grotz3 =		{id:43, label:'Grotz',	pts:0, optional:true, group:grotzOp3};
-	grotzOp3.options = 	[grotz3];
+// MANDATORY UNITS
+var boy1 =			{id:11, label:'Boyz',				pts:25, optional:true, minimum:6};
+var nob1 =			{id:13, label:'Nobz',				pts:35, optional:true, minimum:2};
+var grotz1 =		{id:39, label:'Grotz',				pts:0,	optional:true, minimum:2};
+var boy2 =			{id:15, label:'Boyz',				pts:25, optional:true, minimum:12};
+var nob2 =			{id:17, label:'Nobz',				pts:35, optional:true, minimum:4, upto:6};
+var grotz2 =		{id:41, label:'Grotz',				pts:0, 	optional:true, minimum:4};
+var boy3 =			{id:19, label:'Boyz',				pts:25, optional:true, minimum:18};
+var nob3 =			{id:21, label:'Nobz',				pts:35, optional:true, minimum:6, upto:9};
+var grotz3 =		{id:43, label:'Grotz',				pts:0,	optional:true, minimum:6};
+var wildboy1 =		{id:23, label:'Two Wildboyz Units',	pts:25, optional:true, minimum:3};
+var wildboy2 =		{id:25, label:'Two Wildboyz Units',	pts:25, optional:true, minimum:6};
+var wildboy3 =		{id:27, label:'Two Wildboyz Units',	pts:25, optional:true, minimum:9};
+var boar1 =			{id:29, label:'Boarboyz',			pts:25,	optional:true, minimum:5};
+var boar2 =			{id:31, label:'Boarboyz',			pts:25,	optional:true, minimum:10};
+var boar3 =			{id:33, label:'Boarboyz',			pts:25,	optional:true, minimum:15};
+var mad1 =			{id:35, label:'Madboyz',			pts:15, optional:true, minimum:6, upto:12};
+var steam1 =		{id:37, label:'Steam Gargant',		pts:150,optional:true, minimum:1, upto:3};
 
 // UPGRADES
 var boyz =				{id:50, label:'Boyz', 							pts:25};
@@ -71,22 +37,22 @@ var katapult6 =			{id:70, label:'Squig Katapult',					pts:25, upto:6};
 var katapult9 =			{id:71, label:'Squig Katapult',					pts:25, upto:9};
 
 // WARBANDS
-var warband =			{id:500, label:'Warband',				pts:-20,	displayPts:200,		defaults:[{unit:nob1,count:2},{unit:boy1,count:6},{unit:grotz1,count:2}], upgrades:[nobzOp, boyzOp, grotzOp, wildboyz, katapult3, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]};
-var bigWarband =		{id:501, label:'Warband (Big)',			pts:-90, 	displayPts:350,		defaults:[{unit:nob2,count:4},{unit:boy2,count:12},{unit:grotz2,count:4}], upgrades:[nobzOp2, boyzOp2, grotzOp2, wildboyz, katapult6, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]};
-var ugeWarband =		{id:502, label:'Warband (\'Uge)',		pts:-160, 	displayPts:500,		defaults:[{unit:nob3,count:6},{unit:boy3,count:18},{unit:grotz3,count:6}], upgrades:[nobzOp3, boyzOp3, grotzOp3, wildboyz, katapult9, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]};
-var wildboyzmob =		{id:503, label:'Wildboyz',				pts:5,		displayPts:150,		defaults:[{unit:nob1,count:2},{unit:wildboy1,count:3}], upgrades:[nobzOp, wildOp, katapult3, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]};
-var bigwildboyz =		{id:504, label:'Wildboyz (Big)',		pts:-40, 	displayPts:250,		defaults:[{unit:nob2,count:4},{unit:wildboy2,count:6}], upgrades:[nobzOp2, wildOp2, katapult6, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]};
-var ugewildboyz =		{id:505, label:'Wildboyz (\'Uge)',		pts:-85, 	displayPts:350,		defaults:[{unit:nob3,count:6},{unit:wildboy3,count:9}], upgrades:[nobzOp3, wildOp3, katapult9, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]};
-var boarhorde =			{id:506, label:'Boarboyz Horde',		pts:-25,	displayPts:100,		defaults:[{unit:boar1,count:5}], upgrades:[boar1, wyrdboy1, warlord]};
-var boarhordebig =		{id:507, label:'Boarboyz Horde (Big)',	pts:-75,	displayPts:175,		defaults:[{unit:boar2,count:10}], upgrades:[boar2, wyrdboy2, warlord]};
-var boarhordeuge =		{id:508, label:'Boarboyz Horde (\'Uge)',pts:-125,	displayPts:250,		defaults:[{unit:boar3,count:15}], upgrades:[boar3, wyrdboy3, warlord]};
-var trappas =			{id:509, label:'Trappas',				pts:150,	units:'6 Wildboyz', upgrades:[wildnobz]};
-var madhorde =			{id:510, label:'Madboyz Horde',			pts:10,		displayPts:100, 	upto:1, defaults:[{unit:mad1,count:6}], upgrades:[mad1, wyrdboy3]};
-var junkbrigade =		{id:511, label:'Junka Brigade',			pts:25,		displayPts:175,		units:'Junka Trukks', defaults:[{unit:boy1,count:6}], upgrades:[boy1, nobz1, wyrdboy1, warlord]};
-var junkbrigadebig =	{id:512, label:'Junka Brigade (Big)',	pts:0,		displayPts:300,		units:'Junka Trukks', defaults:[{unit:boy2,count:12}], upgrades:[boy2, nobz2, wyrdboy2, warlord]};
-var steamGargant =		{id:514, label:'Steam Gargant',			pts:50,		displayPts:200,		upto:1, defaults:[{unit:steam1,count:1}], upgrades:[steam1]};
-var warbandList =		{id:516, label:'WAR HORDES', options:[warband, bigWarband, ugeWarband, wildboyzmob, bigwildboyz, ugewildboyz, boarhorde, boarhordebig, boarhordeuge, trappas, madhorde, junkbrigade, junkbrigadebig, steamGargant]};
-
+var warbandList =		{id:516, label:'WAR HORDES', options:[
+	{id:500, label:'Warband',				pts:-20,	displayPts:200,		upgrades:[nob1, boy1, grotz1, wildboyz, katapult3, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]},
+	{id:501, label:'Warband (Big)',			pts:-90, 	displayPts:350,		upgrades:[nob2, boy2, grotz2, wildboyz, katapult6, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]},
+	{id:502, label:'Warband (\'Uge)',		pts:-160, 	displayPts:500,		upgrades:[nob3, boy3, grotz3, wildboyz, katapult9, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]},
+	{id:503, label:'Wildboyz',				pts:5,		displayPts:150,		upgrades:[nob1, wildboy1, katapult3, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]},
+	{id:504, label:'Wildboyz (Big)',		pts:-40, 	displayPts:250,		upgrades:[nob2, wildboy2, katapult6, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]},
+	{id:505, label:'Wildboyz (\'Uge)',		pts:-85, 	displayPts:350,		upgrades:[nob3, wildboy3, katapult9, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]},
+	{id:506, label:'Boarboyz Horde',		pts:-25,	displayPts:100,		upgrades:[boar1, wyrdboy1, warlord]},
+	{id:507, label:'Boarboyz Horde (Big)',	pts:-75,	displayPts:175,		upgrades:[boar2, wyrdboy2, warlord]},
+	{id:508, label:'Boarboyz Horde (\'Uge)',pts:-125,	displayPts:250,		upgrades:[boar3, wyrdboy3, warlord]},
+	{id:509, label:'Trappas',				pts:150,	units:'6 Wildboyz', upgrades:[wildnobz]},
+	{id:510, label:'Madboyz Horde',			pts:10,		displayPts:100, 	upto:1, upgrades:[mad1, wyrdboy3]},
+	{id:511, label:'Junka Brigade',			pts:25,		displayPts:175,		units:'Junka Trukks', upgrades:[boy1, nobz1, wyrdboy1, warlord]},
+	{id:512, label:'Junka Brigade (Big)',	pts:0,		displayPts:300,		units:'Junka Trukks', upgrades:[boy2, nobz2, wyrdboy2, warlord]},
+	{id:514, label:'Steam Gargant',			pts:50,		displayPts:200,		upto:1, upgrades:[steam1]}
+]};
 
 // DETAILS
 var listData = {
