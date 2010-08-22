@@ -1,85 +1,78 @@
-// OPTIONALS
-var boy1 =		{id:100, label:'Boyz', minimum:3};
-	var bo1 =		{id:101, label:'Boyz (trukk)',	pts:25,	optional:true, group:boy1};
-	boy1.options = 	[bo1];
-var boy2 =		{id:102, label:'Boyz', minimum:6};
-	var bo2 =		{id:103, label:'Boyz (trukk)',	pts:25,	optional:true, group:boy2};
-	boy2.options = 	[bo2];
-var boy3 =		{id:104, label:'Boyz', minimum:9};
-	var bo3 =		{id:105, label:'Boyz (trukk)',	pts:25,	optional:true, group:boy3};
-	boy3.options =	[bo3];
-var nob1 =			{id:10, label:'Nobz',	upto:2, minimum:1};
-	var nobtrukk =		{id:12, label:'Nobz (trukk)',	pts:35,	optional:true, group:nob1};
-	var nobbike1 =		{id:80, label:'Nobz (bikes)',	pts:35, optional:true, group:nob1};
-	nob1.options = 		[nobtrukk, nobbike1];
-var nob2 =			{id:13, label:'Nobz',	upto:4, minimum:2};
-	var nobtrukk2 =		{id:15, label:'Nobz (trukk)',	pts:35,	optional:true, group:nob2};
-	var nobbike2 =		{id:80, label:'Nobz (bikes)',	pts:35, optional:true, group:nob2};
-	nob2.options = 		[nobtrukk2, nobbike2];
-var nob3 =			{id:16, label:'Nobz',	upto:6, minimum:3};
-	var nobtrukk3 =		{id:18, label:'Nobz (trukk)',	pts:35,	optional:true, group:nob3};
-	var nobbike3 =		{id:80, label:'Nobz (bikes)',	pts:35, optional:true, group:nob3};
-	nob3.options = 		[nobtrukk3, nobbike3];
-var kult2 =			{id:19, label:'Bikes',	minimum:4};
-	var buggy2 =		{id:20, label:'Buggy',			pts:25, optional:true, group:kult2};
-	var warbike2 =		{id:21, label:'Warbike',		pts:25, optional:true, group:kult2};
-	var skorcha2 =		{id:22, label:'Skorcha',		pts:25, optional:true, group:kult2};
-	kult2.options = 	[buggy2, warbike2, skorcha2];
-var kult3 =			{id:23, label:'Bikes',	minimum:8};
-	var buggy3 =		{id:24, label:'Buggy',			pts:25, optional:true, group:kult3};
-	var warbike3 =		{id:25, label:'Warbike',		pts:25, optional:true, group:kult3};
-	var skorcha3 =		{id:26, label:'Skorcha',		pts:25, optional:true, group:kult3};
-	kult3.options = 	[buggy3, warbike3, skorcha3];
-var kult4 =			{id:27, label:'Bikes',	minimum:12};
-	var buggy4 =		{id:28, label:'Buggy',			pts:25, optional:true, group:kult4};
-	var warbike4 =		{id:29, label:'Warbike',		pts:25, optional:true, group:kult4};
-	var skorcha4 =		{id:30, label:'Skorcha',		pts:25, optional:true, group:kult4};
-	kult4.options = 	[buggy4, warbike4, skorcha4];
-var Bkult2 =		{id:31, label:'Bikes',	minimum:8};
-	var Bbuggy2 =		{id:32, label:'Buggy',			pts:25, optional:true, group:Bkult2};
-	var Bwarbike2 =		{id:33, label:'Warbike',		pts:25, optional:true, group:Bkult2};
-	var Bskorcha2 =		{id:34, label:'Skorcha',		pts:25, optional:true, group:Bkult2};
-	Bkult2.options = 	[Bbuggy2, Bwarbike2, Bskorcha2];
-var Bkult3 =		{id:35, label:'Bikes',	minimum:16};
-	var Bbuggy3 =		{id:36, label:'Buggy',			pts:25, optional:true, group:Bkult3};
-	var Bwarbike3 =		{id:37, label:'Warbike',		pts:25, optional:true, group:Bkult3};
-	var Bskorcha3 =		{id:38, label:'Skorcha',		pts:25, optional:true, group:Bkult3};
-	Bkult3.options = 	[Bbuggy3, Bwarbike3, Bskorcha3];
-var Bkult4 =		{id:39, label:'Bikes',	minimum:24};
-	var Bbuggy4 =		{id:40, label:'Buggy',			pts:25, optional:true, group:Bkult4};
-	var Bwarbike4 =		{id:41, label:'Warbike',		pts:25, optional:true, group:Bkult4};
-	var Bskorcha4 =		{id:42, label:'Skorcha',		pts:25, optional:true, group:Bkult4};
-	Bkult4.options = 	[Bbuggy4, Bwarbike4, Bskorcha4];
-var blitz2 =		{id:43, label:'Wagonz',	minimum:4};
-	var gunwagon2 =		{id:44, label:'Gunwagon',			pts:35, optional:true, group:blitz2};
-	var deth2 =			{id:45, label:'Deth Kopta',		pts:35, optional:true, group:blitz2};
-	var flak2 =			{id:46, label:'Flakwagon',			pts:35, optional:true, group:blitz2};
-	blitz2.options = 	[gunwagon2, deth2, flak2];
-var blitz3 =		{id:47, label:'Wagonz',	minimum:8};
-	var gunwagon3 =		{id:48, label:'Gunwagon',			pts:35, optional:true, group:blitz3};
-	var deth3 =			{id:49, label:'Deth Kopta',		pts:35, optional:true, group:blitz3};
-	var flak3 =			{id:50, label:'Flakwagon',			pts:35, optional:true, group:blitz3};
-	blitz3.options = 	[gunwagon3, deth3, flak3];
-var blitz4 =		{id:51, label:'Wagonz',	minimum:12};
-	var gunwagon4 =		{id:52, label:'Gunwagon',			pts:35, optional:true, group:blitz4};
-	var deth4 =			{id:53, label:'Deth Kopta',		pts:35, optional:true, group:blitz4};
-	var flak4 =			{id:54, label:'Flakwagon',			pts:35, optional:true, group:blitz4};
-	blitz4.options = 	[gunwagon4, deth4, flak4];
-var forts =			{id:55, label:'Fortresses',	upto:2, minimum:2};
-	var battlefort =	{id:56, label:'Battlefortress',	pts:0, optional:true, group:forts};
-	var gunfort =		{id:57, label:'Gunfortress',		pts:0, optional:true, group:forts};
-	forts.options = 	[battlefort, gunfort];
-var forts2 =		{id:58, label:'Fortresses',	upto:4, minimum:4};
-	var battlefort2 =	{id:59, label:'Battlefortress',	pts:0, optional:true, group:forts2};
-	var gunfort2 =		{id:60, label:'Gunfortress',		pts:0, optional:true, group:forts2};
-	forts2.options = 	[battlefort2, gunfort2];
-var forts3 =		{id:61, label:'Fortresses',	upto:6, minimum:6};
-	var battlefort3 =	{id:62, label:'Battlefortress',	pts:0, optional:true, group:forts3};
-	var gunfort3 =		{id:63, label:'Gunfortress',		pts:0, optional:true, group:forts3};
-	forts3.options = 	[battlefort3, gunfort3];
-var bombas =		{id:64, label:'Bombas', minimum:3, upto:9};
-	var fightaBomba =	{id:65, label:'Fighta Bomba',	pts:50, optional:true, group:bombas};
-	bombas.options =	[fightaBomba];
+// MANDATORY UNITS
+var fightaBomba =	{id:65, label:'Fighta Bomba',	pts:50, optional:true, minimum:3, upto:9};
+var boy1 =			{id:101, label:'Boyz (trukk)',	pts:25,	optional:true, minimum:3};
+var boy2 =			{id:103, label:'Boyz (trukk)',	pts:25,	optional:true, minimum:6};
+var boy3 =			{id:105, label:'Boyz (trukk)',	pts:25,	optional:true, minimum:9};
+var nob1 =			{id:10, label:'Nobz',	upto:2, minimum:1, options:[
+	{id:12, label:'Nobz (trukk)',	pts:35,	optional:true},
+	{id:120, label:'Nobz (bikes)',	pts:35, optional:true}
+]};
+var nob2 =			{id:13, label:'Nobz',	upto:4, minimum:2, options:[
+	{id:15, label:'Nobz (trukk)',	pts:35,	optional:true},
+	{id:121, label:'Nobz (bikes)',	pts:35, optional:true}
+]};
+var nob3 =			{id:16, label:'Nobz',	upto:6, minimum:3, options:[
+	{id:18, label:'Nobz (trukk)',	pts:35,	optional:true},
+	{id:122, label:'Nobz (bikes)',	pts:35, optional:true}
+]};
+var kult1 =			{id:19, label:'Bikes',	minimum:4, options:[
+	{id:20, label:'Buggy',			pts:25, optional:true},
+	{id:21, label:'Warbike',		pts:25, optional:true},
+	{id:22, label:'Skorcha',		pts:25, optional:true}
+]};
+var kult2 =			{id:23, label:'Bikes',	minimum:8, options:[
+	{id:24, label:'Buggy',			pts:25, optional:true},
+	{id:25, label:'Warbike',		pts:25, optional:true},
+	{id:26, label:'Skorcha',		pts:25, optional:true}
+]};
+var kult3 =			{id:27, label:'Bikes',	minimum:12, options:[
+	{id:28, label:'Buggy',			pts:25, optional:true},
+	{id:29, label:'Warbike',		pts:25, optional:true},
+	{id:30, label:'Skorcha',		pts:25, optional:true}
+]};
+var kult1b =		{id:31, label:'Bikes',	minimum:8, options:[
+	{id:32, label:'Buggy',			pts:25, optional:true},
+	{id:33, label:'Warbike',		pts:25, optional:true},
+	{id:34, label:'Skorcha',		pts:25, optional:true}
+]};
+var kult2b =		{id:35, label:'Bikes',	minimum:16, options:[
+	{id:36, label:'Buggy',			pts:25, optional:true},
+	{id:37, label:'Warbike',		pts:25, optional:true},
+	{id:38, label:'Skorcha',		pts:25, optional:true}
+]};
+var kult3b =		{id:39, label:'Bikes',	minimum:24, options:[
+	{id:40, label:'Buggy',			pts:25, optional:true},
+	{id:41, label:'Warbike',		pts:25, optional:true},
+	{id:42, label:'Skorcha',		pts:25, optional:true}
+]};
+var blitz1 =		{id:43, label:'Wagonz',	minimum:4, options:[
+	{id:44, label:'Gunwagon',		pts:35, optional:true},
+	{id:45, label:'Deth Kopta',		pts:35, optional:true},
+	{id:46, label:'Flakwagon',		pts:35, optional:true}
+]};
+var blitz2 =		{id:47, label:'Wagonz',	minimum:8, options:[
+	{id:48, label:'Gunwagon',		pts:35, optional:true},
+	{id:49, label:'Deth Kopta',		pts:35, optional:true},
+	{id:50, label:'Flakwagon',		pts:35, optional:true}
+]};
+var blitz3 =		{id:51, label:'Wagonz',	minimum:12, optoins:[
+	{id:52, label:'Gunwagon',		pts:35, optional:true},
+	{id:53, label:'Deth Kopta',		pts:35, optional:true},
+	{id:54, label:'Flakwagon',		pts:35, optional:true}
+]};
+var forts1 =		{id:55, label:'Fortresses',	upto:2, minimum:2, options:[
+	{id:56, label:'Battlefortress',		pts:0, optional:true},
+	{id:57, label:'Gunfortress',		pts:0, optional:true}
+]};
+var forts2 =		{id:58, label:'Fortresses',	upto:4, minimum:4, options:[
+	{id:59, label:'Battlefortress',		pts:0, optional:true},
+	{id:60, label:'Gunfortress',		pts:0, optional:true}
+]};
+var forts3 =		{id:61, label:'Fortresses',	upto:6, minimum:6, options:[
+	{id:62, label:'Battlefortress',		pts:0, optional:true},
+	{id:63, label:'Gunfortress',		pts:0, optional:true}
+]};
+
 // UPGRADES
 var boyz =				{id:66, label:'Boyz', 							pts:25};
 var commandos =			{id:67, label:'Commandos',						pts:25};
@@ -89,26 +82,26 @@ var warbike =			{id:70, label:'Warbike',						pts:25};
 var skorcha =			{id:71, label:'Skorcha',						pts:25};
 var bigGun =			{id:72, label:'Big Gun',						pts:25};
 var battlewagon =		{id:73, label:'Battlewagon',					pts:35};
-var dethKopta =			{id:74, label:'Deth Kopta',					pts:35};
+var dethKopta =			{id:74, label:'Deth Kopta',						pts:35};
 var dreadnought =		{id:75, label:'Dreadnought',					pts:35};
 var flakwagon =			{id:76, label:'Flakwagon',						pts:35};
 var gunwagon =			{id:77, label:'Gunwagon',						pts:35};
-var nobgroup1 =		{id:78, label:'Nobz',	upto:1};
-	var nobz1 =				{id:79, label:'Nobz',						pts:35, group:nobgroup1};
-	var nobWarbike1 =		{id:80, label:'Nobz (bikes)',				pts:35, group:nobgroup1};
-	nobgroup1.options =		[nobz1, nobWarbike1];
-var nobgroup2 =		{id:81, label:'Nobz',	upto:2};
-	var nobz2 =				{id:82, label:'Nobz',						pts:35, group:nobgroup2};
-	var nobWarbike2 =		{id:83, label:'Nobz (bikes)',				pts:35, group:nobgroup2};
-	nobgroup2.options =		[nobz2, nobWarbike2];
-var nobgroup3 =		{id:84, label:'Nobz',	upto:3};
-	var nobz3 =				{id:85, label:'Nobz',						pts:35, group:nobgroup3};
-	var nobWarbike3 =		{id:86, label:'Nobz (bikes)',				pts:35, group:nobgroup3};
-	nobgroup3.options =		[nobz3, nobWarbike3];
+var nobgroup1 =			{id:78, label:'Nobz',	upto:1, options:[
+	{id:79, label:'Nobz',						pts:35},
+	{id:80, label:'Nobz (bikes)',				pts:35}
+]};
+var nobgroup2 =			{id:81, label:'Nobz',	upto:2, options:[
+	{id:82, label:'Nobz',						pts:35},
+	{id:83, label:'Nobz (bikes)',				pts:35}
+]};
+var nobgroup3 =			{id:84, label:'Nobz',	upto:3, options:[
+	{id:85, label:'Nobz',						pts:35},
+	{id:86, label:'Nobz (bikes)',				pts:35}
+]};
 var speedsta1 =			{id:87, label:'Mekboy Speedsta',				pts:50, upto:1};
 var speedsta2 =			{id:88, label:'Mekboy Speedsta',				pts:50, upto:2};
 var speedsta3 =			{id:89, label:'Mekboy Speedsta',				pts:50, upto:3};
-var battleFortress =	{id:90, label:'Battlefortress',				pts:125};
+var battleFortress =	{id:90, label:'Battlefortress',					pts:125};
 var battleFortress1 =	{id:91, label:'Extra Battlefortress',			pts:125, upto:1};
 var battleFortress2 =	{id:92, label:'Extra Battlefortress',			pts:125, upto:2};
 var battleFortress3 =	{id:93, label:'Extra Battlefortress',			pts:125, upto:3};
@@ -120,30 +113,32 @@ var battlekrooza =		{id:98, label:'Battlekrooza',					pts:50, upto:1};
 var badork =			{id:110, label:'Mekboy Bad Ork Bikeboy',		pts:0, upto:1};
 
 // WARBANDS
-var warband =			{id:500, label:'Speed Freaks Warband',			pts:-10, displayPts:200, defaults:[{unit:nobtrukk,count:1},{unit:bo1,count:3},{unit:buggy2,count:4}], upgrades:[nobtrukk, nobbike1, bo1, stormboyz, buggy2, warbike2, skorcha2, bigGun, battlewagon, dethKopta, flakwagon, gunwagon, speedsta1, badork]};
-var bigWarband =		{id:501, label:'Speed Freaks Warband (Big)',	pts:-70, displayPts:350, defaults:[{unit:nobtrukk2,count:2},{unit:bo2,count:6},{unit:buggy3,count:8}], upgrades:[nobtrukk2, nobbike2, bo2, stormboyz, buggy3, warbike3, skorcha3, bigGun, battlewagon, dethKopta, flakwagon, gunwagon, speedsta2, badork]};
-var ugeWarband =		{id:502, label:'Speed Freaks Warband (\'Uge)',	pts:-130, displayPts:500, defaults:[{unit:nobtrukk3,count:3},{unit:bo3,count:9},{unit:buggy4,count:12}], upgrades:[nobtrukk3, nobbike3, bo3, stormboyz, buggy4, warbike4, skorcha4, bigGun, battlewagon, dethKopta, flakwagon, gunwagon, speedsta3, badork]};
-var kult =				{id:503, label:'Kult of Speed',					pts:0, 	 displayPts:200, defaults:[{unit:Bbuggy2,count:8}], upgrades:[Bbuggy2, Bwarbike2, Bskorcha2, dethKopta, flakwagon, gunwagon, speedsta1, badork]};
-var bigKult =			{id:504, label:'Kult of Speed (Big)',			pts:-50, displayPts:350, defaults:[{unit:Bbuggy3,count:16}], upgrades:[Bbuggy3, Bwarbike3, Bskorcha3, dethKopta, flakwagon, gunwagon, speedsta2, badork]};
-var ugeKult =			{id:505, label:'Kult of Speed (\'Uge)',			pts:-100,displayPts:500, defaults:[{unit:Bbuggy4,count:24}], upgrades:[Bbuggy4, Bwarbike4, Bskorcha4, dethKopta, flakwagon, gunwagon, speedsta3, badork]};
-var blitz =				{id:506, label:'Blitz Brigade',					pts:10,  displayPts:150, defaults:[{unit:gunwagon2,count:4}], upgrades:[boyz, buggy, warbike, skorcha, gunwagon2, deth2, flak2, speedsta1, gunFortress1, nobgroup1, badork]};
-var bigBlitz =			{id:507, label:'Blitz Brigade (Big)',			pts:-30, displayPts:250, defaults:[{unit:gunwagon3,count:8}], upgrades:[boyz, buggy, warbike, skorcha, gunwagon3, deth3, flak3, speedsta2, gunFortress2, nobgroup2, badork]};
-var ugeBlitz =			{id:508, label:'Blitz Brigade (\'Uge)',			pts:-70, displayPts:350, defaults:[{unit:gunwagon4,count:12}], upgrades:[boyz, buggy, warbike, skorcha, gunwagon4, deth4, flak4, speedsta3, gunFortress3, nobgroup3, badork]};
-var outriders =			{id:509, label:'Warbike Outriders',				pts:150, units:'5 Warbikes', upgrades:[badork]};
-var bigOutriders =		{id:510, label:'Warbike Outriders (Big)',		pts:225, units:'10 Warbikes', upgrades:[badork]};
-var ugeOutriders =		{id:511, label:'Warbike Outriders (\'Uge)',		pts:300, units:'15 Warbikes', upgrades:[badork]};
-var fortressMob =		{id:512, label:'Fortress Mob',					pts:275, limited:true, defaults:[{unit:battlefort,count:2}], upgrades:[boyz, flakwagon, nobgroup1, battleFortress1, gunFortress1, badork]};
-var bigFortressMob =	{id:513, label:'Fortress Mob (Big)',			pts:500, limited:true, defaults:[{unit:battlefort2,count:4}], upgrades:[boyz, flakwagon, nobgroup2, battleFortress2, gunFortress2, badork]};
-var ugeFortressMob =	{id:514, label:'Fortress Mob (\'Uge)',			pts:700, limited:true, defaults:[{unit:battlefort3,count:6}], upgrades:[boyz, flakwagon, nobgroup3, battleFortress3, gunFortress3, badork]};
-var warbandList =		{id:515, label:'FORMATIONS', options:[warband, bigWarband, ugeWarband, kult, bigKult, ugeKult, blitz, bigBlitz, ugeBlitz, outriders, bigOutriders, ugeOutriders, fortressMob, bigFortressMob, ugeFortressMob]};
+var warbandList =		{id:515, label:'FORMATIONS', options:[
+	{id:500, label:'Speed Freaks Warband',			pts:-10, displayPts:200, upgrades:[nob1, boy1, stormboyz, kult1, bigGun, battlewagon, dethKopta, flakwagon, gunwagon, speedsta1, badork]},
+	{id:501, label:'Speed Freaks Warband (Big)',	pts:-70, displayPts:350, upgrades:[nob2, boy2, stormboyz, kult2, bigGun, battlewagon, dethKopta, flakwagon, gunwagon, speedsta2, badork]},
+	{id:502, label:'Speed Freaks Warband (\'Uge)',	pts:-130,displayPts:500, upgrades:[nob3, boy3, stormboyz, kult3, bigGun, battlewagon, dethKopta, flakwagon, gunwagon, speedsta3, badork]},
+	{id:503, label:'Kult of Speed',					pts:0, 	 displayPts:200, upgrades:[kult1b, dethKopta, flakwagon, gunwagon, speedsta1, badork]},
+	{id:504, label:'Kult of Speed (Big)',			pts:-50, displayPts:350, upgrades:[kult2b, dethKopta, flakwagon, gunwagon, speedsta2, badork]},
+	{id:505, label:'Kult of Speed (\'Uge)',			pts:-100,displayPts:500, upgrades:[kult3b, dethKopta, flakwagon, gunwagon, speedsta3, badork]},
+	{id:506, label:'Blitz Brigade',					pts:10,  displayPts:150, upgrades:[boyz, buggy, warbike, skorcha, blitz1, speedsta1, gunFortress1, nobgroup1, badork]},
+	{id:507, label:'Blitz Brigade (Big)',			pts:-30, displayPts:250, upgrades:[boyz, buggy, warbike, skorcha, blitz2, speedsta2, gunFortress2, nobgroup2, badork]},
+	{id:508, label:'Blitz Brigade (\'Uge)',			pts:-70, displayPts:350, upgrades:[boyz, buggy, warbike, skorcha, blitz3, speedsta3, gunFortress3, nobgroup3, badork]},
+	{id:509, label:'Warbike Outriders',				pts:150, units:'5 Warbikes', upgrades:[badork]},
+	{id:510, label:'Warbike Outriders (Big)',		pts:225, units:'10 Warbikes', upgrades:[badork]},
+	{id:511, label:'Warbike Outriders (\'Uge)',		pts:300, units:'15 Warbikes', upgrades:[badork]},
+	{id:512, label:'Fortress Mob',					pts:275, limited:true, upgrades:[forts1, boyz, flakwagon, nobgroup1, battleFortress1, gunFortress1, badork]},
+	{id:513, label:'Fortress Mob (Big)',			pts:500, limited:true, upgrades:[forts2, boyz, flakwagon, nobgroup2, battleFortress2, gunFortress2, badork]},
+	{id:514, label:'Fortress Mob (\'Uge)',			pts:700, limited:true, upgrades:[forts3, boyz, flakwagon, nobgroup3, battleFortress3, gunFortress3, badork]}
+]};
 
 // OTHER
-var fightaSquadron = 	{id:516, label:'Fighta Squadron',	pts:0, displayPts:150, defaults:[{unit:fightaBomba,count:3}], upgrades:[fightaBomba], limited:true};
-var landa =				{id:517, label:'Landa',				pts:200, upgrades:[], limited:true};
 var spacecraft =		{id:518, label:'Spacecraft',	upto:1};
-var killKroozer =		{id:519, label:'Kill Kroozer',		pts:200, upgrades:[], limited:true, group:spacecraft};
-var battleKroozer =		{id:520, label:'Battle Kroozer',	pts:250, upgrades:[], limited:true, group:spacecraft};
-var othersList = 		{id:521, label:'AIRCRAFT and SPACECRAFT', options:[fightaSquadron, landa, killKroozer, battleKroozer], limited:true};
+var othersList = 		{id:521, label:'AIRCRAFT and SPACECRAFT', options:[
+ 	{id:516, label:'Fighta Squadron',	pts:0, displayPts:150, upgrades:[fightaBomba], limited:true},
+	{id:517, label:'Landa',				pts:200, upgrades:[], limited:true},
+	{id:519, label:'Kill Kroozer',		pts:200, upgrades:[], limited:true, group:spacecraft},
+	{id:520, label:'Battle Kroozer',	pts:250, upgrades:[], limited:true, group:spacecraft}
+], limited:true};
 
 // DETAILS
 var listData = {
