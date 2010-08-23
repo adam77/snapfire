@@ -198,7 +198,7 @@ function doImport() { // todo: mandatory formations break because they are not l
 }
 
 function unpickle(pickled) {
-//	try {
+	try {
 		var doneName = false
 		var currentFormation = null
 		decodeURIComponent(pickled).split('~').each(function(x) {
@@ -219,9 +219,9 @@ function unpickle(pickled) {
 				}
 			}			
 		})	
-//	} catch(err) {
-//			alert('Sorry, there was an error loading the army.' + err);
-//	}
+	} catch(err) {
+			alert('Sorry, there was an error loading the army.');
+	}
 }
 
 function pickle() {
