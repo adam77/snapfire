@@ -1,36 +1,23 @@
-// OPTIONALS
-var lords = 		{id:16, label:'Lord', upto:1, minimum:1};
-	var lord = 		{id:17, label:'Sorcerer Lord', 	pts:0, optional:true, group:lords};
-	var prince =	{id:19, label:'Daemon Prince', 	pts:50, optional:true, group:lords};
-	var warlord =	{id:20, label:'Chaos Warlord', 	pts:50, optional:true, group:lords};
-	var prince2 =	{id:21, label:'Daemon Prince (Supreme Commander)', pts:100, optional:true, group:lords};
-	lords.options = [lord, warlord, prince, prince2];
-var wheels = 		{id:22, label:'Death Wheels', upto:3, minimum:1};
-	var wheel = 	{id:23, label:'Death Wheel', pts:275, optional:true, group:wheels};
-	wheels.options = [wheel];
-var decimators =	{id:24, label:'Decimators', upto:3, minimum:1};
-	var decimator =	{id:25, label:'Decimator', pts:225, optional:true, group:decimators};
-	decimators.options = [decimator];
-var armour =		{id:26, label:'Vehicles', upto:9, minimum:4};
-	var pred =		{id:27, label:'Chaos Predator', pts:50, optional:true, group:armour};
-	var raider2 =	{id:28, label:'Chaos Land Raider', pts:75, optional:true, group:armour};
-	armour.options = [pred, raider2];
-var raptors = 		{id:29, label:'Raptors', upto:8, minimum:4};
-	var raptor = 	{id:30, label:'Raptor', pts:35, optional:true, group:raptors};
-	raptors.options = [raptor];
-var terms = 		{id:31, label:'Terminators', upto:6, minimum:4};
-	var term = 		{id:32, label:'Chaos Terminator', pts:60, optional:true, group:terms};
-	terms.options = [term];
-var ts = 			{id:33, label:'Marines', upto:1, minimum:1};
-	var ts1 = 		{id:34, label:'5 Thousand Sons', 			pts:0, optional:true, group:ts};
-	var ts2 = 		{id:35, label:'8 Thousand Sons', 			pts:200, optional:true, group:ts};
-	ts.options = 	[ts1,ts2];
-var reapers =		{id:36, label:'Reapers', upto:3, minimum:1};
-	var reaper =	{id:37, label:'Plaguereaper', pts:200, optional:true, group:reapers};
-	reapers.options = [reaper];
-var firelords =		{id:38, label:'Firelords', upto:3, minimum:1};
-	var firelord =	{id:39, label:'Firelord', pts:150, optional:true, group:firelords};
-	firelords.options = [firelord];
+// MANDATORY UNITS
+var lord = 			{id:16, label:'Lord', upto:1, minimum:1, options:[
+	{id:18, label:'Sorcerer Lord', 		pts:0, optional:true},
+	{id:19, label:'Daemon Prince', 		pts:50, optional:true},
+	{id:20, label:'Chaos Warlord', 		pts:50, optional:true},
+	{id:21, label:'Daemon Prince (Supreme Commander)', pts:100, optional:true}
+]};
+var wheel = 		{id:23, label:'Death Wheel', 	pts:275, optional:true, upto:3, minimum:1};
+var decimator =		{id:25, label:'Decimator', 		pts:225, optional:true, upto:3, minimum:1};
+var armour =		{id:26, label:'Vehicles',		upto:8, minimum:4, options:[
+	{id:27, label:'Chaos Predator', 	pts:50, optional:true},
+	{id:28, label:'Chaos Land Raider', 	pts:75, optional:true}
+]};
+var raptor =	 	{id:30, label:'Raptor', 		pts:35, optional:true, upto:8, minimum:4};
+var term = 			{id:32, label:'Chaos Terminator',pts:60, optional:true, upto:6, minimum:4};
+var ts = 			{id:33, label:'Marines', upto:1, minimum:1, options:[
+	{id:34, label:'5 Thousand Sons', 	pts:0, optional:true},
+	{id:35, label:'8 Thousand Sons', 	pts:200, optional:true}
+]};
+var firelord =		{id:39, label:'Firelord', 		pts:150, optional:true, upto:3, minimum:1};
 
 // UPGRADES
 var greater =			{id:50, label:'Greater Daemon', pts:75};
@@ -49,69 +36,25 @@ var rhino =				{id:62, label:'Rhino', pts:10};
 var dread = 			{id:63, label:'Dreadnought', upto:3, pts:50};
 
 // DETACHMENTS
-var core =	{id:500, label:'CORE', options:[
-{	id:			501,
-	label:		'Thousand Sons Retinue',
-	restricting:true,
-	pts:		300,
-	units:		'Cabal of Sorcerers',
-	defaults:	[{unit:ts1,count:1}],
-	upgrades:	[raiders,icon,champion,defiler,rhino]
-},
-{	id:			552,
-	label:		'Daemon Pool',
-	pts:		0,
-	upto:		1,
-	upgrades:	[greater, lesser]
-}
+var core =		{id:500, label:'CORE', options:[
+	{id:501, label:'Thousand Sons Retinue',	restricting:true,pts:300,units:'Cabal of Sorcerers',upgrades:[ts,raiders,icon,champion,defiler,rhino]},
+	{id:552, label:'Daemon Pool',			pts:0,upto:1,upgrades:[greater,lesser]}
 ]};
 
+// SUPPORT
 var support =	{id:502, label:'SUPPORT', options:[
-{	id:			503,
-	label:		'Terminators',
-	restricted:	true,
-	pts:		400,
-	units:		'4 Terminators',
-	defaults:	[{unit:lord, count:1}],
-	upgrades:	[dread,raiders,pact,icon,defiler]
-},
-{	id:			506,
-	label:		'Defiler Pack',
-	restricted:	true,
-	pts:		300,
-	units:		'4 Defilers',
-	upgrades:	[dread]
-},
-{	id:			508,
-	label:		'Disc Riders',
-	restricted:	true,
-	pts:		300,
-	units:		'8 Disc Riders',
-	defaults:	[{unit:lord, count:1}],
-	upgrades:	[pact,icon]
-},	
-{	id:			509,
-	label:		'Armoured Company',
-	restricted:	true,
-	pts:		0,
-	displayPts:	200,
- 	defaults:	[{unit:pred, count:4}],
-	upgrades:	[pred, raider2]
-},
-{	id:			510,
-	label:		'Silver Towers',
-	restricted:	true,
-	pts:		325,
-	units:		'4 Silver Towers',
-	upgrades:	[]
-}
+	{id:503, label:'Terminators',			restricted:true,pts:400,units:'4 Terminators',upgrades:[lord,dread,raiders,pact,icon,defiler]},
+	{id:506, label:'Defiler Pack',			restricted:true,pts:300,units:'4 Defilers',upgrades:[dread]},
+	{id:508, label:'Disc Riders',			restricted:true,pts:300,units:'8 Disc Riders',upgrades:[lord,pact,icon]},	
+	{id:509, label:'Armoured Company',		restricted:true,pts:0,displayPts:200,upgrades:[armour]},
+	{id:510, label:'Silver Towers',			restricted:true,pts:325,units:'4 Silver Towers',upgrades:[]}
 ]};
 
 // NAVY
-var spacecraft = 		{id:532, label:'Spacecraft', upto:1};
-var navyList =			{id:535, label:'CHAOS NAVY & DAEMONIC ENGINES', options:[
+var spacecraft ={id:532, label:'Spacecraft', upto:1};
+var navyList =	{id:535, label:'CHAOS NAVY & DAEMONIC ENGINES', options:[
 	{id:530, label:'Doomwings',					pts:150, units:'3 Doomwings', upgrades:[], limited:true},
-	{id:531, label:'Firelords',					pts:0, displayPts:150, defaults:[{unit:firelord,count:1}], upgrades:[firelord], limited:true},
+	{id:531, label:'Firelords',					pts:0, displayPts:150, upgrades:[firelord], limited:true},
 	{id:533, label:'Devastation Class Cruiser',	pts:150, upgrades:[], group:spacecraft, limited:true}, 
 	{id:534, label:'Despoiler Class Battleship',pts:250, upgrades:[], group:spacecraft, limited:true}
 ]};

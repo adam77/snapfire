@@ -25,7 +25,7 @@ function renderListName() {
 function initFormation(formation) {
 	// initalise id maps
 	allFormations[formation.id] = formation
-	flattenUpgrades(formation).each(function(upgrade) {
+	flattenUpgrades(formation, true).each(function(upgrade) {
 		allUpgrades[upgrade.id] = upgrade
 	});
 	// initalise group<->option circular reference
@@ -198,7 +198,7 @@ function doImport() { // todo: mandatory formations break because they are not l
 }
 
 function unpickle(pickled) {
-	try {
+//	try {
 		var doneName = false
 		var currentFormation = null
 		decodeURIComponent(pickled).split('~').each(function(x) {
@@ -219,9 +219,9 @@ function unpickle(pickled) {
 				}
 			}			
 		})	
-	} catch(err) {
-			alert('Sorry, there was an error loading the army.');
-	}
+//	} catch(err) {
+//			alert('Sorry, there was an error loading the army.' + err);
+//	}
 }
 
 function pickle() {
@@ -282,11 +282,11 @@ function flattenDefaults(formation) {
 	return upgrades
 }
 
-function flattenUpgrades(formation) {
+function flattenUpgrades(formation, includeFixedNumberOptionals) {
 	var upgrades = [];
 	formation.upgrades.each(function(x) {
 		if (x.options) {
-			if (x.minimum != x.upto) {
+			if (includeFixedNumberOptionals || x.minimum != x.upto) {
 				upgrades = upgrades.concat(x.options);
 			}
 		}
