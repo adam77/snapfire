@@ -76,7 +76,7 @@ var titanList = 	{id:520, label:'AIR CASTE', options:[
 
 // DETAILS
 var listData = {
-	id:'Tau Third Phase Expansion', version:'NetEA v6.2 *under development*',
+	id:'Tau Third Phase Expansion', version:'NetEA v6.2 *UNDER DEVELOPMENT*',
 	sublists:[companyList, supportList, titanList],
 	restriction:{limit:3, restricting:'Cadre', restricted:'Support Groups'}};
 
