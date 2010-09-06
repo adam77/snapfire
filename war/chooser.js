@@ -449,14 +449,31 @@ function checkArmyConstraints() {
 	});
 	var ratio = listData.limitRatio ? listData.limitRatio : 3.0
 	if (count > totalPoints() / ratio) {
-		warnings.push('Over 1/'+ratio+' of points is spent on War Engines/Allies!');
+		var label = listData.limitLabel ? listData.limitLabel : 'War Engines/Allies';
+		warnings.push('Over 1/'+ratio+' of points is spent on '+label+'!');
+	}
+	// 1/3 points constraint 2
+	var count2 = 0;	// todo (include upgrade points too)
+	$$('.limited2').each(function(x) {
+		count2 += x.formationData.pts
+		$$('.' + x.identify()).each(function(x) {
+			count2 += x.upgradeData.pts * upgradeMultiplier(x);
+		});
+	});
+	if (count2 > totalPoints() / 3.0) {
+		warnings.push('Over 1/3 of points is spent on '+listData.limitLabel2+'!');
 	}
 	// restricted formations
 	if (listData.restriction) {
 		var count = $$('.restricted').size();
 		var allowed = listData.restriction.limit * $$('.restricting').size();
 		if (count > allowed) {
-			warnings.push('More than ' + listData.restriction.limit + ' ' + listData.restriction.restricted + ' per ' + listData.restriction.restricting + '!');
+			if (listData.restriction.limit >= 1) {
+				warnings.push('More than ' + listData.restriction.limit + ' ' + listData.restriction.restricted + ' per ' + listData.restriction.restricting + '!');
+			}
+			else {
+				warnings.push('More than 1 ' + listData.restriction.restricted + ' per ' + 1/listData.restriction.limit +' '+ listData.restriction.restricting + '!');
+			}
 		}
 	}
 	if (listData.restriction2) {
@@ -644,7 +661,7 @@ function addFormation(event, formation, noDefaults) {
 		$('orbatBody').insert( newRow );
 	}
 	else {
-		newRow.addClassName('unlimited'); // is this class used?
+		newRow.addClassName(formation.limited2 ? 'limited2' : 'unlimited'); // is this class used?
 		$('formationDivider').insert({before:newRow});
 	}
 	
