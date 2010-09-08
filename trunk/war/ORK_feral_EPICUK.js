@@ -41,7 +41,7 @@ var warbandList =		{id:516, label:'WAR HORDES', options:[
 	{id:500, label:'Warband',				pts:-20,	displayPts:200,		upgrades:[nob1, boy1, grotz1, wildboyz, katapult3, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]},
 	{id:501, label:'Warband (Big)',			pts:-90, 	displayPts:350,		upgrades:[nob2, boy2, grotz2, wildboyz, katapult6, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]},
 	{id:502, label:'Warband (\'Uge)',		pts:-160, 	displayPts:500,		upgrades:[nob3, boy3, grotz3, wildboyz, katapult9, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]},
-	{id:503, label:'Wildboyz',				pts:5,		displayPts:150,		upgrades:[nob1, wildboy1, katapult3, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]},
+	{id:503, label:'Wildboyz',				pts:-20,	displayPts:125,		upgrades:[nob1, wildboy1, katapult3, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]},
 	{id:504, label:'Wildboyz (Big)',		pts:-65, 	displayPts:225,		upgrades:[nob2, wildboy2, katapult6, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]},
 	{id:505, label:'Wildboyz (\'Uge)',		pts:-110, 	displayPts:325,		upgrades:[nob3, wildboy3, katapult9, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]},
 	{id:506, label:'Boarboyz Horde',		pts:-25,	displayPts:100,		upgrades:[boar1, wyrdboy1, warlord]},
