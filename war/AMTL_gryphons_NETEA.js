@@ -35,7 +35,7 @@ var reaverWep =		{label:'Weapons',	upto:3, minimum:3, options:[
 	{id:37, label:'Quake Cannon',			pts:75, optional:true}
 ]};
 var warlordWep =	{label:'Weapons',	upto:4, minimum:4, options:[
-	{id:41, label:'Turbolaser Destructor',	pts:35, optional:true},
+	{id:41, label:'Turbolaser Destructor',	pts:25, optional:true},
 	{id:38, label:'Inferno Gun', 			pts:0, optional:true},
 	{id:39, label:'Vulcan Megabolter',		pts:0, optional:true},
 	{id:40, label:'Plasma Blastgun',		pts:0, optional:true},
@@ -57,6 +57,11 @@ var spacecraft = 	{id:55, label:'Spacecraft', 	upto:1,		minimum:1, options:[
 	{id:56, label:'Gothic Class Cruiser',	pts:0,	optional:true},
 	{id:57, label:'Arc Mechanicus',			pts:125,optional:true}
 ]};
+var knights =		{id:58,	label:'Knights',		upto:1,		minimum:1, options:[
+	{id:59, label:'3 Forge Knights',		pts:0,	optional:true},
+	{id:60, label:'6 Forge Knights',		pts:175,optional:true}
+]};
+
 
 // UPGRADES
 var surcharge = 	{id:80, label:'Single Weapon System Surcharge', 	pts:25, upto:1};
@@ -68,31 +73,32 @@ var icon =			{id:84,	label:'Sacred Icon',						pts:50,	upto:1};
 
 // TITANS
 var titans =		{id:501, label:'BATTLE TITANS', options:[
-	{id:502, label:'Emperor Titan', 		pts:1250, upgrades:[emperor,legate,princeps,lasers,icon]},
-	{id:503, label:'Warlord Titan', 		pts:725, upgrades:[warlordWep,surcharge,legate,princeps,lasers,icon]},
-	{id:504, label:'Reaver Titan',			pts:575, upgrades:[reaverWep,surcharge,legate,princeps,lasers,icon]}
+	{id:502, label:'Emperor Titan', 		pts:1250,upgrades:[emperor,legate,princeps,lasers,icon], restricting:true},
+	{id:503, label:'Warlord Titan', 		pts:725, upgrades:[warlordWep,surcharge,legate,princeps,lasers,icon], restricting:true},
+	{id:504, label:'Reaver Titan',			pts:575, upgrades:[reaverWep,surcharge,legate,princeps,lasers,icon], restricting:true}
 ]};
 
 // SCOUTS
 var scouts =		{id:550, label:'SCOUT TITANS', options:[
-	{id:551, label:'Warhound Titan',		pts:275, upgrades:[scoutWep,surcharge,princeps]},
-	{id:552, label:'Warhound Titan Pack',	pts:500, upgrades:[scoutWep2,surcharge,princeps]}
+	{id:551, label:'Warhound Titan',		pts:275, upgrades:[scoutWep,surcharge,princeps], restricting:true},
+	{id:552, label:'Warhound Titan Pack',	pts:500, upgrades:[scoutWep2,surcharge,princeps], restricting:true}
 ]};
 
 // SUPPORT
 var support = 	{id:560, label:'SUPPORT FORMATIONS', options:[
-	{id:561, label:'Forge Knights',			pts:400, units:'6 Forge Knights', upgrades:[], limited:true},
-	{id:562, label:'Recon Platoon',			pts:100, units:'4 Sentinels', upgrades:[], limited:true},
-	{id:563, label:'Thunderbolt Fighters',	pts:150, units:'2 Thunderbolts', upgrades:[], limited:true},
-	{id:564, label:'Marauder Bombers',		pts:250, units:'2 Mauraders', upgrades:[], limited:true},
-	{id:565, label:'Orbital Support',		pts:175, upgrades:[spacecraft], upto:1, limited:true},
-	{id:566, label:'Skitarii Demi-Century',	pts:300, units:'Tech Priest, 9 Hypaspists', upgrades:[], limited:true},
-	{id:567, label:'Lysander Fighter',		pts:75,	 upgrades:[], limited:true}	
+	{id:561, label:'Forge Knights',			pts:200, upgrades:[knights], limited:true, restricted:true},
+	{id:562, label:'Recon Platoon',			pts:100, units:'4 Sentinels', upgrades:[], limited:true, restricted:true},
+	{id:563, label:'Thunderbolt Fighters',	pts:150, units:'2 Thunderbolts', upgrades:[], limited:true, restricted:true},
+	{id:564, label:'Marauder Bombers',		pts:250, units:'2 Mauraders', upgrades:[], limited:true, restricted:true},
+	{id:565, label:'Orbital Support',		pts:175, upgrades:[spacecraft], upto:1, limited:true, restricted:true},
+	{id:566, label:'Skitarii Demi-Century',	pts:300, units:'Tech Priest, 9 Hypaspists', upgrades:[], limited:true, restricted:true},
+	{id:567, label:'Lysander Fighter',		pts:75,	 upgrades:[], limited:true, restricted:true}	
 ]};
 
 // DETAILS
 var listData = {
-	id:'Legio Gryphonicus', version:'NetEA v3.17 *UNDER DEVELOPMENT*',
+	id:'Legio Gryphonicus', version:'NetEA v3.18 *UNDER DEVELOPMENT*',
+	restriction:{limit:1, restricting:'Titan Formation', restricted:'Support Formation'},
 	limitRatio:1,
 	sublists:[titans, scouts, support]};
 
