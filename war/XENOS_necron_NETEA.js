@@ -22,40 +22,41 @@ var monolithphalanx = {id:112, label:'Monolith', minimum:3, upto:3, optional:tru
 var commanderlimit = {id:113, label:'Supreme Commander', upto:1};
 
 // SUPPORT (3 per phalanx)
-var supportList = {id:200, label:'NECRON SUPPORT', options:[
-	{id:201, label:'Venator Maniple', pts:200, upgrades:[lords, pariahs, spyders, wraiths], units:'6 Flayed Ones', restricted:true},
-	{id:202, label:'Eques Maniple', pts:375, upgrades:[destroyers, lords, wraiths], restricted:true},
-	{id:203, label:'Monolith Maniple', pts:25, displayPts:200, upgrades:[monolithmaniple, obeliskmaniple], restricted:true},
-	{id:204, label:'Monolith Phalanx', pts:50, displayPts:275, upgrades:[monolithphalanx, obeliskphalanx], restricted:true},
-	{id:205, label:'Armored Phalanx', pts:300, units:'6 Obelisks', upgrades:[], restricted:true},
-	{id:206, label:'Pylon', pts:200, units:'Pylon', upgrades:[], restricted:true},
+var supportList = {id:500, label:'NECRON SUPPORT', options:[
+	{id:501, label:'Venator Maniple', pts:200, upgrades:[lords, pariahs, spyders, wraiths], units:'6 Flayed Ones', restricted:true},
+	{id:502, label:'Eques Maniple', pts:375, upgrades:[destroyers, lords, wraiths], restricted:true},
+	{id:503, label:'Monolith Maniple', pts:25, displayPts:200, upgrades:[monolithmaniple, obeliskmaniple], restricted:true},
+	{id:504, label:'Monolith Phalanx', pts:275, units:'3 Monoliths', upgrades:[obeliskphalanx], restricted:true},
+	{id:505, label:'Armored Phalanx', pts:300, units:'6 Obelisks', upgrades:[], restricted:true},
+	{id:506, label:'Pylon', pts:200, upgrades:[], restricted:true}
 ]};
 
 // INDIVIDUALS
-var individualList = {id:300, label:'INDIVIDUALS', options:[
-	{id:301, label:'Tomb Complex', pts:75, upgrades:[], upto:1},
-	{id:302, label:'C`Tan',	displayPts:300, pts:0, upgrades:[ctans], upto:1}
+var individualList = {id:600, label:'INDIVIDUALS', options:[
+	{id:601, label:'Tomb Complex', pts:75, upgrades:[], upto:1},
+	{id:602, label:'C`Tan',	displayPts:300, pts:0, upgrades:[ctans], upto:1}
 ]};
 
 // PHALANX
-var phalanxList = {id:400, label:'NECRON PHALANXES', options:[
-	{id:401, label:'Infantry Phalanx', restricting:true, units:'Necron Lord & 6 Warriors', upgrades:[spyders, pariahs, immortals, wraiths], pts:225}	
+var phalanxList = {id:700, label:'NECRON PHALANXES', options:[
+	{id:701, label:'Infantry Phalanx', restricting:true, units:'Necron Lord & 6 Warriors', upgrades:[spyders, pariahs, immortals, wraiths], pts:225}
 ]};
 
 // HARVESTERS
-var largeharvester = {id:500, label:'Lrg Harvester Eng', upto:1};
-var harvesterList = {id:501, label:'HARVESTERS', options:[
-	{id:502, label:'Scythe Class Harvester', pts:350, upgrades:[], upto:1, limited:true},
-	{id:503, label:'Abattoir', group:largeharvester, pts:750, upgrades:[], limited:true},
-	{id:504, label:'Aeonic Orb', group:largeharvester, pts:750, upgrades:[], limited:true},
-	{id:505, label:'Warbarque', pts:300, upgrades:[commander], upto:2, limited:true}
+var largeharvester = {id:800, label:'Lrg Harvester Eng', upto:1};
+var harvesterList = {id:801, label:'HARVESTERS', options:[
+	{id:802, label:'Scythe Class Harvester', pts:350, upgrades:[], upto:1, limited:true},
+	{id:803, label:'Abattoir', group:largeharvester, pts:750, upgrades:[], limited:true},
+	{id:804, label:'Aeonic Orb', group:largeharvester, pts:750, upgrades:[], limited:true},
+	{id:805, label:'Warbarque', pts:300, upgrades:[commander], upto:2, limited:true}
 ]};
 
 // DETAILS
 var listData = {
-	id:'Necrons', version:'Raiders 2.0',
+	id:'Necrons', version:'NetEA Raiders 2.0',
 	sublists:[individualList, phalanxList, supportList, harvesterList],
-	restriction:{limit:3, restricting:'Necron Phalanxes', restricted:'Necron Support'}};
+	restriction:{limit:3, restricting:'Necron Phalanx', restricted:'Necron Support'}
+};
 
 // CALLBACK
 listLoaded();
