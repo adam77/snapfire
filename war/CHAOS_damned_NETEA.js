@@ -1,6 +1,6 @@
 // MANDATORY UNITS
 var lob =			{id:54, label:'Lord of Battles', pts:400, optional:true, minimum:1, upto:2};
-var tower =			{id:56, label:'Plague Tower', pts:325, optional:true, minimum:1, upto:2};
+var tower =			{id:56, label:'Plague Tower', pts:325, optional:true, minimum:1, upto:3};
 var fire =			{id:61, label:'Firelord', pts:150, optional:true, minimum:1, upto:3};
 var scouts =		{id:57, minimum:1, upto:2, label:'Scouts', options:[
 	{id:58, label:'Questor', pts:275, optional:true},
@@ -29,7 +29,7 @@ var faction =		{id:80,	label:'Faction',	upto:1,	minimum:1, options:[
 
 // UPGRADES (upto 3 per company)
 var chimera =		{id:30, label:'Chimera',					pts:25}; // only applies to snipers & ogryns
-var icon =			{id:31, label:'Icon Bearer',				pts:40, 	upto:1};	
+var icon =			{id:31, label:'Icon Bearer',				pts:50, 	upto:1};	
 var transports =	{id:32, label:'Land Transporter',			pts:10};
 var spawn =			{id:33, label:'Chaos Spawn',				pts:25, 	upto:1};
 var hound =			{id:34, label:'Chaos Hounds',				pts:10, 	upto:3};
@@ -39,7 +39,7 @@ var griffon =		{id:40, label:'Traitor Griffon',			pts:35,		upto:3};
 var hellhound =		{id:41, label:'Traitor Hellhound',			pts:50,		upto:3};
 var hydra =			{id:42, label:'Traitor Hydra',				pts:50,		upto:2};
 var pact =			{id:43, label:'Daemonic Pact',				pts:25,		upto:1};
-var greater =		{id:51, label:'Greater Daemon', 			pts:100};
+var greater =		{id:51, label:'Greater Daemon', 			pts:75};
 var lesser =		{id:52, label:'Lesser Daemon', 				pts:20};
 var tanks =			{id:37, label:'Russ',	upto:3, options:[
 	{id:38, label:'Leman Russ', 				pts:70},
@@ -49,7 +49,7 @@ var tanks =			{id:37, label:'Russ',	upto:3, options:[
 // COVENS
 var companyList =	{id:530, label:'FORMATIONS', options:[
 	{id:531, label:'Stigmatus Coven',					pts:35, displayPts:200, restricting:true, upgrades:[leaders,cultists,faction,pact,icon, spawn, hound, altar, tanks, fireSup, griffon, hellhound, hydra, chimera, transports]},
-	{id:536, label:'Plague Zombie Infestation',			pts:175, units:'3D6 Plague Zombie Units', upto:2, upgrades:[]},
+	{id:536, label:'Plague Zombie Infestation',			pts:175, units:'3 + 2D6 Plague Zombie Units', upto:2, upgrades:[]},
 	{id:537, label:'Daemon Pool',						pts:0, upto:1, upgrades:[greater, lesser]}
 ]};
 
@@ -64,7 +64,7 @@ var supportList =	{id:500, label:'TRAITOR SUPPORT', options:[
 // NAVY
 var navyList =		{id:540, label:'TRAITOR NAVY', options:[
 	{id:541, label:'Thunderbolt Fighters',	pts:150, upgrades:[], limited:true, restricted:true, units:'2 Thunderbolts'},
-	{id:542, label:'Marauder Bombers',		pts:300, upgrades:[], limited:true, restricted:true, units:'2 Marauders'}
+	{id:542, label:'Marauder Bombers',		pts:250, upgrades:[], limited:true, restricted:true, units:'2 Marauders'}
 ]};
 
 // ENGINES
@@ -79,12 +79,12 @@ var engineList = 		{id:550, label:'DAEMON ENGINES', options:[
 	{id:558, label:'Tzeentch Doomwings',				pts:150, units:'3 Doomwings', 				upgrades:[], limited:true, restricted:true},
 	{id:559, label:'Tzeentch Silver Towers',			pts:325, units:'4 Silver Towers', 			upgrades:[], limited:true, restricted:true},
 	{id:560, label:'Hellfire Cannons',					pts:200, units:'4 Hellfire Cannons', 		upgrades:[], limited:true, restricted:true},
-	{id:561, label:'Defilers',							pts:400, units:'4 Defilers', 				upgrades:[], limited:true, restricted:true}
+	{id:561, label:'Defilers',							pts:250, units:'4 Defilers', 				upgrades:[], limited:true, restricted:true}
 ]};
 
 // DETAILS
 var listData = {
-	id:'Lost And The Damned', version:'Specialist Games Forum v3.5',
+	id:'Lost And The Damned', version:'NetEA v3.1',
 	sublists:[companyList, engineList, supportList, navyList],
 	limitRatio:1,
 	restriction:{limit:1, restricting:'Cultist Coven', restricted:'Support Coven'}};

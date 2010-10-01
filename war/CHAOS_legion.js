@@ -2,18 +2,25 @@
 var raptors = 		{id:11, label:'Raptor', pts:35, optional:true, upto:8, minimum:4};
 var terms =			{id:13, label:'Chaos Terminator', pts:65, optional:true, upto:6, minimum:4};
 var lords = 		{id:14, label:'Lord', upto:1, minimum:1, options:[
-	{id:15, label:'Chaos Lord', pts:0, optional:true},
-	{id:16, label:'Sorcerer Lord', pts:0, optional:true},
-	{id:17, label:'Daemon Prince', pts:50, optional:true},
-	{id:18, label:'Chaos Warlord', pts:0, optional:true}
+	{id:15, label:'Chaos Lord', 	pts:0, optional:true},
+	{id:16, label:'Sorcerer Lord', 	pts:0, optional:true},
+	{id:17, label:'Daemon Prince', 	pts:50, optional:true},
+	{id:18, label:'Chaos Warlord', 	pts:0, optional:true}
 ]};
 var armour =		{id:19, label:'Vehicles', upto:8, minimum:4, options:[
-	{id:20, label:'Chaos Predator', pts:50, optional:true},
-	{id:21, label:'Chaos Land Raider', pts:75, optional:true}
+	{id:20, label:'Chaos Predator', 	pts:50, optional:true},
+	{id:21, label:'Chaos Land Raider', 	pts:75, optional:true}
 ]};
 var assault =		{id:22, label:'Vehicles', upto:3, minimum:1, options:[
-	{id:23, label:'Decimator', pts:225, optional:true},
-	{id:24, label:'Death Wheel', pts:275, optional:true}
+	{id:23, label:'Decimator', 			pts:225, optional:true},
+	{id:24, label:'Death Wheel', 		pts:275, optional:true}
+]};
+var faction =		{id:30,	label:'Faction',	upto:1,	minimum:1, options:[
+	{id:35,	label:'(Chaos Undivided)',	pts:0,	optional:true},
+	{id:31,	label:'(Khorne)',			pts:0,	optional:true},
+	{id:32,	label:'(Nurgle)',			pts:0,	optional:true},
+	{id:33,	label:'(Slaanesh)',			pts:0,	optional:true},
+	{id:34,	label:'(Tzeentch)',			pts:0,	optional:true}
 ]};
 
 // UPGRADES
