@@ -28,13 +28,13 @@ var supportList = {id:500, label:'NECRON SUPPORT', options:[
 	{id:503, label:'Monolith Maniple', pts:25, displayPts:200, upgrades:[monolithmaniple, obeliskmaniple], restricted:true},
 	{id:504, label:'Monolith Phalanx', pts:275, units:'3 Monoliths', upgrades:[obeliskphalanx], restricted:true},
 	{id:505, label:'Armored Phalanx', pts:300, units:'6 Obelisks', upgrades:[], restricted:true},
-	{id:506, label:'Pylon', pts:200, upgrades:[], restricted:true}
+	{id:506, label:'Pylon', pts:200, upgrades:[], restricted:true, limited:true}
 ]};
 
 // INDIVIDUALS
 var individualList = {id:600, label:'INDIVIDUALS', options:[
 	{id:601, label:'Tomb Complex', pts:75, upgrades:[], upto:1},
-	{id:602, label:'C`Tan',	displayPts:300, pts:0, upgrades:[ctans], upto:1}
+	{id:602, label:'C`Tan',	displayPts:300, pts:0, limited:true, upgrades:[ctans], upto:1}
 ]};
 
 // PHALANX
