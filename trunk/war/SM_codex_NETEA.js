@@ -4,8 +4,8 @@ var transport =			{label:'Transport', upto:1, options:[
 	{id:12, label:'Drop Pods',		pts:0, optional:true}
 ]};
 var bikes = 			{label:'Bikes',	upto:5, minimum:5, options:[
-	{id:13, label:'Attack Bike', 	pts:0, optional:true},
-	{id:14, label:'Bike Unit',		pts:0, optional:true}
+	{id:14, label:'Bike Unit',		pts:0, optional:true},
+	{id:13, label:'Attack Bike', 	pts:0, optional:true}
 ]};
 var predators =			{label:'Predators', upto:4, minimum:4, options:[
 	{id:24, label:'Annihilator',	pts:0, optional:true},
