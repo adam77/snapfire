@@ -1,4 +1,9 @@
 // MANDATORY UNITS WITH OPTIONS
+var thawk_trans = {
+	id:110, label:'Transporters', minimum:2, upto:4, options:[
+		{ id:111,	label:'Thunderhawk Transporter', pts:100, optional:true }
+	]
+};
 var abikes = {
   id:10, label:'Attack Bikes', upto:4, minimum:4, options:[
     { id:11, label:'Bike Unit', pts:0, optional:true },
@@ -31,21 +36,23 @@ var arm2 = {
   ]
 };
 var spacecraft = {
-	id:40, label:'Spacecraft',	upto:1, minimum:1, options:[
-		{ id:41, label:'Strike Cruiser', pts:0, optional:true },
-		{ id:42, label:'Battle Barge', pts:150, optional:true }
-	]
+  id:40, label:'Spacecraft', upto:1, minimum:1, options:[
+    { id:41, label:'Strike Cruiser', pts:0, optional:true },
+    { id:42, label:'Battle Barge', pts:150, optional:true }
+  ]
 };
 
 // FORMATION UPGRADES
+var supremeCommander = { id:600, label:'Supreme Commander', upto:1 }
 var commander = {
   id:50, label:'Commander', upto:1, options:[
     { id:51, label:'Captain', pts:50 },
     { id:52, label:'Librarian', pts:50 },
     { id:53, label:'Chaplain', pts:50 }
   ]
-};	
+};
 var sCommander = {
+  // id:54, label:'Commander', upto:1, group:supremeCommander options:[
   id:54, label:'Commander', upto:1, options:[
     { id:55, label:'Captain', pts:50 },
     { id:56, label:'Librarian', pts:50 },
@@ -55,6 +62,7 @@ var sCommander = {
   ]
 };
 var sCommander2 = {
+  // id:90, label:'Commander', upto:1, group:supremeCommander, options:[
   id:90, label:'Commander', upto:1, options:[
     { id:91, label:'Captain', pts:50 },
     { id:92, label:'Librarian', pts:50 },
@@ -79,10 +87,10 @@ var lrs_up = {
   ]
 };
 var armour = {
-  id:75, label:'Armour', upto:4, options:[
-    { id:76, label:'Two Vindicators', pts:100 },
-    { id:77, label:'Two Predator Destructors', pts:100 },
-    { id:78, label:'Two Predator Annihilators', pts:125 }
+  id:75, label:'Armour', upto:1, options:[
+    { id:76, label:'2 Vindicators', pts:100 },
+    { id:77, label:'2 Predator Destructors', pts:100 },
+    { id:78, label:'2 Predator Annihilators', pts:125 }
   ]
 };
 var razorbacks = {
@@ -93,7 +101,6 @@ var razorbacks = {
 };
 
 var hunter = { id:100, label:'Hunter', pts:75, upto:1 };
-var thawk_trans = { id:102, label:'Thunderhawk Transporters', pts:100, upto:2 };
 var sniper = { id:103, label:'Sniper', pts:50, upto:1 };
 
 // FORMATIONS (id must 500 or higher)
@@ -109,16 +116,14 @@ var formationList = {
     { id:509, label:'Spacecraft', pts:200, upgrades:[spacecraft], upto:1 },
     { id:511, label:'Tactical Detachment', pts:300, units:'4 Tactical units plus transport', upgrades:[arm2,armour,sCommander,hunter,razorbacks] },
     { id:512, label:'Terminator Detachment', pts:350, units:'4 Terminator units', upgrades:[sCommander2,lrs_up] },
-    { id:513, label:'Thunderhawk Transporters', pts:250, units:'2 Thunderhawk Transporters', upgrades:[thawk_trans] },
-    { id:514, label:'Vindicator Detachment', pts:275, units:'4 Vindicators', upgrades:[armour,sCommander,hunter] },
+    { id:513, label:'Thunderhawk Transporters', pts:50, displayPts:250, upgrades:[thawk_trans] },
+    { id:514, label:'Vindicator Detachment', pts:250, units:'4 Vindicators', upgrades:[armour,sCommander,hunter] },
     { id:515, label:'Whirlwind Detachment', pts:300, units:'4 Whirlwinds', upgrades:[commander,hunter] }
   ]
 };
 
 // NAVY
-var birds = {
-	id:525, label:'Navy', upto:2
-};
+var birds = { id:601, label:'Navy', upto:2 };
 var navyList = {
   id:520, label:'AIRCRAFT', options:[
     { id:521, label:'Fighter Squadron', pts:150, units:'2 Thunderbolt Fighters', upgrades:[], limited:true, group:birds },
@@ -129,9 +134,7 @@ var navyList = {
 };
 
 // WAR ENGINES
-var titans = {
-	id:545, label:'Titans', upto:2
-};
+var titans = { id:602, label:'Titans', upto:2 };
 var titanList = {
   id:540, label:'TITANS', options:[
     { id:541, label:'Warlord Class Titan', pts:850, upgrades:[], limited:true, group:titans },
