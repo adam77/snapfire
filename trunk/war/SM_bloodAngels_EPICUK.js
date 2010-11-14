@@ -18,7 +18,7 @@ var commander =			{id:23, label:'Cmdr', upto:1, options:[
 	{id:24, label:'Captain',			pts:50},
 	{id:25, label:'Chaplain', 			pts:50},
 	{id:26, label:'Librarian', 			pts:50},
-	{id:27, label:'Supreme Commander',	pts:100}
+	{id:27, label:'Supreme Commander',	pts:100, general:true}
 ]};
 var dreads =			{id:30, label:'Dreadnoughts', upto:2, options:[
 	{id:31, label:'Dreadnought', 					pts:50},

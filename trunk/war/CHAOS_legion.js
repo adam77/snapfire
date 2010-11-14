@@ -5,7 +5,8 @@ var lords = 		{id:14, label:'Lord', upto:1, minimum:1, options:[
 	{id:15, label:'Chaos Lord', 	pts:0, optional:true},
 	{id:16, label:'Sorcerer Lord', 	pts:0, optional:true},
 	{id:17, label:'Daemon Prince', 	pts:50, optional:true},
-	{id:18, label:'Chaos Warlord', 	pts:0, optional:true}
+	{id:18, label:'Chaos Warlord (Supreme Commander)', 	pts:0, optional:true, general:true},
+	{id:38, label:'Daemon Prince (Supreme Commander)', 	pts:50, optional:true, general:true}
 ]};
 var armour =		{id:19, label:'Vehicles', upto:8, minimum:4, options:[
 	{id:20, label:'Chaos Predator', 	pts:50, optional:true},

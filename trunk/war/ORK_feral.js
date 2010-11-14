@@ -35,7 +35,7 @@ var orkeosaurus3 =	{id:63, label:'Orkeosaurus',		pts:150,upto:3};
 var junkaNob1 =		{id:64, label:'Junkatrukk and Nob',	pts:35, upto:1};
 var junkaNob2 =		{id:65, label:'Junkatrukk and Nob',	pts:35, upto:2};
 var junkaNob3 =		{id:66, label:'Junkatrukk and Nob',	pts:35, upto:3};
-var warlord =		{id:67, label:'Warlord',			pts:0, 	upto:1, perArmy:1};
+var warlord =		{id:67, label:'Warlord',			pts:0, 	general:true};
 
 // WARBANDS
 var warbandList =		{id:516, label:'WAR HORDES', options:[

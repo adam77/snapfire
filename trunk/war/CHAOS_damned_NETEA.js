@@ -15,9 +15,9 @@ var leaders = 		{id:14, label:'Champion', upto:1, minimum:1, options:[
 	{id:15, label:'Demagogue', 		pts:0, optional:true},
 	{id:16, label:'Chaos Marine Aspiring Champion', pts:0, optional:true},
 	{id:17, label:'Daemon Prince', 	pts:50, optional:true},
-	{id:18, label:'Demagogue (Arch Heretic)', 		pts:0, optional:true},
-	{id:19, label:'Aspiring Champion (Arch Heretic)', pts:0, optional:true},
-	{id:20, label:'Daemon Prince (Arch Heretic)', 	pts:50, optional:true}
+	{id:18, label:'Demagogue (Arch Heretic)', 		pts:0, optional:true, general:true},
+	{id:19, label:'Aspiring Champion (Arch Heretic)', pts:0, optional:true, general:true},
+	{id:20, label:'Daemon Prince (Arch Heretic)', 	pts:50, optional:true, general:true}
 ]};
 var faction =		{id:80,	label:'Faction',	upto:1,	minimum:1, options:[
 	{id:85,	label:'(Chaos Undivided)',	pts:0,	optional:true},
