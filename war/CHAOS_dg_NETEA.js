@@ -3,9 +3,9 @@ var lord = {
   id:16, label:'Lord', upto:1, minimum:1, options:[
     { id:17, label:'Death Guard Lord', pts:0, optional:true },
     { id:18, label:'Death Guard Sorcerer Lord', pts:0, optional:true },
-    { id:19, label:'Death Guard Warlord', pts:25, optional:true },
+    { id:19, label:'Death Guard Warlord', pts:25, optional:true, general:true },
     { id:20, label:'Daemon Prince', pts:50, optional:true },
-    { id:21, label:'Daemon Prince (Supreme Commander)', pts:75, optional:true }
+    { id:21, label:'Daemon Prince (Supreme Commander)', pts:75, optional:true, general:true }
   ]
 };
 var armour = {
