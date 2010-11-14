@@ -74,7 +74,7 @@ var supaStompa1 =		{id:77, label:'Supa Stompa',					pts:250, upto:1};
 var supaStompa2 =		{id:78, label:'Supa Stompa',					pts:250, upto:2};
 var supaStompa3 =		{id:79, label:'Supa Stompa',					pts:250, upto:3};
 var battlekrooza =		{id:80, label:'Battlekrooza',					pts:100, upto:1};
-var warlord =			{id:81, label:'Warlord',						pts:0, upto:1};
+var warlord =			{id:81, label:'Warlord',						pts:0, general:true};
 var grotz =				{id:82, label:'Grotz',							pts:0};
 
 // WARBANDS

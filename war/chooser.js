@@ -343,8 +343,8 @@ function removeUpgrade(upgradeRow, formationId) {
 
 		addPoints(-data.pts);
 		updateFormationPoints(formationId, -data.pts);
-		checkUpgradeConstraints(formationId, data);
-		checkOptionalConstraints(formationId);
+		checkUpgradeConstraints();
+		checkOptionalConstraints();
 		checkArmyConstraints();
 	}
 }
@@ -358,6 +358,8 @@ function removeFormation(formationRow, pts) {
 	});
 	addPoints(-pts);
 	checkFormationConstraints();
+	checkUpgradeConstraints();
+	checkOptionalConstraints();
 	checkArmyConstraints();
 }
 
@@ -366,7 +368,7 @@ function updateFormationPoints(formationId, pts) {
 	ptsCell.update( parseInt(ptsCell.innerHTML) + pts );
 }
 
-function addUpgrade(event, formationId, upgradeData) {
+function addUpgrade(event, formationId, upgradeData, ignoreConstraints) {
 
 	var upgrades = $$('.' + formationId);
 	var existingUpgrade = upgrades.find( function(x) {return x.upgradeData === upgradeData;} );
@@ -379,6 +381,7 @@ function addUpgrade(event, formationId, upgradeData) {
 					 ).insert(
 						new Element('td', {'class':'points'}).update(' '));//upgradeData.pts));
 
+		newRow.formationId = formationId;
 		newRow.upgradeData = upgradeData;
 		
 		// insert new row after last upgrade
@@ -428,12 +431,16 @@ function addUpgrade(event, formationId, upgradeData) {
 		//existingUpgrade.childElements()[1].update(count * upgradeData.pts);
 	}
 
-	// constraints
+	// points
 	updateFormationPoints(formationId, upgradeData.pts);
 	addPoints(upgradeData.pts);
-	checkOptionalConstraints(formationId);
-	checkUpgradeConstraints(formationId);
-	checkArmyConstraints();
+
+	// constraints
+	if (!ignoreConstraints) {
+		checkOptionalConstraints();
+		checkUpgradeConstraints();
+		checkArmyConstraints();
+	}
 }
 
 // mozilla border bug when hiding/showing rows
@@ -541,9 +548,11 @@ function upgradeMultiplier(upgradeRow) {
 	}
 }
 
-function checkOptionalConstraints(formationId) {
-	var upgradeRows = $$('.' + formationId);
-	upgradeRows.each(function(x) {
+function checkOptionalConstraints() {
+
+	var generalChosen = 0 < $$('.orbatUpgrade').filter(function(x) {return x.upgradeData.general;}).size();
+
+	$$('.orbatUpgrade').each(function(x) {
 		if (x.upgradeData.optional && x.upgradeData.group && x.upgradeData.group.options.size() > 1) {
 			var optionalOptions = x.down().down().down().down().childElements().slice(1); // remove header row
 			
@@ -552,11 +561,15 @@ function checkOptionalConstraints(formationId) {
 				var upgradeData = option.upgradeData;
 				// check upto constraint
 				if (upgradeData.upto) {
-					var numUpgrades = countUpgrades(upgradeData, formationId);
+					var numUpgrades = countUpgrades(upgradeData, x.formationId);
 					if (numUpgrades >= upgradeData.upto) {
 						constraints += '[max ' + upgradeData.upto + ']';
 					}
 				}
+				// check perArmy constraint
+				if (option.upgradeData.general && generalChosen) {
+					constraints += ' [1 per army]';	
+				}					
 				// update UI
 				if (constraints == '') {
 					activate(option);
@@ -570,42 +583,47 @@ function checkOptionalConstraints(formationId) {
 
 }
 
-function checkUpgradeConstraints(formationId) {
-	if (flattenUpgrades($(formationId).formationData).size() > 0) {
-		var upgradeRows = $$('.' + formationId);
-		var upgradeOptions = $(formationId + 'upgradeOptions').childElements().slice(1); // remove header row
+function checkUpgradeConstraints() {
 
-		upgradeOptions.each(function(option) {
-			var constraints = '';
-			var upgradeData = option.upgradeData;
-			var groupData = option.upgradeData.group;
-			// check 'upto' constraint	
-			if (upgradeData.upto) {		
-				var numUpgrades = countUpgrades(upgradeData, formationId);
-				if (numUpgrades >= upgradeData.upto) {
-					constraints += '[max ' + upgradeData.upto + ']';
-				}
-			}		
-			// check 'upto' GROUP constraint
-			if (groupData && groupData.upto) {
-				var group = upgradeRows.findAll(function (x) {return x.upgradeData.group === groupData;});
-				var numUpgrades = 0;
-				group.each(function(x) {
-					numUpgrades += countUpgrades(x.upgradeData, formationId);
-				});
-				if (numUpgrades >= groupData.upto) {
-					constraints += ' [max ' + groupData.upto + ' ' + groupData.label + ']';
-				}
+	var generalChosen = 0 < $$('.orbatUpgrade').filter(function(x) {return x.upgradeData.general;}).size();
+
+	$$('.upgrade').each(function(option) {
+		var formationId = option.formationId;
+		var upgradeRows = $$('.' + formationId);
+		var upgradeOptions = $(formationId + 'upgradeOptions').childElements().slice(1); // remove header row			
+		var constraints = '';
+		var upgradeData = option.upgradeData;
+		var groupData = option.upgradeData.group;
+		// check 'upto' constraint	
+		if (upgradeData.upto) {		
+			var numUpgrades = countUpgrades(upgradeData, formationId);
+			if (numUpgrades >= upgradeData.upto) {
+				constraints += '[max ' + upgradeData.upto + ']';
 			}
-			// update UI
-			if (constraints == '') {
-				activate(option);
+		}
+		// check perArmy constraint
+		if (option.upgradeData.general && generalChosen) {
+			constraints += ' [1 per army]';	
+		}		
+		// check 'upto' GROUP constraint
+		if (groupData && groupData.upto) {
+			var group = upgradeRows.findAll(function (x) {return x.upgradeData.group === groupData;});
+			var numUpgrades = 0;
+			group.each(function(x) {
+				numUpgrades += countUpgrades(x.upgradeData, formationId);
+			});
+			if (numUpgrades >= groupData.upto) {
+				constraints += ' [max ' + groupData.upto + ' ' + groupData.label + ']';
 			}
-			else {
-				deactivate(option, constraints);
-			}
-		});
-	}
+		}
+		// update UI
+		if (constraints == '') {
+			activate(option);
+		}
+		else {
+			deactivate(option, constraints);
+		}
+	});
 }
 
 function wrapActivatableHandler(element, handler) {
@@ -674,25 +692,26 @@ function addFormation(event, formation, noDefaults) {
 	addPoints(formation.pts);
 	resetFormationDivider();
 	
-	checkFormationConstraints();
-	checkArmyConstraints();
-
 	if (!noDefaults) {
 		// mandatory units in groups
 		formation.upgrades.each(function(x) {
 			if (x.options && x.minimum) {
 				for (i=0;i<x.minimum;i++) {
-					addUpgrade(null, formationId, x.options[0]);
+					addUpgrade(null, formationId, x.options[0], true); // ignore constraints
 				}
 			}
 		});
 		// mandatory units not in groups
 		flattenUpgrades(formation).each(function(x) {
 			for (i=0;i<x.minimum;i++) {
-				addUpgrade(null, formationId, x);
+				addUpgrade(null, formationId, x, true); // ignore constraints
 			}
 		});
 	}
+	checkFormationConstraints();
+	checkOptionalConstraints();
+	checkUpgradeConstraints();
+	checkArmyConstraints();
 	
 	return newRow;
 }
@@ -725,12 +744,13 @@ function createOptionals(upgrades, formationId, upgradeRow) {
 		if (points > 0) {
 			points = '+' + points;
 		}
-		var upgradeOption = new Element('tr', {'class':'interactive listItem even'}).update(
+		var upgradeOption = new Element('tr', {'class':'interactive listItem even option'}).update(
 								new Element('td').update(x.label)
 							).insert(
 								new Element('td', {'class':'points'}).update(points) );
 
 		upgradeOption.upgradeData = x;
+		upgradeOption.formationId = formationId;
 		newTable.insert(upgradeOption);		
 		upgradeOption.observe('click',
 				wrapActivatableHandler(upgradeOption, addOptional)
@@ -759,12 +779,13 @@ function createUpgrades(upgrades, formationId) {
 	};
 
 	upgrades.each(function(x) {
-		var upgradeOption = new Element('tr', {'class':'interactive listItem even'}).update(
+		var upgradeOption = new Element('tr', {'class':'interactive listItem even upgrade'}).update(
 								new Element('td').update(x.label)
 							).insert(
 								new Element('td', {'class':'points'}).update(x.pts) );
 
 		upgradeOption.upgradeData = x;
+		upgradeOption.formationId = formationId;
 		newTable.insert(upgradeOption);		
 		upgradeOption.observe('click',
 				wrapActivatableHandler(upgradeOption, addUpgrade)

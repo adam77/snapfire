@@ -31,7 +31,7 @@ var warriors =			{id:30,	label:'Warriors',		upto:1,		minimum:1, options:[
 
 // UPGRADES (upto 3 per company)
 var commander =		{id:50, label:'Shas\'el',				pts:50, 	upto:1};
-var supreme =		{id:51, label:'Shas\'o (Supreme Commander)',pts:100, upto:1};
+var supreme =		{id:51, label:'Shas\'o (Supreme Commander)',pts:100, general:true};
 var g1 =			{id:52, label:'Upgrades',				upto:3};
 var drone =			{id:53, label:'4 Gun Drones',			pts:100, 	upto:1, group:g1};
 var piranha =		{id:54, label:'3 Piranhas',				pts:75,		upto:1,	group:g1};

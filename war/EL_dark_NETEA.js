@@ -5,7 +5,7 @@ var razor =		{id:15, label:'Razorwing Bomber',		pts:125,	optional:true,	minimum:
 var barge =		{id:23,	label:'Vessel of Pain',			pts:250,	optional:true, 	minimum:1, upto:2};
 var dracons2 =	{id:16, label:'Dracon', minimum:1, upto:1, options:[
 	{id:17, label:'Dracon', 				pts:50, 	optional:true},
-	{id:18, label:'Archon', 				pts:100,	optional:true}
+	{id:18, label:'Archon', 				pts:100,	optional:true, general:true}
 ]};
 var ravagers =	{id:19,	label:'Ravagers', minimum:1, upto:1, options:[
 	{id:20,	label:'4 Ravagers',				pts:0,		optional:true},
@@ -15,7 +15,7 @@ var ravagers =	{id:19,	label:'Ravagers', minimum:1, upto:1, options:[
 // UPGRADES
 var dracons =		{id:50, label:'Dracon', upto:1, options:[
 	{id:51, label:'Dracon', 			pts:50},
-	{id:52, label:'Archon', 			pts:100}
+	{id:52, label:'Archon', 			pts:100, general:true}
 ]};
 var sybarite =		{id:53, label:'Sybarite', 			pts:25,		upto:1};
 var upgrades2 =		{id:54, label:'Infantry Upgrades',	upto:2, options:[

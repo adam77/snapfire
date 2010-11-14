@@ -22,7 +22,7 @@ var commander =			{label:'Cmdr', upto:1, options:[
 	{id:15, label:'Captain',		pts:50},
 	{id:16, label:'Chaplain', 		pts:50},
 	{id:17, label:'Librarian', 		pts:50},
-	{id:18, label:'Supreme Commander',	pts:100}
+	{id:18, label:'Supreme Commander',	pts:100, general:true}
 ]};
 var dreadnought = 		{id:30, label:'Dreadnought',				pts:50, upto:2};
 var hunter = 			{id:31, label:'Hunter', 					pts:50, upto:1};

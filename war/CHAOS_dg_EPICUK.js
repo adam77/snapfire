@@ -3,8 +3,8 @@ var lord = 			{id:16, label:'Lord', upto:1, minimum:1, options:[
 	{id:17, label:'Chaos Lord', 	pts:0, optional:true},
 	{id:18, label:'Sorcerer Lord', 	pts:0, optional:true},
 	{id:19, label:'Daemon Prince', 	pts:50, optional:true},
-	{id:20, label:'Chaos Warlord', 	pts:50, optional:true},
-	{id:21, label:'Daemon Prince (Supreme Commander)', pts:100, optional:true}
+	{id:20, label:'Chaos Warlord (Supreme Commander)', 	pts:50, optional:true, general:true},
+	{id:21, label:'Daemon Prince (Supreme Commander)', pts:100, optional:true, general:true}
 ]};
 var wheel = 		{id:23, label:'Death Wheel', pts:275, optional:true, upto:3, minimum:1};
 var decimator =		{id:25, label:'Decimator', pts:225, optional:true, upto:3, minimum:1};

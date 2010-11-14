@@ -65,7 +65,7 @@ var knights =		{id:58,	label:'Knights',		upto:1,		minimum:1, options:[
 
 // UPGRADES
 var surcharge = 	{id:80, label:'Single Weapon System Surcharge', 	pts:25, upto:1};
-var legate =		{id:81,	label:'Legate',								pts:50, upto:1};
+var legate =		{id:81,	label:'Legate',								pts:50, general:true};
 var princeps =		{id:82,	label:'Veteran Princeps',					pts:25,	upto:1};
 var lasers =		{id:83,	label:'Carapace Multi-Lasers',				pts:50,	upto:1};
 var icon =			{id:84,	label:'Sacred Icon',						pts:50,	upto:1};

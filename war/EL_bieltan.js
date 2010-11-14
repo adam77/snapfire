@@ -32,7 +32,7 @@ var engines =		{id:33, label:'Engines of Vaul', upto:3, minimum:1, options:[
 // UPGRADES
 var exarchs =		{id:38, label:'Exarch', upto:2, options:[
 	{id:39, label:'Exarch', 	pts:25},
-	{id:40, label:'Autarch', 	pts:75, upto:1}
+	{id:40, label:'Autarch', 	pts:75, general:true}
 ]};
 var waveserpent =	{id:41, label:'Wave Serpent',				pts:50};
 var falcon =		{id:42, label:'Falcon',						pts:65};

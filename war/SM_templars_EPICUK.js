@@ -26,7 +26,7 @@ var transporter = 		{id:37, label:'Thunderhawk Transporter', 	pts:100, optional:
 var commander =			{id:23, label:'Cmdr', upto:1, options:[
 	{id:24, label:'Castellan',				pts:50},
 	{id:25, label:'Chaplain', 				pts:50},
-	{id:27, label:'Master',					pts:100}
+	{id:27, label:'Master',					pts:100, general:true}
 ]};
 var dreadnought = 		{id:30, label:'Dreadnought',				pts:50, upto:2};
 var hunter = 			{id:31, label:'Hunter', 					pts:75, upto:1};

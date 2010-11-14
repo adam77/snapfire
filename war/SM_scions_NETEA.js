@@ -43,7 +43,6 @@ var spacecraft = {
 };
 
 // FORMATION UPGRADES
-var supremeCommander = { id:600, label:'Supreme Commander', upto:1 }
 var commander = {
   id:50, label:'Commander', upto:1, options:[
     { id:51, label:'Captain', pts:50 },
@@ -52,23 +51,21 @@ var commander = {
   ]
 };
 var sCommander = {
-  // id:54, label:'Commander', upto:1, group:supremeCommander options:[
   id:54, label:'Commander', upto:1, options:[
     { id:55, label:'Captain', pts:50 },
     { id:56, label:'Librarian', pts:50 },
     { id:57, label:'Chaplain', pts:50 },
-	{ id:58, label:'Supreme Commander', pts:100 },
-	{ id:59, label:'Supreme Commander (Prometheus)', pts:125}
+	{ id:58, label:'Supreme Commander', pts:100, general:true },
+	{ id:59, label:'Supreme Commander (Prometheus)', pts:125, general:true}
   ]
 };
 var sCommander2 = {
-  // id:90, label:'Commander', upto:1, group:supremeCommander, options:[
   id:90, label:'Commander', upto:1, options:[
     { id:91, label:'Captain', pts:50 },
     { id:92, label:'Librarian', pts:50 },
     { id:93, label:'Chaplain', pts:50 },
-	{ id:94, label:'Supreme Commander', pts:100 },
-	{ id:95, label:'Supreme Commander (Prometheus)', pts:100}
+	{ id:94, label:'Supreme Commander', pts:100, general:true },
+	{ id:95, label:'Supreme Commander (Prometheus)', pts:100, general:true}
   ]
 };
 
