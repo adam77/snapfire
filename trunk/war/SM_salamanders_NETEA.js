@@ -38,7 +38,7 @@ var commander = {
     { id:51, label:'Captain', pts:50 },
     { id:52, label:'Librarian', pts:50 },
     { id:53, label:'Chaplain', pts:50 },
-    { id:54, label:'Supreme Commander', pts:100 }
+    { id:54, label:'Supreme Commander', pts:100, general:true }
   ]
 };
 var closeSup = {
@@ -62,12 +62,16 @@ var closeSupHe = {
 };
 // This should be any mix of four instead of one or the other type
 // should one list all possible choices manually??
-var heavySup = {
-  id:76, label:'Heavy Support', upto:1, options:[
-    { id:77, label:'4 Land Raider', pts:325, optional:true },
-    { id:78, label:'4 Land Raider Redeemer', pts:325, optional:true }
-  ]
-};
+//var heavySup = {
+//  id:60, label:'Heavy Support', upto:1, options:[
+//    { id:61, label:'4 Land Raider', pts:325, optional:true },
+//    { id:62, label:'3 Land Raider, 1 Redeemer', pts:325, optional:true },
+//    { id:63, label:'2 Land Raider, 2 Redeemer', pts:325, optional:true },
+//    { id:64, label:'1 Land Raider, 3 Redeemer', pts:325, optional:true },
+//	{ id:65, label:'4 Redeemer', pts:325, optional:true}
+//  ]
+//};
+var heavySup = {id:60, label:'4 Land Raiders or Redeemers', upto:1, pts:325 };
 var razorbacks = {
   id:80, label:'Razorback', upto:8, options:[
     { id:81, label:'Razorback (twin lascannon)', pts:25 },
@@ -90,12 +94,12 @@ var formationList = {
   id:500, label:'DETACHMENTS', options: [
     { id:501, label:'Devastator Detachment', pts:250, units:'4 Devastator units', upgrades:[transport, commander, closeSup, dread, razorbacks, salDev] },
     { id:502, label:'Land Raider Detachment', pts:350, upgrades:[lrs, commander, closeSupHe] },
-    { id:503, label:'Landing Craft', pts:425, units:'Landing Craft', upgrades:[] },
+    { id:503, label:'Landing Craft', pts:425, upgrades:[] },
     { id:504, label:'Predator Detachment', pts:275, upgrades:[preds, commander, closeSup] },
     { id:505, label:'Spacecraft', pts:200, upgrades:[spacecraft], upto:1 },
     { id:506, label:'Tactical Detachment', pts:300, units:'6 Tactical units', upgrades:[transport, commander, dread, razorbacks, salTac] },
     { id:507, label:'Terminator Detachment', pts:325, units:'4 Terminator units', upgrades:[commander, closeSup, dread, heavySup] },
-    { id:508, label:'Thunderhawk', pts:250, units:'Thunderhawk', upgrades:[] },
+    { id:508, label:'Thunderhawk', pts:250, upgrades:[] },
     { id:509, label:'Vindicator Detachment', pts:250, units:'4 Vindicators', upgrades:[commander, closeSup] },
     { id:510, label:'Whirlwind Detachment', pts:300, units:'4 Whirlwinds', upgrades:[commander, closeSupHe] }
   ]
@@ -130,7 +134,7 @@ var titanList = {
 
 // DETAILS
 var listData = {
-  id:'Salamanders', version:'NetEA',
+  id:'Salamanders', version:'NetEA v1.13',
   sublists:[formationList, restrictedList, navyList, titanList]
 };
 
