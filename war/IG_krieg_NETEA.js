@@ -140,7 +140,7 @@ var titanList = {
 
 // DETAILS
 var listData = {
-  id:'Death Korps of Krieg', version:'Epic:Siege v1.0',
+  id:'Death Korps of Krieg', version:'NetEA Epic Siege v1.0',
   sublists: [ companyList, supportList, trenchworks, navyList, titanList ],
   restriction: { limit:2, restricting:'Company', restricted:'Support Formations' },
   restriction2: { limit:1, restricting:'Company', restricted:'Trenchworks' }
