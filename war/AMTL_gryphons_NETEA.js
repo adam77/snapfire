@@ -29,7 +29,7 @@ var reaverWep =		{label:'Weapons',	upto:3, minimum:3, options:[
 	{id:31, label:'Close Combat Weapon',	pts:25, optional:true},
 	{id:32, label:'Melta Cannon',			pts:50, optional:true},
 	{id:33, label:'Laser Blaster',			pts:50, optional:true},
-	{id:34, label:'Valcano Cannon',			pts:50, optional:true},
+	{id:34, label:'Volcano Cannon',			pts:50, optional:true},
 	{id:35, label:'Plasma Destructor',		pts:75, optional:true},
 	{id:36, label:'Support Missile',		pts:75, optional:true},
 	{id:37, label:'Quake Cannon',			pts:75, optional:true}
@@ -48,7 +48,7 @@ var warlordWep =	{label:'Weapons',	upto:4, minimum:4, options:[
 	{id:48, label:'Close Combat Weapon',	pts:25, optional:true},
 	{id:49, label:'Melta Cannon',			pts:50, optional:true},
 	{id:50, label:'Laser Blaster',			pts:50, optional:true},
-	{id:51, label:'Valcano Cannon',			pts:50, optional:true},
+	{id:51, label:'Volcano Cannon',			pts:50, optional:true},
 	{id:52, label:'Plasma Destructor',		pts:75, optional:true},
 	{id:53, label:'Support Missile',		pts:75, optional:true},
 	{id:54, label:'Quake Cannon',			pts:75, optional:true}
