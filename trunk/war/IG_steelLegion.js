@@ -19,6 +19,11 @@ var spacecraft = 		{id:22, label:'Spacecraft', 	upto:1,		minimum:1, options:[
 	{id:23, label:'Lunar Class',	pts:0,	optional:true},
 	{id:24, label:'Emperor Class',	pts:150,optional:true}
 ]};
+var arty = 				{id:40, label:'Artillery',		upto:1,		minimum:1, options:[
+	{id:41,	label:'3 Basilisks',	pts:0,optional:true},
+	{id:42,	label:'3 Bombards',		pts:0,optional:true},
+	{id:43,	label:'3 Manticores',	pts:0,optional:true}
+]};
 
 // UPGRADES (upto 3 per company)
 var companyUpgrades = 	{id:25, label:'Upgrades', upto:3, options:[
@@ -40,9 +45,7 @@ var emperor =			{id:37, label:'Emperor Class',					pts:150, upto:1};
 var supportList =	{id:511, label:'SUPPORT FORMATIONS', options:[
 	{id:500, label:'Rough Rider Platoon', 			pts:150, upgrades:[], restricted:true, units:'6 Rough Riders'},
 	{id:501, label:'Storm Trooper Platoon',			pts:200, upgrades:[valkyrie], restricted:true, units:'8 Storm Troopers'},
-	{id:502, label:'Artillery Battery (Basilisk)',	pts:250, upgrades:[], restricted:true, units:'3 Basilisks'},
-	{id:503, label:'Artillery Battery (Bombard)',	pts:250, upgrades:[], restricted:true, units:'3 Bombards'},
-	{id:504, label:'Artillery Battery (Manticore)',	pts:250, upgrades:[], restricted:true, units:'3 Manticores'},
+	{id:502, label:'Artillery Battery',				pts:250, upgrades:[arty], restricted:true},
 	{id:505, label:'Sentinel Squadron',				pts:100, upgrades:[], restricted:true, units:'4 Sentinels'},
 	{id:506, label:'Deathstrike Missile Battery',	pts:200, upgrades:[], restricted:true, upto:1, units:'2 Deathstrike Missile Launchers'},
 	{id:507, label:'Super-heavy Tank Platoon', 		pts:200, upgrades:[superP], restricted:true},
