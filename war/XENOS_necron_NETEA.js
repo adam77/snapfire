@@ -53,7 +53,7 @@ var harvesterList = {id:801, label:'HARVESTERS', options:[
 
 // DETAILS
 var listData = {
-	id:'Necrons', version:'NetEA Raiders 2.0',
+	id:'Necrons', version:'NetEA Raiders v2.0',
 	sublists:[individualList, phalanxList, supportList, harvesterList],
 	restriction:{limit:3, restricting:'Necron Phalanx', restricted:'Necron Support'}
 };

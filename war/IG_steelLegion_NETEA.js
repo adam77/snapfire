@@ -47,7 +47,7 @@ var supportList =	{id:511, label:'SUPPORT FORMATIONS', options:[
 	{id:502, label:'Artillery Battery',				pts:250, upgrades:[arty], restricted:true},
 	{id:505, label:'Sentinel Squadron',				pts:100, upgrades:[], restricted:true, units:'4 Sentinels'},
 	{id:506, label:'Deathstrike Missile Battery',	pts:200, upgrades:[], restricted:true, upto:1, units:'2 Deathstrike Missile Launchers'},
-	{id:507, label:'Super-heavy Tank Platoon', 		pts:200, upgrades:[superP], restricted:true},
+	{id:507, label:'Super-Heavy Tank Platoon', 		pts:200, upgrades:[superP], restricted:true},
 	{id:508, label:'Orbital Support',				pts:150, upgrades:[spacecraft], restricted:true, upto:1},
 	{id:509, label:'Flak Battery',					pts:150, upgrades:[], restricted:true, units:'3 Hydra'},
 	{id:510, label:'Vulture Squadron',				pts:300, upgrades:[], restricted:true, units:'4 Vultures'}
@@ -59,7 +59,7 @@ var companyList =	{id:518, label:'COMPANIES', options:[
 	{id:513, label:'Infantry Company', 				pts:250, upgrades:[chimera, companyUpgrades], restricting:true, units:'Commander, 12 Infantry'},
 	{id:514, label:'Mechanised Infantry Company', 	pts:400, upgrades:[chimera, companyUpgrades], restricting:true, units:'Commander, 12 Infantry, 7 Chimera'},
 	{id:515, label:'Tank Company', 					pts:650, upgrades:[chimera, companyUpgrades,lemanRuss], restricting:true},
-	{id:516, label:'Super-heavy Tank Company', 		pts:500, upgrades:[chimera, companyUpgrades,superh], restricting:true},
+	{id:516, label:'Super-Heavy Tank Company', 		pts:500, upgrades:[chimera, companyUpgrades,superh], restricting:true},
  	{id:517, label:'Artillery Company', 			pts:650, upgrades:[chimera, companyUpgrades,artilleryOpts], restricting:true}
 ]};
 

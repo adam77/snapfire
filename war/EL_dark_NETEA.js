@@ -83,7 +83,7 @@ var allyList = 		{id:521, label:'SPACESHIPS, AIRCRAFT &amp; HORRORS', options:[
 
 // DETAILS
 var listData = {
-	id:'Kabal of Pain\'s Way', version:'NetEA Epic Raiders 2.0',
+	id:'Kabal of Pain\'s Way', version:'NetEA Raiders v2.0',
 	sublists:[individualList, warhostList, troupeList, allyList],
 	restriction:{limit:2, restricting:'Kabal', restricted:'Partisans'}};
 
