@@ -90,7 +90,7 @@ var companyList =	{id:514, label:'COMPANIES', options:[
 ]};
 
 // TITANS
-var titanList = 		{id:525, label:'TITAN LEGIONS', options:[
+var titanList = 		{id:525, label:'TITAN LEGIONS & NAVY', options:[
 	{id:522, label:'Warlord Class Titan',	pts:850, upgrades:[], limited:true},
 	{id:523, label:'Reaver Class Titan',	pts:650, upgrades:[], limited:true},
 	{id:526, label:'Warhound Pack',			pts:500, upgrades:[], limited:true, units:'2 Warhounds'},
