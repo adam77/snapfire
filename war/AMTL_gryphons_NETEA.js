@@ -7,20 +7,20 @@ var scoutWep = 		{label:'Weapons',	upto:2, minimum:2, options:[
 	{id:13, label:'Inferno Gun', 			pts:0, optional:true},
 	{id:14, label:'Vulcan Megabolter',		pts:0, optional:true},
 	{id:15, label:'Plasma Blastgun',		pts:0, optional:true},
-	{id:16, label:'Turbolaser Destructor',	pts:35, optional:true}	
+	{id:16, label:'Turbolaser Destructor',	pts:25, optional:true}	
 ]};
 var scoutWep2 =		{label:'Weapons',	upto:4, minimum:4, options:[
 	{id:17, label:'Inferno Gun', 			pts:0, optional:true},
 	{id:18, label:'Vulcan Megabolter',		pts:0, optional:true},
 	{id:19, label:'Plasma Blastgun',		pts:0, optional:true},
-	{id:20, label:'Turbolaser Destructor',	pts:35, optional:true}	
+	{id:20, label:'Turbolaser Destructor',	pts:25, optional:true}	
 ]};
 var reaverWep =		{label:'Weapons',	upto:3, minimum:3, options:[
 	{id:30, label:'Apocalypse Rocket Launcher',	pts:25, optional:true},
 	{id:21, label:'Inferno Gun', 			pts:0, optional:true},
 	{id:22, label:'Vulcan Megabolter',		pts:0, optional:true},
 	{id:23, label:'Plasma Blastgun',		pts:0, optional:true},
-	{id:24, label:'Turbolaser Destructor',	pts:35, optional:true},
+	{id:24, label:'Turbolaser Destructor',	pts:25, optional:true},
 	{id:25, label:'Laser Burner',			pts:0, optional:true},
 	{id:26, label:'Corvus Assault Pod',		pts:0, optional:true},
 	{id:27, label:'Carapace Landing Pad',	pts:0, optional:true},
