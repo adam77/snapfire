@@ -60,10 +60,10 @@ var coy = 		{id:50, label:'Upgrades', 	upto:3, options:[
 	{id:57, label:'Tank Squadron (3 Russ Variants)',	pts:140, upto:1}
 ]};
 var extras =	{id:60, label:'Surcharges', upto:3, options:[
-	{id:61,	label:'(Leman Russ Surcharge)',	pts:20},
-	{id:62,	label:'(Demolisher Surcharge)',	pts:20},
-	{id:63,	label:'(Conqueror Surcharge)',	pts:10},
-	{id:64,	label:'(Exterminator Surcharge)',pts:10}
+	{id:61,	label:'(Leman Russ Surcharge for Tank Squadron)',	pts:20},
+	{id:62,	label:'(Demolisher Surcharge for Tank Squadron)',	pts:20},
+	{id:63,	label:'(Conqueror Surcharge for Tank Squadron)',	pts:10},
+	{id:64,	label:'(Exterminator Surcharge for Tank Squadron)',pts:10}
 ]};
 var valkyrie =	{id:70, label:'Valkyrie Transport',				pts:150, upto:1};
 var salamander ={id:71, label:'Salamander Command Vehicle',		pts:25, upto:1};
