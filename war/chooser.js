@@ -54,6 +54,7 @@ function listLoaded() {
 	$('viewTable').observe('click', viewTable);
 	$('viewImport').observe('click', viewLink);
 	$('orbatTitle').observe('click', toggleNameEditor);
+	$('viewJSON').observe('click', viewJSON);
 	listData.sublists.each( createList );
 	if (params.force) {
 		unpickle(params.force);
@@ -222,6 +223,41 @@ function unpickle(pickled) {
 	} catch(err) {
 			alert('Sorry, there was an error loading the army.');
 	}
+}
+
+function viewJSON() {
+	var list = 
+	{
+		id:$('orbatName').innerHTML,
+		formations:
+			$$('.orbatFormation').map(function(x)
+			{
+				var units = x.formationData.units.split('<br>');
+				var upgrades = $$('.'+x.id).map(function(upgrade){ return upgrade.upgradeData.label.split('<br>') }).flatten();
+//				var extraUnits = upgrades.map(function(upgrade){
+//					if (upgrade[0] == '(') {
+//						return []
+//					}
+//					else if (upgrade[0] <= '9') {
+//						var extras = [];
+//						alert( parseInt(upgrade[0]) );
+//						for (var i = 0; i < parseInt(upgrade[0]); i++) {
+//							extras = extras.concat( upgrade.substr(2) );
+//						}
+//						return extras
+//					} else {
+//						return upgrade
+//					}
+//				}).flatten();		
+				return {
+					id:x.id,
+					type:x.formationData.label,
+					formations:units.concat( upgrades.filter(function(x){return x[0]!='('}) ),
+					upgrades:upgrades.filter(function(x){return x[0]=='('})
+				};
+			})
+	};
+	alert(Object.toJSON(list));
 }
 
 function pickle() {
