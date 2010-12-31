@@ -80,7 +80,7 @@ var allyList = 		{id:523, label:'SPACESHIPS, AIRCRAFT &amp; TITANS', options:[
 
 // DETAILS
 var listData = {
-	id:'Biel-Tan Craftworld', version:'Epic-UK',
+	id:'Biel-Tan Craftworld', version:'Epic-UK v20101230',
 	sublists:[individualList, warhostList, troupeList, allyList],
 	restriction:{limit:3, restricting:'Warhost', restricted:'Troupes'}
 	};

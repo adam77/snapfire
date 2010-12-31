@@ -83,7 +83,7 @@ var allyList = 		{id:523, label:'SPACESHIPS, AIRCRAFT &amp; TITANS', options:[
 
 // DETAILS
 var listData = {
-	id:'Iyanden Craftworld', version:'Epic-UK -** NOTE **- The full Iyanden army restrictions are not enforced. Check with the codex',
+	id:'Iyanden Craftworld', version:'Epic-UK v20101230) <br> (NOTE: Full Iyanden army restrictions are not enforced. Check with the codex',
 	sublists:[individualList, warhostList, troupeList, allyList],
 	restriction:{limit:2, restricting:'Warhost', restricted:'Troupes'}};
 
