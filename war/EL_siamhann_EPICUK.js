@@ -83,7 +83,7 @@ var allyList = 		{id:523, label:'SPACESHIPS, AIRCRAFT &amp; TITANS', options:[
 
 // DETAILS
 var listData = {
-	id:'Siam-Hann Craftworld', version:'Epic-UK',
+	id:'Siam-Hann Craftworld', version:'Epic-UK v20101230',
 	sublists:[individualList, warhostList, troupeList, allyList],
 	restriction:{limit:2, restricting:'Warhost', restricted:'Troupes'}};
 
