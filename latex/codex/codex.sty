@@ -4,7 +4,7 @@
 \ProvidesPackage{codex}
 
 \usepackage[left=1.5cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
-\usepackage{bookman}
+%\usepackage{bookman}
 \usepackage{colortbl}
 \usepackage{graphicx}
 \usepackage{multicol}
@@ -19,8 +19,8 @@
 \newcounter{toggle}
 \newcommand\resetBanding[0]{ \setcounter{toggle}{1} }
 \newcommand\banding[0]{	\ifcase\arabic{toggle}%
-						\or \rowcolor[rgb]{0.9, 0.9, 0.9} \setcounter{toggle}{2}%
-						\or \rowcolor[rgb]{0.95, 0.95, 0.95} \setcounter{toggle}{1}%
+						\or \rowcolor[rgb]{0.8, 0.8, 0.8} \setcounter{toggle}{2}%
+						\or \rowcolor[rgb]{0.9, 0.9, 0.9} \setcounter{toggle}{1}%
 						\fi }
 % no paragraph indents...
 \setlength\parindent{0pt}
@@ -70,9 +70,9 @@
 % DATAFAX MACROS
 %
 % styles...
-\newcommand\tdata[1]{	\scriptsize{#1}}%\footnotesize{#1}}
+\newcommand\tdata[1]{	\footnotesize{#1}}%\scriptsize{#1}}
 \newcommand\tpara[1]{	\raggedright\tdata{#1}}%
-\newcommand\tnotes[1]{	\tdata{\emph{#1}}	}
+\newcommand\tnotes[1]{	\tdata{#1}	}
 \newcommand\thead[1]{	\textbf{\tdata{#1}}	}% \footnotesize{\textbf{#1}}	}
 % unit data table...
 \newcommand\unitTable[5]{	\begin{tabular*}{13.6cm}{@{} p{2.6cm} @{\extracolsep{\fill}} l c c c p{0.3cm} @{}}
@@ -115,31 +115,38 @@
 % header
 \newcommand\armylist[3]{	\clearpage \onecolumn
 							\begin{tabular}{@{}p{2.2cm}p{12.8cm}p{2.2cm}@{}}
-								\vspace{-10mm}\includegraphics[width=2.2cm]{#2} &
+								\vspace{-10mm} & %\includegraphics[width=2.2cm]{#2} &
 								\vspace{-15mm}{\centering \subsection{#1} \tdata{#3} } &
-								\vspace{-10mm}\includegraphics[width=2.2cm]{#2} \\
+								\vspace{-10mm} \\ %\includegraphics[width=2.2cm]{#2} \\
 							\end{tabular}
 							% #3
 							% table row height
-							\renewcommand\arraystretch{0.8}% (MyValue=1.0 is for standard spacing)
+							\renewcommand\arraystretch{1.1}% (MyValue=1.0 is for standard spacing)
+							% table rule thickness
+							\setlength{\arrayrulewidth}{1.2pt}
 }
 % formations...
-\newcommand\formations[2]{	\begin{framed}							
+\newcommand\formations[2]{	
+							\begin{framed}							
 							\resetBanding
-							\begin{tabular}{p{2.3cm}p{4.9cm}p{5cm}p{3.4cm}} % p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}
+							\begin{tabular}{p{2.8cm}p{6.3cm}p{3.7cm}p{2.8cm}} % p{3cm}p{4.2cm}p{4.4cm}p{3.4cm}
 								\multicolumn{4}{c}{\textbf{#1}} \\
 								\multicolumn{4}{c}{\tnotes{#2}} \\
-								\thead{FORMATION} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{COST}	\tabularnewline \hline }
+								\thead{FORMATION} 	&	\thead{UNITS}	& \thead{UPGRADES}	& \thead{POINTS COST}	\tabularnewline \hline }
 \newcommand\formation[4]{		\banding
 								\tpara{#1}			&	\tpara{#2} 		& \tpara{#3} 		& \tpara{#4}	\tabularnewline }
-\newcommand\formationsEND{	\end{tabular} \end{framed} }
+\newcommand\formationsEND{	
+	\end{tabular} \end{framed} 
+}
 % upgrades...
 \newcommand\upgrades[2]{	\begin{framed}
 							\resetBanding
-							\begin{tabular}{p{2.3cm}p{10.2cm}p{3.4cm}} % p{3cm}p{8.6cm}p{3.4cm}
-								\multicolumn{3}{c}{\textbf{#1}}					\\
-								\multicolumn{3}{c}{\tnotes{#2}}				 					\\
-								\thead{NAME} 	& \thead{UNITS}	& \thead{COST}					\\ \hline }
+							\begin{tabular}{p{2.8cm}p{10.4cm}p{2.8cm}} % p{3cm}p{8.6cm}p{3.4cm}
+								\multicolumn{3}{c}{\textbf{#1}}							\\
+								\multicolumn{3}{c}{\tnotes{#2}}				 			\\
+								\thead{NAME} 	& \thead{UNITS}	& \thead{POINTS COST}	\\ \hline }
 \newcommand\upgrade[3]{			\banding
 								\tpara{#1} 		& \tpara{#2}	& \tpara{#3}					\tabularnewline }
-\newcommand\upgradesEND{	\end{tabular} \end{framed}}
+\newcommand\upgradesEND{	
+	\end{tabular} \end{framed}
+}

@@ -1,0 +1,183 @@
+% author:adam77
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PREAMBLE
+%
+\documentclass[a4paper, twocolumn]{article}
+\usepackage{codex}	% this package contains the macros
+\setNumberingPrefix{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT
+%
+\begin{document}
+
+\codexTitle{Epic: Campaigns}{Campaign Rules for Epic Armageddon}{v0.1}
+
+\section{Space Marine Legions}
+
+\subsection{}
+
+
+\subsection{}
+
+
+\subsection{}
+
+
+
+% header...
+\armylist{Imperial Guard Regimental Army List}{}{}
+% formations...
+\formations{IMPERIAL GUARD REGIMENTS}{}
+\formation{Armoured Regiment}{
+			Tank Company (HQ) \newline
+			Tank Company \newline
+			Tank Company \newline
+			Mechanized Company (Hydra) \newline
+			Flak Battery \newline
+			Sentinel Squadron }
+          {All except Infantry}
+          {2650 points}
+\formation{Infantry Regiment}{
+			Infantry Company (HQ, Fire Support Platoon) \newline
+			Infantry Company \newline
+			Infantry Company \newline
+			Infantry Company }
+          {All except Assault and Super-Heavy Tank}
+          {1200 points}
+\formation{Mechanized Regiment}{
+			Mechanized Company (HQ, Hydra) \newline
+			Mechanized Company (Hydra) \newline
+			Mechanized Company (Hydra) \newline
+			Tank Company (Hydra) \newline
+			Sentinel Squadron }
+          {All except Super-Heavy Tank}
+          {2250 points}
+\formation{Reconnaissance Company}{
+			Rough Rider Platoon \newline
+			Rough Rider Platoon \newline
+			Rough Rider Platoon \newline
+			Rough Rider Platoon \newline
+			Vulture Squadron \newline
+			Vulture Squadron }
+          {None}
+          {1200 points}
+\formation{Titan Battlegroup}{
+			Warlord Titan \newline
+			Reaver Titan \newline
+			Reaver Titan \newline
+			Warhound Titan \newline
+			Warhound Titan \newline
+			Sentinel Squadron \newline 
+			Sentinel Squadron}
+          {Air Support}
+          {2850 points}
+\formationsEND
+
+% support...
+\upgrades{SUPPORT COMPANIES}{(Each may be taken once for every 2 Regiments)}
+\upgrade{Artillery Company}
+		{3 Artillery Batteries}
+		{750 points}
+\upgrade{Assault Company}
+		{(4 Ogryns Squads, 8 Chimera, 2 Hellhound Squadrons)}
+		{750 points}
+\upgrade{Infantry Company}
+		{(3 Infantry Platoons, Fire Support Platoon) \newline (Additional Chimera transport for non-Infantry Regiments)}
+		{400 points \newline ($+275$ points)}
+\upgrade{Navy Air Support}
+		{2 Thunderbolt Fighter Squadrons, Marauder Bomber Squadron}
+		{600 points}
+\upgrade{Titan Support}
+		{Warlord Titan \newline OR Reaver Titan \newline OR Warhound Pack}
+		{850 points \newline 650 points \newline 500 points}
+\upgradesEND
+
+% upgrades...
+\upgrades{RARE SUPPORT COMPANIES}{(Each may be taken once for every 5 Regiments)}
+\upgrade{Scout Company}	
+		{3 Sentinel Squadrons, (2 Sniper Squads)}
+        {400 points}
+\upgrade{Storm Trooper Company}	
+		{3 Storm Trooper Platoons (Valkyries)}
+        {1050 points}
+\upgrade{Super-Heavy Tank Company}
+		{3 Super-Heavy Tank Platoons}
+		{750 points}
+\upgrade{Titan-Hunter Company}	
+		{3 Death Strike Batteries}
+        {600 points}
+\upgradesEND
+
+%MARINES...
+\armylist{Space Marine Chapter Army List}{}{}
+% formations...
+\formations{SPACE MARINE COMPANIES}{}
+\formation{Air-Assault Company}{
+			Tactical Detachment (Captain, Dreadnought) \newline
+			Tactical Detachment (Chaplain) \newline
+			Devastator Detachment \newline
+			Assault Detachment \newline
+			Landing Craft \newline
+			Thunderhawk \newline
+			Thunderhawk }
+          {Landing Craft, Air Support, Terminators}
+          {1925 points}
+\formation{Battle Company}{
+			Tactical Detachment (Captain, Hunter) \newline
+			Tactical Detachment (Chaplain) \newline
+			Devastator Detachment \newline
+			Assault Detachment \newline
+			Land Speeder Detachment }
+          {All except Landing Craft}
+          {1375 points}
+\formation{Drop Company}{
+			Tactical Detachment (Captain) \newline
+			Tactical Detachment (Chaplain) \newline
+			Devastator Detachment \newline
+			Assault Detachment }
+          {Air Support, Terminators}
+          {1175 points}
+\formation{Scout Company}{
+			Scout Detachment (Captain) \newline
+			Scout Detachment \newline
+			Scout Detachment \newline
+			Land Speeder Detachment \newline
+			Land Speeder Detachment \newline
+			Bike Detachment \newline
+			Bike Detachment }
+          {None}
+          {1300 points}
+\formationsEND
+
+% support...
+\upgrades{SUPPORT MANIPLES}{(Each may be taken once for every 2 Companies)}
+\upgrade{Armour Maniple}
+		{Land Raiders, Predators, Whirlwinds, (Hunter)}
+		{1050 points}
+\upgrade{Assault Maniple}
+		{2 Vindicator Detachments, 2 Bike Detachments}
+		{1000 points}
+\upgrade{Landing Craft Maniple}
+		{Land Raiders, Bike Detachment, Landing Craft}
+		{950 points}
+\upgrade{Navy Air Support}
+		{2 Thunderbolt Fighter Squadrons, Marauder Bomber Squadron}
+		{600 points}
+\upgrade{Titan Support}
+		{Warlord Titan \newline OR Reaver Titan \newline OR Warhound Pack}
+		{850 points \newline 650 points \newline 500 points}
+\upgradesEND
+
+% upgrades...
+\upgrades{RARE SUPPORT MANIPLES}{(Each may be taken once for every 5 Companies)}
+\upgrade{Terminators}	
+		{3 Terminator Detachments, (Librarian)}
+        {1125 points}
+\upgradesEND
+
+\twocolumn			% required after the army list
+
+\end{document}
