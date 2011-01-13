@@ -1,0 +1,210 @@
+% Example codex.tex usage
+% author:adam77
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PREAMBLE
+%
+\documentclass[a4paper, twocolumn]{article}
+\usepackage{codex}	% this package contains the macros
+\setNumberingPrefix{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DOCUMENT
+%
+\begin{document}
+
+\codexTitle{Heresy Era Space Marine Legion}{Epic Armageddon Army List}{v0.1}
+
+\section{Space Marine Legions}
+
+\subsection{}
+
+
+\subsection{}
+
+
+\subsection{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% UNITS
+%
+\clearpage \onecolumn
+\section{Space Marine Legion Units}
+
+\subsection{New units}
+
+\unit{Death Guard Lord}{}
+\stats{Character}{-}{-}{-}{-}
+\weapon{Man Reaper}{(base contact)}{Assault Weapons}{Extra Attack (+1), Macro-Weapon}
+\weapon{Warp Bold}{(15cm)}{Small Arms}{Extra Attack (+1), Macro-Weapon}
+\image{default.png}
+\notes{
+	Death Guard Lords are one of three types, Plaguelord, Sorcerer Lord and Nurgle Warlord. All are \emph{Characters} and have the \emph{Invulnerable Save}
+	and \emph{Leader} abilities. Plaguelords have the \emph{Commander} ability. Sorcerer Lords have the \emph{Warp Bolt} attack (listed in the weapons section above). Nurgle
+	Warlord has the \emph{Supreme Commander} ability.
+}
+\statsEND
+
+\unit{Death Guard Chaos Marines}{
+  Death Guard Chaos Marines are Chaos Marines who have started to embrace the pestilence of father Nurgle. Many of
+  those who start this process to become Plague Marine won't survive the decay and disease bestowed upon them
+  but many still crave for the power it grants them.
+}
+\stats{Infantry}{15cm}{3+}{4+}{5+}
+\weapon{Bolters}{(15cm)}{Small Arms}{-}
+\weapon{Plague Knives}{(base contact)}{Assault Weapons}{-}
+\weapon{Plasma gun}{15cm}{AP5+/AT5+}{-}
+\image{default.png}
+\notes{Stubborn}
+\statsEND
+
+\unit{Death Guard Havoc} {
+  Death Guard Havocs are Death Guard Chaos Space Marines with a preference for killing at range with their powerful weaponry. Each
+  Chaos Havoc's heavy weapon is a trusted ally of a thousand battles, its wielder completely familiar with its every operation.
+  Together weapon and Chaos Space Marine touch every part of the battlefield with death and destruction.
+}
+\stats{Infantry}{15cm}{3+}{5+}{3+}
+\weapon{Combi-bolters}{(15cm)}{Small Arms}{-}
+\weapon{2 x Autocannon}{45cm}{AP5+/AT6+}{-}
+\image{default.png}
+\notes{Stubborn}
+\statsEND
+
+\unit{Death Guard Terminators} {
+  The Chaos Terminators are the elite of a Chaos Space Marine army. Drawn from the most experienced and capable veteran warriors of
+  the Traitor Legions, they have literally thousands of years of experience. Wearing precious suits of Terminator power armour
+  twisted and warped to reflect their allegiance to the ruinous powers these men have ruled planets, led armies and destroyed
+  civilizations.
+}
+\stats{Infantry}{15cm}{4+}{3+}{3+}
+\weapon{Combi-bolters}{(15cm)}{Small Arms}{-}
+\weapon{2 x Reaper Autocannon}{30cm}{AP4+/AT6+}{-}
+\weapon{Power Weapons}{(base contact)}{Assault Weapons}{Extra Attacks(+1), Macro Weapon}
+\image{default.png}
+\notes{Fearless, Reinforced Armour, Teleport, Thick Rear Armour}
+\statsEND
+
+% unit template (copy and paste)...
+% \unit{Nurgloid} {							% required
+% 	---description goes here---
+% }
+% \stats{type}{speed}{armour}{cc}{ff}			% required
+% \weapon{name}{range}{tohit}{notes}			% 1 or more...
+% \image{default.png}							% required
+% \comment{...comment...}						% can be left out
+% \notes{...notes...}							% can be left out
+% \statsEND
+
+\clearpage
+\subsection{Black Legion experimental units}
+
+% unit template (copy and paste)...
+\unit{Nurgloid} {							% required
+	---description goes here---
+}
+\stats{type}{speed}{armour}{cc}{ff}			% required
+\weapon{name}{range}{tohit}{notes}			% 1 or more...
+\image{default.png}							% required
+\wenote{DC}{Crit}						% can be left out
+\notes{...notes...}							% can be left out
+\statsEND									% required
+
+\twocolumn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ARMY LIST
+%
+\clearpage
+\section{Death Guard Army}
+\subsection{Using the Army List}
+Death Guard Marines are organised around core formations
+called companies or retinues of Plague Marines which are
+supported by rarer formations of specialised troops.
+
+Some formations are Core Retinues – these are the backbone
+of the Death Guard army. More rare and specialised
+formations are Support Retinues and you may not have more
+Support Formations than Death Guard Retinue formations.
+The chart below shows the name of the formation, what units
+comprise it, what upgrades are allowed for it, and the points
+cost for the formation.
+
+Each upgrade that is taken adds to the cost of the formation,
+as shown on the upgrade chart. The upgrade chart also lists
+the units that make up the upgrade. Note that these will
+sometimes replace units in the formations they are taken for,
+and sometimes adds additional units to the formation. Each
+upgrade may be taken \underline{once} per formation.
+\specialRule{Stubborn}{
+ Nurgle’s
+ followers are inured against pain, implacable
+ and diseased of mind in many cases. The Death Guard
+ always had a reputation for tenacity, which has not been
+ reduced by their exposure to the Warp. \par
+ All units that are Stubborn may make their normal armour
+ saves (including any re-rolls that may apply) against
+ hackdown hits due to losing close combat or hits caused
+ by suffering Blast Markers when broken. Note that
+ Stubborn units are still destroyed outright if they are
+ within 15cm of enemy at the end of a Withdrawal move.
+}
+
+\designConcept{example}{
+ blah blah blah
+}
+
+% header...
+\armylist{Herest Era Space Marine Legion Army List}{150-nurgle-mark.png}{
+	All Space Marine Legion Units have an initiative rating of 1+.
+}
+% formations...
+\upgrades{SPACE MARINE COMPANIES}{}
+\upgrade{Tactical Company}
+          {One Space Marine Captain, 18 Tactical MkV Marine units}
+          {500 points}
+\upgradesEND
+
+% support...
+\upgrades{SPACE MARINE SUPPORT PLATOONS}{(Three may be taken per Space Marine Company)}
+\upgrade{Armoured Platoon}
+		{Three MkI Land Raiders \newline\emph{or} Three Predators \newline\emph{or} Three Vindicators \newline\emph{or} Three Whirlwinds}
+		{250 points\newline 500 points\newline 250 points\newline 500 points}
+\upgrade{Assault Platoon}	
+		{Six Assault MkV Marines \newline \emph{or} Six Space Marine Terminators}
+        {250 points \newline 500 points}
+\upgrade{Recon Platoon}	
+		{Five MkI Land Speeders \newline \emph{or} Five Space Marine Jet Bikes \newline \emph{or} Five MkVI Space Marine Bikes \newline \emph{or} Six Scout units}
+        {250 points \newline 150 points \newline 200 points \newline 200 points}
+\upgrade{Support Platoon}	
+		{Six Devastator MkV Marines \newline \emph{or} Five Mole Mortar Teams \newline \emph{or} Five Thudd Gun Teams \newline \emph{or} Five Tarantulas}
+        {250 points \newline 150 points \newline 150 points \newline 150 points}
+\upgradesEND
+
+% upgrades...
+\upgrades{COMPANY UPGRADES}{(Each may be taken once only)}
+\upgrade{Transport}	
+		{9 Rhinos \newline \emph{or} 9 Land Raiders \newline \emph{or} Drop Pods \newline \emph{or} One Capitol Imperialis}
+        {100 points \newline 350 points \newline 200 points \newline 350 points}
+\upgrade{Dreadnought Squadron}	
+		{3 MkI Dreadnoughts}
+        {100 points}
+\upgrade{Robot Squadron}	
+		{3 Robots}
+        {100 points}
+\upgrade{Rapier Squadron}	
+		{3 Rapiers}
+        {100 points}
+\upgradesEND
+
+% assets...
+\upgrades{TITAN LEGION BATTLEGROUPS}{(Up to a third of points)}
+\upgrade{Warlord Titan}{One Warlord Titan}{850 points}
+\upgrade{Reaver Titan}{One Reaver Titan}{650 points}
+\upgrade{Warhound Pack}{Two Warhound Titans}{300 points}
+\upgradesEND
+
+\twocolumn			% required after the army list
+
+\end{document}
