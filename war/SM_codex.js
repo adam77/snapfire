@@ -27,16 +27,21 @@ var commander =			{id:23, label:'Cmdr', upto:1, options:[
 var dreadnought = 		{id:30, label:'Dreadnought', 				pts:50, upto:2};
 var hunter = 			{id:31, label:'Hunter', 					pts:75, upto:1};
 var landRaiders = 		{id:32, label:'Land Raider', 				pts:100, upto:4};
-var razorbacks =		{id:33, label:'Razorback',					pts:25};
+var razorbacks =		{id:33, label:'Razorback',					pts:25, upto:6};
 var sniper =			{id:34, label:'Sniper',						pts:25, upto:1};
 var vindicator = 		{id:35, label:'Vindicator',					pts:75, upto:2};
+var devTransport =	{id:36,	label:'Transport',	upto:4, options:[
+	{id:37, label:'Razorback',					pts:25},	
+	{id:38, label:'Land Raider', 				pts:100}
+]};
+
 
 // DETACHMENTS
 var spacecraft = 		{id:508, label:'Spacecraft', upto:1};
 var detachmentList =	{id:516, label:'DETACHMENTS', options:[
 	{id:500, label:'Assault Detachment', 		pts:175, units:'4 Assault Units', upgrades:[commander, vindicator]},
 	{id:501, label:'Bike Detachment', 			pts:200, upgrades:[bikes, commander]},
-	{id:502, label:'Devastator Detachment',		pts:250, units:'4 Devastators', upgrades:[commander, razorbacks, dreadnought, hunter, landRaiders, transport]},
+	{id:502, label:'Devastator Detachment',		pts:250, units:'4 Devastators', upgrades:[commander, devTransport, dreadnought, hunter, transport]},
 	{id:503, label:'Land Raiders',				pts:400, units:'4 Land Raiders', upgrades:[commander, hunter, vindicator]},
 	{id:504, label:'Land Speeders',				pts:200, upgrades:[speeders, commander]},
 	{id:505, label:'Landing Craft',				pts:350, upgrades:[]},
@@ -67,6 +72,7 @@ var titanList = 		{id:523, label:'TITAN LEGIONS', options:[
 // DETAILS
 var listData = {
 	id:'Codex Astartes', version:'EA Rulebook Oct09',
+	notes:['If Rhinos are chosen, then add the minimum number required to transport any units that cannot be assigned to Razorbacks or Land Raiders.'],
 	sublists:[detachmentList, navyList, titanList]};
 
 // CALLBACK

@@ -80,6 +80,7 @@ var titanList = 		{id:525, label:'TITAN LEGIONS', options:[
 // DETAILS
 var listData = {
 	id:'Steel Legion', version:'EA Rulebook Oct09',
+	notes:['If the Chimera upgrade is chosen, then you must purchase enough Chimera to transport the entire formation.'],
 	sublists:[companyList, supportList, navyList, titanList],
 	restriction:{limit:2, restricting:'Company', restricted:'Support Formations'}};
 

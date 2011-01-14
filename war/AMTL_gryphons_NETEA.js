@@ -98,6 +98,7 @@ var support = 	{id:560, label:'SUPPORT FORMATIONS', options:[
 // DETAILS
 var listData = {
 	id:'Legio Gryphonicus', version:'NetEA v3.18 *UNDER DEVELOPMENT*',
+	notes:['If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased.'],
 	restriction:{limit:1, restricting:'Titan Formation', restricted:'Support Formation'},
 	limitRatio:1,
 	sublists:[titans, scouts, support]};

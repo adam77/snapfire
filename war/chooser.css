@@ -26,7 +26,12 @@ tr.interactive:hover > td {
 //	margin-top:1em;
 }
 /* ORBAT */
-#orbat {
+#notes {
+	margin:1em;
+	font-size:x-small;
+	width:56%;
+}
+#orbatDiv {
 	margin-bottom:15em;
 }
 .orbat > * > tr > td, .orbat th {
@@ -179,7 +184,7 @@ div.dropDown .listDiv table td {
 	body {
 		background-color:white;
 	}
-	#armyList, #controls, div.dropDown {
+	#armyList, #controls, div.dropDown, #notes {
 		display:none;
 	}
 	#orbat {
