@@ -110,7 +110,7 @@ var gunFortress1 =		{id:95, label:'Extra Gunfortress',				pts:135, upto:1};
 var gunFortress2 =		{id:96, label:'Extra Gunfortress',				pts:135, upto:2};
 var gunFortress3 =		{id:97, label:'Extra Gunfortress',				pts:135, upto:3};
 var battlekrooza =		{id:98, label:'Battlekrooza',					pts:50, upto:1};
-var badork =			{id:110, label:'Mekboy Bad Ork Bikeboy',		pts:0, upto:1};
+var badork =			{id:110, label:'Mekboy Bad Ork Bikeboy',		pts:0, upto:1, general:true};
 
 // WARBANDS
 var warbandList =		{id:515, label:'FORMATIONS', options:[
@@ -143,10 +143,7 @@ var othersList = 		{id:521, label:'AIRCRAFT and SPACECRAFT', options:[
 // DETAILS
 var listData = {
 	id:'Burning Death Speed Freeks', version:'White Dwarf 291',
-	notes:[
-		'Exactly one Mekboy Bad Ork Bikeboy must be selected.',
-		'Enough transport must be purchased to ensure all units with a speed of less than 30cm have transport.'
-	],
+	notes:['Enough transport must be purchased to ensure all units with a speed of less than 30cm have transport.'],
 	sublists:[warbandList, othersList]};
 
 // CALLBACK

@@ -88,7 +88,7 @@ var listData = {
 	notes:[
 		'If a Daemon Prince is selected, then it replaces a Cultist unit.',
 		'If a Coven is given transport, then you must take exactly enough Chimera and/or Land Transporters to transport all units in the formation.',
-		'Daemon Engines must be either factionless or the same faction as their associated Coven.'
+		'Daemon Engines must be either factionless or of the same faction as their associated Coven.'
 	],
 	sublists:[companyList, engineList, supportList, navyList],
 	limitRatio:1,
