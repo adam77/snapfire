@@ -143,6 +143,10 @@ var othersList = 		{id:521, label:'AIRCRAFT and SPACECRAFT', options:[
 // DETAILS
 var listData = {
 	id:'Burning Death Speed Freeks', version:'White Dwarf 291',
+	notes:[
+		'Exactly one Mekboy Bad Ork Bikeboy must be selected.',
+		'Enough transport must be purchased to ensure all units with a speed of less than 30cm have transport.'
+	],
 	sublists:[warbandList, othersList]};
 
 // CALLBACK

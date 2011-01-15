@@ -59,6 +59,7 @@ var warbandList =		{id:516, label:'WAR HORDES', options:[
 // DETAILS
 var listData = {
 	id:'Snagga-Snagga\'s Feral Orks', version:'EA Swordwind',
+	notes:['A Warlord must be selected and assigned to the formation with the most units/DC.'],
 	sublists:[warbandList]};
 
 // CALLBACK

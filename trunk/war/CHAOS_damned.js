@@ -85,6 +85,11 @@ var engineList = 		{id:550, label:'DAEMON ENGINES', options:[
 // DETAILS
 var listData = {
 	id:'Lost And The Damned', version:'Specialist Games Forum v3.5',
+	notes:[
+		'If a Daemon Prince is selected, then it replaces a Cultist unit.',
+		'If a Coven is given transport, then you must take exactly enough Chimera and/or Land Transporters to transport all units in the formation.',
+		'Daemon Engines must be either factionless or the same faction as their associated Coven.'
+	],
 	sublists:[companyList, engineList, supportList, navyList],
 	limitRatio:1,
 	restriction:{limit:1, restricting:'Cultist Coven', restricted:'Support Coven'}};
