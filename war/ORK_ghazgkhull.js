@@ -71,7 +71,7 @@ var supaStompa2 =		{id:78, label:'Supa Stompa',					pts:250, upto:2};
 var supaStompa3 =		{id:79, label:'Supa Stompa',					pts:250, upto:3};
 var battlekrooza =		{id:80, label:'Battlekrooza',					pts:50, upto:1};
 var warlord =			{id:81, label:'Warlord',						pts:0, general:true};
-var grotz =				{id:82, label:'Grotz',							pts:0};
+var grotz =				{id:82, label:'Boyz and Grotz',					pts:25};
 
 // WARBANDS
 var warbandList =	{id:516, label:'WAR HORDES', options:[
@@ -105,6 +105,7 @@ var othersList = 	{id:524, label:'AIRCRAFT, SPACECRAFT &amp; GARGANTS', options:
 // DETAILS
 var listData = {
 	id:'Ghazgkhull Thraka\'s War Horde', version:'EA Rulebook Oct09',
+	notes:['A Warlord must be selected. If the army has a Great Gargant, then the Warlord must be assigned to it; otherwise, assign to a Nobz or Gargant unit.'],
 	sublists:[warbandList, othersList]};
 
 // CALLBACK

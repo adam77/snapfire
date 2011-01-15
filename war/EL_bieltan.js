@@ -80,6 +80,7 @@ var allyList = 		{id:523, label:'SPACESHIPS, AIRCRAFT &amp; TITANS', options:[
 // DETAILS
 var listData = {
 	id:'Biel-Tan Craftworld', version:'EA Swordwind',
+	notes:['If Aspect Warriors are given transport, then you must take enough Wave Serpents and/or Falcons to transport all units in the formation.'],
 	sublists:[individualList, warhostList, troupeList, allyList],
 	restriction:{limit:3, restricting:'Warhost', restricted:'Troupes'}};
 

@@ -62,6 +62,7 @@ var titanList = 		{id:523, label:'TITAN LEGIONS', options:[
 // DETAILS
 var listData = {
 	id:'White Scars', version:'Fanatic Magazine 3 + 2008 Errata',
+	notes:['If Rhinos are chosen, then add the minimum number required to transport any units that cannot be assigned to Razorbacks.'],
 	sublists:[detachmentList, navyList, titanList]};
 
 // CALLBACK

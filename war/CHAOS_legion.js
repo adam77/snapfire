@@ -70,6 +70,7 @@ var titanList = 		{id:523, label:'WAR ENGINES', options:[
 // DETAILS
 var listData = {
 	id:'Black Legion', version:'Specialist Games Forum v1.0',
+	notes:['If a Daemon Prince is selected, then it replaces a Chaos Marine unit.'],
 	sublists:[detachmentList, titanList, navyList]};
 
 // CALLBACK
