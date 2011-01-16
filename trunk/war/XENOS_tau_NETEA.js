@@ -37,8 +37,8 @@ var drone =			{id:33, label:'Drone',	upto:1, options:[
 
 // UPGRADES (upto 3 per company)
 var commander =		{id:80, label:'Cmdr', upto:1, options:[
-	{id:50, label:'Shas\'el',							pts:50},
-	{id:51, label:'Shas\'o (Supreme Commander)',	pts:100, general:true}
+	{id:50, label:'Shas\'el',	pts:50},
+	{id:51, label:'Shas\'o',	pts:100, general:true}
 ]};
 //var g1 =			{id:52, label:'Upgrades',				upto:3};
 var piranha =		{id:54, label:'3 Piranhas',				pts:75,		upto:1};
