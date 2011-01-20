@@ -1,9 +1,8 @@
 // MANDATORY UNITS
-var ranger =		{id:11, label:'Ranger',		pts:0,	optional:true, minimum:4, upto:4};
 var rangerhost = 		{id:46, label:'Extras', upto:1, minimum:1, options:[
-	{id:47, label:'4x Ranger',		pts:0, 	optional:true},
-	{id:48, label:'3x War Walker',	pts:0, 	optional:true},
-	{id:49, label:'4x Falcon',		pts:200, 	optional:true}
+	{id:47, label:'8 Rangers',						pts:0, 	optional:true},
+	{id:48, label:'4 Rangers, 3 War Walkers',	pts:0, 	optional:true},
+	{id:49, label:'4 Rangers, 4 Falcons',		pts:200,	optional:true}
 ]};
 var pathfinder =		{id:12, label:'Pathfinder',		pts:50,	optional:true, minimum:4, upto:6};
 
@@ -69,7 +68,7 @@ var individualList = {id:509, label:'INDIVIDUALS', options:[
 
 // WARHOSTS
 var warhostList =	{id:513, label:'WARHOSTS', options:[
-	{id:510, label:'Alaitoc Ranger Warhost', 			pts:200, restricting:true,	upgrades:[ranger,rangerhost]},
+	{id:510, label:'Alaitoc Ranger Warhost', 			pts:200, restricting:true,	upgrades:[rangerhost]},
 	{id:511, label:'Guardian Warhost',		 			pts:150, restricting:true,	units:'Farseer',	upgrades:[guardians,supportweapon, wraithguard, wraithlords]},
 	{id:512, label:'Guardian Warhost (Wave Serpents)',	pts:350, restricting:true,	units:'Farseer, 4 Wave Serpents',	upgrades:[guardians]}
 ]};
