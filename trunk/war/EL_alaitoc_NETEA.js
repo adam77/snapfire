@@ -88,7 +88,7 @@ var allyList = 		{id:523, label:'SPACESHIPS, AIRCRAFT &amp; TITANS', options:[
 
 // DETAILS
 var listData = {
-	id:'Alaitoc Craftworld', version:'NetEA draft',
+	id:'Alaitoc Craftworld', version:'NetEA Army Book 2010 *DRAFT*',
 	sublists:[individualList, warhostList, troupeList, allyList],
 	restriction:{limit:3, restricting:'Warhost', restricted:'Troupes'}};
 
