@@ -89,7 +89,7 @@ var gorgon = { id:120, label:'Additional Gorgon for Infantry Platoon', pts:50, u
 var companyList = {
   id:500, label:'DEATH KORPS CORE COMPANIES', options:[
     { id:501, label:'Regimental HQ', pts:400, units:'Death Korps Supreme Commander, 19 Death Korps Infantry' , upgrades:[ up1, gorgon, russ, demo ], restricting:true, upto:1 },
-    { id:502, label:'Infantry Company', pts:250, units:'Death Korps Commander, 19 Death Korps Infantry', upgrades:[ up1, gorgon, russ, demo ], restricting:true },
+    { id:502, label:'Infantry Company', pts:300, units:'Death Korps Commander, 19 Death Korps Infantry', upgrades:[ up1, gorgon, russ, demo ], restricting:true },
     // NOTE: 1 per 1500 pts
     { id:503, label:'Death Rider Company', pts:250, units:'12 Death Korps Rough Riders', upgrades:[ up2, gorgon, russ, demo ] }
   ]
@@ -141,6 +141,7 @@ var titanList = {
 // DETAILS
 var listData = {
   id:'Death Korps of Krieg', version:'NetEA Epic Siege v1.0',
+  notes:['Maximum 1 Death Rider Company per 1500pts.'],
   sublists: [ companyList, supportList, trenchworks, navyList, titanList ],
   restriction: { limit:2, restricting:'Company', restricted:'Support Formations' },
   restriction2: { limit:1, restricting:'Company', restricted:'Trenchworks' }

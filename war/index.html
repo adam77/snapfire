@@ -9,349 +9,83 @@ body {
 	background-color:olive;
 	padding:0;
 	margin:0;
+	color:#404000;
 }
 p {
 	font-size:small;
 }
-.ab td {
-	text-align:center;
-	vertical-align:center;
-	padding:.3em;
-	background-color:#eeeecb;
-}
 #main {
+	padding-top:5em;
 	max-width:98%;
 	width:70em;
 	margin:auto;
 	text-align:center;
 }
-.topRow th {
-	text-align:center;
-}
-td.force {
-	vertical-align:center;
-	font-size:small;
-	padding-left:0;
-	padding-right:2.5em;
-	font-family:sans-serif;
-	text-align:left;
-}
 .ab a:hover { 
 	color:orange;
 	text-decoration:underline;
-}
-tr {
-	border-top:solid 0.1em olive;
 }
 table {
 	margin:auto;
 	border-collapse:collapse;
 }
-.ab td a {
-	color:#555;
-	font-size:small;
-	font-family:sans-serif;
-	text-decoration:none;
-}
-.ab .todo {
-	color:gray;
-}
-.ab td.todo a {
-	color:#eeeecb;
-	text-decoration:none;
-	cursor:inherit;
-}	
-img.icon {
-	opacity:1;
-	margin-left:0.3em;
-	margin-right:0.3em;
-	height:1em;
-	vertical-align:middle;
-}
-td.uk {
-	padding-right:0.5em;
-}
 #layout > tbody > tr > td {
-	padding:4em 1.5em 2em 1.5em;
+	padding:2em 2em;
 	width:50%;
 	vertical-align:top;
+}
+.but:hover {
+	background:#707000;
+}
+.but {
+	text-align: center;
+	text-decoration:none;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 138.5%;
+	border: 1px solid #659635;
+	color:white;
+	text-shadow:-1px -1px 2px #777777;
+	padding:1em 2em 1em 2em;
+	-moz-border-radius:0.5em;
+	-webkit-border-radius:0.5em;
+	border-radius:0.5em;
+}
+a.xx {
+	text-decoration:none;
 }
 	</style>
 </head>
 <body>
 	<div id="main">
-			<table id="layout">
-				<tr><td>
-				<table class="ab">
-					<tr class="marines">
-						<td><img class="icon" src="imperial_eagle.png"/></td>
-						<td class="force">Black Templars</td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=SM_templars_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="marines">
-						<td><img class="icon" src="imperial_eagle.png"/></td>
-						<td class="force">Blood Angels</td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=SM_bloodAngels_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="marines">
-						<td><img class="icon" src="imperial_eagle.png"/></td>
-						<td class="force">Codex Astartes</td>
-						<td><a href="./chooser.html?list=SM_codex">GW</a></td>
-						<td><a href="./chooser.html?list=SM_codex_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=SM_codex_EPICUK">EpicUK</a></td>
-						<td class="uk"><a href="./chooser.html?list=SM_codex_FERC">FERC</a></td>
-					</tr>
-					<tr class="marines">
-						<td><img class="icon" src="imperial_eagle.png"/></td>
-						<td class="force">Dark Angels</td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=SM_dark_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="marines">
-						<td><img class="icon" src="imperial_eagle.png"/></td>
-						<td class="force">Salamanders</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=SM_salamanders_NETEA">NetEA</a></td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="marines">
-						<td><img class="icon" src="imperial_eagle.png"/></td>
-						<td class="force">Scions of Iron</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=SM_scions_NETEA">NetEA</a></td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="marines">
-						<td><img class="icon" src="imperial_eagle.png"/></td>
-						<td class="force">White Scars</td>
-						<td><a href="./chooser.html?list=SM_scars">GW</a></td>
-						<td><a href="./chooser.html?list=SM_scars_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=SM_scars_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="guard top">
-						<td><img class="icon" src="ig_icon.png"/></td>
-						<td class="force">Baran Siege Masters</td>
-						<td><a href="./chooser.html?list=IG_siege">GW</a></td>
-						<td><a href="./chooser.html?list=IG_siege_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=IG_siege_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="guard top">
-						<td><img class="icon" src="ig_icon.png"/></td>
-						<td class="force">Death Korps of Krieg</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=IG_krieg_NETEA">NetEA</a></td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="guard">
-						<td><img class="icon" src="ig_icon.png"/></td>
-						<td class="force">Steel Legion</td>
-						<td><a href="./chooser.html?list=IG_steelLegion">GW</a></td>
-						<td><a href="./chooser.html?list=IG_steelLegion_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=IG_steelLegion_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="guard">
-						<td><img class="icon" src="ig_icon.png"/></td>
-						<td class="force">IG Tank Regiment</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=IG_minervan_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=IG_ulani_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="guard">
-						<td><img class="icon" src="ig_icon.png"/></td>
-						<td class="force">Vanaheim Air Cavalry</td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=IG_vanaheim_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="guard">
-						<td><img class="icon" src="amtl_icon.png"/></td>
-						<td class="force">Legio Gryphonicus</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=AMTL_gryphons_NETEA">NetEA</a></td>
-						<td class="todo uk">-</td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="tau top">
-						<td><img class="icon" src="nids_icon.png"/></td>
-						<td class="force">Tyranids</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=XENOS_nids_NETEA">NetEA</a></td>
-						<td class="todo uk">-</td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="tau top">
-						<td><img class="icon" src="necron_icon.png"/></td>
-						<td class="force">Necrons</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=XENOS_necron_NETEA">NetEA</a></td>
-						<td class="todo uk">-</td>
-						<td class="todo">-</td>
-					</tr>
-				</table>
-			</td><td>
-				<table class="ab">
-					<tr class="orcs top">
-						<td><img class="icon" src="ork_icon.png"/></td>
-						<td class="force">Feral Orks</td>
-						<td><a href="./chooser.html?list=ORK_feral">GW</a></td>
-						<td><a href="./chooser.html?list=ORK_feral_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=ORK_feral_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="orcs">
-						<td><img class="icon" src="ork_icon.png"/></td>
-						<td class="force">Ghazgkhull's Warhorde</td>
-						<td><a href="./chooser.html?list=ORK_ghazgkhull">GW</a></td>
-						<td><a href="./chooser.html?list=ORK_ghazgkhull_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=ORK_ghazgkhull_EPICUK">EpicUK</a></td>
-						<td class="uk"><a>FERC</a></td>
-					</tr>
-					<tr class="orcs">
-						<td><img class="icon" src="ork_icon.png"/></td>
-						<td class="force">Speed Freakz</td>
-						<td><a href="./chooser.html?list=ORK_kult">GW</a></td>
-						<td><a href="./chooser.html?list=ORK_kult_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=ORK_kult_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="eldar top">
-						<td><img class="icon" src="eldar_icon.png"/></td>
-						<td class="force">Biel-Tan</td>
-						<td><a href="./chooser.html?list=EL_bieltan">GW</a></td>
-						<td><a href="./chooser.html?list=EL_bieltan_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=EL_bieltan_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="eldar top">
-						<td><img class="icon" src="eldar_icon.png"/></td>
-						<td class="force">Iyanden</td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=EL_iyanden_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="eldar top">
-						<td><img class="icon" src="eldar_icon.png"/></td>
-						<td class="force">Siam-Hann</td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=EL_siamhann_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="eldar top">
-						<td><img class="icon" src="eldar_icon.png"/></td>
-						<td class="force">Ulthw&eacute;</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=EL_ulthwe_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=EL_ulthwe_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="eldar top">
-						<td><img class="icon" src="eldar_icon.png"/></td>
-						<td class="force">Dark Eldar</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=EL_dark_NETEA">NetEA</a></td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="chaos top">
-						<td><img class="icon" src="chaos_icon.png"/></td>
-						<td class="force">Black Legion</td>
-						<td><a href="./chooser.html?list=CHAOS_legion">GW</a></td>
-						<td><a href="./chooser.html?list=CHAOS_legion_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=CHAOS_legion_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="chaos top">
-						<td><img class="icon" src="chaos_icon.png"/></td>
-						<td class="force">Death Guard</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=CHAOS_dg_NETEA">NetEA</a></td>
-						<td><a href="./chooser.html?list=CHAOS_dg_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="chaos top">
-						<td><img class="icon" src="chaos_icon.png"/></td>
-						<td class="force">Emperors Children</td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=CHAOS_ec_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="chaos top">
-						<td><img class="icon" src="chaos_icon.png"/></td>
-						<td class="force">Lost &amp; Damned</td>
-						<td><a href="./chooser.html?list=CHAOS_damned">GW</a></td>
-						<td><a href="./chooser.html?list=CHAOS_damned_NETEA">NetEA</a></td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="chaos top">
-						<td><img class="icon" src="chaos_icon.png"/></td>
-						<td class="force">Thousand Sons</td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=CHAOS_ts_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="chaos top">
-						<td><img class="icon" src="chaos_icon.png"/></td>
-						<td class="force">World Eaters</td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=CHAOS_we_EPICUK">EpicUK</a></td>
-						<td class="todo">-</td>
-					</tr>
-					<tr class="tau top">
-						<td><img class="icon" src="tau_icon.png"/></td>
-						<td class="force">Tau</td>
-						<td class="todo">-</td>
-						<td><a href="./chooser.html?list=XENOS_tau_NETEA">NetEA</a></td>
-						<td class="todo">-</td>
-						<td class="todo">-</td>
-					</tr>
-				</table>
-			</td></tr>
+		<table id="layout">
+			<tr>
+				<td><a class="xx" href="./indexGW.html"><div class="but">Official</div></a></td>
+				<td><a class="xx" href="./indexNETEA.html"><div class="but">NetEA</div></a></td>
+			</tr>
+			<tr>
+				<td><a class="xx" href="./indexEPICUK.html"><div class="but">EpicUK</div></a></td>
+				<td><a class="xx" href="./indexFERC.html"><div class="but">FERC</div></a></td>
+			</tr>
 		</table>
-				<!--<p>
-				<a href="./chooser.html?list=TEMPLATE">New List Template</a>-->
-				<p>
-				Check out the discussion on	<a href="http://www.tacticalwargames.net/taccmd/viewtopic.php?f=4&t=18623">Tactical Command</a> for comments, feedback and errors. 
-				<br>
-				Lists marked GW are <a href="http://www.games-workshop.com/gws/content/article.jsp?catId=cat480006a&categoryId=1100008&section=&aId=4900003">official</a>. Other lists are developed by the <a href="http://www.tacticalwargames.net/taccmd/viewforum.php?f=109">NetEA</a> and <a href="http://epic-uk.co.uk/armylists.shtml">EpicUK</a> communities.
-				<br>
-				Note that the picker won't work on out of date browsers (particularly IE7/6).<br>
-				</p>
-				<p>
-				This website is unofficial and in no way endorsed by Games Workshop Limited.
-				<!-- todo:<br>
-				(!special case: general constraint when upgrade is a general and has a general as an option -> should allow to swap<br>
-				==> should be able to fix Necron warbarque(SC)/C'tan(SC) mutual exclusion
-				(!performance: adding formation that has many mandatory units causes many 'checkConstraints'<br>
-				(!overhead for individual units)<br>
-				(???army constraint: 1 per army upgrades) - still required??<br>
-				(!army constraint: at least 1 general<br>
-				(!change 'optional' to 'mandatory')<br>
-				(!change code to allow optionals without groups - i.e. upgrades with 'minimum' - use for defaults?)<br>
-				!add 'draft' to NetEA* docs
-				 -->
-				</p>
+		<p>
+			Check out the discussion on	<a href="http://www.tacticalwargames.net/taccmd/viewtopic.php?f=4&t=18623">Tactical Command</a> for comments, feedback and errors. 
+			<br>
+			Note that the picker won't work on out of date browsers (particularly IE7/6).
+			<br>
+			This website is unofficial and in no way endorsed by Games Workshop Limited.
+			<!-- todo:<br>
+			(!special case: general constraint when upgrade is a general and has a general as an option -> should allow to swap<br>
+			==> should be able to fix Necron warbarque(SC)/C'tan(SC) mutual exclusion
+			(!performance: adding formation that has many mandatory units causes many 'checkConstraints'<br>
+			(!overhead for individual units)<br>
+			(???army constraint: 1 per army upgrades) - still required??<br>
+			(!army constraint: at least 1 general<br>
+			(!change 'optional' to 'mandatory')<br>
+			(!change code to allow optionals without groups - i.e. upgrades with 'minimum' - use for defaults?)<br>
+			!add 'draft' to NetEA* docs
+			 -->
+		</p>
 	</div>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
