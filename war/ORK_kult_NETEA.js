@@ -44,17 +44,17 @@ var kult3b =		{id:39, label:'Bikes',	minimum:24, options:[
 ]};
 var blitz1 =		{id:43, label:'Wagonz',	minimum:4, options:[
 	{id:44, label:'Gunwagon',		pts:35, optional:true},
-	{id:45, label:'Deth Kopta',		pts:35, optional:true},
+	{id:45, label:'Deth Kopta',	pts:35, optional:true},
 	{id:46, label:'Flakwagon',		pts:35, optional:true}
 ]};
 var blitz2 =		{id:47, label:'Wagonz',	minimum:8, options:[
 	{id:48, label:'Gunwagon',		pts:35, optional:true},
-	{id:49, label:'Deth Kopta',		pts:35, optional:true},
+	{id:49, label:'Deth Kopta',	pts:35, optional:true},
 	{id:50, label:'Flakwagon',		pts:35, optional:true}
 ]};
-var blitz3 =		{id:51, label:'Wagonz',	minimum:12, optoins:[
+var blitz3 =		{id:51, label:'Wagonz',	minimum:12, options:[
 	{id:52, label:'Gunwagon',		pts:35, optional:true},
-	{id:53, label:'Deth Kopta',		pts:35, optional:true},
+	{id:53, label:'Deth Kopta',	pts:35, optional:true},
 	{id:54, label:'Flakwagon',		pts:35, optional:true}
 ]};
 var forts1 =		{id:55, label:'Fortresses',	upto:2, minimum:2, options:[
