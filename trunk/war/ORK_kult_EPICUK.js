@@ -55,7 +55,7 @@ var blitz2 =		{id:47, label:'Wagonz',	minimum:8, options:[
 	{id:49, label:'Deth Kopta',		pts:35, optional:true},
 	{id:50, label:'Flakwagon',		pts:35, optional:true}
 ]};
-var blitz3 =		{id:51, label:'Wagonz',	minimum:12, optoins:[
+var blitz3 =		{id:51, label:'Wagonz',	minimum:12, options:[
 	{id:52, label:'Gunwagon',		pts:35, optional:true},
 	{id:53, label:'Deth Kopta',		pts:35, optional:true},
 	{id:54, label:'Flakwagon',		pts:35, optional:true}
