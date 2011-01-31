@@ -97,7 +97,7 @@ var formationList = {
     { id:503, label:'Landing Craft', pts:425, upgrades:[] },
     { id:504, label:'Predator Detachment', pts:275, upgrades:[preds, commander, closeSup] },
     { id:505, label:'Spacecraft', pts:200, upgrades:[spacecraft], upto:1 },
-    { id:506, label:'Tactical Detachment', pts:300, units:'6 Tactical units', upgrades:[transport, commander, dread, razorbacks, salTac] },
+    { id:506, label:'Tactical Detachment', pts:300, units:'6 Tactical units', upgrades:[transport, commander, dread, razorbacks, salTac, closeSup] },
     { id:507, label:'Terminator Detachment', pts:325, units:'4 Terminator units', upgrades:[commander, closeSup, dread, heavySup] },
     { id:508, label:'Thunderhawk', pts:250, upgrades:[] },
     { id:509, label:'Vindicator Detachment', pts:250, units:'4 Vindicators', upgrades:[commander, closeSup] },
@@ -107,7 +107,7 @@ var formationList = {
 
 var restrictedList = {
   id: 520, label:'RESTRICTED FORMATIONS', options: [
-    { id:521, label:'Assault Detachment', pts:150, units:'4 Assault units', upto:1, upgrades:[abikes,commander], limited:true },
+    { id:521, label:'Assault Detachment', pts:150, units:'4 Assault units', upto:1, upgrades:[commander,closeSup], limited:true },
     { id:522, label:'Fast Attack Detachment', pts:200, upto:1, upgrades:[abikes,commander], limited:true },
     { id:523, label:'Scout Detachment', pts:150, units:'4 Scout units plus transport', upgrades: [commander,razorbacks,sniper], limited:true }
   ]
