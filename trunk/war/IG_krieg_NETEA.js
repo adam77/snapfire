@@ -116,7 +116,7 @@ var supportList = {
 
 var trenchworks = {
   id:525, label:'TRENCHWORKS', options:[
-    { id:526, label:'Trenchworks', pts:150, units:'80cm of Trenches, 4 bunkers', upgrades:[], restricted2:true }
+    { id:526, label:'Trenchworks', pts:100, units:'80cm of Trenches, 4 bunkers', upgrades:[], restricted2:true }
   ]
 };
 
