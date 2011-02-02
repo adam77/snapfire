@@ -124,7 +124,7 @@ var trenchworks = {
 var navyList = {
   id:530, label:'IMPERIAL NAVY', options:[
     { id:531, label:'Thunderbolt Fighters', pts:150, units:'2 Thunderbolts', upgrades:[], limited:true },
-    { id:532, label:'Marauder Bombers', pts:250, units:'2 Marauders', upgrades:[], limited:true }
+    { id:532, label:'Marauder Bomber', pts:150, upgrades:[], limited:true }
   ]
 };
 
