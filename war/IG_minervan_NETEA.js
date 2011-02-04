@@ -78,6 +78,7 @@ var supportList =	{id:500, label:'SUPPORT FORMATIONS', options:[
 	{id:506, label:'Flak Battery',					pts:150, upgrades:[], restricted:true, units:'3 Hydra'},
 	{id:507, label:'Vulture Squadron',				pts:300, upgrades:[], restricted:true, units:'4 Vultures'},
 	{id:508, label:'Storm Trooper Platoon',			pts:200, upgrades:[valkyrie], restricted:true, units:'8 Storm Troopers'},
+	{id:511, label:'Assault Gun Platoon',			pts:150, upgrades:[], units:'3 Medusas', restricted:true},
 	{id:509, label:'Deathstrike Missile Battery',	pts:200, upgrades:[], restricted:true, upto:1, units:'2 Deathstrike Missile Launchers'},
 	{id:510, label:'Orbital Support',				pts:150, upgrades:[spacecraft], restricted:true, upto:1}
 ]};
