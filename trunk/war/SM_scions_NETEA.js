@@ -126,7 +126,7 @@ var navyList = {
     { id:521, label:'Fighter Squadron', pts:150, units:'2 Thunderbolt Fighters', upgrades:[], limited:true, group:birds },
     { id:522, label:'Bomber Squadron', pts:150, units:'2 Marauder Bombers', upgrades:[], limited:true, group:birds },
     { id:523, label:'Thunderhawk SB', pts:250, units:'Thunderhawk (Saturation Bombing configuration)', upgrades:[], limited:true },
-    { id:524, label:'Thunderhawk CAS', pts:250, units:'Thunderhawk (Close Air Support configuration)', upgrades:[], limited:true },
+    { id:524, label:'Thunderhawk CAS', pts:250, units:'Thunderhawk (Close Air Support configuration)', upgrades:[], limited:true }
   ]
 };
 

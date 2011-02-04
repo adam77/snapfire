@@ -93,12 +93,12 @@ var salTac = { id:103, label:'2 Salamander Tactical units', pts:75, upto:1 };
 var formationList = {
   id:500, label:'DETACHMENTS', options: [
     { id:501, label:'Devastator Detachment', pts:250, units:'4 Devastator units', upgrades:[transport, commander, closeSup, dread, razorbacks, salDev] },
-    { id:502, label:'Land Raider Detachment', pts:350, upgrades:[lrs, commander, closeSupHe] },
+    { id:502, label:'Land Raider Detachment', pts:350, units:'4 Land Raiders', upgrades:[commander, closeSupHe] },
     { id:503, label:'Landing Craft', pts:425, upgrades:[] },
     { id:504, label:'Predator Detachment', pts:275, upgrades:[preds, commander, closeSup] },
     { id:505, label:'Spacecraft', pts:200, upgrades:[spacecraft], upto:1 },
     { id:506, label:'Tactical Detachment', pts:300, units:'6 Tactical units', upgrades:[transport, commander, dread, razorbacks, salTac, closeSup] },
-    { id:507, label:'Terminator Detachment', pts:325, units:'4 Terminator units', upgrades:[commander, closeSup, dread, heavySup] },
+    { id:507, label:'Terminator Detachment', pts:325, units:'4 Terminator units', upgrades:[commander, closeSupHe, dread, heavySup] },
     { id:508, label:'Thunderhawk', pts:250, upgrades:[] },
     { id:509, label:'Vindicator Detachment', pts:250, units:'4 Vindicators', upgrades:[commander, closeSup] },
     { id:510, label:'Whirlwind Detachment', pts:300, units:'4 Whirlwinds', upgrades:[commander, closeSupHe] }

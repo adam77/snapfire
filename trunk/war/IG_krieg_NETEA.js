@@ -91,7 +91,7 @@ var companyList = {
     { id:501, label:'Regimental HQ', pts:400, units:'Death Korps Supreme Commander, 19 Death Korps Infantry' , upgrades:[ up1, gorgon, russ, demo ], restricting:true, upto:1 },
     { id:502, label:'Infantry Company', pts:300, units:'Death Korps Commander, 19 Death Korps Infantry', upgrades:[ up1, gorgon, russ, demo ], restricting:true },
     // NOTE: 1 per 1500 pts
-    { id:503, label:'Death Rider Company', pts:250, units:'12 Death Korps Rough Riders', upgrades:[ up2, gorgon, russ, demo ] }
+    { id:503, label:'Death Rider Company', pts:250, units:'12 Death Korps Rough Riders', upgrades:[ up2, gorgon, russ, demo ], restricting:true }
   ]
 };
 
