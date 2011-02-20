@@ -298,7 +298,7 @@ function viewPlainText() {
 //			alert('&egrave;' + '&egrave;'.toUpperCase());
 //			txt.insert('&egrave;'.toUpperCase());
 //			txt.insert('&Egrave;&EGRAVE;&egrave;');
-			txt.insert(x.formationData.label/*.toUpperCase()*/ +' ['+x.childElements()[1].innerHTML +']');
+			txt.insert(x.formationData.label.toUpperCase() +' ['+x.childElements()[1].innerHTML +']');
 			txt.insert(new Element('br'));
 			if (x.formationData.units) {
 				txt.insert(x.formationData.units);
