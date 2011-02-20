@@ -196,6 +196,10 @@ div.dropDown .listDiv table td {
 	}
 }
 
+#plainTextDiv {
+	width:60%;
+}
+
 #importDiv {
 	margin-bottom:1em;
 }

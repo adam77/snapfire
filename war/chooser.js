@@ -294,17 +294,23 @@ function viewPlainText() {
 	$('orbatBody').childElements().each(function (x) {
 		if (x.hasClassName('orbatFormation')) {
 			txt.insert(new Element('br'));
-			txt.insert(x.formationData.label.toUpperCase() +' - '+x.childElements()[1].innerHTML +'');
+			txt.insert(new Element('br'));
+//			alert('&egrave;' + '&egrave;'.toUpperCase());
+//			txt.insert('&egrave;'.toUpperCase());
+//			txt.insert('&Egrave;&EGRAVE;&egrave;');
+			txt.insert(x.formationData.label/*.toUpperCase()*/ +' ['+x.childElements()[1].innerHTML +']');
 			txt.insert(new Element('br'));
 			if (x.formationData.units) {
-				txt.insert(x.formationData.units).insert(new Element('br'));
+				txt.insert(x.formationData.units);
+//				txt.insert(new Element('br'));
 			}
 		}
 		else if (x.hasClassName('orbatUpgrade')) {
 			var multiplier = upgradeMultiplier(x);
-			var joiner = (x.upgradeData.optional ? '' : '+') + (multiplier > 1 ? multiplier + 'x&nbsp;' : '');
-			txt.insert(joiner + x.upgradeData.label);
-			txt.insert(new Element('br'));	
+			var multiplierJoin = ((multiplier < 2) || isNaN(parseInt(x.upgradeData.label[0]))) ? '&nbsp;' : 'x';
+			var prefix = (multiplier > 1 ? multiplier + multiplierJoin : '');
+			var joiner = txt.innerHTML.endsWith('>') ? '' : ',&nbsp;';
+			txt.insert(joiner + prefix + x.upgradeData.label);
 		}		
 //		else if (x == $('formationDivider')) {
 //			txt.insert(new Element('br')).insert('-----');
