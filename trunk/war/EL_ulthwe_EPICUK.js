@@ -66,7 +66,7 @@ var individualList = {id:509, label:'INDIVIDUALS', options:[
 // WARHOSTS
 var warhostList =	{id:513, label:'WARHOSTS', options:[
 	{id:510, label:'Black Guardian Warhost', pts:175, restricting:true, upgrades:[seers, guardians, supportweapon, wraithlords, wraithguard]},
-	{id:511, label:'Mounted Black Guardian Warhost', pts:375, restricting:true, units:'4 Waveserpents', upgrades:[seers, guardians]}
+	{id:511, label:'Black Guardian Warhost (Mounted)', pts:375, restricting:true, units:'4 Waveserpents', upgrades:[seers, guardians]}
 ]};
 
 // ALLIES

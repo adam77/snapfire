@@ -70,7 +70,7 @@ var warhostList =	{id:513, label:'WARHOSTS', options:[
 	{id:510, label:'Spirit Host', 				pts:350, restricting:true, units:'6 Wraithguard',	upgrades:[seers, wraithUpgrades]},
 //	{id:513, label:'Mounted Spirit Host', 		pts:650, restricting:true, units:'6 Wraithguard, 6 Wave Serpents', upgrades:[seers]},
 	{id:511, label:'Guardian Warhost',		 	pts:150, units:'Farseer, 4 Guardians, 3 Heavy Weapon Platforms',	upgrades:[supportweapon, wraithguard, wraithlords]},
-	{id:512, label:'Mounted Guardian Warhost',	pts:350, units:'Farseer, 4 Guardians, 3 Heavy Weapon Platforms, 4 Wave Serpents', upgrades:[]}
+	{id:512, label:'Guardian Warhost (Mounted)',	pts:350, units:'Farseer, 4 Guardians, 3 Heavy Weapon Platforms, 4 Wave Serpents', upgrades:[]}
 ]};
 
 // ALLIES
