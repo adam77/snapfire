@@ -41,6 +41,11 @@ var wraithlords =	{id:45, label:'3 Wraithlords',				pts:175, 	upto:1};
 var spiritstones = 	{id:46, label:'Spirit Stones',			pts:25,		upto:1};
 var spiritwaveserpent =	{id:51, label:'6 Wave Serpents', 			pts:300,  upto:1};
 
+var wraithUpgrades = {id:52, label:'Upgrade', upto:1, options:[
+	{id:53, label:'3 Wraithlords',	pts:175, optional:true},
+	{id:54, label:'6 Wave Serpents', pts:300, optional:true}
+]};
+
 // TROUPES (3 per warhost)
 var troupeList = 	{id:506, label:'TROUPES', options:[
 	{id:500, label:'Ranger Troupe',				pts:0, 		displayPts:100, upgrades:[ranger], restricted:true},
@@ -62,10 +67,10 @@ var individualList = {id:509, label:'INDIVIDUALS', options:[
 
 // WARHOSTS
 var warhostList =	{id:513, label:'WARHOSTS', options:[
-	{id:510, label:'Spirit host', 				pts:350, restricting:true, units:'6 Wraithguard',	upgrades:[seers, wraithlords]},
-	{id:513, label:'Spirit host (Wave Serpents)', 		pts:650, restricting:true, units:'6 Wraithguard, 6 Wave Serpents', upgrades:[seers]},
-	{id:511, label:'Guardian Warhost',		 	pts:150, restricting:true, units:'Farseer, 4 Guardians, 3 Heavy Weapon Platforms',	upgrades:[supportweapon, wraithguard, wraithlords]},
-	{id:512, label:'Guardian Warhost (Wave Serpents)',	pts:350, restricting:true, units:'Farseer, 4 Guardians, 3 Heavy Weapon Platforms, 4 Wave Serpents', upgrades:[]}
+	{id:510, label:'Spirit Host', 				pts:350, restricting:true, units:'6 Wraithguard',	upgrades:[seers, wraithUpgrades]},
+//	{id:513, label:'Mounted Spirit Host', 		pts:650, restricting:true, units:'6 Wraithguard, 6 Wave Serpents', upgrades:[seers]},
+	{id:511, label:'Guardian Warhost',		 	pts:150, units:'Farseer, 4 Guardians, 3 Heavy Weapon Platforms',	upgrades:[supportweapon, wraithguard, wraithlords]},
+	{id:512, label:'Mounted Guardian Warhost',	pts:350, units:'Farseer, 4 Guardians, 3 Heavy Weapon Platforms, 4 Wave Serpents', upgrades:[]}
 ]};
 
 // ALLIES
@@ -83,9 +88,13 @@ var allyList = 		{id:523, label:'SPACESHIPS, AIRCRAFT &amp; TITANS', options:[
 
 // DETAILS
 var listData = {
-	id:'Iyanden Craftworld', version:'Epic-UK v20101230) <br> (NOTE: Full Iyanden army restrictions are not enforced. Check with the codex',
+	id:'Iyanden Craftworld', version:'Epic-UK v20110110',
 	sublists:[individualList, warhostList, troupeList, allyList],
-	restriction:{limit:2, restricting:'Warhost', restricted:'Troupes'}};
+	restriction:{limit:2, restricting:'Spirit Host', restricted:'Troupes'},
+	notes:[' Total number of Aspect Troupes AND Guardian Hosts may not exceed the number of Spirit Hosts selected.',
+			' Total number of Ranger Troupes may not exceed the number of Spirit Hosts selected.',
+			' Total number of Windrider Troupes may not exceed the number of Spirit Hosts selected.']
+};
 
 // CALLBACK
 listLoaded();
