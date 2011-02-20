@@ -84,9 +84,9 @@ var individualList = {id:509, label:'INDIVIDUALS', options:[
 // WARHOSTS
 var warhostList =	{id:514, label:'WARHOSTS', options:[
 	{id:510, label:'Guardian Warhost',		 			pts:150, restricting:true,	upgrades:[farseer,guardians,supportweapon, wraithguard, wraithlords]},
-	{id:511, label:'Guardian Warhost (Wave Serpents)',	pts:350, restricting:true,	units:'4 Wave Serpents',	upgrades:[farseer,guardians]},
+	{id:511, label:'Guardian Warhost (Mounted)',	pts:350, restricting:true,	units:'4 Wave Serpents',	upgrades:[farseer,guardians]},
 	{id:512, label:'Black Guardian Warhost',		 			pts:200, restricting:true,	upgrades:[blackfarseer,blackguardians,supportweapon, warwalkers]},
-	{id:513, label:'Black Guardian Warhost (Wave Serpents)',	pts:400, restricting:true,	upgrades:[blackfarseer,blackguardians,waveserpents,blackjetbikes]}
+	{id:513, label:'Black Guardian Warhost (Mounted)',	pts:400, restricting:true,	upgrades:[blackfarseer,blackguardians,waveserpents,blackjetbikes]}
 ]};
 
 // ALLIES
