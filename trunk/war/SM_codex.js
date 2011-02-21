@@ -1,8 +1,4 @@
 // MANDATORY UNITS
-//var transport =			{id:10, label:'Transport', upto:1, options:[
-//	{id:11, label:'Rhinos',			pts:0, optional:true},
-//	{id:12, label:'Drop Pods',		pts:0, optional:true}
-//]};
 var transportTac =		{id:40, label:'Transport', upto:1, options:[
 	{id:41, label:'3 Rhinos',					pts:0, optional:true},
 	{id:42, label:'Razorback, 3 Rhinos',	pts:25, optional:true},
