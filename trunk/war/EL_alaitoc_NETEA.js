@@ -38,10 +38,8 @@ var engines =		{id:33, label:'Engines of Vaul', upto:3, minimum:1, options:[
 ]};
 
 // UPGRADES
-var exarchs =		{id:38, label:'Exarch', upto:1, options:[
-	{id:39, label:'Exarch', 	pts:25},
-	{id:40, label:'Autarch', 	pts:75, general:true}
-]};
+var exarchs =		{id:38, label:'Exarch', upto:1, pts:25};
+var autarch = 		{id:39, label:'Autarch', pts:75, 	general:true};
 var waveserpent =	{id:41, label:'Wave Serpent',	pts:50};
 var falcon =		{id:42, label:'Falcon',			pts:65};
 var supportweapon =	{id:43, label:'3x Support Weapon Platform',pts:50,	upto:1};
@@ -52,7 +50,7 @@ var wraithlords =	{id:45, label:'3x Wraithlord',	pts:175, upto:1};
 // TROUPES (3 per warhost)
 var troupeList = 	{id:506, label:'TROUPES', options:[
 	{id:500, label:'Pathfinder Troupe',					pts:0, 		displayPts:200, upgrades:[pathfinder], restricted:true},
-	{id:501, label:'Aspect Warrior Troupe', 			pts:225, restricted:true,	upgrades:[aspects, exarchs, waveserpent, falcon]},
+	{id:501, label:'Aspect Warrior Troupe', 			pts:225, restricted:true,	upgrades:[aspects, exarchs, autarch, waveserpent, falcon]},
 	{id:502, label:'War Walker Troupe',				pts:50, 		displayPts:150, upgrades:[warwalker], restricted:true},
 	{id:503, label:'Windrider Troupe',				pts:200, 	upgrades:[bikes], restricted:true},
 	{id:504, label:'Swords of Vaul Troupe',			pts:0, 	 	displayPts:250, upgrades:[falcons], restricted:true},
@@ -70,7 +68,7 @@ var individualList = {id:509, label:'INDIVIDUALS', options:[
 var warhostList =	{id:513, label:'WARHOSTS', options:[
 	{id:510, label:'Alaitoc Ranger Warhost', 			pts:200, restricting:true,	upgrades:[rangerhost]},
 	{id:511, label:'Guardian Warhost',		 			pts:150, restricting:true,	units:'Farseer',	upgrades:[guardians,supportweapon, wraithguard, wraithlords]},
-	{id:512, label:'Guardian Warhost (Mounted)',		pts:350, restricting:true,	units:'Farseer, 4 Wave Serpents',	upgrades:[guardians]}
+	{id:512, label:'Guardian Warhost (Wave Serpents)',	pts:350, restricting:true,	units:'Farseer, 4 Wave Serpents',	upgrades:[guardians]}
 ]};
 
 // ALLIES
