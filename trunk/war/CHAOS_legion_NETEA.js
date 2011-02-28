@@ -51,7 +51,7 @@ var elite =	{id:502, label:'ELITE', options:[
 ]};
 
 var support =	{id:506, label:'SUPPORT', options:[
-	{id:507, label:'Armoured Company',		restricted2:true,	pts:0, displayPts:200, upgrades:[faction,armour,defiler]},
+	{id:507, label:'Armoured Company',		restricted2:true,	pts:0, displayPts:200, upgrades:[faction,armour,defiler,vindi]},
 	{id:508, label:'Bike Company',			restricted2:true,	pts:300, units:'8 Chaos Space Marines Bikes', upgrades:[faction,lords,icon, pact]},
 	{id:509, label:'Defiler Assault Pack',	restricted2:true,	pts:275, units:'4 Defilers', upgrades:[faction]},
 	{id:510, label:'Raptor Cult', 			restricted2:true,	pts:35, displayPts:175, upgrades:[faction,lords,raptor,pact]}
