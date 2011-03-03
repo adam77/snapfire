@@ -43,9 +43,9 @@ var commander =			{id:37, label:'Cmdr', upto:1, options:[
 	{id:39, label:'Chaplain', 			pts:50},
 	{id:40, label:'Librarian', 			pts:50}
 ]};
-var dreadnought = 		{id:41, label:'Dreadnought', 				pts:50, upto:2};
+var dreadnought = 	{id:41, label:'Dreadnought', 			pts:50, upto:2};
 var hunter = 			{id:42, label:'Hunter', 				pts:75, upto:1};
-var landRaiders = 		{id:43, label:'4 Land Raiders', 			pts:350};
+var landRaiders = 	{id:43, label:'4 Land Raiders', 		pts:350, upto:1};
 var razorbacks =		{id:44, label:'2 Razorbacks (replaces 1 Rhino)',	pts:50};
 var armour =			{id:45, label:'Armour', upto:2, options:[
 	{id:46, label:'Predator Annihilator',						pts:75},
@@ -56,7 +56,7 @@ var speeders =			{id:49, label:'LndSpdr', upto:1, options:[
 	{id:50, label:'3 Land Speeders',						pts:150},
 	{id:51, label:'3 Tornadoes', 							pts:150}
 ]};
-var typhoon =			{id:52, label:'Typhoon',				pts:50};
+var typhoon =			{id:52, label:'Typhoon',				pts:50, upto:1};
 
 
 // SUPPORT (up to 2 per company)
@@ -67,7 +67,7 @@ var supportList =	{id:500, label:'SUPPORT FORMATIONS', options:[
 	{id:507, label:'Super-Heavy Tank Platoon', 			pts:200, upgrades:[superP], restricted:true},
 	{id:509, label:'Flak Battery',					pts:150, upgrades:[], restricted:true, units:'3 Hydra'},
 	{id:510, label:'Vulture Squadron',				pts:300, upgrades:[], restricted:true, units:'4 Vultures'},
-	{id:511, label:'Space Marine Terminator Detachment',		pts:325, upgrades:[commander, landRaiders, dreadnought], restricted:true, units:'4 Terminator', upto:1},
+	{id:511, label:'Space Marine Terminator Detachment',		pts:300, upgrades:[commander, landRaiders, dreadnought], restricted:true, units:'4 Terminator', upto:1},
 	{id:512, label:'Space Marine Tactical Detachment',		pts:275, upgrades:[commander, razorbacks, dreadnought, hunter, transport], restricted:true, units:'6 Tactical'},
 	{id:513, label:'Space Marine Assault Detachment', 		pts:150, upgrades:[commander, speeders, typhoon], restricted:true, units:'4 Assault'},
 	{id:514, label:'Space Marine Devastator Detachment',		pts:225, upgrades:[commander, razorbacks, dreadnought, hunter, transport], restricted:true, units:'4 Devastator'},
@@ -78,16 +78,16 @@ var supportList =	{id:500, label:'SUPPORT FORMATIONS', options:[
 // COMPANIES
 var companyList =	{id:518, label:'COMPANIES', options:[
 	{id:519, label:'Lord General Militant Command HQ', 		pts:450, upgrades:[companyUpgrades], restricting:true, upto:1, units:'Supreme Commander, 6 Guard, 4 Stormtrooper, 6 Chimera'},
-	{id:520, label:'Armoured Fist Company', 			pts:400, upgrades:[companyUpgrades], restricting:true, units:'Commander, 12 Infantry, 7 Chimera'},
+	{id:520, label:'Armoured Fist Company', 			pts:425, upgrades:[companyUpgrades], restricting:true, units:'Commander, 12 Infantry, 7 Chimera'},
 	{id:521, label:'Imperial Crusade Tank Company', 		pts:650, upgrades:[companyUpgrades,lemanRuss], restricting:true},
-	{id:522, label:'Imperial Crusade Super-Heavy Tank Company', 	pts:500, upgrades:[companyUpgrades,superh], restricting:true}
+	{id:522, label:'Imperial Crusade Super-Heavy Tank Company', 	pts:525, upgrades:[companyUpgrades,superh], restricting:true}
 ]};
 
 // NAVY
 var navyList =			{id:524, label:'IMPERIAL NAVY', options:[
 	{id:525, label:'Orbital Support',				pts:150, upgrades:[spacecraft], restricted:true, upto:1},
-	{id:526, label:'Thunderbolt Squadron',				pts:250, upgrades:[], limited:true, units:'3 Thunderbolt fighters'},
-	{id:527, label:'Marauder Squadron',				pts:300, upgrades:[], limited:true, units:'2 Marauder bombers'}
+	{id:526, label:'Thunderbolt Squadron',			pts:225, upgrades:[], limited:true, units:'3 Thunderbolt fighters'},
+	{id:527, label:'Marauder Squadron',				pts:275, upgrades:[], limited:true, units:'2 Marauder bombers'}
 ]};
 
 // TITANS
@@ -100,7 +100,7 @@ var titanList = 		{id:528, label:'TITAN LEGIONS', options:[
 
 // DETAILS
 var listData = {
-	id:'Saranes Expanse Imperial Crusade', version:'EPIC Army Competition - Kevin =Chroma= Petker',
+	id:'Saranes Expanse Imperial Crusade', version:'NetEA Army Book *UNDER DEVELOPMENT*',
 	sublists:[companyList, supportList, navyList, titanList],
 	restriction:{limit:2, restricting:'Company', restricted:'Support Formations'}};
 
