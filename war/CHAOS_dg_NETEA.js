@@ -113,7 +113,7 @@ var navyList = {
 // DETAILS
 var listData = {
   id:'Death Guard', version:'v2.3',
-  sublists:[retinue, infSupport, vehSupport, navyList],
+  sublists:[retinue, infSupport, vehSupport, pool, navyList],
   restriction:{limit:1, restricting:'Retinue', restricted:'Infantry Support'},
   restriction2:{limit:1, restricting:'Retinue', restricted:'Vehicle Support'}
 };
