@@ -5,6 +5,7 @@
 	<link rel="icon" type="image/png" href="./favicon.ico">
 	<link rel="stylesheet" type="text/css" href="armyforge.css">
 	<title>Armyforge - EA Army Lists</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"></script>
 	<style>	
 #main ul li {
 	display:inline;
@@ -28,24 +29,16 @@ ul li a {
 </head>
 <body>
 	<div id="main">
-		<ul style="padding-left:0;margin-top:12em;margin-bottom:10em;">
-			<li><a href="./indexGW.html">Official</a></li>
-			<li><a href="./indexNETEA.html">NetEA</a></li>
-			<li><a href="./indexEPICUK.html">EpicUK</a></li>
-			<li><a style="border-right:none;" href="./indexFERC.html">FERC</a></li>
+		<ul style="padding-left:0;margin-top:14em;margin-bottom:4em;">
+			<li id="gw"><a href="./indexGW.html">Official</a></li>
+			<li id="netea"><a href="./indexNETEA.html">NetEA</a></li>
+			<li id="epicuk"><a href="./indexEPICUK.html">EpicUK</a></li>
+			<li id="ferc"><a style="border-right:none;" href="./indexFERC.html">FERC</a></li>
 		</ul>
-<!--
-		<table id="menu">
-			<tr>
-				<td><a class="xx" href="./indexGW.html"><div class="but">Official</div></a></td>
-				<td><a class="xx" href="./indexNETEA.html"><div class="but">NetEA</div></a></td>
-			</tr>
-			<tr>
-				<td><a class="xx" href="./indexEPICUK.html"><div class="but">EpicUK</div></a></td>
-				<td><a class="xx" href="./indexFERC.html"><div class="but">FERC</div></a></td>
-			</tr>
-		</table>
--->
+		<p id="descriptions" style="color:white;font-family: Helvetica, Arial, sans-serif;">
+			&nbsp;<br>&nbsp;
+		</p>
+
 		<p id="info">
 			Check out the discussion on	<a href="http://www.tacticalwargames.net/taccmd/viewtopic.php?f=4&amp;t=18623">Tactical Command</a> for comments, feedback and errors.
 			<br>
@@ -65,6 +58,24 @@ ul li a {
 			 -->
 		</p>
 	</div>
+<script type="text/javascript">
+ $('gw').on('mouseover', function() { $('descriptions').update(
+		'Official lists published by GW <br>(start here if you\'re new to EA)'
+	);});
+ $('gw').on('mouseout', function() { $('descriptions').update('&nbsp;<br>&nbsp;'); });
+ $('netea').on('mouseover', function() { $('descriptions').update(
+		'Lists developed by NetEA community<br>(find them at the TacticalCommand forums)'
+	);});
+ $('netea').on('mouseout', function() { $('descriptions').update('&nbsp;<br>&nbsp;'); });
+ $('epicuk').on('mouseover', function() { $('descriptions').update(
+		'EpicUK\'s lists for the UK tournament scene<br>&nbsp;'
+	);});
+ $('epicuk').on('mouseout', function() { $('descriptions').update('&nbsp;<br>&nbsp;'); });
+ $('ferc').on('mouseover', function() { $('descriptions').update(
+		'Lists developed by the French Epic community<br>&nbsp;'
+	);});
+ $('ferc').on('mouseout', function() { $('descriptions').update('&nbsp;<br>&nbsp;'); });
+</script>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
