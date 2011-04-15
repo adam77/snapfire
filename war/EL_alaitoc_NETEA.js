@@ -33,8 +33,7 @@ var falcons =		{id:29, label:'Falcons', upto:6, minimum:5, options:[
 var engines =		{id:33, label:'Engines of Vaul', upto:3, minimum:1, options:[
 	{id:34, label:'Scorpion',		pts:250, optional:true},
 	{id:35, label:'Cobra',			pts:250, optional:true},
-	{id:36, label:'Storm Serpent',	pts:250, optional:true},
-	{id:37, label:'Void Spinner',	pts:250, optional:true}
+	{id:36, label:'Storm Serpent',	pts:250, optional:true}
 ]};
 
 // UPGRADES
@@ -43,8 +42,11 @@ var autarch = 		{id:39, label:'Autarch', pts:75, 	general:true};
 var waveserpent =	{id:41, label:'Wave Serpent',	pts:50};
 var falcon =		{id:42, label:'Falcon',			pts:65};
 var supportweapon =	{id:43, label:'3x Support Weapon Platform',pts:50,	upto:1};
-var wraithguard =	{id:44, label:'Wraithguard',	pts:50,	upto:3};
-var wraithlords =	{id:45, label:'3x Wraithlord',	pts:175, upto:1};
+var wraithguard =	{id:44, label:'Wraithguard', upto:1, minimum:0, options:[
+	{id:45, label:'2x Wraithguard', pts: 100, optional:true},
+	{id:46, label:'3x Wraithguard', pts: 150, optional:true}	
+]};
+var wraithlords =	{id:47, label:'3x Wraithlord',	pts:175, upto:1};
 
 
 // TROUPES (3 per warhost)
