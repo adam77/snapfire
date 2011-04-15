@@ -58,10 +58,13 @@ var exarchs =		{id:52, label:'Exarch', upto:1, pts:25};
 var waveserpent =		{id:53, label:'Wave Serpent',	pts:50};
 var falcon =		{id:54, label:'Falcon',	pts:65};
 var supportweapon =	{id:55, label:'3 Support Weapon Platforms', pts:50, upto:1};
-var wraithguard =	{id:56, label:'Wraithguard', pts:50, upto:3};
-var wraithlords =	{id:57, label:'3 Wraithlords', pts:175, upto:1};
-var warwalkers = {id:58, label:'3 War Walkers', pts:100, upto:1};
-var spearofkhaine= {id:59, label:'Spear of Khaine', pts:25, upto:1};
+var wraithguard =	{id:56, label:'Wraithguard', upto:1, minimum:0, options:[
+	{id:57, label:'2x Wraithguard', pts: 100, optional:true},
+	{id:58, label:'3x Wraithguard', pts: 150, optional:true}	
+]};
+var wraithlords =	{id:59, label:'3 Wraithlords', pts:175, upto:1};
+var warwalkers = {id:60, label:'3 War Walkers', pts:100, upto:1};
+var spearofkhaine= {id:61, label:'Spear of Khaine', pts:25, upto:1};
 
 
 
