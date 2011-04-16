@@ -104,7 +104,8 @@ var titanList = 		{id:525, label:'TITAN LEGIONS & NAVY', options:[
 var listData = {
 	id:'Minervan Tank Legion', version:'NetEA Raiders v2.0',
 	sublists:[companyList, supportList, titanList],
-	restriction:{limit:2, restricting:'Company', restricted:'Support Formations'}};
+	restriction:{limit:2, restricting:'Company', restricted:'Support Formations'},
+	notes:['Tank Company may include a maximum of 2 rare russ variants (marked \'*\').']};
 
 // CALLBACK
 listLoaded();

@@ -41,12 +41,12 @@ var exarchs =		{id:38, label:'Exarch', upto:1, pts:25};
 var autarch = 		{id:39, label:'Autarch', pts:75, 	general:true};
 var waveserpent =	{id:41, label:'Wave Serpent',	pts:50};
 var falcon =		{id:42, label:'Falcon',			pts:65};
-var supportweapon =	{id:43, label:'3x Support Weapon Platform',pts:50,	upto:1};
+var supportweapon =	{id:43, label:'3 Support Weapon Platforms',pts:50,	upto:1};
 var wraithguard =	{id:44, label:'Wraithguard', upto:1, minimum:0, options:[
-	{id:45, label:'2x Wraithguard', pts: 100, optional:true},
-	{id:46, label:'3x Wraithguard', pts: 150, optional:true}	
+	{id:45, label:'2 Wraithguard', pts: 100, optional:true},
+	{id:46, label:'3 Wraithguard', pts: 150, optional:true}	
 ]};
-var wraithlords =	{id:47, label:'3x Wraithlord',	pts:175, upto:1};
+var wraithlords =	{id:47, label:'3 Wraithlord',	pts:175, upto:1};
 
 
 // TROUPES (3 per warhost)

@@ -10,7 +10,7 @@ var aspects =		{id:14, label:'Aspect Warrior', upto:6, minimum:6, options:[
 	{id:21, label:'Swooping Hawk',		pts:0,	optional:true},
 	{id:22, label:'Shining Spear',		pts:0,	optional:true}
 ]};
-var guardians =		{id:23, label:'Guardians +  3x Heavy Weapon Platforms',	pts:0, optional:true};
+var guardians =		{id:23, label:'Guardians, 3 Heavy Weapon Platforms',	pts:0, optional:true};
 var jetbikers = 	{id:26, label:'Bikes',	upto:6, minimum:6, options:[
 	{id:27, label:'Jetbike',			pts:0,	optional:true},
 	{id:28, label:'Vyper', 				pts:0,	optional:true}
@@ -29,7 +29,7 @@ var engines =		{id:33, label:'Engines of Vaul', upto:3, minimum:1, options:[
 var exarchs =		{id:38, label:'Exarch', upto:1, options:[
 	{id:39, label:'Exarch', 	pts:25}
 ]};
-var seers = 		{id:60, label:'Spiritseer + 6 Wraithguard', pts:100, upto:1, minimum:1, options:[
+var seers = 		{id:60, label:'Spiritseer, 6 Wraithguard', pts:100, upto:1, minimum:1, options:[
 	{id:61, label:'Spiritseer', pts:0, optional:true},
 	{id:62, label:'Wraithseer', pts:100, optional:true, general:true}
 ]};

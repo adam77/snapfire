@@ -39,7 +39,7 @@ var individualList = {id:600, label:'INDIVIDUALS', options:[
 
 // PHALANX
 var phalanxList = {id:700, label:'NECRON PHALANXES', options:[
-	{id:701, label:'Infantry Phalanx', restricting:true, units:'Necron Lord & 6 Warriors', upgrades:[spyders, pariahs, immortals, wraiths], pts:225}
+	{id:701, label:'Infantry Phalanx', restricting:true, units:'Necron Lord, 6 Warriors', upgrades:[spyders, pariahs, immortals, wraiths], pts:225}
 ]};
 
 // HARVESTERS
