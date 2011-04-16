@@ -40,10 +40,10 @@ var waveserpent =	{id:41, label:'Wave Serpent',	pts:50};
 var falcon =		{id:42, label:'Falcon',			pts:65};
 var supportweapon =	{id:43, label:'3 Support Weapon Platforms',pts:50,	upto:1};
 var wraithguard =	{id:44, label:'Wraithguard', upto:1, minimum:0, options:[
-	{id:45, label:'2x Wraithguard', pts: 100, optional:true},
-	{id:46, label:'3x Wraithguard', pts: 150, optional:true}	
+	{id:45, label:'2 Wraithguards', pts: 100, optional:true},
+	{id:46, label:'3 Wraithguards', pts: 150, optional:true}	
 ]};
-var wraithlords =	{id:47, label:'Wraithlords',	pts:175, upto:1};
+var wraithlords =	{id:47, label:'3 Wraithlords',	pts:175, upto:1};
 
 // TROUPES (3 per warhost)
 var troupeList = 	{id:506, label:'TROUPES', options:[
