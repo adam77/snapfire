@@ -77,7 +77,7 @@ tr.orbatUpgrade > td {
 	padding-bottom:0;
 	color:#444444;
 }
-tr.optionalUnit > td {
+tr.mandatory > td {
 	color:black;
 }
 .orbat tbody {

@@ -4,49 +4,49 @@
 	"notes":[],
 	"upgrades":[
 		{"id":40, "name":"Transport", "upto":1, "options":[
-			{"id":41, "name":"3 Rhinos",					"pts":0, "optional":true},
-			{"id":42, "name":"Razorback, 3 Rhinos",	"pts":25, "optional":true},
-			{"id":43, "name":"2 Razorbacks, 2 Rhinos","pts":50, "optional":true},
-			{"id":44, "name":"3 Razorbacks, 2 Rhinos","pts":75, "optional":true},
-			{"id":45, "name":"4 Razorbacks, Rhino",	"pts":100, "optional":true},
-			{"id":46, "name":"5 Razorbacks, Rhino",	"pts":125, "optional":true},
-			{"id":47, "name":"6 Razorbacks",				"pts":150, "optional":true},
-			{"id":48, "name":"Drop Pods",					"pts":0, "optional":true}
+			{"id":41, "name":"3 Rhinos",					"pts":0},
+			{"id":42, "name":"Razorback, 3 Rhinos",	"pts":25},
+			{"id":43, "name":"2 Razorbacks, 2 Rhinos","pts":50},
+			{"id":44, "name":"3 Razorbacks, 2 Rhinos","pts":75},
+			{"id":45, "name":"4 Razorbacks, Rhino",	"pts":100},
+			{"id":46, "name":"5 Razorbacks, Rhino",	"pts":125},
+			{"id":47, "name":"6 Razorbacks",				"pts":150},
+			{"id":48, "name":"Drop Pods",					"pts":0}
 		]},
 		{"id":50, "name":"Transport", "upto":1, "options":[
-			{"id":51, "name":"2 Rhinos",					"pts":0, "optional":true},
-			{"id":52, "name":"Razorback, 2 Rhinos",	"pts":25, "optional":true},
-			{"id":53, "name":"2 Razorbacks, Rhino",	"pts":50, "optional":true},
-			{"id":54, "name":"3 Razorbacks, Rhino",	"pts":75, "optional":true},
-			{"id":55, "name":"4 Razorbacks",				"pts":100, "optional":true},
-			{"id":56, "name":"Drop Pods",					"pts":0, "optional":true}
+			{"id":51, "name":"2 Rhinos",					"pts":0},
+			{"id":52, "name":"Razorback, 2 Rhinos",	"pts":25},
+			{"id":53, "name":"2 Razorbacks, Rhino",	"pts":50},
+			{"id":54, "name":"3 Razorbacks, Rhino",	"pts":75},
+			{"id":55, "name":"4 Razorbacks",				"pts":100},
+			{"id":56, "name":"Drop Pods",					"pts":0}
 		]},
 		{"id":60, "name":"Transport", "upto":1, "options":[
-			{"id":61, "name":"2 Rhinos",					"pts":0, "optional":true},
-			{"id":62, "name":"Razorback, 2 Rhinos",	"pts":25, "optional":true},
-			{"id":63, "name":"2 Razorbacks, Rhino",	"pts":50, "optional":true},
-			{"id":64, "name":"3 Razorbacks, Rhino",	"pts":75, "optional":true},
-			{"id":65, "name":"4 Razorbacks",				"pts":100, "optional":true},
-			{"id":66, "name":"Land Raider, Rhino",		"pts":100, "optional":true},
-			{"id":67, "name":"Land Raider, Razorback, Rhino",	"pts":125, "optional":true},		
-			{"id":68, "name":"Land Raider, 2 Razorbacks",		"pts":150, "optional":true},		
-			{"id":69, "name":"2 Land Raiders",			"pts":200, "optional":true},
-			{"id":70, "name":"3 Land Raiders",			"pts":300, "optional":true},
-			{"id":71, "name":"4 Land Raiders",			"pts":400, "optional":true},
-			{"id":72, "name":"Drop Pods",					"pts":0, "optional":true}
+			{"id":61, "name":"2 Rhinos",					"pts":0},
+			{"id":62, "name":"Razorback, 2 Rhinos",	"pts":25},
+			{"id":63, "name":"2 Razorbacks, Rhino",	"pts":50},
+			{"id":64, "name":"3 Razorbacks, Rhino",	"pts":75},
+			{"id":65, "name":"4 Razorbacks",				"pts":100},
+			{"id":66, "name":"Land Raider, Rhino",		"pts":100},
+			{"id":67, "name":"Land Raider, Razorback, Rhino",	"pts":125},		
+			{"id":68, "name":"Land Raider, 2 Razorbacks",		"pts":150},		
+			{"id":69, "name":"2 Land Raiders",			"pts":200},
+			{"id":70, "name":"3 Land Raiders",			"pts":300},
+			{"id":71, "name":"4 Land Raiders",			"pts":400},
+			{"id":72, "name":"Drop Pods",					"pts":0}
 		]},
 		{"id":13, "name":"Bikes",	"upto":5, "minimum":5, "options":[
-			{"id":15, "name":"Bike Unit",		"pts":0, "optional":true},
-			{"id":14, "name":"Attack Bike", 	"pts":0, "optional":true}
+			{"id":15, "name":"Bike Unit",		"pts":0},
+			{"id":14, "name":"Attack Bike", 	"pts":0}
 		]},
 		{"id":16, "name":"Speeders", "upto":5, "minimum":5, "options":[
-			{"id":17, "name":"Land Speeder",	"pts":0, "optional":true},
-			{"id":18, "name":"Tornado",		"pts":10, "optional":true},
-			{"id":19, "name":"Typhoon",		"pts":25, "optional":true}
+			{"id":17, "name":"Land Speeder",	"pts":0},
+			{"id":18, "name":"Tornado",		"pts":10},
+			{"id":19, "name":"Typhoon",		"pts":25}
 		]},
 		{"id":20, "name":"Predators", "upto":4, "minimum":4, "options":[
-			{"id":21, "name":"Annihilator",	"pts":0, "optional":true},
-			{"id":22, "name":"Destructor",		"pts":0, "optional":true}
+			{"id":21, "name":"Annihilator",	"pts":0},
+			{"id":22, "name":"Destructor",		"pts":0}
 		]},
 		{"id":23, "name":"Cmdr", "upto":1, "options":[
 			{"id":24, "name":"Captain",			"pts":50},
