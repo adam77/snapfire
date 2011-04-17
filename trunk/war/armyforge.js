@@ -375,7 +375,7 @@ var Force = {
 
 		if (!existingUpgrade) {
 			var newCell = new Element('td').update(upgradeData.name);
-			var clazz = 'interactive orbatUpgrade ' + formationId + (upgradeData.optional ? ' optionalUnit' : '');
+			var clazz = 'interactive orbatUpgrade ' + formationId + (ArmyList.mandatoryUpgrade(upgradeData) ? ' mandatory':'');
 			var newRow = new Element('tr', {'class':clazz}).update(
 							newCell 
 						 ).insert(
@@ -386,10 +386,10 @@ var Force = {
 		
 			// insert new row after last upgrade
 			if ($$('.' + formationId).size() > 0) {
-				// place new optionals after optionals but before other upgrades
-				if (upgradeData.optional) {
+				// place new replaceables after replaceables but before other upgrades
+				if (ArmyList.replaceable(upgradeData)) {
 					var firstUpgrade = $$('.' + formationId).find(function(x) {
-						return !x.upgradeData.optional;				
+						return !ArmyList.replaceable(x.upgradeData);				
 					});
 					if (firstUpgrade) {
 						firstUpgrade.insert({before:newRow});
@@ -410,7 +410,7 @@ var Force = {
 			// delete event
 			newRow.observe('click', Force.removeUpgrade.bind(this, newRow, formationId));	
 			// dropdown
-			if (upgradeData.optional && upgradeData.group && upgradeData.group.options.size() > 1) {
+			if (ArmyList.replaceable(upgradeData) && upgradeData.group && upgradeData.group.options.size() > 1) {
 				var dropDown = ArmyforgeUI.createOptionals(upgradeData.group.options.without(upgradeData), formationId, newRow);			
 				newCell.insert(dropDown);
 				dropDown.hide();
@@ -650,7 +650,7 @@ var Force = {
 		var generalChosen = 0 < $$('.orbatUpgrade').filter(function(x) {return x.upgradeData.general;}).size();
 
 		$$('.orbatUpgrade').each(function(x) {
-			if (x.upgradeData.optional && x.upgradeData.group && x.upgradeData.group.options.size() > 1) {
+			if (ArmyList.replaceable(x.upgradeData) && x.upgradeData.group && x.upgradeData.group.options.size() > 1) {
 				var optionalOptions = x.down().down().down().down().childElements().slice(1); // remove header row
 			
 				optionalOptions.each(function(option) {
@@ -793,6 +793,12 @@ var ArmyList = {
 			}
 		});
 		return upgrades;
+	},
+	replaceable:function(upgrade) {
+		return (upgrade.group && upgrade.group.minimum);
+	},
+	mandatoryUpgrade:function(upgrade) {
+		return (upgrade.group && upgrade.group.minimum) || upgrade.minimum;
 	}
 };
 
