@@ -1,19 +1,16 @@
-
-
-
-
-
-
-
-
-
-
-
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var ArmyforgeUI = {
 	formationIdCounter:0,
 	urlData:{},
 	initPage:function() {
+		// event listeners...
+		$('viewText').on('click', ArmyforgeUI.viewPlainText);
+		$('viewTable').on('click', ArmyforgeUI.viewTable);
+		$('viewImport').on('click', ArmyforgeUI.viewLink);
+		$('orbatTitle').on('click', ArmyforgeUI.toggleNameEditor);
+		$('viewJSON').on('click', ArmyforgeUI.viewJSON);
+
 		// parse url parameters...
 		ArmyforgeUI.urlData.baseURL = new String(window.location).split('?')[0];
 		var paramString = new String(window.location).split('?')[1];
@@ -39,15 +36,11 @@ var ArmyforgeUI = {
 	},
 	initUI:function() {		
 
+		// render name and options
 		$('orbatListName').update( ArmyforgeUI.renderListName());
-		$('viewText').on('click', ArmyforgeUI.viewPlainText);
-		$('viewTable').on('click', ArmyforgeUI.viewTable);
-		$('viewImport').on('click', ArmyforgeUI.viewLink);
-		$('orbatTitle').on('click', ArmyforgeUI.toggleNameEditor);
-		$('viewJSON').on('click', ArmyforgeUI.viewJSON);
-
 		ArmyList.data.sublists.each( ArmyforgeUI.createList );
 
+		// render force and mandatory units
 		if (ArmyforgeUI.urlData.force) {
 			Force.unpickle(ArmyforgeUI.urlData.force);
 		}
@@ -60,12 +53,13 @@ var ArmyforgeUI = {
 		// render notes
 		if (ArmyList.data.notes) {
 			var idx = 1;
-			ArmyList.notes.each(function(note) {			
+			ArmyList.data.notes.each(function(note) {			
 				$('notes').insert(new Element('sup').update(idx++));
 				$('notes').insert(note);
 				$('notes').insert(new Element('br'));
 			});
 		}
+
 		// show table
 		ArmyforgeUI.viewTable();		
 	},
@@ -177,8 +171,8 @@ var ArmyforgeUI = {
 	},
 	createList:function(list) {
 		var newTable = new Element('table').update(
-							new Element('tr').update(
-								new Element('th', {colspan:2}).update(list.name) ));
+								new Element('tr').update(
+									new Element('th', {colspan:2}).update(list.name) ));
 	
 		list.options.each(function(x) {
 			var listItem = new Element('tr', {'class':'interactive listItem even formationOption'}).update(
@@ -304,7 +298,9 @@ var ArmyforgeUI = {
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var Force = {
+	formations:{},
 	totalPoints:function() {
 		return parseInt($('totalPts').innerHTML);
 	},
@@ -728,6 +724,7 @@ var Force = {
 };
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var ArmyList = {
 	data:{},
 	allUpgrades:[],
@@ -746,20 +743,17 @@ var ArmyList = {
 			}
 		});
 		
-		// create a map id->formation
-		ArmyList.flattenFormations().each( function(formation) {
-			ArmyList.allFormations[formation.id] = formation;
-		});
 
-		// replace upgrade ids with upgrade objects
 		ArmyList.flattenFormations().each( function(formation) {
+			// create a map id->formation
+			ArmyList.allFormations[formation.id] = formation;
+	
+			// replace upgrade ids with upgrade objects
 			formation.upgrades = formation.upgrades.map(function(id) {
 				return ArmyList.allUpgrades[id];
 			 });
-		});
 
-		// initalise group<->option circular reference
-		ArmyList.flattenFormations().each( function(formation) {
+			// initalise group<->option circular reference
 			formation.upgrades.each(function(grp) {
 				if (grp.options) {
 					grp.options.each(function(opt) {
@@ -767,6 +761,16 @@ var ArmyList = {
 					});
 				}
 			});
+
+			// replace group ids with group objects
+			if (formation.group) {
+				formation.group = ArmyList.groupForId(formation.group);
+			}
+		});
+	},
+	groupForId:function(id) {
+		ArmyList.data.groups.find( function(group) {
+			return group.id == id; 
 		});
 	},
 	flattenFormations:function() {

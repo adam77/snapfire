@@ -1,14 +1,14 @@
 {
+	"id":"The Empire",
+	"version":"Official Warmaster Rulebook",
+	"by":"Iron Bloke",
 	"upgrades":[
-		{"id":1,	"name":"mount", "options":[
+		{"id":1,	"name":"mount", "upto":1, "options":[
 			{"id":2,	"name":"horse",	"pts":100},
 			{"id":3,	"name":"cart", "pts":50}
 		]},
 		{"id":4,	"name":"Hero", "pts":90}
 	],
-	"id":"The Empire",
-	"version":"Official Warmaster Rulebook",
-	"by":"Iron Bloke",
 	"sublists":[
 		{"name":"RAARRGH!", "options":[
 			{"id":500,	"name":"Harlbardiers", "pts":200, "units":"3 Harlbards", "upgrades":[1]}
