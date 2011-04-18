@@ -23,13 +23,12 @@ var ArmyforgeUI = {
 		new Ajax.Request(listFile, {
 			onSuccess: function(response) {
 				try {
-
 					var list = JSON.parse( response.responseText );
 					ArmyList.init(list);
 					ArmyforgeUI.initUI();
 				}
 				catch(exc) {
-					alert(exc);
+					alert("There was a problem loading the army list." + exc);
 				}
 			}
 		});	
@@ -45,7 +44,7 @@ var ArmyforgeUI = {
 			Force.unpickle(ArmyforgeUI.urlData.force);
 		}
 		else if (ArmyList.data.mandatoryFormations) {
-			list.data.mandatoryFormations.each(function(x) {
+			ArmyList.data.mandatoryFormations.each(function(x) {
 				var newRow = Force.addFormation(null, x);
 				newRow.stopObserving('click');
 			});
@@ -306,7 +305,7 @@ var Force = {
 	},
 	addFormation:function(event, formation, noDefaults) {
 		var formationId = 'formation' + ArmyforgeUI.formationIdCounter++;
-		var dropDown = ArmyforgeUI.createUpgrades(ArmyList.flattenUpgrades(formation), formationId);
+		var dropDown = ArmyforgeUI.createUpgrades(ArmyList.flattenUpgrades(formation), formationId);		
 		var labelCell = new Element('td').update(formation.name).insert( dropDown );
 		if (formation.units) {
 			labelCell.insert(
@@ -460,22 +459,22 @@ var Force = {
 	},
 	unpickle:function(pickled) {
 		try {
-			var doneName = false
-			var currentFormation = null
+			var doneName = false;
+			var currentFormation = null;
 			decodeURIComponent(pickled).split('~').each(function(x) {
 				if (!doneName) {
-					$('orbatName').update(x)
-					doneName = true
+					$('orbatName').update(x);
+					doneName = true;
 				}
 				else {
-					var id = parseInt(x.split('x')[0])
+					var id = parseInt(x.split('x')[0]);
 					if (id >= 500) {
-						currentFormation = Force.addFormation(null, ArmyList.allFormations[id], true).identify()
+						currentFormation = Force.addFormation(null, ArmyList.formationForId(id), true).identify();
 					}
 					else {
-						var count = parseInt(x.split('x')[1])
+						var count = parseInt(x.split('x')[1]);
 						for (var i=0;i<count;i++) {
-							Force.addUpgrade(null, currentFormation, ArmyList.allUpgrades[id])
+							Force.addUpgrade(null, currentFormation, ArmyList.upgradeForId(id));
 						}
 					}
 				}			
@@ -727,30 +726,14 @@ var Force = {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 var ArmyList = {
 	data:{},
-	allUpgrades:[],
-	allFormations:[],
 	init:function(input) {		
 
 		this.data = input;
-	
-		// create a map id->upgrade
-		input.upgrades.each( function(upgrade) {
-			ArmyList.allUpgrades[upgrade.id] = upgrade;
-			if (upgrade.options) {
-				upgrade.options.each( function(option){
-					ArmyList.allUpgrades[option.id] = option;
-				});
-			}
-		});
-		
-
-		ArmyList.flattenFormations().each( function(formation) {
-			// create a map id->formation
-			ArmyList.allFormations[formation.id] = formation;
-	
+			
+		ArmyList.allFormations().each( function(formation) {	
 			// replace upgrade ids with upgrade objects
 			formation.upgrades = formation.upgrades.map(function(id) {
-				return ArmyList.allUpgrades[id];
+				return ArmyList.upgradeForId(id);
 			 });
 
 			// initalise group<->option circular reference
@@ -773,10 +756,18 @@ var ArmyList = {
 			return group.id == id; 
 		});
 	},
-	flattenFormations:function() {
+	upgradeForId:function(id) {
+		return ArmyList.allUpgrades().find( function(x) {
+			return x.id == id; 
+		});
+	},
+	formationForId:function(id) {
+		return ArmyList.allFormations().find( function(x){ return x.id == id; });
+	},
+	allFormations:function() {
 		var all = ArmyList.data.sublists.map( function(x){ return x.options; } );
 		if (ArmyList.data.mandatoryFormations) {
-	      all.concat(ArmyList.data.mandatoryFormations);
+	      all = all.concat(ArmyList.data.mandatoryFormations);
 		}
 		return all.flatten();
 	},
@@ -793,6 +784,11 @@ var ArmyList = {
 			}
 		});
 		return upgrades;
+	},
+	allUpgrades:function() {
+		return ArmyList.data.upgrades.map( function(x) {
+			return x.options ? [x].concat(x.options) : x;
+		}).flatten();	
 	},
 	replaceable:function(upgrade) {
 		return (upgrade.group && upgrade.group.minimum);
