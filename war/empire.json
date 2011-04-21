@@ -4,11 +4,11 @@
 	"by":"Iron Bloke",
 	"notes":["Only 1 of each magic item allowed per army."],
 	"upgrades":[
-		{"id":1,	"name":"Skirmishers &#x25ac;", "pts":25, "upto":1},
-		{"id":2,	"name":"Griffon",	"pts":80, "upto":1},
-		{"id":3,	"name":"Mount", "upto":1, "options":[
-			{"id":4,	"name":"Griffon",	"pts":80},
-			{"id":5, "name":"War Altar",	"pts":15, "perArmy":1},
+		{"id":1,		"name":"Skirmishers &#x25ac;", "pts":25, "upto":1},
+		{"id":2,		"name":"Griffon",	"pts":80, "upto":1},
+		{"id":3,		"name":"Mount", "upto":1, "options":[
+			{"id":4,		"name":"Griffon",	"pts":80},
+			{"id":5, 	"name":"War Altar",	"pts":15, "perArmy":1},
 		]},
 		{"id":10,	"name":"Magic Item", "upto":1, "options":[
 			{"id":11,	"name":"The Battle Banner", "pts":50, "perArmy":1},
@@ -16,22 +16,22 @@
 			{"id":13,	"name":"The Banner of Fortitude", "pts":50, "perArmy":1},
 			{"id":14,	"name":"The Banner of Steadfastness", "pts":30, "perArmy":1},
 			{"id":15,	"name":"The Banner of Fortune", "pts":20, "perArmy":1},
-			{"id":16,	"name":"Sword of Destruction", "pts":10, "perArmy":1},
-			{"id":17,	"name":"Sword of Fate", "pts":5, "perArmy":1},
-			{"id":18,	"name":"Sword of Cleaving", "pts":10, "perArmy":1},
-			{"id":19,	"name":"Sword of Might", "pts":10, "perArmy":1}
+			{"id":16,	"name":"Sword of Destruction", "pts":10},
+			{"id":17,	"name":"Sword of Fate", "pts":5},
+			{"id":18,	"name":"Sword of Cleaving", "pts":10},
+			{"id":19,	"name":"Sword of Might", "pts":10}
 		]},
 		{"id":20,	"name":"Magic Item", "upto":1, "options":[
-			{"id":21,	"name":"Sword of Destruction", "pts":10, "perArmy":1},
-			{"id":22,	"name":"Sword of Fate", "pts":5, "perArmy":1},
-			{"id":23,	"name":"Sword of Cleaving", "pts":10, "perArmy":1},
-			{"id":24,	"name":"Sword of Might", "pts":10, "perArmy":1}
+			{"id":21,	"name":"Sword of Destruction", "pts":10},
+			{"id":22,	"name":"Sword of Fate", "pts":5},
+			{"id":23,	"name":"Sword of Cleaving", "pts":10},
+			{"id":24,	"name":"Sword of Might", "pts":10}
 		]},
 		{"id":30,	"name":"Magic Item", "upto":1, "options":[
-			{"id":31,	"name":"Sword of Destruction", "pts":10, "perArmy":1},
-			{"id":32,	"name":"Sword of Fate", "pts":5, "perArmy":1},
-			{"id":33,	"name":"Sword of Cleaving", "pts":10, "perArmy":1},
-			{"id":34,	"name":"Sword of Might", "pts":10, "perArmy":1},
+			{"id":31,	"name":"Sword of Destruction", "pts":10},
+			{"id":32,	"name":"Sword of Fate", "pts":5},
+			{"id":33,	"name":"Sword of Cleaving", "pts":10},
+			{"id":34,	"name":"Sword of Might", "pts":10},
 			{"id":35,	"name":"Ring of Magic", "pts":30, "perArmy":1},			
 			{"id":36,	"name":"Staff of Spellbinding", "pts":30, "perArmy":1},			
 			{"id":37,	"name":"Scroll of Dispelling", "pts":20, "perArmy":1},
@@ -39,14 +39,14 @@
 			{"id":39,	"name":"Rod of Repetition", "pts":10, "perArmy":1}
 		]},
 		{"id":40,	"name":"Magic Item", "upto":1, "options":[
-			{"id":41,	"name":"Sword of Destruction", "pts":10, "perArmy":1},
-			{"id":42,	"name":"Sword of Fate", "pts":5, "perArmy":1},
-			{"id":43,	"name":"Sword of Cleaving", "pts":10, "perArmy":1},
-			{"id":44,	"name":"Sword of Might", "pts":10, "perArmy":1},
-			{"id":45,	"name":"Crown of Command", "pts":100, "perArmy":1},
-			{"id":46,	"name":"Helm of Dominion", "pts":50, "perArmy":1},
-			{"id":47,	"name":"Orb of Majesty", "pts":30, "perArmy":1},
-			{"id":48,	"name":"Sceptre of Sovereignty", "pts":30, "perArmy":1}
+			{"id":41,	"name":"Sword of Destruction", "pts":10},
+			{"id":42,	"name":"Sword of Fate", "pts":5},
+			{"id":43,	"name":"Sword of Cleaving", "pts":10},
+			{"id":44,	"name":"Sword of Might", "pts":10},
+			{"id":45,	"name":"Crown of Command", "pts":100},
+			{"id":46,	"name":"Helm of Dominion", "pts":50},
+			{"id":47,	"name":"Orb of Majesty", "pts":30},
+			{"id":48,	"name":"Sceptre of Sovereignty", "pts":30}
 		]}
 	],
 	"sublists":[
@@ -72,6 +72,12 @@
 	],
 	"mandatoryFormations":[
 		{"id":511,	"name":"General &#x26ab;", "pts":125,	"upgrades":[2,40]}
+	],
+	"perArmyUpgradeGroups":[
+		{"upgrades":[16,21,31,41], "perArmy":1},
+		{"upgrades":[17,22,32,42], "perArmy":1},
+		{"upgrades":[18,23,33,43], "perArmy":1},
+		{"upgrades":[19,24,34,44], "perArmy":1}
 	]
 }
 
