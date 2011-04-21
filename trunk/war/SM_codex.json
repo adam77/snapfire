@@ -61,7 +61,7 @@
 		{"id":35, "name":"Vindicator",					"pts":75, "upto":2}
 	],
 	"sublists":[
-		{"id":516, "name":"DETACHMENTS", "options":[
+		{"name":"DETACHMENTS", "options":[
 			{"id":500, "name":"Assault Detachment", 		"pts":175, "units":"4 Assault units", "upgrades":[23, 35]},
 			{"id":501, "name":"Bike Detachment", 			"pts":200, "upgrades":[13, 23]},
 			{"id":502, "name":"Devastator Detachment",		"pts":250, "units":"4 Devastators", "upgrades":[23, 30, 31, 60]},
@@ -78,18 +78,18 @@
 			{"id":514, "name":"Vindicators",				"pts":300, "units":"4 Vindicators", "upgrades":[23, 31]},
 			{"id":515, "name":"Whirlwinds",				"pts":300, "units":"4 Whirlwinds", "upgrades":[23, 31]}
 		]},
-		{"id":519, "name":"IMPERIAL NAVY", "options":[
+		{"name":"IMPERIAL NAVY", "options":[
 			{"id":517, "name":"Thunderbolt Fighters",	"pts":150, "units":"2 Fighters", "upgrades":[], "limited":true},
 			{"id":518, "name":"Marauder Bombers",		"pts":300, "units":"2 Bombers", "upgrades":[], "limited":true}
 		]},
-		{"id":523, "name":"TITAN LEGIONS", "options":[
+		{"name":"TITAN LEGIONS", "options":[
 			{"id":520, "name":"Warlord Class Titan",	"pts":850, "upgrades":[], "limited":true},
 			{"id":521, "name":"Reaver Class Titan",	"pts":650, "upgrades":[], "limited":true},
 			{"id":522, "name":"Warhound Titan",		"pts":250, "upgrades":[], "limited":true}
 		]}
 	],
 	"groups":[
-		{"id":508, "name":"Spacecraft", "upto":1}
+		{"name":"Spacecraft", "upto":1}
 	]
 }
 
