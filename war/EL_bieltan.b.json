@@ -1,0 +1,86 @@
+{
+	"id":"Biel-Tan Craftworld",
+	"version":"EA Swordwind",
+	"by":"Iron Bloke",
+	"notes":["If Aspect Warriors are given transport, then you must take enough Wave Serpents and/or Falcons to transport all units in the formation."],
+	"sections":[
+		{"name":"INDIVIDUALS", "formations":[
+			{"id":507, "name":"Wraithgate",						"pts":50},
+			{"id":508, "name":"Avatar",							"pts":0}
+		]},
+		{"name":"WARHOSTS", "formations":[
+			{"id":510, "name":"Aspect Warrior Warhost", 		"pts":300, "upgrades":[39,40,41,42]},
+			{"id":511, "name":"Guardian Warhost",		 		"pts":150, "units":"Farseer",	"upgrades":[43,44,45]},
+			{"id":512, "name":"Guardian Warhost (Mounted)",	"pts":350, "units":"Farseer, 4 Wave Serpents"}
+		]},
+		{"name":"TROUPES", "formations":[
+			{"id":500, "name":"Ranger Troupe",					"pts":0},
+			{"id":501, "name":"War Walker Troupe",				"pts":200, "units":"6 Warwalkers"},
+			{"id":502, "name":"Windrider Troupe",				"pts":200},
+			{"id":503, "name":"Falcon Troupe",					"pts":-75},
+			{"id":504, "name":"Night Spinner Troupe",			"pts":175, "units":"3 Night Spinners"},
+			{"id":505, "name":"Engines of Vaul Troupe",		"pts":0, "upgrades":[34,35,36,37]},
+			{"id":530, "name":"Fire Prism Troupe",				"pts":250, "units":"3 Fire Prisms"}
+		]},
+		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
+			{"id":515, "name":"Wraithship",						"pts":150},
+			{"id":516, "name":"Dragonship",						"pts":300},
+		 	{"id":517, "name":"Warlock Titan",					"pts":850},
+			{"id":518, "name":"Phantom Titan",					"pts":750},
+			{"id":519, "name":"Revenant Titans",				"pts":650, "units":"2 Revenant Titans"},
+			{"id":520, "name":"Nightwings",						"pts":300, "units":"3 Nightwing Interceptors"},
+			{"id":521, "name":"Phoenix Bombers",				"pts":400, "units":"3 Phoenix Bombers"},
+			{"id":522, "name":"Vampire Raider",					"pts":200}
+		]}
+	],
+	"upgrades":[
+		{"id":39, "name":"Exarch", 							"pts":25},
+		{"id":40, "name":"Autarch", 							"pts":75},
+		{"id":41, "name":"Wave Serpent",						"pts":50},
+		{"id":42, "name":"Falcon",								"pts":65},
+		{"id":43, "name":"3 Support Weapon Platforms",	"pts":50},
+		{"id":44, "name":"3 Wraithguard",					"pts":150},
+		{"id":45, "name":"Wraithlords",						"pts":175},
+		{"id":11, "name":"Ranger",								"pts":25},
+		{"id":15, "name":"Dire Avenger",						"pts":0},
+		{"id":16, "name":"Striking Scorpion",				"pts":0},
+		{"id":17, "name":"Howling Banshee",					"pts":0},
+		{"id":18, "name":"Fire Dragon",						"pts":0},
+		{"id":19, "name":"Warp Spider",						"pts":0},
+		{"id":20, "name":"Dark Reaper",						"pts":0},
+		{"id":21, "name":"Swooping Hawk",					"pts":0},
+		{"id":22, "name":"Shining Spear",					"pts":0}
+		{"id":24, "name":"Guardians",							"pts":0},
+		{"id":25, "name":"Heavy Weapon Platform",			"pts":0},
+		{"id":27, "name":"Jetbike",							"pts":0},
+		{"id":28, "name":"Vyper", 								"pts":0},
+		{"id":31, "name":"Fire Storm", 						"pts":65},
+		{"id":34, "name":"Cobra",								"pts":250},
+		{"id":35, "name":"Scorpion",							"pts":250},
+		{"id":36, "name":"Storm Serpent",					"pts":250},
+		{"id":37, "name":"Void Spinner",						"pts":250}
+	],
+	"formationConstraints":[
+		{"max":1, "perArmy":true, "from":[507]},
+		{"max":1, "perArmy":true, "from":[508]},
+		{"max":1, "perArmy":true, "from":[517]},
+		{"max":1, "name":"Spacecraft", "perArmy":true, "from":[515,516]},
+		{"max":3, "name":"Troupes", "from":[500,501,502,503,504,505,530], "forEach":[510,511,512], "name2":"Warhost"},
+		{"maxPercent":33, "name":"Aircraft & Titans", "from":[515,516,517,518,519,520,521,522]}
+	],
+	"upgradeConstraints":[
+		{"max":2, "name":"Exarch", "from":[39,40]},
+		{"max":1, "perArmy":true, "from":[40]},
+		{"max":1, "from":[43]},
+		{"max":1, "from":[44]},
+		{"max":1, "from":[45]},
+		{"min":4, "max":8, "from":[11], "appliesTo":[500]},
+		{"min":8, "max":8, "from":[15,16,17,18,19,20,21,22], "appliesTo":[510]},
+		{"min":7, "max":7, "from":[24,25], "appliesTo":[511,512]},
+		{"max":3, "from":[25]},
+		{"min":6, "max":6, "from":[27,28], "appliesTo":[502]},
+		{"min":5, "max":5, "from":[42,31], "appliesTo":[503]},
+		{"max":2, "from":[31]},
+		{"min":1, "max":3, "name":"Engines", "from":[34,35,36,37]}
+	]
+}
