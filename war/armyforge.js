@@ -22,14 +22,12 @@ var ArmyforgeUI = {
 		// load the army list...
 		new Ajax.Request(listFile, {
 			onSuccess: function(response) {
-				try {
-					var list = JSON.parse( response.responseText );
-					ArmyList.init(list);
-					ArmyforgeUI.initUI();
-				}
-				catch(exc) {
-					alert("There was a problem loading the army list." + exc);
-				}
+				var list = JSON.parse( response.responseText );
+				ArmyList.init(list);
+				ArmyforgeUI.initUI();
+			},
+			onException: function(req, exc) {				
+				alert(exc.fileName +"...\n\n"+ exc.lineNumber +": "+ exc);
 			}
 		});	
 	},
@@ -37,14 +35,14 @@ var ArmyforgeUI = {
 
 		// render name and options
 		$('orbatListName').update( ArmyforgeUI.renderListName());
-		ArmyList.data.sublists.each( ArmyforgeUI.createList );
+		ArmyList.data.sections.each( ArmyforgeUI.createSection );
 
 		// render force and mandatory units
 		if (ArmyforgeUI.urlData.force) {
 			Force.unpickle(ArmyforgeUI.urlData.force);
 		}
-		else if (ArmyList.data.mandatoryFormations) {
-			ArmyList.data.mandatoryFormations.each(function(x) {
+		else if (ArmyList.data.fixedFormations) {
+			ArmyList.data.fixedFormations.each(function(x) {
 				var newRow = Force.addFormation(null, x);
 				newRow.stopObserving('click');
 			});
@@ -168,12 +166,12 @@ var ArmyforgeUI = {
 		$$('.formationOption').each( ArmyforgeUI.activate );
 		ArmyforgeUI.addPoints(-Force.totalPoints());
 	},
-	createList:function(list) {
+	createSection:function(list) {
 		var newTable = new Element('table').update(
 								new Element('tr').update(
 									new Element('th', {colspan:2}).update(list.name) ));
 	
-		list.options.each(function(x) {
+		list.formations.each(function(x) {
 			var listItem = new Element('tr', {'class':'interactive listItem even formationOption'}).update(
 								new Element('td').update(x.name)
 							).insert(
@@ -731,6 +729,9 @@ var ArmyList = {
 		this.data = input;
 			
 		ArmyList.allFormations().each( function(formation) {	
+			// fill in empty upgrade lists
+			if (!formation.upgrades) formation.upgrades = [];
+
 			// replace upgrade ids with upgrade objects
 			formation.upgrades = formation.upgrades.map(function(id) {
 				return ArmyList.upgradeForId(id);
@@ -765,9 +766,9 @@ var ArmyList = {
 		return ArmyList.allFormations().find( function(x){ return x.id == id; });
 	},
 	allFormations:function() {
-		var all = ArmyList.data.sublists.map( function(x){ return x.options; } );
-		if (ArmyList.data.mandatoryFormations) {
-	      all = all.concat(ArmyList.data.mandatoryFormations);
+		var all = ArmyList.data.sections.map( function(x){ return x.formations; } );
+		if (ArmyList.data.fixedFormations) {
+	      all = all.concat(ArmyList.data.fixedFormations);
 		}
 		return all.flatten();
 	},

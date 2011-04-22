@@ -26,7 +26,7 @@
 		]}
 	],
 	"fixedFormations":[
-		{"id":513,		"name":"General &#x26ab;",	"exactly":1,			"pts":125,	"upgrades":[100,20,21,22,23,40,41,42,43]}
+		{"id":513,		"name":"General &#x26ab;",	"exactly":1,			"pts":125,	"upgrades":[1,20,21,22,23,40,41,42,43]}
 	],
 	"upgrades":[
 		{"id":1,		"name":"Chaos Dragon",			 			"pts":100},
