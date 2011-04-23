@@ -50,16 +50,16 @@
 		{"id":43,	"name":"Sceptre of Sovereignty", 		"pts":30}
 	],
 	"formationConstraints":[
-		{"formations":[500], "max":2, "perPoints":1000},
-		{"formations":[501], "max":1, "perPoints":1000},
-		{"formations":[502], "min":2, "perPoints":1000},
-		{"formations":[503], "max":3, "perPoints":1000},
-		{"formations":[504], "min":2, "perPoints":1000},
-		{"formations":[505], "max":1, "perPoints":1000},
-		{"formations":[507], "max":4, "perPoints":1000},
-		{"formations":[508], "max":1, "perPoints":1000},
-		{"formations":[509], "max":1, "perPoints":1000},
-		{"formations":[510], "max":1, "perPoints":1000}
+		{"max":2, "perPoints":1000, "from":[500]},
+		{"max":1, "perPoints":1000, "from":[501]},
+		{"min":2, "perPoints":1000, "from":[502]},
+		{"max":3, "perPoints":1000, "from":[503]},
+		{"min":2, "perPoints":1000, "from":[504]},
+		{"max":1, "perPoints":1000, "from":[505]},
+		{"max":4, "perPoints":1000, "from":[507]},
+		{"max":1, "perPoints":1000, "from":[508]},
+		{"max":1, "perPoints":1000, "from":[509]},
+		{"max":1, "perPoints":1000, "from":[510]}
 	],
 	"upgradeConstraints":[
 		{"max":1, "from":[1]},
