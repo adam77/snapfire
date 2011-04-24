@@ -51,22 +51,25 @@ var ArmyList = {
 				formation.upgradeConstraints.filter( function(x){
 					return x.mandatory;
 				});
-//			formation.mandatoryUpgrades = 
-//				formation.mandatoryUpgradeConstraints.map( function(x){
-//					return x.from;
-//				}).flatten();
-//			formation.mandatory = function(upgrade){
-//				return formation.mandatoryUpgradeConstraints.any( function(constraint){
-//						constraint.from.member(upgrade);
-//					});
-//			};
 			formation.mandatoryConstraint = function(upgrade){		
 				return formation.mandatoryUpgradeConstraints.find( function(constraint){
 						return constraint.from.member(upgrade);
 					});
 			};
+			formation.replaceable = function(upgrade){
+				return formation.mandatoryConstraint(upgrade)
+							&& formation.mandatoryConstraint(upgrade).mandatoryWithOptions;
+			};
+			formation.optionsFor = function(upgrade){
+				return formation.mandatoryConstraint(upgrade).from.without(upgrade);
+			};
+			// cost including any mandatory upgrades... add them in too!
+			var total = 0;
+			formation.mandatoryUpgradeConstraints.each( function(x) {
+				total += x.min * x.from[0].pts;
+			});		
+			formation.cost = formation.pts + total;
 		});
-
 	},
 	upgradeForId:function(id) {
 		return ArmyList.data.upgrades.find( function(x) {
@@ -82,48 +85,6 @@ var ArmyList = {
 	      all = all.concat(ArmyList.data.fixedFormations);
 		}
 		return all.flatten();
-	},
-	replaceable:function(upgrade,formation) {
-		// constraint exists such that: (is mandatoryWithOptions) && (upgrade in from) && (formation in appliesTo)
-		return this.data.upgradeConstraints.any( function(x) {
-			return x.mandatoryWithOptions
-						&& x.from.member(upgrade)
-						&& x.appliesTo.member(formation);
-		});
-	},
-	upgradeOptions:function(upgrade,formation) {
-		var constraint = this.data.upgradeConstraints.find( function(x) {
-			return x.mandatory 
-				&& x.from.member(upgrade) 
-				&& x.appliesTo.member(formation);
-		});
-		return constraint.from.without(upgrade);
- 	},
-	mandatoryUpgrade:function(upgrade,formation) {
-		// constraint exists such that: (is mandatory) and (upgrade in from) and (formation in appliesTo)
-		return this.data.upgradeConstraints.any( function(x) {
-			return x.mandatory 
-				&& x.from.member(upgrade) 
-				&& x.appliesTo.member(formation);
-		});
-	},
-	cost:function(formation) {
-		var mandatory = 0;
-		// if any mandatory upgrades... add them in too!
-		this.mandatoryUpgradesFor(formation).each( function(x) {
-			mandatory += x.min * x.from[0].pts;
-		});		
-		return formation.pts + mandatory;
-	},
-	mandatoryUpgradesFor:function(formation) {
-		return this.data.upgradeConstraints.filter( function(x) {
-			return x.mandatory && x.appliesTo.member(formation);
-		});
-	},
-	mandatoryConstraintFor:function(x,upgrade,formation) {
-		return x.mandatory
-					&& x.from.member(upgrade)
-					&& x.appliesTo.member(formation);		
 	}
 };
 

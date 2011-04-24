@@ -81,6 +81,6 @@
 		{"min":6, "max":6, "from":[27,28], "appliesTo":[502]},
 		{"min":5, "max":5, "from":[42,31], "appliesTo":[503]},
 		{"max":2, "from":[31]},
-		{"min":1, "max":3, "name":"Engines", "from":[34,35,36,37]}
+		{"min":1, "max":3, "name":"Engines", "from":[34,35,36,37], "appliesTo":[505]}
 	]
 }
