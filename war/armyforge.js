@@ -1,6 +1,25 @@
+// count instances of element...
+Array.prototype.count = function(element) {
+	return this.findAll( function(x){ return x == element; } ).length;
+}
+
+// removes the first instance of element...
+Array.prototype.remove = function(element) {
+	this.splice(this.indexOf(element), 1);
+}
+
+// is the array empty
+Array.prototype.empty = function() {
+	return this.length == 0;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 var ArmyforgeUI = {
-	formationIdCounter:0,
 	urlData:{},
 	initPage:function() {
 		// event listeners...
@@ -39,10 +58,11 @@ var ArmyforgeUI = {
 		// render force and mandatory units
 		if (ArmyforgeUI.urlData.force) {
 			Force.unpickle(ArmyforgeUI.urlData.force);
+			ArmyforgeUI.renderForce();
 		}
 		else if (ArmyList.data.fixedFormations) {
 			ArmyList.data.fixedFormations.each(function(x) {
-				var newRow = Force.addFormation(null, x);
+				var newRow = ArmyforgeUI.addFormation(null, x);
 				newRow.stopObserving('click');
 			});
 		}
@@ -58,6 +78,15 @@ var ArmyforgeUI = {
 
 		// show table
 		ArmyforgeUI.viewTable();		
+	},
+	renderForce:function() {
+		Force.formations.each( ArmyforgeUI.renderFormation );
+	},
+	renderFormation:function(formation) {
+
+	},
+	renderUpgrade:function() {
+		
 	},
 	renderListName:function() {
 		return ArmyList.data.id + ' (' + ArmyList.data.version + ')';
@@ -86,17 +115,6 @@ var ArmyforgeUI = {
 	updatePoints:function() {
 		$('totalPts').update( Force.calcPoints() );
 	},
-	padPoints:function(pts) {
-		if (pts < 10) {
-			return '&nbsp;&nbsp;' + pts;
-		}	
-		if (pts < 100) {
-			return '&nbsp;' + pts;
-		}
-		else {
-			return pts;
-		}
-	},
 	resetViews:function() {
 		$$('.viewDiv').each(function(x) {
 			x.hide();
@@ -114,7 +132,7 @@ var ArmyforgeUI = {
 		ArmyforgeUI.resetViews();
 		$('importDiv').show();
 		$('viewImport').addClassName('selected');
-		$('importText').update(Force.pickle(ArmyforgeUI.urlData.baseURL,ArmyforgeUI.urlData.list));
+		$('importText').update(Force.pickle(ArmyforgeUI.urlData.baseURL, ArmyforgeUI.urlData.list, $('orbatName').innerHTML));
 		$('importText').activate();
 	},
 	viewImport:function() {
@@ -125,7 +143,7 @@ var ArmyforgeUI = {
 	},
 	viewPlainText:function() {
 		ArmyforgeUI.resetViews();
-		var txt = $('plainTextDiv').update();//new Element('div', {id:'plainTextDiv'});
+		var txt = $('plainTextDiv').update();
 		txt.insert($('orbatName').innerHTML + ', ' + $('totalPts').innerHTML + ' POINTS').insert(new Element('br'));
 		txt.insert($('orbatListName').innerHTML).insert(new Element('br'));
 		txt.insert('==================================================');
@@ -133,26 +151,22 @@ var ArmyforgeUI = {
 			if (x.hasClassName('orbatFormation')) {
 				txt.insert(new Element('br'));
 				txt.insert(new Element('br'));
-	//			alert('&egrave;' + '&egrave;'.toUpperCase());
-	//			txt.insert('&egrave;'.toUpperCase());
-	//			txt.insert('&Egrave;&EGRAVE;&egrave;');
-				txt.insert(x.formationData.name.toUpperCase() +' ['+x.childElements()[1].innerHTML +']');
-				txt.insert(new Element('br'));
-				if (x.formationData.units) {
-					txt.insert(x.formationData.units);
-	//				txt.insert(new Element('br'));
+				txt.insert(x.formation.type.name.toUpperCase() +' ['+ x.formation.calcPoints() +']');
+				if (x.formation.type.units) {
+					txt.insert(new Element('br'));
+					txt.insert(x.formation.type.units);
+				}
+				else if (!x.formation.upgrades.empty()) {
+					txt.insert(new Element('br'));
 				}
 			}
 			else if (x.hasClassName('orbatUpgrade')) {
-				var multiplier = Force.upgradeMultiplier(x);
+				var multiplier = x.formation.count(x.upgradeType);
 				var multiplierJoin = ((multiplier < 2) || isNaN(parseInt(x.upgradeType.name[0]))) ? '&nbsp;' : 'x';
 				var prefix = (multiplier > 1 ? multiplier + multiplierJoin : '');
 				var joiner = txt.innerHTML.endsWith('>') ? '' : ',&nbsp;';
 				txt.insert(joiner + prefix + x.upgradeType.name);
 			}		
-	//		else if (x == $('formationDivider')) {
-	//			txt.insert(new Element('br')).insert('-----');
-	//		}
 		});
 		txt.insert(new Element('br')).insert(new Element('br'));
 		$('plainTextDiv').show();
@@ -174,13 +188,13 @@ var ArmyforgeUI = {
 			var listItem = new Element('tr', {'class':'interactive listItem even formationOption'}).update(
 								new Element('td').update(x.name)
 							).insert(
-								new Element('td', {'class':'points'}).update( ArmyList.cost(x) ));
+								new Element('td', {'class':'points'}).update( x.cost ));
 
-			listItem.formationData = x;
+			listItem.formationType = x;
 			newTable.insert(listItem);
 			 // should this be done after the table is inserted in the DOM?
 			listItem.observe('click', 
-					ArmyforgeUI.wrapActivatableHandler(listItem, Force.addFormation)
+					ArmyforgeUI.wrapActivatableHandler(listItem, ArmyforgeUI.addFormation)
 						.bindAsEventListener(this, x));
 		});
 	
@@ -192,9 +206,9 @@ var ArmyforgeUI = {
 			 new Element('div', {'class':'listDiv'}).update(newTable) );
 	},
 	wrapActivatableHandler:function(element, handler) {
-		return handler.wrap(function(proceed, arg1, arg2, arg3, arg4) {
+		return handler.wrap(function(proceed, arg1, arg2, arg3, arg4, arg5) {
 			if (!element.hasClassName('inactive')) {
-				proceed(arg1, arg2, arg3, arg4);
+				proceed(arg1, arg2, arg3, arg4, arg5);
 			}
 		});
 	},
@@ -219,8 +233,8 @@ var ArmyforgeUI = {
 			$$('.limited').first().addClassName('formationDivider');
 		}
 	},
-	createOptionals:function(formationType, upgrades, formationId, upgradeRow) {
-		var newTable = new Element('table', {id:formationId + 'unitOptions'}).update(
+	createOptionals:function(formation, upgrades, upgradeRow) {
+		var newTable = new Element('table').update(
 							new Element('tr').update(
 								new Element('th', {colspan:2}).update('REPLACE WITH...') ));
 
@@ -241,11 +255,10 @@ var ArmyforgeUI = {
 									new Element('td', {'class':'points'}).update(points) );
 
 			upgradeOption.upgradeType = x;
-			upgradeOption.formationId = formationId;
 			newTable.insert(upgradeOption);		
 			upgradeOption.observe('click',
-					ArmyforgeUI.wrapActivatableHandler(upgradeOption, Force.addOptional)
-						.bindAsEventListener(this, formationId, x, upgradeRow));
+					ArmyforgeUI.wrapActivatableHandler(upgradeOption, ArmyforgeUI.addOptional)
+						.bindAsEventListener(this, formation, x, upgradeRow));
 		});
 	
 		newTable.childElements().eachSlice(2, function(x) {
@@ -257,29 +270,28 @@ var ArmyforgeUI = {
 		dropDown.observe('click', Event.stop.bindAsEventListener(this)); // prevent bubbling up
 		return dropDown;
 	},
-	createUpgrades:function(upgrades, formationId, formationType) {
-		var newTable = new Element('table', {id:formationId + 'upgradeOptions'}).update(
+	createUpgrades:function(formation) {
+		var newTable = new Element('table').update(
 							new Element('tr').update(
 								new Element('th', {colspan:2}).update('UPGRADES') ));
 
-		if (upgrades.length < 1) {	
+		if (formation.type.upgrades.length < 1) {	
 			var listItem = new Element('tr', {'class':'listItem even'}).update(
 								new Element('td', {colspan:'2', 'class':'inactive'}).update('None available') );
 			newTable.insert(listItem);		
 		};
 
-		upgrades.each(function(x) {
+		formation.type.upgrades.each(function(x) {
 			var upgradeOption = new Element('tr', {'class':'interactive listItem even upgrade'}).update(
 									new Element('td').update(x.name)
 								).insert(
 									new Element('td', {'class':'points'}).update(x.pts) );
 
 			upgradeOption.upgradeType = x;
-			upgradeOption.formationId = formationId;
 			newTable.insert(upgradeOption);		
 			upgradeOption.observe('click',
-					ArmyforgeUI.wrapActivatableHandler(upgradeOption, Force.addUpgrade)
-						.bindAsEventListener(this, formationId, x, formationType));
+					ArmyforgeUI.wrapActivatableHandler(upgradeOption, ArmyforgeUI.addUpgrade)
+						.bindAsEventListener(this, formation, x));
 		});
 	
 		newTable.childElements().eachSlice(2, function(x) {
@@ -290,59 +302,24 @@ var ArmyforgeUI = {
 							new Element('div', {'class':'listDiv'}).update(newTable));
 		dropDown.observe('click', Event.stop.bindAsEventListener(this)); // prevent bubbling up
 		return dropDown;
-	}
-};
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-var Force = {
-	formations:[], //{id:i, type:t, upgrades:[u1,u2]}
-	formationForId:function(id) {
-		return Force.formations.find( function(x){return x.id == id;} );
-	},
-	calcPoints:function() {
-		var total = 0;
-		this.formations.each( function(x) {
-			total += Forec.calcPointsFor(x);
-		});
-		return total;
-	},
-	calcPointsFor:function(formation) {
-		var total = formation.type.pts;
-		formation.upgrades.each(function(u) {
-			total += u.pts;
-		});
-		return total;		
 	},
 	addFormation:function(event, formationType, noDefaults) {
 
-		var formationId = 'formation' + ArmyforgeUI.formationIdCounter++;
-
-		Force.formations.push( {id:formationId, type:formationType, upgrades:[]} );
+		var formation = Force.addFormation(formationType);
 
 
-		var dropDown = ArmyforgeUI.createUpgrades( formationType.upgrades, formationId, formationType);		
+		var dropDown = ArmyforgeUI.createUpgrades( formation );
 		var labelCell = new Element('td').update(formationType.name).insert( dropDown );
 		if (formationType.units) {
 			labelCell.insert(
 				new Element('div', {'class':'units'}).update(formationType.units));
 		}
-		var newRow = new Element('tr', {'class':'orbatFormation interactive', id:formationId}).update(
+		var newRow = new Element('tr', {'class':'orbatFormation interactive'}).update(
 						labelCell
 					 ).insert(
 						new Element('td', {'class':'points'}).update(formationType.pts) );
 
-		if (formationType.restricting) {	// todo: remove the class names and just use the row.formationData?
+		if (formationType.restricting) {	// todo: remove the class names and just use the row.formationType?
 			newRow.addClassName('restricting');
 		}
 		else if (formationType.restricted) {
@@ -364,209 +341,252 @@ var Force = {
 		dropDown.hide();
 		newRow.observe('mouseover', function() { dropDown.show(); });
 		newRow.observe('mouseout', function() { dropDown.hide(); });
-		newRow.observe('click', Force.removeFormation.bind(this, newRow, formationType.pts));		
+		newRow.observe('click', ArmyforgeUI.removeFormation.bind(this, formation));		
 
-		newRow.formationData = formationType;
+		newRow.formation = formation;
 		ArmyforgeUI.updatePoints();
 		ArmyforgeUI.resetFormationDivider();
 	
 		if (!noDefaults) {
 			// mandatory units in groups
-			ArmyList.mandatoryUpgradesFor(formationType).each( function(x) {
+			formationType.mandatoryUpgradeConstraints.each( function(x) {
 				for (var i=0;i<x.min;i++){
-					Force.addUpgrade(null, formationId, x.from[0], true, formationType);
+					ArmyforgeUI.addUpgrade(null, formation, x.from[0], true);
 				}
 			});
 		}
-		Force.checkFormationConstraints();
-		Force.checkOptionalConstraints();
-		Force.checkUpgradeConstraints();
-		Force.checkArmyConstraints();
+//		Force.checkFormationConstraints();
+//		Force.checkOptionalConstraints();
+//		Force.checkUpgradeConstraints();
+//		Force.checkArmyConstraints();
 	
 		return newRow;
 	},
-	addUpgrade:function(event, formationId, upgradeType, ignoreConstraints, formationType) {
+	formationRowFor:function(formation) {
+		return $$('.orbatFormation').find( function(x){
+			return x.formation==formation;
+		});		
+	},
+	upgradeRowsFor:function(formation) {
+		return $$('.orbatUpgrade').findAll( function(x){
+			return x.formation==formation;
+		});
+	},
+	upgradeRowFor:function(formation,upgradeType) {
+		return $$('.orbatUpgrade').find( function(x){
+			return x.formation==formation && x.upgradeType==upgradeType;
+		});
+	},
+	addUpgrade:function(event, formation, upgradeType, ignoreConstraints) {
 
-		Force.formationForId(formationId).upgrades.push(upgradeType);
+		formation.upgrades.push( upgradeType );
 
-		var upgrades = $$('.' + formationId);
-		var existingUpgrade = upgrades.find( function(x) {return x.upgradeType === upgradeType;} );
+		var count = formation.count( upgradeType );
 
-		if (!existingUpgrade) {
+
+		if (count == 1) {
 			var newCell = new Element('td').update(upgradeType.name);
-			var clazz = 'interactive orbatUpgrade ' + formationId + (ArmyList.mandatoryUpgrade(formationType,upgradeType) ? ' mandatory':'');
+			var clazz = 'interactive orbatUpgrade ' + (formation.type.mandatoryConstraint(upgradeType) ? ' mandatory':'');
 			var newRow = new Element('tr', {'class':clazz}).update(
 							newCell 
 						 ).insert(
 							new Element('td', {'class':'points'}).update(' '));//upgradeType.pts));
 
-			newRow.formationId = formationId;
 			newRow.upgradeType = upgradeType;
-		
+			newRow.formation = formation;
+					
+
+			var upgradeRows = ArmyforgeUI.upgradeRowsFor(formation);
+
+
 			// insert new row after last upgrade
-			if ($$('.' + formationId).size() > 0) {
-				// place new replaceables after replaceables but before other upgrades
-				if (ArmyList.replaceable(upgradeType,formationType)) {
-					var firstUpgrade = $$('.' + formationId).find(function(x) {
-						return !ArmyList.replaceable(x.upgradeType,formationType);				
-					});
-					if (firstUpgrade) {
-						firstUpgrade.insert({before:newRow});
-					}
-					else {
-						$$('.' + formationId).last().insert({after:newRow});
-					}
+			if (upgradeRows.length > 0) {
+
+				// place new mandatories after mandatories but before other upgrades
+				var firstNonMandatoryRow = upgradeRows.find(function(x) {
+							return !formation.type.mandatoryConstraint(x.upgradeType);
+						});
+				if (firstNonMandatoryRow && formation.type.mandatoryConstraint(upgradeType)) {
+					firstNonMandatoryRow.insert({before:newRow});
 				}
 				else {
-					$$('.' + formationId).last().insert({after:newRow});
+					upgradeRows.last().insert({after:newRow});
 				}
 			}
 			else {
-				$(formationId).insert({after:newRow});
+				ArmyforgeUI.formationRowFor(formation).insert({after:newRow});
 			}
 		
 
 			// delete event
-			newRow.observe('click', Force.removeUpgrade.bind(this, newRow, formationId));	
+			newRow.observe('click', ArmyforgeUI.removeUpgrade.bind(this, newRow, formation));	
 			// dropdown
-			if (ArmyList.replaceable(upgradeType,formationType)) {
-				var dropDown = ArmyforgeUI.createOptionals(formationType, ArmyList.upgradeOptions(upgradeType,formationType), formationId, newRow);
+			if (formation.type.replaceable(upgradeType)) {
+				var dropDown = ArmyforgeUI.createOptionals(formation, formation.type.optionsFor(upgradeType), newRow);
 				newCell.insert(dropDown);
 				dropDown.hide();
 				newRow.observe('mouseover', function() { dropDown.show(); });
 				newRow.observe('mouseout', function() { dropDown.hide(); });
 			}
 		}
+		else if (count == 2) {
+			var existingUpgrade = ArmyforgeUI.upgradeRowFor(formation,upgradeType);
+			var newMultiplier = new Element('span', {'class':'upgradeMultiplier'}).update('2x&nbsp;');
+			existingUpgrade.multiplierSpan = newMultiplier;
+			existingUpgrade.down().insert(newMultiplier);
+		}
 		else {
-			// at least 1 existing upgrade of this type
-			if (!existingUpgrade.multiplierSpan) {
-				// exactly 1 existing upgrade of this type
-				var newMultiplier = new Element('span', {'class':'upgradeMultiplier'}).update('1x&nbsp;');
-				existingUpgrade.multiplierSpan = newMultiplier;
-				existingUpgrade.down().insert(newMultiplier);
-			}
-			var count = 1 + Force.upgradeMultiplier(existingUpgrade);
+			var existingUpgrade = ArmyforgeUI.upgradeRowFor(formation,upgradeType);
 			$(existingUpgrade.multiplierSpan).update(count + 'x&nbsp;');
-			//existingUpgrade.childElements()[1].update(count * upgradeType.pts);
 		}
 
 		// points
-		Force.updateFormationPoints(formationId, upgradeType.pts);
+		ArmyforgeUI.updateFormationPoints(formation);
 		ArmyforgeUI.updatePoints();
 
 		// constraints
 		if (!ignoreConstraints) {
-			Force.checkOptionalConstraints();
-			Force.checkUpgradeConstraints();
-			Force.checkArmyConstraints();
+//			Force.checkOptionalConstraints();
+//			Force.checkUpgradeConstraints();
+//			Force.checkArmyConstraints();
 		}
 	},
-	addOptional:function(event, formationId, upgradeType, upgradeRow, formationType) {	
-		Force.addUpgrade(event, formationId, upgradeType, formationType);
-		Force.removeUpgrade(upgradeRow, formationId);
+	updateFormationPoints:function(formation) {
+		var ptsCell = ArmyforgeUI.formationRowFor(formation).childElements()[1];
+		ptsCell.update( formation.calcPoints() );
 	},
-	pickle:function(url,listId) {
-		var out = $('orbatName').innerHTML
-		$('orbatBody').childElements().each(function(x) {
-			if (x.hasClassName('orbatFormation')) {
-				out += '~' + x.formationData.id
-			}
-			else if (x.hasClassName('orbatUpgrade')) {
-				out += '~' + x.upgradeType.id + 'x' + Force.upgradeMultiplier(x)
-			}
-		});	
-		return url + '?list=' + listId + '&force=' + encodeURIComponent(out)
+	removeFormation:function(formation) {
+
+		Force.formations.remove( formation );
+
+		ArmyforgeUI.upgradeRowsFor(formation).each( Element.remove );
+		ArmyforgeUI.formationRowFor(formation).remove();
+		ArmyforgeUI.updatePoints();
+//		Force.checkFormationConstraints();
+//		Force.checkUpgradeConstraints();
+//		Force.checkOptionalConstraints();
+//		Force.checkArmyConstraints();
 	},
-	unpickle:function(pickled) {
-		try {
-			var doneName = false;
-			var currentFormation = null;
-			decodeURIComponent(pickled).split('~').each(function(x) {
-				if (!doneName) {
-					$('orbatName').update(x);
-					doneName = true;
-				}
-				else {
-					var id = parseInt(x.split('x')[0]);
-					if (id >= 500) {
-						currentFormation = Force.addFormation(null, ArmyList.formationForId(id), true).identify();
-					}
-					else {
-						var count = parseInt(x.split('x')[1]);
-						for (var i=0;i<count;i++) {
-							Force.addUpgrade(null, currentFormation, ArmyList.upgradeForId(id), currentFormation.formationData);
-						}
-					}
-				}			
-			})	
-		} catch(err) {
-				alert('Sorry, there was an error loading the army.');
-		}
-	},
-	removeUpgrade:function(upgradeRow, formationId) {
+	removeUpgrade:function(upgradeRow, formation) {
+
 		var allowRemoval = true;
-		var formationType = Force.formationForId(formationId).type;
 		var upgradeType = upgradeRow.upgradeType;
 
 		// check minimum constraint
-		var constraint = formationType.mandatoryConstraint( upgradeType );
+		var constraint = formation.type.mandatoryConstraint( upgradeType );
 		if (constraint) {
 			var total = 0;
 			constraint.from.each(function(x) {
-				total += Force.countUpgrades(x, formationId);
+				total += formation.count(x);
 			});
 			allowRemoval = constraint.min < total;
 		}
 
 		if (allowRemoval) {
-			var f = Force.formationForId(formationId);			
-			f.upgrades.splice( f.upgrades.indexOf(upgradeRow.upgradeType), 1);
 
-			var multiplier = upgradeRow.multiplierSpan;
-			// 2 or more?
-			if (multiplier) {
-				var count = Force.upgradeMultiplier(upgradeRow) - 1;
-				if (count == 1) {
-					multiplier.remove();
-					upgradeRow.multiplierSpan = null;
-				}
-				else {
-					multiplier.update(count + 'x&nbsp;');
-				}
-				//upgradeRow.childElements()[1].update(count * data.pts);
+			formation.upgrades.remove( upgradeRow.upgradeType );
+
+			var count = formation.count( upgradeRow.upgradeType );
+			if (count == 0) {
+				upgradeRow.remove();	
 			}
-			// only 1
+			else if (count == 1) {
+				upgradeRow.multiplierSpan.remove();
+			}
 			else {
-				upgradeRow.remove();
+				upgradeRow.multiplierSpan.update(count + 'x&nbsp;');
 			}
 
 			ArmyforgeUI.updatePoints();
-			Force.updateFormationPoints(formationId, -upgradeType.pts);
-			Force.checkUpgradeConstraints();
-			Force.checkOptionalConstraints();
-			Force.checkArmyConstraints();
+			ArmyforgeUI.updateFormationPoints(formation);
+//			Force.checkUpgradeConstraints();
+//			Force.checkOptionalConstraints();
+//			Force.checkArmyConstraints();
 		}
 	},
-	removeFormation:function(formationRow, pts) {
-		Force.formations = Force.formations.reject(function(x) {						
-			return x.id == formationRow.identify();
-		});
+	addOptional:function(event, formation, upgradeType, upgradeRow) {	
+		ArmyforgeUI.addUpgrade(event, formation, upgradeType, false);
+		ArmyforgeUI.removeUpgrade(upgradeRow, formation);
+	}
+};
 
-		formationRow.remove();
-		$$('.' + formationRow.identify()).each(function(upgrade) {
-			var upgradePts = Force.countUpgrades(upgrade.upgradeType,formationRow.identify()) * upgrade.upgradeType.pts;
-			ArmyforgeUI.updatePoints();
-			upgrade.remove();
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+var Force = {
+	formations:[], //{id:i, type:t, upgrades:[u1,u2,u2,u2,u3,u4,u4]}
+	calcPoints:function() {
+		var total = 0;
+		this.formations.each( function(x) {
+			total += x.calcPoints();
 		});
-		ArmyforgeUI.updatePoints();
-		Force.checkFormationConstraints();
-		Force.checkUpgradeConstraints();
-		Force.checkOptionalConstraints();
-		Force.checkArmyConstraints();
+		return total;
 	},
-	updateFormationPoints:function(formationId, pts) {
-		var ptsCell = $(formationId).childElements()[1];
-		ptsCell.update( parseInt(ptsCell.innerHTML) + pts );
+	addFormation:function(formationType) {
+		var formation = {
+								type:formationType,
+								upgrades:[],
+								count:function(upgradeType) {
+									return this.upgrades.count(upgradeType);
+								},
+								calcPoints:function() {
+									var total = this.type.pts;
+									this.upgrades.each(function(u) {
+										total += u.pts;
+									});
+									return total;				
+								}
+							};
+		this.formations.push( formation );			
+		return formation;
+	},
+	pickle:function(url,listId,forceName) {
+		var out = forceName;
+		Force.formations.each( function(x) {
+			out += '~' + x.type.id;
+			x.upgrades.uniq().each( function(u) {
+				out += '~' + u.id + 'x' + x.count(u);
+			});
+		});	
+		return url + '?list=' + listId + '&force=' + encodeURIComponent(out);
+	},
+	unpickle:function(pickled) {
+		try {
+			var name = null;
+			var currentFormation = null;
+			decodeURIComponent(pickled).split('~').each(function(x) {
+				if (!name) {
+//					$('orbatName').update(x);
+					name = x;
+				}
+				else {
+					var id = parseInt(x.split('x')[0]);
+					if (id >= 500) {
+						currentFormation = Force.addFormation( ArmyList.formationForId(id) );
+//						currentFormation = ArmyforgeUI.addFormation(null, null, true).identify();
+					}
+					else {
+						var count = parseInt(x.split('x')[1]);			
+						for (var i=0;i<count;i++) {
+							currentFormation.upgrades.push( ArmyList.upgradeForId(id) );
+//							ArmyforgeUI.addUpgrade(null, currentFormation, ArmyList.upgradeForId(id), currentFormation.formation.type);
+						}
+					}
+				}			
+			});
+			return name;	
+		} catch(err) {
+				alert('Sorry, there was an error loading the army.');
+		}
 	},
 	// mozilla border bug when hiding/showing rows
 	checkArmyConstraints:function() {
@@ -574,7 +594,7 @@ var Force = {
 		// 1/3 points constraint
 		var count = 0;	// todo (include upgrade points too)
 		$$('.limited').each(function(x) {
-			count += x.formationData.pts
+			count += x.formation.type.pts
 			$$('.' + x.identify()).each(function(x) {
 				count += x.upgradeType.pts * Force.upgradeMultiplier(x);
 			});
@@ -587,7 +607,7 @@ var Force = {
 		// 1/3 points constraint 2
 		var count2 = 0;	// todo (include upgrade points too)
 		$$('.limited2').each(function(x) {
-			count2 += x.formationData.pts
+			count2 += x.formation.type.pts
 			$$('.' + x.identify()).each(function(x) {
 				count2 += x.upgradeType.pts * Force.upgradeMultiplier(x);
 			});
@@ -628,17 +648,17 @@ var Force = {
 		$$('.formationOption').each(function(option) {
 			var constraints = '';
 			// check 'upto' constraint
-			var formationData = option.formationData;
-			var groupData = option.formationData.group;
-			if (formationData.upto) {
-				var count = formationRows.findAll(function(x) {return x.formationData === formationData;}).size(); 
-				if (count >= formationData.upto) {
-					constraints += '[max ' + formationData.upto + ']';
+			var formationType = option.formation.type;
+			var groupData = option.formationType.group;
+			if (formationType.upto) {
+				var count = formationRows.findAll(function(x) {return x.formationType === formationType;}).size(); 
+				if (count >= formationType.upto) {
+					constraints += '[max ' + formationType.upto + ']';
 				}
 			}		
 			// check 'upto' GROUP constraint
 			if (groupData && groupData.upto) {
-				var group = formationRows.findAll(function (x) {return x.formationData.group === groupData;});
+				var group = formationRows.findAll(function (x) {return x.formation.type.group === groupData;});
 				if (group.size() >= groupData.upto) {
 					constraints += ' [max ' + groupData.upto + ' ' + groupData.name + ']';
 				}
@@ -652,36 +672,12 @@ var Force = {
 			}
 		});
 	},
-	// upgrades of a given type for a given formation
-	countUpgrades:function(upgradeType, formationId) {
-		if (Force.formationForId(formationId)) {
-			return Force.formationForId(formationId).upgrades.filter( function(x){ return x == upgradeType; } ).length;
-		}
-		else {
-			return 0;
-		}
-
-//		var upgradeRow = $$('.' + formationId).find(function(x) {return x.upgradeType === upgradeType;});
-//		return Force.upgradeMultiplier(upgradeRow);
-	},
-	// upgrades of a given type
-	upgradeMultiplier:function(upgradeRow) {
-		if (!upgradeRow) {
-			return 0;
-		}
-		else if (upgradeRow.multiplierSpan) {
-			return parseInt(upgradeRow.multiplierSpan.innerHTML.replace('x&nbsp;',''));
-		}
-		else {
-			return 1;
-		}
-	},
 	checkOptionalConstraints:function() {
 
 		var generalChosen = 0 < $$('.orbatUpgrade').filter(function(x) {return x.upgradeType.general;}).size();
 
 		$$('.orbatUpgrade').each(function(x) {
-			if (ArmyList.replaceable(x.upgradeType) && x.upgradeType.group && x.upgradeType.group.options.size() > 1) {
+			if (false /*ArmyList.replaceable(x.upgradeType) && x.upgradeType.group && x.upgradeType.group.options.size() > 1*/) {
 				var optionalOptions = x.down().down().down().down().childElements().slice(1); // remove header row
 			
 				optionalOptions.each(function(option) {
@@ -689,7 +685,7 @@ var Force = {
 					var upgradeType = option.upgradeType;
 					// check upto constraint
 					if (upgradeType.upto) {
-						var numUpgrades = Force.countUpgrades(upgradeType, x.formationId);
+						var numUpgrades = Force.countUpgrades(upgradeType, formation);
 						if (numUpgrades >= upgradeType.upto) {
 							constraints += '[max ' + upgradeType.upto + ']';
 						}
@@ -715,7 +711,7 @@ var Force = {
 		var generalChosen = 0 < $$('.orbatUpgrade').filter(function(x) {return x.upgradeType.general;}).size();
 
 		$$('.upgrade').each(function(option) {
-			var formationId = option.formationId;
+			var formation = option.formation;
 			var upgradeRows = $$('.' + formationId);
 			var upgradeOptions = $(formationId + 'upgradeOptions').childElements().slice(1); // remove header row			
 			var constraints = '';
