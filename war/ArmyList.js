@@ -63,6 +63,15 @@ var ArmyList = {
 			formation.optionsFor = function(upgrade){
 				return formation.mandatoryConstraint(upgrade).from.without(upgrade);
 			};
+			formation.defaultUpgrades = function(){
+				var defaults = [];
+				formation.mandatoryUpgradeConstraints.each( function(x) {
+					for (var i=0;i<x.min;i++){
+						defaults.push( x.from[0] );
+					}
+				});
+				return defaults;
+			};
 			// cost including any mandatory upgrades... add them in too!
 			var total = 0;
 			formation.mandatoryUpgradeConstraints.each( function(x) {
