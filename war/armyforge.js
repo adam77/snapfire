@@ -19,10 +19,6 @@ Array.prototype.empty = function() {
 	return this.length == 0;
 }
 
-// filter and map
-Array.prototype.filterMap = function(filter,transform) {
-	return null;		
-}
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -108,112 +104,83 @@ var ArmyforgeUI = {
 		});				
 	},
 
-	createSwapPopup:function(formation, upgrades, upgradeType) {
+	createMenuItem:function(id,name,pts) {
+		var item = new Element('tr', {'id':'menuItem_'+id, 'class':'interactive listItem even'});
+		item.update( new Element('td').update(name) ).insert( new Element('td', {'class':'points'}).update(pts) );
+
+		var msgBox = new Element('div', {'id':'menuItemMsg_'+id, 'class':'constraint'});
+		item.firstDescendant().insert({top:msgBox});
+		msgBox.hide();
+
+		return item;
+	},
+
+	createMenu:function(name,items) {
 		var newTable = new Element('table').update(
 								new Element('tr').update(
-									new Element('th', {colspan:2}).update('REPLACE WITH...') ));
-
-		if (upgrades.length < 1) {	
+									new Element('th', {colspan:2}).update(name) ));		
+		if (items.length < 1) {	
 			var listItem = new Element('tr', {'class':'listItem even'}).update(
-								new Element('td', {colspan:'2', 'class':'inactive'}).update('None available') );
+									new Element('td', {colspan:'2', 'class':'inactive'}).update('None available') );
 			newTable.insert(listItem);		
-		};
+		};		
+		items.each(function(i) {
+			newTable.insert(i);
+		});
+		newTable.childElements().eachSlice(2, function(x) {
+			x[0].removeClassName('even');
+		});
+
+		return new Element('div', {'class':'listDiv'}).update(newTable);
+	},
+
+	createSwapPopup:function(formation, upgrades, upgradeType) {
+		var menuItems = [];
 		upgrades.each(function(x) {
-			var menuItemId = 'menuItem_' + formation.id + '_' + upgradeType.id + '_' + x.id;
+			var id = formation.id + '_' + upgradeType.id + '_' + x.id;
 			var points = x.pts - upgradeType.pts;
 			if (points > 0) {
 				points = '+' + points;
 			}
-			var upgradeOption = new Element('tr', {'id':menuItemId, 'class':'interactive listItem even option'}).update(
-									new Element('td').update(x.name)
-								).insert(
-									new Element('td', {'class':'points'}).update(points) );
-
-			var msgBoxId = 'menuItemMsg_' + formation.id + '_' + upgradeType.id + '_' + x.id;
-			var msgBox = (new Element('div', {'id':msgBoxId, 'class':'constraint'})).update('hi');
-			msgBox.hide();
-			upgradeOption.firstDescendant().insert({top:msgBox});
-
-			newTable.insert(upgradeOption);		
-			upgradeOption.observe('click',
-					ArmyforgeUI.wrapActivatableHandler(upgradeOption, ArmyforgeUI.swapUpgrade)
+			var menuItem = ArmyforgeUI.createMenuItem(id, x.name, points);
+			menuItems.push(menuItem);		
+			menuItem.observe('click',
+					ArmyforgeUI.wrapActivatableHandler(menuItem, ArmyforgeUI.swapUpgrade)
 						.bindAsEventListener(this, formation, x, upgradeType));
 		});
-	
-		newTable.childElements().eachSlice(2, function(x) {
-			x[0].removeClassName('even');
-		});
+		var menu = ArmyforgeUI.createMenu('REPLACE WITH...',menuItems);
 
-		var dropDown = new Element('div', {'class':'dropDown'}).update(
-							new Element('div', {'class':'listDiv'}).update(newTable));
+		var dropDown = new Element('div', {'class':'dropDown'}).update(menu);
 		dropDown.observe('click', Event.stop.bindAsEventListener(this)); // prevent bubbling up
 		return dropDown;
 	},
 
-	createSectionMenu:function(list) {
-		var newTable = new Element('table').update(
-								new Element('tr').update(
-									new Element('th', {colspan:2}).update(list.name) ));
-	
-		list.formations.each(function(x) {
-			var listItem = new Element('tr', {'id':'menuItem_' + x.id, 'class':'interactive listItem even formationOption'}).update(
-								new Element('td').update(x.name)
-							).insert(
-								new Element('td', {'class':'points'}).update( x.cost ));
-
-			var msgBoxId = 'menuItemMsg_' + x.id;
-			var msgBox = (new Element('div', {'id':msgBoxId, 'class':'constraint'})).update('hi');
-			msgBox.hide();
-			listItem.firstDescendant().insert({top:msgBox});
-
-			listItem.formationType = x;
-			newTable.insert(listItem);
+	createSectionMenu:function(section) {
+		var menuItems = [];
+		section.formations.each(function(f) {
+			var menuItem = ArmyforgeUI.createMenuItem(f.id, f.name, f.cost);
+			menuItems.push(menuItem);		
 			 // should this be done after the table is inserted in the DOM?
-			listItem.observe('click', 
-					ArmyforgeUI.wrapActivatableHandler(listItem, ArmyforgeUI.addFormation)
-						.bindAsEventListener(this, x));
+			menuItem.observe('click', 
+					ArmyforgeUI.wrapActivatableHandler(menuItem, ArmyforgeUI.addFormation)
+						.bindAsEventListener(this, f));
 		});
-	
-		newTable.childElements().eachSlice(2, function(x) {
-			x[0].removeClassName('even');
-		});
+		var menu = ArmyforgeUI.createMenu(section.name,menuItems);
 
-		$('armyList').insert(
-			 new Element('div', {'class':'listDiv'}).update(newTable) );
+		$('armyList').insert(menu);
 	},
 
 	createUpgradesPopup:function(formation) {
-		var newTable = new Element('table').update(
-							new Element('tr').update(
-								new Element('th', {colspan:2}).update('UPGRADES') ));
-
-		if (formation.type.upgrades.length < 1) {	
-			var listItem = new Element('tr', {'class':'listItem even'}).update(
-								new Element('td', {colspan:'2', 'class':'inactive'}).update('None available') );
-			newTable.insert(listItem);		
-		};
-		formation.type.upgrades.each(function(x) {
-			var menuItemId = 'menuItem_' + formation.id + '_' + x.id;
-			var upgradeOption = new Element('tr', {'id':menuItemId, 'class':'interactive listItem even upgrade'}).update(
-									new Element('td').update(x.name)
-								).insert(
-									new Element('td', {'class':'points'}).update(x.pts) );
-
-			var msgBoxId = 'menuItemMsg_' + formation.id + '_' + x.id;
-			var msgBox = (new Element('div', {'id':msgBoxId, 'class':'constraint'})).update('hi');
-			msgBox.hide();
-			upgradeOption.firstDescendant().insert({top:msgBox});
-
-			newTable.insert(upgradeOption);		
-			upgradeOption.observe('click',
-					ArmyforgeUI.wrapActivatableHandler(upgradeOption, ArmyforgeUI.addUpgrade)
-						.bindAsEventListener(this, formation, x));
+		var menuItems = [];
+		formation.type.upgrades.each( function(u){
+			var menuItem = ArmyforgeUI.createMenuItem(formation.id+'_'+u.id, u.name, u.cost);	
+			menuItems.push(menuItem);
+			menuItem.observe('click',
+					ArmyforgeUI.wrapActivatableHandler(menuItem, ArmyforgeUI.addUpgrade)
+						.bindAsEventListener(this, formation, u));
 		});
-		newTable.childElements().eachSlice(2, function(x) {
-			x[0].removeClassName('even');
-		});
-		var dropDown = new Element('div', {'class':'dropDown'}).update(
-							new Element('div', {'class':'listDiv'}).update(newTable));
+		var menu = ArmyforgeUI.createMenu('UPGRADES',menuItems);
+		var dropDown = new Element('div', {'class':'dropDown'}).update(menu);
 		dropDown.observe('click', Event.stop.bindAsEventListener(this)); // prevent bubbling up
 		return dropDown;
 	},
@@ -335,11 +302,9 @@ var ArmyforgeUI = {
 						new Element('td', {'id':'formationPoints_'+formation.id, 'class':'points'}).update(formation.calcPoints()) );
 
 		if (formation.type.limited) {
-			newRow.addClassName('limited');
 			$('orbatBody').insert( newRow );
 		}
 		else {
-			newRow.addClassName(formation.type.limited2 ? 'limited2' : 'unlimited'); // is this class used?
 			$('formationDivider').insert({before:newRow});
 		}
 	
@@ -404,14 +369,6 @@ var ArmyforgeUI = {
 		if (count < 2) {
 			multiplier.hide();
 		}
-	},
-
-	reset:function() {
-		// todo what about (madatory formations?)
-		$$('.orbatFormation').each( Element.remove );
-		$$('.orbatUpgrade').each( Element.remove );
-		$$('.formationOption').each( ArmyforgeUI.activate );
-		ArmyforgeUI.updatePoints();
 	},
 
 	resetFormationDivider:function() {
