@@ -86,6 +86,9 @@ var ArmyList = {
 			formation.constraints = input.formationConstraints.findAll( function(c) {
 				return c.from.member(formation);
 			});
+			formation.independentConstraints = input.formationConstraints.findAll( function(c) {
+				return !c.maxPercent && !c.perPoints && !c.forEach;
+			});
 			// cost including any mandatory upgrades... add them in too!
 			var total = 0;
 			formation.mandatoryUpgradeConstraints.each( function(x) {
@@ -95,9 +98,7 @@ var ArmyList = {
 		});
 	},
 	upgradeForId:function(id) {
-		return ArmyList.data.upgrades.find( function(x) {
-			return x.id == id; 
-		});
+		return ArmyList.data.upgrades.find( function(x) { return x.id == id; });
 	},
 	formationForId:function(id) {
 		return ArmyList.allFormations.find( function(x){ return x.id == id; });
@@ -106,6 +107,35 @@ var ArmyList = {
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
+	violatedPercent:function(pts,constraint,formationPts){
+		if (constraint.maxPercent) {
+			var tooMany = (formationPts > 0) && (formationPts/pts)*100 > constraint.maxPercent;
+			if (tooMany) return 'more than ' +constraint.maxPercent+ '% spent on ' + constraint.name;
+		}
+		return '';
+	},
+
+	violated:function(pts,formations,constraint) {		
+		if (constraint.perPoints && constraint.max) {
+			var tooMany = formations.countAll(constraint.from) > (pts/constraint.perPoints) * constraint.max;
+			if (tooMany) return 'more than ' +constraint.max+ ' per ' +constraint.perPoints+ ' points';
+		}
+		if (constraint.perPoints && constraint.min) {
+			var tooFew = formations.countAll(constraint.from) < (pts/constraint.perPoints) * constraint.min;
+			if (tooFew) return 'less than ' +constraint.min+ ' per ' +constraint.perPoints+ ' points';
+		}		
+		if (constraint.forEach && constraint.max) {
+			var tooMany = formations.countAll(constraint.from) > formations.countAll(constraint.forEach) * constraint.max;
+			if (tooMany) return 'more than ' +constraint.max+' '+constraint.name+ ' per ' +constraint.name2;
+		}
+		if (constraint.forEach && constraint.min) {
+			var tooFew = formations.countAll(constraint.from) < formations.countAll(constraint.forEach) * constraint.min;
+			if (tooMany) return 'less than ' +constraint.min+' '+constraint.name+ ' per ' +constraint.name2;
+		}
+
+		return '';
+	},
+
 	canAddFormation:function(formations,constraint) {
 //		alert(formations.length + '_' + constraint.max);
 		if (constraint.max <= formations.countAll(constraint.from)) {
