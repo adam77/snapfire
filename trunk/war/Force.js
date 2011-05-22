@@ -2,7 +2,7 @@
 
 var Force = {
 	nextId:0,
-	name:'...click to edit...',
+	name:'Incompertus',
 	formations:[], //{id:i, type:t, upgrades:[u1,u2,u2,u2,u3,u4,u4]}
 	calcPoints:function() {
 		var total = 0;
@@ -34,10 +34,33 @@ var Force = {
 										return total > constraint.min;
 									}	
 									return true;								
+								},
+								cannotAdd:function(upgradeType) {
+									var why = [];
+									var upgrades = this.upgrades;
+									var allUpgrades = Force.allUpgrades();
+									this.type.constraintsOn(upgradeType).each( function(c) {
+										why.push( ArmyList.canAddUpgrade( c.perArmy ? allUpgrades : upgrades, c ) );
+									});										
+									return why.without('');
 								}
 							};
 		this.formations.push( formation );			
 		return formation;
+	},
+	getWarnings:function(){
+		return ['oh oh','yup'];
+	},
+	cannotAdd:function(formationType){
+//		alert(formationType.name + formationType.constraints.length);
+		var why = [];
+		formationType.constraints.each(function(c) {
+			why.push( ArmyList.canAddFormation( Force.formations.pluck('type'), c ) );
+		});
+		return why.without('');
+	},
+	allUpgrades:function() {
+		return Force.formations.pluck('upgrades').flatten();
 	},
 	pickle:function() {
 		var out = Force.name;
@@ -99,6 +122,10 @@ var Force = {
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	// mozilla border bug when hiding/showing rows
