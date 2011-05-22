@@ -72,7 +72,8 @@ var ArmyList = {
 				return formation.upgradeConstraints.findAll( function(c){return c.from.member(upgrade);} );
 			};
 			formation.optionsFor = function(upgrade){
-				return formation.mandatoryConstraint(upgrade).from.without(upgrade);
+				var constraint = formation.mandatoryConstraint(upgrade);
+				return constraint ? constraint.from.without(upgrade) : [];
 			};
 			formation.defaultUpgrades = function(){
 				var defaults = [];
@@ -86,7 +87,7 @@ var ArmyList = {
 			formation.constraints = input.formationConstraints.findAll( function(c) {
 				return c.from.member(formation);
 			});
-			formation.independentConstraints = input.formationConstraints.findAll( function(c) {
+			formation.independentConstraints = formation.constraints.findAll( function(c) {
 				return !c.maxPercent && !c.perPoints && !c.forEach;
 			});
 			// cost including any mandatory upgrades... add them in too!
@@ -137,7 +138,7 @@ var ArmyList = {
 	},
 
 	canAddFormation:function(formations,constraint) {
-//		alert(formations.length + '_' + constraint.max);
+//		alert(formations.length + '_' + constraint.max  + '_' + constraint.from.length + '_' + constraint.name);
 		if (constraint.max <= formations.countAll(constraint.from)) {
 			return ArmyList.maxString( constraint, true );
 		}
