@@ -43,18 +43,42 @@ var Force = {
 										why.push( ArmyList.canAddUpgrade( c.perArmy ? allUpgrades : upgrades, c ) );
 									});										
 									return why.without('');
+								},
+								cannotSwap:function(upgradeType,swapType) {
+									var why = [];
+									var upgrades = [].concat(this.upgrades).remove( upgradeType );
+									var allUpgrades = Force.allUpgrades().remove( upgradeType );
+									this.type.constraintsOn(swapType).each( function(c) {
+										why.push( ArmyList.canAddUpgrade( c.perArmy ? allUpgrades : upgrades, c ) );
+									});										
+									return why.without('');
 								}
 							};
 		this.formations.push( formation );			
 		return formation;
 	},
 	getWarnings:function(){
-		return ['oh oh','yup'];
+		var msgs = [];
+		ArmyList.data.formationConstraints.each(function(c) {
+			if (c.maxPercent) {
+				var points = 0;
+				Force.formations.each( function(f){
+					if (c.from.member(f.type)) {
+						points += f.calcPoints();
+					}
+				});
+				msgs.push( ArmyList.violatedPercent(Force.calcPoints(), c, points) );
+			}
+			else {
+				msgs.push( ArmyList.violated(Force.calcPoints(), Force.formations.pluck('type'), c) );
+			}
+		});
+		return msgs.without('');
 	},
 	cannotAdd:function(formationType){
 //		alert(formationType.name + formationType.constraints.length);
 		var why = [];
-		formationType.constraints.each(function(c) {
+		formationType.independentConstraints.each(function(c) {
 			why.push( ArmyList.canAddFormation( Force.formations.pluck('type'), c ) );
 		});
 		return why.without('');

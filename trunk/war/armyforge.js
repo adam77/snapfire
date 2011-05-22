@@ -11,6 +11,7 @@ Array.prototype.countAll = function(elements) {
 // removes the first instance of element...
 Array.prototype.remove = function(element) {
 	this.splice(this.indexOf(element), 1);
+	return this;
 }
 
 // is the array empty
@@ -79,9 +80,10 @@ var ArmyforgeUI = {
 
 	checkUpgradeMenuItems:function() {
 		Force.formations.each(function(f) {
+			// formation upgrades
 			f.type.upgrades.each(function(u) {
-				var msgs = f.cannotAdd(u);
 				var id = '_' + f.id + '_' + u.id;
+				var msgs = f.cannotAdd(u);
 				if (msgs.empty()) {
 					ArmyforgeUI.activate(id);
 				}
@@ -89,7 +91,21 @@ var ArmyforgeUI = {
 					ArmyforgeUI.deactivate(id,msgs);
 				}
 			});
-		});
+			
+			// upgrade swaps			
+			f.upgrades.uniq().each(function(u) {
+				f.type.optionsFor(u).each( function(o) {
+					var id = '_' + f.id + '_' + u.id + '_' + o.id; 
+					var msgs = f.cannotSwap(u,o);
+					if (msgs.empty()) {
+						ArmyforgeUI.activate(id);
+					}
+					else {
+						ArmyforgeUI.deactivate(id,msgs);
+					}					
+				});
+			});
+		});				
 	},
 
 	createSwapPopup:function(formation, upgrades, upgradeType) {
@@ -103,14 +119,20 @@ var ArmyforgeUI = {
 			newTable.insert(listItem);		
 		};
 		upgrades.each(function(x) {
+			var menuItemId = 'menuItem_' + formation.id + '_' + upgradeType.id + '_' + x.id;
 			var points = x.pts - upgradeType.pts;
 			if (points > 0) {
 				points = '+' + points;
 			}
-			var upgradeOption = new Element('tr', {'class':'interactive listItem even option'}).update(
+			var upgradeOption = new Element('tr', {'id':menuItemId, 'class':'interactive listItem even option'}).update(
 									new Element('td').update(x.name)
 								).insert(
 									new Element('td', {'class':'points'}).update(points) );
+
+			var msgBoxId = 'menuItemMsg_' + formation.id + '_' + upgradeType.id + '_' + x.id;
+			var msgBox = (new Element('div', {'id':msgBoxId, 'class':'constraint'})).update('hi');
+			msgBox.hide();
+			upgradeOption.firstDescendant().insert({top:msgBox});
 
 			newTable.insert(upgradeOption);		
 			upgradeOption.observe('click',
@@ -279,6 +301,7 @@ var ArmyforgeUI = {
 		ArmyforgeUI.updatePoints();
 		ArmyforgeUI.checkUpgradeMenuItems();
 		ArmyforgeUI.checkFormationMenuItems();
+		ArmyforgeUI.checkWarnings();
 	},
 
 	removeUpgrade:function(upgradeType, formation) {
@@ -286,6 +309,7 @@ var ArmyforgeUI = {
 			formation.upgrades.remove( upgradeType );
 			ArmyforgeUI.updateUpgrade(formation, upgradeType);
 			ArmyforgeUI.checkUpgradeMenuItems();		
+			ArmyforgeUI.checkWarnings();
 		}
 	},
 
