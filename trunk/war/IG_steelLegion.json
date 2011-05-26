@@ -1,0 +1,66 @@
+{
+	"id":"Steel Legion",
+	"version":"EA Rulebook Oct09",
+	"by":"Iron Bloke",
+	"notes":["If the Chimera upgrade is chosen, then you must purchase enough Chimera to transport the entire formation."],
+	"sections":[
+		{"name":"COMPANIES", "formations":[
+			{"id":512, "name":"Regimental HQ", 					"pts":500, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Supreme Commander, 12 Infantry, 7 Chimera"},
+		 	{"id":513, "name":"Infantry Company", 				"pts":250, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry"},
+			{"id":514, "name":"Mechanised Infantry Company", 	"pts":400, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry, 7 Chimera"},
+			{"id":515, "name":"Tank Company", 					"pts":650, "upgrades":[26,27,28,29,30,31,32,33,34,35,11,12]},
+			{"id":516, "name":"Super-heavy Tank Company", 		"pts":500, "upgrades":[26,27,28,29,30,31,32,33,34,35,14,15]},
+		 	{"id":517, "name":"Artillery Company", 				"pts":650, "upgrades":[26,27,28,29,30,31,32,33,34,35,20,21]}
+		]},
+		{"name":"SUPPORT FORMATIONS", "formations":[
+			{"id":500, "name":"Rough Rider Platoon", 			"pts":150, "upgrades":[], 	"units":"6 Rough Riders"},
+			{"id":501, "name":"Storm Trooper Platoon",			"pts":200, "upgrades":[36],	"units":"8 Storm Troopers"},
+			{"id":502, "name":"Artillery Battery",				"pts":250, "upgrades":[41,42,43]},
+			{"id":505, "name":"Sentinel Squadron",				"pts":100, "upgrades":[],  "units":"4 Sentinels"},
+			{"id":506, "name":"Deathstrike Missile Battery",	"pts":200, "upgrades":[],  "units":"2 Deathstrike Missile Launchers"},
+			{"id":507, "name":"Super-heavy Tank Platoon", 		"pts":200, "upgrades":[14,15]},
+			{"id":508, "name":"Orbital Support",				"pts":150, "upgrades":[23,24]},
+			{"id":509, "name":"Flak Battery",					"pts":150, "upgrades":[],  "units":"3 Hydra"},
+			{"id":510, "name":"Vulture Squadron",				"pts":300, "upgrades":[],  "units":"4 Vultures"}
+		]},
+		{"name":"IMPERIAL NAVY", "formations":[
+			{"id":519, "name":"Thunderbolt Fighters",	"pts":150, "upgrades":[], "units":"2 Thunderbolts"},
+			{"id":520, "name":"Marauder Bombers",		"pts":300, "upgrades":[], "units":"2 Marauders"}
+		]},
+		{"name":"TITAN LEGIONS", "formations":[
+			{"id":522, "name":"Warlord Class Titan",	"pts":850, "upgrades":[]},
+			{"id":523, "name":"Reaver Class Titan",		"pts":650, "upgrades":[]},
+			{"id":524, "name":"Warhound Titan",			"pts":250, "upgrades":[]}
+		]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Leman Russ",							"pts":0},
+		{"id":12, "name":"Vanquisher",							"pts":0},
+		{"id":14, "name":"Baneblade",							"pts":0},
+		{"id":15, "name":"Shadowsword",							"pts":0},
+		{"id":20, "name":"Basilisk",							"pts":0},
+		{"id":21, "name":"Manticore",							"pts":0},
+		{"id":23, "name":"Lunar Class",							"pts":0},
+		{"id":24, "name":"Emperor Class",						"pts":150},
+		{"id":41, "name":"3 Basilisks",							"pts":0},
+		{"id":42, "name":"3 Bombards",							"pts":0},
+		{"id":43, "name":"3 Manticores",						"pts":0},
+		{"id":27, "name":"Fire Support Platoon (4 Fire Support)","pts":100},
+		{"id":28, "name":"Infantry Platoon (6 Infantry)",		"pts":100},
+		{"id":29, "name":"Tank Squadron (3 Leman Russ)",		"pts":200},
+		{"id":30, "name":"Tank Squadron (3 Demolishers)",		"pts":200},
+		{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",	"pts":150},
+		{"id":32, "name":"Griffon Battery (3 Griffons)",		"pts":100},
+		{"id":33, "name":"2 Snipers",							"pts":50},
+		{"id":34, "name":"2 Ogryns",							"pts":50},
+		{"id":35, "name":"Hydra",								"pts":50},
+		{"id":26, "name":"Chimera",								"pts":25}, 
+		{"id":36, "name":"Valkyrie Transport",					"pts":150}
+	],
+	"formationConstraints":[
+		{"max":1, "perArmy":true, "from":[507]}
+	],
+	"upgradeConstraints":[
+		{"max":2, "name":"Exarch", "from":[11]}
+	]
+}
