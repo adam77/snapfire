@@ -134,10 +134,8 @@ var Force = {
 			if (x.type.units) {
 				units = [x.type.units].concat( units );
 			}
-			units.each( function(unit) {
-				txt += unit + ', ';
-			});
-			txt += '\n\n';
+			txt += units.join(', ');
+			txt += units.empty() ? '' : '\n';
 		});
 		txt += '\n\n';
 		return txt;

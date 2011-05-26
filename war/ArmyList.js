@@ -51,6 +51,17 @@ var ArmyList = {
 
 		// FORMATIONS... add some useful properties/functions...
 		this.allFormations.each( function(formation){
+			formation.constraints = input.formationConstraints.findAll( function(c) {
+				return c.from.member(formation);
+			});
+			formation.independentConstraints = formation.constraints.findAll( function(c) {
+				return !c.maxPercent && !c.perPoints && !c.forEach;
+			});
+			formation.hasPercentConstraint = formation.constraints.any( function(c) {
+				return c.maxPercent;
+			});
+
+			// upgrade constraints...
 			formation.upgradeConstraints = 
 				ArmyList.data.upgradeConstraints.filter( function(x){
 					return x.appliesTo.member(formation);
@@ -83,13 +94,7 @@ var ArmyList = {
 					}
 				});
 				return defaults;
-			};
-			formation.constraints = input.formationConstraints.findAll( function(c) {
-				return c.from.member(formation);
-			});
-			formation.independentConstraints = formation.constraints.findAll( function(c) {
-				return !c.maxPercent && !c.perPoints && !c.forEach;
-			});
+			};		
 			// cost including any mandatory upgrades... add them in too!
 			var total = 0;
 			formation.mandatoryUpgradeConstraints.each( function(x) {

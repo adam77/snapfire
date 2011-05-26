@@ -41,7 +41,6 @@ var ArmyforgeUI = {
 		var formation = Force.addFormation(formationType);
 		ArmyforgeUI.renderFormation( formation );
 		ArmyforgeUI.updatePoints();
-		ArmyforgeUI.resetFormationDivider();
 		ArmyforgeUI.checkUpgradeMenuItems();
 		ArmyforgeUI.checkFormationMenuItems();
 		ArmyforgeUI.checkWarnings();		
@@ -301,7 +300,7 @@ var ArmyforgeUI = {
 					 ).insert(
 						new Element('td', {'id':'formationPoints_'+formation.id, 'class':'points'}).update(formation.calcPoints()) );
 
-		if (formation.type.limited) {
+		if (formation.type.hasPercentConstraint) {
 			$('orbatBody').insert( newRow );
 		}
 		else {
@@ -368,13 +367,6 @@ var ArmyforgeUI = {
 		
 		if (count < 2) {
 			multiplier.hide();
-		}
-	},
-
-	resetFormationDivider:function() {
-		$$('.formationDivider').each(function(x) { x.removeClassName('formationDivider'); });
-		if ($$('.limited').any()) {
-			$$('.limited').first().addClassName('formationDivider');
 		}
 	},
 
