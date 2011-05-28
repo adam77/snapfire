@@ -1,0 +1,67 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":13, "name":"Bikes" "formations":[
+	{"id":15, "name":"Bike Unit",		"pts":0},
+	{"id":14, "name":"Attack Bike", 	"pts":0}
+]},
+{"id":16, "name":"Speeders" "formations":[
+	{"id":17, "name":"Land Speeder",	"pts":0},
+	{"id":18, "name":"Tornado",		"pts":10},
+	{"id":19, "name":"Typhoon",		"pts":25}
+]},
+{"id":20, "name":"Predators" "formations":[
+	{"id":21, "name":"Annihilator",	"pts":0},
+	{"id":22, "name":"Destructor",		"pts":0}
+]},
+{"id":60, "name":"Spacecraft" "formations":[
+	{"id":61, "name":"Strike Cruiser",	"pts":0},
+	{"id":62, "name":"Battle Barge",	"pts":150}
+]},
+{"id":50, "name":"Land Raiders" "formations":[
+	{"id":51, "name":"Land Raider",				"pts":0},
+	{"id":52, "name":"Land Raider Crusader",		"pts":0}
+]},
+{"id":37, "name":"Thunderhawk Transporter", 	"pts":100},
+
+{"id":23, "name":"Cmdr" "formations":[
+	{"id":24, "name":"Castellan",				"pts":50},
+	{"id":25, "name":"Chaplain", 				"pts":50},
+	{"id":27, "name":"Master",					"pts":100}
+]},
+{"id":30, "name":"Dreadnought",				"pts":50},
+{"id":31, "name":"Hunter", 					"pts":75},
+{"id":32, "name":"Land Raiders" "formations":[
+	{"id":34, "name":"Land Raider",			"pts":75},
+	{"id":35, "name":"Land Raider Crusader",	"pts":75}
+]},
+{"id":36, "name":"Razorback",					"pts":25},
+{"id":38, "name":"Vindicator",					"pts":50},
+{"id":39, "name":"Neophyte",					"pts":25},
+{"id":40, "name":"Emperor\"s Champion",		"pts":75},
+
+{"id":516, "name":"DETACHMENTS" "formations":[
+	{"id":500, "name":"Assault Detachment", 		"pts":175, "units":"4 Assault Units", "upgrades":[commander, vindicator]},
+	{"id":501, "name":"Bike Detachment", 			"pts":200, "upgrades":[bikes,commander]},
+	{"id":502, "name":"Devastator Detachment",		"pts":250, "units":"4 Devastators, Transport", "upgrades":[commander, razorbacks, dreadnought, hunter, landRaiders, vindicator]},
+	{"id":503, "name":"Land Raiders",				"pts":350, "upgrades":[commander, hunter, vindicator,raiders]},
+	{"id":504, "name":"Land Speeders",				"pts":200, "upgrades":[commander,speeders]},
+	{"id":505, "name":"Landing Craft",				"pts":350, "upgrades":[]},
+	{"id":506, "name":"Predators",					"pts":275, "upgrades":[commander, hunter, vindicator,predators]},
+	{"id":511, "name":"Tactical Detachment",		"pts":300, "units":"6 Tacticals, Transport", "upgrades":[commander, razorbacks, dreadnought, hunter, vindicator, landRaiders, neophyte, champ]},
+	{"id":512, "name":"Terminator Detachment",		"pts":350, "units":"4 Terminators", "upgrades":[commander, vindicator, dreadnought, landRaiders, champ]},
+	{"id":513, "name":"Thunderhawk",				"pts":200, "upgrades":[]},
+	{"id":514, "name":"Thunderhawk Transporter",	"pts":100, "upgrades":[transporter]},
+	{"id":515, "name":"Vindicator Detachment",		"pts":250, "units":"4 Vindicators", "upgrades":[commander, hunter, vindicator]}
+]},
+{"id":508, "name":"Spacecraft", "pts":200, "upgrades":[spacecraft] },
+
+{
+	"id":"Black Templars", "version":"Epic UK v010409",
+	sublists:[detachmentList],
+	mandatoryFormations: [spaceship]},
+
+

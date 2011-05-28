@@ -1,0 +1,130 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{
+  "name":"Transport" "formations":[
+    { "id":11, "name":"Rhinos", "pts":0 },
+    { "id":12, "name":"Drop Pods", "pts":0 }
+  ]
+},
+
+{
+  "id":13, "name":"Attack Bikes" "formations":[
+    { "id":14, "name":"Bike Unit", "pts":0 },
+    { "id":15, "name":"Attack Bike", "pts":0 },
+    { "id":16, "name":"Landspeeder", "pts":0 }
+  ]
+},
+{
+  "id":20, "name":"Land Raiders" "formations":[
+    { "id":21, "name":"Land Raider", "pts":0 },
+    { "id":22, "name":"Land Raider Helios", "pts":25 }
+  ]
+},
+{
+  "id":30, "name":"Predators" "formations":[
+    { "id":31, "name":"Predator Annihilator", "pts":0 },
+    { "id":32, "name":"Predator Destructor", "pts":0 }
+  ]
+},
+{
+  "id":40, "name":"Spacecraft" "formations":[
+    { "id":41, "name":"Strike Cruiser", "pts":0 },
+    { "id":42, "name":"Battle Barge", "pts":125 }
+  ]
+},
+
+{
+  "id":50, "name":"Commander" "formations":[
+    { "id":51, "name":"Captain", "pts":50 },
+    { "id":52, "name":"Librarian", "pts":50 },
+    { "id":53, "name":"Chaplain", "pts":50 },
+    { "id":54, "name":"Supreme Commander", "pts":100 }
+  ]
+},
+{
+  "id":70, "name":"Close Support" "formations":[
+    { "id":71, "name":"Predator Incinerator", "pts":50 },
+    { "id":72, "name":"Hunter", "pts":75 },
+    { "id":73, "name":"Land Raider", "pts":75 },
+    { "id":74, "name":"Land Raider Redeemer", "pts":75 },
+    { "id":75, "name":"Land Raider Prometheus", "pts":85 }
+  ]
+},
+{
+  "id":90, "name":"Close Support" "formations":[
+    { "id":91, "name":"Predator Incinerator", "pts":50 },
+    { "id":92, "name":"Hunter", "pts":75 },
+    { "id":93, "name":"Land Raider", "pts":75 },
+    { "id":94, "name":"Land Raider Redeemer", "pts":75 },
+    { "id":95, "name":"Land Raider Prometheus", "pts":85 },
+    { "id":96, "name":"Land Raider Helios", "pts":100 }
+  ]
+},
+{"id":60, "name":"4 Land Raiders or Redeemers", "pts":325 },
+{
+  "id":80, "name":"Razorback" "formations":[
+    { "id":81, "name":"Razorback (twin lascannon)", "pts":25 },
+    { "id":82, "name":"Razorback (twin heavy bolter)", "pts":25 }
+  ]
+},
+{
+  "id":83, "name":"Dreadnought" "formations":[
+  { "id":84, "name":"Hellfire Dreadnought", "pts":50 },
+  { "id":85, "name":"Vulcan Dreadnought", "pts":50 }
+  ]
+},
+
+{ "id":101, "name":"Sniper", "pts":50 },
+{ "id":102, "name":"2 Salamander Devastator units", "pts":100 },
+{ "id":103, "name":"2 Salamander Tactical units", "pts":75 },
+
+{
+  "id":500, "name":"DETACHMENTS" "formations": [
+    { "id":501, "name":"Devastator Detachment", "pts":250, "units":"4 Devastator units", "upgrades":[transport, commander, closeSup, dread, razorbacks, salDev] },
+    { "id":502, "name":"Land Raider Detachment", "pts":350, "units":"4 Land Raiders", "upgrades":[commander, closeSupHe] },
+    { "id":503, "name":"Landing Craft", "pts":425, "upgrades":[] },
+    { "id":504, "name":"Predator Detachment", "pts":275, "upgrades":[preds, commander, closeSup] },
+    { "id":505, "name":"Spacecraft", "pts":200, "upgrades":[spacecraft] },
+    { "id":506, "name":"Tactical Detachment", "pts":300, "units":"6 Tactical units", "upgrades":[transport, commander, dread, razorbacks, salTac, closeSup] },
+    { "id":507, "name":"Terminator Detachment", "pts":325, "units":"4 Terminator units", "upgrades":[commander, closeSupHe, dread, heavySup] },
+    { "id":508, "name":"Thunderhawk", "pts":250, "upgrades":[] },
+    { "id":509, "name":"Vindicator Detachment", "pts":250, "units":"4 Vindicators", "upgrades":[commander, closeSup] },
+    { "id":510, "name":"Whirlwind Detachment", "pts":300, "units":"4 Whirlwinds", "upgrades":[commander, closeSupHe] }
+  ]
+},
+
+{
+  "id": 520, "name":"RESTRICTED FORMATIONS" "formations": [
+    { "id":521, "name":"Assault Detachment", "pts":150, "units":"4 Assault units", "upgrades":[commander,closeSup] },
+    { "id":522, "name":"Fast Attack Detachment", "pts":200, "upgrades":[abikes,commander] },
+    { "id":523, "name":"Scout Detachment", "pts":150, "units":"4 Scout units plus transport", "upgrades": [commander,razorbacks,sniper] }
+  ]
+}
+
+
+{
+  "id":530, "name":"AIRCRAFT" "formations":[
+    { "id":531, "name":"Fighter Squadron", "pts":150, "units":"2 Thunderbolt Fighters", "upgrades":[] },
+    { "id":532, "name":"Bomber Squadron", "pts":250, "units":"2 Marauder Bombers", "upgrades":[] }
+  ]
+},
+
+{
+  "id":540, "name":"TITANS" "formations":[
+    { "id":541, "name":"Warlord Class Titan", "pts":850, "upgrades":[] },
+    { "id":542, "name":"Reaver Class Titan", "pts":650, "upgrades":[] },
+    { "id":543, "name":"Warhound Titan", "pts":275, "upgrades":[] },
+    { "id":544, "name":"Warhound Pack", "pts":500, "units":"2 Warhounds", "upgrades":[] }
+  ]
+},
+
+{
+  "id":"Salamanders", "version":"NetEA v1.13",
+  sublists:[formationList, restrictedList, navyList, titanList]
+},
+
+

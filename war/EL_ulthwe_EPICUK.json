@@ -1,0 +1,90 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":11, "name":"Ranger",		"pts":25},
+{"id":14, "name":"Aspect Warrior" "formations":[
+	{"id":15, "name":"Dire Avenger",		"pts":0},
+	{"id":16, "name":"Striking Scorpion",	"pts":0},
+	{"id":17, "name":"Howling Banshee",	"pts":0},
+	{"id":18, "name":"Fire Dragon",		"pts":0},
+	{"id":19, "name":"Warp Spider",		"pts":0},
+	{"id":20, "name":"Dark Reaper",		"pts":0},
+	{"id":21, "name":"Swooping Hawk",		"pts":0},
+	{"id":22, "name":"Shining Spear",		"pts":0}
+]},
+{"id":23, "name":"Guardians" "formations":[
+	{"id":24, "name":"Guardians",			"pts":0},
+	{"id":25, "name":"Heavy Weapon Platform","pts":0}
+]},
+{"id":26, "name":"Bikes" "formations":[
+	{"id":27, "name":"Jetbike",			"pts":0},
+	{"id":28, "name":"Vyper", 				"pts":0}
+]},
+{"id":29, "name":"Falcons" "formations":[
+	{"id":30, "name":"Falcon",				"pts":50},
+	{"id":31, "name":"Fire Storm", 		"pts":50}
+]},
+{"id":33, "name":"Engines of Vaul" "formations":[
+	{"id":34, "name":"Cobra",				"pts":250},
+	{"id":35, "name":"Scorpion",			"pts":250},
+	{"id":36, "name":"Storm Serpent",		"pts":250}
+]},
+
+{"id":38, "name":"Exarch" "formations":[
+	{"id":39, "name":"Exarch", 	"pts":25}
+]},
+{"id":101, "name":"Seers" "formations":[
+	{"id":102, "name":"Farseers", "pts":0},
+	{"id":103, "name":"Seer Council", "pts":100}
+]},
+{"id":110, "name":"Aspect Transport" "formations":[
+	{"id":41, "name":"Wave Serpent",	"pts":50},
+	{"id":42, "name":"Falcon",	"pts":65}
+]},
+{"id":43, "name":"3 Support Weapon Platforms",	"pts":50},
+{"id":44, "name":"3 Wraithguard",				"pts":150},
+{"id":45, "name":"Wraithlords",				"pts":175},
+{"id":46, "name":"Spirit Stones",			"pts":25},
+
+{"id":506, "name":"TROUPES" "formations":[
+	{"id":500, "name":"Ranger Troupe",				"pts":0, "upgrades":[ranger]},
+	{"id":501, "name":"War Walker Troupe",			"pts":200,	"units":"6 Warwalkers",	"upgrades":[spiritstones]},
+	{"id":502, "name":"Windrider Troupe",			"pts":200, 	"upgrades":[jetbikers, spiritstones]},
+	{"id":503, "name":"Falcon Troupe",				"pts":0, "upgrades":[falcons, spiritstones]},
+	{"id":504, "name":"Night Spinner Troupe",		"pts":175, 	"units":"3 Night Spinners", "upgrades":[spiritstones]},
+	{"id":505, "name":"Engines of Vaul Troupe",	"pts":0, "upgrades":[engines, spiritstones]},
+	{"id":530, "name":"Fire Prism Troupe",			"pts":250, 	"units":"3 Fire Prisms", "upgrades":[spiritstones]},
+	{"id":531, "name":"Aspect Troupe", "pts":250, "upgrades":[aspects, transport, exarchs]}
+]},
+
+{"id":509, "name":"INDIVIDUALS" "formations":[
+	{"id":507, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
+	{"id":508, "name":"Avatar",		"pts":0,		"upgrades":[]}
+]},
+
+{"id":513, "name":"WARHOSTS" "formations":[
+	{"id":510, "name":"Black Guardian Warhost", "pts":175, "upgrades":[seers, guardians, supportweapon, wraithlords, wraithguard]},
+	{"id":511, "name":"Black Guardian Warhost (Mounted)", "pts":375, "units":"4 Waveserpents", "upgrades":[seers, guardians]}
+]},
+
+{"id":514, "name":"Spacecraft"},
+{"id":523, "name":"SPACESHIPS, AIRCRAFT &amp, TITANS" "formations":[
+	{"id":515, "name":"Wraithship",	"pts":150, "upgrades":[]},
+	{"id":516, "name":"Dragonship",	"pts":300, "upgrades":[]},
+ 	{"id":517, "name":"Warlock Titan",	"pts":850, "upgrades":[]},
+	{"id":518, "name":"Phantom Titan",	"pts":750, "upgrades":[]},
+	{"id":519, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
+	{"id":520, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
+	{"id":521, "name":"Phoenix Bombers","pts":350, "units":"3 Phoenix Bombers", "upgrades":[]},
+	{"id":522, "name":"Vampire Raider","pts":200, "upgrades":[]}
+]},
+
+{
+	"id":"Ulthw&eacute, Craftworld", "version":"Epic-UK v20101230",
+	sublists:[individualList, warhostList, troupeList, allyList],
+	restriction:{limit:2, restricting:"Warhost", restricted:"Troupes"}
+	},
+

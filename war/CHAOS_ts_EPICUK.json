@@ -1,0 +1,75 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":16, "name":"Lord" "formations":[
+	{"id":18, "name":"Sorcerer Lord", 		"pts":0},
+	{"id":19, "name":"Daemon Prince", 		"pts":50},
+	{"id":20, "name":"Chaos Warlord (Supreme Commander)", 		"pts":50},
+	{"id":21, "name":"Daemon Prince (Supreme Commander)", "pts":100}
+]},
+{"id":23, "name":"Death Wheel", 	"pts":275},
+{"id":25, "name":"Decimator", 		"pts":225},
+{"id":26, "name":"Vehicles" "formations":[
+	{"id":27, "name":"Chaos Predator", 	"pts":50},
+	{"id":28, "name":"Chaos Land Raider", 	"pts":75}
+]},
+{"id":30, "name":"Raptor", 		"pts":35},
+{"id":32, "name":"Chaos Terminator","pts":60},
+{"id":33, "name":"Marines" "formations":[
+	{"id":34, "name":"5 Thousand Sons", 	"pts":0},
+	{"id":35, "name":"8 Thousand Sons", 	"pts":200}
+]},
+{"id":39, "name":"Firelord", 		"pts":150},
+
+{"id":50, "name":"Greater Daemon", "pts":75},
+{"id":51, "name":"Lesser Daemon", "pts":20},
+{"id":52, "name":"Aspiring Sorcerer", "pts":50},
+{"id":53, "name":"Chaos Land Raider", "pts":75},
+{"id":54,	"name":"Chaos Vindicator", "pts":35},
+{"id":55, "name":"4 Cult Marines", "pts":150},
+{"id":56, "name":"Daemonic Pact", "pts":25},
+{"id":57, "name":"Thousand Sons Defiler", "pts":75},
+{"id":58, "name":"Dreadclaw Drop Pod", "pts":5},
+{"id":59, "name":"4 Havocs", "pts":150},
+{"id":60, "name":"Icon Bearer", "pts":50},
+{"id":61, "name":"Obliterator", "pts":85},
+{"id":62, "name":"Rhino", "pts":10},
+{"id":63, "name":"Dreadnought", "pts":50},
+
+{"id":500, "name":"CORE" "formations":[
+	{"id":501, "name":"Thousand Sons Retinue","pts":300,"units":"Cabal of Sorcerers","upgrades":[ts,raiders,icon,champion,defiler,rhino]},
+	{"id":552, "name":"Daemon Pool",			"pts":0,"upgrades":[greater,lesser]}
+]},
+
+{"id":502, "name":"SUPPORT" "formations":[
+	{"id":503, "name":"Terminators","pts":400,"units":"4 Terminators","upgrades":[lord,dread,raiders,pact,icon,defiler]},
+	{"id":506, "name":"Defiler Pack","pts":300,"units":"4 Defilers","upgrades":[dread]},
+	{"id":508, "name":"Disc Riders","pts":300,"units":"8 Disc Riders","upgrades":[lord,pact,icon]},	
+	{"id":509, "name":"Armoured Company","pts":0,"upgrades":[armour]},
+	{"id":510, "name":"Silver Towers","pts":325,"units":"4 Silver Towers","upgrades":[]}
+]},
+
+{"id":532, "name":"Spacecraft"},
+{"id":535, "name":"CHAOS NAVY & DAEMONIC ENGINES" "formations":[
+	{"id":530, "name":"Doomwings",					"pts":150, "units":"3 Doomwings", "upgrades":[]},
+	{"id":531, "name":"Firelords",					"pts":0, "upgrades":[firelord]},
+	{"id":533, "name":"Devastation Class Cruiser",	"pts":150, "upgrades":[]}, 
+	{"id":534, "name":"Despoiler Class Battleship","pts":250, "upgrades":[]}
+]},
+
+{"id":524, "name":"CHAOS TITANS" "formations":[
+	{"id":520, "name":"Warplord Titan",		"pts":800, "upgrades":[]},
+	{"id":521, "name":"Mutator Titan",			"pts":650, "upgrades":[]},
+	{"id":522, "name":"Warphound Tian",		"pts":275, "upgrades":[]}
+]},
+
+{
+	"id":"Thousand Sons", "version":"Epic UK v090710",
+	sublists:[core, support, titanList, navyList],
+	restriction:{limit:2, restricting:"Retinue", restricted:"Support Formations"}
+},
+
+

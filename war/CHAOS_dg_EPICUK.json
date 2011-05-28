@@ -1,0 +1,79 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":16, "name":"Lord" "formations":[
+	{"id":17, "name":"Chaos Lord", 	"pts":0},
+	{"id":18, "name":"Sorcerer Lord", 	"pts":0},
+	{"id":19, "name":"Daemon Prince", 	"pts":50},
+	{"id":20, "name":"Chaos Warlord (Supreme Commander)", 	"pts":50},
+	{"id":21, "name":"Daemon Prince (Supreme Commander)", "pts":100}
+]},
+{"id":23, "name":"Death Wheel", "pts":275},
+{"id":25, "name":"Decimator", "pts":225},
+{"id":26, "name":"Vehicles" "formations":[
+	{"id":27, "name":"Chaos Predator", "pts":50},
+	{"id":28, "name":"Chaos Land Raider", "pts":75}
+]},
+{"id":30, "name":"Raptor", "pts":35},
+{"id":32, "name":"Chaos Terminator", "pts":60},
+{"id":33, "name":"Marines" "formations":[
+	{"id":34, "name":"7 Plague Marines", 			"pts":0},
+	{"id":35, "name":"5 Plague Marines, 2 Havocs", "pts":40}
+]},
+{"id":37, "name":"Plaguereaper", "pts":200},
+{"id":39, "name":"Contagion Engine", "pts":75},
+
+{"id":50, "name":"Greater Daemon", "pts":75},
+{"id":51, "name":"Lesser Daemon", "pts":20},
+{"id":52, "name":"Chaos Champion", "pts":50},
+{"id":53, "name":"Chaos Land Raider", "pts":75},
+{"id":54,	"name":"Chaos Vindicator", "pts":35},
+{"id":55, "name":"4 Cult Marines", "pts":150},
+{"id":56, "name":"Daemonic Pact", "pts":25},
+{"id":57, "name":"Death Guard Defiler", "pts":75},
+{"id":58, "name":"Dreadclaw Drop Pod", "pts":5},
+{"id":59, "name":"4 Havocs", "pts":150},
+{"id":60, "name":"Icon Bearer", "pts":50},
+{"id":61, "name":"Obliterator", "pts":85},
+{"id":62, "name":"Rhino", "pts":10},
+{"id":63, "name":"Dreadnought", "pts":50},
+{"id":64, "name":"Plague Tower", "pts":325},
+{"id":65, "name":"Contagion Engine", "pts":75},
+
+{"id":500, "name":"CORE" "formations":[
+	{"id":501,	"name":"Death Guard Retinue", "pts":325, "upgrades":[lord,dg,raiders,vindi,icon,champion,pact,tower,contagion,dread,defiler]},
+	{"id":551,	"name":"Daemon Pool",			"pts":0,	"upgrades":[greater, lesser]}
+]},
+
+{"id":502, "name":"SUPPORT" "formations":[
+	{"id":503,	"name":"Death Guard Terminators",	"pts":400,	"units":"4 Terminators",	"upgrades":[lord,dread,raiders,pact,icon]	},
+	{"id":504,	"name":"Plague Zombie Infestation",	"pts":200,	"units":"3+2D6 Plague Zombies",	"upgrades":[]	},	
+	{"id":505,	"name":"Plague Engines",	"pts":25,	"upgrades":[contag,tower,defiler]	},	
+	{"id":506,	"name":"Death Guard Defiler Pack",	"pts":300,	"units":"4 Defilers",	"upgrades":[dread]	},
+	{"id":507,	"name":"Super Heavy Company",	"pts":0,	"upgrades":[reaper,defiler,contagion]	},	
+	{"id":508,	"name":"Chaos Space Marines",	"pts":250,	"units":"6 Chaos Marines, 3 Rhinos",	"upgrades":[pact]	},	
+	{"id":509,	"name":"Armoured Company",	"pts":0,	"upgrades":[armour]	}
+]},
+
+{"id":535, "name":"CHAOS NAVY" "formations":[
+	{"id":530, "name":"Hellblade Flight",	"pts":200, "units":"3 Fighters", "upgrades":[]},
+	{"id":531, "name":"Helltalon Flight",	"pts":250, "units":"2 Bombers", "upgrades":[]},
+	{"id":533, "name":"Plague Ship",		"pts":200, "upgrades":[]}
+]},
+
+{"id":523, "name":"CHAOS TITANS" "formations":[
+	{"id":520, "name":"Plaguelord Titan",	"pts":800, "upgrades":[]},
+	{"id":521, "name":"Rupugnant Titan",	"pts":650, "upgrades":[]},
+	{"id":522, "name":"Plaguehound Titan",	"pts":275, "upgrades":[]}
+]},
+
+{
+	"id":"Death Guard", "version":"Epic UK v090710",
+	sublists:[core, support, titanList, navyList],
+	restriction:{limit:2, restricting:"Retinue", restricted:"Support Formations"}
+},
+
+

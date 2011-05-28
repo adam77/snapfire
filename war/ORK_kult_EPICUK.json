@@ -1,0 +1,148 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":65, "name":"Fighta Bomba",	"pts":50},
+{"id":101, "name":"Boyz (trukk)",	"pts":25},
+{"id":103, "name":"Boyz (trukk)",	"pts":25},
+{"id":105, "name":"Boyz (trukk)",	"pts":25},
+{"id":10, "name":"Nobz" "formations":[
+	{"id":12, "name":"Nobz (trukk)",	"pts":35},
+	{"id":120, "name":"Nobz (bikes)",	"pts":35}
+]},
+{"id":13, "name":"Nobz" "formations":[
+	{"id":15, "name":"Nobz (trukk)",	"pts":35},
+	{"id":121, "name":"Nobz (bikes)",	"pts":35}
+]},
+{"id":16, "name":"Nobz" "formations":[
+	{"id":18, "name":"Nobz (trukk)",	"pts":35},
+	{"id":122, "name":"Nobz (bikes)",	"pts":35}
+]},
+{"id":19, "name":"Bikes" "formations":[
+	{"id":20, "name":"Buggy",			"pts":25},
+	{"id":21, "name":"Warbike",		"pts":25},
+	{"id":22, "name":"Skorcha",		"pts":25}
+]},
+{"id":23, "name":"Bikes" "formations":[
+	{"id":24, "name":"Buggy",			"pts":25},
+	{"id":25, "name":"Warbike",		"pts":25},
+	{"id":26, "name":"Skorcha",		"pts":25}
+]},
+{"id":27, "name":"Bikes" "formations":[
+	{"id":28, "name":"Buggy",			"pts":25},
+	{"id":29, "name":"Warbike",		"pts":25},
+	{"id":30, "name":"Skorcha",		"pts":25}
+]},
+{"id":31, "name":"Bikes" "formations":[
+	{"id":32, "name":"Buggy",			"pts":25},
+	{"id":33, "name":"Warbike",		"pts":25},
+	{"id":34, "name":"Skorcha",		"pts":25}
+]},
+{"id":35, "name":"Bikes" "formations":[
+	{"id":36, "name":"Buggy",			"pts":25},
+	{"id":37, "name":"Warbike",		"pts":25},
+	{"id":38, "name":"Skorcha",		"pts":25}
+]},
+{"id":39, "name":"Bikes" "formations":[
+	{"id":40, "name":"Buggy",			"pts":25},
+	{"id":41, "name":"Warbike",		"pts":25},
+	{"id":42, "name":"Skorcha",		"pts":25}
+]},
+{"id":43, "name":"Wagonz" "formations":[
+	{"id":44, "name":"Gunwagon",		"pts":35},
+	{"id":45, "name":"Deth Kopta",		"pts":35},
+	{"id":46, "name":"Flakwagon",		"pts":35}
+]},
+{"id":47, "name":"Wagonz" "formations":[
+	{"id":48, "name":"Gunwagon",		"pts":35},
+	{"id":49, "name":"Deth Kopta",		"pts":35},
+	{"id":50, "name":"Flakwagon",		"pts":35}
+]},
+{"id":51, "name":"Wagonz" "formations":[
+	{"id":52, "name":"Gunwagon",		"pts":35},
+	{"id":53, "name":"Deth Kopta",		"pts":35},
+	{"id":54, "name":"Flakwagon",		"pts":35}
+]},
+{"id":55, "name":"Fortresses" "formations":[
+	{"id":56, "name":"Battlefortress",		"pts":0},
+	{"id":57, "name":"Gunfortress",		"pts":0}
+]},
+{"id":58, "name":"Fortresses" "formations":[
+	{"id":59, "name":"Battlefortress",		"pts":0},
+	{"id":60, "name":"Gunfortress",		"pts":0}
+]},
+{"id":61, "name":"Fortresses" "formations":[
+	{"id":62, "name":"Battlefortress",		"pts":0},
+	{"id":63, "name":"Gunfortress",		"pts":0}
+]},
+
+{"id":66, "name":"Boyz", 							"pts":25},
+{"id":67, "name":"Commandos",						"pts":25},
+{"id":68, "name":"Stormboyz",						"pts":25},
+{"id":69, "name":"Buggy",							"pts":25},
+{"id":70, "name":"Warbike",						"pts":25},
+{"id":71, "name":"Skorcha",						"pts":25},
+{"id":72, "name":"Big Gun",						"pts":25},
+{"id":73, "name":"Battlewagon",					"pts":35},
+{"id":74, "name":"Deth Kopta",						"pts":35},
+{"id":75, "name":"Dreadnought",					"pts":35},
+{"id":76, "name":"Flakwagon",						"pts":35},
+{"id":77, "name":"Gunwagon",						"pts":35},
+{"id":78, "name":"Nobz" "formations":[
+	{"id":79, "name":"Nobz",						"pts":35},
+	{"id":80, "name":"Nobz (bikes)",				"pts":35}
+]},
+{"id":81, "name":"Nobz" "formations":[
+	{"id":82, "name":"Nobz",						"pts":35},
+	{"id":83, "name":"Nobz (bikes)",				"pts":35}
+]},
+{"id":84, "name":"Nobz" "formations":[
+	{"id":85, "name":"Nobz",						"pts":35},
+	{"id":86, "name":"Nobz (bikes)",				"pts":35}
+]},
+{"id":87, "name":"Mekboy Speedsta",				"pts":50},
+{"id":88, "name":"Mekboy Speedsta",				"pts":50},
+{"id":89, "name":"Mekboy Speedsta",				"pts":50},
+{"id":90, "name":"Battlefortress",					"pts":115},
+{"id":91, "name":"Extra Battlefortress",			"pts":115},
+{"id":92, "name":"Extra Battlefortress",			"pts":115},
+{"id":93, "name":"Extra Battlefortress",			"pts":115},
+{"id":94, "name":"Gunfortress",					"pts":125},
+{"id":95, "name":"Extra Gunfortress",				"pts":125},
+{"id":96, "name":"Extra Gunfortress",				"pts":125},
+{"id":97, "name":"Extra Gunfortress",				"pts":125},
+{"id":98, "name":"Battlekrooza",					"pts":50},
+{"id":110, "name":"Mekboy Bad Ork Bikeboy",		"pts":0},
+
+{"id":515, "name":"FORMATIONS" "formations":[	
+	{"id":500, "name":"Speed Freaks Warband",			"pts":-10, "upgrades":[nob1, boy1, stormboyz, kult1, bigGun, battlewagon, dethKopta, flakwagon, gunwagon, speedsta1, badork]},
+	{"id":501, "name":"Speed Freaks Warband (Big)",	"pts":-45, "upgrades":[nob2, boy2, stormboyz, kult2, bigGun, battlewagon, dethKopta, flakwagon, gunwagon, speedsta2, badork]},
+	{"id":502, "name":"Speed Freaks Warband (\'Uge)",	"pts":-80, "upgrades":[nob3, boy3, stormboyz, kult3, bigGun, battlewagon, dethKopta, flakwagon, gunwagon, speedsta3, badork]},
+	{"id":503, "name":"Kult of Speed",					"pts":0, "upgrades":[kult1b, dethKopta, flakwagon, gunwagon, speedsta1, badork]},
+	{"id":504, "name":"Kult of Speed (Big)",			"pts":-50, "upgrades":[kult2b, dethKopta, flakwagon, gunwagon, speedsta2, badork]},
+	{"id":505, "name":"Kult of Speed (\'Uge)",			"pts":-100, "upgrades":[kult3b, dethKopta, flakwagon, gunwagon, speedsta3, badork]},
+	{"id":506, "name":"Blitz Brigade",					"pts":10, "upgrades":[buggy, warbike, skorcha, blitz1, speedsta1, gunFortress1, nobgroup1, badork]},
+	{"id":507, "name":"Blitz Brigade (Big)",			"pts":-30, "upgrades":[buggy, warbike, skorcha, blitz2, speedsta2, gunFortress2, nobgroup2, badork]},
+	{"id":508, "name":"Blitz Brigade (\'Uge)",			"pts":-70, "upgrades":[buggy, warbike, skorcha, blitz3, speedsta3, gunFortress3, nobgroup3, badork]},
+	{"id":509, "name":"Warbike Outriders",				"pts":150, "units":"5 Warbikes", "upgrades":[badork]},
+	{"id":510, "name":"Warbike Outriders (Big)",		"pts":250, "units":"10 Warbikes", "upgrades":[badork]},
+	{"id":511, "name":"Warbike Outriders (\'Uge)",		"pts":350, "units":"15 Warbikes", "upgrades":[badork]},
+	{"id":512, "name":"Fortress Mob",					"pts":275, "upgrades":[forts1, boyz, flakwagon, nobgroup1, battleFortress1, gunFortress1, badork]},
+	{"id":513, "name":"Fortress Mob (Big)",			"pts":475, "upgrades":[forts2, boyz, flakwagon, nobgroup2, battleFortress2, gunFortress2, badork]},
+	{"id":514, "name":"Fortress Mob (\'Uge)",			"pts":675, "upgrades":[forts3, boyz, flakwagon, nobgroup3, battleFortress3, gunFortress3, badork]}
+]},
+
+{"id":518, "name":"Spacecraft"},
+{"id":521, "name":"AIRCRAFT and SPACECRAFT" "formations":[
+ 	{"id":516, "name":"Fighta Squadron",	"pts":0, "upgrades":[fightaBomba]},
+	{"id":517, "name":"Landa",				"pts":200, "upgrades":[]},
+	{"id":519, "name":"Kill Kroozer",		"pts":150, "upgrades":[]},
+	{"id":520, "name":"Battle Kroozer",	"pts":250, "upgrades":[]}
+]},
+
+{
+	"id":"Burning Death Speed Freeks", "version":"Epic UK v100909",
+	sublists:[warbandList, othersList]},
+

@@ -1,0 +1,51 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":10, "name":"Gunships" "formations":[
+	{"id":11, "name":"Valkyrie",	"pts":0},
+	{"id":12, "name":"Vendetta",	"pts":0}
+]},
+{"id":13, "name":"Spacecraft" "formations":[
+	{"id":14, "name":"Lunar Class Cruiser",		"pts":0},
+	{"id":15, "name":"Emperor Class Battleship",	"pts":150}
+]},
+{"id":16, "name":"Sentinels" "formations":[
+	{"id":17, "name":"4 Light Sentinels", "pts":0},
+	{"id":18, "name":"2 Light Sentinels, 2 Melta Sentinels", "pts":25},
+	{"id":19, "name":"4 Melta Sentinels", "pts":50}
+]},
+
+{"id":25, "name":"Upgrades" "formations":[
+	{"id":26, "name":"Fire Support Platoon (2 Fire Support, 1 Valkyrie)",	"pts":125},
+	{"id":27, "name":"Mortar Platoon (2 Mortars, 1 Valkyrie)",				"pts":100},
+	{"id":28, "name":"Trooper Platoon (2 Troopers, 1 Valkyrie)",			"pts":100}
+]},
+{"id":29, "name":"4 Valkyries",	"pts":200},
+
+{"id":500, "name":"SUPPORT FORMATIONS" "formations":[
+	{"id":501, "name":"Vulture Squadron",		"pts":300, "upgrades":[], "units":"4 Vultures"},
+	{"id":502, "name":"Sentinel Squadron",		"pts":100, "upgrades":[sentinels,valkyries]},
+	{"id":503, "name":"Storm Troopers",		"pts":350, "upgrades":[], "units":"8 Storm Troopers, 4 Valkyries"},
+	{"id":504, "name":"Orbital Support",		"pts":150, "upgrades":[spacecraft]}
+]},
+
+{"id":520, "name":"COMPANIES" "formations":[
+	{"id":521, "name":"Regimental HQ", 		"pts":500, "upgrades":[companyUpgrades, valks], "units":"Supreme Commander, 9 Vanaheim Troopers"},
+	{"id":522, "name":"Air Cavalry Company", 	"pts":400, "upgrades":[companyUpgrades, valks], "units":"Commander, 9 Vanaheim Troopers"}
+]},
+
+{"id":530, "name":"IMPERIAL NAVY" "formations":[
+	{"id":531, "name":"Thunderbolt Fighters",	"pts":150, "upgrades":[], "units":"2 Thunderbolts"},
+	{"id":532, "name":"Lightning Flight",		"pts":150, "upgrades":[], "units":"2 Lightning Fighters"},
+	{"id":533, "name":"Marauder Destroyers",	"pts":275, "upgrades":[], "units":"2 Marauder Destroyers"},	
+	{"id":534, "name":"Marauder Bombers",		"pts":250, "upgrades":[], "units":"2 Marauder Bombers"}		
+]},
+
+{
+	"id":"Vanaheim 7th Air Cavalry", "version":"Epic UK v301209",
+	sublists:[companyList, supportList, navyList],
+	restriction:{limit:2, restricting:"Company", restricted:"Support Formations"}},
+
