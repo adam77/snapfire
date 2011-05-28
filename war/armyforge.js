@@ -172,7 +172,7 @@ var ArmyforgeUI = {
 	createUpgradesPopup:function(formation) {
 		var menuItems = [];
 		formation.type.upgrades.each( function(u){
-			var menuItem = ArmyforgeUI.createMenuItem(formation.id+'_'+u.id, u.name, u.cost);	
+			var menuItem = ArmyforgeUI.createMenuItem(formation.id+'_'+u.id, u.name, u.pts);
 			menuItems.push(menuItem);
 			menuItem.observe('click',
 					ArmyforgeUI.wrapActivatableHandler(menuItem, ArmyforgeUI.addUpgrade)

@@ -123,13 +123,13 @@ var Force = {
 		}
 	},
 	plainText:function() {
-		var txt = Force.name + ', ' + Force.calcPoints() + 'POINTS \n';
+		var txt = Force.name + ', ' + Force.calcPoints() + ' POINTS \n';
 		txt += ArmyList.data.id + ' (' + ArmyList.data.version + ') \n';
 		txt += '================================================== \n';
 		Force.formations.each( function(x) {
-			txt += '\n' + x.type.name.toUpperCase() + '['+ x.calcPoints() +'] \n';
+			txt += '\n' + x.type.name.toUpperCase() + ' ['+ x.calcPoints() +'] \n';
 			var units =	x.upgrades.uniq().map( function(upgrade) {
-				return (x.count(upgrade) > 1 ? x.count(upgrade) + 'x ' : '') + upgrade.name;
+				return (x.count(upgrade) > 1 ? x.count(upgrade) + ' ' : '') + upgrade.name;
 			});
 			if (x.type.units) {
 				units = [x.type.units].concat( units );
