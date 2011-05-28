@@ -9,7 +9,7 @@
 		 	{"id":513, "name":"Infantry Company", 				"pts":250, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry"},
 			{"id":514, "name":"Mechanised Infantry Company", 	"pts":400, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry, 7 Chimera"},
 			{"id":515, "name":"Tank Company", 					"pts":650, "upgrades":[26,27,28,29,30,31,32,33,34,35]},
-			{"id":516, "name":"Super-heavy Tank Company", 		"pts":500, "upgrades":[26,27,28,29,30,31,32,33,34,35]},
+			{"id":516, "name":"Super-Heavy Tank Company", 		"pts":500, "upgrades":[26,27,28,29,30,31,32,33,34,35]},
 		 	{"id":517, "name":"Artillery Company", 				"pts":650, "upgrades":[26,27,28,29,30,31,32,33,34,35]}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
