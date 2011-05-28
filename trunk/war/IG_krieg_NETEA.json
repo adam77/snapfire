@@ -1,0 +1,145 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{
+  "id":10, "name":"Leman Russ" "formations":[
+    { "id":11, "name":"Leman Russ Thunderer", "pts":0 },
+    { "id":12, "name":"Leman Russ", "pts":20 },
+    { "id":13, "name":"Leman Russ Demolisher", "pts":20 },
+    { "id":14, "name":"Leman Russ Vanquisher", "pts":50 }
+  ]
+},
+{
+  "id":20, "name":"Super Heavys" "formations":[
+    { "id":21, "name":"Baneblade", "pts":0 },
+    { "id":22, "name":"Shadowsword", "pts":0 },
+    { "id":23, "name":"Stormblade", "pts":0 },
+    { "id":24, "name":"Stormsword", "pts":0 }
+  ]
+},
+{
+  "id":25, "name":"Super Heavy" "formations":[
+    { "id":26, "name":"Baneblade", "pts":0 },
+    { "id":27, "name":"Shadowsword", "pts":0 },
+    { "id":28, "name":"Stormblade", "pts":0 },
+    { "id":29, "name":"Stormsword", "pts":0 }
+  ]
+},
+{
+  "id":30, "name":"Artillery" "formations":[
+    { "id":31, "name":"4 Quad Launchers", "pts":0 },
+    { "id":32, "name":"4 Heavy Mortars", "pts":0 }
+  ]
+},
+{
+  "id":33, "name":"Artillery support" "formations":[
+    { "id":34, "name":"4 Centaurs", "pts":0 },
+    { "id":35, "name":"20cm of Trenches", "pts":0 }
+  ]
+},
+{
+  "id":36, "name":"Artillery support" "formations":[
+  { "id":37, "name":"9 Trojans", "pts":0 },
+  { "id":38, "name":"9 Gun Emplacements", "pts":0 }
+  ]
+},
+{
+  "id":40, "name":"Artillery" "formations":[
+    { "id":41, "name":"3 Hydra or Heavy Anti-Aircraft Platform", "pts":125 },
+    { "id":43, "name":"3 Earthshaker Platform", "pts":200 },
+    { "id":44, "name":"3 Medusa Platform", "pts":275 }
+  ]
+},
+{
+  "id":45, "name":"Artillery support" "formations":[
+    { "id":46, "name":"3 Trojans", "pts":0 },
+    { "id":47, "name":"3 Gun Emplacements", "pts":0 }
+  ]
+},
+{
+  "id":50, "name":"Grenadier support" "formations":[
+    { "id":51, "name":"8 Centaurs", "pts":75 },
+    { "id":52, "name":"Gorgon (with mortars)", "pts":75 },
+    { "id":53, "name":"Gorgon (with heavy bolters)", "pts":75 }
+  ]
+},
+
+{ "id":100, "name":"Upgrades" "formations":[
+	{ "id":114, "name":"Fire Support Battery (4 Fire Support)", "pts":75 },
+    { "id":111, "name":"Infantry Platoon (10 Death Korps Infantry)", "pts":175 },
+	{ "id":109, "name":"Heavy Tank (Macharius)", "pts":125 },
+	{ "id":105, "name":"Hellhound Squadron (3 Hellhounds)", "pts":150},
+    { "id":107, "name":"Siege Transports (2 Gorgons)", "pts":125 },
+    { "id":102, "name":"Tank Squadron (3 Leman Russ Variants)", "pts":140}
+]},
+{ "id":130, "name":"Upgrades" "formations":[
+    { "id":131, "name":"Tank Squadron (3 Leman Russ Variants)", "pts":140},
+	{ "id":132, "name":"Hellhound Squadron (3 Hellhounds)", "pts":150},
+    { "id":133, "name":"Siege Transports (2 Gorgons)", "pts":125 },
+    { "id":134, "name":"Infantry Platoon (10 Death Korps Infantry)", "pts":175 },
+	{ "id":135, "name":"Heavy Tank (Macharius)", "pts":125 },
+	{ "id":136, "name":"Fire Support Battery (4 Fire Support)", "pts":75 }
+]},
+{ "id":121, "name":"Leman Russ Surcharge for Tank Squadron", "pts":20},
+{ "id":122, "name":"Demolisher Surcharge for Tank Squadron", "pts":20},
+{ "id":120, "name":"Additional Gorgon for Infantry Platoon", "pts":50},
+
+{
+  "id":500, "name":"DEATH KORPS CORE COMPANIES" "formations":[
+    { "id":501, "name":"Regimental HQ", "pts":400, "units":"Death Korps Supreme Commander, 19 Death Korps Infantry" , "upgrades":[ up1, gorgon, russ, demo ] },
+    { "id":502, "name":"Infantry Company", "pts":300, "units":"Death Korps Commander, 19 Death Korps Infantry", "upgrades":[ up1, gorgon, russ, demo ] },
+    { "id":503, "name":"Death Rider Company", "pts":250, "units":"12 Death Korps Rough Riders", "upgrades":[ up2, gorgon, russ, demo ] }
+  ]
+},
+
+
+{
+  "id":510, "name":"DEATH KORPS SUPPORT FORMATIONS" "formations":[
+    { "id":511, "name":"Grenadiers Platoon", "pts":225, "units":"8 Death Korps Grenadiers", "upgrades":[ grenUpgrade ] },
+    { "id":512, "name":"Engineers Platoon", "pts":300, "units":"8  Death Korps Engineers, Hades Breaching Drill", "upgrades":[] },
+    { "id":513, "name":"Tank Platoon", "pts":280, "upgrades":[ lemanRuss ] },
+    { "id":514, "name":"Heavy Tank Platoon", "pts":350, "units":"2 Macharius Tanks, Macharius Command Tank", "upgrades":[] },
+    { "id":515, "name":"Light Support Battery", "pts":200, "upgrades":[ lightSupport, lightSupUpgrade ] },
+    { "id":516, "name":"Heavy Support Battery", "pts":0, "upgrades":[ heavySupport, heavySupUpgrade ] },
+    { "id":517, "name":"Self-Propelled Heavy Support", "pts":250, "units":"3 Bombards", "upgrades":[] },
+    { "id":518, "name":"Super-heavy Tank Platoon", "pts":200, "upgrades":[ superP ] },
+    { "id":519, "name":"Death Rider Scout Platoon", "pts":150, "units":"6 Death Korps Rough Riders (with "scout" ability)", "upgrades":[] },
+    { "id":520, "name":"Deathstrike Silo", "pts":250, "units":"Death Korps Deathstrike Missile Silo", "upgrades":[] },
+    { "id":521, "name":"Artillery Support Company", "pts":600, "units":"9 Earthshaker Platforms", "upgrades":[ artilleryUpgrade ] },
+    { "id":522, "name":"Super-heavy Tank Support Company", "pts":500, "upgrades":[ superC ] }
+  ]
+},
+
+{
+  "id":525, "name":"TRENCHWORKS" "formations":[
+    { "id":526, "name":"Trenchworks", "pts":100, "units":"80cm of Trenches, 4 bunkers", "upgrades":[] }
+  ]
+},
+
+{
+  "id":530, "name":"IMPERIAL NAVY" "formations":[
+    { "id":531, "name":"Thunderbolt Fighters", "pts":150, "units":"2 Thunderbolts", "upgrades":[] },
+    { "id":532, "name":"Marauder Bomber", "pts":150, "upgrades":[] }
+  ]
+},
+
+{
+  "id":535, "name":"TITAN LEGIONS" "formations":[
+    { "id":536, "name":"Warlord Titan", "pts":850, "upgrades":[] },
+    { "id":537, "name":"Reaver Titan", "pts":650, "upgrades":[] },
+    { "id":538, "name":"Warhound Pack", "pts":500, "units":"2 Warhounds", "upgrades":[] },
+    { "id":539, "name":"Warhound Titan", "pts":275, "upgrades":[] }
+  ]
+},
+
+{
+  "id":"Death Korps of Krieg", "version":"NetEA Epic Siege v1.0",
+  "notes":["Maximum 1 Death Rider Company per 1500pts."],
+  sublists: [ companyList, supportList, trenchworks, navyList, titanList ],
+  restriction: { limit:2, restricting:"Company", restricted:"Support Formations" },
+  restriction2: { limit:1, restricting:"Company", restricted:"Trenchworks" }
+},
+

@@ -1,0 +1,124 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":10, "name":"Guerriers ou Zoanthropes" "formations":[
+	{"id":11, "name":"Guerriers Tyranides",	"pts":0},
+	{"id":12, "name":"Guerriers Tyranides Ail&eacute,es",	"pts":0},
+	{"id":13, "name":"Zoanthrope",	"pts":0}
+]},
+{"id":14, "name":"Guerriers ou Zoanthropes" "formations":[
+	{"id":15, "name":"Guerriers Tyranides",	"pts":0},
+	{"id":16, "name":"Guerriers Tyranides Ail&eacute,es",	"pts":0},
+	{"id":17, "name":"Zoanthrope",	"pts":0}
+]},
+{"id":18, "name":"Harridan" "formations":[
+	{"id":19, "name":"Harridan",		"pts":150}
+]},
+{"id":21, "name":"Bio-Titan" "formations":[
+	{"id":22, "name":"Hi&eacute,rophant",		"pts":0},
+	{"id":23, "name":"Hydraphant",		"pts":200}
+]},
+{"id":24, "name":"Harpies" "formations":[
+	{"id":25, "name":"Harpies",	"pts":75}
+]},
+{"id":27, "name":"Briseur de Si&egrave,ge" "formations":[
+	{"id":28,	"name":"Hi&eacute,rodule Faucheur",	"pts":0},
+	{"id":29,	"name":"Hi&eacute,rodule Cracheur",		"pts":25}
+]},
+{"id":31, "name":"Bio-Vaisseau" "formations":[
+	{"id":32, "name":"Croiseur Razorfiend", "pts":0},
+	{"id":33, "name":"Vaisseau Ruche", "pts":100}
+]},
+{"id":34, "name":"Spore Mine A&eacute,rienne" "formations":[
+	{"id":35, "name":"Grappe de Spores", "pts":25}
+]},
+{"id":36, "name":"Genestealer" "formations":[
+	{"id":37, "name":"Genestealers", "pts":25}
+]},
+{"id":38, "name":"Lictors" "formations":[
+	{"id":39, "name":"Lictor", "pts":50}
+]},
+
+{"id":40, "name":"Genestealer Alpha",				"pts":50},
+{"id":50, "name":"Prince Tyranid",				"pts":0 "formations":[
+	{"id":51, "name":"Prince Tyranide", "pts":0},
+	{"id":52, "name":"Prince Tyranide Ail&eacute,", "pts":0},
+	{"id":53, "name":"Ma&icirc,tre des Essaims", "pts":25},
+	{"id":54, "name":"Ma&icirc,tre des Essaims Ail&eacute,", "pts":25}
+]},
+
+
+{"id":100, "name":"Essaims Synaptique" "formations":[
+		{"id":101, "name":"6 gaunts (Horma ou Terma)", "pts":75},
+		{"id":102, "name":"3 Biovores", "pts":75},
+		{"id":103, "name":"4 Gargouilles", "pts":50},
+		{"id":104, "name":"3 Carnifex", "pts":150},
+		{"id":105, "name":"3 Dactylis ou Exocrines", "pts":150},
+		{"id":106, "name":"3 Haruspex ou Malefactors", "pts":150},
+		{"id":107, "name":"1 Hi&eacute,rodule Cracheur", "pts":175},
+		{"id":108, "name":"1 Hi&eacute,rodule Faucheur", "pts":150},
+		{"id":109, "name":"1 Trygon ou 3 Rôdeurs", "pts":100}
+	]},
+{"id":110, "name":"Essaims Synaptique" "formations":[
+		{"id":111, "name":"6 gaunts (Horma ou Terma)", "pts":75},
+		{"id":112, "name":"3 Biovores", "pts":75},
+		{"id":113, "name":"4 Gargouilles", "pts":50},
+		{"id":114, "name":"3 Carnifex", "pts":150},
+		{"id":115, "name":"3 Dactylis ou Exocrines", "pts":150},
+		{"id":116, "name":"3 Haruspex ou Malefactors", "pts":150},
+		{"id":117, "name":"1 Hi&eacute,rodule Cracheur", "pts":175},
+		{"id":118, "name":"1 Hi&eacute,rodule Faucheur", "pts":150},
+		{"id":119, "name":"1 Trygon ou 3 Rôdeurs", "pts":100},
+		{"id":120, "name":"Spores Myc&eacute,tiques", "pts":50}
+	]},
+{"id":130, "name":"Essaims Synaptique" "formations":[
+		{"id":131, "name":"6 gaunts (Horma ou Terma)", "pts":75},
+		{"id":132, "name":"3 Biovores", "pts":75},
+		{"id":133, "name":"4 Gargouilles", "pts":50},
+		{"id":134, "name":"3 Carnifex", "pts":150},
+		{"id":135, "name":"3 Dactylis ou Exocrines", "pts":150},
+		{"id":136, "name":"3 Haruspex ou Malefactors", "pts":150},
+		{"id":137, "name":"1 Hi&eacute,rodule Cracheur", "pts":175},
+		{"id":138, "name":"1 Hi&eacute,rodule Faucheur", "pts":150},
+		{"id":139, "name":"1 Trygon ou 3 Rôdeurs", "pts":100},
+		{"id":140, "name":"Spores Myc&eacute,tiques", "pts":50}
+	]},
+	var Fouisseur = 	{"id":150, "name":"Essaims Synaptique" "formations":[
+		{"id":151, "name":"1 Trygon ou 3 Rôdeurs", "pts":100},
+		{"id":152, "name":"6 gaunts (Horma ou Terma)", "pts":75}
+	]},
+	var Chasse = 	{"id":155, "name":"Essaims Synaptique" "formations":[
+		{"id":133, "name":"4 Gargouilles", "pts":50}
+	]},
+	
+	
+{"id":500, "name":"Groupes Synaptiques" "formations":[
+	{"id":501, "name":"Groupe Nexus", 				"pts":400, "upgrades":[Nexus], "units":"Dominatrix"},
+ 	{"id":502, "name":"Centre Synaptique", 	"pts":100, "upgrades":[tyrant, GTcentre, Centre]},
+	{"id":503, "name":"Relais Synaptique", 				"pts":75, "upgrades":[GTrelais, Relais]},
+	{"id":504, "name":"Groupe d\"infestation", 					"pts":125, "upgrades":[Fouisseur], "units":"Trygon Prime"},
+	{"id":505, "name":"Groupe de Chasse", 		"pts":0, "upgrades":[Harridan, Chasse]}
+]},
+
+{"id":530, "name":"Essaims Ind&eacute,pendants Communs" "formations":[
+	{"id":531, "name":"Spores mines a&eacute,riennes",	"pts":0, "upgrades":[SporeMine]},
+	{"id":532, "name":"Essaims de Genestealers",	"pts":0, "upgrades":[Genestealer, Alpha]},
+	{"id":533, "name":"Essaims de Lictors",		"pts":-50, "upgrades":[Lictor]},
+]},
+
+{"id":540, "name":"Essaims Ind&eacute,pendants Rares" "formations":[
+	{"id":541, "name":"Bio-aviation",	"pts":25, "upgrades":[Harpies]},
+	{"id":542, "name":"Briseur de Si&egrave,ge",	"pts":400, "upgrades":[BriSie]},
+	{"id":543, "name":"Bio-Titan",		"pts":350, "upgrades":[BioTitan]},
+	{"id":544, "name":"Bio-Vaisseau",		"pts":150, "upgrades":[VaisseauRuche]}
+]},
+
+{
+	"id":"Liste d\"Arm&eacute,e Tyranide", "version":"NORD STRATEGIE",
+	sublists:[GSList, EICList ,EIRList],
+	restriction:{limit:1, restricting:"Synapse", restricted:"Independant"}
+	},
+

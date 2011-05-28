@@ -1,0 +1,59 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":10, "name":"C`Tan" "formations":[
+	{"id":11, "name":"Nightbringer", "pts":300},
+	{"id":12, "name":"Deceiver", "pts":300}
+]},
+
+{"id":100, "name":"Tomb Spyders", "pts":50},
+{"id":101, "name":"Pariahs", "pts":60},
+{"id":102, "name":"Immortals", "pts":40},
+{"id":103, "name":"Wraiths", "pts":50},
+{"id":104, "name":"Necron Lord", "pts":25},
+{"id":105, "name":"Obelisk", "pts":50},
+{"id":106, "name":"Monolith", "pts":75},
+{"id":107, "name":"Supreme Commander", group:commanderlimit, "pts":50},
+{"id":108, "name":"Destroyers" "formations": [
+	{"id":109, "name":"Destroyers", "pts":0},
+	{"id":110, "name":"Heavy Destroyers", "pts":0}
+]},
+{"id":111, "name":"Obelisk", "pts":50},
+{"id":112, "name":"Monolith", "pts":75},
+{"id":113, "name":"Supreme Commander"},
+
+{"id":500, "name":"NECRON SUPPORT" "formations":[
+	{"id":501, "name":"Venator Maniple", "pts":200, "upgrades":[lords, pariahs, spyders, wraiths], "units":"6 Flayed Ones"},
+	{"id":502, "name":"Eques Maniple", "pts":375, "upgrades":[destroyers, lords, wraiths]},
+	{"id":503, "name":"Monolith Maniple", "pts":25, "upgrades":[monolithmaniple, obeliskmaniple]},
+	{"id":504, "name":"Monolith Phalanx", "pts":275, "units":"3 Monoliths", "upgrades":[obeliskphalanx]},
+	{"id":505, "name":"Armored Phalanx", "pts":300, "units":"6 Obelisks", "upgrades":[]},
+	{"id":506, "name":"Pylon", "pts":200, "upgrades":[]}
+]},
+
+{"id":600, "name":"INDIVIDUALS" "formations":[
+	{"id":601, "name":"Tomb Complex", "pts":75, "upgrades":[]},
+	{"id":602, "name":"C`Tan", "pts":0, "upgrades":[ctans]}
+]},
+
+{"id":700, "name":"NECRON PHALANXES" "formations":[
+	{"id":701, "name":"Infantry Phalanx", "units":"Necron Lord, 6 Warriors", "upgrades":[spyders, pariahs, immortals, wraiths], "pts":225}
+]},
+
+{"id":800, "name":"Lrg Harvester Eng"},
+{"id":801, "name":"HARVESTERS" "formations":[
+	{"id":802, "name":"Scythe Class Harvester", "pts":350, "upgrades":[]},
+	{"id":803, "name":"Abattoir", group:largeharvester, "pts":750, "upgrades":[]},
+	{"id":804, "name":"Aeonic Orb", group:largeharvester, "pts":750, "upgrades":[]},
+	{"id":805, "name":"Warbarque", "pts":300, "upgrades":[commander]}
+]},
+
+{
+	"id":"Necrons", "version":"NetEA Raiders v2.0",
+	sublists:[individualList, phalanxList, supportList, harvesterList],
+	restriction:{limit:3, restricting:"Necron Phalanx", restricted:"Necron Support"}
+},
+

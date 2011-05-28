@@ -1,0 +1,105 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"name":"Emperor" "formations":[
+	{"id":11, "name":"Imperator Configuration",	"pts":0},
+	{"id":12, "name":"Warmonger Configuration",	"pts":0}
+]},
+{"name":"Weapons" "formations":[
+	{"id":13, "name":"Inferno Gun", 			"pts":0},
+	{"id":14, "name":"Vulcan Megabolter",		"pts":0},
+	{"id":15, "name":"Plasma Blastgun",		"pts":0},
+	{"id":16, "name":"Turbolaser Destructor",	"pts":25}	
+]},
+{"name":"Weapons" "formations":[
+	{"id":17, "name":"Inferno Gun", 			"pts":0},
+	{"id":18, "name":"Vulcan Megabolter",		"pts":0},
+	{"id":19, "name":"Plasma Blastgun",		"pts":0},
+	{"id":20, "name":"Turbolaser Destructor",	"pts":25}	
+]},
+{"name":"Weapons" "formations":[
+	{"id":30, "name":"Apocalypse Rocket Launcher",	"pts":25},
+	{"id":21, "name":"Inferno Gun", 			"pts":0},
+	{"id":22, "name":"Vulcan Megabolter",		"pts":0},
+	{"id":23, "name":"Plasma Blastgun",		"pts":0},
+	{"id":24, "name":"Turbolaser Destructor",	"pts":25},
+	{"id":25, "name":"Laser Burner",			"pts":0},
+	{"id":26, "name":"Corvus Assault Pod",		"pts":0},
+	{"id":27, "name":"Carapace Landing Pad",	"pts":0},
+	{"id":28, "name":"Plasma Cannon",			"pts":25},
+	{"id":29, "name":"Gatling Blaster",		"pts":25},
+	{"id":31, "name":"Close Combat Weapon",	"pts":25},
+	{"id":32, "name":"Melta Cannon",			"pts":50},
+	{"id":33, "name":"Laser Blaster",			"pts":50},
+	{"id":34, "name":"Volcano Cannon",			"pts":50},
+	{"id":35, "name":"Plasma Destructor",		"pts":75},
+	{"id":36, "name":"Support Missile",		"pts":75},
+	{"id":37, "name":"Quake Cannon",			"pts":75}
+]},
+{"name":"Weapons" "formations":[
+	{"id":41, "name":"Turbolaser Destructor",	"pts":25},
+	{"id":38, "name":"Inferno Gun", 			"pts":0},
+	{"id":39, "name":"Vulcan Megabolter",		"pts":0},
+	{"id":40, "name":"Plasma Blastgun",		"pts":0},
+	{"id":42, "name":"Laser Burner",			"pts":0},
+	{"id":43, "name":"Corvus Assault Pod",		"pts":0},
+	{"id":44, "name":"Carapace Landing Pad",	"pts":0},
+	{"id":45, "name":"Plasma Cannon",			"pts":25},
+	{"id":46, "name":"Gatling Blaster",		"pts":25},
+	{"id":47, "name":"Apocalypse Rocket Launcher",	"pts":25},
+	{"id":48, "name":"Close Combat Weapon",	"pts":25},
+	{"id":49, "name":"Melta Cannon",			"pts":50},
+	{"id":50, "name":"Laser Blaster",			"pts":50},
+	{"id":51, "name":"Volcano Cannon",			"pts":50},
+	{"id":52, "name":"Plasma Destructor",		"pts":75},
+	{"id":53, "name":"Support Missile",		"pts":75},
+	{"id":54, "name":"Quake Cannon",			"pts":75}
+]},
+{"id":55, "name":"Spacecraft" "formations":[
+	{"id":56, "name":"Gothic Class Cruiser",	"pts":0},
+	{"id":57, "name":"Arc Mechanicus",			"pts":125}
+]},
+{"id":58,	"name":"Knights" "formations":[
+	{"id":59, "name":"3 Forge Knights",		"pts":0},
+	{"id":60, "name":"6 Forge Knights",		"pts":175}
+]},
+
+
+{"id":80, "name":"Single Weapon System Surcharge", 	"pts":25},
+{"id":81,	"name":"Legate",								"pts":50},
+{"id":82,	"name":"Veteran Princeps",					"pts":25},
+{"id":83,	"name":"Carapace Multi-Lasers",				"pts":50},
+{"id":84,	"name":"Sacred Icon",						"pts":50},
+
+
+{"id":501, "name":"BATTLE TITANS" "formations":[
+	{"id":502, "name":"Emperor Titan", 		"pts":1250,"upgrades":[emperor,legate,princeps,lasers,icon]},
+	{"id":503, "name":"Warlord Titan", 		"pts":725, "upgrades":[warlordWep,surcharge,legate,princeps,lasers,icon]},
+	{"id":504, "name":"Reaver Titan",			"pts":575, "upgrades":[reaverWep,surcharge,legate,princeps,lasers,icon]}
+]},
+
+{"id":550, "name":"SCOUT TITANS" "formations":[
+	{"id":551, "name":"Warhound Titan",		"pts":275, "upgrades":[scoutWep,surcharge,princeps]},
+	{"id":552, "name":"Warhound Titan Pack",	"pts":500, "upgrades":[scoutWep2,surcharge,princeps]}
+]},
+
+{"id":560, "name":"SUPPORT FORMATIONS" "formations":[
+	{"id":561, "name":"Forge Knights",			"pts":200, "upgrades":[knights]},
+	{"id":562, "name":"Recon Platoon",			"pts":100, "units":"4 Sentinels", "upgrades":[]},
+	{"id":563, "name":"Thunderbolt Fighters",	"pts":150, "units":"2 Thunderbolts", "upgrades":[]},
+	{"id":564, "name":"Marauder Bombers",		"pts":250, "units":"2 Mauraders", "upgrades":[]},
+	{"id":565, "name":"Orbital Support",		"pts":175, "upgrades":[spacecraft]},
+	{"id":566, "name":"Skitarii Demi-Century",	"pts":300, "units":"Tech Priest, 9 Hypaspists", "upgrades":[]},
+	{"id":567, "name":"Lysander Fighter",		"pts":75,	 "upgrades":[]}	
+]},
+
+{
+	"id":"Legio Gryphonicus", "version":"NetEA v3.18 *UNDER DEVELOPMENT*",
+	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
+	restriction:{limit:1, restricting:"Titan Formation", restricted:"Support Formation"},
+	limitRatio:1,
+	sublists:[titans, scouts, support]},
+

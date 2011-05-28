@@ -1,0 +1,109 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":10, "name":"Artillery" "formations":[
+	{"id":11,	"name":"9 Basilisks",	"pts":0},
+	{"id":12,	"name":"9 Bombards",		"pts":0},
+	{"id":13,	"name":"9 Manticores",	"pts":0}
+]},
+{"id":14, "name":"Super Heavys" "formations":[
+	{"id":15, "name":"Baneblade",		"pts":0},
+	{"id":16, "name":"Shadowsword",	"pts":0},
+	{"id":17, "name":"Stormhammer",	"pts":0},
+	{"id":18, "name":"Stormblade",		"pts":0},
+	{"id":19, "name":"Stormsword",		"pts":0}
+]},
+{"id":20, "name":"Leman Russ"0 "formations":[
+	{"id":21, "name":"Thunderer",	"pts":0},	
+	{"id":22, "name":"Conqueror",	"pts":10},	
+	{"id":23, "name":"Exterminator","pts":10},	
+	{"id":24, "name":"Demolisher",	"pts":20},	
+	{"id":25, "name":"Leman Russ",	"pts":20},
+	{"id":26, "name":"Executioner*","pts":20},
+	{"id":27, "name":"Vanquisher*","pts":45},
+	{"id":28, "name":"Destroyer*",	"pts":70}
+]},
+{"id":29, "name":"Spacecraft" "formations":[
+	{"id":30, "name":"Lunar Class",	"pts":0},
+	{"id":31, "name":"Emperor Class",	"pts":150}
+]},
+{"id":32, "name":"Super Heavy" "formations":[
+	{"id":33, "name":"Baneblade",		"pts":0},
+	{"id":34, "name":"Shadowsword",	"pts":0},
+	{"id":35, "name":"Stormhammer",	"pts":0},
+	{"id":36, "name":"Stormblade",		"pts":0},
+	{"id":37, "name":"Stormsword",		"pts":0}
+]},
+{"id":40, "name":"Artillery" "formations":[
+	{"id":41,	"name":"3 Basilisks",	"pts":0},
+	{"id":42,	"name":"3 Bombards",		"pts":0},
+	{"id":43,	"name":"3 Manticores",	"pts":0}
+]},
+{"id":80, "name":"Leman Russ" "formations":[
+	{"id":81, "name":"Thunderer",	"pts":0},	
+	{"id":82, "name":"Conqueror",	"pts":10},	
+	{"id":83, "name":"Exterminator","pts":10},	
+	{"id":84, "name":"Demolisher",	"pts":20},	
+	{"id":85, "name":"Leman Russ",	"pts":20},
+	{"id":86, "name":"Executioner*","pts":20},
+	{"id":87, "name":"Vanquisher*", "pts":45},
+	{"id":88, "name":"Destroyer*",	"pts":70}
+]},
+
+
+{"id":50, "name":"Upgrades" "formations":[
+	{"id":51, "name":"Supreme Commander", 					"pts":100},
+	{"id":52, "name":"Flak Support (Hydra)",				"pts":50},
+	{"id":53, "name":"Flak Support (2 Hydra)",				"pts":100},
+	{"id":54, "name":"Hellhound Squadron (3 Hellhounds)",	"pts":150},
+	{"id":55, "name":"Griffon Battery (3 Griffons)",		"pts":100},
+	{"id":56, "name":"Salamander Command Vehicle",			"pts":25},
+	{"id":57, "name":"Tank Squadron (3 Russ Variants)",	"pts":140}
+]},
+{"id":60, "name":"Surcharges" "formations":[
+	{"id":61,	"name":"(Leman Russ Surcharge for Tank Squadron)",	"pts":20},
+	{"id":62,	"name":"(Demolisher Surcharge for Tank Squadron)",	"pts":20},
+	{"id":63,	"name":"(Conqueror Surcharge for Tank Squadron)",	"pts":10},
+	{"id":64,	"name":"(Exterminator Surcharge for Tank Squadron)","pts":10}
+]},
+{"id":70, "name":"Valkyrie Transport",				"pts":150},
+{"id":71, "name":"Salamander Command Vehicle",		"pts":25},
+
+{"id":500, "name":"SUPPORT FORMATIONS" "formations":[
+	{"id":501, "name":"Tank Platoon",					"pts":280, "upgrades":[russ2]},
+	{"id":502, "name":"Artillery Platoon",				"pts":250, "upgrades":[arty2]},
+	{"id":503, "name":"Super-Heavy Tank Platoon", 		"pts":200, "upgrades":[superP]},
+	{"id":504, "name":"Salamander Scout Platoon",		"pts":100, "upgrades":[salamander], "units":"3 Salamanders"},
+	{"id":505, "name":"Mechanized Platoon",			"pts":300, "upgrades":[salamander], "units":"10 Infantry, 5 Chimera"},
+	{"id":506, "name":"Flak Battery",					"pts":150, "upgrades":[], "units":"3 Hydra"},
+	{"id":507, "name":"Vulture Squadron",				"pts":300, "upgrades":[], "units":"4 Vultures"},
+	{"id":508, "name":"Storm Trooper Platoon",			"pts":200, "upgrades":[valkyrie], "units":"8 Storm Troopers"},
+	{"id":511, "name":"Assault Gun Platoon",			"pts":150, "upgrades":[], "units":"3 Medusas"},
+	{"id":509, "name":"Deathstrike Missile Battery",	"pts":200, "upgrades":[], "units":"2 Deathstrike Missile Launchers"},
+	{"id":510, "name":"Orbital Support",				"pts":150, "upgrades":[spacecraft]}
+]},
+
+{"id":514, "name":"COMPANIES" "formations":[
+	{"id":515, "name":"Tank Company", 						"pts":425, "upgrades":[russ, coy, extras]},
+	{"id":516, "name":"Super-Heavy Tank Company", 			"pts":500, "upgrades":[supers, coy, extras]},
+ 	{"id":517, "name":"Self-Propelled Artillery Company",	"pts":650, "upgrades":[arty, coy, extras]}
+]},
+
+{"id":525, "name":"TITAN LEGIONS & NAVY" "formations":[
+	{"id":522, "name":"Warlord Class Titan",	"pts":850, "upgrades":[]},
+	{"id":523, "name":"Reaver Class Titan",	"pts":650, "upgrades":[]},
+	{"id":526, "name":"Warhound Pack",			"pts":500, "upgrades":[], "units":"2 Warhounds"},
+	{"id":524, "name":"Warhound Titan",		"pts":275, "upgrades":[]},
+	{"id":519, "name":"Thunderbolt Fighters",	"pts":150, "upgrades":[], "units":"2 Thunderbolts"},
+	{"id":520, "name":"Marauder Bombers",		"pts":250, "upgrades":[], "units":"2 Marauders"}
+]},
+
+{
+	"id":"Minervan Tank Legion", "version":"NetEA Raiders v2.0",
+	sublists:[companyList, supportList, titanList],
+	restriction:{limit:2, restricting:"Company", restricted:"Support Formations"},
+	"notes":["Tank Company may include a maximum of 2 rare russ variants (marked \"*\")."]},
+

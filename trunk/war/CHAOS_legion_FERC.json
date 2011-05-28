@@ -1,0 +1,96 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":11, "name":"Raptor", "pts":35},
+{"id":13, "name":"Elus", "pts":65},
+{"id":14, "name":"Personnage du Chaos" "formations":[
+	{"id":15, "name":"Seigneur du Chaos", 	"pts":0},
+	{"id":16, "name":"Seigneur Sorcier du Chaos", 	"pts":0},
+	{"id":18, "name":"Seigneur de Guerre du Chaos (Commandant Supr&egrave,me)", 	"pts":0},
+]},
+{"id":14, "name":"Prince D&eacute,mon" "formations":[
+	{"id":88, "name":"Seigneur du Chaos", 	"pts":0},
+	{"id":89, "name":"Seigneur Sorcier du Chaos", 	"pts":0},
+	{"id":99, "name":"Seigneur de Guerre du Chaos (Commandant Supr&egrave,me)", 	"pts":0},
+	{"id":17, "name":"Prince D&eacute,mon", 	"pts":50},
+	{"id":38, "name":"Prince D&eacute,mon (Commandant Supr&egrave,me)", 	"pts":50}	
+]},
+{"id":90, "name":"Blind&eacute,s du Chaos","pts":175 "formations":[
+	{"id":91, "name":"4 Pr&eacute,dator du Chaos", 	"pts":0},
+	{"id":92, "name":"4 Land Raider du Chaos", 	"pts":100}
+]},
+{"id":19, "name":"Blind&eacute,s du Chaos" "formations":[
+	{"id":20, "name":"Pr&eacute,dator du Chaos", 	"pts":50},
+	{"id":93, "name":"Vindicator du Chaos", 	"pts":50},
+	{"id":21, "name":"Land Raider du Chaos", 	"pts":75}
+]},
+{"id":19, "name":"Support Lourds" "formations":[
+	{"id":85, "name":"Pr&eacute,dator du Chaos", 	"pts":50},
+	{"id":84, "name":"Vindicator du Chaos", 	"pts":50}
+]},
+{"id":23, "name":"D&eacute,cimator", 			"pts":250},
+{"id":24, "name":"Deathwheel", 		"pts":275},
+{"id":30,	"name":"Faction" "formations":[
+	{"id":35,	"name":"(Chaos Indivisible)",	"pts":0},
+	{"id":31,	"name":"(Khorne)",			"pts":0},
+	{"id":32,	"name":"(Nurgle)",			"pts":0},
+	{"id":33,	"name":"(Slaanesh)",			"pts":0},
+	{"id":34,	"name":"(Tzeentch)",			"pts":0}
+]},
+{"id":94,	"name":"Marines du Culte", "pts":150 "formations":[
+	{"id":95,	"name":"4 Berserkers (Khorne)",			"pts":0},
+	{"id":96,	"name":"4 Marines de la Peste (Nurgle)",			"pts":0},
+	{"id":97,	"name":"4 Noise Marines (Slaanesh)",			"pts":0},
+	{"id":98,	"name":"4 Thousans Sons (Tzeentch)",			"pts":0}
+]},
+{"id":40, "name":"Pacte D&eacute,moniaque", "pts":25},
+{"id":41, "name":"Dreadnought", "pts":50},
+{"id":42, "name":"Defiler", "pts":75},
+{"id":43, "name":"Land Raider du Chaos", "pts":75},
+{"id":44, "name":"Module d\"atterissage Dreadclaw", "pts":5},
+{"id":45, "name":"Obliterator", "pts":75},
+{"id":48, "name":"Rhino", "pts":10},
+{"id":49, "name":"4 Havocs", "pts":150},
+{"id":51, "name":"D&eacute,mon Majeur", "pts":175},
+{"id":87, "name":"Stalker", "pts":50},
+{"id":86, "name":"Soutien Orbital", "pts":150 "formations":[
+	{"id":85, "name":"Croiseur de Classe Devastation",	"pts":0, "upgrades":[]}, 
+	{"id":84, "name":"Cuirass&eacute, de Classe Despoiler","pts":100, "upgrades":[]}
+]},
+
+
+{"id":600, "name":"D&eacute,mon Majeur"},
+{"id":500, "name":"DETACHMENTS" "formations":[
+	{"id":504, "name":"Suite de la Black Legion",		"pts":275, "units":"8 Space Marines du Chaos", "upgrades":[demonlords, rhino, havoc, cultmarine, dread, defiler, raiders, claws, obliterator, pact, stalker, supportlourd]},
+	{"id":505, "name":"Suite d\"Elus de la Black Legion",			"pts":0, "upgrades":[demonlords,terms, dread, defiler, raiders, claws, obliterator, pact, stalker, supportlourd]},
+	{"id":508, "name":"Culte Raptor", 				"pts":0, "upgrades":[lords,raptors,pact]},
+	{"id":507, "name":"Forlorn Hope Retinue",		"pts":125, "units":"4 Space Marines du Chaos (Eclaireurs)", "upgrades":[rhino,dread,pact]},
+	{"id":503, "name":"Compagnies de Motos de la Black Legion",				"pts":300, "units":"8 Motos de la Black Legion", "upgrades":[lords,pact]},
+	{"id":501, "name":"Compagnie Blind&eacute, de la Black Legion",			"pts":0, "upgrades":[armour0,armour,defiler,stalker]},
+	{"id":502, "name":"Compagnie d\"Assaut de la Black Legion",			"pts":0, upto:2, "upgrades":[decim,defiler]},
+	{"id":506, "name":"D&eacute,mon Mineur",				"pts":175, "units":"8 D&eacute,mons Mineurs", "upgrades":[greater]},	
+	{"id":506, "name":"D&eacute,mon Majeur",				"pts":175, "units":"1 D&eacute,mon Majeur", "upgrades":[]},
+	{"id":510, "name":"Soutien Orbital",	"pts":0, "upgrades":[soutienorb]}
+]},
+
+{"id":535, "name":"Flotte de Guerre du Chaos" "formations":[
+	{"id":530, "name":"Escadrille d\"intercepteurs Hellblade",	"pts":200, "units":"3 Intercepteurs Hellblade", "upgrades":[]},
+	{"id":531, "name":"Escadrille de chasseurs-bombardiers Helltalon",	"pts":250, "units":"2 chasseurs-bombardiers Helltalon", "upgrades":[]},
+]},
+
+{"id":523, "name":"L&eacute,gions Titanique du Chaos" "formations":[
+	{"id":524, "name":"Deathwheel", "pts":0, "upgrades":[deathwheel]},
+	{"id":520, "name":"Banelord Titan",	"pts":800, "upgrades":[]},
+	{"id":521, "name":"Ravager Titan",		"pts":650, "upgrades":[]},
+	{"id":522, "name":"Feral Titan",		"pts":300, "upgrades":[]}
+]},
+
+{
+	"id":"Black Legion", "version":"FERC 2010",
+	sublists:[detachmentList, navyList, titanList],
+	restriction:{limit:1, restricting:"Suite de la Black Legion", restricted:"Forlorn Hope"}},
+
+

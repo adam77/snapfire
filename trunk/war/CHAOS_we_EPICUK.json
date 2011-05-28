@@ -1,0 +1,69 @@
+{
+	"id":"",
+	"version":"",
+	"by":"Iron Bloke",
+	"sections":[
+
+{"id":16, "name":"Lord" "formations":[
+	{"id":17, "name":"Chaos Lord", 	"pts":0},
+	{"id":19, "name":"Daemon Prince", 	"pts":50},
+	{"id":20, "name":"Chaos Warlord (Supreme Commander)", 	"pts":50},
+	{"id":21, "name":"Daemon Prince (Supreme Commander)", "pts":100}
+]},
+{"id":26, "name":"Vehicles" "formations":[
+	{"id":27, "name":"Chaos Predator", 	"pts":50},
+	{"id":28, "name":"Chaos Land Raider",	"pts":75},
+	{"id":29, "name":"Chaos Vindicator", 	"pts":50}
+]},
+{"id":37, "name":"Daemonic Assault Engine", 	"pts":75},
+{"id":39, "name":"Lord of Battles", 			"pts":400},
+{"id":41, "name":"Defiler", 					"pts":65},
+
+{"id":50, "name":"Greater Daemon", "pts":75},
+{"id":51, "name":"Lesser Daemon", "pts":20},
+{"id":52, "name":"Chaos Champion", "pts":50},
+{"id":53, "name":"Chaos Land Raider", "pts":75},
+{"id":54,	"name":"Chaos Vindicator", "pts":35},
+{"id":56, "name":"Daemonic Pact", "pts":25},
+{"id":57, "name":"World Eater Defiler", "pts":65},
+{"id":58, "name":"Dreadclaw Drop Pod", "pts":5},
+{"id":60, "name":"Icon Bearer", "pts":50},
+{"id":62, "name":"Rhino", "pts":10},
+{"id":63, "name":"Dreadnought", "pts":50},
+{"id":64, "name":"Daemon Assault Engine", "pts":75},
+
+{"id":500, "name":"CORE" "formations":[
+	{"id":501,	"name":"World Eater Retinue","pts":325,"units":"8 Berserkers","upgrades":[lord,raiders,vindi,icon,champion,pact,dread,defiler,rhino,claws]},
+	{"id":551,	"name":"Daemon Pool",			"pts":0,"upgrades":[greater, lesser]}
+]},
+
+{"id":502, "name":"SUPPORT" "formations":[
+	{"id":503,	"name":"World Eater Terminators","pts":400,"units":"4 Terminators","upgrades":[lord,champion,dread,raiders,pact,icon]},
+	{"id":504,	"name":"Chaos Space Marines","pts":250,"units":"6 Chaos Marines, 3 Rhinos","upgrades":[pact]},		
+	{"id":505,	"name":"Daemonic Artillery","pts":200,"units":"4 Cannons of Khorne","upgrades":[]},
+	{"id":506,	"name":"Daemonic Assault Engine Pack","pts":-25,"upgrades":[ass,dread,defiler]},
+	{"id":507,	"name":"Armoured Company","pts":0,"upgrades":[armour]},
+	{"id":508,	"name":"World Eater Juggernaughts","pts":425,"units":"1 Chaos Lord, 8 Juggernaughts","upgrades":[pact,icon]},
+	{"id":509,	"name":"Bike Company","pts":425,"units":"8 Bikes","upgrades":[lord,pact,icon]},
+	{"id":510,	"name":"Defiler Assault Pack","pts":-10,"upgrades":[assengine,dread,def1]}
+]},
+
+{"id":535, "name":"CHAOS NAVY" "formations":[
+	{"id":530, "name":"Hellblade Flight",		"pts":200, "units":"3 Fighters", "upgrades":[]},
+	{"id":531, "name":"Helltalon Flight",		"pts":250, "units":"2 Bombers", "upgrades":[]},
+	{"id":533, "name":"Styx Class Cruiser",	"pts":150, "upgrades":[]}
+]},
+
+{"id":523, "name":"CHAOS TITANS" "formations":[
+	{"id":520, "name":"Banelord Titan",		"pts":800, "upgrades":[]},
+	{"id":521, "name":"Ravager Titan",			"pts":650, "upgrades":[]},
+	{"id":522, "name":"Lord of Battles",		"pts":0, "upgrades":[lob]}
+]},
+
+{
+	"id":"World Eaters", "version":"Epic UK v090710",
+	sublists:[core, support, titanList, navyList],
+	restriction:{limit:2, restricting:"Retinue", restricted:"Support Formations"}
+},
+
+
