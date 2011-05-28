@@ -22,9 +22,9 @@
 		]},
 		{"name":"AIRCRAFT, SPACECRAFT &amp, GARGANTS", "formations":[
 		 	{"id":517, "name":"Fighta Squadron",	"pts":0, "upgrades":[49]},
-			{"id":518, "name":"Landa",				"pts":200, "upgrades":[]},
-			{"id":520, "name":"Kill Kroozer",		"pts":200, "upgrades":[]},
-			{"id":521, "name":"Battle Kroozer",		"pts":250, "upgrades":[]},
+			{"id":518, "name":"Landa",				"pts":200},
+			{"id":520, "name":"Kill Kroozer",		"pts":200},
+			{"id":521, "name":"Battle Kroozer",		"pts":250},
 			{"id":522, "name":"Gargant",			"pts":650, "upgrades":[81]},
 			{"id":523, "name":"Great Gargant",		"pts":850, "upgrades":[81]}
 		]}
@@ -83,7 +83,7 @@
 		{"min":5, "from":[43,94,95], "appliesTo":[513]},
 		{"min":10, "from":[43,94,95], "appliesTo":[514]},
 		{"min":15, "from":[43,94,95], "appliesTo":[515]},
-		{"min":6, "max":9, "from":[49], "appliesTo":[517]},
+		{"min":3, "max":9, "from":[49], "appliesTo":[517]},
 		{"min":1, "max":1, "from":[83,84,85], "appliesTo":[522]},
 		{"min":1, "max":1, "from":[86,87], "appliesTo":[523]},
 		{"min":3, "from":[37], "appliesTo":[510]},
