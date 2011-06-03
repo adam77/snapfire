@@ -8,18 +8,18 @@
 		"Daemon Engines must be either factionless or of the same faction as their associated Coven."
 	],
 	"sections":[
-		{"name":"FORMATIONS" "formations":[
+		{"name":"FORMATIONS", "formations":[
 			{"id":531, "name":"Stigmatus Coven",					"pts":35, "upgrades":[leaders,cultists,faction,pact,icon, spawn, hound, altar, tanks, fireSup, griffon, hellhound, hydra, chimera, transports]},
 			{"id":536, "name":"Plague Zombie Infestation",			"pts":175, "units":"3D6 Plague Zombie Units"},
 			{"id":537, "name":"Daemon Pool",						"pts":0, "upgrades":[greater, lesser]}
 		]},
-		{"name":"TRAITOR SUPPORT" "formations":[
+		{"name":"TRAITOR SUPPORT", "formations":[
 			{"id":501, "name":"Artillery Battery",	"pts":325, "units":"4 Basilisks"},
 			{"id":502, "name":"Armoured Company",	"pts":400, "units":"6 Leman Russ"},
 			{"id":503, "name":"Rough Rider Platoon","pts":150, "units":"6 Rough Riders"},
 			{"id":504, "name":"Sentinel Squadron",	"pts":100, "units":"4 Sentinels"}
 		]},
-		{"name":"DAEMON ENGINES" "formations":[
+		{"name":"DAEMON ENGINES", "formations":[
 			{"id":551, "name":"Khorne Lord of Battles",			"pts":0, 						"upgrades":[lob]},
 			{"id":552, "name":"Khorne Assault Engines",			"pts":300, "units":"4 Demonic Assault Engines"},
 			{"id":553, "name":"Nurgle Plague Tower",				"pts":0, 						"upgrades":[tower]},
@@ -32,7 +32,7 @@
 			{"id":560, "name":"Hellfire Cannons",					"pts":200, "units":"4 Hellfire Cannons"},
 			{"id":561, "name":"Defilers",							"pts":400, "units":"4 Defilers"}
 		]},
-		{"name":"TRAITOR NAVY" "formations":[
+		{"name":"TRAITOR NAVY", "formations":[
 			{"id":541, "name":"Thunderbolt Fighters",	"pts":150, "units":"2 Thunderbolts"},
 			{"id":542, "name":"Marauder Bombers",		"pts":300, "units":"2 Marauders"}
 		]},
