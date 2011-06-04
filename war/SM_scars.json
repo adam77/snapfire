@@ -5,18 +5,18 @@
 	"by":"Iron Bloke",
 	"sections":[
 		{"name":"DETACHMENTS", "formations":[
-			{"id":500, "name":"Assault Detachment", 		"pts":175, "units":"4 Assault Units", "upgrades":[commander]},
-			{"id":501, "name":"Bike Detachment", 			"pts":400, "upgrades":[commander, bikes]},
-			{"id":504, "name":"Land Speeders",				"pts":200, "upgrades":[commander, speeders]},
+			{"id":500, "name":"Assault Detachment", 		"pts":175, "units":"4 Assault Units", "upgrades":[24,25,26,27]},
+			{"id":501, "name":"Bike Detachment", 			"pts":400, "upgrades":[24,25,26,27]},
+			{"id":504, "name":"Land Speeders",				"pts":200, "upgrades":[24,25,26,27]},
 			{"id":505, "name":"Landing Craft",				"pts":350, "upgrades":[]},
-			{"id":506, "name":"Predators",					"pts":300, "upgrades":[commander, hunter, vindicator,predators]},
-			{"id":507, "name":"Scout Detachment",			"pts":150, "units":"4 Scouts", "upgrades":[commander, sniper, transportScout]},
+			{"id":506, "name":"Predators",					"pts":300, "upgrades":[24,25,26,27,31,35]},
+			{"id":507, "name":"Scout Detachment",			"pts":150, "units":"4 Scouts", "upgrades":[24,25,26,27,34,51,52,53,54,55,48]},
 			{"id":509, "name":"Strike Cruiser",			"pts":200, "upgrades":[]},
 			{"id":510, "name":"Battle Barge",				"pts":350, "upgrades":[]}, 
-			{"id":511, "name":"Tactical Detachment",		"pts":300, "units":"6 Tacticals", "upgrades":[commander, transportTac]},
-			{"id":512, "name":"Terminator Detachment",		"pts":675, "units":"4 Terminators", "upgrades":[commander]},
+			{"id":511, "name":"Tactical Detachment",		"pts":300, "units":"6 Tacticals", "upgrades":[24,25,26,27,41,42,43,44,45,46,47,48]},
+			{"id":512, "name":"Terminator Detachment",		"pts":675, "units":"4 Terminators", "upgrades":[24,25,26,27]},
 			{"id":513, "name":"Thunderhawk",				"pts":200, "upgrades":[]},
-			{"id":515, "name":"Whirlwinds",				"pts":300, "units":"4 Whirlwinds", "upgrades":[commander, hunter, vindicator]}
+			{"id":515, "name":"Whirlwinds",				"pts":300, "units":"4 Whirlwinds", "upgrades":[24,25,26,27,31,35]}
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
 			{"id":517, "name":"Thunderbolt Fighters",	"pts":150, "units":"2 Fighters", "upgrades":[]},
@@ -34,29 +34,28 @@
 		{"id":45, "name":"4 Razorbacks, Rhino",	"pts":100},
 		{"id":46, "name":"5 Razorbacks, Rhino",	"pts":125},
 		{"id":47, "name":"6 Razorbacks",				"pts":150},
-		{"id":48, "name":"Drop Pods",					"pts":0}
+		{"id":48, "name":"Drop Pods",					"pts":0},
 
 		{"id":51, "name":"2 Rhinos",					"pts":0},
 		{"id":52, "name":"Razorback, 2 Rhinos",	"pts":25},
 		{"id":53, "name":"2 Razorbacks, Rhino",	"pts":50},
 		{"id":54, "name":"3 Razorbacks, Rhino",	"pts":75},
 		{"id":55, "name":"4 Razorbacks",				"pts":100},
-		{"id":56, "name":"Drop Pods",					"pts":0}
 
 		{"id":15, "name":"Bike Unit",		"pts":0},
-		{"id":14, "name":"Attack Bike", 	"pts":0}
+		{"id":14, "name":"Attack Bike", 	"pts":0},
 
 		{"id":17, "name":"Land Speeder",	"pts":0},
 		{"id":18, "name":"Tornado",		"pts":10},
-		{"id":19, "name":"Typhoon",		"pts":25}
+		{"id":19, "name":"Typhoon",		"pts":25},
 
 		{"id":21, "name":"Annihilator",	"pts":0},
-		{"id":22, "name":"Destructor",		"pts":0}
+		{"id":22, "name":"Destructor",		"pts":0},
 
 		{"id":24, "name":"Captain",			"pts":50},
 		{"id":25, "name":"Chaplain", 			"pts":50},
 		{"id":26, "name":"Librarian", 			"pts":50},
-		{"id":27, "name":"Supreme Commander",	"pts":100}
+		{"id":27, "name":"Supreme Commander",	"pts":100},
 
 		{"id":30, "name":"Dreadnought", 				"pts":50},
 		{"id":31, "name":"Hunter", 					"pts":75},
