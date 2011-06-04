@@ -1,26 +1,25 @@
 {
-{
-	"id":"Snagga-Snagga\'s Feral Orks",
+	"id":"Snagga-Snagga's Feral Orks",
 	"version":"EA Swordwind",
 	"notes":["A Warlord must be selected and assigned to the formation with the most units/DC."],
 	"by":"Iron Bloke",
 	"sections":[
 		{"name":"WAR HORDES", "formations":[
-			{"id":500, "name":"Warband",				"pts":-20,	"upgrades":[boy1, nob1, grotz1, wildboyz, katapult, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]},
-			{"id":501, "name":"Warband (Big)",			"pts":-90, "upgrades":[boy2, nob2, grotz2, wildboyz, katapult, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]},
-			{"id":502, "name":"Warband (\'Uge)",		"pts":-160, "upgrades":[boy3, nob3, grotz3, wildboyz, katapult, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]},
-			{"id":503, "name":"Wildboyz",				"pts":5, "upgrades":[wildboy1, nob1, katapult, boarboyz, squiggoth, wyrdboy1, orkeosaurus1, warlord]},
-			{"id":504, "name":"Wildboyz (Big)",		"pts":-40,	"upgrades":[wildboy2, nob2, katapult, boarboyz, squiggoth, wyrdboy2, orkeosaurus2, warlord]},
-			{"id":505, "name":"Wildboyz (\'Uge)",		"pts":-85,	"upgrades":[wildboy3, nob3, katapult, boarboyz, squiggoth, wyrdboy3, orkeosaurus3, warlord]},
-			{"id":506, "name":"Boarboyz Horde",		"pts":-25,	"upgrades":[boar1, wyrdboy1, warlord]},
-			{"id":507, "name":"Boarboyz Horde (Big)",	"pts":-75,	"upgrades":[boar2, wyrdboy2, warlord]},
-			{"id":508, "name":"Boarboyz Horde (\'Uge)","pts":-125,	"upgrades":[boar3, wyrdboy3, warlord]},
-			{"id":509, "name":"Trappas",				"pts":150,	"units":"6 Wildboyz", "upgrades":[nobz1]},
-			{"id":510, "name":"Madboyz Horde",			"pts":10, 	upto:1, "upgrades":[mad1, wyrdboy3]},
-			{"id":511, "name":"Junka Brigade",			"pts":0,		"units":"Junka Trukks", "upgrades":[boy1, nobz1, wyrdboy1, warlord]},
-			{"id":512, "name":"Junka Brigade (Big)",	"pts":-50,		"units":"Junka Trukks", "upgrades":[boy2, nobz2, wyrdboy2, warlord]},
-			{"id":513, "name":"Junka Brigade (\'Uge)",	"pts":-100,		"units":"Junka Trukks", "upgrades":[boy3, nobz3, wyrdboy3, warlord]},
-			{"id":514, "name":"Steam Gargant",			"pts":50,		upto:1, defaults:[{unit:steam1,count:1}], "upgrades":[steam1]}
+			{"id":500, "name":"Warband",				"pts":-20,	"upgrades":[11,13,39,23,52,29,57,58,61,67]},
+			{"id":501, "name":"Warband (Big)",			"pts":-90, "upgrades":[11,13,39,23,52,29,57,58,61,67]},
+			{"id":502, "name":"Warband ('Uge)",		"pts":-160, "upgrades":[11,13,39,23,52,29,57,58,61,67]},
+			{"id":503, "name":"Wildboyz",				"pts":5, "upgrades":[51,13, 52,29,57,58,61,67]},
+			{"id":504, "name":"Wildboyz (Big)",		"pts":-40,	"upgrades":[51,13, 52,29,57,58,61,67]},
+			{"id":505, "name":"Wildboyz ('Uge)",		"pts":-85,	"upgrades":[51,13, 52,29,57,58,61,67]},
+			{"id":506, "name":"Boarboyz Horde",		"pts":-25,	"upgrades":[29,58,67]},
+			{"id":507, "name":"Boarboyz Horde (Big)",	"pts":-75,	"upgrades":[29,58,67]},
+			{"id":508, "name":"Boarboyz Horde ('Uge)","pts":-125,	"upgrades":[29,58,67]},
+			{"id":509, "name":"Trappas",				"pts":150,	"units":"6 Wildboyz", "upgrades":[13]},
+			{"id":510, "name":"Madboyz Horde",			"pts":10, 	"upgrades":[35,58]},
+			{"id":511, "name":"Junka Brigade",			"pts":0,		"units":"Junka Trukks", "upgrades":[11,13,58,67]},
+			{"id":512, "name":"Junka Brigade (Big)",	"pts":-50,		"units":"Junka Trukks", "upgrades":[11,13,58,67]},
+			{"id":513, "name":"Junka Brigade ('Uge)",	"pts":-100,		"units":"Junka Trukks", "upgrades":[11,13,58,67]},
+			{"id":514, "name":"Steam Gargant",			"pts":50,		"upgrades":[37]}
 		]}
 	],
 	"upgrades":[
@@ -38,7 +37,7 @@
 		{"id":58, "name":"Wyrdboy",			"pts":50},
 		{"id":61, "name":"Orkeosaurus",		"pts":150},
 		{"id":64, "name":"Junkatrukk and Nob",	"pts":35},
-		{"id":67, "name":"Warlord",			"pts":0},
+		{"id":67, "name":"Warlord",			"pts":0}
 	],
 	"formationConstraints":[
 	],

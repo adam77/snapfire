@@ -35,12 +35,12 @@
 		{"name":"TRAITOR NAVY", "formations":[
 			{"id":541, "name":"Thunderbolt Fighters",	"pts":150, "units":"2 Thunderbolts"},
 			{"id":542, "name":"Marauder Bombers",		"pts":300, "units":"2 Marauders"}
-		]},
+		]}
 	],
 	"upgrades":[
 		{"id":11, "name":"Cultists", 		"pts":15},
 		{"id":12, "name":"Mutants", 		"pts":15},
-		{"id":13, "name":"Big Mutants", 	"pts":35}
+		{"id":13, "name":"Big Mutants", 	"pts":35},
 		{"id":15, "name":"Demagogue", 		"pts":0},
 		{"id":16, "name":"Chaos Marine Aspiring Champion", "pts":0},
 		{"id":17, "name":"Daemon Prince", 	"pts":50},
@@ -55,7 +55,7 @@
 		{"id":35, "name":"Chaos Altar",				"pts":150},
 		{"id":36, "name":"Traitor Fire Support",		"pts":25},
 		{"id":38, "name":"Leman Russ", 				"pts":70},
-		{"id":39, "name":"Leman Russ Demolisher", 		"pts":70}
+		{"id":39, "name":"Leman Russ Demolisher", 		"pts":70},
 		{"id":40, "name":"Traitor Griffon",			"pts":35},
 		{"id":41, "name":"Traitor Hellhound",			"pts":50},
 		{"id":42, "name":"Traitor Hydra",				"pts":50},
@@ -65,7 +65,7 @@
 		{"id":54, "name":"Lord of Battles", "pts":400},
 		{"id":56, "name":"Plague Tower", "pts":325},
 		{"id":58, "name":"Questor", "pts":275},
-		{"id":59, "name":"Subjugator", "pts":225}
+		{"id":59, "name":"Subjugator", "pts":225},
 		{"id":61, "name":"Firelord", "pts":150},
 		{"id":85,	"name":"(Chaos Undivided)",	"pts":0},
 		{"id":81,	"name":"(Khorne)",			"pts":0},
