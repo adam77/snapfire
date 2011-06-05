@@ -55,8 +55,11 @@
 		{"id":110, "name":"Mekboy Bad Ork Bikeboy",		"pts":0}
 	],
 	"formationConstraints":[
+		{"max":1, "name":"Spacecraft", "from":[519,520]},
+		{"maxPercent":33, "name":"Aircraft & Fortress Mobs", "from":[516,517,519,520,512,513,514]}
 	],
 	"upgradeConstraints":[
+		{"min":3, "max":9, "from":[65], "appliesTo":[516]}
 	]
 }	
 
