@@ -10,15 +10,15 @@
 			{"id":503, "name":"Kult of Speed",					"pts":0, "upgrades":[20,21,22,45,46,44,87,110]},
 			{"id":504, "name":"Kult of Speed (Big)",			"pts":-50, "upgrades":[20,21,22,45,46,44,87,110]},
 			{"id":505, "name":"Kult of Speed ('Uge)",			"pts":-100, "upgrades":[20,21,22,45,46,44,87,110]},
-			{"id":506, "name":"Blitz Brigade",					"pts":10, "upgrades":[25,20,21,22,44,45,46,87,94,79,120,110]},
-			{"id":507, "name":"Blitz Brigade (Big)",			"pts":-30, "upgrades":[25,20,21,22,44,45,46,87,94,79,120,110]},
-			{"id":508, "name":"Blitz Brigade ('Uge)",			"pts":-70, "upgrades":[25,20,21,22,44,45,46,87,94,79,120,110]},
+			{"id":506, "name":"Blitz Brigade",					"pts":10, "upgrades":[66,20,21,22,44,45,46,87,95,79,120,110]},
+			{"id":507, "name":"Blitz Brigade (Big)",			"pts":-30, "upgrades":[66,20,21,22,44,45,46,87,95,79,120,110]},
+			{"id":508, "name":"Blitz Brigade ('Uge)",			"pts":-70, "upgrades":[66,20,21,22,44,45,46,87,95,79,120,110]},
 			{"id":509, "name":"Warbike Outriders",				"pts":150, "units":"5 Warbikes", "upgrades":[110]},
 			{"id":510, "name":"Warbike Outriders (Big)",		"pts":225, "units":"10 Warbikes", "upgrades":[110]},
 			{"id":511, "name":"Warbike Outriders ('Uge)",		"pts":300, "units":"15 Warbikes", "upgrades":[110]},
-			{"id":512, "name":"Fortress Mob",					"pts":275, "upgrades":[56,57,66,46,79,120,91,94,110]},
-			{"id":513, "name":"Fortress Mob (Big)",			"pts":500, "upgrades":[56,57,66,46,79,120,91,94,110]},
-			{"id":514, "name":"Fortress Mob ('Uge)",			"pts":700, "upgrades":[56,57,66,46,79,120,91,94,110]}
+			{"id":512, "name":"Fortress Mob",					"pts":275, "upgrades":[66,46,79,120,91,95,110]},
+			{"id":513, "name":"Fortress Mob (Big)",			"pts":500, "upgrades":[66,46,79,120,91,95,110]},
+			{"id":514, "name":"Fortress Mob ('Uge)",			"pts":700, "upgrades":[66,46,79,120,91,95,110]}
 		]},
 		{"name":"AIRCRAFT & SPACECRAFT", "formations":[
 			{"id":516, "name":"Fighta Squadron",	"pts":0, "upgrades":[65]},
@@ -48,10 +48,8 @@
 		{"id":73, "name":"Battlewagon",					"pts":35},
 		{"id":75, "name":"Dreadnought",					"pts":35},
 		{"id":87, "name":"Mekboy Speedsta",				"pts":50},
-		{"id":90, "name":"Battlefortress",					"pts":125},
 		{"id":91, "name":"Extra Battlefortress",			"pts":125},
-		{"id":94, "name":"Gunfortress",					"pts":135},
-		{"id":98, "name":"Battlekrooza",					"pts":50},
+		{"id":95, "name":"Extra Gunfortress",				"pts":135},
 		{"id":110, "name":"Mekboy Bad Ork Bikeboy",		"pts":0}
 	],
 	"formationConstraints":[
@@ -59,7 +57,36 @@
 		{"maxPercent":33, "name":"Aircraft & Fortress Mobs", "from":[516,517,519,520,512,513,514]}
 	],
 	"upgradeConstraints":[
+		{"max":1, "perArmy":true, "from":[110]},
+		{"max":1, "from":[87], "appliesTo":[500,503,506]},
+		{"max":2, "from":[87], "appliesTo":[500,503,506]},
+		{"max":3, "from":[87], "appliesTo":[500,503,506]},
+		{"max":1, "from":[79,120], "appliesTo":[506]},
+		{"max":2, "from":[79,120], "appliesTo":[507]},
+		{"max":3, "from":[79,120], "appliesTo":[508]},
+		{"max":1, "from":[91], "appliesTo":[512]},
+		{"max":1, "from":[95], "appliesTo":[512,506]},
+		{"max":2, "from":[91], "appliesTo":[513]},
+		{"max":2, "from":[95], "appliesTo":[513,507]},
+		{"max":3, "from":[91], "appliesTo":[514]},
+		{"max":3, "from":[95], "appliesTo":[514,508]},
+		{"min":2, "from":[56,57], "appliesTo":[512]},
+		{"min":4, "from":[56,57], "appliesTo":[513]},
+		{"min":6, "from":[56,57], "appliesTo":[514]},
+		{"min":4, "from":[44,45,46], "appliesTo":[506]},
+		{"min":8, "from":[44,45,46], "appliesTo":[507]},
+		{"min":12, "from":[44,45,46], "appliesTo":[508]},
+		{"min":4, "from":[20,21,22], "appliesTo":[500]},
+		{"min":8, "from":[20,21,22], "appliesTo":[501,503]},
+		{"min":12, "from":[20,21,22], "appliesTo":[502]},
+		{"min":16, "from":[20,21,22], "appliesTo":[504]},
+		{"min":24, "from":[20,21,22], "appliesTo":[505]},
+		{"min":1, "max":2, "from":[12,120], "appliesTo":[500]},
+		{"min":2, "max":4, "from":[12,120], "appliesTo":[501]},
+		{"min":3, "max":6, "from":[12,120], "appliesTo":[502]},
+		{"min":3, "from":[101], "appliesTo":[500]},
+		{"min":6, "from":[101], "appliesTo":[501]},
+		{"min":9, "from":[101], "appliesTo":[502]},
 		{"min":3, "max":9, "from":[65], "appliesTo":[516]}
 	]
 }	
-
