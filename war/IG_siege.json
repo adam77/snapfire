@@ -27,21 +27,27 @@
 	"upgrades":[	
 		{"id":12, "name":"Gun Emplacements",			"pts":0},
 		{"id":11, "name":"Bruennhilde Transporters",	"pts":0},
-
 		{"id":17, "name":"Baneblade",					"pts":0},
 		{"id":18, "name":"Shadowsword",				"pts":0},
-	
 		{"id":28, "name":"Infantry Platoon (6 Siege Infantry)","pts":75},
 		{"id":29, "name":"Rapier Platoon (3 Rapiers)",			"pts":75},
 		{"id":30, "name":"Thudd Gun Platoon (3 Guns)",			"pts":75},
 		{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",	"pts":150},
 		{"id":32, "name":"Griffon Battery (3 Griffons)",		"pts":100},
 		{"id":33, "name":"2 Snipers",							"pts":50},
-
 		{"id":34, "name":"Fortified Position (Trenches, Razor Wire, Bunkers)",	"pts":100}
 	],
 	"formationConstraints":[
+		{"max":1, "from":[512]},
+		{"max":1, "from":[506]},
+		{"max":1, "from":[510]},
+		{"max":2, "name":"Support Formations", "from":[500,501,502,503,504,505,506,507,508,509,510], "forEach":[512,513], "name2":"Company"},
+		{"maxPercent":25, "from":[519,520]}
 	],
 	"upgradeConstraints":[
+		{"min":1, "max":1, "from":[11,12]},		
+		{"min":1, "max":1, "from":[17,18]},
+		{"max":3, "from":[28,29,30,31,32,33]},
+		{"max":1, "from":[34]}
 	]
 }

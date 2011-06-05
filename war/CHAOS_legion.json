@@ -7,12 +7,14 @@
 		{"name":"DETACHMENTS", "formations":[
 			{"id":501, "name":"Armoured Company",			"pts":0, "upgrades":[20,21,42]},
 			{"id":502, "name":"Assault Company",			"pts":0, "upgrades":[23,24,42]},
-			{"id":503, "name":"Bike Company",				"pts":300, "units":"8 Chaos Space Marines Bikes", "upgrades":[15,16,17,18,38,47,40]},
-			{"id":504, "name":"Black Legion Retinue",		"pts":275, "units":"8 Chaos Space Marines", "upgrades":[15,16,17,18,38,48,49,50,41,42,43,44,45,40,46,47]},
-			{"id":505, "name":"Chaos Terminators",			"pts":0, "upgrades":[15,16,17,18,38,13,41,42,43,44,45, 40, 46, 47]},
-			{"id":506, "name":"Daemon Pool",				"pts":0, "upgrades":[51,52]},
-			{"id":507, "name":"Forlorn Hope Retinue",		"pts":125, "units":"4 Chaos Space Marines", "upgrades":[48,41,40]},
-			{"id":508, "name":"Raptor Cult", 				"pts":0, "upgrades":[15,16,17,18,38,11,40]}
+			{"id":503, "name":"Bike Company",				"pts":300, "units":"8 Chaos Space Marines Bikes", "upgrades":[47,40]},
+			{"id":504, "name":"Black Legion Retinue",		"pts":275, "units":"8 Chaos Space Marines", "upgrades":[48,49,50,41,42,43,44,45,40,46,47]},
+			{"id":505, "name":"Chaos Terminators",			"pts":0, "upgrades":[13,41,42,43,44,45, 40, 46, 47]},
+			{"id":507, "name":"Forlorn Hope",		"pts":125, "units":"4 Chaos Space Marines", "upgrades":[48,41,40]},
+			{"id":508, "name":"Raptor Cult", 				"pts":0, "upgrades":[11,40]}
+		]},
+		{"name":"Daemon Pool", "formations":[
+			{"id":506, "name":"Daemon Pool",				"pts":0, "upgrades":[51,52]}
 		]},
 		{"name":"CHAOS NAVY", "formations":[
 			{"id":530, "name":"Swiftdeath Interceptor",		"pts":200, "units":"3 Interceptors", "upgrades":[]},
@@ -58,8 +60,31 @@
 		{"id":52, "name":"Lesser Daemon", "pts":20}
 	],
 	"formationConstraints":[
+		{"max":1, "name":"Forlorn Hope", "from":[507], "forEach":[504], "name2":"Retinue"},
+		{"max":2, "from":[502]},
+		{"max":2, "from":[505]},
+		{"max":1, "from":[506]},
+		{"max":1, "from":[508]},
+		{"max":1, "name":"Spacecraft", "from":[533,534]},		
+		{"maxPercent":33, "name":"War Engines & Navy", "from":[530,531,533,534,520,521,522]}
 	],
 	"upgradeConstraints":[
+		{"max":1, "perArmy":true, "from":[18,38]},
+		{"max":3, "from":[41]},
+		{"max":3, "from":[42]},
+		{"max":4, "from":[43]},
+		{"max":3, "from":[45]},
+		{"max":1, "from":[46]},
+		{"max":1, "from":[47]},
+		{"max":1, "from":[49]},
+		{"max":1, "from":[50]},
+		{"min":4, "max":8, "from":[11], "appliesTo":[508]},
+		{"min":4, "max":6, "from":[13], "appliesTo":[505]},
+		{"min":1, "max":1, "from":[15,16,17,18,38], "appliesTo":[503,504,505,508]},
+		{"min":4, "max":8, "name":"Vehicles", "from":[20,21], "appliesTo":[501]},
+		{"min":1, "max":3, "name":"Vehicles", "from":[23,24], "appliesTo":[502]},
+		{"min":1, "max":1, "from":[35,31,32,33,34], "appliesTo":[501,502,503,504,505,507,508,530,531,533,534,520,521,522]},
+		{"max":1, "from":[40]}
 	]
 }
 
