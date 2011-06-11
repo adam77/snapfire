@@ -8,7 +8,7 @@
 			{ "id":503, "name":"Heavy Tactical Detachment", "pts":350, "units":"4 Tactical units", "upgrades":[55,56,57,58,95,71,72,73] },
 			{ "id":504, "name":"Helios Detachment", "pts":450, "units":"4 Land Raider Helios", "upgrades":[55,56,57,58,100] },
 			{ "id":505, "name":"Land Raider Detachment", "pts":350, "upgrades":[55,56,57,58,95,71,72,73,100] },
-			{ "id":506, "name":"Landing Craft", "pts":350, "units":"Landing Craft", "upgrades":[] },
+			{ "id":506, "name":"Landing Craft", "pts":350, "upgrades":[] },
 			{ "id":507, "name":"Predator Detachment", "pts":275, "upgrades":[76,77,78,55,56,57,58,59,100] },
 			{ "id":508, "name":"Scout Detachment", "pts":150, "units":"4 Scout units plus transport", "upgrades":[55,56,57,58,81,82,103] },
 			{ "id":509, "name":"Spacecraft", "pts":200, "upgrades":[] },
@@ -65,8 +65,27 @@
 		{ "id":103, "name":"Sniper", "pts":50 }
 	],
 	"formationConstraints":[
+		{"max":1, "from":[509]},
+		{"max":2, "from":[521,522]},
+		{"max":2, "from":[541,542,543,544]},
+		{"maxPercent":33, "name":"Navy & Titans", "from":[521,522,523,524,541,542,543,544]}
 	],
 	"upgradeConstraints":[
+		{"max":1, "name":"Cmdr", "from":[55,56,57,58,59,95]},
+		{"max":1, "perArmy":true, "from":[58,59,95]},
+		{"max":3, "from":[61,62,63]},
+		{"max":4, "from":[71,72,73]},
+		{"max":1, "from":[76,77,78]},
+		{"max":4, "from":[81,82]},
+		{"max":1, "from":[100]},
+		{"max":1, "from":[103]},
+		{"min":2, "max":4, "from":[111], "appliesTo":[513]},
+		{"min":4, "max":4, "from":[11,12], "appliesTo":[502]},
+		{"min":2, "max":2, "from":[21,22], "appliesTo":[503]},
+		{"min":4, "max":4, "from":[21,22], "appliesTo":[505]},
+		{"min":4, "max":4, "from":[31,32], "appliesTo":[507]},
+		{"min":2, "max":2, "from":[34,35,36], "appliesTo":[511]},
+		{"min":1, "max":1, "from":[41,42], "appliesTo":[509]}
 	]
 }
 
