@@ -3,7 +3,7 @@
 	"version":"NetEA v1.5",
 	"by":"Iron Bloke",
 	"sections":[
-		{"name":"DETACHMENTS" "formations": [
+		{"name":"DETACHMENTS", "formations": [
 			{ "id":502, "name":"Bike Detachment", "pts":175, "upgrades":[55,56,57,58,61,62,63] },
 			{ "id":503, "name":"Heavy Tactical Detachment", "pts":350, "units":"4 Tactical units", "upgrades":[55,56,57,58,95,71,72,73] },
 			{ "id":504, "name":"Helios Detachment", "pts":450, "units":"4 Land Raider Helios", "upgrades":[55,56,57,58,100] },
@@ -18,17 +18,17 @@
 			{ "id":514, "name":"Vindicator Detachment", "pts":250, "units":"4 Vindicators", "upgrades":[76,77,78,55,56,57,58,59,100] },
 			{ "id":515, "name":"Whirlwind Detachment", "pts":300, "units":"4 Whirlwinds", "upgrades":[55,56,57,58,100] }
 		]},
-		{"name":"AIRCRAFT" "formations":[
-			{ "id":521, "name":"Fighter Squadron", "pts":150, "units":"2 Thunderbolt Fighters", "upgrades":[], group:birds },
-			{ "id":522, "name":"Bomber Squadron", "pts":150, "units":"2 Marauder Bombers", "upgrades":[], group:birds },
+		{"name":"AIRCRAFT", "formations":[
+			{ "id":521, "name":"Fighter Squadron", "pts":150, "units":"2 Thunderbolt Fighters", "upgrades":[] },
+			{ "id":522, "name":"Bomber Squadron", "pts":150, "units":"2 Marauder Bombers", "upgrades":[] },
 			{ "id":523, "name":"Thunderhawk SB", "pts":250, "units":"Thunderhawk (Saturation Bombing configuration)", "upgrades":[] },
 			{ "id":524, "name":"Thunderhawk CAS", "pts":250, "units":"Thunderhawk (Close Air Support configuration)", "upgrades":[] }
 		]},
-		{"name":"TITANS" "formations":[
-			{ "id":541, "name":"Warlord Class Titan", "pts":850, "upgrades":[], group:titans },
-			{ "id":542, "name":"Reaver Class Titan", "pts":650, "upgrades":[], group:titans },
-			{ "id":543, "name":"Warhound Titan", "pts":275, "upgrades":[], group:titans },
-			{ "id":544, "name":"Warhound Pack", "pts":500, "units":"2 Warhounds", "upgrades":[], group:titans }
+		{"name":"TITANS", "formations":[
+			{ "id":541, "name":"Warlord Class Titan", "pts":850, "upgrades":[] },
+			{ "id":542, "name":"Reaver Class Titan", "pts":650, "upgrades":[] },
+			{ "id":543, "name":"Warhound Titan", "pts":275, "upgrades":[] },
+			{ "id":544, "name":"Warhound Pack", "pts":500, "units":"2 Warhounds", "upgrades":[] }
 		]}
 	],
 	"upgrades":[
