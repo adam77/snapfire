@@ -3,7 +3,7 @@
 	"version":"NetEA v1.13",
 	"by":"Iron Bloke",
 	"sections":[
-		{"name":"DETACHMENTS" "formations": [
+		{"name":"DETACHMENTS", "formations": [
 			{ "id":501, "name":"Devastator Detachment", "pts":250, "units":"4 Devastator units", "upgrades":[11,12,51,52,53,54,71,72,73,74,75,84,85,81,82,102] },
 			{ "id":502, "name":"Land Raider Detachment", "pts":350, "units":"4 Land Raiders", "upgrades":[51,52,53,54,71,72,73,74,75,100] },
 			{ "id":503, "name":"Landing Craft", "pts":425, "upgrades":[] },
@@ -15,16 +15,16 @@
 			{ "id":509, "name":"Vindicator Detachment", "pts":250, "units":"4 Vindicators", "upgrades":[51,52,53,54,71,72,73,74,75] },
 			{ "id":510, "name":"Whirlwind Detachment", "pts":300, "units":"4 Whirlwinds", "upgrades":[51,52,53,54,71,72,73,74,75,100] }
 		]},
-		{"name":"RESTRICTED FORMATIONS" "formations": [
+		{"name":"RESTRICTED FORMATIONS", "formations": [
 			{ "id":521, "name":"Assault Detachment", "pts":150, "units":"4 Assault units", "upgrades":[51,52,53,54,71,72,73,74,75] },
 			{ "id":522, "name":"Fast Attack Detachment", "pts":200, "upgrades":[51,52,53,54] },
 			{ "id":523, "name":"Scout Detachment", "pts":150, "units":"4 Scout units plus transport", "upgrades": [51,52,53,54,81,82,101] }
 		]},
-		{"name":"AIRCRAFT" "formations":[
+		{"name":"AIRCRAFT", "formations":[
 			{ "id":531, "name":"Fighter Squadron", "pts":150, "units":"2 Thunderbolt Fighters", "upgrades":[] },
 			{ "id":532, "name":"Bomber Squadron", "pts":250, "units":"2 Marauder Bombers", "upgrades":[] }
 		]},
-		{"name":"TITANS" "formations":[
+		{"name":"TITANS", "formations":[
 			{ "id":541, "name":"Warlord Class Titan", "pts":850, "upgrades":[] },
 			{ "id":542, "name":"Reaver Class Titan", "pts":650, "upgrades":[] },
 			{ "id":543, "name":"Warhound Titan", "pts":275, "upgrades":[] },

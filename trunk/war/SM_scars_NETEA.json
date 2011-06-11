@@ -3,7 +3,7 @@
 	"version":"NetEA Compendium 1.1",
 	"by":"Iron Bloke",
 	"sections":[
-		{"name":"DETACHMENTS" "formations":[
+		{"name":"DETACHMENTS", "formations":[
 			{"id":500, "name":"Assault Detachment", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18]},
 			{"id":501, "name":"Bike Detachment", 			"pts":375, "upgrades":[15,16,17,18]},
 			{"id":504, "name":"Land Speeders",				"pts":200, "upgrades":[15,16,17,18]},
@@ -17,11 +17,11 @@
 			{"id":513, "name":"Thunderhawk",				"pts":200, "upgrades":[]},
 			{"id":515, "name":"Whirlwinds",				"pts":300, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,31,35]}
 		]},
-		{"name":"IMPERIAL NAVY" "formations":[
+		{"name":"IMPERIAL NAVY", "formations":[
 			{"id":517, "name":"Thunderbolt Fighters",	"pts":150, "units":"2 Fighters", "upgrades":[]},
 			{"id":518, "name":"Marauder Bombers",		"pts":250, "units":"2 Bombers", "upgrades":[]}
 		]},
-		{"name":"TITAN LEGIONS" "formations":[
+		{"name":"TITAN LEGIONS", "formations":[
 			{"id":524, "name":"Warhound Pack",			"pts":500, "upgrades":[], "units":"2 Warhounds"},
 			{"id":522, "name":"Warhound Titan",		"pts":275, "upgrades":[]}
 		]}	
