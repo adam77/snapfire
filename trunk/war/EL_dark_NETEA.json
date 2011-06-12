@@ -1,88 +1,67 @@
 {
-	"id":"",
-	"version":"",
+	"id":"Kabal of Pain's Way",
+	"version":"NetEA Raiders v2.0",
 	"by":"Iron Bloke",
 	"sections":[
-
-{"id":11, "name":"Corsair Class Escort",	"pts":150},
-{"id":13, "name":"Raven Fighter",			"pts":100},
-{"id":15, "name":"Razorwing Bomber",		"pts":125},
-{"id":23,	"name":"Vessel of Pain",			"pts":250},
-{"id":16, "name":"Dracon" "formations":[
-	{"id":17, "name":"Dracon", 				"pts":50},
-	{"id":18, "name":"Archon", 				"pts":100}
-]},
-{"id":19,	"name":"Ravagers" "formations":[
-	{"id":20,	"name":"4 Ravagers",				"pts":0},
-	{"id":21,	"name":"6 Ravagers",				"pts":100}
-]},
-
-{"id":50, "name":"Dracon" "formations":[
-	{"id":51, "name":"Dracon", 			"pts":50},
-	{"id":52, "name":"Archon", 			"pts":100}
-]},
-{"id":53, "name":"Sybarite", 			"pts":25},
-{"id":54, "name":"Infantry Upgrades" "formations":[
-	{"id":55, "name":"2 Incubi",			"pts":125},
-	{"id":56, "name":"2 Wyches",			"pts":100},
-	{"id":57, "name":"2 Warriors",			"pts":100},
-	{"id":58, "name":"2 Mandrakes",		"pts":125},
-	{"id":59, "name":"2 Scourges",			"pts":125},
-	{"id":60, "name":"Haemonculus, Grotesque",	"pts":150}
-]},
-{"id":61, "name":"Ravager",			"pts":50},
-{"id":62, "name":"Infantry Upgrade" "formations":[
-	{"id":63, "name":"2 Incubi",			"pts":125},
-	{"id":64, "name":"2 Wyches",			"pts":100},
-	{"id":65, "name":"2 Warriors",			"pts":100},
-	{"id":66, "name":"2 Mandrakes",		"pts":125},
-	{"id":67, "name":"2 Scourges",			"pts":125},
-	{"id":68, "name":"Haemonculus, Grotesque",	"pts":150},
-	{"id":75,	"name":"2 Warp Beasts",		"pts":100},
-	{"id":76,	"name":"2 Hellions",			"pts":100},
-	{"id":77,	"name":"2 Reavers",			"pts":100}
-]},
-{"id":69, "name":"Vessel of Pain",		"pts":250},
-{"id":70, "name":"Raider",				"pts":0},
-{"id":71, "name":"Barge of Pleasure",	"pts":125},
-{"id":72,	"name":"Slavebringer",		"pts":200},
-{"id":73,	"name":"Talos",				"pts":50},
-{"id":74,	"name":"Perditor",			"pts":150},
-
-{"id":500, "name":"PARTISANS" "formations":[
-	{"id":501, "name":"Haemonculi Coven",			"pts":250, 		"units":"2 Haemonculi, 4 Grotesques", "upgrades":[talos,perditor,sybarite,pain,raider,slave]},
-	{"id":502, "name":"Talos Swarm",				"pts":200, 		"units":"4 Talos", "upgrades":[talos,perditor,slave]},
-	{"id":503, "name":"Wych Cult",					"pts":200, 		"units":"6 Wyches", "upgrades":[upgrades,sybarite,raider,pleasure,slave]},
-	{"id":504, "name":"Hellion Murder",			"pts":200, 		"units":"6 Hellions", "upgrades":[upgrades,sybarite]},
-	{"id":505, "name":"Reaver Gang",				"pts":200, 		"units":"6 Reavers", 	"upgrades":[upgrades,sybarite]},
-	{"id":506, "name":"Mandrake Throng",			"pts":225, 		"units":"6 Mandrakes", "upgrades":[upgrades]},
-	{"id":507, "name":"Scourge Flight",			"pts":225, 		"units":"6 Scourges", "upgrades":[upgrades,sybarite]},
-	{"id":508, "name":"Heavy Barges",				"pts":0,	"upgrades":[barge]}
-]},
-
-{"id":532, "name":"INDIVIDUALS" "formations":[
-	{"id":530, "name":"Webway Portal",	"pts":50,		"upgrades":[]},
-	{"id":531, "name":"Kashnarak",		"pts":50,		"upgrades":[]}
-]},
-
-{"id":510, "name":"KABALS" "formations":[
-	{"id":511, "name":"Kabal Coterie", 	"pts":200, "units":"4 Incubi",	"upgrades":[dracons2,sybarite,upgrades2,ravager,raider,pleasure,slave]},
-	{"id":512, "name":"Kabal Syndicate",	"pts":200,	"upgrades":[dracons,sybarite,upgrades2,ravager,raider,pleasure,slave], "units":"6 Warriors"},
-	{"id":513, "name":"Kabal Flotilla",	"pts":250,	"upgrades":[dracons,sybarite,ravagers,pain]}
-]},
-
-{"id":520, "name":"Spacecraft"},
-{"id":521, "name":"SPACESHIPS, AIRCRAFT &amp, HORRORS" "formations":[
-	{"id":522, "name":"Torture Class Cruiser",		"pts":300, "upgrades":[]},
-	{"id":523, "name":"Corsair Escorts",			"pts":0, "upgrades":[escort]},
-	{"id":524, "name":"Tormentor Titan",			"pts":500, "upgrades":[]},
-	{"id":525, "name":"Executioner Landing Module","pts":750, "upgrades":[]},
-	{"id":526, "name":"Fighter Formation",			"pts":0, "upgrades":[raven]},
-	{"id":527, "name":"Bomber Formation",			"pts":0, "upgrades":[razor]}
-]},
-
-{
-	"id":"Kabal of Pain\"s Way", "version":"NetEA Raiders v2.0",
-	sublists:[individualList, warhostList, troupeList, allyList],
-	restriction:{limit:2, restricting:"Kabal", restricted:"Partisans"}},
-
+		{"name":"PARTISANS", "formations":[
+			{"id":501, "name":"Haemonculi Coven",			"pts":250, 		"units":"2 Haemonculi, 4 Grotesques", "upgrades":[]},
+			{"id":502, "name":"Talos Swarm",				"pts":200, 		"units":"4 Talos", "upgrades":[]},
+			{"id":503, "name":"Wych Cult",					"pts":200, 		"units":"6 Wyches", "upgrades":[]},
+			{"id":504, "name":"Hellion Murder",			"pts":200, 		"units":"6 Hellions", "upgrades":[]},
+			{"id":505, "name":"Reaver Gang",				"pts":200, 		"units":"6 Reavers", 	"upgrades":[]},
+			{"id":506, "name":"Mandrake Throng",			"pts":225, 		"units":"6 Mandrakes", "upgrades":[]},
+			{"id":507, "name":"Scourge Flight",			"pts":225, 		"units":"6 Scourges", "upgrades":[]},
+			{"id":508, "name":"Heavy Barges",				"pts":0,	"upgrades":[]}
+		]},
+		{"name":"INDIVIDUALS", "formations":[
+			{"id":530, "name":"Webway Portal",	"pts":50,		"upgrades":[]},
+			{"id":531, "name":"Kashnarak",		"pts":50,		"upgrades":[]}
+		]},
+		{"name":"KABALS", "formations":[
+			{"id":511, "name":"Kabal Coterie", 	"pts":200, "units":"4 Incubi",	"upgrades":[]},
+			{"id":512, "name":"Kabal Syndicate",	"pts":200,	"upgrades":[], "units":"6 Warriors"},
+			{"id":513, "name":"Kabal Flotilla",	"pts":250,	"upgrades":[]}
+		]},
+		{"name":"SPACESHIPS, AIRCRAFT & HORRORS", "formations":[
+			{"id":522, "name":"Torture Class Cruiser",		"pts":300, "upgrades":[]},
+			{"id":523, "name":"Corsair Escorts",			"pts":0, "upgrades":[]},
+			{"id":524, "name":"Tormentor Titan",			"pts":500, "upgrades":[]},
+			{"id":525, "name":"Executioner Landing Module","pts":750, "upgrades":[]},
+			{"id":526, "name":"Fighter Formation",			"pts":0, "upgrades":[]},
+			{"id":527, "name":"Bomber Formation",			"pts":0, "upgrades":[]}
+		]}
+	],
+	"upgrages":[
+		{"id":11, "name":"Corsair Class Escort",	"pts":150},
+		{"id":13, "name":"Raven Fighter",			"pts":100},
+		{"id":15, "name":"Razorwing Bomber",		"pts":125},
+		{"id":23,	"name":"Vessel of Pain",			"pts":250},
+		{"id":17, "name":"Dracon", 				"pts":50},
+		{"id":18, "name":"Archon", 				"pts":100},
+		{"id":20,	"name":"4 Ravagers",				"pts":0},
+		{"id":21,	"name":"6 Ravagers",				"pts":100},
+		{"id":51, "name":"Dracon", 			"pts":50},
+		{"id":52, "name":"Archon", 			"pts":100},
+		{"id":53, "name":"Sybarite", 			"pts":25},
+		{"id":55, "name":"2 Incubi",			"pts":125},
+		{"id":56, "name":"2 Wyches",			"pts":100},
+		{"id":57, "name":"2 Warriors",			"pts":100},
+		{"id":58, "name":"2 Mandrakes",		"pts":125},
+		{"id":59, "name":"2 Scourges",			"pts":125},
+		{"id":60, "name":"Haemonculus, Grotesque",	"pts":150},
+		{"id":61, "name":"Ravager",			"pts":50},
+		{"id":75,	"name":"2 Warp Beasts",		"pts":100},
+		{"id":76,	"name":"2 Hellions",			"pts":100},
+		{"id":77,	"name":"2 Reavers",			"pts":100},
+		{"id":69, "name":"Vessel of Pain",		"pts":250},
+		{"id":70, "name":"Raider",				"pts":0},
+		{"id":71, "name":"Barge of Pleasure",	"pts":125},
+		{"id":72,	"name":"Slavebringer",		"pts":200},
+		{"id":73,	"name":"Talos",				"pts":50},
+		{"id":74,	"name":"Perditor",			"pts":150}
+	],
+	"formationConstraints":[
+	],
+	"upgradeConstraints":[
+	]
+}
