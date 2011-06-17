@@ -3,14 +3,6 @@
 	"version":"NetEA Compendium 1.0",
 	"by":"Iron Bloke",
 	"sections":[
-		{"name":"TROUPES", "formations":[
-			{"id":500, "name":"Ranger Troupe",					"pts":0, "upgrades":[11]},
-			{"id":501, "name":"War Walker Troupe",				"pts":0, "upgrades":[13]},
-			{"id":502, "name":"Windrider Troupe",				"pts":200, 	"upgrades":[]},
-			{"id":503, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[]},
-			{"id":504, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners", "upgrades":[]},
-			{"id":505, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36,37]}
-		]},
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":507, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
 			{"id":508, "name":"Avatar",		"pts":0,		"upgrades":[]}
@@ -19,6 +11,14 @@
 			{"id":510, "name":"Aspect Warrior Warhost", 			"pts":300,	"upgrades":[39,40,41,42]},
 			{"id":511, "name":"Guardian Warhost",		 			"pts":150,	"units":"Farseer",	"upgrades":[43,45,46,47]},
 			{"id":512, "name":"Guardian Warhost (Mounted)",		"pts":350,	"units":"Farseer, 4 Wave Serpents",	"upgrades":[]}
+		]},	
+		{"name":"TROUPES", "formations":[
+			{"id":500, "name":"Ranger Troupe",					"pts":0, "upgrades":[11]},
+			{"id":501, "name":"War Walker Troupe",				"pts":0, "upgrades":[13]},
+			{"id":502, "name":"Windrider Troupe",				"pts":200, 	"upgrades":[]},
+			{"id":503, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[30,31,32]},
+			{"id":504, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners", "upgrades":[]},
+			{"id":505, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36,37]}
 		]},
 		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
 			{"id":515, "name":"Wraithship",	"pts":150, "upgrades":[]},
@@ -63,7 +63,25 @@
 		{"id":47, "name":"3 Wraithlords",	"pts":175}
 	],
 	"formationConstraints":[
+		{"max":3, "name":"Troupes", "from":[500,501,502,503,504,505], "forEach":[510,511,512], "name2":"Warhost"},
+		{"max":1, "from":[507]},
+		{"max":1, "from":[508]},
+		{"max":1, "from":[517]},
+		{"maxPercent":33, "from":[515,516,517,518,519,520,521,522]},		
+		{"max":1, "name":"Spacecraft", "from":[515,516]}		
 	],
 	"upgradeConstraints":[
+		{"max":2, "from":[47]},	
+		{"max":1, "name":"Wraithguard", "from":[45,46]},	
+		{"max":1, "from":[43]},	
+		{"max":1, "perArmy":true, "from":[40]},	
+		{"max":2, "name":"Exarchs", "from":[39,40]},
+		{"min":1, "max":3, "from":[34,35,36,37], "appliesTo":[505]},		
+		{"min":5, "max":6, "from":[30,31,32], "appliesTo":[503]},			
+		{"min":6, "max":6, "from":[27,28], "appliesTo":[502]},			
+		{"min":7, "max":7, "from":[24,25], "appliesTo":[511,512]},		
+		{"min":8, "max":8, "from":[15,16,17,18,19,20,21,22], "appliesTo":[510]},	
+		{"min":4, "max":6, "from":[13], "appliesTo":[501]},
+		{"min":4, "max":8, "from":[11], "appliesTo":[500]}
 	]
 }
