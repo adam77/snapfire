@@ -3,24 +3,24 @@
 	"version":"NetEA Raiders v2.0",
 	"by":"Iron Bloke",
 	"sections":[
-		{"name":"PARTISANS", "formations":[
-			{"id":501, "name":"Haemonculi Coven",			"pts":250, 		"units":"2 Haemonculi, 4 Grotesques", "upgrades":[]},
-			{"id":502, "name":"Talos Swarm",				"pts":200, 		"units":"4 Talos", "upgrades":[]},
-			{"id":503, "name":"Wych Cult",					"pts":200, 		"units":"6 Wyches", "upgrades":[]},
-			{"id":504, "name":"Hellion Murder",			"pts":200, 		"units":"6 Hellions", "upgrades":[]},
-			{"id":505, "name":"Reaver Gang",				"pts":200, 		"units":"6 Reavers", 	"upgrades":[]},
-			{"id":506, "name":"Mandrake Throng",			"pts":225, 		"units":"6 Mandrakes", "upgrades":[]},
-			{"id":507, "name":"Scourge Flight",			"pts":225, 		"units":"6 Scourges", "upgrades":[]},
-			{"id":508, "name":"Heavy Barges",				"pts":0,	"upgrades":[]}
-		]},
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":530, "name":"Webway Portal",	"pts":50,		"upgrades":[]},
 			{"id":531, "name":"Kashnarak",		"pts":50,		"upgrades":[]}
 		]},
 		{"name":"KABALS", "formations":[
-			{"id":511, "name":"Kabal Coterie", 	"pts":200, "units":"4 Incubi",	"upgrades":[]},
-			{"id":512, "name":"Kabal Syndicate",	"pts":200,	"upgrades":[], "units":"6 Warriors"},
-			{"id":513, "name":"Kabal Flotilla",	"pts":250,	"upgrades":[]}
+			{"id":511, "name":"Kabal Coterie", 	"pts":200, "units":"4 Incubi",	"upgrades":[53,55,56,57,58,59,60,61,70,71,72]},
+			{"id":512, "name":"Kabal Syndicate",	"pts":200,	"upgrades":[17,18,53,55,56,57,58,59,60,61,70,71,72], "units":"6 Warriors"},
+			{"id":513, "name":"Kabal Flotilla",	"pts":250,	"upgrades":[17,18,53,69]}
+		]},
+		{"name":"PARTISANS", "formations":[
+			{"id":501, "name":"Haemonculi Coven",			"pts":250, 		"units":"2 Haemonculi, 4 Grotesques", "upgrades":[53,72,73,74,69,70]},
+			{"id":502, "name":"Talos Swarm",				"pts":200, 		"units":"4 Talos", "upgrades":[72,73,74]},
+			{"id":503, "name":"Wych Cult",					"pts":200, 		"units":"6 Wyches", "upgrades":[53,55,56,57,58,59,60,75,76,77,70,71,72]},
+			{"id":504, "name":"Hellion Murder",			"pts":200, 		"units":"6 Hellions", "upgrades":[53,55,56,57,58,59,60,75,76,77]},
+			{"id":505, "name":"Reaver Gang",				"pts":200, 		"units":"6 Reavers", 	"upgrades":[53,55,56,57,58,59,60,75,76,77]},
+			{"id":506, "name":"Mandrake Throng",			"pts":225, 		"units":"6 Mandrakes", "upgrades":[55,56,57,58,59,60,75,76,77]},
+			{"id":507, "name":"Scourge Flight",			"pts":225, 		"units":"6 Scourges", "upgrades":[53,55,56,57,58,59,60,75,76,77]},
+			{"id":508, "name":"Heavy Barges",				"pts":0,	"upgrades":[]}
 		]},
 		{"name":"SPACESHIPS, AIRCRAFT & HORRORS", "formations":[
 			{"id":522, "name":"Torture Class Cruiser",		"pts":300, "upgrades":[]},
@@ -61,7 +61,30 @@
 		{"id":74,	"name":"Perditor",			"pts":150}
 	],
 	"formationConstraints":[
+		{"maxPercent":33, "from":[522,523,524,525,526,527]},
+		{"max":1, "from":[530]},
+		{"max":1, "from":[531]},		
+		{"max":1, "from":[511]},				
+		{"max":2, "name":"Partisans", "from":[501,502,503,504,505,506,507,508], "forEach":[511,512,513], "name2":"Kabal"},
+		{"max":1, "name":"Spacecraft", "from":[522,523]}
 	],
 	"upgradeConstraints":[
+		{"min":2, "max":3, "from":[15], "appliesTo":[527]},			
+		{"min":2, "max":3, "from":[13], "appliesTo":[526]},		
+		{"min":1, "max":3, "from":[11], "appliesTo":[523]},	
+		{"min":1, "max":2, "from":[23], "appliesTo":[508]},
+		{"min":1, "max":1, "from":[20,21], "appliesTo":[513]},
+		{"max":1, "name":"Dracon", "from":[17,18], "appliesTo":[512,513]},
+		{"min":1, "max":1, "from":[17,18], "appliesTo":[511]},
+		{"max":1, "from":[53]},
+		{"max":4, "from":[70]},
+		{"max":2, "from":[71]},
+		{"max":1, "from":[72]},		
+		{"max":2, "from":[73]},				
+		{"max":2, "from":[74]},				
+		{"max":1, "from":[69]},		
+		{"max":1, "from":[61]},
+		{"max":2, "from":[55,56,57,58,59,60], "appliesTo":[511,512]},
+		{"max":1, "from":[55,56,57,58,59,60,75,75,77], "appliesTo":[503,504,505,506,507]}
 	]
 }
