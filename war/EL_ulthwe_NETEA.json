@@ -1,26 +1,26 @@
 {
-	"id":"Ulthw&eacute;, Craftworld",
+	"id":"Ulthwé, Craftworld",
 	"version":"NetEA Army Book 2010 *DRAFT*",
 	"by":"Iron Bloke",
 	"sections":[
-		{"name":"TROUPES", "formations":[
-			{"id":500, "name":"Aspect Warrior Troupe", 			"pts":175,	"upgrades":[52,53,54]},
-			{"id":501, "name":"Ranger Troupe",				"pts":0, "upgrades":[15]},
-			{"id":502, "name":"War Walker Troupe",				"pts":50, "upgrades":[16]},
-			{"id":503, "name":"Windrider Troupe",				"pts":200, 	"upgrades":[]},
-			{"id":504, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[]},
-			{"id":505, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners", "upgrades":[]},
-			{"id":506, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[49,50,51]}
-		]},
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":507, "name":"Wraithgate", "pts":50,	"upgrades":[]},
 			{"id":508, "name":"Avatar", "pts":0, "upgrades":[61]}
 		]},
 		{"name":"WARHOSTS", "formations":[
-			{"id":510, "name":"Guardian Warhost",		 			"pts":150,	"upgrades":[12,13,55,57,58,59]},
-			{"id":511, "name":"Guardian Warhost (Mounted)",	"pts":350,	"units":"4 Wave Serpents",	"upgrades":[12,13]},
-			{"id":512, "name":"Black Guardian Warhost",		 			"pts":200,	"upgrades":[12,13,55,16]},
-			{"id":513, "name":"Black Guardian Warhost (Mounted)",	"pts":400,	"upgrades":[12,13,40,41,42,44,45,46,47]}
+			{"id":510, "name":"Guardian Warhost",		 			"pts":150,	"upgrades":[55,57,58,59]},
+			{"id":511, "name":"Guardian Warhost (Mounted)",	"pts":350,	"units":"4 Wave Serpents",	"upgrades":[]},
+			{"id":512, "name":"Black Guardian Warhost",		 			"pts":200,	"upgrades":[55,16]},
+			{"id":513, "name":"Black Guardian Warhost (Mounted)",	"pts":400,	"upgrades":[44,45,46,47]}
+		]},
+		{"name":"TROUPES", "formations":[
+			{"id":500, "name":"Aspect Warrior Troupe", 			"pts":175,	"upgrades":[52,53,54]},
+			{"id":501, "name":"Ranger Troupe",				"pts":0, "upgrades":[15]},
+			{"id":502, "name":"War Walker Troupe",				"pts":50, "upgrades":[16]},
+			{"id":503, "name":"Windrider Troupe",				"pts":200, 	"upgrades":[]},
+			{"id":504, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[36,37,38]},
+			{"id":505, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners", "upgrades":[]},
+			{"id":506, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[49,50,51]}
 		]},
 		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
 			{"id":516, "name":"Wraithship",	"pts":150, "upgrades":[]},
@@ -48,8 +48,6 @@
 		{"id":25, "name":"Shining Spear",		"pts":0},
 		{"id":27, "name":"Guardians",				"pts":0},
 		{"id":28, "name":"Heavy Weapon Platform",	"pts":0},
-		{"id":30, "name":"Guardians",				"pts":0},
-		{"id":31, "name":"Heavy Weapon Platform",	"pts":0},
 		{"id":33, "name":"Jetbike", 	"pts":0},
 		{"id":34, "name":"Vyper", 		"pts":0},
 		{"id":36, "name":"Falcon",		"pts":50},
@@ -75,7 +73,33 @@
 		{"id":60, "name":"3 War Walkers", "pts":100},
 		{"id":61, "name":"Spear of Khaine", "pts":25}	],
 	"formationConstraints":[
+		{"max":2, "name":"Troupes", "from":[500,501,502,503,504,505,506], "forEach":[510,511,512,513], "name2":"Warhost"},
+		{"max":1, "from":[507]},
+		{"max":1, "from":[508]},
+		{"max":1, "from":[518]},
+		{"maxPercent":33, "name":"Aircraft & Titans", "from":[516,517,518,519,520,521,522,523]},		
+		{"max":1, "name":"Spacecraft", "from":[516,517]}		
 	],
 	"upgradeConstraints":[
+		{"max":1, "from":[59]},
+		{"max":1, "from":[60]},
+		{"max":1, "from":[61]},
+		{"max":1, "perArmy":true, "from":[13]},		
+		{"max":1, "name":"Wraithguard", "from":[57,58]},
+		{"max":1, "from":[55]},
+		{"max":1, "from":[52]},
+		{"max":2, "from":[37]},
+		{"min":1, "max":3, "from":[49,50,51], "appliesTo":[506]},
+		{"max":1, "name":"Jetbikes", "from":[44,45,46,47]},
+		{"min":1, "max":1, "from":[40,41,42], "appliesTo":[513]},
+		{"min":6, "max":6, "from":[27,28], "appliesTo":[512,513]},
+		{"min":7, "max":7, "from":[27,28], "appliesTo":[510,511]},
+		{"min":4, "max":4, "from":[18,19,20,21,22,23,24,25], "appliesTo":[500]},
+		{"min":5, "max":6, "name":"Falcons", "from":[36,37,38], "appliesTo":[504]},	
+		{"min":4, "max":8, "from":[15], "appliesTo":[501]},
+		{"min":4, "max":6, "from":[16], "appliesTo":[502]},
+		{"min":6, "max":6, "from":[33,34], "appliesTo":[503]},
+		{"min":1, "max":1, "from":[12,13], "appliesTo":[510,511]},
+		{"min":2, "max":2, "from":[12,13], "appliesTo":[512,513]}
 	]
 }
