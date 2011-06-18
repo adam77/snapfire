@@ -24,14 +24,14 @@
 		]},
 		{"name":"SPACESHIPS, AIRCRAFT & HORRORS", "formations":[
 			{"id":522, "name":"Torture Class Cruiser",		"pts":300, "upgrades":[]},
-			{"id":523, "name":"Corsair Escorts",			"pts":0, "upgrades":[]},
+			{"id":523, "name":"Corsair Escorts",			"pts":0, "upgrades":[11]},
 			{"id":524, "name":"Tormentor Titan",			"pts":500, "upgrades":[]},
 			{"id":525, "name":"Executioner Landing Module","pts":750, "upgrades":[]},
-			{"id":526, "name":"Fighter Formation",			"pts":0, "upgrades":[]},
-			{"id":527, "name":"Bomber Formation",			"pts":0, "upgrades":[]}
+			{"id":526, "name":"Fighter Formation",			"pts":0, "upgrades":[13]},
+			{"id":527, "name":"Bomber Formation",			"pts":0, "upgrades":[15]}
 		]}
 	],
-	"upgrages":[
+	"upgrades":[
 		{"id":11, "name":"Corsair Class Escort",	"pts":150},
 		{"id":13, "name":"Raven Fighter",			"pts":100},
 		{"id":15, "name":"Razorwing Bomber",		"pts":125},
@@ -69,6 +69,7 @@
 		{"max":1, "name":"Spacecraft", "from":[522,523]}
 	],
 	"upgradeConstraints":[
+		{"max":1, "perArmy":true, "from":[18]},
 		{"min":2, "max":3, "from":[15], "appliesTo":[527]},			
 		{"min":2, "max":3, "from":[13], "appliesTo":[526]},		
 		{"min":1, "max":3, "from":[11], "appliesTo":[523]},	
