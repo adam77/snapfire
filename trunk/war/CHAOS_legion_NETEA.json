@@ -1,86 +1,73 @@
 {
-	"id":"",
-	"version":"",
+	"id":"Black Legion",
+	"version":"NetEA v3.1 *UNDER DEVELOPMENT*",
 	"by":"Iron Bloke",
 	"sections":[
-
-{"id":10,	"name":"Faction" "formations":[
-	{"id":15,	"name":"(Chaos Undivided)",	"pts":0},
-	{"id":11,	"name":"(Khorne)",			"pts":0},
-	{"id":12,	"name":"(Nurgle)",			"pts":0},
-	{"id":13,	"name":"(Slaanesh)",			"pts":0},
-	{"id":14,	"name":"(Tzeentch)",			"pts":0}
-]},
-{"id":16, "name":"Lord" "formations":[
-	{"id":17, "name":"Chaos Lord", 		"pts":0},
-	{"id":18, "name":"Sorcerer Lord", 		"pts":0},
-	{"id":19, "name":"Daemon Prince", 		"pts":50},
-	{"id":20, "name":"Chaos Warlord (Supreme Commander)", "pts":25},
-	{"id":21, "name":"Daemon Prince (Supreme Commander)", "pts":75}
-]},
-{"id":26, "name":"Vehicles" "formations":[
-	{"id":27, "name":"Chaos Predator", 	"pts":50},
-	{"id":28, "name":"Chaos Land Raider", 	"pts":75}
-]},
-{"id":30, "name":"Raptor", "pts":35},
-{"id":32, "name":"Chaos Terminator", "pts":65},
-{"id":23, "name":"Death Wheel", "pts":275},
-{"id":25, "name":"Decimator", "pts":225},
-
-{"id":50, "name":"Greater Daemon", "pts":75},
-{"id":51, "name":"Lesser Daemon", "pts":20},
-{"id":52, "name":"Chaos Champion", "pts":50},
-{"id":53, "name":"Chaos Land Raider", "pts":75},
-{"id":54,	"name":"Chaos Vindicator", "pts":35},
-{"id":55, "name":"4 Cult Marines", "pts":150},
-{"id":56, "name":"Daemonic Pact", "pts":25},
-{"id":57, "name":"Defiler", "pts":75},
-{"id":58, "name":"Dreadclaw Drop Pod", "pts":5},
-{"id":59, "name":"4 Havocs", "pts":150},
-{"id":60, "name":"Icon Bearer", "pts":50},
-{"id":61, "name":"Obliterator", "pts":85},
-{"id":62, "name":"Rhino", "pts":10},
-{"id":63, "name":"Dreadnought", "pts":50},
-
-{"id":500, "name":"CORE" "formations":[
-	{"id":501, "name":"Black Legion Retinue", 	"pts":275, "units":"8 Chaos Space Marines", "upgrades":[faction,lords,champion,raiders,vindi,cultmarine,pact,defiler,claws,havoc,icon,obliterator,rhino,dread]},
-	{"id":551, "name":"Daemon Pool",								"pts":0, "upgrades":[greater, lesser]}
-]},
-
-{"id":502, "name":"ELITE" "formations":[
-	{"id":503, "name":"Chaos Terminators", "pts":15, "upgrades":[faction,lords,term, dread, defiler, raiders, obliterator, pact, champion, icon]},
-	{"id":504, "name":"Black Legion Chosen", "pts":125, "units":"4 Chaos Space Marine Scouts", "upgrades":[faction,rhino, claws, dread, pact]},
-	{"id":505, "name":"Decimators", "pts":0, "upgrades":[faction,decimator,defiler]}
-]},
-
-{"id":506, "name":"SUPPORT" "formations":[
-	{"id":507, "name":"Armoured Company",	"pts":0, "upgrades":[faction,armour,defiler,vindi]},
-	{"id":508, "name":"Bike Company",	"pts":300, "units":"8 Chaos Space Marines Bikes", "upgrades":[faction,lords,icon, pact]},
-	{"id":509, "name":"Defiler Assault Pack",	"pts":275, "units":"4 Defilers", "upgrades":[faction]},
-	{"id":510, "name":"Raptor Cult",	"pts":35, "upgrades":[faction,lords,raptor,pact]}
-]},
-
-{"id":532, "name":"Spacecraft"},
-{"id":535, "name":"CHAOS NAVY" "formations":[
-	{"id":530, "name":"Hellblade Flight",	"pts":225, "units":"3 Fighters", "upgrades":[]},
-	{"id":531, "name":"Helltalon Flight",	"pts":175, "units":"2 Bombers", "upgrades":[]},
-	{"id":532, "name":"Harbinger Bomber",	"pts":450, "upgrades":[]},
-	{"id":533, "name":"Devastation Class Cruiser",	"pts":150, "upgrades":[]}, 
-	{"id":534, "name":"Despoiler Class Battleship","pts":250, "upgrades":[]}
-]},
-
-{"id":523, "name":"CHAOS TITANS" "formations":[
-	{"id":520, "name":"Banelord Titan",		"pts":800, "upgrades":[]},
-	{"id":521, "name":"Ravager Titan",			"pts":650, "upgrades":[]},
-	{"id":522, "name":"Feral Titan",			"pts":275, "upgrades":[]},
-	{"id":523, "name":"Death Wheel Squadron",	"pts":0, "upgrades":[faction,wheel]}
-]},
-
-{
-	"id":"Black Legion", "version":"NetEA v3.1 *UNDER DEVELOPMENT*",
-	sublists:[core, elite, support, titanList, navyList],
-	restriction:{limit:1, restricting:"Retinue", restricted:"Elite Formation"},
-	restriction2:{limit:2, restricting:"Retinue", restricted:"Support Formations"}
-},
+		{"name":"CORE", "formations":[
+			{"id":501, "name":"Black Legion Retinue", 	"pts":275, "units":"8 Chaos Space Marines", "upgrades":[52,53,54,55,56,57,58,59,60,61,62,63]},
+			{"id":551, "name":"Daemon Pool",								"pts":0, "upgrades":[50,51]}
+		]},
+		{"name":"ELITE", "formations":[
+			{"id":503, "name":"Chaos Terminators", "pts":15, "upgrades":[32, 63, 57, 53, 61, 56, 52, 60]},
+			{"id":504, "name":"Black Legion Chosen", "pts":125, "units":"4 Chaos Space Marine Scouts", "upgrades":[62, 58, 63, 56]},
+			{"id":505, "name":"Decimators", "pts":0, "upgrades":[25,57]}
+		]},
+		{"name":"SUPPORT", "formations":[
+			{"id":507, "name":"Armoured Company",	"pts":0, "upgrades":[27,28,57,54]},
+			{"id":508, "name":"Bike Company",	"pts":300, "units":"8 Chaos Space Marines Bikes", "upgrades":[60, 56]},
+			{"id":509, "name":"Defiler Assault Pack",	"pts":275, "units":"4 Defilers", "upgrades":[]},
+			{"id":510, "name":"Raptor Cult",	"pts":35, "upgrades":[30,56]}
+		]},
+		{"name":"CHAOS NAVY", "formations":[
+			{"id":530, "name":"Hellblade Flight",	"pts":225, "units":"3 Fighters", "upgrades":[]},
+			{"id":531, "name":"Helltalon Flight",	"pts":175, "units":"2 Bombers", "upgrades":[]},
+			{"id":532, "name":"Harbinger Bomber",	"pts":450, "upgrades":[]},
+			{"id":533, "name":"Devastation Class Cruiser",	"pts":150, "upgrades":[]}, 
+			{"id":534, "name":"Despoiler Class Battleship","pts":250, "upgrades":[]}
+		]},
+		{"name":"CHAOS TITANS", "formations":[
+			{"id":520, "name":"Banelord Titan",		"pts":800, "upgrades":[]},
+			{"id":521, "name":"Ravager Titan",			"pts":650, "upgrades":[]},
+			{"id":522, "name":"Feral Titan",			"pts":275, "upgrades":[]},
+			{"id":523, "name":"Death Wheel Squadron",	"pts":0, "upgrades":[23]}
+		]}
+	],
+	"upgrades":[
+		{"id":15,	"name":"(Chaos Undivided)",	"pts":0},
+		{"id":11,	"name":"(Khorne)",			"pts":0},
+		{"id":12,	"name":"(Nurgle)",			"pts":0},
+		{"id":13,	"name":"(Slaanesh)",			"pts":0},
+		{"id":14,	"name":"(Tzeentch)",			"pts":0},
+		{"id":17, "name":"Chaos Lord", 		"pts":0},
+		{"id":18, "name":"Sorcerer Lord", 		"pts":0},
+		{"id":19, "name":"Daemon Prince", 		"pts":50},
+		{"id":20, "name":"Chaos Warlord (Supreme Commander)", "pts":25},
+		{"id":21, "name":"Daemon Prince (Supreme Commander)", "pts":75},
+		{"id":27, "name":"Chaos Predator", 	"pts":50},
+		{"id":28, "name":"Chaos Land Raider", 	"pts":75},
+		{"id":30, "name":"Raptor", "pts":35},
+		{"id":32, "name":"Chaos Terminator", "pts":65},
+		{"id":23, "name":"Death Wheel", "pts":275},
+		{"id":25, "name":"Decimator", "pts":225},
+		{"id":50, "name":"Greater Daemon", "pts":75},
+		{"id":51, "name":"Lesser Daemon", "pts":20},
+		{"id":52, "name":"Chaos Champion", "pts":50},
+		{"id":53, "name":"Chaos Land Raider", "pts":75},
+		{"id":54,	"name":"Chaos Vindicator", "pts":35},
+		{"id":55, "name":"4 Cult Marines", "pts":150},
+		{"id":56, "name":"Daemonic Pact", "pts":25},
+		{"id":57, "name":"Defiler", "pts":75},
+		{"id":58, "name":"Dreadclaw Drop Pod", "pts":5},
+		{"id":59, "name":"4 Havocs", "pts":150},
+		{"id":60, "name":"Icon Bearer", "pts":50},
+		{"id":61, "name":"Obliterator", "pts":85},
+		{"id":62, "name":"Rhino", "pts":10},
+		{"id":63, "name":"Dreadnought", "pts":50}
+	],
+	"formationConstraints":[
+	],
+	"upgradeConstraints":[
+	]
+}
 
 

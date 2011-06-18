@@ -41,7 +41,7 @@
 		{"id":59, "name":"Subjugator", "pts":225},
 		{"id":11, "name":"Cultists", 		"pts":15},
 		{"id":12,	"name":"Mutants", 		"pts":15},
-		{"id":13, "name":"Big Mutants", 	"pts":35}
+		{"id":13, "name":"Big Mutants", 	"pts":35},
 		{"id":15, "name":"Demagogue", 		"pts":0},
 		{"id":16, "name":"Chaos Marine Aspiring Champion", "pts":0},
 		{"id":17, "name":"Daemon Prince", 	"pts":50},
