@@ -4,16 +4,16 @@
 	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
 	"by":"Iron Bloke",
 	"sections":[
-		{"name":"BATTLE TITANS" "formations":[
+		{"name":"BATTLE TITANS", "formations":[
 			{"id":502, "name":"Emperor Titan", 		"pts":1250,"upgrades":[81,82,83,84]},
 			{"id":503, "name":"Warlord Titan", 		"pts":725, "upgrades":[80,81,82,83,84]},
 			{"id":504, "name":"Reaver Titan",			"pts":575, "upgrades":[80,81,82,83,84]}
 		]},
-		{"name":"SCOUT TITANS" "formations":[
+		{"name":"SCOUT TITANS", "formations":[
 			{"id":551, "name":"Warhound Titan",		"pts":275, "upgrades":[80,82]},
 			{"id":552, "name":"Warhound Titan Pack",	"pts":500, "upgrades":[80,82]}
 		]},
-		{"name":"SUPPORT FORMATIONS" "formations":[
+		{"name":"SUPPORT FORMATIONS", "formations":[
 			{"id":561, "name":"Forge Knights",			"pts":200, "upgrades":[]},
 			{"id":562, "name":"Recon Platoon",			"pts":100, "units":"4 Sentinels", "upgrades":[]},
 			{"id":563, "name":"Thunderbolt Fighters",	"pts":150, "units":"2 Thunderbolts", "upgrades":[]},
@@ -21,7 +21,7 @@
 			{"id":565, "name":"Orbital Support",		"pts":175, "upgrades":[]},
 			{"id":566, "name":"Skitarii Demi-Century",	"pts":300, "units":"Tech Priest, 9 Hypaspists", "upgrades":[]},
 			{"id":567, "name":"Lysander Fighter",		"pts":75,	 "upgrades":[]}	
-		]},	
+		]}
 	],
 	"upgrades":[	
 		{"id":11, "name":"Imperator Configuration",	"pts":0},
@@ -54,7 +54,22 @@
 		{"id":84, "name":"Sacred Icon",						"pts":50}
 	],
 	"formationConstraints":[
+		{"max":1, "from":[565]},
+		{"max":1, "name":"Support Formation", "from":[561,562,563,564,565,566,567], "forEach":[502,503,504,551,552], "name2":"Titan Formation"},
+		{"maxPercent":100, "from":[561,562,563,564,565,566,567]}
 	],
 	"upgradeConstraints":[
+		{"min":1, "max":1, "from":[11,12], "appliesTo":[502]},
+		{"min":2, "max":2, "from":[13,14,15,16], "appliesTo":[551]},
+		{"min":4, "max":4, "from":[13,14,15,16], "appliesTo":[552]},
+		{"min":3, "max":3, "from":[30,13,14,15,16,25,26,27,28,29,31,32,33,34,35,36,37], "appliesTo":[504]},
+		{"min":4, "max":4, "from":[16,13,14,15,25,26,27,28,29,30,31,32,33,34,35,36,37], "appliesTo":[503]},
+		{"min":1, "max":1, "from":[56,57], "appliesTo":[565]},	
+		{"min":1, "max":1, "from":[59,60], "appliesTo":[561]},
+		{"max":1, "from":[80]},
+		{"max":1, "perArmy":true, "from":[81]},
+		{"max":1, "from":[82]},
+		{"max":1, "from":[83]},
+		{"max":1, "from":[84]}
 	]
 }
