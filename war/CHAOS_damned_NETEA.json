@@ -4,7 +4,7 @@
 	"by":"Iron Bloke",
 	"sections":[
 		{"name":"FORMATIONS", "formations":[
-			{"id":531, "name":"Stigmatus Coven",					"pts":35, "upgrades":[15,16,17,18,19,20,11,12,13,31,43,33,34,35,38,39,36,40,41,42,30,32]},
+			{"id":531, "name":"Stigmatus Coven",					"pts":35, "upgrades":[11,12,13,31,43,33,34,35,38,39,36,40,41,42,30,32]},
 			{"id":536, "name":"Plague Zombie Infestation",			"pts":175, "units":"3 + 2D6 Plague Zombie Units", "upgrades":[]},
 			{"id":537, "name":"Daemon Pool",						"pts":0, "upgrades":[51,52]}
 		]},
@@ -69,7 +69,29 @@
 		{"id":39, "name":"Leman Russ Demolisher", 		"pts":70}
 	],
 	"formationConstraints":[
+		{"maxPercent":100, "from":[501,502,503,504,541,542,551,552,553,554,555,556,557,558,559,560,561]},
+		{"max":1, "name":"Support Coven", "from":[501,502,503,504,541,542,551,552,553,554,555,556,557,558,559,560,561], "forEach":[531], "name2":"Coven"},
+		{"max":2, "from":[536]},
+		{"max":1, "from":[537]}
 	],
 	"upgradeConstraints":[
+		{"max":3, "name":"Russ", "from":[38,39]},
+		{"max":1, "from":[43]},
+		{"max":2, "from":[42]},
+		{"max":3, "from":[41]},
+		{"max":3, "from":[40]},
+		{"max":4, "from":[36]},
+		{"max":1, "from":[35]},
+		{"max":3, "from":[34]},
+		{"max":1, "from":[33]},
+		{"max":1, "from":[31]},
+		{"min":1, "max":1, "from":[85,81,82,83,84], "appliesTo":[531]},
+		{"max":1, "name":"Arch Heretic", "perArmy":true, "from":[18,19,20]},
+		{"min":1, "max":1, "from":[15,16,17,18,19,20], "appliesTo":[531]},
+		{"min":11, "max":19, "name":"Cultists", "from":[11,12,13], "appliesTo":[531]},
+		{"min":1, "max":2, "from":[58,59], "appliesTo":[555]},
+		{"min":1, "max":3, "from":[61], "appliesTo":[557]},
+		{"min":1, "max":3, "from":[56], "appliesTo":[553]},
+		{"min":1, "max":2, "from":[54], "appliesTo":[551]}
 	]
 }
