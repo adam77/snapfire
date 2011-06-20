@@ -1,94 +1,70 @@
 {
-	"id":"",
-	"version":"",
-	"by":"Iron Bloke",
-	"sections":[
-
-{"id":10, "name":"Spacecraft" "formations":[
-	{"id":11, "name":"Hero Class Cruiser",			"pts":0},
-	{"id":12, "name":"Custodian Class Battleship",	"pts":50}
-]},
-{"id":13, "name":"Tiger Sharks" "formations":[
-	{"id":14, "name":"Tiger Shark Aircraft",		"pts":0},
-	{"id":15, "name":"Tiger Shark Missile Aircraft","pts":0}
-]},
-{"id":17, "name":"XV8 Crisis Battlesuit",		"pts":50},
-{"id":18,	"name":"Kroot" "formations":[
-	{"id":19,	"name":"9 Kroot Warriors",			"pts":0},
-	{"id":20,	"name":"14 Kroot Warriors",			"pts":75}
-]},
-{"id":21,	"name":"Hammerheads" "formations":[
-	{"id":22,	"name":"4 Hammerheads",				"pts":0},
-	{"id":23,	"name":"6 Hammerheads",				"pts":100}
-]},
-{"id":24,	"name":"Skimmers" "formations":[
-	{"id":25,	"name":"Tetra",						"pts":0},
-	{"id":26,	"name":"Piranha",					"pts":0}
-]},
-{"id":27,	"name":"Drones" "formations":[
-	{"id":28,	"name":"6 Gun Drones",				"pts":0},
-	{"id":29,	"name":"10 Gun Drones",				"pts":100}
-]},
-{"id":30,	"name":"Warriors" "formations":[
-	{"id":31,	"name":"8 Fire Warriors",			"pts":0},
-	{"id":32,	"name":"6 Fire Warriors, 3 Devilfish","pts":0}
-]},
-{"id":33, "name":"Drone" "formations":[
-	{"id":34,	"name":"Gun Drone",	"pts":25},
-	{"id":35,	"name":"2 Gun Drones",	"pts":50},
-	{"id":36,	"name":"4 Gun Drones",	"pts":75}
-]},
-
-
-{"id":80, "name":"Cmdr" "formations":[
-	{"id":50, "name":"Shas\"el",	"pts":50},
-	{"id":51, "name":"Shas\"o",	"pts":100}
-]},
-{"id":54, "name":"3 Piranhas",				"pts":75},
-{"id":55,	"name":"Skyray",					"pts":100},
-{"id":56,	"name":"2 Hammerheads",			"pts":100},
-{"id":58,	"name":"3 Kroot Hound Packs",	"pts":50},
-{"id":59,	"name":"3 Krootox Herds",		"pts":75},	
-{"id":60,	"name":"Ethereal",					"pts":75},
-{"id":61, "name":"2 Pathfinders, 1 Devilfish","pts":125},
-{"id":62,	"name":"Bonded Team",				"pts":25},
-{"id":63,	"name":"3 XV88 Broadsides",		"pts":150},
-{"id":90, "name":"Warriors" "formations":[
-	{"id":64,	"name":"4 Fire Warriors",					"pts":100},
-	{"id":65,	"name":"4 Fire Warriors, 2 Devilfish",	"pts":150}
-]},
-{"id":70, 	"name":"6 Gun Drones",			"pts":100},
-
-{"id":510, "name":"SUPPORT GROUPS" "formations":[
-	{"id":516, "name":"Armour Support Group", 	"pts":200, 	"upgrades":[skyray,hammers]},
-	{"id":514, "name":"Broadside Group", 			"pts":300, 	"upgrades":[], "units":"6 XV88 Broadsides"},
-	{"id":518, "name":"Kroot Kindred", 				"pts":175, 	"upgrades":[hound,krootox,kroots], "units":"Kroot Master Shaper"},
-	{"id":512, "name":"Pathfinder Group", 			"pts":200,		"upgrades":[drone,piranha], "units":"4 Pathfinders, 2 Devilfish"},
-	{"id":515, "name":"Recon Skimmer Group", 		"pts":175, 	"upgrades":[drone,piranha,skimmers]},
-	{"id":517, "name":"Skysweep Support Group", 	"pts":275, 	"upgrades":[], "units":"3 Skyray Gunships"},
-	{"id":513, "name":"Stealth Group", 				"pts":250, 	"upgrades":[drone], "units":"6 XV15 Stealth Units"}
-]},
-
-{"id":530, "name":"CADRES" "formations":[
-	{"id":532, "name":"Crisis Battlesuit Cadre",	"pts":50, "upgrades":[suits,commander,drone]},
-	{"id":531, "name":"Fire Warrior Cadre",		"pts":225, "upgrades":[ethereal,warrior,skyray,finders,drone,piranha,hammer,team,broad,warriors]}
-]},
-
-{"id":520, "name":"AIR CASTE" "formations":[
-	{"id":521, "name":"Barracuda Squadron",	"pts":150, "upgrades":[], "units":"2 Barracuda Fighters"},
-	{"id":522, "name":"Tiger Shark Squadron",	"pts":175, "upgrades":[drone6], "units":"2 Tiger Sharks"},
-	{"id":523, "name":"AX-1-0 Squadron",		"pts":375, "upgrades":[], "units":"2 Tiger Shark AX-1-0"},
-	{"id":524, "name":"Manta Dropship",			"pts":675, "upgrades":[]},
-	{"id":525, "name":"Spacecraft",				"pts":200, "upgrades":[spacecraft]},
-	{"id":526, "name":"Orca Dropship",			"pts":150, "upgrades":[]}
-]},
-
-{
-	"id":"Tau Third Phase Expansion", "version":"NetEA v6.4 *UNDER DEVELOPMENT*",
+	"id":"Tau Third Phase Expansion",
+	"version":"NetEA v6.4 *UNDER DEVELOPMENT*",
 	"notes":[
 		"Maximum one Ethereal is allowed per army.",
 		"Fire Warrior Cadre may take a maximum of three upgrades."
 	],
-	sublists:[companyList, supportList, titanList],
-	restriction:{limit:3, restricting:"Cadre", restricted:"Support Groups"}},
-
+	"by":"Iron Bloke",
+	"sections":[
+		{"name":"SUPPORT GROUPS", "formations":[
+			{"id":516, "name":"Armour Support Group", 	"pts":200, 	"upgrades":[skyray,hammers]},
+			{"id":514, "name":"Broadside Group", 			"pts":300, 	"upgrades":[], "units":"6 XV88 Broadsides"},
+			{"id":518, "name":"Kroot Kindred", 				"pts":175, 	"upgrades":[hound,krootox,kroots], "units":"Kroot Master Shaper"},
+			{"id":512, "name":"Pathfinder Group", 			"pts":200,		"upgrades":[drone,piranha], "units":"4 Pathfinders, 2 Devilfish"},
+			{"id":515, "name":"Recon Skimmer Group", 		"pts":175, 	"upgrades":[drone,piranha,skimmers]},
+			{"id":517, "name":"Skysweep Support Group", 	"pts":275, 	"upgrades":[], "units":"3 Skyray Gunships"},
+			{"id":513, "name":"Stealth Group", 				"pts":250, 	"upgrades":[drone], "units":"6 XV15 Stealth Units"}
+		]},
+		{"name":"CADRES", "formations":[
+			{"id":532, "name":"Crisis Battlesuit Cadre",	"pts":50, "upgrades":[suits,commander,drone]},
+			{"id":531, "name":"Fire Warrior Cadre",		"pts":225, "upgrades":[ethereal,warrior,skyray,finders,drone,piranha,hammer,team,broad,warriors]}
+		]},
+		{"name":"AIR CASTE", "formations":[
+			{"id":521, "name":"Barracuda Squadron",	"pts":150, "upgrades":[], "units":"2 Barracuda Fighters"},
+			{"id":522, "name":"Tiger Shark Squadron",	"pts":175, "upgrades":[drone6], "units":"2 Tiger Sharks"},
+			{"id":523, "name":"AX-1-0 Squadron",		"pts":375, "upgrades":[], "units":"2 Tiger Shark AX-1-0"},
+			{"id":524, "name":"Manta Dropship",			"pts":675, "upgrades":[]},
+			{"id":525, "name":"Spacecraft",				"pts":200, "upgrades":[spacecraft]},
+			{"id":526, "name":"Orca Dropship",			"pts":150, "upgrades":[]}
+		]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Hero Class Cruiser",			"pts":0},
+		{"id":12, "name":"Custodian Class Battleship",	"pts":50},
+		{"id":14, "name":"Tiger Shark Aircraft",		"pts":0},
+		{"id":15, "name":"Tiger Shark Missile Aircraft","pts":0},
+		{"id":17, "name":"XV8 Crisis Battlesuit",		"pts":50},
+		{"id":19,	"name":"9 Kroot Warriors",			"pts":0},
+		{"id":20,	"name":"14 Kroot Warriors",			"pts":75},
+		{"id":22,	"name":"4 Hammerheads",				"pts":0},
+		{"id":23,	"name":"6 Hammerheads",				"pts":100},
+		{"id":25,	"name":"Tetra",						"pts":0},
+		{"id":26,	"name":"Piranha",					"pts":0}
+		{"id":28,	"name":"6 Gun Drones",				"pts":0},
+		{"id":29,	"name":"10 Gun Drones",				"pts":100},
+		{"id":31,	"name":"8 Fire Warriors",			"pts":0},
+		{"id":32,	"name":"6 Fire Warriors, 3 Devilfish","pts":0},
+		{"id":34,	"name":"Gun Drone",	"pts":25},
+		{"id":35,	"name":"2 Gun Drones",	"pts":50},
+		{"id":36,	"name":"4 Gun Drones",	"pts":75},
+		{"id":50, "name":"Shas'el",	"pts":50},
+		{"id":51, "name":"Shas'o",	"pts":100},
+		{"id":54, "name":"3 Piranhas",				"pts":75},
+		{"id":55,	"name":"Skyray",					"pts":100},
+		{"id":56,	"name":"2 Hammerheads",			"pts":100},
+		{"id":58,	"name":"3 Kroot Hound Packs",	"pts":50},
+		{"id":59,	"name":"3 Krootox Herds",		"pts":75},	
+		{"id":60,	"name":"Ethereal",					"pts":75},
+		{"id":61, "name":"2 Pathfinders, 1 Devilfish","pts":125},
+		{"id":62,	"name":"Bonded Team",				"pts":25},
+		{"id":63,	"name":"3 XV88 Broadsides",		"pts":150},
+		{"id":64,	"name":"4 Fire Warriors",					"pts":100},
+		{"id":65,	"name":"4 Fire Warriors, 2 Devilfish",	"pts":150},
+		{"id":70, 	"name":"6 Gun Drones",			"pts":100}
+	],
+	"formationConstraints":[
+	],
+	"upgradeConstraints":[
+	]
+}
