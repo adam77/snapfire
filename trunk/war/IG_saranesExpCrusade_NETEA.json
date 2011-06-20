@@ -1,105 +1,78 @@
 {
-	"id":"",
-	"version":"",
+	"id":"Saranes Expanse Imperial Crusade",
+	"version":"NetEA Army Book *UNDER DEVELOPMENT*",
 	"by":"Iron Bloke",
 	"sections":[
-
-{"id":10, "name":"Leman Russ"0 "formations":[
-	{"id":11, "name":"Leman Russ",			"pts":0},
-	{"id":12, "name":"Vanquisher",			"pts":0}
-]},
-{"id":13, "name":"Super Heavies" "formations":[
-	{"id":14, "name":"Baneblade",			"pts":0},
-	{"id":15, "name":"Shadowsword",			"pts":0}
-]},
-{"id":16, "name":"Super Heavy" "formations":[
-	{"id":17, "name":"Baneblade",			"pts":0},
-	{"id":18, "name":"Shadowsword",			"pts":0}
-]},
-{"id":19, "name":"Spacecraft" "formations":[
-	{"id":20, "name":"Lunar Class",			"pts":0},
-	{"id":21, "name":"Emperor Class",			"pts":150},
-	{"id":22, "name":"Space Marine Strike Cruiser",	"pts":50}
-]},
-{"id":23, "name":"Artillery" "formations":[
-	{"id":24,	"name":"3 Basilisks",			"pts":0},
-	{"id":25,	"name":"3 Bombards",			"pts":0},
-	{"id":26,	"name":"3 Manticores",			"pts":0}
-]},
-{"id":60, "name":"Transport" "formations":[
-	{"id":61, "name":"Rhinos",				"pts":0},
-	{"id":62, "name":"Drop Pods",			"pts":0}
-]},
-
-{"id":27, "name":"Upgrades" "formations":[
-	{"id":28, "name":"Mechanized Fire Support Platoon (4 Fire Support plus 2 Chimera)",	"pts":150},
-	{"id":29, "name":"Mechanized Infantry Platoon (6 Infantry plus 3 Chimera)",		"pts":175},
-	{"id":30, "name":"Mechanized Snipers (2 Snipers plus 1 Chimera)",				"pts":75},
-	{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",					"pts":150},
-	{"id":32, "name":"Griffon Battery (3 Griffons)",						"pts":100},
-	{"id":33, "name":"Tank Squadron (3 Leman Russ)",						"pts":200},
-	{"id":34, "name":"Tank Squadron (3 Demolishers)",						"pts":200},
-	{"id":35, "name":"Hydra (1 only)",								"pts":50}
-]},
-{"id":36, "name":"Valkyrie Transport",				"pts":150},
-{"id":37, "name":"Cmdr" "formations":[
-	{"id":38, "name":"Captain",			"pts":50},
-	{"id":39, "name":"Chaplain", 			"pts":50},
-	{"id":40, "name":"Librarian", 			"pts":50}
-]},
-{"id":41, "name":"Dreadnought", 			"pts":50},
-{"id":42, "name":"Hunter", 				"pts":75},
-{"id":43, "name":"4 Land Raiders", 		"pts":350},
-{"id":44, "name":"2 Razorbacks (replaces 1 Rhino)",	"pts":50},
-{"id":45, "name":"Armour" "formations":[
-	{"id":46, "name":"Predator Annihilator",						"pts":75},
-	{"id":47, "name":"Predator Destructor",						"pts":75},
-	{"id":48, "name":"Vindicator", 							"pts":75}
-]},
-{"id":49, "name":"LndSpdr" "formations":[
-	{"id":50, "name":"3 Land Speeders",						"pts":150},
-	{"id":51, "name":"3 Tornadoes", 							"pts":150}
-]},
-{"id":52, "name":"Typhoon",				"pts":50},
-
-
-{"id":500, "name":"SUPPORT FORMATIONS" "formations":[
-	{"id":501, "name":"Storm Trooper Platoon",				"pts":200, "upgrades":[valkyrie], "units":"8 Storm Troopers"},
-	{"id":502, "name":"Imperial Crusade Artillery Battery",		"pts":250, "upgrades":[arty]},
-	{"id":505, "name":"Sentinel Squadron",				"pts":100, "upgrades":[], "units":"4 Sentinels"},
-	{"id":507, "name":"Super-Heavy Tank Platoon", 			"pts":200, "upgrades":[superP]},
-	{"id":509, "name":"Flak Battery",					"pts":150, "upgrades":[], "units":"3 Hydra"},
-	{"id":510, "name":"Vulture Squadron",				"pts":300, "upgrades":[], "units":"4 Vultures"},
-	{"id":511, "name":"Space Marine Terminator Detachment",		"pts":300, "upgrades":[commander, landRaiders, dreadnought], "units":"4 Terminator"},
-	{"id":512, "name":"Space Marine Tactical Detachment",		"pts":275, "upgrades":[commander, razorbacks, dreadnought, hunter, transport], "units":"6 Tactical"},
-	{"id":513, "name":"Space Marine Assault Detachment", 		"pts":150, "upgrades":[commander, speeders, typhoon], "units":"4 Assault"},
-	{"id":514, "name":"Space Marine Devastator Detachment",		"pts":225, "upgrades":[commander, razorbacks, dreadnought, hunter, transport], "units":"4 Devastator"},
-	{"id":515, "name":"Space Marine Armour Detachment", 		"pts":250, "upgrades":[commander, hunter, armour], "units":"4 Predators (either type)"},
-	{"id":516, "name":"Space Marine Landing Craft", 			"pts":375, "upgrades":[]}
-]},
-
-{"id":518, "name":"COMPANIES" "formations":[
-	{"id":519, "name":"Lord General Militant Command HQ", 		"pts":450, "upgrades":[companyUpgrades], "units":"Supreme Commander, 6 Guard, 4 Stormtrooper, 6 Chimera"},
-	{"id":520, "name":"Armoured Fist Company", 			"pts":425, "upgrades":[companyUpgrades], "units":"Commander, 12 Infantry, 7 Chimera"},
-	{"id":521, "name":"Imperial Crusade Tank Company", 		"pts":650, "upgrades":[companyUpgrades,lemanRuss]},
-	{"id":522, "name":"Imperial Crusade Super-Heavy Tank Company", 	"pts":525, "upgrades":[companyUpgrades,superh]}
-]},
-
-{"id":524, "name":"IMPERIAL NAVY" "formations":[
-	{"id":525, "name":"Orbital Support",				"pts":150, "upgrades":[spacecraft]},
-	{"id":526, "name":"Thunderbolt Squadron",			"pts":225, "upgrades":[], "units":"3 Thunderbolt fighters"},
-	{"id":527, "name":"Marauder Squadron",				"pts":275, "upgrades":[], "units":"2 Marauder bombers"}
-]},
-
-{"id":528, "name":"TITAN LEGIONS" "formations":[
-	{"id":529, "name":"Warlord Titan",					"pts":850, "upgrades":[]},
-	{"id":530, "name":"Reaver Titan",					"pts":650, "upgrades":[]},
-	{"id":531, "name":"Warhound Pack",					"pts":500, "upgrades":[], "units":"2 Warhounds"},
-	{"id":532, "name":"Warhound  Titan",				"pts":275, "upgrades":[]}
-]},
-
-{
-	"id":"Saranes Expanse Imperial Crusade", "version":"NetEA Army Book *UNDER DEVELOPMENT*",
-	sublists:[companyList, supportList, navyList, titanList],
-	restriction:{limit:2, restricting:"Company", restricted:"Support Formations"}},
-
+		{"name":"COMPANIES", "formations":[
+			{"id":519, "name":"Lord General Militant Command HQ", 		"pts":450, "upgrades":[companyUpgrades], "units":"Supreme Commander, 6 Guard, 4 Stormtrooper, 6 Chimera"},
+			{"id":520, "name":"Armoured Fist Company", 			"pts":425, "upgrades":[companyUpgrades], "units":"Commander, 12 Infantry, 7 Chimera"},
+			{"id":521, "name":"Imperial Crusade Tank Company", 		"pts":650, "upgrades":[companyUpgrades,lemanRuss]},
+			{"id":522, "name":"Imperial Crusade Super-Heavy Tank Company", 	"pts":525, "upgrades":[companyUpgrades,superh]}
+		]},
+		{"name":"SUPPORT FORMATIONS", "formations":[
+			{"id":501, "name":"Storm Trooper Platoon",				"pts":200, "upgrades":[valkyrie], "units":"8 Storm Troopers"},
+			{"id":502, "name":"Imperial Crusade Artillery Battery",		"pts":250, "upgrades":[arty]},
+			{"id":505, "name":"Sentinel Squadron",				"pts":100, "upgrades":[], "units":"4 Sentinels"},
+			{"id":507, "name":"Super-Heavy Tank Platoon", 			"pts":200, "upgrades":[superP]},
+			{"id":509, "name":"Flak Battery",					"pts":150, "upgrades":[], "units":"3 Hydra"},
+			{"id":510, "name":"Vulture Squadron",				"pts":300, "upgrades":[], "units":"4 Vultures"},
+			{"id":511, "name":"Space Marine Terminator Detachment",		"pts":300, "upgrades":[commander, landRaiders, dreadnought], "units":"4 Terminator"},
+			{"id":512, "name":"Space Marine Tactical Detachment",		"pts":275, "upgrades":[commander, razorbacks, dreadnought, hunter, transport], "units":"6 Tactical"},
+			{"id":513, "name":"Space Marine Assault Detachment", 		"pts":150, "upgrades":[commander, speeders, typhoon], "units":"4 Assault"},
+			{"id":514, "name":"Space Marine Devastator Detachment",		"pts":225, "upgrades":[commander, razorbacks, dreadnought, hunter, transport], "units":"4 Devastator"},
+			{"id":515, "name":"Space Marine Armour Detachment", 		"pts":250, "upgrades":[commander, hunter, armour], "units":"4 Predators (either type)"},
+			{"id":516, "name":"Space Marine Landing Craft", 			"pts":375, "upgrades":[]}
+		]},
+		{"name":"IMPERIAL NAVY", "formations":[
+			{"id":525, "name":"Orbital Support",				"pts":150, "upgrades":[spacecraft]},
+			{"id":526, "name":"Thunderbolt Squadron",			"pts":225, "upgrades":[], "units":"3 Thunderbolt fighters"},
+			{"id":527, "name":"Marauder Squadron",				"pts":275, "upgrades":[], "units":"2 Marauder bombers"}
+		]},
+		{"name":"TITAN LEGIONS", "formations":[
+			{"id":529, "name":"Warlord Titan",					"pts":850, "upgrades":[]},
+			{"id":530, "name":"Reaver Titan",					"pts":650, "upgrades":[]},
+			{"id":531, "name":"Warhound Pack",					"pts":500, "upgrades":[], "units":"2 Warhounds"},
+			{"id":532, "name":"Warhound  Titan",				"pts":275, "upgrades":[]}
+		]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Leman Russ",			"pts":0},
+		{"id":12, "name":"Vanquisher",			"pts":0},
+		{"id":14, "name":"Baneblade",			"pts":0},
+		{"id":15, "name":"Shadowsword",			"pts":0},
+		{"id":20, "name":"Lunar Class",			"pts":0},
+		{"id":21, "name":"Emperor Class",			"pts":150},
+		{"id":22, "name":"Space Marine Strike Cruiser",	"pts":50},
+		{"id":24,	"name":"3 Basilisks",			"pts":0},
+		{"id":25,	"name":"3 Bombards",			"pts":0},
+		{"id":26,	"name":"3 Manticores",			"pts":0},
+		{"id":61, "name":"Rhinos",				"pts":0},
+		{"id":62, "name":"Drop Pods",			"pts":0},
+		{"id":28, "name":"Mechanized Fire Support Platoon (4 Fire Support plus 2 Chimera)",	"pts":150},
+		{"id":29, "name":"Mechanized Infantry Platoon (6 Infantry plus 3 Chimera)",		"pts":175},
+		{"id":30, "name":"Mechanized Snipers (2 Snipers plus 1 Chimera)",				"pts":75},
+		{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",					"pts":150},
+		{"id":32, "name":"Griffon Battery (3 Griffons)",						"pts":100},
+		{"id":33, "name":"Tank Squadron (3 Leman Russ)",						"pts":200},
+		{"id":34, "name":"Tank Squadron (3 Demolishers)",						"pts":200},
+		{"id":35, "name":"Hydra (1 only)",								"pts":50},
+		{"id":36, "name":"Valkyrie Transport",				"pts":150},
+		{"id":38, "name":"Captain",			"pts":50},
+		{"id":39, "name":"Chaplain", 			"pts":50},
+		{"id":40, "name":"Librarian", 			"pts":50},
+		{"id":41, "name":"Dreadnought", 			"pts":50},
+		{"id":42, "name":"Hunter", 				"pts":75},
+		{"id":43, "name":"4 Land Raiders", 		"pts":350},
+		{"id":44, "name":"2 Razorbacks (replaces 1 Rhino)",	"pts":50},
+		{"id":46, "name":"Predator Annihilator",						"pts":75},
+		{"id":47, "name":"Predator Destructor",						"pts":75},
+		{"id":48, "name":"Vindicator", 							"pts":75},
+		{"id":50, "name":"3 Land Speeders",						"pts":150},
+		{"id":51, "name":"3 Tornadoes", 							"pts":150},
+		{"id":52, "name":"Typhoon",				"pts":50}
+	],
+	"formationConstraints":[
+	],
+	"upgradeConstraints":[
+	]
+}
