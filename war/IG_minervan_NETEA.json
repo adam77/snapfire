@@ -1,26 +1,25 @@
 {
 	"id":"Minervan Tank Legion",
 	"version":"NetEA Raiders v2.0",
-	"notes":["Tank Company may include a maximum of 2 rare russ variants (marked '*')."]},
 	"by":"Iron Bloke",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
-			{"id":515, "name":"Tank Company", 						"pts":425, "upgrades":[russ, coy, extras]},
-			{"id":516, "name":"Super-Heavy Tank Company", 			"pts":500, "upgrades":[supers, coy, extras]},
-		 	{"id":517, "name":"Self-Propelled Artillery Company",	"pts":650, "upgrades":[arty, coy, extras]}
+			{"id":515, "name":"Tank Company", 						"pts":425, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]},
+			{"id":516, "name":"Super-Heavy Tank Company", 			"pts":500, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]},
+		 	{"id":517, "name":"Self-Propelled Artillery Company",	"pts":650, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
-			{"id":501, "name":"Tank Platoon",					"pts":280, "upgrades":[russ2]},
-			{"id":502, "name":"Artillery Platoon",				"pts":250, "upgrades":[arty2]},
-			{"id":503, "name":"Super-Heavy Tank Platoon", 		"pts":200, "upgrades":[superP]},
-			{"id":504, "name":"Salamander Scout Platoon",		"pts":100, "upgrades":[salamander], "units":"3 Salamanders"},
-			{"id":505, "name":"Mechanized Platoon",			"pts":300, "upgrades":[salamander], "units":"10 Infantry, 5 Chimera"},
+			{"id":501, "name":"Tank Platoon",					"pts":280, "upgrades":[]},
+			{"id":502, "name":"Artillery Platoon",				"pts":250, "upgrades":[]},
+			{"id":503, "name":"Super-Heavy Tank Platoon", 		"pts":200, "upgrades":[]},
+			{"id":504, "name":"Salamander Scout Platoon",		"pts":100, "upgrades":[71], "units":"3 Salamanders"},
+			{"id":505, "name":"Mechanized Platoon",			"pts":300, "upgrades":[71], "units":"10 Infantry, 5 Chimera"},
 			{"id":506, "name":"Flak Battery",					"pts":150, "upgrades":[], "units":"3 Hydra"},
 			{"id":507, "name":"Vulture Squadron",				"pts":300, "upgrades":[], "units":"4 Vultures"},
-			{"id":508, "name":"Storm Trooper Platoon",			"pts":200, "upgrades":[valkyrie], "units":"8 Storm Troopers"},
+			{"id":508, "name":"Storm Trooper Platoon",			"pts":200, "upgrades":[70], "units":"8 Storm Troopers"},
 			{"id":511, "name":"Assault Gun Platoon",			"pts":150, "upgrades":[], "units":"3 Medusas"},
 			{"id":509, "name":"Deathstrike Missile Battery",	"pts":200, "upgrades":[], "units":"2 Deathstrike Missile Launchers"},
-			{"id":510, "name":"Orbital Support",				"pts":150, "upgrades":[spacecraft]}
+			{"id":510, "name":"Orbital Support",				"pts":150, "upgrades":[]}
 		]},
 		{"name":"TITAN LEGIONS & NAVY", "formations":[
 			{"id":522, "name":"Warlord Class Titan",	"pts":850, "upgrades":[]},
@@ -45,9 +44,9 @@
 		{"id":23, "name":"Exterminator","pts":10},	
 		{"id":24, "name":"Demolisher",	"pts":20},	
 		{"id":25, "name":"Leman Russ",	"pts":20},
-		{"id":26, "name":"Executioner*","pts":20},
-		{"id":27, "name":"Vanquisher*","pts":45},
-		{"id":28, "name":"Destroyer*",	"pts":70},
+		{"id":26, "name":"Executioner","pts":20},
+		{"id":27, "name":"Vanquisher","pts":45},
+		{"id":28, "name":"Destroyer",	"pts":70},
 		{"id":30, "name":"Lunar Class",	"pts":0},
 		{"id":31, "name":"Emperor Class",	"pts":150},
 		{"id":41,	"name":"3 Basilisks",	"pts":0},
@@ -58,9 +57,9 @@
 		{"id":83, "name":"Exterminator","pts":10},	
 		{"id":84, "name":"Demolisher",	"pts":20},	
 		{"id":85, "name":"Leman Russ",	"pts":20},
-		{"id":86, "name":"Executioner*","pts":20},
-		{"id":87, "name":"Vanquisher*", "pts":45},
-		{"id":88, "name":"Destroyer*",	"pts":70},
+		{"id":86, "name":"Executioner","pts":20},
+		{"id":87, "name":"Vanquisher", "pts":45},
+		{"id":88, "name":"Destroyer",	"pts":70},
 		{"id":51, "name":"Supreme Commander", 					"pts":100},
 		{"id":52, "name":"Flak Support (Hydra)",				"pts":50},
 		{"id":53, "name":"Flak Support (2 Hydra)",				"pts":100},
@@ -76,7 +75,31 @@
 		{"id":71, "name":"Salamander Command Vehicle",		"pts":25}
 	],
 	"formationConstraints":[
+		{"maxPercent":33, "name":"Titans & Navy", "from":[522,523,526,524,519,520]},
+		{"max":2, "name":"Support Formations", "from":[501,502,503,504,505,506,507,508,511,509,510], "forEach":[515,516,517], "name2":"Company"},
+		{"max":1, "from":[510]},
+		{"max":1, "from":[509]}
 	],
 	"upgradeConstraints":[
+		{"min":1, "max":1, "from":[11,12,13], "appliesTo":[517]},
+		{"min":3, "max":3, "from":[15,16,17,18,19], "appliesTo":[516]},
+		{"min":10, "max":10, "from":[21,22,23,24,25,26,27,28], "appliesTo":[515]},
+		{"min":1, "max":1, "from":[30,31], "appliesTo":[510]},
+		{"min":1, "max":1, "from":[15,16,17,18,19], "appliesTo":[503]},
+		{"min":1, "max":1, "from":[41,42,43], "appliesTo":[502]},
+		{"min":6, "max":6, "from":[81,82,83,84,85,86,87,88], "appliesTo":[501]},
+		{"max":2, "name":"Rare", "from":[26,27,28]},
+		{"max":1, "name":"Rare", "from":[86,87,88]},
+		{"max":3, "name":"Upgrades", "from":[51,52,53,54,55,56,57]},
+		{"max":1, "perArmy":true, "from":[51]},
+		{"max":1, "from":[52]},
+		{"max":1, "from":[53]},
+		{"max":1, "from":[54]},
+		{"max":1, "from":[55]},
+		{"max":1, "from":[56]},
+		{"max":1, "from":[57]},
+		{"max":3, "from":[61,62,63,64]},
+		{"max":1, "from":[70]},
+		{"max":1, "from":[71]}
 	]
 }
