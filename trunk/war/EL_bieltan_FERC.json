@@ -1,100 +1,88 @@
 {
-	"id":"",
-	"version":"",
+	"id":"Liste du Vaisseau Monde Biel-Tan", "version":"FERC 2010",
 	"by":"Iron Bloke",
 	"sections":[
 
-{"id":11, "name":"Ranger",		"pts":25},
-{"id":14, "name":"Guerrier Aspect" "formations":[
-	{"id":15, "name":"Vengeurs",		"pts":0},
-	{"id":16, "name":"Scorpions",	"pts":0},
-	{"id":17, "name":"Banshees",	"pts":0},
-	{"id":18, "name":"Dragon de Feu",		"pts":0},
-	{"id":19, "name":"Araign&eacute,es Spectrales",		"pts":0},
-	{"id":20, "name":"Faucheurs Noirs",		"pts":0},
-	{"id":21, "name":"Aigles Chasseurs",		"pts":0},
-	{"id":22, "name":"Lances de Lumi&egrave,res",		"pts":0}
-]},
-{"id":70, "name":"Guerrier Aspect" "formations":[
-	{"id":71, "name":"Vengeurs",		"pts":0},
-	{"id":71, "name":"Scorpions",	"pts":0},
-	{"id":72, "name":"Banshees",	"pts":0},
-	{"id":73, "name":"Dragon de Feu",		"pts":0},
-	{"id":74, "name":"Araign&eacute,es Spectrales",		"pts":0},
-	{"id":75, "name":"Faucheurs Noirs",		"pts":0},
-	{"id":76, "name":"Aigles Chasseurs",		"pts":0},
-	{"id":77, "name":"Lances de Lumi&egrave,res",		"pts":0}
-]},
-{"id":23, "name":"Gardiens" "formations":[
-	{"id":24, "name":"Gardiens",			"pts":0},
-	{"id":25, "name":"Plateforme d\"Arme Lourde","pts":0}
-]},
-{"id":26, "name":"Windriders" "formations":[
-	{"id":27, "name":"Moto-Jet",			"pts":0},
-	{"id":28, "name":"Vyper", 				"pts":0}
-]},
-{"id":29, "name":"Lame de Vaul" "formations":[
-	{"id":30, "name":"Falcon",				"pts":50},
-	{"id":31, "name":"Prisme de Feu", 		"pts":65},
-	{"id":60, "name":"Firestorm", 			"pts":50}
-]},
-{"id":33, "name":"Machines of Vaul" "formations":[
-	{"id":34, "name":"Cobra",				"pts":250},
-	{"id":35, "name":"Scorpion",			"pts":250},
-	{"id":36, "name":"Storm Serpent",		"pts":250},
-	{"id":37, "name":"Vengeur",		"pts":250}
-]},
-
-{"id":38, "name":"Exarque" "formations":[
-	{"id":39, "name":"Exarque", 	"pts":25},
-	{"id":40, "name":"Autarque", 	"pts":75}
-]},
-
-{"id":41, "name":"Wave Serpent",				"pts":50},
-{"id":42, "name":"Falcon",						"pts":50},
-{"id":43, "name":"3 Plateformes d\"Armes de Support",	"pts":50},
-{"id":44, "name":"Gardes Fant&ocirc,mes" "formations":[
-	{"id":83, "name":"2 Gardes Fant&ocirc,mes",				"pts":100},
-	{"id":84, "name":"3 Gardes Fant&ocirc,mes",				"pts":150}
-]},
-{"id":45, "name":"3 Seigneurs Fant&ocirc,mes",				"pts":175},
-{"id":80, "name":"Vaisseau Dragon" "formations":[
-	{"id":81, "name":"Vaisseau Fant&ocirc,me",	"pts":0},
-	{"id":82, "name":"Vaisseau Dragon",	"pts":150}
-]},
+		{"id":506, "name":"Formation de Support", "formations":[
+			{"id":540, "name":"Peloton de Guerriers Aspects", "pts":175, "upgrades":[pelaspects, exarchs, waveserpent, falcon]},
+			{"id":500, "name":"Peloton de Rangers",				"pts":0, "upgrades":[ranger]},
+			{"id":502, "name":"Peloton de Windriders",			"pts":200, 	"upgrades":[jetbikers]},
+			{"id":501, "name":"Escadron de Marcheurs de Combat",			"pts":200,	"units":"6 Marcheurs de Combat",	"upgrades":[]},
+			{"id":503, "name":"Escadron de la Lame de Vaul",				"pts":0, "upgrades":[falcons]},
+			{"id":505, "name":"Escadron de Machines de Vaul",	"pts":0, "upgrades":[engines]},
+			{"id":504, "name":"Escadron de Tisseurs de Nuit",		"pts":175, 	"units":"3 Tisseurs de Nuit", "upgrades":[]}
+		]},
 
 
-{"id":506, "name":"Formation de Support" "formations":[
-	{"id":540, "name":"Peloton de Guerriers Aspects", "pts":175, "upgrades":[pelaspects, exarchs, waveserpent, falcon]},
-	{"id":500, "name":"Peloton de Rangers",				"pts":0, "upgrades":[ranger]},
-	{"id":502, "name":"Peloton de Windriders",			"pts":200, 	"upgrades":[jetbikers]},
-	{"id":501, "name":"Escadron de Marcheurs de Combat",			"pts":200,	"units":"6 Marcheurs de Combat",	"upgrades":[]},
-	{"id":503, "name":"Escadron de la Lame de Vaul",				"pts":0, "upgrades":[falcons]},
-	{"id":505, "name":"Escadron de Machines de Vaul",	"pts":0, "upgrades":[engines]},
-	{"id":504, "name":"Escadron de Tisseurs de Nuit",		"pts":175, 	"units":"3 Tisseurs de Nuit", "upgrades":[]}
-]},
+		{"id":513, "name":"Formations Principales", "formations":[
+			{"id":507, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
+			{"id":508, "name":"Avatar",		"pts":100,		"upgrades":[]},
+			{"id":510, "name":"Ost de Guerriers Aspects", 			"pts":300,	"upgrades":[aspects, exarchs, waveserpent, falcon]},
+			{"id":511, "name":"Ost de Gardiens",		 			"pts":150,	"units":"Grand Proph&egrave,te",	"upgrades":[guardians, supportweapon, wraithguard, wraithlords]},
+			{"id":512, "name":"Ost de Gardiens (Wave Serpents)",	"pts":350,	"units":"Grand Proph&egrave,te, 8 Gardiens, 4 Wave Serpents",	"upgrades":[]}
+		]},
+
+		{"id":523, "name":"Formations de Support Lourd", "formations":[
+			{"id":515, "name":"Vaisseau Fant&ocirc,me",	"pts":150, "upgrades":[dragonship]},
+		 	{"id":517, "name":"Titan Archonte",	"pts":850, "upgrades":[]},
+			{"id":518, "name":"Titan Fant&ocirc,me",	"pts":750, "upgrades":[]},
+			{"id":519, "name":"Escadron de Revenant","pts":650, "units":"Deux Titans Revenant", "upgrades":[]},
+			{"id":520, "name":"Escadrille de chasseurs Nightwings",	"pts":300, "units":"3 chasseurs Nightwing", "upgrades":[]},
+			{"id":521, "name":"Escadrille de bombardiers Phoenix", "pts":400, "units":"3 bombardiers Phoenix", "upgrades":[]},
+			{"id":522, "name":"Vampire", "pts":200, "upgrades":[]}
+		]}
+	],
+	"upgrades":[
+
+		{"id":11, "name":"Ranger",		"pts":25},
+
+		{"id":15, "name":"Vengeurs",		"pts":0},
+		{"id":16, "name":"Scorpions",	"pts":0},
+		{"id":17, "name":"Banshees",	"pts":0},
+		{"id":18, "name":"Dragon de Feu",		"pts":0},
+		{"id":19, "name":"Araign&eacute,es Spectrales",		"pts":0},
+		{"id":20, "name":"Faucheurs Noirs",		"pts":0},
+		{"id":21, "name":"Aigles Chasseurs",		"pts":0},
+		{"id":22, "name":"Lances de Lumi&egrave,res",		"pts":0},
+
+		{"id":71, "name":"Vengeurs",		"pts":0},
+		{"id":71, "name":"Scorpions",	"pts":0},
+		{"id":72, "name":"Banshees",	"pts":0},
+		{"id":73, "name":"Dragon de Feu",		"pts":0},
+		{"id":74, "name":"Araign&eacute,es Spectrales",		"pts":0},
+		{"id":75, "name":"Faucheurs Noirs",		"pts":0},
+		{"id":76, "name":"Aigles Chasseurs",		"pts":0},
+		{"id":77, "name":"Lances de Lumi&egrave,res",		"pts":0},
+
+		{"id":24, "name":"Gardiens",			"pts":0},
+		{"id":25, "name":"Plateforme d'Arme Lourde","pts":0},
+
+		{"id":27, "name":"Moto-Jet",			"pts":0},
+		{"id":28, "name":"Vyper", 				"pts":0},
+
+		{"id":30, "name":"Falcon",				"pts":50},
+		{"id":31, "name":"Prisme de Feu", 		"pts":65},
+		{"id":60, "name":"Firestorm", 			"pts":50},
+
+		{"id":34, "name":"Cobra",				"pts":250},
+		{"id":35, "name":"Scorpion",			"pts":250},
+		{"id":36, "name":"Storm Serpent",		"pts":250},
+		{"id":37, "name":"Vengeur",		"pts":250},
+
+		{"id":39, "name":"Exarque", 	"pts":25},
+		{"id":40, "name":"Autarque", 	"pts":75},
 
 
-{"id":513, "name":"Formations Principales" "formations":[
-	{"id":507, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
-	{"id":508, "name":"Avatar",		"pts":100,		"upgrades":[]},
-	{"id":510, "name":"Ost de Guerriers Aspects", 			"pts":300,	"upgrades":[aspects, exarchs, waveserpent, falcon]},
-	{"id":511, "name":"Ost de Gardiens",		 			"pts":150,	"units":"Grand Proph&egrave,te",	"upgrades":[guardians, supportweapon, wraithguard, wraithlords]},
-	{"id":512, "name":"Ost de Gardiens (Wave Serpents)",	"pts":350,	"units":"Grand Proph&egrave,te, 8 Gardiens, 4 Wave Serpents",	"upgrades":[]}
-]},
+		{"id":41, "name":"Wave Serpent",				"pts":50},
+		{"id":42, "name":"Falcon",						"pts":50},
+		{"id":43, "name":"3 Plateformes d'Armes de Support",	"pts":50},
 
-{"id":523, "name":"Formations de Support Lourd" "formations":[
-	{"id":515, "name":"Vaisseau Fant&ocirc,me",	"pts":150, "upgrades":[dragonship]},
- 	{"id":517, "name":"Titan Archonte",	"pts":850, "upgrades":[]},
-	{"id":518, "name":"Titan Fant&ocirc,me",	"pts":750, "upgrades":[]},
-	{"id":519, "name":"Escadron de Revenant","pts":650, "units":"Deux Titans Revenant", "upgrades":[]},
-	{"id":520, "name":"Escadrille de chasseurs Nightwings",	"pts":300, "units":"3 chasseurs Nightwing", "upgrades":[]},
-	{"id":521, "name":"Escadrille de bombardiers Phoenix", "pts":400, "units":"3 bombardiers Phoenix", "upgrades":[]},
-	{"id":522, "name":"Vampire", "pts":200, "upgrades":[]}
-]},
+		{"id":83, "name":"2 Gardes Fant&ocirc,mes",				"pts":100},
+		{"id":84, "name":"3 Gardes Fant&ocirc,mes",				"pts":150},
 
-{
-	"id":"Liste du Vaisseau Monde Biel-Tan", "version":"FERC 2010",
-	sublists:[warhostList, troupeList, allyList],
-	restriction:{limit:3, restricting:"Warhost", restricted:"Troupes"}},
+		{"id":45, "name":"3 Seigneurs Fant&ocirc,mes",				"pts":175},
 
+		{"id":81, "name":"Vaisseau Fant&ocirc,me",	"pts":0},
+		{"id":82, "name":"Vaisseau Dragon",	"pts":150}
+	]
+}

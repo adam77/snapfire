@@ -1,107 +1,91 @@
 {
-	"id":"",
-	"version":"",
+	"id":"Liste d'Arm&eacute,e de la Garde Imp&eacute,riale", "version":"FERC 2010",
+	"notes":["Attention, la restriction de 3 am&eacute,lioration par compagnie n'est pas impl&eacute,mant&eacute, pour plus de fl&eacute,xibilit&eacute,"]
 	"by":"Iron Bloke",
 	"sections":[
+		{"id":500, "name":"Compagnies de la Garde Imp&eacute,riale", "formations":[
+			{"id":501, "name":"QG R&eacute,gimentaire", 				"pts":500, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, commissaire0], "units":"Commandant Supr&egrave,me, 12 Infanterie, 7 Chim&egrave,re"},
+		 	{"id":502, "name":"Compagnie d'Infanterie M&eacute,canis&eacute,e", 	"pts":400, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, commissaire0], "units":"Commandant, 12 Infanterie, 7 Chim&egrave,re"},
+			{"id":503, "name":"Compagnie d'Infanterie", 				"pts":250, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, commissaire0], "units":"Commandant, 12 Infanterie"},
+			{"id":504, "name":"Compagnie Blind&eacute,e", 					"pts":650, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, lemanRuss, commissaire0]},
+			{"id":505, "name":"Compagnie de Blind&eacute,e Super Lourds", 		"pts":500, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, superh, commissaire0]},
+		 	{"id":506, "name":"Compagnie d'Artillerie", 			"pts":650, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, artilleryOpts, commissaire0]}
+		]},
 
-{"id":10, "name":"Leman Russ" "formations":[
-	{"id":11, "name":"10 Leman Russ",	"pts":0},
-	{"id":12, "name":"9 Leman Russ et 1 Vanquisher",	"pts":0},
-	{"id":13, "name":"7 Leman Russ et 3 Leman Russ D&eacute,molisseurs", "pts":50},
-	{"id":14, "name":"6 Leman Russ, 3 Leman Russ D&eacute,molisseurs et 1 Vanquisher", "pts":50}
-]},
-{"id":15, "name":"Super Lourd" "formations":[
-	{"id":16, "name":"Baneblade",		"pts":0},
-	{"id":17, "name":"Shadowsword",	"pts":0}
-]},
-{"id":18, "name":"Super Lourd" "formations":[
-	{"id":19, "name":"Baneblade",		"pts":0},
-	{"id":20, "name":"Shadowsword",	"pts":0}
-]},
-{"id":21, "name":"Artillerie" "formations":[
-	{"id":22, "name":"Basilisk",		"pts":0},
-	{"id":23, "name":"Manticore",		"pts":0}
-]},
-{"id":24, "name":"Spacecraft" "formations":[
-	{"id":25, "name":"Un Croiseur de Classe Lunar",	"pts":0},
-	{"id":26, "name":"Un Croiseur de Classe Emperor",	"pts":150}
-]},
-{"id":27, "name":"Artillerie" "formations":[
-	{"id":28,	"name":"3 Basilisks",	"pts":0},
-	{"id":29,	"name":"3 Bombardes",		"pts":25},
-	{"id":30,	"name":"3 Manticores",	"pts":25}
-]},
-{"id":31, "name":"Chasseurs Thunderbolt" "formations":[
-	{"id":32, "name":"2 Chasseurs Thunderbolt", "pts":0},
-	{"id":33, "name":"4 Chasseurs Thunderbolt", "pts":150}
-]},
+		{"id":510, "name":"Formation d'Appui de la Garde Imp&eacute,riale", "formations":[
+			{"id":511, "name":"Peloton de Char Super Lourd", 		"pts":200, "upgrades":[superP]},
+			{"id":512, "name":"Batterie d'Artillerie",				"pts":225, "upgrades":[arty]},
+			{"id":513, "name":"Batterie de Missile Deathstrike",	"pts":250, "upgrades":[], "units":"2 Lances-Missile Deathstrike"},
+			{"id":514, "name":"Batterie Antia&eacute,rienne",					"pts":150, "upgrades":[], "units":"3 Hydre"},
+			{"id":515, "name":"Escadron de Sentinelle",				"pts":100, "upgrades":[], "units":"4 Sentinelle"},
+			{"id":516, "name":"Peloton de Cavalier ou Motos", 			"pts":150, "upgrades":[commissaire1], "units":"6 Cavalier ou Motos Imp&eacute,riales"},
+			{"id":517, "name":"Peloton de Troupes de Choc",			"pts":200, "upgrades":[valkyrie, commissaire1], "units":"8 Troupes de Choc"},
+			{"id":518, "name":"Escadron de Vulture",				"pts":300, "upgrades":[], "units":"4 Vulture"},
+			{"id":519, "name":"Soutien Orbital",				"pts":150, "upgrades":[spacecraft]}
+		]},
 
-{"id":48, "name":"4 Valkyrie",				"pts":150},
-{"id":49, "name":"Commissaire",					"pts":0},
-{"id":47, "name":"Commissaire",					"pts":50},
+		{"id":520, "name":"Appareils de la Flotte", "formations":[
+			{"id":521, "name":"Escadrille de Thunderbolt",	"pts":150, "upgrades":[thunderbolt]},
+			{"id":522, "name":"Escadrille de Bombardiers",		"pts":300, "units":"2 Bombardiers Marauder", "upgrades":[]}
+		]},
 
-{"id":35, "name":"Peloton d\"Appui feu" "formations":[
-		{"id":50, "name":"4 unit&eacute,s d\"Appui Feu", "pts":100},
-		{"id":51, "name":"4 unit&eacute,s d\"Appui Feu et 2 chim&egrave,re", "pts":150}
-	]},
-{"id":36, "name":"Peloton d\"infanterie" "formations":[
-		{"id":60, "name":"6 unit&eacute,s d\"Infanterie", "pts":100},
-		{"id":61, "name":"6 unit&eacute,s d\"Infanterie et 3 chim&egrave,re", "pts":175}
-	]},
-{"id":38, "name":"Escadron de char" "formations":[
+		{"id":530, "name":"Soutien Titanique", "formations":[
+			{"id":531, "name":"Un Titan Warlord",	"pts":850, "upgrades":[]},
+			{"id":532, "name":"Un Titan Reaver",	"pts":650, "upgrades":[]},
+			{"id":533, "name":"Un Titan Warhound",		"pts":275, "upgrades":[]},
+			{"id":534, "name":"Meute de Warhound",		"pts":500, "upgrades":[], "units":"2 Titans Warhound"}
+		]}
+
+	],
+	"upgrades":[
+
+		{"id":11, "name":"10 Leman Russ",	"pts":0},
+		{"id":12, "name":"9 Leman Russ et 1 Vanquisher",	"pts":0},
+		{"id":13, "name":"7 Leman Russ et 3 Leman Russ D&eacute,molisseurs", "pts":50},
+		{"id":14, "name":"6 Leman Russ, 3 Leman Russ D&eacute,molisseurs et 1 Vanquisher", "pts":50},
+
+		{"id":16, "name":"Baneblade",		"pts":0},
+		{"id":17, "name":"Shadowsword",	"pts":0},
+
+		{"id":19, "name":"Baneblade",		"pts":0},
+		{"id":20, "name":"Shadowsword",	"pts":0},
+
+		{"id":22, "name":"Basilisk",		"pts":0},
+		{"id":23, "name":"Manticore",		"pts":0},
+
+		{"id":25, "name":"Un Croiseur de Classe Lunar",	"pts":0},
+		{"id":26, "name":"Un Croiseur de Classe Emperor",	"pts":150},
+
+		{"id":28,	"name":"3 Basilisks",	"pts":0},
+		{"id":29,	"name":"3 Bombardes",		"pts":25},
+		{"id":30,	"name":"3 Manticores",	"pts":25},
+
+		{"id":32, "name":"2 Chasseurs Thunderbolt", "pts":0},
+		{"id":33, "name":"4 Chasseurs Thunderbolt", "pts":150},
+
+
+		{"id":48, "name":"4 Valkyrie",				"pts":150},
+		{"id":49, "name":"Commissaire",					"pts":0},
+		{"id":47, "name":"Commissaire",					"pts":50},
+
+		{"id":50, "name":"4 unit&eacute,s d'Appui Feu", "pts":100},
+		{"id":51, "name":"4 unit&eacute,s d'Appui Feu et 2 chim&egrave,re", "pts":150},
+
+		{"id":60, "name":"6 unit&eacute,s d'Infanterie", "pts":100},
+		{"id":61, "name":"6 unit&eacute,s d'Infanterie et 3 chim&egrave,re", "pts":175},
+
 		{"id":52, "name":"3 Leman Russ", "pts":200},
-		{"id":53, "name":"3 Leman Russ Demolisseur", "pts":250}
-	]},
-{"id":40, "name":"Escadron de Hellhound (3 Hellhound)",	"pts":150},
-{"id":41, "name":"Batterie de Griffon (3 Griffon)",		"pts":100},
-{"id":42, "name":"Snipers" "formations":[
+		{"id":53, "name":"3 Leman Russ Demolisseur", "pts":250},
+
+		{"id":40, "name":"Escadron de Hellhound (3 Hellhound)",	"pts":150},
+		{"id":41, "name":"Batterie de Griffon (3 Griffon)",		"pts":100},
+
 		{"id":54, "name":"2 unit&eacute,s de Snipers", "pts":50},
-		{"id":55, "name":"2 unit&eacute,s de Snipers et 1 chim&egrave,re", "pts":75}
-	]},
-{"id":43, "name":"Ogryns" "formations":[
-		{"id":56, "name":"2 unit&eacute,s d\"Ogryns", "pts":50},
-		{"id":57, "name":"2 unit&eacute,s d\"Ogryns et 2 chim&egrave,res", "pts":100}
-	]},
-{"id":44, "name":"Flak (1 Hydre)",	"pts":50},
+		{"id":55, "name":"2 unit&eacute,s de Snipers et 1 chim&egrave,re", "pts":75},
 
-{"id":500, "name":"Compagnies de la Garde Imp&eacute,riale" "formations":[
-	{"id":501, "name":"QG R&eacute,gimentaire", 				"pts":500, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, commissaire0], "units":"Commandant Supr&egrave,me, 12 Infanterie, 7 Chim&egrave,re"},
- 	{"id":502, "name":"Compagnie d\"Infanterie M&eacute,canis&eacute,e", 	"pts":400, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, commissaire0], "units":"Commandant, 12 Infanterie, 7 Chim&egrave,re"},
-	{"id":503, "name":"Compagnie d\"Infanterie", 				"pts":250, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, commissaire0], "units":"Commandant, 12 Infanterie"},
-	{"id":504, "name":"Compagnie Blind&eacute,e", 					"pts":650, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, lemanRuss, commissaire0]},
-	{"id":505, "name":"Compagnie de Blind&eacute,e Super Lourds", 		"pts":500, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, superh, commissaire0]},
- 	{"id":506, "name":"Compagnie d\"Artillerie", 			"pts":650, "upgrades":[appuifeu, infanterie, escchar, hellhound, griffon, snipers, ogryns, flak, artilleryOpts, commissaire0]}
-]},
-
-{"id":510, "name":"Formation d\"Appui de la Garde Imp&eacute,riale" "formations":[
-	{"id":511, "name":"Peloton de Char Super Lourd", 		"pts":200, "upgrades":[superP]},
-	{"id":512, "name":"Batterie d\"Artillerie",				"pts":225, "upgrades":[arty]},
-	{"id":513, "name":"Batterie de Missile Deathstrike",	"pts":250, "upgrades":[], "units":"2 Lances-Missile Deathstrike"},
-	{"id":514, "name":"Batterie Antia&eacute,rienne",					"pts":150, "upgrades":[], "units":"3 Hydre"},
-	{"id":515, "name":"Escadron de Sentinelle",				"pts":100, "upgrades":[], "units":"4 Sentinelle"},
-	{"id":516, "name":"Peloton de Cavalier ou Motos", 			"pts":150, "upgrades":[commissaire1], "units":"6 Cavalier ou Motos Imp&eacute,riales"},
-	{"id":517, "name":"Peloton de Troupes de Choc",			"pts":200, "upgrades":[valkyrie, commissaire1], "units":"8 Troupes de Choc"},
-	{"id":518, "name":"Escadron de Vulture",				"pts":300, "upgrades":[], "units":"4 Vulture"},
-	{"id":519, "name":"Soutien Orbital",				"pts":150, "upgrades":[spacecraft]}
-]},
-
-{"id":520, "name":"Appareils de la Flotte" "formations":[
-	{"id":521, "name":"Escadrille de Thunderbolt",	"pts":150, "upgrades":[thunderbolt]},
-	{"id":522, "name":"Escadrille de Bombardiers",		"pts":300, "units":"2 Bombardiers Marauder", "upgrades":[]}
-]},
-
-{"id":530, "name":"Soutien Titanique" "formations":[
-	{"id":531, "name":"Un Titan Warlord",	"pts":850, "upgrades":[]},
-	{"id":532, "name":"Un Titan Reaver",	"pts":650, "upgrades":[]},
-	{"id":533, "name":"Un Titan Warhound",		"pts":275, "upgrades":[]},
-	{"id":534, "name":"Meute de Warhound",		"pts":500, "upgrades":[], "units":"2 Titans Warhound"}
-]},
-
-{
-	"id":"Liste d\"Arm&eacute,e de la Garde Imp&eacute,riale", "version":"FERC 2010",
-	sublists:[companyList, supportList, navyList, titanList],
-	restriction:{limit:2, restricting:"Company", restricted:"Support Formations"},
-	"notes":[
-	"Attention, la restriction de 3 am&eacute,lioration par compagnie n\"est pas impl&eacute,mant&eacute, pour plus de fl&eacute,xibilit&eacute,"]
-	},
+		{"id":56, "name":"2 unit&eacute,s d'Ogryns", "pts":50},
+		{"id":57, "name":"2 unit&eacute,s d'Ogryns et 2 chim&egrave,res", "pts":100},
+		{"id":44, "name":"Flak (1 Hydre)",	"pts":50}
+	]
+}
 
