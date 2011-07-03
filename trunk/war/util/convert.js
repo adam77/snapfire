@@ -18,15 +18,48 @@ function readEval( file ) {
 }
 
 
-function loadJson( file ) {
+function loadList( file ) {
 	var js = readFile( file + ".js" );
 	var json = readFile( file + ".json" );
 	x = js + "var jsonList = " + json + ";";
 	eval(x);
-	jsonList.hello = "hi there";
-	writeFile( base + "util/test.json", JSON.stringify( jsonList ) );
 }
 
-loadJson( base + "SM_codex_FERC" );
 
+function doBasicStructure( list, src ) {
+	list.id = 
+	list.version = 
+	list.sections = [];
+	list.upgrades = [];
+	list.formationConstraints = [];
+	list.upgradeConstraints = [];
+}
+
+function doTopLevelConstraints( list, src ) {
+
+}
+
+function doSection( list, src, section ) {
+	list.sections.push();
+}
+
+function doFormation( list, src, formation ) {
+}
+
+function convert( src ) {
+	var list = {};
+	
+	doBasicStructure( list, src );
+	
+	for (var i=0; i<src.sublists; i++) {
+		doSection( list, src, src.sublists[i] );
+	}
+	
+	doTopLevelConstraints( list, src );
+	
+	return list;
+}
+
+//loadList( base + "SM_codex_FERC" );
+//writeFile( base + "util/test.json", JSON.stringify( jsonList ) );
 // pretty print python -mjson.tool
