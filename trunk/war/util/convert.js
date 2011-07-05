@@ -269,7 +269,7 @@ for (var i=0; i<file.length; i++) {
 	var src = readFile( base + file[i] );
 	eval(src);
 	var list = convert( listData );
-	writeFile( base + file[i], JSON.stringify( list ) );
+	writeFile( base + file[i] + "on", JSON.stringify( list ) );
 }
 
 // pretty print python -mjson.tool
