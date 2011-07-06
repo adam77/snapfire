@@ -1,1 +1,614 @@
-{"id":"Black Legion","version":"FERC 2010","by":"Iron Bloke","sections":[{"name":"DETACHMENTS","formations":[{"id":504,"name":"Suite de la Black Legion","pts":275,"units":"8 Space Marines du Chaos","upgrades":[48,49,95,96,97,98,41,42,43,44,45,40,87,85,84]},{"id":505,"name":"Suite d'Elus de la Black Legion","pts":0,"upgrades":[13,41,42,43,44,45,40,87,85,84]},{"id":508,"name":"Culte Raptor","pts":0,"upgrades":[11,40]},{"id":507,"name":"Forlorn Hope Retinue","pts":125,"units":"4 Space Marines du Chaos (Eclaireurs)","upgrades":[48,41,40]},{"id":503,"name":"Compagnies de Motos de la Black Legion","pts":300,"units":"8 Motos de la Black Legion","upgrades":[40]},{"id":501,"name":"Compagnie Blind&eacute; de la Black Legion","pts":0,"upgrades":[91,92,85,84,43,42,87]},{"id":502,"name":"Compagnie d'Assaut de la Black Legion","pts":0,"upgrades":[23,42]},{"id":506,"name":"D&eacute;mon Mineur","pts":175,"units":"8 D&eacute;mons Mineurs","upgrades":[51]},{"id":506,"name":"D&eacute;mon Majeur","pts":175,"units":"1 D&eacute;mon Majeur","upgrades":[]},{"id":510,"name":"Soutien Orbital","pts":0,"upgrades":[85,84]}]},{"name":"Flotte de Guerre du Chaos","formations":[{"id":530,"name":"Escadrille d'intercepteurs Hellblade","pts":200,"units":"3 Intercepteurs Hellblade","upgrades":[]},{"id":531,"name":"Escadrille de chasseurs-bombardiers Helltalon","pts":250,"units":"2 chasseurs-bombardiers Helltalon","upgrades":[]}]},{"name":"L&eacute;gions Titanique du Chaos","formations":[{"id":524,"name":"Deathwheel","pts":0,"upgrades":[24]},{"id":520,"name":"Banelord Titan","pts":800,"upgrades":[]},{"id":521,"name":"Ravager Titan","pts":650,"upgrades":[]},{"id":522,"name":"Feral Titan","pts":300,"upgrades":[]}]}],"upgrades":[{"id":88,"name":"Seigneur du Chaos","pts":0},{"id":89,"name":"Seigneur Sorcier du Chaos","pts":0},{"id":99,"name":"Seigneur de Guerre du Chaos (Commandant Supr&egrave;me)","pts":0},{"id":17,"name":"Prince D&eacute;mon","pts":50},{"id":38,"name":"Prince D&eacute;mon (Commandant Supr&egrave;me)","pts":50},{"id":48,"name":"Rhino","pts":10},{"id":49,"name":"4 Havocs","pts":150},{"id":95,"name":"4 Berserkers (Khorne)","pts":0},{"id":96,"name":"4 Marines de la Peste (Nurgle)","pts":0},{"id":97,"name":"4 Noise Marines (Slaanesh)","pts":0},{"id":98,"name":"4 Thousans Sons (Tzeentch)","pts":0},{"id":41,"name":"Dreadnought","pts":50},{"id":42,"name":"Defiler","pts":75},{"id":43,"name":"Land Raider du Chaos","pts":75},{"id":44,"name":"Module d'atterissage Dreadclaw","pts":5},{"id":45,"name":"Obliterator","pts":75},{"id":40,"name":"Pacte D&eacute;moniaque","pts":25},{"id":87,"name":"Stalker","pts":50},{"id":85,"name":"Pr&eacute;dator du Chaos","pts":50},{"id":84,"name":"Vindicator du Chaos","pts":50},{"id":13,"name":"Elus","pts":65},{"id":11,"name":"Raptor","pts":35},{"id":91,"name":"4 Pr&eacute;dator du Chaos","pts":0},{"id":92,"name":"4 Land Raider du Chaos","pts":100},{"id":23,"name":"D&eacute;cimator","pts":250},{"id":51,"name":"D&eacute;mon Majeur","pts":175},{"id":85,"name":"Croiseur de Classe Devastation","pts":0},{"id":84,"name":"Cuirass&eacute; de Classe Despoiler","pts":100},{"id":24,"name":"Deathwheel","pts":275}],"formationConstraints":[{"max":2,"from":[505]},{"max":1,"from":[508]},{"max":2,"from":[502]},{"max":2,"from":[506]},{"max":1,"from":[506]},{"max":1,"from":[510]},{"maxPercent":33,"name":"War Engines & Allies","from":[530,531,524,520,521,522]},{"max":1,"name":"Forlorn Hope","from":[507],"forEach":[504],"name2":"Suite de la Black Legion"}],"upgradeConstraints":[{"max":1,"perArmy":true,"from":[99],"appliesTo":[504,505,508,503]},{"max":1,"perArmy":true,"from":[38],"appliesTo":[504,505]},{"max":1,"min":1,"from":[17,38,88,89,99],"appliesTo":[504,505]},{"max":8,"from":[48],"appliesTo":[504,507]},{"max":1,"from":[49],"appliesTo":[504]},{"max":1,"from":[95,96,97,98],"appliesTo":[504],"name":"Marines du Culte"},{"max":3,"from":[41],"appliesTo":[504,505,507]},{"max":3,"from":[42],"appliesTo":[504,505,501,502]},{"max":4,"from":[43],"appliesTo":[504,505,501]},{"max":3,"from":[45],"appliesTo":[504,505]},{"max":1,"from":[40],"appliesTo":[504,505,508,507,503]},{"max":1,"from":[87],"appliesTo":[504,505,501]},{"max":2,"from":[84,85],"appliesTo":[504,505],"name":"Support Lourds"},{"max":6,"min":4,"from":[13],"appliesTo":[505]},{"max":1,"min":1,"from":[88,89,99],"appliesTo":[508,503]},{"max":8,"min":4,"from":[11],"appliesTo":[508]},{"max":1,"from":[91,92],"appliesTo":[501],"name":"Blind&eacute;s du Chaos"},{"max":3,"min":1,"from":[23],"appliesTo":[502]},{"max":1,"from":[51],"appliesTo":[506]},{"max":1,"from":[84,85],"appliesTo":[510],"name":"Soutien Orbital"},{"max":3,"min":1,"from":[24],"appliesTo":[524]}]}
+{
+   "id": "Black Legion",
+   "version": "FERC 2010",
+   "by": "Iron Bloke",
+   "sections": [
+      {
+         "name": "DETACHMENTS",
+         "formations": [
+            {
+               "id": 504,
+               "name": "Suite de la Black Legion",
+               "pts": 275,
+               "units": "8 Space Marines du Chaos",
+               "upgrades": [
+                  48,
+                  49,
+                  95,
+                  96,
+                  97,
+                  98,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  40,
+                  87,
+                  85,
+                  84
+               ]
+            },
+            {
+               "id": 505,
+               "name": "Suite d'Elus de la Black Legion",
+               "pts": 0,
+               "upgrades": [
+                  13,
+                  41,
+                  42,
+                  43,
+                  44,
+                  45,
+                  40,
+                  87,
+                  85,
+                  84
+               ]
+            },
+            {
+               "id": 508,
+               "name": "Culte Raptor",
+               "pts": 0,
+               "upgrades": [
+                  11,
+                  40
+               ]
+            },
+            {
+               "id": 507,
+               "name": "Forlorn Hope Retinue",
+               "pts": 125,
+               "units": "4 Space Marines du Chaos (Eclaireurs)",
+               "upgrades": [
+                  48,
+                  41,
+                  40
+               ]
+            },
+            {
+               "id": 503,
+               "name": "Compagnies de Motos de la Black Legion",
+               "pts": 300,
+               "units": "8 Motos de la Black Legion",
+               "upgrades": [
+                  40
+               ]
+            },
+            {
+               "id": 501,
+               "name": "Compagnie Blind&eacute; de la Black Legion",
+               "pts": 0,
+               "upgrades": [
+                  91,
+                  92,
+                  85,
+                  84,
+                  43,
+                  42,
+                  87
+               ]
+            },
+            {
+               "id": 502,
+               "name": "Compagnie d'Assaut de la Black Legion",
+               "pts": 0,
+               "upgrades": [
+                  23,
+                  42
+               ]
+            },
+            {
+               "id": 506,
+               "name": "D&eacute;mon Mineur",
+               "pts": 175,
+               "units": "8 D&eacute;mons Mineurs",
+               "upgrades": [
+                  51
+               ]
+            },
+            {
+               "id": 506,
+               "name": "D&eacute;mon Majeur",
+               "pts": 175,
+               "units": "1 D&eacute;mon Majeur",
+               "upgrades": []
+            },
+            {
+               "id": 510,
+               "name": "Soutien Orbital",
+               "pts": 0,
+               "upgrades": [
+                  85,
+                  84
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Flotte de Guerre du Chaos",
+         "formations": [
+            {
+               "id": 530,
+               "name": "Escadrille d'intercepteurs Hellblade",
+               "pts": 200,
+               "units": "3 Intercepteurs Hellblade",
+               "upgrades": []
+            },
+            {
+               "id": 531,
+               "name": "Escadrille de chasseurs-bombardiers Helltalon",
+               "pts": 250,
+               "units": "2 chasseurs-bombardiers Helltalon",
+               "upgrades": []
+            }
+         ]
+      },
+      {
+         "name": "L&eacute;gions Titanique du Chaos",
+         "formations": [
+            {
+               "id": 524,
+               "name": "Deathwheel",
+               "pts": 0,
+               "upgrades": [
+                  24
+               ]
+            },
+            {
+               "id": 520,
+               "name": "Banelord Titan",
+               "pts": 800,
+               "upgrades": []
+            },
+            {
+               "id": 521,
+               "name": "Ravager Titan",
+               "pts": 650,
+               "upgrades": []
+            },
+            {
+               "id": 522,
+               "name": "Feral Titan",
+               "pts": 300,
+               "upgrades": []
+            }
+         ]
+      }
+   ],
+   "upgrades": [
+      {
+         "id": 88,
+         "name": "Seigneur du Chaos",
+         "pts": 0
+      },
+      {
+         "id": 89,
+         "name": "Seigneur Sorcier du Chaos",
+         "pts": 0
+      },
+      {
+         "id": 99,
+         "name": "Seigneur de Guerre du Chaos (Commandant Supr&egrave;me)",
+         "pts": 0
+      },
+      {
+         "id": 17,
+         "name": "Prince D&eacute;mon",
+         "pts": 50
+      },
+      {
+         "id": 38,
+         "name": "Prince D&eacute;mon (Commandant Supr&egrave;me)",
+         "pts": 50
+      },
+      {
+         "id": 48,
+         "name": "Rhino",
+         "pts": 10
+      },
+      {
+         "id": 49,
+         "name": "4 Havocs",
+         "pts": 150
+      },
+      {
+         "id": 95,
+         "name": "4 Berserkers (Khorne)",
+         "pts": 0
+      },
+      {
+         "id": 96,
+         "name": "4 Marines de la Peste (Nurgle)",
+         "pts": 0
+      },
+      {
+         "id": 97,
+         "name": "4 Noise Marines (Slaanesh)",
+         "pts": 0
+      },
+      {
+         "id": 98,
+         "name": "4 Thousans Sons (Tzeentch)",
+         "pts": 0
+      },
+      {
+         "id": 41,
+         "name": "Dreadnought",
+         "pts": 50
+      },
+      {
+         "id": 42,
+         "name": "Defiler",
+         "pts": 75
+      },
+      {
+         "id": 43,
+         "name": "Land Raider du Chaos",
+         "pts": 75
+      },
+      {
+         "id": 44,
+         "name": "Module d'atterissage Dreadclaw",
+         "pts": 5
+      },
+      {
+         "id": 45,
+         "name": "Obliterator",
+         "pts": 75
+      },
+      {
+         "id": 40,
+         "name": "Pacte D&eacute;moniaque",
+         "pts": 25
+      },
+      {
+         "id": 87,
+         "name": "Stalker",
+         "pts": 50
+      },
+      {
+         "id": 85,
+         "name": "Pr&eacute;dator du Chaos",
+         "pts": 50
+      },
+      {
+         "id": 84,
+         "name": "Vindicator du Chaos",
+         "pts": 50
+      },
+      {
+         "id": 13,
+         "name": "Elus",
+         "pts": 65
+      },
+      {
+         "id": 11,
+         "name": "Raptor",
+         "pts": 35
+      },
+      {
+         "id": 91,
+         "name": "4 Pr&eacute;dator du Chaos",
+         "pts": 0
+      },
+      {
+         "id": 92,
+         "name": "4 Land Raider du Chaos",
+         "pts": 100
+      },
+      {
+         "id": 23,
+         "name": "D&eacute;cimator",
+         "pts": 250
+      },
+      {
+         "id": 51,
+         "name": "D&eacute;mon Majeur",
+         "pts": 175
+      },
+      {
+         "id": 85,
+         "name": "Croiseur de Classe Devastation",
+         "pts": 0
+      },
+      {
+         "id": 84,
+         "name": "Cuirass&eacute; de Classe Despoiler",
+         "pts": 100
+      },
+      {
+         "id": 24,
+         "name": "Deathwheel",
+         "pts": 275
+      }
+   ],
+   "formationConstraints": [
+      {
+         "max": 2,
+         "from": [
+            505
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            508
+         ]
+      },
+      {
+         "max": 2,
+         "from": [
+            502
+         ]
+      },
+      {
+         "max": 2,
+         "from": [
+            506
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            506
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            510
+         ]
+      },
+      {
+         "maxPercent": 33,
+         "name": "War Engines & Allies",
+         "from": [
+            530,
+            531,
+            524,
+            520,
+            521,
+            522
+         ]
+      },
+      {
+         "max": 1,
+         "name": "Forlorn Hope",
+         "from": [
+            507
+         ],
+         "forEach": [
+            504
+         ],
+         "name2": "Suite de la Black Legion"
+      }
+   ],
+   "upgradeConstraints": [
+      {
+         "max": 1,
+         "perArmy": true,
+         "from": [
+            99
+         ]
+      },
+      {
+         "max": 1,
+         "perArmy": true,
+         "from": [
+            38
+         ]
+      },
+      {
+         "max": 1,
+         "min": 1,
+         "from": [
+            17,
+            38,
+            88,
+            89,
+            99
+         ],
+         "appliesTo": [
+            504,
+            505
+         ]
+      },
+      {
+         "max": 8,
+         "from": [
+            48
+         ],
+         "appliesTo": [
+            504,
+            507
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            49
+         ],
+         "appliesTo": [
+            504
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            95,
+            96,
+            97,
+            98
+         ],
+         "appliesTo": [
+            504
+         ],
+         "name": "Marines du Culte"
+      },
+      {
+         "max": 3,
+         "from": [
+            41
+         ],
+         "appliesTo": [
+            504,
+            505,
+            507
+         ]
+      },
+      {
+         "max": 3,
+         "from": [
+            42
+         ],
+         "appliesTo": [
+            504,
+            505,
+            501,
+            502
+         ]
+      },
+      {
+         "max": 4,
+         "from": [
+            43
+         ],
+         "appliesTo": [
+            504,
+            505,
+            501
+         ]
+      },
+      {
+         "max": 3,
+         "from": [
+            45
+         ],
+         "appliesTo": [
+            504,
+            505
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            40
+         ],
+         "appliesTo": [
+            504,
+            505,
+            508,
+            507,
+            503
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            87
+         ],
+         "appliesTo": [
+            504,
+            505,
+            501
+         ]
+      },
+      {
+         "max": 2,
+         "from": [
+            84,
+            85
+         ],
+         "appliesTo": [
+            504,
+            505
+         ],
+         "name": "Support Lourds"
+      },
+      {
+         "max": 6,
+         "min": 4,
+         "from": [
+            13
+         ],
+         "appliesTo": [
+            505
+         ]
+      },
+      {
+         "max": 1,
+         "min": 1,
+         "from": [
+            88,
+            89,
+            99
+         ],
+         "appliesTo": [
+            508,
+            503
+         ]
+      },
+      {
+         "max": 8,
+         "min": 4,
+         "from": [
+            11
+         ],
+         "appliesTo": [
+            508
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            91,
+            92
+         ],
+         "appliesTo": [
+            501
+         ],
+         "name": "Blind&eacute;s du Chaos"
+      },
+      {
+         "max": 3,
+         "min": 1,
+         "from": [
+            23
+         ],
+         "appliesTo": [
+            502
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            51
+         ],
+         "appliesTo": [
+            506
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            84,
+            85
+         ],
+         "appliesTo": [
+            510
+         ],
+         "name": "Soutien Orbital"
+      },
+      {
+         "max": 3,
+         "min": 1,
+         "from": [
+            24
+         ],
+         "appliesTo": [
+            524
+         ]
+      }
+   ]
+}

@@ -1,1 +1,509 @@
-{"id":"Liste d'Arm&eacute;e Squat","version":"FERC 2010","by":"Iron Bloke","sections":[{"name":"Formation Principales","formations":[{"id":501,"name":"Confr&eacute;rie de Guerrier","pts":225,"upgrades":[14,15,16,17,18,19,20,33,34,35,50,51]},{"id":502,"name":"Unit&eacute; Berserker","pts":200,"upgrades":[14,23,24,37,38,39,50]}]},{"name":"Formations de Soutiens","formations":[{"id":511,"name":"Unit&eacute; Tonnerre","pts":225,"upgrades":[26,27,33,34,35,50]},{"id":512,"name":"Aile de Gyrocopt&egrave;res d'Assaut","pts":250,"units":"5 Aigles de Fer","upgrades":[]},{"id":513,"name":"Escadron de la Guilde","pts":175,"upgrades":[46,47,48,49]},{"id":514,"name":"Unit&eacute; de Robots de la Guilde","pts":200,"units":"5 Robots","upgrades":[]},{"id":515,"name":"Grande Batterie","pts":150,"upgrades":[29,30,31,52]},{"id":516,"name":"Batterie Foudre","pts":150,"units":"3 Canon Foudre","upgrades":[]},{"id":517,"name":"L&eacute;viathan","pts":350,"units":"1 L&eacute;viathan","upgrades":[]}]},{"name":"Engins de Guerre","formations":[{"id":521,"name":"Train Blind&eacute;","pts":850,"units":"1 Locomotive, 3 Wagons Berserker","upgrades":[41,42,43,44]},{"id":522,"name":"Colossus","pts":500,"units":"1 Colossus, 1 Faucon de Fer","upgrades":[]},{"id":523,"name":"Cyclope","pts":500,"units":"1 Cyclope","upgrades":[]},{"id":524,"name":"Batterie d'Artillerie Super-Lourde Goliath","pts":400,"units":"2 Goliaths","upgrades":[52]},{"id":525,"name":"Corps d'Attaque A&eacute;rien","pts":350,"units":"2 Suzerains","upgrades":[]},{"id":526,"name":"Dirigeable Blind&eacute; Suzerain","pts":200,"units":"1 Suzerain","upgrades":[]}]}],"upgrades":[{"id":14,"name":"1 Seigneur","pts":0},{"id":15,"name":"Guerriers","pts":0},{"id":16,"name":"1 Seigneur de Guerre","pts":100},{"id":17,"name":"1 Anc�tre Vivant","pts":75},{"id":18,"name":"2 Gardes du Foyer","pts":100},{"id":19,"name":"2 Tonnerres","pts":75},{"id":20,"name":"4 Guerriers suppl&eacute;mentaire","pts":100},{"id":33,"name":"Termites","pts":20},{"id":34,"name":"Taupes","pts":60},{"id":35,"name":"Fouisseuses","pts":120},{"id":50,"name":"Rhinos","pts":10},{"id":51,"name":"L&eacute;viathan","pts":300},{"id":23,"name":"Berserkers","pts":0},{"id":24,"name":"4 Berserkers suppl&eacute;mentaires","pts":75},{"id":37,"name":"Termites","pts":10},{"id":38,"name":"Taupes","pts":30},{"id":39,"name":"Fouisseuses","pts":60},{"id":26,"name":"6 Tonnerres","pts":0},{"id":27,"name":"2 Tonnerres suppl&eacute;mentaires","pts":75},{"id":11,"name":"Motos","pts":0},{"id":12,"name":"Trikes","pts":10},{"id":46,"name":"2 Motos suppl&eacute;mentaires","pts":50},{"id":47,"name":"1 Motos et 1 Trike suppl&eacute;mentaires","pts":60},{"id":48,"name":"2 Trikes suppl&eacute;mentaires","pts":70},{"id":49,"name":"Ma&icirc;tre de Guilde","pts":50},{"id":29,"name":"6 Mortier-Taupes","pts":0},{"id":30,"name":"6 Thudd-Guns","pts":0},{"id":31,"name":"6 Tarentules","pts":0},{"id":52,"name":"Canon Foudre","pts":50},{"id":41,"name":"Wagon Berserker","pts":0},{"id":42,"name":"Wagon Bombardier","pts":0},{"id":43,"name":"Wagon Dragon","pts":0},{"id":44,"name":"Wagon Mortier","pts":0}],"formationConstraints":[{"maxPercent":33,"name":"War Engines & Allies","from":[521,522,523,524,525,526]},{"max":2,"name":"Support Formations","from":[511,512,513,514,515,516,517],"forEach":[501,502],"name2":"Company"}],"upgradeConstraints":[{"from":[15],"appliesTo":[501,501]},{"from":[16],"appliesTo":[501]},{"from":[17],"appliesTo":[501]},{"from":[18],"appliesTo":[501]},{"from":[19],"appliesTo":[501]},{"from":[20],"appliesTo":[501]},{"from":[23],"appliesTo":[502,502]},{"from":[24],"appliesTo":[502]},{"from":[27],"appliesTo":[511]},{"max":6,"min":6,"from":[11,12],"appliesTo":[513]},{"max":1,"from":[46,47,48],"appliesTo":[513],"name":"motos"},{"max":1,"from":[49],"appliesTo":[513]},{"max":1,"from":[29,30,31],"appliesTo":[515],"name":"Grande Batterie"},{"max":2,"from":[52],"appliesTo":[515,524]},{"max":1,"from":[41,42,43,44],"appliesTo":[521],"name":"Train"}]}
+{
+   "id": "Liste d'Arm&eacute;e Squat",
+   "version": "FERC 2010",
+   "by": "Iron Bloke",
+   "sections": [
+      {
+         "name": "Formation Principales",
+         "formations": [
+            {
+               "id": 501,
+               "name": "Confr&eacute;rie de Guerrier",
+               "pts": 225,
+               "upgrades": [
+                  14,
+                  15,
+                  16,
+                  17,
+                  18,
+                  19,
+                  20,
+                  33,
+                  34,
+                  35,
+                  50,
+                  51
+               ]
+            },
+            {
+               "id": 502,
+               "name": "Unit&eacute; Berserker",
+               "pts": 200,
+               "upgrades": [
+                  14,
+                  23,
+                  24,
+                  37,
+                  38,
+                  39,
+                  50
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Formations de Soutiens",
+         "formations": [
+            {
+               "id": 511,
+               "name": "Unit&eacute; Tonnerre",
+               "pts": 225,
+               "upgrades": [
+                  26,
+                  27,
+                  33,
+                  34,
+                  35,
+                  50
+               ]
+            },
+            {
+               "id": 512,
+               "name": "Aile de Gyrocopt&egrave;res d'Assaut",
+               "pts": 250,
+               "units": "5 Aigles de Fer",
+               "upgrades": []
+            },
+            {
+               "id": 513,
+               "name": "Escadron de la Guilde",
+               "pts": 175,
+               "upgrades": [
+                  46,
+                  47,
+                  48,
+                  49
+               ]
+            },
+            {
+               "id": 514,
+               "name": "Unit&eacute; de Robots de la Guilde",
+               "pts": 200,
+               "units": "5 Robots",
+               "upgrades": []
+            },
+            {
+               "id": 515,
+               "name": "Grande Batterie",
+               "pts": 150,
+               "upgrades": [
+                  29,
+                  30,
+                  31,
+                  52
+               ]
+            },
+            {
+               "id": 516,
+               "name": "Batterie Foudre",
+               "pts": 150,
+               "units": "3 Canon Foudre",
+               "upgrades": []
+            },
+            {
+               "id": 517,
+               "name": "L&eacute;viathan",
+               "pts": 350,
+               "units": "1 L&eacute;viathan",
+               "upgrades": []
+            }
+         ]
+      },
+      {
+         "name": "Engins de Guerre",
+         "formations": [
+            {
+               "id": 521,
+               "name": "Train Blind&eacute;",
+               "pts": 850,
+               "units": "1 Locomotive, 3 Wagons Berserker",
+               "upgrades": [
+                  41,
+                  42,
+                  43,
+                  44
+               ]
+            },
+            {
+               "id": 522,
+               "name": "Colossus",
+               "pts": 500,
+               "units": "1 Colossus, 1 Faucon de Fer",
+               "upgrades": []
+            },
+            {
+               "id": 523,
+               "name": "Cyclope",
+               "pts": 500,
+               "units": "1 Cyclope",
+               "upgrades": []
+            },
+            {
+               "id": 524,
+               "name": "Batterie d'Artillerie Super-Lourde Goliath",
+               "pts": 400,
+               "units": "2 Goliaths",
+               "upgrades": [
+                  52
+               ]
+            },
+            {
+               "id": 525,
+               "name": "Corps d'Attaque A&eacute;rien",
+               "pts": 350,
+               "units": "2 Suzerains",
+               "upgrades": []
+            },
+            {
+               "id": 526,
+               "name": "Dirigeable Blind&eacute; Suzerain",
+               "pts": 200,
+               "units": "1 Suzerain",
+               "upgrades": []
+            }
+         ]
+      }
+   ],
+   "upgrades": [
+      {
+         "id": 14,
+         "name": "1 Seigneur",
+         "pts": 0
+      },
+      {
+         "id": 15,
+         "name": "Guerriers",
+         "pts": 0
+      },
+      {
+         "id": 16,
+         "name": "1 Seigneur de Guerre",
+         "pts": 100
+      },
+      {
+         "id": 17,
+         "name": "1 Anc�tre Vivant",
+         "pts": 75
+      },
+      {
+         "id": 18,
+         "name": "2 Gardes du Foyer",
+         "pts": 100
+      },
+      {
+         "id": 19,
+         "name": "2 Tonnerres",
+         "pts": 75
+      },
+      {
+         "id": 20,
+         "name": "4 Guerriers suppl&eacute;mentaire",
+         "pts": 100
+      },
+      {
+         "id": 33,
+         "name": "Termites",
+         "pts": 20
+      },
+      {
+         "id": 34,
+         "name": "Taupes",
+         "pts": 60
+      },
+      {
+         "id": 35,
+         "name": "Fouisseuses",
+         "pts": 120
+      },
+      {
+         "id": 50,
+         "name": "Rhinos",
+         "pts": 10
+      },
+      {
+         "id": 51,
+         "name": "L&eacute;viathan",
+         "pts": 300
+      },
+      {
+         "id": 23,
+         "name": "Berserkers",
+         "pts": 0
+      },
+      {
+         "id": 24,
+         "name": "4 Berserkers suppl&eacute;mentaires",
+         "pts": 75
+      },
+      {
+         "id": 37,
+         "name": "Termites",
+         "pts": 10
+      },
+      {
+         "id": 38,
+         "name": "Taupes",
+         "pts": 30
+      },
+      {
+         "id": 39,
+         "name": "Fouisseuses",
+         "pts": 60
+      },
+      {
+         "id": 26,
+         "name": "6 Tonnerres",
+         "pts": 0
+      },
+      {
+         "id": 27,
+         "name": "2 Tonnerres suppl&eacute;mentaires",
+         "pts": 75
+      },
+      {
+         "id": 11,
+         "name": "Motos",
+         "pts": 0
+      },
+      {
+         "id": 12,
+         "name": "Trikes",
+         "pts": 10
+      },
+      {
+         "id": 46,
+         "name": "2 Motos suppl&eacute;mentaires",
+         "pts": 50
+      },
+      {
+         "id": 47,
+         "name": "1 Motos et 1 Trike suppl&eacute;mentaires",
+         "pts": 60
+      },
+      {
+         "id": 48,
+         "name": "2 Trikes suppl&eacute;mentaires",
+         "pts": 70
+      },
+      {
+         "id": 49,
+         "name": "Ma&icirc;tre de Guilde",
+         "pts": 50
+      },
+      {
+         "id": 29,
+         "name": "6 Mortier-Taupes",
+         "pts": 0
+      },
+      {
+         "id": 30,
+         "name": "6 Thudd-Guns",
+         "pts": 0
+      },
+      {
+         "id": 31,
+         "name": "6 Tarentules",
+         "pts": 0
+      },
+      {
+         "id": 52,
+         "name": "Canon Foudre",
+         "pts": 50
+      },
+      {
+         "id": 41,
+         "name": "Wagon Berserker",
+         "pts": 0
+      },
+      {
+         "id": 42,
+         "name": "Wagon Bombardier",
+         "pts": 0
+      },
+      {
+         "id": 43,
+         "name": "Wagon Dragon",
+         "pts": 0
+      },
+      {
+         "id": 44,
+         "name": "Wagon Mortier",
+         "pts": 0
+      }
+   ],
+   "formationConstraints": [
+      {
+         "maxPercent": 33,
+         "name": "War Engines & Allies",
+         "from": [
+            521,
+            522,
+            523,
+            524,
+            525,
+            526
+         ]
+      },
+      {
+         "max": 2,
+         "name": "Support Formations",
+         "from": [
+            511,
+            512,
+            513,
+            514,
+            515,
+            516,
+            517
+         ],
+         "forEach": [
+            501,
+            502
+         ],
+         "name2": "Company"
+      }
+   ],
+   "upgradeConstraints": [
+      {
+         "from": [
+            15
+         ],
+         "appliesTo": [
+            501,
+            501
+         ]
+      },
+      {
+         "from": [
+            16
+         ],
+         "appliesTo": [
+            501
+         ]
+      },
+      {
+         "from": [
+            17
+         ],
+         "appliesTo": [
+            501
+         ]
+      },
+      {
+         "from": [
+            18
+         ],
+         "appliesTo": [
+            501
+         ]
+      },
+      {
+         "from": [
+            19
+         ],
+         "appliesTo": [
+            501
+         ]
+      },
+      {
+         "from": [
+            20
+         ],
+         "appliesTo": [
+            501
+         ]
+      },
+      {
+         "from": [
+            23
+         ],
+         "appliesTo": [
+            502,
+            502
+         ]
+      },
+      {
+         "from": [
+            24
+         ],
+         "appliesTo": [
+            502
+         ]
+      },
+      {
+         "from": [
+            27
+         ],
+         "appliesTo": [
+            511
+         ]
+      },
+      {
+         "max": 6,
+         "min": 6,
+         "from": [
+            11,
+            12
+         ],
+         "appliesTo": [
+            513
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            46,
+            47,
+            48
+         ],
+         "appliesTo": [
+            513
+         ],
+         "name": "motos"
+      },
+      {
+         "max": 1,
+         "from": [
+            49
+         ],
+         "appliesTo": [
+            513
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            29,
+            30,
+            31
+         ],
+         "appliesTo": [
+            515
+         ],
+         "name": "Grande Batterie"
+      },
+      {
+         "max": 2,
+         "from": [
+            52
+         ],
+         "appliesTo": [
+            515,
+            524
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            41,
+            42,
+            43,
+            44
+         ],
+         "appliesTo": [
+            521
+         ],
+         "name": "Train"
+      }
+   ]
+}

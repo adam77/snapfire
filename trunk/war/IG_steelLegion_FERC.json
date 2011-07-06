@@ -1,1 +1,704 @@
-{"id":"Liste d'Arm&eacute;e de la Garde Imp&eacute;riale","version":"FERC 2010","by":"Iron Bloke","sections":[{"name":"Compagnies de la Garde Imp&eacute;riale","formations":[{"id":501,"name":"QG R&eacute;gimentaire","pts":500,"units":"Commandant Supr&egrave;me, 12 Infanterie, 7 Chim&egrave;re","upgrades":[50,51,60,61,52,53,40,41,54,55,56,57,44]},{"id":502,"name":"Compagnie d'Infanterie M&eacute;canis&eacute;e","pts":400,"units":"Commandant, 12 Infanterie, 7 Chim&egrave;re","upgrades":[50,51,60,61,52,53,40,41,54,55,56,57,44]},{"id":503,"name":"Compagnie d'Infanterie","pts":250,"units":"Commandant, 12 Infanterie","upgrades":[50,51,60,61,52,53,40,41,54,55,56,57,44]},{"id":504,"name":"Compagnie Blind&eacute;e","pts":650,"upgrades":[50,51,60,61,52,53,40,41,54,55,56,57,44]},{"id":505,"name":"Compagnie de Blind&eacute;e Super Lourds","pts":500,"upgrades":[50,51,60,61,52,53,40,41,54,55,56,57,44]},{"id":506,"name":"Compagnie d'Artillerie","pts":650,"upgrades":[50,51,60,61,52,53,40,41,54,55,56,57,44]}]},{"name":"Formation d'Appui de la Garde Imp&eacute;riale","formations":[{"id":511,"name":"Peloton de Char Super Lourd","pts":200,"upgrades":[]},{"id":512,"name":"Batterie d'Artillerie","pts":225,"upgrades":[]},{"id":513,"name":"Batterie de Missile Deathstrike","pts":250,"units":"2 Lances-Missile Deathstrike","upgrades":[]},{"id":514,"name":"Batterie Antia&eacute;rienne","pts":150,"units":"3 Hydre","upgrades":[]},{"id":515,"name":"Escadron de Sentinelle","pts":100,"units":"4 Sentinelle","upgrades":[]},{"id":516,"name":"Peloton de Cavalier ou Motos","pts":150,"units":"6 Cavalier ou Motos Imp&eacute;riales","upgrades":[47]},{"id":517,"name":"Peloton de Troupes de Choc","pts":200,"units":"8 Troupes de Choc","upgrades":[48,47]},{"id":518,"name":"Escadron de Vulture","pts":300,"units":"4 Vulture","upgrades":[]},{"id":519,"name":"Soutien Orbital","pts":150,"upgrades":[]}]},{"name":"Appareils de la Flotte","formations":[{"id":521,"name":"Escadrille de Thunderbolt","pts":150,"upgrades":[]},{"id":522,"name":"Escadrille de Bombardiers","pts":300,"units":"2 Bombardiers Marauder","upgrades":[]}]},{"name":"Soutien Titanique","formations":[{"id":531,"name":"Un Titan Warlord","pts":850,"upgrades":[]},{"id":532,"name":"Un Titan Reaver","pts":650,"upgrades":[]},{"id":533,"name":"Un Titan Warhound","pts":275,"upgrades":[]},{"id":534,"name":"Meute de Warhound","pts":500,"units":"2 Titans Warhound","upgrades":[]}]}],"upgrades":[{"id":50,"name":"4 unit&eacute;s d'Appui Feu","pts":100},{"id":51,"name":"4 unit&eacute;s d'Appui Feu et 2 chim&egrave;re","pts":150},{"id":60,"name":"6 unit&eacute;s d'Infanterie","pts":100},{"id":61,"name":"6 unit&eacute;s d'Infanterie et 3 chim&egrave;re","pts":175},{"id":52,"name":"3 Leman Russ","pts":200},{"id":53,"name":"3 Leman Russ Demolisseur","pts":250},{"id":40,"name":"Escadron de Hellhound (3 Hellhound)","pts":150},{"id":41,"name":"Batterie de Griffon (3 Griffon)","pts":100},{"id":54,"name":"2 unit&eacute;s de Snipers","pts":50},{"id":55,"name":"2 unit&eacute;s de Snipers et 1 chim&egrave;re","pts":75},{"id":56,"name":"2 unit&eacute;s d'Ogryns","pts":50},{"id":57,"name":"2 unit&eacute;s d'Ogryns et 2 chim&egrave;res","pts":100},{"id":44,"name":"Flak (1 Hydre)","pts":50},{"id":49,"name":"Commissaire","pts":0},{"id":11,"name":"10 Leman Russ","pts":0},{"id":12,"name":"9 Leman Russ et 1 Vanquisher","pts":0},{"id":13,"name":"7 Leman Russ et 3 Leman Russ D&eacute;molisseurs","pts":50},{"id":14,"name":"6 Leman Russ, 3 Leman Russ D&eacute;molisseurs et 1 Vanquisher","pts":50},{"id":16,"name":"Baneblade","pts":0},{"id":17,"name":"Shadowsword","pts":0},{"id":22,"name":"Basilisk","pts":0},{"id":23,"name":"Manticore","pts":0},{"id":28,"name":"3 Basilisks","pts":0},{"id":29,"name":"3 Bombardes","pts":25},{"id":30,"name":"3 Manticores","pts":25},{"id":47,"name":"Commissaire","pts":50},{"id":48,"name":"4 Valkyrie","pts":150},{"id":25,"name":"Un Croiseur de Classe Lunar","pts":0},{"id":26,"name":"Un Croiseur de Classe Emperor","pts":150},{"id":32,"name":"2 Chasseurs Thunderbolt","pts":0},{"id":33,"name":"4 Chasseurs Thunderbolt","pts":150}],"formationConstraints":[{"max":1,"from":[501]},{"max":1,"from":[513]},{"max":1,"from":[519]},{"maxPercent":33,"name":"War Engines & Allies","from":[521,522,531,532,533,534]},{"max":2,"name":"Support Formations","from":[511,512,513,514,515,516,517,518,519],"forEach":[501,502,503,504,505,506],"name2":"Company"}],"upgradeConstraints":[{"max":1,"from":[50,51],"appliesTo":[501,502,503,504,505,506],"name":"Peloton d'Appui feu"},{"max":1,"from":[60,61],"appliesTo":[501,502,503,504,505,506],"name":"Peloton d'infanterie"},{"max":1,"from":[52,53],"appliesTo":[501,502,503,504,505,506],"name":"Escadron de char"},{"max":1,"from":[40],"appliesTo":[501,502,503,504,505,506]},{"max":1,"from":[41],"appliesTo":[501,502,503,504,505,506]},{"max":1,"from":[54,55],"appliesTo":[501,502,503,504,505,506],"name":"Snipers"},{"max":1,"from":[56,57],"appliesTo":[501,502,503,504,505,506],"name":"Ogryns"},{"max":1,"from":[44],"appliesTo":[501,502,503,504,505,506]},{"max":1,"min":1,"from":[49],"appliesTo":[501,502,503,504,505,506]},{"max":1,"min":1,"from":[11,12,13,14],"appliesTo":[504]},{"max":3,"min":3,"from":[16,17],"appliesTo":[505]},{"max":9,"min":9,"from":[22,23],"appliesTo":[506]},{"max":1,"min":1,"from":[16,17],"appliesTo":[511]},{"max":1,"min":1,"from":[28,29,30],"appliesTo":[512]},{"max":1,"from":[47],"appliesTo":[516,517]},{"max":1,"from":[48],"appliesTo":[517]},{"max":1,"min":1,"from":[25,26],"appliesTo":[519]},{"max":1,"min":1,"from":[32,33],"appliesTo":[521]}]}
+{
+   "id": "Liste d'Arm&eacute;e de la Garde Imp&eacute;riale",
+   "version": "FERC 2010",
+   "by": "Iron Bloke",
+   "sections": [
+      {
+         "name": "Compagnies de la Garde Imp&eacute;riale",
+         "formations": [
+            {
+               "id": 501,
+               "name": "QG R&eacute;gimentaire",
+               "pts": 500,
+               "units": "Commandant Supr&egrave;me, 12 Infanterie, 7 Chim&egrave;re",
+               "upgrades": [
+                  50,
+                  51,
+                  60,
+                  61,
+                  52,
+                  53,
+                  40,
+                  41,
+                  54,
+                  55,
+                  56,
+                  57,
+                  44
+               ]
+            },
+            {
+               "id": 502,
+               "name": "Compagnie d'Infanterie M&eacute;canis&eacute;e",
+               "pts": 400,
+               "units": "Commandant, 12 Infanterie, 7 Chim&egrave;re",
+               "upgrades": [
+                  50,
+                  51,
+                  60,
+                  61,
+                  52,
+                  53,
+                  40,
+                  41,
+                  54,
+                  55,
+                  56,
+                  57,
+                  44
+               ]
+            },
+            {
+               "id": 503,
+               "name": "Compagnie d'Infanterie",
+               "pts": 250,
+               "units": "Commandant, 12 Infanterie",
+               "upgrades": [
+                  50,
+                  51,
+                  60,
+                  61,
+                  52,
+                  53,
+                  40,
+                  41,
+                  54,
+                  55,
+                  56,
+                  57,
+                  44
+               ]
+            },
+            {
+               "id": 504,
+               "name": "Compagnie Blind&eacute;e",
+               "pts": 650,
+               "upgrades": [
+                  50,
+                  51,
+                  60,
+                  61,
+                  52,
+                  53,
+                  40,
+                  41,
+                  54,
+                  55,
+                  56,
+                  57,
+                  44
+               ]
+            },
+            {
+               "id": 505,
+               "name": "Compagnie de Blind&eacute;e Super Lourds",
+               "pts": 500,
+               "upgrades": [
+                  50,
+                  51,
+                  60,
+                  61,
+                  52,
+                  53,
+                  40,
+                  41,
+                  54,
+                  55,
+                  56,
+                  57,
+                  44
+               ]
+            },
+            {
+               "id": 506,
+               "name": "Compagnie d'Artillerie",
+               "pts": 650,
+               "upgrades": [
+                  50,
+                  51,
+                  60,
+                  61,
+                  52,
+                  53,
+                  40,
+                  41,
+                  54,
+                  55,
+                  56,
+                  57,
+                  44
+               ]
+            }
+         ]
+      },
+      {
+         "name": "Formation d'Appui de la Garde Imp&eacute;riale",
+         "formations": [
+            {
+               "id": 511,
+               "name": "Peloton de Char Super Lourd",
+               "pts": 200,
+               "upgrades": []
+            },
+            {
+               "id": 512,
+               "name": "Batterie d'Artillerie",
+               "pts": 225,
+               "upgrades": []
+            },
+            {
+               "id": 513,
+               "name": "Batterie de Missile Deathstrike",
+               "pts": 250,
+               "units": "2 Lances-Missile Deathstrike",
+               "upgrades": []
+            },
+            {
+               "id": 514,
+               "name": "Batterie Antia&eacute;rienne",
+               "pts": 150,
+               "units": "3 Hydre",
+               "upgrades": []
+            },
+            {
+               "id": 515,
+               "name": "Escadron de Sentinelle",
+               "pts": 100,
+               "units": "4 Sentinelle",
+               "upgrades": []
+            },
+            {
+               "id": 516,
+               "name": "Peloton de Cavalier ou Motos",
+               "pts": 150,
+               "units": "6 Cavalier ou Motos Imp&eacute;riales",
+               "upgrades": [
+                  47
+               ]
+            },
+            {
+               "id": 517,
+               "name": "Peloton de Troupes de Choc",
+               "pts": 200,
+               "units": "8 Troupes de Choc",
+               "upgrades": [
+                  48,
+                  47
+               ]
+            },
+            {
+               "id": 518,
+               "name": "Escadron de Vulture",
+               "pts": 300,
+               "units": "4 Vulture",
+               "upgrades": []
+            },
+            {
+               "id": 519,
+               "name": "Soutien Orbital",
+               "pts": 150,
+               "upgrades": []
+            }
+         ]
+      },
+      {
+         "name": "Appareils de la Flotte",
+         "formations": [
+            {
+               "id": 521,
+               "name": "Escadrille de Thunderbolt",
+               "pts": 150,
+               "upgrades": []
+            },
+            {
+               "id": 522,
+               "name": "Escadrille de Bombardiers",
+               "pts": 300,
+               "units": "2 Bombardiers Marauder",
+               "upgrades": []
+            }
+         ]
+      },
+      {
+         "name": "Soutien Titanique",
+         "formations": [
+            {
+               "id": 531,
+               "name": "Un Titan Warlord",
+               "pts": 850,
+               "upgrades": []
+            },
+            {
+               "id": 532,
+               "name": "Un Titan Reaver",
+               "pts": 650,
+               "upgrades": []
+            },
+            {
+               "id": 533,
+               "name": "Un Titan Warhound",
+               "pts": 275,
+               "upgrades": []
+            },
+            {
+               "id": 534,
+               "name": "Meute de Warhound",
+               "pts": 500,
+               "units": "2 Titans Warhound",
+               "upgrades": []
+            }
+         ]
+      }
+   ],
+   "upgrades": [
+      {
+         "id": 50,
+         "name": "4 unit&eacute;s d'Appui Feu",
+         "pts": 100
+      },
+      {
+         "id": 51,
+         "name": "4 unit&eacute;s d'Appui Feu et 2 chim&egrave;re",
+         "pts": 150
+      },
+      {
+         "id": 60,
+         "name": "6 unit&eacute;s d'Infanterie",
+         "pts": 100
+      },
+      {
+         "id": 61,
+         "name": "6 unit&eacute;s d'Infanterie et 3 chim&egrave;re",
+         "pts": 175
+      },
+      {
+         "id": 52,
+         "name": "3 Leman Russ",
+         "pts": 200
+      },
+      {
+         "id": 53,
+         "name": "3 Leman Russ Demolisseur",
+         "pts": 250
+      },
+      {
+         "id": 40,
+         "name": "Escadron de Hellhound (3 Hellhound)",
+         "pts": 150
+      },
+      {
+         "id": 41,
+         "name": "Batterie de Griffon (3 Griffon)",
+         "pts": 100
+      },
+      {
+         "id": 54,
+         "name": "2 unit&eacute;s de Snipers",
+         "pts": 50
+      },
+      {
+         "id": 55,
+         "name": "2 unit&eacute;s de Snipers et 1 chim&egrave;re",
+         "pts": 75
+      },
+      {
+         "id": 56,
+         "name": "2 unit&eacute;s d'Ogryns",
+         "pts": 50
+      },
+      {
+         "id": 57,
+         "name": "2 unit&eacute;s d'Ogryns et 2 chim&egrave;res",
+         "pts": 100
+      },
+      {
+         "id": 44,
+         "name": "Flak (1 Hydre)",
+         "pts": 50
+      },
+      {
+         "id": 49,
+         "name": "Commissaire",
+         "pts": 0
+      },
+      {
+         "id": 11,
+         "name": "10 Leman Russ",
+         "pts": 0
+      },
+      {
+         "id": 12,
+         "name": "9 Leman Russ et 1 Vanquisher",
+         "pts": 0
+      },
+      {
+         "id": 13,
+         "name": "7 Leman Russ et 3 Leman Russ D&eacute;molisseurs",
+         "pts": 50
+      },
+      {
+         "id": 14,
+         "name": "6 Leman Russ, 3 Leman Russ D&eacute;molisseurs et 1 Vanquisher",
+         "pts": 50
+      },
+      {
+         "id": 16,
+         "name": "Baneblade",
+         "pts": 0
+      },
+      {
+         "id": 17,
+         "name": "Shadowsword",
+         "pts": 0
+      },
+      {
+         "id": 22,
+         "name": "Basilisk",
+         "pts": 0
+      },
+      {
+         "id": 23,
+         "name": "Manticore",
+         "pts": 0
+      },
+      {
+         "id": 28,
+         "name": "3 Basilisks",
+         "pts": 0
+      },
+      {
+         "id": 29,
+         "name": "3 Bombardes",
+         "pts": 25
+      },
+      {
+         "id": 30,
+         "name": "3 Manticores",
+         "pts": 25
+      },
+      {
+         "id": 47,
+         "name": "Commissaire",
+         "pts": 50
+      },
+      {
+         "id": 48,
+         "name": "4 Valkyrie",
+         "pts": 150
+      },
+      {
+         "id": 25,
+         "name": "Un Croiseur de Classe Lunar",
+         "pts": 0
+      },
+      {
+         "id": 26,
+         "name": "Un Croiseur de Classe Emperor",
+         "pts": 150
+      },
+      {
+         "id": 32,
+         "name": "2 Chasseurs Thunderbolt",
+         "pts": 0
+      },
+      {
+         "id": 33,
+         "name": "4 Chasseurs Thunderbolt",
+         "pts": 150
+      }
+   ],
+   "formationConstraints": [
+      {
+         "max": 1,
+         "from": [
+            501
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            513
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            519
+         ]
+      },
+      {
+         "maxPercent": 33,
+         "name": "War Engines & Allies",
+         "from": [
+            521,
+            522,
+            531,
+            532,
+            533,
+            534
+         ]
+      },
+      {
+         "max": 2,
+         "name": "Support Formations",
+         "from": [
+            511,
+            512,
+            513,
+            514,
+            515,
+            516,
+            517,
+            518,
+            519
+         ],
+         "forEach": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506
+         ],
+         "name2": "Company"
+      }
+   ],
+   "upgradeConstraints": [
+      {
+         "max": 1,
+         "from": [
+            50,
+            51
+         ],
+         "appliesTo": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506
+         ],
+         "name": "Peloton d'Appui feu"
+      },
+      {
+         "max": 1,
+         "from": [
+            60,
+            61
+         ],
+         "appliesTo": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506
+         ],
+         "name": "Peloton d'infanterie"
+      },
+      {
+         "max": 1,
+         "from": [
+            52,
+            53
+         ],
+         "appliesTo": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506
+         ],
+         "name": "Escadron de char"
+      },
+      {
+         "max": 1,
+         "from": [
+            40
+         ],
+         "appliesTo": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            41
+         ],
+         "appliesTo": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            54,
+            55
+         ],
+         "appliesTo": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506
+         ],
+         "name": "Snipers"
+      },
+      {
+         "max": 1,
+         "from": [
+            56,
+            57
+         ],
+         "appliesTo": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506
+         ],
+         "name": "Ogryns"
+      },
+      {
+         "max": 1,
+         "from": [
+            44
+         ],
+         "appliesTo": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506
+         ]
+      },
+      {
+         "max": 1,
+         "min": 1,
+         "from": [
+            49
+         ],
+         "appliesTo": [
+            501,
+            502,
+            503,
+            504,
+            505,
+            506
+         ]
+      },
+      {
+         "max": 1,
+         "min": 1,
+         "from": [
+            11,
+            12,
+            13,
+            14
+         ],
+         "appliesTo": [
+            504
+         ]
+      },
+      {
+         "max": 3,
+         "min": 3,
+         "from": [
+            16,
+            17
+         ],
+         "appliesTo": [
+            505
+         ]
+      },
+      {
+         "max": 9,
+         "min": 9,
+         "from": [
+            22,
+            23
+         ],
+         "appliesTo": [
+            506
+         ]
+      },
+      {
+         "max": 1,
+         "min": 1,
+         "from": [
+            16,
+            17
+         ],
+         "appliesTo": [
+            511
+         ]
+      },
+      {
+         "max": 1,
+         "min": 1,
+         "from": [
+            28,
+            29,
+            30
+         ],
+         "appliesTo": [
+            512
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            47
+         ],
+         "appliesTo": [
+            516,
+            517
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            48
+         ],
+         "appliesTo": [
+            517
+         ]
+      },
+      {
+         "max": 1,
+         "min": 1,
+         "from": [
+            25,
+            26
+         ],
+         "appliesTo": [
+            519
+         ]
+      },
+      {
+         "max": 1,
+         "min": 1,
+         "from": [
+            32,
+            33
+         ],
+         "appliesTo": [
+            521
+         ]
+      }
+   ]
+}

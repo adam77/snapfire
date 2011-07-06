@@ -1,1 +1,416 @@
-{"id":"Black Templars","version":"Epic UK v010409","by":"Iron Bloke","sections":[{"name":"DETACHMENTS","formations":[{"id":500,"name":"Assault Detachment","pts":175,"units":"4 Assault Units","upgrades":[24,25,27,38]},{"id":501,"name":"Bike Detachment","pts":200,"upgrades":[24,25,27]},{"id":502,"name":"Devastator Detachment","pts":250,"units":"4 Devastators, Transport","upgrades":[24,25,27,36,30,31,34,35,38]},{"id":503,"name":"Land Raiders","pts":350,"upgrades":[24,25,27,31,38]},{"id":504,"name":"Land Speeders","pts":200,"upgrades":[24,25,27]},{"id":505,"name":"Landing Craft","pts":350,"upgrades":[]},{"id":506,"name":"Predators","pts":275,"upgrades":[24,25,27,31,38]},{"id":511,"name":"Tactical Detachment","pts":300,"units":"6 Tacticals, Transport","upgrades":[24,25,27,36,30,31,38,34,35,39,40]},{"id":512,"name":"Terminator Detachment","pts":350,"units":"4 Terminators","upgrades":[24,25,27,38,30,34,35,40]},{"id":513,"name":"Thunderhawk","pts":200,"upgrades":[]},{"id":514,"name":"Thunderhawk Transporter","pts":100,"upgrades":[37]},{"id":515,"name":"Vindicator Detachment","pts":250,"units":"4 Vindicators","upgrades":[24,25,27,31,38]}]}],"upgrades":[{"id":24,"name":"Castellan","pts":50},{"id":25,"name":"Chaplain","pts":50},{"id":27,"name":"Master","pts":100},{"id":38,"name":"Vindicator","pts":50},{"id":15,"name":"Bike Unit","pts":0},{"id":14,"name":"Attack Bike","pts":0},{"id":36,"name":"Razorback","pts":25},{"id":30,"name":"Dreadnought","pts":50},{"id":31,"name":"Hunter","pts":75},{"id":34,"name":"Land Raider","pts":75},{"id":35,"name":"Land Raider Crusader","pts":75},{"id":51,"name":"Land Raider","pts":0},{"id":52,"name":"Land Raider Crusader","pts":0},{"id":17,"name":"Land Speeder","pts":0},{"id":18,"name":"Tornado","pts":10},{"id":19,"name":"Typhoon","pts":25},{"id":21,"name":"Annihilator","pts":0},{"id":22,"name":"Destructor","pts":0},{"id":39,"name":"Neophyte","pts":25},{"id":40,"name":"Emperor's Champion","pts":75},{"id":37,"name":"Thunderhawk Transporter","pts":100}],"formationConstraints":[],"upgradeConstraints":[{"max":1,"perArmy":true,"from":[27],"appliesTo":[500,501,502,503,504,506,511,512,515]},{"max":1,"from":[24,25,27],"appliesTo":[500,501,502,503,504,506,511,512,515],"name":"Cmdr"},{"max":2,"from":[38],"appliesTo":[500,502,503,506,511,512,515]},{"max":5,"min":5,"from":[14,15],"appliesTo":[501]},{"max":2,"from":[30],"appliesTo":[502,511,512]},{"max":1,"from":[31],"appliesTo":[502,503,506,511,515]},{"max":4,"from":[34,35],"appliesTo":[502,511,512],"name":"Land Raiders"},{"max":4,"min":4,"from":[51,52],"appliesTo":[503]},{"max":5,"min":5,"from":[17,18,19],"appliesTo":[504]},{"max":4,"min":4,"from":[21,22],"appliesTo":[506]},{"max":2,"from":[39],"appliesTo":[511]},{"max":1,"from":[40],"appliesTo":[511,512]},{"max":2,"min":1,"from":[37],"appliesTo":[514]}]}
+{
+   "id": "Black Templars",
+   "version": "Epic UK v010409",
+   "by": "Iron Bloke",
+   "sections": [
+      {
+         "name": "DETACHMENTS",
+         "formations": [
+            {
+               "id": 500,
+               "name": "Assault Detachment",
+               "pts": 175,
+               "units": "4 Assault Units",
+               "upgrades": [
+                  24,
+                  25,
+                  27,
+                  38
+               ]
+            },
+            {
+               "id": 501,
+               "name": "Bike Detachment",
+               "pts": 200,
+               "upgrades": [
+                  24,
+                  25,
+                  27
+               ]
+            },
+            {
+               "id": 502,
+               "name": "Devastator Detachment",
+               "pts": 250,
+               "units": "4 Devastators, Transport",
+               "upgrades": [
+                  24,
+                  25,
+                  27,
+                  36,
+                  30,
+                  31,
+                  34,
+                  35,
+                  38
+               ]
+            },
+            {
+               "id": 503,
+               "name": "Land Raiders",
+               "pts": 350,
+               "upgrades": [
+                  24,
+                  25,
+                  27,
+                  31,
+                  38
+               ]
+            },
+            {
+               "id": 504,
+               "name": "Land Speeders",
+               "pts": 200,
+               "upgrades": [
+                  24,
+                  25,
+                  27
+               ]
+            },
+            {
+               "id": 505,
+               "name": "Landing Craft",
+               "pts": 350,
+               "upgrades": []
+            },
+            {
+               "id": 506,
+               "name": "Predators",
+               "pts": 275,
+               "upgrades": [
+                  24,
+                  25,
+                  27,
+                  31,
+                  38
+               ]
+            },
+            {
+               "id": 511,
+               "name": "Tactical Detachment",
+               "pts": 300,
+               "units": "6 Tacticals, Transport",
+               "upgrades": [
+                  24,
+                  25,
+                  27,
+                  36,
+                  30,
+                  31,
+                  38,
+                  34,
+                  35,
+                  39,
+                  40
+               ]
+            },
+            {
+               "id": 512,
+               "name": "Terminator Detachment",
+               "pts": 350,
+               "units": "4 Terminators",
+               "upgrades": [
+                  24,
+                  25,
+                  27,
+                  38,
+                  30,
+                  34,
+                  35,
+                  40
+               ]
+            },
+            {
+               "id": 513,
+               "name": "Thunderhawk",
+               "pts": 200,
+               "upgrades": []
+            },
+            {
+               "id": 514,
+               "name": "Thunderhawk Transporter",
+               "pts": 100,
+               "upgrades": [
+                  37
+               ]
+            },
+            {
+               "id": 515,
+               "name": "Vindicator Detachment",
+               "pts": 250,
+               "units": "4 Vindicators",
+               "upgrades": [
+                  24,
+                  25,
+                  27,
+                  31,
+                  38
+               ]
+            }
+         ]
+      }
+   ],
+   "upgrades": [
+      {
+         "id": 24,
+         "name": "Castellan",
+         "pts": 50
+      },
+      {
+         "id": 25,
+         "name": "Chaplain",
+         "pts": 50
+      },
+      {
+         "id": 27,
+         "name": "Master",
+         "pts": 100
+      },
+      {
+         "id": 38,
+         "name": "Vindicator",
+         "pts": 50
+      },
+      {
+         "id": 15,
+         "name": "Bike Unit",
+         "pts": 0
+      },
+      {
+         "id": 14,
+         "name": "Attack Bike",
+         "pts": 0
+      },
+      {
+         "id": 36,
+         "name": "Razorback",
+         "pts": 25
+      },
+      {
+         "id": 30,
+         "name": "Dreadnought",
+         "pts": 50
+      },
+      {
+         "id": 31,
+         "name": "Hunter",
+         "pts": 75
+      },
+      {
+         "id": 34,
+         "name": "Land Raider",
+         "pts": 75
+      },
+      {
+         "id": 35,
+         "name": "Land Raider Crusader",
+         "pts": 75
+      },
+      {
+         "id": 51,
+         "name": "Land Raider",
+         "pts": 0
+      },
+      {
+         "id": 52,
+         "name": "Land Raider Crusader",
+         "pts": 0
+      },
+      {
+         "id": 17,
+         "name": "Land Speeder",
+         "pts": 0
+      },
+      {
+         "id": 18,
+         "name": "Tornado",
+         "pts": 10
+      },
+      {
+         "id": 19,
+         "name": "Typhoon",
+         "pts": 25
+      },
+      {
+         "id": 21,
+         "name": "Annihilator",
+         "pts": 0
+      },
+      {
+         "id": 22,
+         "name": "Destructor",
+         "pts": 0
+      },
+      {
+         "id": 39,
+         "name": "Neophyte",
+         "pts": 25
+      },
+      {
+         "id": 40,
+         "name": "Emperor's Champion",
+         "pts": 75
+      },
+      {
+         "id": 37,
+         "name": "Thunderhawk Transporter",
+         "pts": 100
+      }
+   ],
+   "formationConstraints": [],
+   "upgradeConstraints": [
+      {
+         "max": 1,
+         "perArmy": true,
+         "from": [
+            27
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            24,
+            25,
+            27
+         ],
+         "appliesTo": [
+            500,
+            501,
+            502,
+            503,
+            504,
+            506,
+            511,
+            512,
+            515
+         ],
+         "name": "Cmdr"
+      },
+      {
+         "max": 2,
+         "from": [
+            38
+         ],
+         "appliesTo": [
+            500,
+            502,
+            503,
+            506,
+            511,
+            512,
+            515
+         ]
+      },
+      {
+         "max": 5,
+         "min": 5,
+         "from": [
+            14,
+            15
+         ],
+         "appliesTo": [
+            501
+         ]
+      },
+      {
+         "max": 2,
+         "from": [
+            30
+         ],
+         "appliesTo": [
+            502,
+            511,
+            512
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            31
+         ],
+         "appliesTo": [
+            502,
+            503,
+            506,
+            511,
+            515
+         ]
+      },
+      {
+         "max": 4,
+         "from": [
+            34,
+            35
+         ],
+         "appliesTo": [
+            502,
+            511,
+            512
+         ],
+         "name": "Land Raiders"
+      },
+      {
+         "max": 4,
+         "min": 4,
+         "from": [
+            51,
+            52
+         ],
+         "appliesTo": [
+            503
+         ]
+      },
+      {
+         "max": 5,
+         "min": 5,
+         "from": [
+            17,
+            18,
+            19
+         ],
+         "appliesTo": [
+            504
+         ]
+      },
+      {
+         "max": 4,
+         "min": 4,
+         "from": [
+            21,
+            22
+         ],
+         "appliesTo": [
+            506
+         ]
+      },
+      {
+         "max": 2,
+         "from": [
+            39
+         ],
+         "appliesTo": [
+            511
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            40
+         ],
+         "appliesTo": [
+            511,
+            512
+         ]
+      },
+      {
+         "max": 2,
+         "min": 1,
+         "from": [
+            37
+         ],
+         "appliesTo": [
+            514
+         ]
+      }
+   ]
+}
