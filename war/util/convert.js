@@ -154,14 +154,14 @@ function doUpgrade( list, src, formation, upgrade ) {
 			var upId = addUpgrade(list, upgrade.options[i]).id;
 			optionIds.push(upId);
 			if (upgrade.options[i].general) {
-				var c = getUpgradeConstraint(list, {max:upgrade.upto, perArmy:true, from:[upId]});
+				var c = getUpgradeConstraint(list, {max:1, perArmy:true, from:[upId]});
 			}
 			if (upgrade.options[i].upto) {
-				var c = getUpgradeConstraint(list, {max:upgrade.upto, from:[upId], appliesTo:[]});
+				var c = getUpgradeConstraint(list, {max:upgrade.options[i].upto, from:[upId], appliesTo:[]});
 				c.appliesTo.push( formation.id );				
 			}
 			if (upgrade.options[i].minimum) {
-				var c = getUpgradeConstraint(list, {min:upgrade.minimum, from:[upId], appliesTo:[]});
+				var c = getUpgradeConstraint(list, {min:upgrade.options[i].minimum, from:[upId], appliesTo:[]});
 				c.appliesTo.push( formation.id );				
 			}
 		}
@@ -193,7 +193,7 @@ function doUpgrade( list, src, formation, upgrade ) {
 
 		if (upgrade.general) {
 			formation.upgrades.push(upId);
-			var c = getUpgradeConstraint(list, {max:upgrade.upto, from:[upId], perArmy:true});
+			var c = getUpgradeConstraint(list, {max:1, from:[upId], perArmy:true});
 		}
 		else if (upgrade.minimum && upgrade.upto) {
 			if (upgrade.minimum != upgrade.upto) { 
