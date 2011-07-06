@@ -154,8 +154,7 @@ function doUpgrade( list, src, formation, upgrade ) {
 			var upId = addUpgrade(list, upgrade.options[i]).id;
 			optionIds.push(upId);
 			if (upgrade.options[i].general) {
-				var c = getUpgradeConstraint(list, {max:upgrade.upto, perArmy:true, from:[upId], appliesTo:[]});
-				c.appliesTo.push( formation.id );				
+				var c = getUpgradeConstraint(list, {max:upgrade.upto, perArmy:true, from:[upId]});
 			}
 			if (upgrade.options[i].upto) {
 				var c = getUpgradeConstraint(list, {max:upgrade.upto, from:[upId], appliesTo:[]});
@@ -194,8 +193,7 @@ function doUpgrade( list, src, formation, upgrade ) {
 
 		if (upgrade.general) {
 			formation.upgrades.push(upId);
-			var c = getUpgradeConstraint(list, {max:upgrade.upto, from:[upId], appliesTo:[], perArmy:true});
-			c.appliesTo.push( formation.id );
+			var c = getUpgradeConstraint(list, {max:upgrade.upto, from:[upId], perArmy:true});
 		}
 		else if (upgrade.minimum && upgrade.upto) {
 			if (upgrade.minimum != upgrade.upto) { 
@@ -252,6 +250,12 @@ function convert( src ) {
 	return list;
 }
 
+
+function pp(key, value) {
+	return value;
+}
+
+
 var file = [
 "ORK_feral_NETEA.js", "ORK_kult_NETEA.js", "XENOS_nids_NETEA.js",
 "ORK_ghazgkhull_NETEA.js", "XENOS_necron_NETEA.js", "XENOS_tau_NETEA.js",
@@ -264,12 +268,14 @@ var file = [
 "CHAOS_we_EPICUK.js",      "IG_siege_EPICUK.js",     "ORK_ghazgkhull_EPICUK.js",  "SM_scars_EPICUK.js"]
 
 
+
+
 for (var i=0; i<file.length; i++) {
 	print( file[i] );
 	var src = readFile( base + file[i] );
 	eval(src);
 	var list = convert( listData );
-	writeFile( base + file[i] + "on", JSON.stringify( list ) );
+	writeFile( base + file[i] + "on", JSON.stringify( list, pp, 3 ) );
 }
 
 // pretty print python -mjson.tool

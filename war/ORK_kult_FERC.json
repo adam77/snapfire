@@ -1,1 +1,727 @@
-{"id":"Fondus d'la Vitesse","version":"F-ERC 2010","by":"Iron Bloke","sections":[{"name":"Fondus d'la Vitesse","formations":[{"id":502,"name":"Bande de Guerre","pts":-10,"upgrades":[64,65,51,11,12,13,96,76,11,78,13,81,82,83,84,85]},{"id":503,"name":"Bande de Guerre (Mastok')","pts":-70,"upgrades":[64,65,51,11,12,13,96,76,11,78,13,81,82,83,84,85]},{"id":504,"name":"Bande de Guerre (Tr&egrave; Mastok')","pts":-130,"upgrades":[64,65,51,11,12,13,96,76,11,78,13,81,82,83,84,85]},{"id":505,"name":"Kulte d'la Vitesse","pts":0,"upgrades":[11,12,13,82,83,84,85]},{"id":506,"name":"Kulte d'la Vitesse (Mastok')","pts":-50,"upgrades":[11,12,13,82,83,84,85]},{"id":507,"name":"Kulte d'la Vitesse (Tr&egrave; Mastok')","pts":-100,"upgrades":[11,12,13,82,83,84,85]},{"id":508,"name":"Eclaireurs Motoboyz","pts":150,"units":"5 Motoboyz","upgrades":[96]},{"id":509,"name":"Eclaireurs Motoboyz (Big)","pts":250,"units":"10 Motoboyz","upgrades":[96]},{"id":510,"name":"Eclaireurs Motoboyz ('Uge)","pts":350,"units":"15 Motoboyz","upgrades":[96]},{"id":511,"name":"Brigade Blitz","pts":10,"upgrades":[55,65,11,78,13,84,82,83,85,93]},{"id":512,"name":"Brigade Blitz (Mastok')","pts":-30,"upgrades":[55,65,11,78,13,84,82,83,85,93]},{"id":513,"name":"Brigade Blitz (Tr&egrave; Mastok')","pts":-70,"upgrades":[55,65,11,78,13,84,82,83,85,93]},{"id":514,"name":"Escadron de Chassa-Bombas","pts":0,"upgrades":[73]},{"id":515,"name":"Vesso de Debark'ment","pts":250,"upgrades":[]},{"id":516,"name":"Kroiseur Kitu","pts":200,"upgrades":[]},{"id":517,"name":"Kroiseur d'la Mort","pts":250,"upgrades":[]},{"id":518,"name":"Bande de Forteresses","pts":275,"upgrades":[55,65,83,93,89,74]},{"id":519,"name":"Bande de Forteresses (Mastok')","pts":475,"upgrades":[55,65,83,93,89,74]},{"id":520,"name":"Bande de Forteresses (Tr&egrave; Mastok')","pts":675,"upgrades":[55,65,83,93,89,74]}]}],"upgrades":[{"id":64,"name":"Nobz (+ extra truk)","pts":35},{"id":65,"name":"Motonobz","pts":35},{"id":51,"name":"Boyz (+ extra truk)","pts":25},{"id":11,"name":"Buggie","pts":25},{"id":12,"name":"Motoboyz","pts":25},{"id":13,"name":"Karbonisator","pts":25},{"id":96,"name":"M&eacute;kano Motoboyz Ork'Zangelz","pts":0},{"id":76,"name":"Chokboyz","pts":25},{"id":78,"name":"Moto","pts":25},{"id":81,"name":"Chariot de Guerre","pts":25},{"id":82,"name":"Kopter","pts":35},{"id":83,"name":"Chariot Flak","pts":35},{"id":84,"name":"Chariot Kanon","pts":35},{"id":85,"name":"Mekboy Speedsta","pts":50},{"id":55,"name":"Nobz","pts":35},{"id":93,"name":"Forteresse &agrave; Kanons","pts":135},{"id":73,"name":"Chassa-Bomba","pts":50},{"id":43,"name":"Forteresse de Bataille","pts":0},{"id":44,"name":"Forteresse &agrave; Kanons","pts":0},{"id":89,"name":"Forteresse de Bataille","pts":125},{"id":74,"name":"Boyz","pts":25}],"formationConstraints":[{"max":1,"name":"Spacecraft","from":[516,517]},{"maxPercent":33,"name":"War Engines & Allies","from":[514,515,516,517]}],"upgradeConstraints":[{"max":2,"min":1,"from":[64,65],"appliesTo":[502]},{"min":3,"from":[51],"appliesTo":[502]},{"min":4,"from":[11,12,13],"appliesTo":[502],"name":"Motos"},{"from":[96],"appliesTo":[502,503,504,508,509,510],"perArmy":true},{"max":1,"from":[85],"appliesTo":[502,505,511]},{"max":4,"min":2,"from":[64,65],"appliesTo":[503]},{"min":6,"from":[51],"appliesTo":[503]},{"min":8,"from":[11,12,13],"appliesTo":[503,505],"name":"Motos"},{"max":2,"from":[85],"appliesTo":[503,506,512]},{"max":6,"min":3,"from":[64,65],"appliesTo":[504]},{"min":9,"from":[51],"appliesTo":[504]},{"min":12,"from":[11,12,13],"appliesTo":[504],"name":"Motos"},{"max":3,"from":[85],"appliesTo":[504,507,513]},{"min":16,"from":[11,12,13],"appliesTo":[506],"name":"Motos"},{"min":24,"from":[11,12,13],"appliesTo":[507],"name":"Motos"},{"max":1,"from":[55,65],"appliesTo":[511,518],"name":"Nobz"},{"min":4,"from":[82,83,84],"appliesTo":[511],"name":"Chariots"},{"max":1,"from":[93],"appliesTo":[511,518]},{"max":2,"from":[55,65],"appliesTo":[512,519],"name":"Nobz"},{"min":8,"from":[82,83,84],"appliesTo":[512],"name":"Chariots"},{"max":2,"from":[93],"appliesTo":[512,519]},{"max":3,"from":[55,65],"appliesTo":[513,520],"name":"Nobz"},{"min":12,"from":[82,83,84],"appliesTo":[513],"name":"Chariots"},{"max":3,"from":[93],"appliesTo":[513,520]},{"max":9,"min":4,"from":[73],"appliesTo":[514]},{"max":2,"min":2,"from":[43,44],"appliesTo":[518]},{"max":1,"from":[89],"appliesTo":[518]},{"max":4,"min":4,"from":[43,44],"appliesTo":[519]},{"max":2,"from":[89],"appliesTo":[519]},{"max":6,"min":6,"from":[43,44],"appliesTo":[520]},{"max":3,"from":[89],"appliesTo":[520]}]}
+{
+   "id": "Fondus d'la Vitesse",
+   "version": "F-ERC 2010",
+   "by": "Iron Bloke",
+   "sections": [
+      {
+         "name": "Fondus d'la Vitesse",
+         "formations": [
+            {
+               "id": 502,
+               "name": "Bande de Guerre",
+               "pts": -10,
+               "upgrades": [
+                  64,
+                  65,
+                  51,
+                  11,
+                  12,
+                  13,
+                  96,
+                  76,
+                  11,
+                  78,
+                  13,
+                  81,
+                  82,
+                  83,
+                  84,
+                  85
+               ]
+            },
+            {
+               "id": 503,
+               "name": "Bande de Guerre (Mastok')",
+               "pts": -70,
+               "upgrades": [
+                  64,
+                  65,
+                  51,
+                  11,
+                  12,
+                  13,
+                  96,
+                  76,
+                  11,
+                  78,
+                  13,
+                  81,
+                  82,
+                  83,
+                  84,
+                  85
+               ]
+            },
+            {
+               "id": 504,
+               "name": "Bande de Guerre (Tr&egrave; Mastok')",
+               "pts": -130,
+               "upgrades": [
+                  64,
+                  65,
+                  51,
+                  11,
+                  12,
+                  13,
+                  96,
+                  76,
+                  11,
+                  78,
+                  13,
+                  81,
+                  82,
+                  83,
+                  84,
+                  85
+               ]
+            },
+            {
+               "id": 505,
+               "name": "Kulte d'la Vitesse",
+               "pts": 0,
+               "upgrades": [
+                  11,
+                  12,
+                  13,
+                  82,
+                  83,
+                  84,
+                  85
+               ]
+            },
+            {
+               "id": 506,
+               "name": "Kulte d'la Vitesse (Mastok')",
+               "pts": -50,
+               "upgrades": [
+                  11,
+                  12,
+                  13,
+                  82,
+                  83,
+                  84,
+                  85
+               ]
+            },
+            {
+               "id": 507,
+               "name": "Kulte d'la Vitesse (Tr&egrave; Mastok')",
+               "pts": -100,
+               "upgrades": [
+                  11,
+                  12,
+                  13,
+                  82,
+                  83,
+                  84,
+                  85
+               ]
+            },
+            {
+               "id": 508,
+               "name": "Eclaireurs Motoboyz",
+               "pts": 150,
+               "units": "5 Motoboyz",
+               "upgrades": [
+                  96
+               ]
+            },
+            {
+               "id": 509,
+               "name": "Eclaireurs Motoboyz (Big)",
+               "pts": 250,
+               "units": "10 Motoboyz",
+               "upgrades": [
+                  96
+               ]
+            },
+            {
+               "id": 510,
+               "name": "Eclaireurs Motoboyz ('Uge)",
+               "pts": 350,
+               "units": "15 Motoboyz",
+               "upgrades": [
+                  96
+               ]
+            },
+            {
+               "id": 511,
+               "name": "Brigade Blitz",
+               "pts": 10,
+               "upgrades": [
+                  55,
+                  65,
+                  11,
+                  78,
+                  13,
+                  84,
+                  82,
+                  83,
+                  85,
+                  93
+               ]
+            },
+            {
+               "id": 512,
+               "name": "Brigade Blitz (Mastok')",
+               "pts": -30,
+               "upgrades": [
+                  55,
+                  65,
+                  11,
+                  78,
+                  13,
+                  84,
+                  82,
+                  83,
+                  85,
+                  93
+               ]
+            },
+            {
+               "id": 513,
+               "name": "Brigade Blitz (Tr&egrave; Mastok')",
+               "pts": -70,
+               "upgrades": [
+                  55,
+                  65,
+                  11,
+                  78,
+                  13,
+                  84,
+                  82,
+                  83,
+                  85,
+                  93
+               ]
+            },
+            {
+               "id": 514,
+               "name": "Escadron de Chassa-Bombas",
+               "pts": 0,
+               "upgrades": [
+                  73
+               ]
+            },
+            {
+               "id": 515,
+               "name": "Vesso de Debark'ment",
+               "pts": 250,
+               "upgrades": []
+            },
+            {
+               "id": 516,
+               "name": "Kroiseur Kitu",
+               "pts": 200,
+               "upgrades": []
+            },
+            {
+               "id": 517,
+               "name": "Kroiseur d'la Mort",
+               "pts": 250,
+               "upgrades": []
+            },
+            {
+               "id": 518,
+               "name": "Bande de Forteresses",
+               "pts": 275,
+               "upgrades": [
+                  55,
+                  65,
+                  83,
+                  93,
+                  89,
+                  74
+               ]
+            },
+            {
+               "id": 519,
+               "name": "Bande de Forteresses (Mastok')",
+               "pts": 475,
+               "upgrades": [
+                  55,
+                  65,
+                  83,
+                  93,
+                  89,
+                  74
+               ]
+            },
+            {
+               "id": 520,
+               "name": "Bande de Forteresses (Tr&egrave; Mastok')",
+               "pts": 675,
+               "upgrades": [
+                  55,
+                  65,
+                  83,
+                  93,
+                  89,
+                  74
+               ]
+            }
+         ]
+      }
+   ],
+   "upgrades": [
+      {
+         "id": 64,
+         "name": "Nobz (+ extra truk)",
+         "pts": 35
+      },
+      {
+         "id": 65,
+         "name": "Motonobz",
+         "pts": 35
+      },
+      {
+         "id": 51,
+         "name": "Boyz (+ extra truk)",
+         "pts": 25
+      },
+      {
+         "id": 11,
+         "name": "Buggie",
+         "pts": 25
+      },
+      {
+         "id": 12,
+         "name": "Motoboyz",
+         "pts": 25
+      },
+      {
+         "id": 13,
+         "name": "Karbonisator",
+         "pts": 25
+      },
+      {
+         "id": 96,
+         "name": "M&eacute;kano Motoboyz Ork'Zangelz",
+         "pts": 0
+      },
+      {
+         "id": 76,
+         "name": "Chokboyz",
+         "pts": 25
+      },
+      {
+         "id": 78,
+         "name": "Moto",
+         "pts": 25
+      },
+      {
+         "id": 81,
+         "name": "Chariot de Guerre",
+         "pts": 25
+      },
+      {
+         "id": 82,
+         "name": "Kopter",
+         "pts": 35
+      },
+      {
+         "id": 83,
+         "name": "Chariot Flak",
+         "pts": 35
+      },
+      {
+         "id": 84,
+         "name": "Chariot Kanon",
+         "pts": 35
+      },
+      {
+         "id": 85,
+         "name": "Mekboy Speedsta",
+         "pts": 50
+      },
+      {
+         "id": 55,
+         "name": "Nobz",
+         "pts": 35
+      },
+      {
+         "id": 93,
+         "name": "Forteresse &agrave; Kanons",
+         "pts": 135
+      },
+      {
+         "id": 73,
+         "name": "Chassa-Bomba",
+         "pts": 50
+      },
+      {
+         "id": 43,
+         "name": "Forteresse de Bataille",
+         "pts": 0
+      },
+      {
+         "id": 44,
+         "name": "Forteresse &agrave; Kanons",
+         "pts": 0
+      },
+      {
+         "id": 89,
+         "name": "Forteresse de Bataille",
+         "pts": 125
+      },
+      {
+         "id": 74,
+         "name": "Boyz",
+         "pts": 25
+      }
+   ],
+   "formationConstraints": [
+      {
+         "max": 1,
+         "name": "Spacecraft",
+         "from": [
+            516,
+            517
+         ]
+      },
+      {
+         "maxPercent": 33,
+         "name": "War Engines & Allies",
+         "from": [
+            514,
+            515,
+            516,
+            517
+         ]
+      }
+   ],
+   "upgradeConstraints": [
+      {
+         "max": 2,
+         "min": 1,
+         "from": [
+            64,
+            65
+         ],
+         "appliesTo": [
+            502
+         ]
+      },
+      {
+         "min": 3,
+         "from": [
+            51
+         ],
+         "appliesTo": [
+            502
+         ]
+      },
+      {
+         "min": 4,
+         "from": [
+            11,
+            12,
+            13
+         ],
+         "appliesTo": [
+            502
+         ],
+         "name": "Motos"
+      },
+      {
+         "from": [
+            96
+         ],
+         "perArmy": true
+      },
+      {
+         "max": 1,
+         "from": [
+            85
+         ],
+         "appliesTo": [
+            502,
+            505,
+            511
+         ]
+      },
+      {
+         "max": 4,
+         "min": 2,
+         "from": [
+            64,
+            65
+         ],
+         "appliesTo": [
+            503
+         ]
+      },
+      {
+         "min": 6,
+         "from": [
+            51
+         ],
+         "appliesTo": [
+            503
+         ]
+      },
+      {
+         "min": 8,
+         "from": [
+            11,
+            12,
+            13
+         ],
+         "appliesTo": [
+            503,
+            505
+         ],
+         "name": "Motos"
+      },
+      {
+         "max": 2,
+         "from": [
+            85
+         ],
+         "appliesTo": [
+            503,
+            506,
+            512
+         ]
+      },
+      {
+         "max": 6,
+         "min": 3,
+         "from": [
+            64,
+            65
+         ],
+         "appliesTo": [
+            504
+         ]
+      },
+      {
+         "min": 9,
+         "from": [
+            51
+         ],
+         "appliesTo": [
+            504
+         ]
+      },
+      {
+         "min": 12,
+         "from": [
+            11,
+            12,
+            13
+         ],
+         "appliesTo": [
+            504
+         ],
+         "name": "Motos"
+      },
+      {
+         "max": 3,
+         "from": [
+            85
+         ],
+         "appliesTo": [
+            504,
+            507,
+            513
+         ]
+      },
+      {
+         "min": 16,
+         "from": [
+            11,
+            12,
+            13
+         ],
+         "appliesTo": [
+            506
+         ],
+         "name": "Motos"
+      },
+      {
+         "min": 24,
+         "from": [
+            11,
+            12,
+            13
+         ],
+         "appliesTo": [
+            507
+         ],
+         "name": "Motos"
+      },
+      {
+         "max": 1,
+         "from": [
+            55,
+            65
+         ],
+         "appliesTo": [
+            511,
+            518
+         ],
+         "name": "Nobz"
+      },
+      {
+         "min": 4,
+         "from": [
+            82,
+            83,
+            84
+         ],
+         "appliesTo": [
+            511
+         ],
+         "name": "Chariots"
+      },
+      {
+         "max": 1,
+         "from": [
+            93
+         ],
+         "appliesTo": [
+            511,
+            518
+         ]
+      },
+      {
+         "max": 2,
+         "from": [
+            55,
+            65
+         ],
+         "appliesTo": [
+            512,
+            519
+         ],
+         "name": "Nobz"
+      },
+      {
+         "min": 8,
+         "from": [
+            82,
+            83,
+            84
+         ],
+         "appliesTo": [
+            512
+         ],
+         "name": "Chariots"
+      },
+      {
+         "max": 2,
+         "from": [
+            93
+         ],
+         "appliesTo": [
+            512,
+            519
+         ]
+      },
+      {
+         "max": 3,
+         "from": [
+            55,
+            65
+         ],
+         "appliesTo": [
+            513,
+            520
+         ],
+         "name": "Nobz"
+      },
+      {
+         "min": 12,
+         "from": [
+            82,
+            83,
+            84
+         ],
+         "appliesTo": [
+            513
+         ],
+         "name": "Chariots"
+      },
+      {
+         "max": 3,
+         "from": [
+            93
+         ],
+         "appliesTo": [
+            513,
+            520
+         ]
+      },
+      {
+         "max": 9,
+         "min": 4,
+         "from": [
+            73
+         ],
+         "appliesTo": [
+            514
+         ]
+      },
+      {
+         "max": 2,
+         "min": 2,
+         "from": [
+            43,
+            44
+         ],
+         "appliesTo": [
+            518
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            89
+         ],
+         "appliesTo": [
+            518
+         ]
+      },
+      {
+         "max": 4,
+         "min": 4,
+         "from": [
+            43,
+            44
+         ],
+         "appliesTo": [
+            519
+         ]
+      },
+      {
+         "max": 2,
+         "from": [
+            89
+         ],
+         "appliesTo": [
+            519
+         ]
+      },
+      {
+         "max": 6,
+         "min": 6,
+         "from": [
+            43,
+            44
+         ],
+         "appliesTo": [
+            520
+         ]
+      },
+      {
+         "max": 3,
+         "from": [
+            89
+         ],
+         "appliesTo": [
+            520
+         ]
+      }
+   ]
+}
