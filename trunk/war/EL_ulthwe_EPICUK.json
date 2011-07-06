@@ -375,14 +375,14 @@
    ],
    "upgradeConstraints": [
       {
-         "max": 2,
+         "max": 1,
          "perArmy": true,
          "from": [
             103
          ]
       },
       {
-         "max": 2,
+         "max": 1,
          "from": [
             103
          ],
@@ -404,7 +404,7 @@
          ]
       },
       {
-         "max": 6,
+         "max": 3,
          "from": [
             25
          ],
@@ -488,7 +488,7 @@
          ]
       },
       {
-         "max": 5,
+         "max": 2,
          "from": [
             31
          ],
@@ -537,12 +537,11 @@
          ]
       },
       {
-         "max": 6,
+         "max": 3,
          "from": [
             41
          ],
          "appliesTo": [
-            531,
             531
          ]
       },
@@ -554,6 +553,17 @@
          "appliesTo": [
             531
          ]
+      },
+      {
+         "max": 6,
+         "from": [
+            41,
+            42
+         ],
+         "appliesTo": [
+            531
+         ],
+         "name": "Aspect Transport"
       },
       {
          "max": 1,

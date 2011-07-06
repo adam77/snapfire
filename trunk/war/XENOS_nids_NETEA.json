@@ -327,7 +327,7 @@
    ],
    "upgradeConstraints": [
       {
-         "max": 6,
+         "max": 1,
          "from": [
             18
          ],

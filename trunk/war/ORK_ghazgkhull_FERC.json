@@ -472,6 +472,7 @@
    ],
    "upgradeConstraints": [
       {
+         "max": 1,
          "from": [
             81
          ],
