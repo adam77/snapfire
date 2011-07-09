@@ -212,7 +212,7 @@ var ArmyforgeUI = {
 		paramString.split('&').each(function(param) {
 			ArmyforgeUI.urlData[param.split('=')[0]] = param.split('=')[1];
 		});
-		var listFile = ArmyforgeUI.urlData.list + '.json';	
+		var listFile = './lists/' + ArmyforgeUI.urlData.list + '.json';	
 	
 		// load the army list...
 		new Ajax.Request(listFile, {
