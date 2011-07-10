@@ -74,6 +74,7 @@
 		{"max":1, "name":"Spacecraft", "from":[515,516]}		
 	],
 	"upgradeConstraints":[
+		{"max":3, "from":[25]},		
 		{"max":1, "from":[50]},
 		{"max":1, "name":"Wraithguard", "from":[45,46]},
 		{"max":1, "from":[43]},
