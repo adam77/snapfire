@@ -39,6 +39,7 @@ var ArmyforgeUI = {
 	addFormation:function(formationType, noDefaults) {
 		//alert('add formation');
 		var formation = Force.addFormation(formationType);
+		// todo remove delete listener...
 		ArmyforgeUI.renderFormation( formation );
 		ArmyforgeUI.updatePoints();
 		ArmyforgeUI.checkUpgradeMenuItems();
@@ -242,8 +243,7 @@ var ArmyforgeUI = {
 		}
 		else if (ArmyList.data.fixedFormations) {
 			ArmyList.data.fixedFormations.each(function(x) {
-				var newRow = ArmyforgeUI.addFormation(null, x);
-				newRow.stopObserving('click');
+				ArmyforgeUI.addFormation(x);
 			});
 		}
 		// render notes
