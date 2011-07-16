@@ -1,6 +1,7 @@
 {
 	"id":"Black Legion",
 	"version":"NetEA v3.1 *UNDER DEVELOPMENT*",
+	"notes":["If a Daemon Prince is selected, then it replaces a Chaos Marine unit."],
 	"by":"Iron Bloke",
 	"sections":[
 		{"name":"CORE", "formations":[
