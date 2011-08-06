@@ -1,7 +1,9 @@
 {
 	"id":"Black Legion",
 	"version":"Specialist Games Forum v1.0",
-	"notes":["If a Daemon Prince is selected, then it replaces a Chaos Marine unit."],
+	"notes":[
+		"If a Daemon Prince is selected, then it replaces a Chaos Marine unit.",
+		"If Dreadclaws are selected, then enough must be taken to transport the entire formation."],
 	"by":"Iron Bloke",
 	"sections":[
 		{"name":"DETACHMENTS", "formations":[
@@ -10,7 +12,7 @@
 			{"id":503, "name":"Bike Company",				"pts":300, "units":"8 Chaos Space Marines Bikes", "upgrades":[47,40]},
 			{"id":504, "name":"Black Legion Retinue",		"pts":275, "units":"8 Chaos Space Marines", "upgrades":[48,49,50,41,42,43,44,45,40,46,47]},
 			{"id":505, "name":"Chaos Terminators",			"pts":0, "upgrades":[13,41,42,43,44,45, 40, 46, 47]},
-			{"id":507, "name":"Forlorn Hope",		"pts":125, "units":"4 Chaos Space Marines", "upgrades":[48,41,40]},
+			{"id":507, "name":"Forlorn Hope",		"pts":125, "units":"4 Chaos Space Marines", "upgrades":[48,44,40]},
 			{"id":508, "name":"Raptor Cult", 				"pts":0, "upgrades":[11,40]}
 		]},
 		{"name":"Daemon Pool", "formations":[
