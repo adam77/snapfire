@@ -45,8 +45,8 @@
 		{"maxPercent":25, "from":[519,520]}
 	],
 	"upgradeConstraints":[
-		{"min":1, "max":1, "from":[11,12]},		
-		{"min":1, "max":1, "from":[17,18]},
+		{"min":1, "max":1, "from":[11,12], "appliesTo":[500,501,502]},		
+		{"min":1, "max":1, "from":[17,18], "appliesTo":[507]},
 		{"max":3, "from":[28,29,30,31,32,33]},
 		{"max":1, "from":[34]}
 	]

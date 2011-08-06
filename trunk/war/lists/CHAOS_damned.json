@@ -82,7 +82,7 @@
 		{"min":1, "max":2, "from":[54], "appliesTo":[551]},
 		{"min":1, "max":2, "from":[56], "appliesTo":[553]},
 		{"min":1, "max":3, "from":[61], "appliesTo":[557]},
-		{"min":1, "max":2, "from":[58,59], "appliesTo":[556]},
+		{"min":1, "max":2, "from":[58,59], "appliesTo":[555]},
 		{"min":11, "max":19, "name":"Cultists", "from":[11,12,13], "appliesTo":[531]},
 		{"max":6, "from":[13]},
 		{"min":1, "max":1, "name":"Champion", "from":[15,16,17,18,19,20], "appliesTo":[531]},
