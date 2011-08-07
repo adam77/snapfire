@@ -400,7 +400,8 @@ var ArmyforgeUI = {
 			input.activate();
 		}
 		else {
-			$('orbatName').update($F('orbatNameEditor').escapeHTML());
+			Force.name = $F('orbatNameEditor').escapeHTML();
+			$('orbatName').update(Force.name);
 			$('orbatNameEditor').remove();
 			$('orbatName').show();
 		}	
