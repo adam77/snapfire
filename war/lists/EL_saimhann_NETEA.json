@@ -1,8 +1,8 @@
 {
 	"id":"Saim-Hann Craftworld",
-	"version":"ARMY SUB-CHAMPION: Kevin 'Chroma' Petker.  Version: 6.5",
+	"version":"NetEA Army Compendium 2010 *DRAFT*",
 	"by":"Parintachin",
-	"notes":["This list is marked as 'Under development'.","All Aspect Warrior units in the Saim-Hann Craftworld army, apart from Shining Spears, Swooping Hawks and Warp Spiders, must be transported in Wave Serpents and/or Falcons. You must take exactly enough transport vehicles to carry the units that require transport, without any spare transport space being left over."],
+	"notes":["All Aspect Warrior units in the Saim-Hann Craftworld army, apart from Shining Spears, Swooping Hawks and Warp Spiders, must be transported in Wave Serpents and/or Falcons. You must take exactly enough transport vehicles to carry the units that require transport, without any spare transport space being left over."],
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":500, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
