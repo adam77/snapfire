@@ -1,0 +1,116 @@
+{
+	"id":"FIR IOLARION ELDAR TITAN CLAN",
+	"version":"ARMY SUB-CHAMPION: Kalen 'Angel_of_Caliban'.  Version: 2.1.1",
+	"by":"Parintachin",
+	"notes":["This list is marked as 'Experimental'"],
+	"sections":[
+		{"name":"INDIVIDUALS", "formations":[
+			{"id":500, "name":"Gate of Vaul",	"pts":150,		"upgrades":[]}
+		]},
+		{"name":"ELDAR TITAN CLAN WARHOSTS", "formations":[
+			{"id":510, "name":"Warlock Titan", "units":"1 Warlock Titan", "pts":850, "upgrades":[76,77,79]},
+			{"id":511, "name":"Phantasm Titan", "units":"1 Phantasm Titan", "pts":700, "upgrades":[78]},
+			{"id":512, "name":"Phantom Titan", "units":"1 Phantom Titan", "pts":750, "upgrades":[77,79,80]},
+			{"id":513, "name":"Revenant Titan Host" , "units":"Each Revenant Titan is armed with 2 weapons, Revenant Pulse Lasers or Revenant Sonic Lances in any combination.", "pts":0, "upgrades":[81]}
+		]},	
+		{"name":"CRAFTWORLD ELDAR ALLIES", "formations":[
+			{"id":520, "name":"Guardian Troupe", "units":"5 Guardian Units", "pts":200,	"upgrades":[]},
+			{"id":521, "name":"Wraithlord Troupe", "units":"6 Wraithlords", "pts":300,	"upgrades":[]},
+			{"id":522, "name":"Ranger Troupe", "pts":0, "upgrades":[11]},
+			{"id":523, "name":"Windrider Troupe", "pts":200, "upgrades":[]},
+			{"id":524, "name":"Nightwings", "units":"3 Nightwings", "pts":300, "upgrades":[]},
+			{"id":525, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
+			{"id":526, "name":"Vampire Hunter","pts":250, "units":"1 Vampire Hunter", "upgrades":[]},
+			{"id":527, "name":"Wraithship",	"pts":150, "upgrades":[]},
+			{"id":528, "name":"Dragonship",	"pts":300, "upgrades":[]}
+		]},
+		{"name":"ELDAR KNIGHT ALLIES", "formations":[
+		 	{"id":530, "name":"Eldar Knight Hunting Pack",	"pts":300, "upgrades":[]}
+		]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Ranger",		"pts":25},
+		{"id":13, "name":"War Walker",	"pts":25},
+		{"id":15, "name":"Dire Avenger",		"pts":50},
+		{"id":16, "name":"Striking Scorpion",	"pts":50},
+		{"id":17, "name":"Howling Banshee",	"pts":50},
+		{"id":18, "name":"Fire Dragon",		"pts":50},
+		{"id":19, "name":"Warp Spider",		"pts":50},
+		{"id":20, "name":"Dark Reaper",		"pts":50},
+		{"id":21, "name":"Swooping Hawk",		"pts":50},
+		{"id":22, "name":"Shining Spear",		"pts":50},
+		{"id":24, "name":"Guardians",				"pts":0},
+		{"id":25, "name":"Heavy Weapon Platform",	"pts":0},
+		{"id":27, "name":"Jetbike", 	"pts":0},
+		{"id":28, "name":"Vyper", 		"pts":0},
+		
+		{"id":30, "name":"Falcon",		"pts":50},
+		{"id":31, "name":"Fire Storm",	"pts":50},
+		{"id":32, "name":"Fire Prism",	"pts":65},
+		
+		{"id":34, "name":"Cobra",			"pts":0},
+		{"id":35, "name":"Scorpion",		"pts":0},
+		{"id":36, "name":"Storm Serpent",	"pts":200},
+		
+		{"id":39, "name":"Exarch", 	"pts":25},
+		{"id":40, "name":"Autarch", 	"pts":75},
+		{"id":41, "name":"Wave Serpent",	"pts":50},
+		{"id":66, "name":"Wave Serpent",	"pts":0},
+		{"id":42, "name":"Falcon",			"pts":65},
+		{"id":45, "name":"Wraithguards", "pts": 0},
+		{"id":46, "name":"3 Wraithguards", "pts": 150},
+
+		{"id":55, "name":"3 Support Weapon Platforms", "pts":50},
+		{"id":57, "name":"2 Wraithguard", "pts": 100},                    
+		{"id":58, "name":"3 Wraithguard", "pts": 150},
+		{"id":59, "name":"3 Wraithlords", "pts":175},
+
+		{"id":63, "name":"Farseer",	"pts":50},
+		{"id":65, "name":"6 Wave Serpents",	"pts":300},
+		{"id":67, "name":"3 Vyper Jetbikes",	"pts":100},
+		{"id":68, "name":"4 Guardian units, 2 Wave Serpents",	"pts":150},
+		{"id":69, "name":"Hornet",	"pts":35},
+
+		{"id":70, "name":"Titan Pulsar",	"pts":0},
+		{"id":71, "name":"Power Fist",	"pts":0},
+		{"id":72, "name":"Spirit Sword",	"pts":0},
+		{"id":73, "name":"Fusion Lance",	"pts":0},
+		{"id":74, "name":"Tremor Cannon",	"pts":25},
+		{"id":75, "name":"D-Cannon",	"pts":25},
+		
+		{"id":76, "name":"Wraith Seer",	"pts":75},
+		{"id":77, "name":"Bonesinger",	"pts":50},
+		{"id":78, "name":"Spiritsinger",	"pts":100},
+		{"id":79, "name":"Spirit Stones",	"pts":50},
+		{"id":80, "name":"Wraithgate",	"pts":100},
+
+		{"id":81, "name":"Revenant Titan", "pts":325},
+
+		{"id":90, "name":"5 Heavy Weapon units", "pts":0},
+		{"id":91, "name":"5 Support Weapon units", "pts":100},
+		
+		{"id":95, "name":"Fire Gale", "pts":0},
+		{"id":96, "name":"Towering Destroyer", "pts":0},
+		{"id":97, "name":"Bright Stallion", "pts":25}
+	],
+	"formationConstraints":[
+		{"max":1, "from":[510]},
+		{"max":1, "name":"Allies", "from":[520,521,522,523,524,525,526,527,528,530], "forEach":[510,511,512,513], "name2":"Warhost"},
+		{"max":1, "from":[500]},
+		{"max":1, "from":[510]},
+		{"max":1, "name":"Spacecraft", "from":[527,528]}		
+	],
+	"upgradeConstraints":[
+		{"min":2, "max":2, "from":[70,71,72,73,74,75], "appliesTo":[510,511,512]},
+		{"max":1, "perArmy":true, "from":[76]},
+		{"max":1, "from":[77]},
+		{"max":1, "from":[78]},
+		{"max":1, "from":[79]},
+		{"min":1, "max":2, "from":[81], "appliesTo":[513]},
+		
+		{"min":1, "max":1, "from":[90,91], "appliesTo":[520]},
+		{"min":6, "max":8, "from":[11], "appliesTo":[522]},
+		{"min":6, "max":6, "from":[27,28], "appliesTo":[523]},
+		{"min":3, "max":3, "from":[95,96,97], "appliesTo":[530]}		
+	]
+}
