@@ -9,7 +9,7 @@
 		]},
 		{"name":"WARHOSTS", "formations":[
 			{"id":510, "name":"Crone World Raiders",		 			"pts":200, "units":"Farseer",	"upgrades":[40, 69, 30, 41, 39]},
-			{"id":511, "name":"Daughters of the Crone Warhost",		 			"pts":150,	"units":"8 howling Banshees",	"upgrades":[30,41,39,40]}
+			{"id":511, "name":"Daughters of the Crone Warhost",		 			"pts":250,	"units":"8 howling Banshees",	"upgrades":[30,41,39,40]}
 		]},	
 		{"name":"TROUPES", "formations":[
 			{"id":520, "name":"Deathwalker Troupe", 			"pts":175, "units":"Farseer, 3 Guardian units, 4 wraithguards",	"upgrades":[40, 65, 59]},
