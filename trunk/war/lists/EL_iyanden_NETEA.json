@@ -10,7 +10,7 @@
 		]},
 		{"name":"WARHOSTS", "formations":[
 			{"id":510, "name":"Guardian Warhost",		 			"pts":150,	"upgrades":[55,57,58,59]},
-			{"id":511, "name":"Guardian Warhost (mounted)",		 			"pts":150,	"units":"Farseer, 4 Wave Serpents",	"upgrades":[]},
+			{"id":511, "name":"Guardian Warhost (mounted)",		 			"pts":350,	"units":"Farseer, 4 Wave Serpents",	"upgrades":[]},
 			{"id":512, "name":"Spirit Warrior Warhost", 			"pts":350,	"units":"6 Wraithguards","upgrades":[59,65]}
 		]},	
 		{"name":"TROUPES", "formations":[

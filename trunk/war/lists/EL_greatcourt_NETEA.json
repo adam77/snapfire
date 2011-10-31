@@ -57,7 +57,7 @@
 		{"id":40, "name":"Autarch", 	"pts":75},
 		{"id":41, "name":"Wave Serpent",	"pts":50},
 		{"id":66, "name":"Wave Serpent",	"pts":0},
-		{"id":42, "name":"Falcon",			"pts":65},
+		{"id":42, "name":"Falcon",			"pts":50},
 		{"id":45, "name":"Wraithguards", "pts": 0},
 		{"id":46, "name":"3 Wraithguards", "pts": 150},
 

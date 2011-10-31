@@ -56,7 +56,7 @@
 		{"id":39, "name":"Exarch", 	"pts":25},
 		{"id":40, "name":"Autarch", 	"pts":75},
 		{"id":41, "name":"Wave Serpent",	"pts":50},
-		{"id":42, "name":"Falcon",			"pts":65},
+		{"id":42, "name":"Falcon",			"pts":50},
 		{"id":43, "name":"3 Support Weapon Platforms","pts":50},
 		{"id":45, "name":"2 Wraithguards", "pts": 100},
 		{"id":46, "name":"3 Wraithguards", "pts": 150},

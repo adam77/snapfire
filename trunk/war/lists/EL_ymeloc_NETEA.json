@@ -10,7 +10,7 @@
 			{"id":502, "name":"Avatar",		"pts":0,		"upgrades":[]}
 		]},
 		{"name":"WARHOSTS", "formations":[
-			{"id":510, "name":"Engines of Vaul Warhost",			"pts":450, "upgrades":[]},
+			{"id":510, "name":"Engines of Vaul Warhost",			"pts":450, "upgrades":[34,35,36,67,68]},
 			{"id":511, "name":"Swords of Vaul Warhost",	"units":"Farseer",		"pts":0, "upgrades":[67,68]}
 		]},	
 		{"name":"TROUPES", "formations":[
@@ -89,7 +89,7 @@
 		{"max":2, "from":[31]},
 		{"max":1, "name":"Wraithguard", "from":[45,46]},
 		{"max":1, "perArmy":true, "from":[40]},
-		{"min":2, "max":2, "from":[34,35,36], "appliesTo":[510]},
+		{"min":2, "max":3, "from":[34,35,36], "appliesTo":[510]},
 		{"min":7, "max":7, "from":[30,31,32], "appliesTo":[511]},
 		{"max":2, "from":[31], "appliesTo":[511]},
 		{"max":3, "from":[32], "appliesTo":[511]},

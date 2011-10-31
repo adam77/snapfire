@@ -65,7 +65,7 @@
 		{"id":51, "name":"Storm Serpent",	"pts":250},
 		{"id":52, "name":"Exarch", "pts":25},
 		{"id":53, "name":"Wave Serpent",	"pts":50},
-		{"id":54, "name":"Falcon",	"pts":65},
+		{"id":54, "name":"Falcon",	"pts":50},
 		{"id":55, "name":"3 Support Weapon Platforms", "pts":50},
 		{"id":57, "name":"2 Wraithguard", "pts": 100},
 		{"id":58, "name":"3 Wraithguard", "pts": 150},
