@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assaultulator</title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.7.0.0/prototype.js"></script>
+        <script type="text/javascript" src="./probs.js"></script>
+        <script type="text/javascript" src="./assaultulator.js"></script>             
+        <style>
+            body {
+                font-family: monospace;
+                text-align: center;
+                padding:3em;
+            }
+            table {
+                margin-top:2em;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            #calc {
+                margin:2em;
+            }
+        </style>
+        
+    </head>
+    <body>                
+        <form>
+        <p>Welcome to the Assaultulator!</p>
+        <p><i>This way madness lies...</i></p>
+        <table>
+            <tr><th></th><th>Size</th><th>ToHit</th><th>Attacks</th><th>Save</th><th>BMs</th><th>TSKNF</th><!--<th>!&nbsp;FS&nbsp;</th><th>!Broken</th>--></tr>
+            <tr><td>Attacking Formation</td><td><input id="sizeA" size="3" type="text" value="4"/></td><td><input type="text" size="3" value="3" id="toHitA"/></td><td><input id="diceA" type="text" size="3" value="1"/></td><td><input id="saveA" type="text" size="3" value="4"/></td><td><input id="BMsA" type="text" size="3" value="0"/></td><td><input id="TSKNFA" type="checkbox" checked="checked"/></td><!--<td><input id="firstStrikeA" type="checkbox" /></td>--></tr>
+            <tr><td>Defending Formation</td><td><input id="sizeD" size="3" type="text" value="8"/></td><td><input type="text" size="3" value="4" id="toHitD"/></td><td><input id="diceD" type="text" size="3" value="1"/></td><td><input id="saveD" type="text" size="3" value="5"/></td><td><input id="BMsD" type="text" size="3" value="0"/></td><td><input id="TSKNFD" type="checkbox" /></td><!--<td><input id="firstStrikeD" type="checkbox" /></td>--></tr>            
+        </table>
+        </form>
+        <button id="calc" onclick="javascript:doAssault();">Assaultulate!</button>     
+        <p id="result">
+            ...
+        </p>      
+    </body>
+</html>
