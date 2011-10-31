@@ -192,6 +192,7 @@ function enumerateKillsBinomial(A, D, pUnsavedHitByA) {
 
 
 function doAssault() {
+    $('result').update('...');
     var unitA = new Unit(
         parseInt($F('sizeA')),
         parseInt($F('toHitA')),

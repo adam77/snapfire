@@ -87,7 +87,7 @@ function dp3(decimal) {
 function dp3All(decimals) {
     var out = '';
     for (var i=0;i<decimals.length;i++) {
-        out += (i==0?'':', ') + dp3(decimals[i]);
+        out += (i==0?'':' ') + dp3(decimals[i]);
     }
     return out;
 }
