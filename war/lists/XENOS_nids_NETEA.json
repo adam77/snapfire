@@ -1,485 +1,90 @@
 {
-   "id": "Phase IV 'Subdual' Tyranids",
-   "version": "NetEA v9.2.1 *UNDER DEVELOPMENT*",
-   "by": "Iron Bloke",
-   "sections": [
-      {
-         "name": "SYNAPSE GROUPS",
-         "formations": [
-            {
-               "id": 531,
-               "name": "Assault Group",
-               "pts": -25,
-               "upgrades": [
-                  17,
-                  18,
-                  53
-               ]
-            },
-            {
-               "id": 532,
-               "name": "Attack Group",
-               "pts": 0,
-               "upgrades": [
-                  18,
-                  53
-               ]
-            },
-            {
-               "id": 533,
-               "name": "Hive Group",
-               "pts": 475,
-               "units": "Dominatrix Bio-Titan",
-               "upgrades": [
-                  53
-               ]
-            },
-            {
-               "id": 534,
-               "name": "Infestation Group",
-               "pts": 125,
-               "units": "Synapse Node",
-               "upgrades": [
-                  53
-               ]
-            },
-            {
-               "id": 535,
-               "name": "Strike Group",
-               "pts": 300,
-               "units": "Vituperator Bio-Titan",
-               "upgrades": [
-                  53
-               ]
-            }
-         ]
-      },
-      {
-         "name": "COMMON BROOD GROUPS",
-         "formations": [
-            {
-               "id": 541,
-               "name": "Gargoyle Flock",
-               "pts": 100,
-               "units": "4 Gargoyles",
-               "upgrades": []
-            },
-            {
-               "id": 542,
-               "name": "Gaunt Cluster",
-               "pts": 75,
-               "upgrades": []
-            },
-            {
-               "id": 543,
-               "name": "Ravener Cluster",
-               "pts": 125,
-               "units": "4 Raveners",
-               "upgrades": []
-            }
-         ]
-      },
-      {
-         "name": "UNCOMMON BROOD GROUPS",
-         "formations": [
-            {
-               "id": 551,
-               "name": "Assault Spawn Cluster",
-               "pts": 175,
-               "upgrades": []
-            },
-            {
-               "id": 552,
-               "name": "Bio Artillery Cluster",
-               "pts": 150,
-               "upgrades": []
-            },
-            {
-               "id": 553,
-               "name": "Carnifex Cluster",
-               "pts": 125,
-               "units": "3 Carnifex",
-               "upgrades": []
-            },
-            {
-               "id": 554,
-               "name": "Hierodule Cluster",
-               "pts": 125,
-               "units": "Hierodule",
-               "upgrades": []
-            },
-            {
-               "id": 555,
-               "name": "Trygon Cluster",
-               "pts": 100,
-               "units": "Trygon",
-               "upgrades": []
-            }
-         ]
-      },
-      {
-         "name": "INDEPENDENT SWARMS",
-         "formations": [
-            {
-               "id": 501,
-               "name": "Aerial Spore Mine Swarm",
-               "pts": 0,
-               "upgrades": [
-                  11
-               ]
-            },
-            {
-               "id": 502,
-               "name": "Bio-Titan Swarm",
-               "pts": 0,
-               "upgrades": []
-            },
-            {
-               "id": 504,
-               "name": "Genestealer Swarm",
-               "pts": 0,
-               "upgrades": [
-                  12,
-                  50
-               ]
-            },
-            {
-               "id": 505,
-               "name": "Harassment Swarm",
-               "pts": 175,
-               "units": "Harridan",
-               "upgrades": [
-                  51
-               ]
-            },
-            {
-               "id": 506,
-               "name": "Lictor Swarm",
-               "pts": 0,
-               "upgrades": [
-                  14
-               ]
-            },
-            {
-               "id": 507,
-               "name": "Subterranean Swarm",
-               "pts": -10,
-               "upgrades": [
-                  15,
-                  52
-               ]
-            }
-         ]
-      }
-   ],
-   "upgrades": [
-      {
-         "id": 17,
-         "name": "Tyranid Warriors",
-         "pts": 50
-      },
-      {
-         "id": 18,
-         "name": "Hive Tyrant",
-         "pts": 100
-      },
-      {
-         "id": 53,
-         "name": "Zoanthropes",
-         "pts": 35
-      },
-      {
-         "id": 21,
-         "name": "Hormagaunts",
-         "pts": 0
-      },
-      {
-         "id": 22,
-         "name": "Termagaunts",
-         "pts": 0
-      },
-      {
-         "id": 24,
-         "name": "Haruspex",
-         "pts": 0
-      },
-      {
-         "id": 25,
-         "name": "Malefactor",
-         "pts": 0
-      },
-      {
-         "id": 27,
-         "name": "4 Biovores",
-         "pts": 0
-      },
-      {
-         "id": 28,
-         "name": "2 Dactylis",
-         "pts": 0
-      },
-      {
-         "id": 29,
-         "name": "2 Exocrine",
-         "pts": 0
-      },
-      {
-         "id": 11,
-         "name": "Meiotic Spore Sacks",
-         "pts": 25
-      },
-      {
-         "id": 31,
-         "name": "Hierophant",
-         "pts": 275
-      },
-      {
-         "id": 32,
-         "name": "Hydraphant",
-         "pts": 400
-      },
-      {
-         "id": 12,
-         "name": "Genestealers",
-         "pts": 25
-      },
-      {
-         "id": 50,
-         "name": "Broodlord",
-         "pts": 50
-      },
-      {
-         "id": 51,
-         "name": "Gargoyles",
-         "pts": 25
-      },
-      {
-         "id": 14,
-         "name": "Lictors",
-         "pts": 50
-      },
-      {
-         "id": 15,
-         "name": "Raveners",
-         "pts": 35
-      },
-      {
-         "id": 52,
-         "name": "Trygon",
-         "pts": 100
-      }
-   ],
-   "formationConstraints": [
-      {
-         "max": 1,
-         "name": "Hive Group",
-         "from": [
-            533
-         ]
-      },
-      {
-         "max": 2,
-         "name": "Lictors",
-         "from": [
-            506
-         ]
-      },
-      {
-         "maxPercent": 33,
-         "name": "Independent Swarms",
-         "from": [
-            501,
-            502,
-            504,
-            505,
-            506,
-            507
-         ]
-      },
-      {
-         "maxPercent": 33,
-         "name": "Synapse Groups",
-         "from": [
-            531,
-            532,
-            533,
-            534,
-            535
-         ]
-      },
-      {
-         "max": 0.5,
-         "name": "Uncommon Brood Group",
-         "from": [
-            551,
-            552,
-            553,
-            554,
-            555
-         ],
-         "forEach": [
-            541,
-            542,
-            543
-         ],
-         "name2": "Common Brood Groups"
-      }
-   ],
-   "upgradeConstraints": [
-      {
-         "max": 1,
-         "from": [
-            18
-         ],
-         "appliesTo": [
-            531
-         ]
-      },
-      {
-         "max": 6,
-         "min": 3,
-         "from": [
-            17,
-            18
-         ],
-         "appliesTo": [
-            531
-         ]
-      },
-      {
-         "max": 3,
-         "from": [
-            53
-         ],
-         "appliesTo": [
-            531,
-            532,
-            533,
-            534,
-            535
-         ]
-      },
-      {
-         "max": 2,
-         "min": 1,
-         "from": [
-            18
-         ],
-         "appliesTo": [
-            532
-         ]
-      },
-      {
-         "max": 4,
-         "min": 4,
-         "from": [
-            21,
-            22
-         ],
-         "appliesTo": [
-            542
-         ]
-      },
-      {
-         "max": 3,
-         "min": 3,
-         "from": [
-            24,
-            25
-         ],
-         "appliesTo": [
-            551
-         ]
-      },
-      {
-         "max": 1,
-         "min": 1,
-         "from": [
-            27,
-            28,
-            29
-         ],
-         "appliesTo": [
-            552
-         ]
-      },
-      {
-         "max": 9,
-         "min": 6,
-         "from": [
-            11
-         ],
-         "appliesTo": [
-            501
-         ]
-      },
-      {
-         "max": 1,
-         "min": 1,
-         "from": [
-            31,
-            32
-         ],
-         "appliesTo": [
-            502
-         ]
-      },
-      {
-         "max": 9,
-         "min": 6,
-         "from": [
-            12
-         ],
-         "appliesTo": [
-            504
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            50
-         ],
-         "appliesTo": [
-            504
-         ]
-      },
-      {
-         "max": 9,
-         "from": [
-            51
-         ],
-         "appliesTo": [
-            505
-         ]
-      },
-      {
-         "max": 6,
-         "min": 3,
-         "from": [
-            14
-         ],
-         "appliesTo": [
-            506
-         ]
-      },
-      {
-         "max": 9,
-         "min": 6,
-         "from": [
-            15
-         ],
-         "appliesTo": [
-            507
-         ]
-      },
-      {
-         "max": 2,
-         "from": [
-            52
-         ],
-         "appliesTo": [
-            507
-         ]
-      }
-   ]
+  "id":"Hive Fleet Onachus Tyranids",
+  "version":"NetEA v10",
+  "by":"Dave",
+  "notes":["A Warlord must be selected. If the army has a Great Gargant, then the Warlord must be assigned to it, otherwise, assign to a Nobz or Gargant unit."],
+  "sections":[
+    {"name":"Synapse Swarm Formations", "formations":[
+      {"id":100, "name":"Nexus Swarm", "pts":350, "units":"1 Dominatrix", "upgrades":[10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]},
+      {"id":200, "name":"Tyranid Swarm (S)", "pts":200, "units":"2 Tyranid Warriors, 6 Termagants", "upgrades":[10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]},
+      {"id":201, "name":"Tyranid Swarm (M)", "pts":375, "units":"4 Tyranid Warriors, 12 Termagants", "upgrades":[10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]},
+      {"id":202, "name":"Tyranid Swarm (L)", "pts":550, "units":"6 Tyranid Warriors, 18 Termagants", "upgrades":[10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]}
+    ]},
+
+    {"name":"Independent Swarm Formations", "formations":[
+      {"id":300, "name":"Biovore Swarm (S)", "pts":150, "units":"5 Biovores", "upgrades":[24]},
+      {"id":301, "name":"Biovore Swarm (M)", "pts":275, "units":"10 Biovores", "upgrades":[24]},
+      {"id":302, "name":"Biovore Swarm (L)", "pts":400, "units":"15 Biovores", "upgrades":[24]},
+      {"id":400, "name":"Dactylis Swarm (S)", "pts":300, "units":"3 Dactylis", "upgrades":[25]},
+      {"id":401, "name":"Dactylis Swarm (M)", "pts":575, "units":"6 Dactylis", "upgrades":[25]},
+      {"id":402, "name":"Dactylis Swarm (L)", "pts":850, "units":"9 Dactylis", "upgrades":[25]},
+      {"id":500, "name":"Exocrine Swarm (S)", "pts":175, "units":"3 Exocrine", "upgrades":[26]},
+      {"id":501, "name":"Exocrine Swarm (M)", "pts":325, "units":"6 Exocrine", "upgrades":[26]},
+      {"id":502, "name":"Exocrine Swarm (L)", "pts":475, "units":"9 Exocrine", "upgrades":[26]},
+      {"id":600, "name":"Genestealer Swarm", "pts":150, "units":"6 Genestealers", "upgrades":[27]},
+      {"id":700, "name":"Harridan Swarm (S)", "pts":150, "units":"1 Harridan", "upgrades":[13]},
+      {"id":701, "name":"Harridan Swarm (M)", "pts":275, "units":"2 Harridans", "upgrades":[13]},
+      {"id":702, "name":"Harridan Swarm (L)", "pts":400, "units":"3 Harridans", "upgrades":[13]},
+      {"id":800, "name":"Hierodule Bio-Titan", "pts":350, "units":"1 Hierodule Bio-Titan (745.M41)"},
+      {"id":900, "name":"Hierophant Bio-Titan", "pts":525, "units":"1 Hierophant Bio-Titan (745.M41)"},
+      {"id":1000, "name":"Lictor Swarm", "pts":150, "units":"3 Lictors", "upgrades":[29]},
+      {"id":1100, "name":"Meiotic Spores (S)", "pts":150, "units":"6 Meiotic Spores", "upgrades":[22]},
+      {"id":1101, "name":"Meiotic Spores (M)", "pts":275, "units":"12 Meiotic Spores", "upgrades":[22]},
+      {"id":1102, "name":"Meiotic Spores (L)", "pts":400, "units":"18 Meiotic Spores", "upgrades":[22]},
+      {"id":1200, "name":"Trygon Swarm (S)", "pts":350, "units":"3 Trygons", "upgrades":[30]},
+      {"id":1201, "name":"Trygon Swarm (M)", "pts":350, "units":"6 Trygons", "upgrades":[30]},
+      {"id":1202, "name":"Trygon Swarm (L)", "pts":350, "units":"9 Trygons", "upgrades":[30]}
+    ]}
+  ],
+  "upgrades":[
+    {"id":1, "name":"Hive Tyrant"},
+    {"id":2, "name":"2 Tyranid Warriors"},
+
+    {"id":10, "name":"Termagants", "pts":20},
+    {"id":11, "name":"Hormagants", "pts":20},
+    {"id":12, "name":"Biovore", "pts":25},
+    {"id":13, "name":"Gargoyles", "pts":25},
+    {"id":14, "name":"Zoanthrope (745.M41)", "pts":25},
+    {"id":15, "name":"Raveners", "pts":35},
+    {"id":16, "name":"Carnifex", "pts":50},
+    {"id":17, "name":"Haruspex", "pts":50},
+    {"id":18, "name":"Malefactor", "pts":50},
+    {"id":19, "name":"Dactylis", "pts":60},
+    {"id":20, "name":"Exocrine", "pts":60},
+    {"id":21, "name":"Trygon", "pts":60},
+    {"id":22, "name":"Meiotic Spore", "pts":25},
+    {"id":23, "name":"Tyranid Warriors", "pts":50},
+
+    {"id":24, "name":"Biovore", "pts":30},
+    {"id":25, "name":"Dactylis", "pts":100},
+    {"id":26, "name":"Exocrine", "pts":60},
+    {"id":27, "name":"Genestealers", "pts":25},
+    {"id":28, "name":"Brood Lord", "pts":50},
+    {"id":29, "name":"Lictor", "pts":50},
+    {"id":30, "name":"Trygon", "pts":75}
+  ],
+  "formationConstraints":[
+    {"max":1, "name":"Dominatrix", "from":[100]},
+    {"max":2, "name":"Lictor Swarms", "from":[1000]},
+    {"maxPercent":33, "name":"Bio-Titans and the Dominatrix", "from":[100, 800, 900]}
+  ],
+  "upgradeConstraints":[
+    {"max":3, "from":[22], "appliesTo":[100]},
+  
+    {"max":1, "from":[1, 2], "appliesTo":[200]},
+    {"max":2, "from":[1, 2], "appliesTo":[201]},
+    {"max":3, "from":[1, 2], "appliesTo":[202]},
+    {"max":1, "from":[23], "appliesTo":[200]},
+    {"max":2, "from":[23], "appliesTo":[201]},
+    {"max":3, "from":[23], "appliesTo":[202]},
+    {"min":6, "from":[10, 11], "appliesTo":[200]},
+    {"min":12, "from":[10, 11], "appliesTo":[201]},
+    {"min":18, "from":[10, 11], "appliesTo":[202]},
+    {"max":6, "from":[22], "appliesTo":[200]},
+    {"max":12, "from":[22], "appliesTo":[201]},
+    {"max":18, "from":[22], "appliesTo":[202]},
+    
+    {"max":1, "from":[28], "appliesTo":[600]},
+    {"max":3, "from":[29], "appliesTo":[1000]}
+  ]
 }
