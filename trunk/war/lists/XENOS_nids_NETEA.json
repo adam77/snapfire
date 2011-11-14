@@ -1,8 +1,8 @@
 {
   "id":"Hive Fleet Onachus Tyranids",
-  "version":"NetEA v10",
+  "version":"NetEA v10 *UNDER DEVELOPMENT*",
   "by":"Dave",
-  "notes":["A Warlord must be selected. If the army has a Great Gargant, then the Warlord must be assigned to it, otherwise, assign to a Nobz or Gargant unit."],
+  "notes":[],
   "sections":[
     {"name":"Synapse Swarm Formations", "formations":[
       {"id":100, "name":"Nexus Swarm", "pts":350, "units":"1 Dominatrix", "upgrades":[10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]},
@@ -27,7 +27,7 @@
       {"id":702, "name":"Harridan Swarm (L)", "pts":400, "units":"3 Harridans", "upgrades":[13]},
       {"id":800, "name":"Hierodule Bio-Titan", "pts":350, "units":"1 Hierodule Bio-Titan (745.M41)"},
       {"id":900, "name":"Hierophant Bio-Titan", "pts":525, "units":"1 Hierophant Bio-Titan (745.M41)"},
-      {"id":1000, "name":"Lictor Swarm", "pts":150, "units":"3 Lictors", "upgrades":[29]},
+      {"id":1000, "name":"Lictor Swarm", "pts":0, "upgrades":[29]},
       {"id":1100, "name":"Meiotic Spores (S)", "pts":150, "units":"6 Meiotic Spores", "upgrades":[22]},
       {"id":1101, "name":"Meiotic Spores (M)", "pts":275, "units":"12 Meiotic Spores", "upgrades":[22]},
       {"id":1102, "name":"Meiotic Spores (L)", "pts":400, "units":"18 Meiotic Spores", "upgrades":[22]},
@@ -39,7 +39,6 @@
   "upgrades":[
     {"id":1, "name":"Hive Tyrant"},
     {"id":2, "name":"2 Tyranid Warriors"},
-
     {"id":10, "name":"Termagants", "pts":20},
     {"id":11, "name":"Hormagants", "pts":20},
     {"id":12, "name":"Biovore", "pts":25},
@@ -54,7 +53,6 @@
     {"id":21, "name":"Trygon", "pts":60},
     {"id":22, "name":"Meiotic Spore", "pts":25},
     {"id":23, "name":"Tyranid Warriors", "pts":50},
-
     {"id":24, "name":"Biovore", "pts":30},
     {"id":25, "name":"Dactylis", "pts":100},
     {"id":26, "name":"Exocrine", "pts":60},
@@ -82,9 +80,8 @@
     {"min":18, "from":[10, 11], "appliesTo":[202]},
     {"max":6, "from":[22], "appliesTo":[200]},
     {"max":12, "from":[22], "appliesTo":[201]},
-    {"max":18, "from":[22], "appliesTo":[202]},
-    
+    {"max":18, "from":[22], "appliesTo":[202]},    
     {"max":1, "from":[28], "appliesTo":[600]},
-    {"max":3, "from":[29], "appliesTo":[1000]}
+    {"min":3, "max":6, "from":[29], "appliesTo":[1000]}
   ]
 }
