@@ -1,5 +1,5 @@
 // todo
-// Max engaged. Support fire. FS.
+// Max engaged. Support fire. FS/MW (per weapon if +1 Attacks). Defender cover save. RA.
 
 var rollOff = {
     offset:5,
