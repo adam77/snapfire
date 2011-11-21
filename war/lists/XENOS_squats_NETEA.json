@@ -1,6 +1,6 @@
 {
 	"id":"Thurgrim's Stronghold Squats",
-	"version":"Thurgrims Stronghold 4.0",
+	"version":"Thurgrims Stronghold 4.0 *UNDER DEVELOPMENT*",
 	"notes":[
 		"If transport Upgrade is chosen, then you must take exactly enough transports of only one kind to transport all units in the formation. The transport upgrade counts towards the 3 upgrades limit per formation.",
 		"Only one formation in the army may be transported in Spartans." 
@@ -22,7 +22,7 @@
 			{"id":508, "name":"Thunderfire Battery",				"pts":0, "upgrades":[]},
 			{"id":509, "name":"Trikes Guild",					"pts":250, "upgrades":[23,24], "units":"1 Guild Master, 5 Guild Trikes"}
 		]},
-		{"name":"WAR ENGINE FORMATIONS", "formations":[
+                {"name":"WAR ENGINES", "formations":[
 			{"id":522, "name":"Colossus",	"pts":450, "upgrades":[11]},
 			{"id":523, "name":"Cyclops",	"pts":500, "upgrades":[11]},
 			{"id":524, "name":"Goliath Mega-Cannon Battery",			"pts":150, "upgrades":[29]},
