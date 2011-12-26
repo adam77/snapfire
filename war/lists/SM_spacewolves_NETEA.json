@@ -1,0 +1,113 @@
+{
+	"id":"Codex Astartes",
+	"version":"Space Wolves 2.4",
+	"notes":[
+		"A minimum of one Great Company must be taken",
+		"The Wold Lord upgrade adds the Supreme Commander ability to a Battle Leader or Venerable Dreadnought, and can therefore only be taken by a formation including one such character/unit",
+		"The Razorbacks upgrade allows you to replace any number of rhinos with 1-2 Razorbacks, each Razorback costs 25 points. You must therefore take the rhino upgrade in order to take the Razorback upgrade."
+		],
+	"by":"Borka",
+	"sections":[
+		{"name":"Great Company", "formations":[
+			{"id":501, "name":"Great Company", 		"pts":300, "units":"6 Grey Hunters", "upgrades":[11,12,10,13,14,15,16,17,30,21,22,36,35,37,38]}
+		]},
+		{"name":"HUNTING PACKS", "formations":[
+			{"id":511, "name":"Wolf Guard Terminators",	"pts":325, "upgrades":[27,28,29,30,21,22], "units":"4 Wolf Guard Terminators"},
+			{"id":512, "name":"Wolf Scouts Pack",		"pts":225, "upgrades":[27,28,29,30,34], "units":"4 Wolf Scouts"},
+			{"id":513, "name":"Long Fangs Pack",		"pts":300, "upgrades":[11,12,10,27,28,29,30,21,22,38], "units":"4 Long Fangs"},
+			{"id":514, "name":"Blod Claws Pack",		"pts":200, "upgrades":[11,12,27,28,29,30,14,37], "units":"6 Blood Claws"},
+			{"id":515, "name":"Skyclaws Assault Pack",		"pts":225, "upgrades":[27,28,29,30,31], "units":"6 Sky Claws"},
+			{"id":516, "name":"Swiftclaw Bikes Pack",		"pts":200, "upgrades":[27,28,29,30]},
+			{"id":517, "name":"Fenrisian Wolfs",		"pts":150, "upgrades":[27,28,29,30], "units":"6 Fenrisian Wolves"}
+		]},
+		{"name":"SUPPORT PACKS", "formations":[
+			{"id":521, "name":"Land Speeders",	"pts":200, "upgrades":[27,28,29,30]},
+			{"id":522, "name":"Land Raiders",		"pts":25, "upgrades":[27,28,29,30,38]},
+			{"id":523, "name":"Predators",		"pts":250, "upgrades":[27,28,29,30,38]},
+			{"id":524, "name":"Vindicators",		"pts":225, "upgrades":[27,28,29,30,38], "units":"4 Vindicators"},
+			{"id":525, "name":"Whirlwinds",		"pts":300, "upgrades":[27,28,29,30,38], "units":"4 Whirlwinds"},
+			{"id":526, "name":"Strike Cruiser",		"pts":200, "upgrades":[]},
+			{"id":527, "name":"Thunderhawk",		"pts":225, "upgrades":[], "units":"Space Wolves Thunderhawk Gunship"},
+			{"id":528, "name":"Landing Craft",		"pts":375, "upgrades":[], "units":"Space Wolves Landing Craft"}
+		]},
+		{"name":"IMPERIAL NAVY", "formations":[
+			{"id":549, "name":"Fighter Bombers",	"pts":175, "upgrades":[], "units":"2 Thunderbolts"},
+			{"id":550, "name":"Bombers",		"pts":250, "upgrades":[], "units":"2 Mauraders"}
+		]},
+		{"name":"TITAN LEGIONS", "formations":[
+			{"id":552, "name":"Warlord Class Titan",	"pts":850, "upgrades":[]},
+			{"id":553, "name":"Reaver Class Titan",	"pts":650, "upgrades":[]}
+		]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Rhinos", "pts":0},
+		{"id":12, "name":"Drop Pods", "pts":0},
+		{"id":10, "name":"Razorbacks", "pts":25},
+		
+		{"id":13, "name":"2 Grey hunters", "pts":75},
+		{"id":14, "name":"2 Blood Claws", "pts":50},
+		{"id":15, "name":"2 Long Fangs", "pts":125},
+		{"id":16, "name":"Wolf Guard Terminators", "pts":75},
+		{"id":17, "name":"2 Wolf Guard Terminators", "pts":150},
+		
+		{"id":18, "name":"Land Speeder", "pts":0},
+		{"id":19, "name":"Land Speeder Typhoon", "pts":25},
+		{"id":20, "name":"Land Speeder Tornado", "pts":0},
+		
+		{"id":21, "name":"Land Raider",	"pts":75},
+		{"id":22, "name":"Land Raider Crusader", "pts":75},
+		
+		{"id":23, "name":"Predator Annihilator", "pts":0},
+		{"id":24, "name":"Predator Destructor", "pts":0},
+		
+		{"id":25, "name":"Space Wolves Strike Cruiser", "pts":0},
+		{"id":26, "name":"Space Wolves Battle Barge", "pts":150},
+		
+		{"id":27, "name":"Battle Leader", "pts":50},
+		{"id":28, "name":"Rune Priest", "pts":50},
+		{"id":29, "name":"Wolf Priest", "pts":50},
+		{"id":30, "name":"Wolf Lord", "pts":50},
+		
+		{"id":31, "name":"2 Skyclaws", "pts":75},
+		
+		{"id":32, "name":"Swiftclaw Bikes", "pts":0},
+		{"id":33, "name":"Swiftclaw Attack Bikes", "pts":0},
+		
+		{"id":34, "name":"Sniper (add sniper ability to 1 unit in the formation)", "pts":25},
+		{"id":35, "name":"Venerable Dreadnought", "pts":75},
+		{"id":36, "name":"Dreadnought", "pts":50},
+		{"id":37, "name":"Vindicator", "pts":50},
+		{"id":38, "name":"Hunter", "pts":75}
+	],
+	"formationConstraints":[
+		{"max":1, "name":"Spacecraft", "from":[526]},
+		{"max":1, "name":"Hunting Pack", "from":[511,512,513,514,515,516,517], "forEach":[501], "name2":"Great Company"},
+		{"min":1, "name":"Great Company", "from":[501]},
+		{"maxPercent":33, "name":"Navy & Titans", "from":[549,550,552,553]}
+	],
+	"upgradeConstraints":[
+		{"max":1, "name":"Transport", "from":[11,12]},
+		{"min":0, "max":2, "from":[13,14,15,16,17], "appliesTo":[501]},
+		{"min":0, "max":1, "from":[16,17], "appliesTo":[501]},
+		{"min":5, "max":5, "from":[18,19,20], "appliesTo":[521]},
+		{"min":4, "max":4, "from":[21,22], "appliesTo":[522]},
+		{"min":0, "max":4, "from":[21,22], "appliesTo":[501,511,513]},
+		{"min":4, "max":4, "from":[23,24], "appliesTo":[523]},
+		{"min":1, "max":1, "from":[25,26], "appliesTo":[526]},
+		{"max":1, "name":"Cmdr", "from":[27,28,29]}, 
+		{"min":1, "max":1, "from":[27,28,29], "appliesTo":[501]},
+		{"max":1, "name":"Wolf Lord", "perArmy":true, "from":[30]},
+		{"max":1, "name":"Venerable Dreadnought", "perArmy":true, "from":[35]},
+		{"min":6, "max":6, "from":[32,33], "appliesTo":[516]},
+		{"min":0, "max":2, "from":[34]},
+		{"max":1, "from":[38]},
+		{"max":1, "from":[13]},
+		{"max":1, "from":[14]},
+		{"max":1, "from":[15]},
+		{"max":1, "from":[16]},
+		{"max":1, "from":[17]},
+		{"max":1, "from":[31]},
+		{"max":2, "from":[36]},
+		{"max":2, "from":[37]}
+	]
+}
