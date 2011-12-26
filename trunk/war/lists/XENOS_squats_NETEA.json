@@ -1,11 +1,11 @@
 {
 	"id":"Thurgrim's Stronghold Squats",
-	"version":"Thurgrims Stronghold 4.0 *UNDER DEVELOPMENT*",
+	"version":"Thurgrims Stronghold 4.0",
 	"notes":[
-		"If transport Upgrade is chosen, then you must take exactly enough transports of only one kind to transport all units in the formation. The transport upgrade counts towards the 3 upgrades limit per formation.",
+		"If transport Upgrade is chosen, then you must take exactly enough transports of only one kind to transport all units in the formation. Only one formation in the army may be transported in Spartans. The transport upgrade counts towards the 3 upgrades limit per formation.",
 		"Only one formation in the army may be transported in Spartans." 
 	],
-	"by":"Borka",
+	"by":"Iron Bloke",
 	"sections":[
 		{"name":"BROTHERHOODS", "formations":[
 			{"id":512, "name":"Berzerker Brotherhood", 				"pts":250, "upgrades":[12,14,15,16,17,18], "units":"1 Lord, 5 Berzerkers"},
@@ -22,20 +22,21 @@
 			{"id":508, "name":"Thunderfire Battery",				"pts":0, "upgrades":[]},
 			{"id":509, "name":"Trikes Guild",					"pts":250, "upgrades":[23,24], "units":"1 Guild Master, 5 Guild Trikes"}
 		]},
-                {"name":"WAR ENGINES", "formations":[
+		{"name":"WAR ENGINE FORMATIONS", "formations":[
 			{"id":522, "name":"Colossus",	"pts":450, "upgrades":[11]},
 			{"id":523, "name":"Cyclops",	"pts":500, "upgrades":[11]},
 			{"id":524, "name":"Goliath Mega-Cannon Battery",			"pts":150, "upgrades":[29]},
 			{"id":525, "name":"Hellbore Battery",		"pts":125, "upgrades":[], "units":"1 Hellbore"},
 			{"id":526, "name":"Land Train",		"pts":0, "upgrades":[11,32,33,34,35]},
 			{"id":527, "name":"Leviathan",		"pts":350, "upgrades":[11]},
-			{"id":528, "name":"Overlord Squadron",			"pts":0, "upgrades":[53]}
+			{"id":528, "name":"Overlord Squadron",			"pts":200, "upgrades":[]}
 		]}
 	],
 	"upgrades":[
 		{"id":11, "name":"Living Ancestor",	"pts":75},
 		{"id":12, "name":"2 Berzerkers",	"pts":75},
-		{"id":14, "name":"Exo-Armour (Upgrades Lord to Exo-Armour Lord)",		"pts":25},
+		{"id":14, "name":"Exo-Armour (Upgrades Lord to Exo-Armour Lord",		"pts":25},
+		
 		{"id":15, "name":"Transport Gorgon",	"pts":40},
 		{"id":16, "name":"Transport Mole",		"pts":20},
 		{"id":17, "name":"Transport Spartan",	"pts":20},
@@ -44,6 +45,7 @@
 		{"id":20, "name":"3 Moles",		"pts":60},
 		{"id":21, "name":"6 Spartans",	"pts":120},
 		{"id":22, "name":"6 Termites",		"pts":60},
+		
 		{"id":23, "name":"2 Guild Bikes",		"pts":50},
 		{"id":24, "name":"2 Guild Trikes",	"pts":50},	
 		{"id":25, "name":"Guns ",	"pts":150},
@@ -52,27 +54,36 @@
 		{"id":29, "name":"Thunderfire",		"pts":50},
 		{"id":30, "name":"Warlord (add a Warlord character to a unit in the formation)",		"pts":50},
 		{"id":31, "name":"2 Warriors",	"pts":75},
+		
 		{"id":32, "name":"Berzerker Battle Car",		"pts":200},
 		{"id":33, "name":"Bomb Battle Car",				"pts":125},
 		{"id":34, "name":"Dragon Battle Car",				"pts":100},
 		{"id":35, "name":"Mortar Battle Car",				"pts":125},
+		
 		{ "id":37, "name":"2 Mole Mortar", "pts":75 },
 		{ "id":38, "name":"2 Rapier", "pts":75 },
 		{ "id":39, "name":"2 Tarantula", "pts":75 },
 		{ "id":40, "name":"2 Thudd Gun", "pts":75 },
+		
 		{ "id":41, "name":"4 Mole Mortar", "pts":200 },
 		{ "id":42, "name":"4 Rapier", "pts":200 },
 		{ "id":43, "name":"4 Tarantula", "pts":200 },
 		{ "id":44, "name":"4 Thudd Gun", "pts":200 },
+		
 		{ "id":45, "name":"2 Thunderfire", "pts":100 },
 		{ "id":46, "name":"3 Thunderfire", "pts":150 },
+		
 		{"id":47, "name":"1 Land Train, 1 Berzerker Battle Car", "pts":350},
 		{"id":48, "name":"1 Land Train, 1 Bomb Battle Car", "pts":350},
 		{"id":49, "name":"1 Land Train, 1 Dragon Battle Car", "pts":350},
 		{"id":50, "name":"1 Land Train, 1 Mortar Battle Car",	"pts":350},
+		
 		{"id":51, "name":"1 Goliath Mega-Cannon", "pts":0},
 		{"id":52, "name":"2 Goliath Mega-Canons", "pts":150},
-		{"id":53, "name":"Overlord Airship",	"pts":200}
+		
+		{"id":53, "name":"1 Overlord",	"pts":0},
+		{"id":54, "name":"2 Overlords", "pts":200},
+		{"id":55, "name":"3 Overlord", "pts":400}
 	],
 	"formationConstraints":[
 		{"max":2, "name":"Support Formations", "from":[500,501,502,505,506,507,508,509,510], "forEach":[512,513,514], "name2":"Brotherhood"},
@@ -95,8 +106,15 @@
 		{"min":1, "max":1, "from":[51,52], "appliesTo":[524]},
 		{"min":1, "max":1, "from":[47,48,49,50], "appliesTo":[526]},
 		{"min":0, "max":7, "from":[32,33,34,35], "appliesTo":[526]},
-		{"min":1, "max":3, "from":[53], "appliesTo":[528]},
-		{"min":0, "max":1, "from":[19,20,21,22], "appliesTo":[502]}
+		{"min":1, "max":1, "from":[53,54,55], "appliesTo":[528]},
+		{"min":0, "max":1, "from":[19,20,21,22], "appliesTo":[502]},
+		{"max":1, "from":[37,38,39,40]},
+		{"max":1, "from":[23]},
+		{"max":1, "from":[24]},
+		{"max":1, "from":[28]},
+		{"max":1, "from":[29]},
+		{"max":1, "from":[30]},
+		{"max":1, "from":[31]}
 		
 	]
 }
