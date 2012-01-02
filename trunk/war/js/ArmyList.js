@@ -47,6 +47,9 @@ var ArmyList = {
 			if (constraint.forEach) {
 				constraint.forEach = constraint.forEach.map( ArmyList.formationForId );
 			}
+			// set some useful properties and defaults
+                        if (!constraint.min && constraint.max) constraint.min = 0;
+			if (constraint.min && !constraint.max) constraint.max = 1000000;
 		});
 
 		// FORMATIONS... add some useful properties/functions...
@@ -141,7 +144,10 @@ var ArmyList = {
 
 		return '';
 	},
-
+        canRemoveFormation:function(formations,constraint) {
+//            alert(constraint.min + ' ' + formations.length + ' ' + formations.countAll(constraint.from));
+            return constraint.min < formations.countAll(constraint.from);
+        },
 	canAddFormation:function(formations,constraint) {
 //		alert(formations.length + '_' + constraint.max  + '_' + constraint.from.length + '_' + constraint.name);
 		if (constraint.max <= formations.countAll(constraint.from)) {
@@ -159,7 +165,16 @@ var ArmyList = {
 		return 'max ' + constraint.max
 				+ (constraint.name ? ' ' + constraint.name : '')
 				+ (constraint.perArmy && !ignorePerArmy ? ' per Army' : '');
-	}
+	},
+        mandatoryFormations:function() {
+            var mandatoryFormations = [];
+            ArmyList.data.formationConstraints.each( function(constraint) {
+                for (var i=0; i<constraint.min; i++) {
+                    mandatoryFormations.push( constraint.from[0] );
+                }
+            });
+            return mandatoryFormations;
+        }
 };
 
 

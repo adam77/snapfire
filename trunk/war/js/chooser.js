@@ -241,10 +241,10 @@ var ArmyforgeUI = {
 			ArmyforgeUI.checkUpgradeMenuItems();
 			ArmyforgeUI.checkFormationMenuItems();
 		}
-		else if (ArmyList.data.fixedFormations) {
-			ArmyList.data.fixedFormations.each(function(x) {
-				ArmyforgeUI.addFormation(x);
-			});
+                else {
+                    ArmyList.mandatoryFormations().each(function(x) {
+                        ArmyforgeUI.addFormation(x);
+                    });
 		}
 		// render notes
 		if (ArmyList.data.notes) {
@@ -261,6 +261,7 @@ var ArmyforgeUI = {
 	},	
 
 	removeFormation:function(formation) {
+            if (Force.canRemove(formation)) {
 		Force.formations.remove( formation );
 		ArmyforgeUI.upgradeRowsFor(formation).each( Element.remove );
 		ArmyforgeUI.formationRowFor(formation).remove();
@@ -268,6 +269,7 @@ var ArmyforgeUI = {
 		ArmyforgeUI.checkUpgradeMenuItems();
 		ArmyforgeUI.checkFormationMenuItems();
 		ArmyforgeUI.checkWarnings();
+            }
 	},
 
 	removeUpgrade:function(upgradeType, formation) {
