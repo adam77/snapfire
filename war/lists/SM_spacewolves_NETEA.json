@@ -14,7 +14,7 @@
 			{"id":511, "name":"Wolf Guard Terminators",	"pts":325, "upgrades":[27,28,29,30,21,22], "units":"4 Wolf Guard Terminators"},
 			{"id":512, "name":"Wolf Scouts Pack",		"pts":225, "upgrades":[27,28,29,30,34], "units":"4 Wolf Scouts"},
 			{"id":513, "name":"Long Fangs Pack",		"pts":300, "upgrades":[11,12,10,27,28,29,30,21,22,38], "units":"4 Long Fangs"},
-			{"id":514, "name":"Blod Claws Pack",		"pts":200, "upgrades":[11,12,27,28,29,30,37]},
+			{"id":514, "name":"Blood Claws Pack",		"pts":200, "upgrades":[11,12,27,28,29,30,37]},
 			{"id":515, "name":"Skyclaws Assault Pack",		"pts":225, "upgrades":[27,28,29,30,31], "units":"6 Sky Claws"},
 			{"id":516, "name":"Swiftclaw Bikes Pack",		"pts":200, "upgrades":[27,28,29,30]},
 			{"id":517, "name":"Fenrisian Wolves",		"pts":150, "upgrades":[27,28,29,30], "units":"6 Fenrisian Wolves"}
