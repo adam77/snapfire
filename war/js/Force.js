@@ -82,6 +82,10 @@ var Force = {
 		});
 		return why.without('');
 	},
+        canRemove:function(formation){
+            var type = formation.type;
+            return !type.constraints || type.constraints.all( ArmyList.canRemoveFormation.curry( Force.formations.pluck('type') ) );
+        },
 	allUpgrades:function() {
 		return Force.formations.pluck('upgrades').flatten();
 	},
