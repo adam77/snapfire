@@ -146,7 +146,7 @@ var ArmyList = {
 	},
         canRemoveFormation:function(formations,constraint) {
 //            alert(constraint.min + ' ' + formations.length + ' ' + formations.countAll(constraint.from));
-            return constraint.min < formations.countAll(constraint.from);
+            return !constraint.min || constraint.min < formations.countAll(constraint.from);
         },
 	canAddFormation:function(formations,constraint) {
 //		alert(formations.length + '_' + constraint.max  + '_' + constraint.from.length + '_' + constraint.name);
