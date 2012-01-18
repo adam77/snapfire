@@ -1,468 +1,85 @@
 {
-   "id": "Blood Angels",
-   "version": "Epic UK v010409",
-   "by": "Iron Bloke",
-   "sections": [
-      {
-         "name": "DETACHMENTS",
-         "formations": [
-            {
-               "id": 500,
-               "name": "Assault Detachment",
-               "pts": 250,
-               "units": "6 Assault Units",
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  38
-               ]
-            },
-            {
-               "id": 501,
-               "name": "Baal Predators",
-               "pts": 300,
-               "units": "4 Baal Predators",
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27
-               ]
-            },
-            {
-               "id": 502,
-               "name": "Bike Detachment",
-               "pts": 200,
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27
-               ]
-            },
-            {
-               "id": 504,
-               "name": "Land Raiders",
-               "pts": 350,
-               "units": "4 Land Raiders",
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  33,
-                  38
-               ]
-            },
-            {
-               "id": 505,
-               "name": "Land Speeders",
-               "pts": 200,
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27
-               ]
-            },
-            {
-               "id": 506,
-               "name": "Landing Craft",
-               "pts": 350,
-               "upgrades": []
-            },
-            {
-               "id": 507,
-               "name": "Predators",
-               "pts": 275,
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  33,
-                  38
-               ]
-            },
-            {
-               "id": 508,
-               "name": "Scout Detachment",
-               "pts": 150,
-               "units": "4 Scouts, Transport",
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  36,
-                  37
-               ]
-            },
-            {
-               "id": 510,
-               "name": "Strike Cruiser",
-               "pts": 200,
-               "upgrades": []
-            },
-            {
-               "id": 511,
-               "name": "Battle Barge",
-               "pts": 350,
-               "upgrades": []
-            },
-            {
-               "id": 512,
-               "name": "Tactical Detachment",
-               "pts": 300,
-               "units": "6 Tacticals, Transport",
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  36,
-                  31,
-                  32,
-                  33,
-                  38
-               ]
-            },
-            {
-               "id": 513,
-               "name": "Terminator Detachment",
-               "pts": 350,
-               "units": "4 Terminators",
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  38,
-                  31,
-                  32,
-                  35
-               ]
-            },
-            {
-               "id": 514,
-               "name": "Thunderhawk",
-               "pts": 200,
-               "upgrades": []
-            },
-            {
-               "id": 515,
-               "name": "Vindicators",
-               "pts": 250,
-               "units": "4 Vindicators",
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  33
-               ]
-            },
-            {
-               "id": 516,
-               "name": "Whirlwinds",
-               "pts": 300,
-               "units": "4 Whirlwinds",
-               "upgrades": [
-                  24,
-                  25,
-                  26,
-                  27,
-                  33
-               ]
-            }
-         ]
-      },
-      {
-         "name": "IMPERIAL NAVY",
-         "formations": [
-            {
-               "id": 518,
-               "name": "Thunderbolt Fighters",
-               "pts": 150,
-               "units": "2 Thunderbolts",
-               "upgrades": []
-            },
-            {
-               "id": 519,
-               "name": "Marauder Bombers",
-               "pts": 250,
-               "units": "2 Marauders",
-               "upgrades": []
-            }
-         ]
-      },
-      {
-         "name": "TITAN LEGIONS",
-         "formations": [
-            {
-               "id": 521,
-               "name": "Warlord Class Titan",
-               "pts": 850,
-               "upgrades": []
-            },
-            {
-               "id": 522,
-               "name": "Reaver Class Titan",
-               "pts": 650,
-               "upgrades": []
-            },
-            {
-               "id": 523,
-               "name": "Warhound Titan",
-               "pts": 275,
-               "upgrades": []
-            },
-            {
-               "id": 524,
-               "name": "Warhound Titan Pack",
-               "pts": 500,
-               "units": "2 Warhounds",
-               "upgrades": []
-            }
-         ]
-      }
-   ],
-   "upgrades": [
-      {
-         "id": 24,
-         "name": "Captain",
-         "pts": 50
-      },
-      {
-         "id": 25,
-         "name": "Chaplain",
-         "pts": 50
-      },
-      {
-         "id": 26,
-         "name": "Librarian",
-         "pts": 50
-      },
-      {
-         "id": 27,
-         "name": "Supreme Commander",
-         "pts": 100
-      },
-      {
-         "id": 38,
-         "name": "Vindicator",
-         "pts": 50
-      },
-      {
-         "id": 15,
-         "name": "Bike Unit",
-         "pts": 0
-      },
-      {
-         "id": 14,
-         "name": "Attack Bike",
-         "pts": 0
-      },
-      {
-         "id": 33,
-         "name": "Hunter",
-         "pts": 75
-      },
-      {
-         "id": 17,
-         "name": "Land Speeder",
-         "pts": 0
-      },
-      {
-         "id": 18,
-         "name": "Tornado",
-         "pts": 10
-      },
-      {
-         "id": 19,
-         "name": "Typhoon",
-         "pts": 25
-      },
-      {
-         "id": 21,
-         "name": "Annihilator",
-         "pts": 0
-      },
-      {
-         "id": 22,
-         "name": "Destructor",
-         "pts": 0
-      },
-      {
-         "id": 36,
-         "name": "Razorback",
-         "pts": 25
-      },
-      {
-         "id": 37,
-         "name": "Sniper",
-         "pts": 25
-      },
-      {
-         "id": 31,
-         "name": "Dreadnought",
-         "pts": 50
-      },
-      {
-         "id": 32,
-         "name": "Dreadnought (Furioso)",
-         "pts": 50
-      },
-      {
-         "id": 35,
-         "name": "Land Raider",
-         "pts": 75
-      }
-   ],
-   "formationConstraints": [
-      {
-         "max": 1,
-         "name": "Spacecraft",
-         "from": [
-            510,
-            511
-         ]
-      },
-      {
-         "maxPercent": 33,
-         "name": "War Engines & Allies",
-         "from": [
-            518,
-            519,
-            521,
-            522,
-            523,
-            524
-         ]
-      }
-   ],
-   "upgradeConstraints": [
-      {
-         "max": 1,
-         "perArmy": true,
-         "from": [
-            27
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            24,
-            25,
-            26,
-            27
-         ],
-         "appliesTo": [
-            500,
-            501,
-            502,
-            504,
-            505,
-            507,
-            508,
-            512,
-            513,
-            515,
-            516
-         ],
-         "name": "Cmdr"
-      },
-      {
-         "max": 2,
-         "from": [
-            38
-         ],
-         "appliesTo": [
-            500,
-            504,
-            507,
-            512,
-            513
-         ]
-      },
-      {
-         "max": 5,
-         "min": 5,
-         "from": [
-            14,
-            15
-         ],
-         "appliesTo": [
-            502
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            33
-         ],
-         "appliesTo": [
-            504,
-            507,
-            512,
-            515,
-            516
-         ]
-      },
-      {
-         "max": 5,
-         "min": 5,
-         "from": [
-            17,
-            18,
-            19
-         ],
-         "appliesTo": [
-            505
-         ]
-      },
-      {
-         "max": 4,
-         "min": 4,
-         "from": [
-            21,
-            22
-         ],
-         "appliesTo": [
-            507
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            37
-         ],
-         "appliesTo": [
-            508
-         ]
-      },
-      {
-         "max": 2,
-         "from": [
-            31,
-            32
-         ],
-         "appliesTo": [
-            512,
-            513
-         ],
-         "name": "Dreadnoughts"
-      },
-      {
-         "max": 4,
-         "from": [
-            35
-         ],
-         "appliesTo": [
-            513
-         ]
-      }
-   ]
+	"id":"Blood Angels",
+	"version":"170711",
+	"by":"Epic-UK",
+        "notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1) The formation may be dropped from a purchansed Space Ship at no additional cost. 2) It may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 3) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks."],
+	"sections":[
+		{"name":"Detachments", "formations":[
+			{"id":101, "name":"Assault", "pts":250, "units":"6 Assault units", "upgrades":[11,12,13,14,15]},
+			{"id":115, "name":"Baal Predators", "pts":300, "units":"4 Baal Predators", "upgrades":[11,12,13,14,15,19]},
+			{"id":102, "name":"Bike", "pts":200, "upgrades":[11,12,13,14,16]},
+			{"id":104, "name":"Land Raider", "pts":350, "units":"4 Land Raiders", "upgrades":[11,12,13,14,19,15]},
+			{"id":105, "name":"Land Speeder", "pts":0, "upgrades":[11,12,13,14]},
+			{"id":106, "name":"Landing Craft", "pts":350, "units":"1 Landing Craft"},
+			{"id":107, "name":"Predators", "pts":0, "upgrades":[11,12,13,14,19,15]},
+			{"id":108, "name":"Scout", "pts":150, "units":"4 Scouts plus Transport", "upgrades":[11,12,13,14,21,22,28]},
+			{"id":109, "name":"Spaceship", "pts":0, "upgrades":[29,30]},
+			{"id":110, "name":"Tactical", "pts":300, "units":"6 Tactial units plus Transport", "upgrades":[11,12,13,14,18,19,15,21,22]},
+			{"id":111, "name":"Terminator", "pts":350, "units":"4 Terminator units", "upgrades":[11,12,13,14,18,20,15]},
+			{"id":112, "name":"Thunderhawk", "pts":200, "units":"1 Thunderhawk gunship"},
+			{"id":113, "name":"Vindicator", "pts":250, "units":"4 Vindicators", "upgrades":[11,12,13,14,19]},
+			{"id":114, "name":"Whirlwind", "pts":300, "units":"4 Whirlwinds", "upgrades":[11,12,13,14,19]}
+		]},
+		{"name":"Titan/Air", "formations":[
+			{"id":301, "name":"Thunderbolts", "pts":150, "units":"2 Thunderbolt Fighters" },
+			{"id":302, "name":"Marauders", "pts":250, "units":"2 Marauder Bombers" },
+			{"id":303, "name":"Warlord Titan", "pts":850, "units":"1 Warlord Titan" },
+			{"id":304, "name":"Reaver Titan", "pts":650, "units":"1 Reaver Titan" },
+			{"id":305, "name":"Warhound Pack", "pts":500, "units":"2 Warhound Titans" },
+			{"id":306, "name":"Warhound Titan", "pts":275, "units":"1 Warhound Titan" }
+		]}
+	],
+	"fixedFormations":[
+			{"id":116, "name":"Death Company", "pts":300, "units":"4 Death Company unis", "upgrades":[12,31]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Captain", "pts":50},
+		{"id":12, "name":"Chaplain", "pts":50},
+		{"id":13, "name":"Librarian", "pts":50},
+		{"id":14, "name":"Supreme Commander", "pts":100},
+		{"id":15, "name":"Vindicators", "pts":50},
+		{"id":16, "name":"Attack Bikes", "pts":0},
+		{"id":17, "name":"Bikes", "pts":0},
+		{"id":18, "name":"Dreadnoughts", "pts":50},
+		{"id":19, "name":"Hunter", "pts":75},
+		{"id":20, "name":"Land Raider", "pts":75},
+		{"id":21, "name":"Razorback HB", "pts":25},
+		{"id":22, "name":"Razorback LAS", "pts":25},
+		{"id":23, "name":"Land Speeder", "pts":40},
+		{"id":24, "name":"Tornado", "pts":40},
+		{"id":25, "name":"Typhon", "pts":50},
+		{"id":26, "name":" 2 x Predator Destructors", "pts":112.5},
+		{"id":27, "name":" 2 x Predator Annihilators", "pts":137.5},
+		{"id":28, "name":"Snipers", "pts":50},
+		{"id":29, "name":"Strike Cruiser", "pts":200},
+		{"id":30, "name":"Battle Barge", "pts":350},
+		{"id":31, "name":"Death Company Dreadnought", "pts":75},
+		{"id":32, "name":"Jump packs", "pts":50},
+		{"id":33, "name":"plus Transport", "pts":0}
+	],
+	"formationConstraints":[
+		{"maxPercent":33, "name":"Titan/Air",
+			"from":[301,302,303,304,305,306] },
+		{"max":1, "perArmy":true, "from":[109]},
+		{"min":1, "max":1, "perArmy":true, "from":[116]}
+	],
+	"upgradeConstraints":[
+		{"max":1, "from":[11,12,13,14], "appliesTo":[101,102,104,105,107,108,110,111,113,114,115]},
+		{"max":1, "from":[12], "appliesTo":[116]},
+		{"max":2, "from":[31], "appliesTo":[116]},
+		{"max":1, "from":[32], "appliesTo":[116]},
+		{"max":1, "perArmy":true, "from":[14]},
+		{"max":2, "from":[15], "appliesTo":[101,104,107,110,111,115]},
+		{"min":5, "max":5, "from":[17,16], "appliesTo":[102]},
+		{"max":2, "from":[18], "appliesTo":[110,111]},
+		{"max":1, "from":[19], "appliesTo":[104,107,110,113,114,115]},
+		{"min":5, "max":5, "from":[23,24,25], "appliesTo":[105]},
+		{"min":2, "max":2, "from":[26,27], "appliesTo":[107]},
+		{"max":4, "from":[21,22], "appliesTo":[108]},
+		{"min":1, "max":1, "from":[29,30], "appliesTo":[109]},
+		{"max":1, "perArmy":true, "from":[29,30]},
+		{"max":6, "from":[21,22], "appliesTo":[110]},
+		{"max":4, "from":[20], "appliesTo":[111]},
+		{"min":1, "max":1, "from":[33,32], "appliesTo":[116]}
+	]
 }
