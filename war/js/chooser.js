@@ -240,6 +240,7 @@ var ArmyforgeUI = {
 			ArmyforgeUI.renderForce();
 			ArmyforgeUI.checkUpgradeMenuItems();
 			ArmyforgeUI.checkFormationMenuItems();
+                        ArmyforgeUI.checkWarnings();
 		}
                 else {
                     ArmyList.mandatoryFormations().each(function(x) {
