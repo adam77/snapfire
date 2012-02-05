@@ -12,7 +12,7 @@
 			{"id":510, "name":"Wild Rider Clan Warhost (small)", 			"pts":250,	"upgrades":[64,65,40]},
 			{"id":511, "name":"Wild Rider Clan Warhost (medium)", 			"pts":350,	"upgrades":[64,65,40]},
 			{"id":512, "name":"Wild Rider Clan Warhost (large)", 			"pts":450,	"upgrades":[64,65,40]},
-			{"id":513, "name":"Shining Spears Aspect Warrior Warhost", 			"pts":300,		"upgrades":[39]}
+			{"id":513, "name":"Shining Spears Aspect Warrior Warhost", 			"pts":200,		"upgrades":[39]}
 		]},	
 		{"name":"TROUPES", "formations":[
 			{"id":520, "name":"Saim-Hann Guardian Troupe",					"pts":250, "upgrades":[]},
