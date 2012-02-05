@@ -32,14 +32,10 @@
                ]
             },
             {
-               "id": 513,
-               "name": "Wild Rider Warhost",
-               "pts": 325,
-               "upgrades": [
-                  47,
-                  49,
-                  50
-               ]
+               "id":513,
+               "name":"Wild Rider Warhost",
+               "pts":325,
+               "upgrades":[47,49,50]
             }
          ]
       },
@@ -194,21 +190,9 @@
          "name": "Vypers",
          "pts": 0
       },
-      {
-         "id": 47,
-         "name": "3 Wild Riders",
-         "pts": 100
-      },
-      {
-         "id": 49,
-         "name": "Mounted Farseer",
-         "pts": 75
-      },
-      {
-         "id": 50,
-         "name": "Wild Rider Chieftain",
-         "pts": 50
-      },
+      {"id": 47, "name": "3 Wild Riders", "pts": 100},
+      {"id": 49, "name": "Mounted Farseer", "pts": 75},
+      {"id": 50, "name": "Wild Rider Chieftain", "pts": 50},
       {
          "id": 11,
          "name": "Ranger",
@@ -362,15 +346,6 @@
          ]
       },
       {
-         "min": 3,
-         "from": [
-            124
-         ],
-         "appliesTo": [
-            513
-         ]
-      },
-      {
          "max": 6,
          "from": [
             125
@@ -390,15 +365,7 @@
             513
          ]
       },
-      {
-         "max": 1,
-         "from": [
-            47
-         ],
-         "appliesTo": [
-            513
-         ]
-      },
+      {"min:":1, "max":1, "from":[47,48], "appliesTo":[513]},
       {
          "max": 1,
          "perArmy": true,
