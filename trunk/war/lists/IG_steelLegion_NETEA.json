@@ -4,12 +4,12 @@
 	"by":"lindstrom",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
-			{"id":512, "name":"Regimental HQ", 			"pts":500, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Supreme Commander, 12 Infantry, 7 Chimera"},
-			{"id":513, "name":"Infantry Company", 			"pts":250, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry"},
-			{"id":514, "name":"Mechanised Infantry Company", 	"pts":400, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry, 7 Chimera"},
-			{"id":515, "name":"Tank Company", 			"pts":650, "upgrades":[26,27,28,29,30,31,32,33,34,35]},
-			{"id":516, "name":"Super-Heavy Tank Company", 		"pts":500, "upgrades":[26,27,28,29,30,31,32,33,34,35]},
-		 	{"id":517, "name":"Artillery Company", 			"pts":650, "upgrades":[26,27,28,29,30,31,32,33,34,35]}
+			{"id":512, "name":"Regimental HQ", 			"pts":500, "upgrades":[26,27,28,29,30,31,32,33,37,34,35], "units":"Supreme Commander, 12 Infantry, 7 Chimera"},
+			{"id":513, "name":"Infantry Company", 			"pts":250, "upgrades":[26,27,28,29,30,31,32,33,37,34,35], "units":"Commander, 12 Infantry"},
+			{"id":514, "name":"Mechanised Infantry Company", 	"pts":400, "upgrades":[26,27,28,29,30,31,32,33,37,34,35], "units":"Commander, 12 Infantry, 7 Chimera"},
+			{"id":515, "name":"Tank Company", 			"pts":650, "upgrades":[26,27,28,29,30,31,32,33,37,34,35]},
+			{"id":516, "name":"Super-Heavy Tank Company", 		"pts":500, "upgrades":[26,27,28,29,30,31,32,33,37,34,35]},
+		 	{"id":517, "name":"Artillery Company", 			"pts":650, "upgrades":[26,27,28,29,30,31,32,33,37,34,35]}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
 			{"id":500, "name":"Rough Rider Platoon", 			"pts":150, "upgrades":[], "units":"6 Rough Riders"},
@@ -55,6 +55,7 @@
 		{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",		"pts":125},
 		{"id":32, "name":"Griffon Battery (3 Griffons)",		"pts":75},
 		{"id":33, "name":"1 Sniper",					"pts":25},
+		{"id":37, "name":"2 Snipers",					"pts":50},
 		{"id":34, "name":"2 Ogryns",					"pts":50},
 		{"id":35, "name":"Hydra",					"pts":50},
 		{"id":36, "name":"Valkyrie Transport",				"pts":150}
@@ -73,7 +74,7 @@
 		{"min":1, "max":1, "from":[14,15], "appliesTo":[507]},
 		{"min":9, "max":9, "from":[20,21], "appliesTo":[517]},
 		{"min":1, "max":1, "from":[23,24], "appliesTo":[508]},
-		{"max":3, "name":"Upgrades", "from":[27,28,29,30,31,32,33,34,35]},
+		{"max":3, "name":"Upgrades", "from":[27,28,29,30,31,32,33,34,35,37]},
 		{"max":1, "from":[12]},
 		{"max":1, "from":[27]},
 		{"max":1, "from":[28]},
@@ -81,9 +82,11 @@
 		{"max":1, "from":[30]},
 		{"max":1, "from":[31]},
 		{"max":1, "from":[32]},
-		{"max":2, "from":[33]},
+		{"max":1, "from":[33]},
 		{"max":1, "from":[34]},
 		{"max":1, "from":[35]},
-		{"max":1, "from":[36]}
+		{"max":1, "from":[36]},
+		{"max":1, "from":[37]}
+
 	]
 }
