@@ -1,0 +1,80 @@
+{
+   "id": "TAU FIO'KA ARMOURED STRIKE FORCE",
+   "version": "EXPERIMENTAL. Version 0.2",
+   "by": "Parintachin",
+   "sections": 
+   [
+      {
+         "name": "Tau Hunter Cadres",
+         "formations": 
+         [
+            {"id": 500, "name": "Armored Cadre", "Units":"6 Hammerhead Gunships", "pts": 300, "upgrades": [15,16,20,17] },
+            {"id": 501, "name": "Mechanised Cadre", "units":"4 Hammerhead Gunships, 6 Fire Warrior units, 3 Devilfishes", "pts": 425, "upgrades": [20, 17, 11, 12, 13, 14]}
+         ]
+      },
+      {
+         "name": "Tau Support Cadres",
+         "formations": 
+         [
+            {"id": 510, "name": "Harassment Cadre", "units":"6 Stealth Battlesuit units", "pts": 250, "upgrades": [12,13,14]},
+            {"id": 511, "name": "Recon Cadre", "pts": 175, "upgrades": []},
+            {"id": 512, "name": "Scorpionfish Cadre", "pts": 0, "upgrades": [21, 20, 10]},
+            {"id": 513, "name": "Sentry Drone Turrets", "units":"4 Sentry Drone turrets", "pts": 150, "upgrades": []},
+            {"id": 514, "name": "Skysweep Cadre", "units":"3 Skyrays", "pts": 250, "upgrades": []}
+         ]
+      },
+      {
+         "name": "Air Caste Formations",
+         "formations": 
+         [
+            {"id": 520, "name": "AX-1-0 Squadron", "pts": 375, "units": "2x Tiger Shark AX-1-0", "upgrades": []},
+            {"id": 521, "name": "Barracuda Squadron", "pts": 0,  "upgrades": [22]},
+            {"id": 522, "name": "Manta Dropship", "pts": 675, "upgrades": []},
+            {"id": 523, "name": "Moray", "pts": 350, "upgrades": []},
+            {"id": 524, "name": "Orca Dropship", "pts": 150, "upgrades": []},
+            {"id": 525, "name": "Spacecraft", "pts": 0, "upgrades": []},
+            {"id": 526, "name": "Tiger Shark Squadron", "pts": 175, "units": "2 Tiger Sharks", "upgrades": [25]}
+         ]
+      }
+   ],
+   "upgrades": 
+   [
+      { "id": 10, "name": "Commander", "pts": 50 }, 
+      { "id": 11, "name": "Etereal character", "pts": 75 }, 
+      { "id": 12, "name": "Gun drone Unit", "pts": 25 }, 
+      { "id": 13, "name": "2 Gun drone Units", "pts": 50 }, 
+      { "id": 14, "name": "4 Gun drone Units", "pts": 75 }, 
+      { "id": 15, "name": "2 Hammerhead Gunships", "pts": 100 }, 
+      { "id": 16, "name": "4 Hammerhead Gunships", "pts": 200 }, 
+      { "id": 17, "name": "Command node", "pts": 25 }, 
+      { "id": 18, "name": "6 Tetras", "pts": 0 }, 
+      { "id": 19, "name": "4 Tetras, 2 Piranhas", "pts": 0 }, 
+      { "id": 20, "name": "Skyray", "pts": 100 }, 
+      { "id": 21, "name": "Scorpionfish Super-Heavy Missile Gunship", "pts": 200 }, 
+      { "id": 22, "name": "Barracuda Fighter", "pts": 75 }, 
+      { "id": 23, "name": "Hero Class cruiser", "pts": 200 }, 
+      { "id": 24, "name": "Custodian Class Battleship", "pts": 250 }, 
+      { "id": 25, "name": "6 Gun Drone units", "pts": 100 }
+   ], 
+   "formationConstraints": 
+   [ 
+      { "max": 1, "from": [ 513 ] }, 
+      { "max": 1, "from": [ 525 ] }, 
+      { "maxPercent": 33, "name": "Air Caste formations", "from": [ 520, 521, 522, 523, 524, 525, 526 ] }, 
+      { "max": 3, "name": "Support Cadres", "from": [ 510, 511, 512, 513, 514], "forEach": [ 500, 501 ], "name2": "Hunter Cadre" } 
+   ], 
+   "upgradeConstraints": 
+   [ 
+      { "max": 1, "perArmy": true, "from": [ 11 ] }, 
+      { "max": 1, "from": [12, 13, 14 ]}, 
+      { "max": 1, "from": [15, 16 ]}, 
+      { "max": 1, "from": [17 ]}, 
+      { "max": 1, "from": [20 ]}, 
+      { "max": 1, "from": [25 ]}, 
+
+      { "min":1, "max": 1, "from": [18, 19 ], "appliesTo": [ 511 ] }, 
+      { "min":1, "max": 2, "from": [21 ], "appliesTo": [ 512 ] },
+      { "min":2, "max": 3, "from": [22 ], "appliesTo": [ 521 ] }, 
+      { "min":1, "max": 1, "from": [23,24 ], "appliesTo": [ 525 ] } 
+   ]
+}

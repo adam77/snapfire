@@ -1,6 +1,6 @@
 {
 	"id":"FIR IOLARION ELDAR TITAN CLAN",
-	"version":"ARMY SUB-CHAMPION: Kalen 'Angel_of_Caliban'.  Version: 2.1.1",
+	"version":"NetEA Army List Compendium 2012",
 	"by":"Parintachin",
 	"notes":["This list is marked as 'Experimental'"],
 	"sections":[
@@ -11,14 +11,14 @@
 			{"id":510, "name":"Warlock Titan", "units":"1 Warlock Titan", "pts":850, "upgrades":[76,77,79]},
 			{"id":511, "name":"Phantasm Titan", "units":"1 Phantasm Titan", "pts":700, "upgrades":[78]},
 			{"id":512, "name":"Phantom Titan", "units":"1 Phantom Titan", "pts":750, "upgrades":[77,79,80]},
-			{"id":513, "name":"Revenant Titan Host" , "units":"Each Revenant Titan is armed with 2 weapons, Revenant Pulse Lasers or Revenant Sonic Lances in any combination.", "pts":0, "upgrades":[81]}
+			{"id":513, "name":"Revenant Titan Host" , "units":"Each Revenant Titan is armed with 2 weapons, Revenant Pulse Lasers or Revenant Sonic Lances in any combination.", "pts":0, "upgrades":[81,82]}
 		]},	
 		{"name":"CRAFTWORLD ELDAR ALLIES", "formations":[
 			{"id":520, "name":"Guardian Troupe", "units":"5 Guardian Units", "pts":200,	"upgrades":[]},
 			{"id":521, "name":"Wraithlord Troupe", "units":"6 Wraithlords", "pts":300,	"upgrades":[]},
 			{"id":522, "name":"Ranger Troupe", "pts":0, "upgrades":[11]},
 			{"id":523, "name":"Windrider Troupe", "pts":200, "upgrades":[]},
-			{"id":524, "name":"Nightwings", "units":"3 Nightwings", "pts":300, "upgrades":[]},
+			{"id":524, "name":"Nightwings", "units":"3 Nightwing Interceptors", "pts":300, "upgrades":[]},
 			{"id":525, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
 			{"id":526, "name":"Vampire Hunter","pts":250, "units":"1 Vampire Hunter", "upgrades":[]},
 			{"id":527, "name":"Wraithship",	"pts":150, "upgrades":[]},
@@ -85,6 +85,7 @@
 		{"id":80, "name":"Wraithgate",	"pts":100},
 
 		{"id":81, "name":"Revenant Titan", "pts":325},
+		{"id":82, "name":"Revenant Titan w. Bonesinger", "pts":325},
 
 		{"id":90, "name":"5 Heavy Weapon units", "pts":0},
 		{"id":91, "name":"5 Support Weapon units", "pts":100},
@@ -94,10 +95,8 @@
 		{"id":97, "name":"Bright Stallion", "pts":25}
 	],
 	"formationConstraints":[
-		{"max":1, "from":[510]},
 		{"max":1, "name":"Allies", "from":[520,521,522,523,524,525,526,527,528,530], "forEach":[510,511,512,513], "name2":"Warhost"},
 		{"max":1, "from":[500]},
-		{"max":1, "from":[510]},
 		{"max":1, "name":"Spacecraft", "from":[527,528]}		
 	],
 	"upgradeConstraints":[
@@ -106,7 +105,7 @@
 		{"max":1, "from":[77]},
 		{"max":1, "from":[78]},
 		{"max":1, "from":[79]},
-		{"min":1, "max":2, "from":[81], "appliesTo":[513]},
+		{"min":1, "max":2, "from":[81,82], "appliesTo":[513]},
 		
 		{"min":1, "max":1, "from":[90,91], "appliesTo":[520]},
 		{"min":6, "max":8, "from":[11], "appliesTo":[522]},

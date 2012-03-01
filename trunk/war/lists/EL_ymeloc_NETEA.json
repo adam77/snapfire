@@ -1,6 +1,6 @@
 {
 	"id":"Yme-Loc Craftworld",
-	"version":"ARMY SUB-CHAMPION: Kevin 'Chroma' Petker.  Version: 1.6",
+	"version":"NetEA Army List Compendium 2012",
 	"by":"Parintachin",
 	"notes":["This list is marked as 'Under development'"],
 	"sections":[
@@ -10,13 +10,13 @@
 			{"id":502, "name":"Avatar",		"pts":0,		"upgrades":[]}
 		]},
 		{"name":"WARHOSTS", "formations":[
-			{"id":510, "name":"Engines of Vaul Warhost",			"pts":450, "upgrades":[34,35,36,67,68]},
+			{"id":510, "name":"Engines of Vaul Warhost",			"pts":-50, "upgrades":[34,35,36,67,68]},
 			{"id":511, "name":"Swords of Vaul Warhost",	"units":"Farseer",		"pts":0, "upgrades":[67,68]}
 		]},	
 		{"name":"TROUPES", "formations":[
 			{"id":520, "name":"Aspect Warrior Troupe", 			"pts":225,	"upgrades":[30,41,39,40]},
 			{"id":521, "name":"Chains of Vaul Troupe",			"pts":400, 	"units":"4 Night Spinners, Firestorm", "upgrades":[]},
-			{"id":522, "name":"Engines of Vaul Troupe",			"pts":250, "upgrades":[]},
+			{"id":522, "name":"Engines of Vaul Troupe",			"pts":0, "upgrades":[]},
 			{"id":523, "name":"Guardian Troupe",		 			"pts":125,	"upgrades":[63,55,57,58,59]},
 			{"id":524, "name":"Guardian Troupe (mounted)",	"pts":325, "units":"4 Wave Serpents", "upgrades":[63]},
 			{"id":525, "name":"Ranger Troupe",					"pts":0, "upgrades":[11]},
@@ -31,7 +31,7 @@
 			{"id":534, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
 			{"id":535, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
 			{"id":536, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
-			{"id":537, "name":"Vampire Hunters","pts":500, "units":"2 Vampire Hunters", "upgrades":[]}
+			{"id":537, "name":"Vampire Raider","pts":200, "upgrades":[]}
 		]}
 	],
 	"upgrades":[
@@ -53,9 +53,9 @@
 		{"id":31, "name":"Fire Storm",	"pts":50},
 		{"id":32, "name":"Fire Prism",	"pts":65},
 		
-		{"id":34, "name":"Cobra",			"pts":0},
-		{"id":35, "name":"Scorpion",		"pts":0},
-		{"id":36, "name":"Storm Serpent",	"pts":0},
+		{"id":34, "name":"Cobra",			"pts":250},
+		{"id":35, "name":"Scorpion",		"pts":250},
+		{"id":36, "name":"Storm Serpent",	"pts":250},
 		
 		{"id":39, "name":"Exarch", 	"pts":25},
 		{"id":40, "name":"Autarch", 	"pts":75},

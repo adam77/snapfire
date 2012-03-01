@@ -82,7 +82,7 @@
 	"upgradeConstraints":[
 		{"max":1, "perArmy":true, "from":[40]},
 		{"max":12, "from":[15,16,17,18,19,20,21,22], "appliesTo":[510]},
-		{"min":1, "from":[15,16,17,18,19,20,21,22], "appliesTo":[510]},
+		{"min":1, "max":5, "from":[15], "appliesTo":[510]},
 		{"min":1, "max":5, "from":[16], "appliesTo":[510]},
 		{"min":1, "max":5, "from":[17], "appliesTo":[510]},
 		{"min":1, "max":5, "from":[18], "appliesTo":[510]},
