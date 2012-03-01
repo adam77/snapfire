@@ -1,0 +1,58 @@
+{
+	"id":"ELYSIAN DROP TROOP REGIMENT",
+	"version":"NetEA Army List Compendium 2012 - EXPERIMENTAL",
+	"by":"Parintachin",
+	"sections":[
+		{"name":"ELYSIAN DROP TROOP COMPANIES", "formations":[
+			{"id":500, "name":"Regimental HQ", "pts":275, "upgrades":[30,10,11,12,13,14,15,16], "units":"1 Elysian Supreme Commander unit, 7 Elysian Drop Troop Infantry units"},
+			{"id":501, "name":"Drop Troop Company", "pts":200, "upgrades":[30,10,11,12,13,14,15,16], "units":"1 Elysian Commander unit, 7 Elysian Drop Troop Infantry units May have 4 Valkyries or Vendettas"}
+		]},
+		{"name":"ELYSIAN DROP TROOP SUPPORT FORMATIONS", "formations":[
+			{"id":510, "name":"Drop Sentinel Squadron", "pts":150, "upgrades":[31], "units":"4 Drop Sentinels"},
+			{"id":511, "name":"Storm Trooper Platoon", "pts":350, "upgrades":[], "units":"8 Elysian Storm Trooper Units and 4 Valkyries"},
+			{"id":512, "name":"Tauros Squadron", "pts":150, "upgrades":[31]},
+			
+			{"id":513, "name":"Vulture Squadron", "pts":300, "upgrades":[]}
+		]},
+		{"name":"IMPERIAL NAVY SUPPORT", "formations":[
+			{"id":520, "name":"Spacecraft", "pts":0, "upgrades":[]},
+			{"id":521, "name":"Lightning Squadron", "pts":300, "upgrades":[], "units":"4 Lightning Interceptors"},
+			{"id":522, "name":"Strike Squadron", "pts":200, "upgrades":[], "units":"2 Lightning Strike Fighters"},
+			{"id":523, "name":"Destroyer Squadron", "pts":375, "upgrades":[], "units":"2 Marauder Destroyers"}
+		]}
+	],
+	"upgrades":[
+		{"id":10, "name":"Drop Sentinel Platoon (4 Drop Sentinels)", "pts":100},
+		{"id":11, "name":"Fire Support Platoon (2 Elysian Support Squad units)", "pts":50},
+		{"id":12, "name":"Hardened Veterans (1 Hardened Veteran unit)", "pts":25},
+		{"id":13, "name":"Hardened Veterans (2 Hardened Veteran units)", "pts":50},
+		{"id":14, "name":"Infantry Platoon (4 Elysian Drop Troop Infantry units)", "pts":100},
+		{"id":15, "name":"Mortar platoon (1 Mortar Squad unit)", "pts":25},
+		{"id":16, "name":"Mortar platoon (2 Mortar Squad units)", "pts":50},
+		
+		{"id":30, "name":"4 Valkyries or Vendettas", "pts":160},
+		{"id":31, "name":"4 Valkyrie Sky Talons", "pts":160},
+		{"id":32, "name":"Tauros", "pts":0},
+		{"id":33, "name":"Tauros Venator", "pts":0},
+		{"id":34, "name":"4 Vultures", "pts":0},
+		{"id":35, "name":"2 Vultures, 2 Vulture Punishers", "pts":50},
+		{"id":36, "name":"Lunar Class Cruiser", "pts":150},
+		{"id":37, "name":"Emperor Class Battleship", "pts":300}
+	],
+	"formationConstraints":[
+		{"max":1, "from":[500]},
+		{"max":1, "from":[520]},
+		{"max":2, "name":"Support Formations", "from":[510,511,512,513], "forEach":[500,501], "name2":"Company"},
+		{"maxPercent":33, "name":"Navy Support formations", "from":[520,521,522,523]}
+	],
+	"upgradeConstraints":[
+		{"max":1, "from":[12,13]},
+		{"max":1, "from":[15,16]},
+		{"max":1, "from":[30]},
+		{"max":1, "from":[31]},
+		{"min":4, "max":4, "from":[32,33], "appliesTo":[512]},
+		{"min":1, "max":1, "from":[34,35], "appliesTo":[513]},
+		{"max":3, "name":"Upgrades", "from":[10,11,12,13,14,15,16,17,18,19,20]},
+		{"min":1, "max":1, "from":[36,37], "appliesTo":[520]}
+	]
+}

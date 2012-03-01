@@ -1,6 +1,6 @@
 {
 	"id":"Iybraesil Craftworld",
-	"version":"ARMY SUB-CHAMPION: Kevin 'Chroma' Petker.  Version: 1.2",
+	"version":"NetEA Army List Compendium 2012",
 	"by":"Parintachin",
 	"notes":["This list is marked as 'Under development'"],
 	"sections":[
@@ -13,8 +13,8 @@
 		]},	
 		{"name":"TROUPES", "formations":[
 			{"id":520, "name":"Deathwalker Troupe", 			"pts":175, "units":"Farseer, 3 Guardian units, 4 wraithguards",	"upgrades":[40, 65, 59]},
-			{"id":521, "name":"Relic hunter Troupe", "pts":0, "upgrades":[11,13]},
 			{"id":522, "name":"Far Rider Troupe",				"pts":200, 	"upgrades":[]},
+			{"id":521, "name":"Relic hunter Troupe", "pts":0, "upgrades":[11,13]},
 			{"id":523, "name":"Swords of Fate Troupe",				"pts":300, 	"upgrades":[]},
 			{"id":524, "name":"Skeins of Fate Troupe",			"pts":400, "units":"4 Night Spinners, 1 Firestorm", "upgrades":[]},
 			{"id":525, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36]}
@@ -25,7 +25,8 @@
 			{"id":532, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
 			{"id":533, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
 			{"id":534, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
-			{"id":535, "name":"Vampire Hunters","pts":500, "units":"2 Vampire Hunters", "upgrades":[]}
+			{"id":535, "name":"Vampire Hunter","pts":275, "upgrades":[]},
+			{"id":535, "name":"Vampire Raider","pts":200, "upgrades":[]}
 		]}
 	],
 	"upgrades":[
@@ -60,7 +61,7 @@
 		{"id":55, "name":"3 Support Weapon Platforms", "pts":50},
 		{"id":57, "name":"2 Wraithguard", "pts": 100},
 		{"id":58, "name":"3 Wraithguard", "pts": 150},
-		{"id":59, "name":"3 Wraithlords", "pts":170},
+		{"id":59, "name":"3 Wraithlords", "pts":175},
 
 		{"id":63, "name":"Wraith Seer",	"pts":100},
 		{"id":64, "name":"Spirit Seer",	"pts":0},

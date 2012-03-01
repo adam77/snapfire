@@ -1,7 +1,7 @@
 {
 	"id":"Ulthwé, Craftworld",
-	"version":"NetEA Army Book 2010 *DRAFT*",
-	"by":"Iron Bloke",
+	"version":"NetEA Army List Compendium 2012",
+	"by":"Iron Bloke, Updated to 2012 by Parintachin",
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":507, "name":"Wraithgate", "pts":50,	"upgrades":[]},
