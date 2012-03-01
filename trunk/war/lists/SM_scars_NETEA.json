@@ -1,24 +1,24 @@
 {
 	"id":"White Scars",
-	"version":"NetEA Compendium 1.1",
-	"by":"Iron Bloke",
+	"version":"NetEA Army Compendium v20120208",
+	"by":"lindstrom",
 	"sections":[
 		{"name":"DETACHMENTS", "formations":[
 			{"id":500, "name":"Assault Detachment", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18]},
 			{"id":501, "name":"Bike Detachment", 			"pts":375, "upgrades":[15,16,17,18]},
 			{"id":504, "name":"Land Speeders",				"pts":200, "upgrades":[15,16,17,18]},
 			{"id":505, "name":"Landing Craft",				"pts":350, "upgrades":[]},
-			{"id":506, "name":"Predators",					"pts":275, "upgrades":[15,16,17,18,31,35]},
+			{"id":506, "name":"Predators",					"pts":250, "upgrades":[15,16,17,18,31,35]},
 			{"id":507, "name":"Scout Detachment",			"pts":150, "units":"4 Scouts", "upgrades":[15,16,17,18,33,34,11,12]},
 			{"id":509, "name":"Strike Cruiser",			"pts":200, "upgrades":[]},
 			{"id":510, "name":"Battle Barge",				"pts":350, "upgrades":[]}, 
-			{"id":511, "name":"Tactical Detachment",		"pts":300, "units":"6 Tacticals", "upgrades":[15,16,17,18,33,11,12]},
-			{"id":512, "name":"Terminator Detachment",		"pts":675, "units":"4 Terminators", "upgrades":[15,16,17,18]},
+			{"id":511, "name":"Tactical Detachment",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,33,11,12]},
+			{"id":512, "name":"Terminator Detachment",		"pts":650, "units":"4 Terminators + 4 Land Raiders", "upgrades":[15,16,17,18]},
 			{"id":513, "name":"Thunderhawk",				"pts":200, "upgrades":[]},
 			{"id":515, "name":"Whirlwinds",				"pts":300, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,31,35]}
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
-			{"id":517, "name":"Thunderbolt Fighters",	"pts":150, "units":"2 Fighters", "upgrades":[]},
+			{"id":517, "name":"Thunderbolt Fighters",	"pts":175, "units":"2 Fighters", "upgrades":[]},
 			{"id":518, "name":"Marauder Bombers",		"pts":250, "units":"2 Bombers", "upgrades":[]}
 		]},
 		{"name":"TITAN LEGIONS", "formations":[

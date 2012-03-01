@@ -1,6 +1,6 @@
 {
 	"id":"BIEL-TAN GREAT COURT OF THE YOUNG KING ELDAR",
-	"version":"ARMY SUB-CHAMPION: Kevin 'Chroma' Petker.  Version: 1.3",
+	"version":["NetEA Army List Compendium 2012","v1.3. Eldar Army Champion: Chroma"],
 	"by":"Parintachin",
 	"notes":["This list is marked as 'Experimental'"],
 	"sections":[
@@ -8,22 +8,21 @@
 			{"id":500, "name":"Wraithgate",	"pts":50,		"upgrades":[]}
 		]},
 		{"name":"WARHOSTS", "formations":[
-			{"id":510, "name":"Great Court of the Young King", "units":"One Avatar, escorted by the Court of the Young King, plus one Dire Avengers unit, one Striking Scorpions unit, one Howling Banshees unit, one Fire Dragons unit, one Warp Spiders unit, one Dark Reapers unit, one Swooping Hawks unit, one Shining Spears unit. (All units in the Great Court gain the invulnerablesave special ability if they do not already possess it.)", "pts":350, "upgrades":[15,16,17,18,19,20,21,22,39,40]},
+			{"id":510, "name":"Great Court of the Young King", "units":"One Avatar, escorted by the Court of the Young King. (All units in the Great Court gain the Invulnerable Save special ability if they do not already possess it.)", "pts":-50, "upgrades":[15,16,17,18,19,20,21,22,39,40]},
 			{"id":511, "name":"Aspect Warriors Warhost", "pts":-100, "upgrades":[41,42,39,40]}
 		]},	
 		{"name":"TROUPES", "formations":[
-			{"id":520, "name":"Ranger Troupe",					"pts":0, "upgrades":[11]},
-			{"id":521, "name":"Lesser Aspect Warrior Troupe", 			"pts":-25,	"upgrades":[30,41,39,40]},
 			{"id":522, "name":"Greater Aspect Warrior Troupe", 			"pts":-75,	"upgrades":[30,41,39,40]},
+			{"id":521, "name":"Lesser Aspect Warrior Troupe", 			"pts":-25,	"upgrades":[30,41,39,40]},
+			{"id":520, "name":"Ranger Troupe",					"pts":0, "upgrades":[11]},
 			{"id":523, "name":"Storm Serpent Troupe",			"pts":0, "upgrades":[36]},
 			{"id":524, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[30,31,32]}
 		]},
 		{"name":"GREAT COURT SPACECRAFT, AIRCRAFT & TITANS", "formations":[
 			{"id":530, "name":"Wraithship",	"pts":150, "upgrades":[]},
 			{"id":531, "name":"Dragonship",	"pts":300, "upgrades":[]},
-		 	{"id":532, "name":"Warlock Titan",	"pts":850, "upgrades":[]},
-			{"id":533, "name":"Phantom Titan",	"pts":750, "upgrades":[]},
-			{"id":534, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
+			{"id":533, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
+			{"id":524, "name":"Nightwings", "units":"3 Nightwing Interceptors", "pts":300, "upgrades":[]},
 			{"id":535, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
 			{"id":536, "name":"Vampire Hunters","pts":500, "units":"2 Vampire Hunters", "upgrades":[]},
 			{"id":537, "name":"Vampire Raider","pts":200, "units":"1 Vampire Raider", "upgrades":[]}
@@ -32,14 +31,14 @@
 	"upgrades":[
 		{"id":11, "name":"Ranger",		"pts":25},
 		{"id":13, "name":"War Walker",	"pts":25},
-		{"id":15, "name":"Dire Avenger",		"pts":50},
-		{"id":16, "name":"Striking Scorpion",	"pts":50},
-		{"id":17, "name":"Howling Banshee",	"pts":50},
-		{"id":18, "name":"Fire Dragon",		"pts":50},
-		{"id":19, "name":"Warp Spider",		"pts":50},
-		{"id":20, "name":"Dark Reaper",		"pts":50},
-		{"id":21, "name":"Swooping Hawk",		"pts":50},
-		{"id":22, "name":"Shining Spear",		"pts":50},
+		{"id":15, "name":"Dire Avengers",		"pts":50},
+		{"id":16, "name":"Striking Scorpions",	"pts":50},
+		{"id":17, "name":"Howling Banshees",	"pts":50},
+		{"id":18, "name":"Fire Dragons",		"pts":50},
+		{"id":19, "name":"Warp Spiders",		"pts":50},
+		{"id":20, "name":"Dark Reapers",		"pts":50},
+		{"id":21, "name":"Swooping Hawks",		"pts":50},
+		{"id":22, "name":"Shining Spears",		"pts":50},
 		{"id":24, "name":"Guardians",				"pts":0},
 		{"id":25, "name":"Heavy Weapon Platform",	"pts":0},
 		{"id":27, "name":"Jetbike", 	"pts":0},
@@ -82,7 +81,16 @@
 	],
 	"upgradeConstraints":[
 		{"max":1, "perArmy":true, "from":[40]},
-		{"max":4, "from":[15,16,17,18,19,20,21,22], "appliesTo":[510]},
+		{"max":12, "from":[15,16,17,18,19,20,21,22], "appliesTo":[510]},
+		{"min":1, "from":[15,16,17,18,19,20,21,22], "appliesTo":[510]},
+		{"min":1, "max":5, "from":[16], "appliesTo":[510]},
+		{"min":1, "max":5, "from":[17], "appliesTo":[510]},
+		{"min":1, "max":5, "from":[18], "appliesTo":[510]},
+		{"min":1, "max":5, "from":[19], "appliesTo":[510]},
+		{"min":1, "max":5, "from":[20], "appliesTo":[510]},
+		{"min":1, "max":5, "from":[21], "appliesTo":[510]},
+		{"min":1, "max":5, "from":[22], "appliesTo":[510]},
+		
 		{"max":4, "from":[39,40], "appliesTo":[510]},
 		{"min":8, "max":8, "from":[15,16,17,18,19,20,21,22], "appliesTo":[511]},
 		{"max":2, "from":[39,40], "appliesTo":[511]},
