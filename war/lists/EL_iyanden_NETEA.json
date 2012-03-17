@@ -1,6 +1,6 @@
 {
 	"id":"Iyanden Craftworld",
-	"version":"NetEA Army List Compendium 2012",
+	"version":"NetEA Army Compendium v20120208",
 	"by":"Parintachin",
 	"notes":["This list is marked as 'Developmental'"],
 	"sections":[
@@ -9,7 +9,8 @@
 			{"id":501, "name":"Avatar",		"pts":0,		"upgrades":[]}
 		]},
 		{"name":"WARHOSTS", "formations":[
-			{"id":509, "name":"Spirit Warrior Warhost", 			"pts":350,	"units":"6 Wraithguards","upgrades":[59,65]},			{"id":510, "name":"Guardian Warhost",		 			"pts":150,	"units":"Farseer","upgrades":[55,57,58,59]},
+			{"id":509, "name":"Spirit Warrior Warhost", 			"pts":350,	"units":"6 Wraithguards","upgrades":[59,65]},
+			{"id":510, "name":"Guardian Warhost",		 			"pts":150,	"units":"Farseer","upgrades":[55,57,58,59]},
 			{"id":511, "name":"Guardian Warhost (mounted)",		 			"pts":350,	"units":"Farseer, 4 Wave Serpents",	"upgrades":[]}
 		]},	
 		{"name":"TROUPES", "formations":[

@@ -1,8 +1,8 @@
 {
-	"id":"FIR IOLARION ELDAR TITAN CLAN",
-	"version":"NetEA Army List Compendium 2012",
+	"id":"Fir Iolarion Titan Clan",
+	"version":"NetEA Army Compendium v20120208 *EXPERIMENTAL*",
 	"by":"Parintachin",
-	"notes":["This list is marked as 'Experimental'"],
+	"notes":[],
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":500, "name":"Gate of Vaul",	"pts":150,		"upgrades":[]}

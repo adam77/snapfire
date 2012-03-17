@@ -1,6 +1,6 @@
 {
-	"id":"Ulthwé, Craftworld",
-	"version":"NetEA Army List Compendium 2012",
+	"id":"Ulthwé Craftworld",
+	"version":"NetEA Army Compendium v20120208",
 	"by":"Iron Bloke, Updated to 2012 by Parintachin",
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
@@ -71,7 +71,8 @@
 		{"id":58, "name":"3 Wraithguard", "pts": 150},
 		{"id":59, "name":"3 Wraithlords", "pts":175},
 		{"id":60, "name":"3 War Walkers", "pts":100},
-		{"id":61, "name":"Spear of Khaine", "pts":25}	],
+		{"id":61, "name":"Spear of Khaine", "pts":25}
+	],
 	"formationConstraints":[
 		{"max":2, "name":"Troupes", "from":[500,501,502,503,504,505,506], "forEach":[510,511,512,513], "name2":"Warhost"},
 		{"max":1, "from":[507]},
