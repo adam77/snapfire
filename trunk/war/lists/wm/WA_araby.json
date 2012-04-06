@@ -1,0 +1,84 @@
+{
+	"id":"Araby",
+	"version":"Warmaster Armies 2006",
+	"by":"Iron Bloke",
+	"sections":[
+		{"name":"CHARACTERS", "formations":[
+                        {"id":511,	"name":"General &#x26ab;",			"pts":125,	"upgrades":[1,2,3,20,21,22,23,40,41,42,43]}, 
+			{"id":500,	"name":"Hero &#x26ab;", 			"pts":80,	"upgrades":[1,2,3,20,21,22,23]},
+			{"id":501,	"name":"Wizard &#x26ab;", 			"pts":45,	"upgrades":[1,2,3,20,21,22,23,30,31,32,33,34]}
+		]},
+		{"name":"INFANTRY", "formations":[
+			{"id":502,	"name":"Spearmen &#x25ac;&#x25ac;&#x25ac;",	"pts":45,	"upgrades":[10,11,12,13,14,20,21,22,23]},
+			{"id":503,	"name":"Bowmen &#x25ac;&#x25ac;&#x25ac;", 	"pts":55,	"upgrades":[10,11,12,13,14,20,21,22,23]},
+			{"id":504,	"name":"Guards &#x25ac;&#x25ac;&#x25ac;", 	"pts":70,	"upgrades":[10,11,12,13,14,20,21,22,23]}
+		]},
+		{"name":"CAVALRY", "formations":[
+			{"id":505,	"name":"Knights &#x25ae;&#x25ae;&#x25ae;", "pts":110,	"upgrades":[10,11,12,13,14,20,21,22,23]},
+			{"id":506,	"name":"Desert Riders &#x25ae;&#x25ae;&#x25ae;",	"pts":80,	"upgrades":[10,11,12,13,14,20,21,22,23]},
+			{"id":507,	"name":"Camel Riders &#x25ae;&#x25ae;&#x25ae;", "pts":100,	"upgrades":[10,11,12,13,14,20,21,22,23]},
+			{"id":508,	"name":"Magic Carpets &#x25ae;&#x25ae;&#x25ae;",	"pts":85,	"upgrades":[10,11,12,13,14,20,21,22,23]}
+		]},
+		{"name":"MONSTERS", "formations":[
+			{"id":509,	"name":"Elephants &#x25ae;&#x25ae;&#x25ae;",		"pts":200}
+		]}
+	],
+	"upgrades":[
+		{"id":1,	"name":"Flying Carpet",				"pts":10},            
+		{"id":2,	"name":"Elephant",				"pts":65},
+		{"id":3, 	"name":"Djinnn",			"pts":90},
+		{"id":10,	"name":"The Battle Banner", 			"pts":50},
+		{"id":11,	"name":"The Banner of Shielding", 		"pts":50},
+		{"id":12,	"name":"The Banner of Fortitude", 		"pts":50},
+		{"id":13,	"name":"The Banner of Steadfastness",	"pts":30},
+		{"id":14,	"name":"The Banner of Fortune", 		"pts":20},
+		{"id":20,	"name":"Sword of Destruction", 			"pts":10},
+		{"id":21,	"name":"Sword of Fate", 				"pts":5},
+		{"id":22,	"name":"Sword of Cleaving", 			"pts":10},
+		{"id":23,	"name":"Sword of Might", 				"pts":10},
+		{"id":30,	"name":"Ring of Magic", 				"pts":30},			
+		{"id":31,	"name":"Staff of Spellbinding", 		"pts":30},			
+		{"id":32,	"name":"Scroll of Dispelling", 			"pts":20},
+		{"id":33,	"name":"Wand of Power", 				"pts":10},
+		{"id":34,	"name":"Rod of Repetition", 			"pts":10},
+		{"id":40,	"name":"Crown of Command", 				"pts":100},
+		{"id":41,	"name":"Helm of Dominion", 				"pts":50},
+		{"id":42,	"name":"Orb of Majesty", 				"pts":30},
+		{"id":43,	"name":"Sceptre of Sovereignty", 		"pts":30}
+	],
+	"formationConstraints":[
+                {"min":1, "max":1, "from":[511]},
+                {"max":1, "perPoints":1000, "from":[500]},
+		{"max":1, "perPoints":1000, "from":[501]},
+		{"min":2, "perPoints":1000, "from":[502]},
+                {"min":2, "perPoints":1000, "from":[503]},
+                {"max":4, "perPoints":1000, "from":[504]},                                
+		{"max":2, "perPoints":1000, "from":[507]},
+		{"max":1, "perPoints":1000, "from":[508]},
+		{"max":1, "perPoints":1000, "from":[509]}
+	],
+	"upgradeConstraints":[
+		{"max":1, "name":"Mount", "from":[1,2,3]},
+		{"max":1, "name":"Magic Item", "from":[10,11,12,13,14,20,21,22,23,30,31,32,33,34,40,41,42,43]},
+		{"max":1, "perArmy":true, "from":[10]},
+		{"max":1, "perArmy":true, "from":[11]},
+		{"max":1, "perArmy":true, "from":[12]},
+		{"max":1, "perArmy":true, "from":[13]},
+		{"max":1, "perArmy":true, "from":[14]},
+		{"max":1, "perArmy":true, "from":[20]},
+		{"max":1, "perArmy":true, "from":[21]},
+		{"max":1, "perArmy":true, "from":[22]},
+		{"max":1, "perArmy":true, "from":[23]},
+		{"max":1, "perArmy":true, "from":[30]},
+		{"max":1, "perArmy":true, "from":[31]},
+		{"max":1, "perArmy":true, "from":[32]},
+		{"max":1, "perArmy":true, "from":[33]},
+		{"max":1, "perArmy":true, "from":[34]},
+		{"max":1, "perArmy":true, "from":[40]},
+		{"max":1, "perArmy":true, "from":[41]},
+		{"max":1, "perArmy":true, "from":[42]},
+		{"max":1, "perArmy":true, "from":[43]}
+	]
+}
+
+
