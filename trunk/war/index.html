@@ -29,33 +29,24 @@ ul li a {
 </head>
 <body>
 	<div id="main">
-		<ul style="padding-left:0;margin-top:14em;margin-bottom:4em;">
+		<p id="descriptions" style="margin-top:4em;color:white;font-family: Helvetica, Arial, sans-serif;">
+			&nbsp;<br>&nbsp;
+		</p>            
+                <ul style="padding-left:0;margin-top:2em;margin-bottom:3em;">
 			<li id="gw"><a href="./indexGW.html">GW</a></li>
 			<li id="netea"><a href="./indexNETEA.html">NetEA</a></li>
 			<li id="epicuk"><a href="./indexEPICUK.html">EpicUK</a></li>
 			<li id="ferc"><a style="border-right:none;" href="./indexFERC.html">FERC</a></li>
 		</ul>
-		<p id="descriptions" style="color:white;font-family: Helvetica, Arial, sans-serif;">
-			&nbsp;<br>&nbsp;
-		</p>
-
+		<ul style="padding-left:0;margin-top:4em;margin-bottom:4em;">
+			<li id="wm"><a style="border-right:none" href="./indexWM.html">Warmaster</a></li>
+		</ul>            
 		<p id="info">
 			Check out the discussion on	<a href="http://www.tacticalwargames.net/taccmd/viewtopic.php?f=4&amp;t=18623">Tactical Command</a> for comments, feedback and errors.
 			<br>
 			Note that the picker won't work on out of date browsers (particularly IE7/6).
 			<br>
 			This website is unofficial and in no way endorsed by Games Workshop Limited.
-			<!-- todo:<br>
-			(!special case: general constraint when upgrade is a general and has a general as an option -> should allow to swap<br>
-			==> should be able to fix Necron warbarque(SC)/C'tan(SC) mutual exclusion
-			(!performance: adding formation that has many mandatory units causes many 'checkConstraints'<br>
-			(!overhead for individual units)<br>
-			(???army constraint: 1 per army upgrades) - still required??<br>
-			(!army constraint: at least 1 general<br>
-			(!change 'optional' to 'mandatory')<br>
-			(!change code to allow optionals without groups - i.e. upgrades with 'minimum' - use for defaults?)<br>
-			!add 'draft' to NetEA* docs
-			 -->
 		</p>
 	</div>
 <script type="text/javascript">
@@ -75,6 +66,10 @@ ul li a {
 		'Lists developed by the French Epic community<br>&nbsp;'
 	);});
  $('ferc').on('mouseout', function() { $('descriptions').update('&nbsp;<br>&nbsp;'); });
+ $('wm').on('mouseover', function() { $('descriptions').update(
+		'Warmaster Lists<br>&nbsp;'
+	);});
+ $('wm').on('mouseout', function() { $('descriptions').update('&nbsp;<br>&nbsp;'); }); 
 </script>
 <script type="text/javascript">
 var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");

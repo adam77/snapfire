@@ -35,6 +35,7 @@ var ArmyList = {
 			// set some useful properties and defaults
 			if (!constraint.min && constraint.max) constraint.min = 0;
 			if (constraint.min && !constraint.max) constraint.max = 1000000;
+                        if (!constraint.name && constraint.perPoints) constraint.name = constraint.from[0].name;                         
 			constraint.mandatory = constraint.min && !constraint.perArmy;
 			constraint.mandatoryWithOptions = constraint.mandatory && constraint.from.length > 1;
 		});
@@ -50,6 +51,7 @@ var ArmyList = {
 			// set some useful properties and defaults
                         if (!constraint.min && constraint.max) constraint.min = 0;
 			if (constraint.min && !constraint.max) constraint.max = 1000000;
+                        if (!constraint.name && constraint.perPoints) constraint.name = constraint.from[0].name; 
 		});
 
 		// FORMATIONS... add some useful properties/functions...
@@ -123,15 +125,23 @@ var ArmyList = {
 		}
 		return '';
 	},
-
+        roundUp:function(pts,increment) {
+            var x = increment;
+            while(x < pts) {
+                x += increment;
+            }
+            return x;
+        },
 	violated:function(pts,formations,constraint) {		
 		if (constraint.perPoints && constraint.max) {
-			var tooMany = formations.countAll(constraint.from) > (pts/constraint.perPoints) * constraint.max;
-			if (tooMany) return 'more than ' +constraint.max+ ' per ' +constraint.perPoints+ ' points';
+                        var slots = ArmyList.roundUp(pts,constraint.perPoints) / constraint.perPoints;
+			var tooMany = formations.countAll(constraint.from) > slots * constraint.max;
+			if (tooMany) return 'more than ' +constraint.max+ ' ' +constraint.name+ ' per ' +constraint.perPoints+ ' points';
 		}
 		if (constraint.perPoints && constraint.min) {
-			var tooFew = formations.countAll(constraint.from) < (pts/constraint.perPoints) * constraint.min;
-			if (tooFew) return 'less than ' +constraint.min+ ' per ' +constraint.perPoints+ ' points';
+                        var slots = ArmyList.roundUp(pts,constraint.perPoints) / constraint.perPoints;
+                        var tooFew = formations.countAll(constraint.from) < slots * constraint.min;
+			if (tooFew) return 'less than ' +constraint.min+ ' ' +constraint.name+ ' per ' +constraint.perPoints+ ' points';
 		}		
 		if (constraint.forEach && constraint.max) {
 			var tooMany = formations.countAll(constraint.from) > formations.countAll(constraint.forEach) * constraint.max;
@@ -146,7 +156,7 @@ var ArmyList = {
 	},
         canRemoveFormation:function(formations,constraint) {
 //            alert(constraint.min + ' ' + formations.length + ' ' + formations.countAll(constraint.from));
-            return !constraint.min || constraint.min < formations.countAll(constraint.from);
+            return !constraint.min || constraint.perPoints || (constraint.min < formations.countAll(constraint.from));
         },
 	canAddFormation:function(formations,constraint) {
 //		alert(formations.length + '_' + constraint.max  + '_' + constraint.from.length + '_' + constraint.name);
@@ -169,7 +179,7 @@ var ArmyList = {
         mandatoryFormations:function() {
             var mandatoryFormations = [];
             ArmyList.data.formationConstraints.each( function(constraint) {
-                for (var i=0; i<constraint.min; i++) {
+                for (var i=0; i<constraint.min && !constraint.perPoints; i++) {
                     mandatoryFormations.push( constraint.from[0] );
                 }
             });
