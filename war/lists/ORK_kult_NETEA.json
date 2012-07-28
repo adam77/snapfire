@@ -1,7 +1,7 @@
 {
    "id": "Burning Death Speed Freeks",
-   "version": "NetEA Compendium 1.0",
-   "by": "Iron Bloke",
+   "version": "NetEA Army Compendium v20120208",
+   "by": "berzerkmonkey",
    "sections": [
       {
          "name": "FORMATIONS",
@@ -10,9 +10,9 @@
                "id": 500,
                "name": "Speed Freaks Warband",
                "pts": 100,
-               "units": "3 Boyz, 3 Trukks",
+               "units": "3 Boyz, 4 Trukks",
                "upgrades": [
-                  66,
+                  67,
                   68,
                   20,
                   21,
@@ -261,13 +261,18 @@
    "upgrades": [
       {
          "id": 11,
-         "name": "Nobz Warbikes",
+         "name": "Nobz",
          "pts": 0
       },
       {
          "id": 12,
-         "name": "Nobz with Trukk",
+         "name": "Nobz with Warbike",
          "pts": 0
+      },
+	  {
+         "id": 67,
+         "name": "Boyz with a Trukk",
+         "pts": 25
       },
       {
          "id": 66,
@@ -336,8 +341,8 @@
       },
       {
          "id": 95,
-         "name": "Extra Gunfortress",
-         "pts": 135
+         "name": "Gunfortress",
+         "pts": 125
       },
       {
          "id": 56,
@@ -351,8 +356,8 @@
       },
       {
          "id": 91,
-         "name": "Extra Battlefortress",
-         "pts": 125
+         "name": "Battlefortress",
+         "pts": 115
       },
       {
          "id": 65,

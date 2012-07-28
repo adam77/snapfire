@@ -1,7 +1,7 @@
 {
    "id": "Snagga-Snagga's Feral Orks",
-   "version": "NetEA Compendium 1.0",
-   "by": "Iron Bloke",
+   "version": "NetEA Army Compendium v20120208",
+   "by": "berzerkmonkey",
    "sections": [
       {
          "name": "WAR HORDES",
@@ -60,9 +60,11 @@
             {
                "id": 503,
                "name": "Wildboyz",
-               "pts": 5,
+               "pts": -20,
                "upgrades": [
                   13,
+				  11,
+				  39,
                   51,
                   69,
                   53,
@@ -75,9 +77,11 @@
             {
                "id": 504,
                "name": "Wildboyz (Big)",
-               "pts": -40,
+               "pts": -65,
                "upgrades": [
                   13,
+				  11,
+				  39,
                   51,
                   69,
                   53,
@@ -90,9 +94,11 @@
             {
                "id": 505,
                "name": "Wildboyz ('Uge)",
-               "pts": -85,
+               "pts": -110,
                "upgrades": [
                   13,
+				  11,
+				  39,
                   51,
                   69,
                   53,
