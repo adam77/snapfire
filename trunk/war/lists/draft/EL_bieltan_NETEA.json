@@ -1,0 +1,91 @@
+{
+	"id":"Biel-Tan Craftworld",
+	"version":"NetEA v4.0",
+	"by":"Iron Bloke, updated to v4.0 by Spectrar Ghost",
+	"notes":["This list is marked as 'Developmental'."],
+	"sections":[
+		{"name":"INDIVIDUALS", "formations":[
+			{"id":500, "name":"Wraithgate",					"pts":50, 	"upgrades":[]},
+			{"id":501, "name":"Avatar with Court of the Young King", "pts":0, "upgrades":[]}
+		]},
+		{"name":"WARHOSTS", "formations":[
+			{"id":510, "name":"Aspect Warrior Warhost", 	"pts":300,	"upgrades":[18,19,30,33]},
+			{"id":511, "name":"Guardian Warhost",		 	"pts":150,	"upgrades":[50,51,52,53], "units":"Farseer"},
+			{"id":512, "name":"Guardian Warhost (Mounted)",	"pts":350,	"upgrades":[], "units":"Farseer, 4x Wave Serpents"}
+		]},	
+		{"name":"TROUPES", "formations":[
+			{"id":520, "name":"Ranger Troupe",				"pts":0, 	"upgrades":[22]},
+			{"id":521, "name":"War Walker Troupe",			"pts":200,  "upgrades":[], "units":"6x War Walkers"},
+			{"id":522, "name":"Windrider Troupe",			"pts":200, 	"upgrades":[]},
+			{"id":523, "name":"Swords of Vaul Troupe",		"pts":0, 	"upgrades":[30,31,32]},
+			{"id":524, "name":"Night Spinner Troupe",		"pts":175, 	"upgrades":[], "units":"3x Night Spinners"},
+			{"id":525, "name":"Engine of Vaul Troupe",		"pts":50, 	"upgrades":[40,41,42,43]}
+		]},
+		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
+			{"id":530, "name":"Wraithship",					"pts":150, 	"upgrades":[]},
+			{"id":531, "name":"Dragonship",					"pts":300, 	"upgrades":[]},
+		 	{"id":532, "name":"Warlock Titan",				"pts":850, 	"upgrades":[]},
+			{"id":533, "name":"Phantom Titan",				"pts":750, 	"upgrades":[]},
+			{"id":534, "name":"Revenant Titans",			"pts":650, 	"upgrades":[], "units":"2x Revenant Titans"},
+			{"id":535, "name":"Nightwings",					"pts":300, 	"upgrades":[], "units":"3x Nightwing Interceptors"},
+			{"id":536, "name":"Phoenix Bombers",			"pts":400, 	"upgrades":[], "units":"3x Phoenix Bombers"},
+			{"id":537, "name":"Vampire Raider",				"pts":200, 	"upgrades":[]}
+		]}
+	],
+	"upgrades":[
+		{"id":10, "name":"Dire Avenger",					"pts":0},
+		{"id":11, "name":"Striking Scorpion",				"pts":0},
+		{"id":12, "name":"Howling Banshee",					"pts":0},
+		{"id":13, "name":"Fire Dragon",						"pts":0},
+		{"id":14, "name":"Warp Spider",						"pts":0},
+		{"id":15, "name":"Dark Reaper",						"pts":0},
+		{"id":16, "name":"Swooping Hawk",					"pts":0},
+		{"id":17, "name":"Shining Spear",					"pts":0},
+		{"id":18, "name":"Exarch", 							"pts":25},
+		{"id":19, "name":"Autarch", 						"pts":75},
+
+		{"id":20, "name":"Guardians",						"pts":0},
+		{"id":21, "name":"Heavy Weapon Platform",			"pts":0},
+		{"id":22, "name":"Ranger",							"pts":25},
+		{"id":23, "name":"Jetbike", 						"pts":0},
+		{"id":24, "name":"Vyper", 							"pts":0},
+		
+		{"id":30, "name":"Falcon",							"pts":50},
+		{"id":31, "name":"Fire Storm",						"pts":50},
+		{"id":32, "name":"Fire Prism",						"pts":50},
+		{"id":33, "name":"Wave Serpent",					"pts":50},
+
+		{"id":40, "name":"Cobra",							"pts":200},
+		{"id":41, "name":"Scorpion",						"pts":200},
+		{"id":42, "name":"Storm Serpent",					"pts":200},
+		{"id":43, "name":"Void Spinner",					"pts":200},
+
+		{"id":50, "name":"3x Support Weapon Platforms",		"pts":50},
+		{"id":51, "name":"2x Wraithguards", 					"pts":100},
+		{"id":52, "name":"3x Wraithguards", 					"pts":150},
+		{"id":53, "name":"3x Wraithlords",					"pts":175}
+	],
+	"formationConstraints":[
+		{"max":3, 			"name":"Troupes", "from":[520,521,522,523,524,525], "forEach":[510,511,512], "name2":"Warhost"},
+		{"max":1, 			"from":[500]},
+		{"max":1, 			"from":[501]},
+		{"max":1, 			"from":[532]},
+		{"maxPercent":33,	"name":"Aircraft & Titans", "from":[530,531,532,533,534,535,536,537]},		
+		{"max":1, 			"name":"Spacecraft", "from":[530,531]}		
+	],
+	"upgradeConstraints":[
+		{"max":2, 			"from":[31]},	
+		{"max":1, 			"from":[53]},	
+		{"max":1, 			"name":"Wraithguard", "from":[51,52]},	
+		{"max":1, 			"from":[50]},	
+		{"max":1, "perArmy":true, "from":[19]},	
+		{"max":2, 			"name":"Exarchs", "from":[18,19]},
+		{"min":8, "max":8,	"from":[10,11,12,13,14,15,16,17], 	"appliesTo":[510]},	
+		{"min":7, "max":7, 	"from":[20,21], 					"appliesTo":[511,512]},		
+		{"max":3, 			"from":[21],						"appliesTo":[511,512]},	
+		{"min":4, "max":8, 	"from":[22], 						"appliesTo":[520]},
+		{"min":6, "max":6, 	"from":[23,24], 					"appliesTo":[522]},			
+		{"min":5, "max":6, 	"name":"Falcons", "from":[30,31,32], "appliesTo":[523]},			
+		{"min":1, "max":3, 	"from":[40,41,42,43], 				"appliesTo":[525]}		
+	]
+}
