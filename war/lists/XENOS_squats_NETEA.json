@@ -1,8 +1,8 @@
 {
 	"id":"Squats",
-	"version":"NetEA Squats 1.0 *EXPERIMENTAL*",
+	"version":"Squat list 1.32",
 	"notes":[
-		"If transport option is chosen, then you must take exactly enough transports of only one kind to transport all units in the formation.",
+		"If a transport option is chosen, then you must take enough transports of only one kind to transport all units in the formation, with no extra spaces if possible.",
 		"The Grand Warlord character must be added to a Warlord or Guildmaster unit."
 	],
 	"by":"Borka",
@@ -11,7 +11,7 @@
 			{"id":511, "name":"Pithead", 				"pts":50, "upgrades":[]}
 		]},
 		{"name":"BROTHERHOODS", "formations":[
-			{"id":518, "name":"Warrior Brotherhood", 	"pts":250, "upgrades":[20,10,11,28,29,19,16,17,18], "units":"Hearthguard unit"},
+			{"id":518, "name":"Warrior Brotherhood", 	"pts":300, "upgrades":[20,10,11,28,29,19,16,17,18], "units":"Hearthguard unit"},
 			{"id":512, "name":"Berzerker Brotherhood", 				"pts":175, "upgrades":[10,19,16,17,18], "units":"Hearthguard unit"}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
@@ -25,11 +25,11 @@
 		]},
 		{"name":"WAR ENGINE FORMATIONS", "formations":[
 			{"id":522, "name":"Colossus",	"pts":450, "upgrades":[11]},
-			{"id":523, "name":"Cyclops",	"pts":500, "upgrades":[11]},
+			{"id":523, "name":"Cyclops",	"pts":475, "upgrades":[11]},
 			{"id":524, "name":"Goliath Mega-Cannon",			"pts":300, "upgrades":[]},
 			{"id":526, "name":"Land Train",		"pts":200, "upgrades":[11,32,33,34,35], "units": "Land train Engine"},
-			{"id":527, "name":"Leviathan",		"pts":350, "upgrades":[11]},
-			{"id":528, "name":"Overlord",			"pts":200, "upgrades":[]}
+			{"id":527, "name":"Leviathan",		"pts":375, "upgrades":[11]},
+			{"id":528, "name":"Overlord",			"pts":250, "upgrades":[]}
 		]}
 	],
 	"upgrades":[
@@ -37,13 +37,13 @@
 		{"id":10, "name":"Warlord Unit",	"pts":75},
 		{"id":11, "name":"Living Ancestor Character",	"pts":50},
 
-		{"id":16, "name":"Transport Termite",		"pts":10},
-		{"id":17, "name":"Transport Mole",		"pts":30},
-		{"id":18, "name":"Transport Hellbore",		"pts":125},
+		{"id":16, "name":"Transport Termite",		"pts":20},
+		{"id":17, "name":"Transport Mole",		"pts":125},
+		{"id":18, "name":"Transport Hellbore",		"pts":200},
 		{"id":19, "name":"Rhinos",	"pts":0},
 		
 		{"id":23, "name":"Guild Bike",		"pts":0},
-		{"id":24, "name":"Guild Trike",	"pts":15},
+		{"id":24, "name":"Guild Trike",	"pts":0},
 		{"id":26, "name":"Iron Hawk", "pts":25},
 		{"id":28, "name":"4 Thunderer units",		"pts":150},
 		{"id":29, "name":"4 Rapiers",		"pts":100},
@@ -64,8 +64,8 @@
 		{"id":52, "name":"3 Goliath Mega-Canons", "pts":150},
 		
 		{"id":53, "name":"1 Overlord",	"pts":0},
-		{"id":54, "name":"2 Overlords", "pts":200},
-		{"id":55, "name":"3 Overlord", "pts":400},
+		{"id":54, "name":"2 Overlords", "pts":225},
+		{"id":55, "name":"3 Overlord", "pts":450},
 		
 		{"id":59, "name":"9 Warrior units",	"pts":0},
 		{"id":60, "name":"14 Warrior units",	"pts":100},
@@ -82,20 +82,21 @@
 		{"max":1, "from":[60,61], "appliesTo":[518]},
 		{"max":2, "from":[10,28,29,60,61]},
 		{"max":1, "from":[10,61], "appliesTo":[518]},
-		{"max":1, "from":[11,61], "appliesTo":[518]},
 		{"max":1, "from":[28,61], "appliesTo":[518]},
 		{"max":1, "from":[29,61], "appliesTo":[518]},
 		{"max":1, "from":[11], "perArmy": true},
 		{"max":1, "from":[20], "perArmy": true},
 		{"max":1, "from":[26]},
 		{"max":1, "from":[19]},
+		{"max":1, "from":[18]},
 		{"max":1, "from":[10,38], "appliesTo":[512]},
 		{"min":1, "max":1, "from":[45,46], "appliesTo":[505]},
 		{"min":1, "max":1, "from":[59,60,61], "appliesTo":[518]},
 		{"min":1, "max":1, "from":[51,52], "appliesTo":[524]},
-		{"min":1, "name":"Battle cars", "from":[32,33,34,35], "appliesTo":[526]},
+		{"min":2, "max":5, "name":"Battle cars", "from":[32,33,34,35], "appliesTo":[526]},
 		{"min":1, "max":1, "from":[53,54,55], "appliesTo":[528]},
 		{"min":7, "max":7, "from":[23,24], "appliesTo":[513]},
+		{"max":3, "from":[24]},
 		{"min":0, "max":4, "from":[24], "appliesTo":[513]},
 		{"min":1, "max":1, "from":[36,37,38], "appliesTo":[512]},
 		{"min":0, "max":1, "from":[14,39], "appliesTo":[512]},

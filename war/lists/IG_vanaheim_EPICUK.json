@@ -1,7 +1,7 @@
 {
    "id": "Vanaheim 7th Air Cavalry",
-   "version": "Epic UK v301209",
-   "by": "Iron Bloke",
+   "version": "Epic UK v15022013",
+   "by": "Kyussinchains",
    "sections": [
       {
          "name": "COMPANIES",
@@ -54,14 +54,8 @@
                "pts": 350,
                "units": "8 Storm Troopers, 4 Valkyries",
                "upgrades": []
-            },
-            {
-               "id": 504,
-               "name": "Orbital Support",
-               "pts": 150,
-               "upgrades": []
             }
-         ]
+        ]
       },
       {
          "name": "IMPERIAL NAVY",
@@ -93,6 +87,12 @@
                "pts": 250,
                "units": "2 Marauder Bombers",
                "upgrades": []
+            },
+			{
+               "id": 504,
+               "name": "Orbital Support",
+               "pts": 150,
+               "upgrades": []
             }
          ]
       }
@@ -101,17 +101,17 @@
       {
          "id": 26,
          "name": "Fire Support Platoon (2 Fire Support, 1 Valkyrie)",
-         "pts": 125
+         "pts": 100
       },
       {
          "id": 27,
          "name": "Mortar Platoon (2 Mortars, 1 Valkyrie)",
-         "pts": 100
+         "pts": 75
       },
       {
          "id": 28,
-         "name": "Trooper Platoon (2 Troopers, 1 Valkyrie)",
-         "pts": 100
+         "name": "Infantry Platoon (2 Troopers, 1 Valkyrie)",
+         "pts": 75
       },
       {
          "id": 11,
@@ -151,7 +151,7 @@
       {
          "id": 15,
          "name": "Emperor Class Battleship",
-         "pts": 150
+         "pts": 50
       }
    ],
    "formationConstraints": [
@@ -174,7 +174,8 @@
             531,
             532,
             533,
-            534
+            534,
+			504
          ]
       },
       {
@@ -183,9 +184,8 @@
          "from": [
             501,
             502,
-            503,
-            504
-         ],
+            503
+        ],
          "forEach": [
             521,
             522

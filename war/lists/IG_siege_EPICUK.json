@@ -1,7 +1,7 @@
 {
    "id": "Baran Siege Masters",
-   "version": "Epic UK v301209",
-   "by": "Iron Bloke",
+   "version": "Epic UK v15022013",
+   "by": "Kyussinchains",
    "sections": [
       {
          "name": "COMPANIES",
@@ -18,7 +18,8 @@
                   31,
                   32,
                   33,
-                  34
+                  34,
+				  35
                ]
             },
             {
@@ -33,7 +34,8 @@
                   31,
                   32,
                   33,
-                  34
+                  34,
+				  35
                ]
             }
          ]
@@ -43,23 +45,23 @@
          "formations": [
             {
                "id": 500,
-               "name": "Artillery Company",
+               "name": "Siege Grand Battery",
                "pts": 450,
-               "units": "9 Gotterdammerung Howitzers",
+               "units": "9 Howitzers",
                "upgrades": []
             },
             {
                "id": 501,
-               "name": "Artillery Battery",
+               "name": "Siege Artillery Battery",
                "pts": 175,
-               "units": "3 Gotterdammerung Howitzers",
+               "units": "3 Howitzers",
                "upgrades": []
             },
             {
                "id": 502,
                "name": "Regiment AA Battery",
                "pts": 150,
-               "units": "3 Blitzen AA Guns",
+               "units": "3 AA Guns",
                "upgrades": []
             },
             {
@@ -106,7 +108,7 @@
             {
                "id": 510,
                "name": "Sapper Platoon",
-               "pts": 250,
+               "pts": 200,
                "units": "8 Sapper Units",
                "upgrades": []
             }
@@ -145,18 +147,23 @@
       },
       {
          "id": 30,
-         "name": "Thudd Gun Platoon (3 Guns)",
+         "name": "Light Artillery Platoon (3 Light artillery)",
          "pts": 75
       },
       {
          "id": 31,
          "name": "Hellhound Squadron (3 Hellhounds)",
-         "pts": 150
+         "pts": 100
       },
       {
          "id": 32,
          "name": "Griffon Battery (3 Griffons)",
-         "pts": 100
+         "pts": 50
+      },
+	  {
+         "id": 35,
+         "name": "Sniper",
+         "pts": 25
       },
       {
          "id": 33,
@@ -165,7 +172,7 @@
       },
       {
          "id": 34,
-         "name": "Fortified Position (Trenches, Razor Wire, Bunkers)",
+         "name": "Fortifications (50cm Trenches or Razor Wire, plus up to 6 gun emplacements or Bunkers)",
          "pts": 100
       },
       {
@@ -175,7 +182,7 @@
       },
       {
          "id": 11,
-         "name": "Bruennhilde Transporters",
+         "name": "Tractors",
          "pts": 0
       },
       {
@@ -292,7 +299,7 @@
       {
          "max": 1,
          "from": [
-            33
+            33,35
          ],
          "appliesTo": [
             512,
@@ -307,7 +314,8 @@
             30,
             31,
             32,
-            33
+            33,
+			35
          ],
          "appliesTo": [
             512,
@@ -325,7 +333,7 @@
             513
          ]
       },
-      {
+	  {
          "max": 1,
          "min": 1,
          "from": [
