@@ -22,9 +22,9 @@
 			{"id":202, "name":"Genestealer Swarm", "pts":0,
 				"upgrades":[25] },
 			{"id":203, "name":"Nest Swarm", "pts":115,
-				"upgrades":[13,14,15,19,16,22,23] },
+				"upgrades":[13,14,15,29,16,22,23] },
 			{"id":204, "name":"Big Nest Swarm", "pts":280,
-				"upgrades":[13,14,15,19,16,22,23] }
+				"upgrades":[13,14,15,29,16,22,23] }
 
 		]},
 		{"name":"RARE FORMATIONS", "formations":[
@@ -60,7 +60,8 @@
 		{"id":25, "name":"Genestealer", "pts":25},
 		{"id":26, "name":"Meiotic Spore Mine", "pts":50},
 		{"id":27, "name":"Lictor", "pts":50},
-                {"id":28, "name":"Ravener", "pts":30}
+                {"id":28, "name":"Ravener", "pts":30},
+                {"id":29, "name":"Zoanthrope", "pts":35}
 	],
 	"formationConstraints":[
 		{"max":1, "name":"Support", "from":[201,202,203,204],
@@ -106,8 +107,8 @@
 		{"max":8, "from":[14], "appliesTo":[204]},
 		{"max":4, "from":[15], "appliesTo":[203]},
 		{"max":8, "from":[15], "appliesTo":[204]},
-		{"max":3, "from":[16,19], "appliesTo":[203]},
-		{"max":6, "from":[16,19], "appliesTo":[204]},
+		{"max":3, "from":[16,29], "appliesTo":[203]},
+		{"max":6, "from":[16,29], "appliesTo":[204]},
 		{"max":4, "from":[22,23], "appliesTo":[203]},
 		{"max":8, "from":[22,23], "appliesTo":[204]},
 		{"min":3, "max":6, "from":[26], "appliesTo":[301]},
