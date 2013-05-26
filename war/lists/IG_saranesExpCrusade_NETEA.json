@@ -1,13 +1,13 @@
 {
 	"id":"Saranes Expanse Imperial Crusade",
 	"version":"NetEA Army Book *UNDER DEVELOPMENT*",
-	"by":"Iron Bloke",
+	"by":"Stu'sIdle",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
 			{"id":519, "name":"Lord General Militant Command HQ", 		"pts":450, "upgrades":[28,29,30,31,32,33,34,35], "units":"Supreme Commander, 6 Guard, 4 Stormtrooper, 6 Chimera"},
-			{"id":520, "name":"Armoured Fist Company", 			"pts":425, "upgrades":[28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry, 7 Chimera"},
-			{"id":521, "name":"Imperial Crusade Tank Company", 		"pts":650, "upgrades":[28,29,30,31,32,33,34,35]},
-			{"id":522, "name":"Imperial Crusade Super-Heavy Tank Company", 	"pts":525, "upgrades":[28,29,30,31,32,33,34,35]}
+			{"id":520, "name":"Armoured Fist Company", 			"pts":400, "upgrades":[28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry, 7 Chimera"},
+			{"id":521, "name":"Imperial Crusade Tank Company", 		"pts":625, "upgrades":[28,29,30,31,32,33,34,35]},
+			{"id":522, "name":"Imperial Crusade Super-Heavy Tank Company", 	"pts":500, "upgrades":[28,29,30,31,32,33,34,35]}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
 			{"id":501, "name":"Storm Trooper Platoon",				"pts":200, "upgrades":[36], "units":"8 Storm Troopers"},
@@ -16,7 +16,7 @@
 			{"id":507, "name":"Super-Heavy Tank Platoon", 			"pts":200, "upgrades":[]},
 			{"id":509, "name":"Flak Battery",					"pts":150, "upgrades":[], "units":"3 Hydra"},
 			{"id":510, "name":"Vulture Squadron",				"pts":300, "upgrades":[], "units":"4 Vultures"},
-			{"id":511, "name":"Space Marine Terminator Detachment",		"pts":300, "upgrades":[38,39,40,48,41], "units":"4 Terminator"},
+			{"id":511, "name":"Space Marine Terminator Detachment",		"pts":325, "upgrades":[38,39,40,48,41], "units":"4 Terminator"},
 			{"id":512, "name":"Space Marine Tactical Detachment",		"pts":275, "upgrades":[38,39,40,44,41,42,61,62], "units":"6 Tactical"},
 			{"id":513, "name":"Space Marine Assault Detachment", 		"pts":150, "upgrades":[38,39,40,50,51,52], "units":"4 Assault"},
 			{"id":514, "name":"Space Marine Devastator Detachment",		"pts":225, "upgrades":[38,39,40,44,41,42,61,62], "units":"4 Devastator"},
@@ -25,11 +25,11 @@
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
 			{"id":525, "name":"Orbital Support",				"pts":150, "upgrades":[]},
-			{"id":526, "name":"Thunderbolt Squadron",			"pts":225, "upgrades":[], "units":"3 Thunderbolt fighters"},
-			{"id":527, "name":"Marauder Squadron",				"pts":275, "upgrades":[], "units":"2 Marauder bombers"}
+			{"id":526, "name":"Thunderbolt Squadron",			"pts":150, "upgrades":[], "units":"2 Thunderbolt fighters"},
+			{"id":527, "name":"Marauder Squadron",				"pts":250, "upgrades":[], "units":"2 Marauder bombers"}
 		]},
 		{"name":"TITAN LEGIONS", "formations":[
-			{"id":529, "name":"Warlord Titan",					"pts":850, "upgrades":[]},
+			{"id":529, "name":"Warlord Titan",					"pts":825, "upgrades":[]},
 			{"id":530, "name":"Reaver Titan",					"pts":650, "upgrades":[]},
 			{"id":531, "name":"Warhound Pack",					"pts":500, "upgrades":[], "units":"2 Warhounds"},
 			{"id":532, "name":"Warhound  Titan",				"pts":275, "upgrades":[]}
@@ -37,7 +37,7 @@
 	],
 	"upgrades":[
 		{"id":11, "name":"Leman Russ",			"pts":0},
-		{"id":12, "name":"Vanquisher",			"pts":0},
+		{"id":12, "name":"Vanquisher",			"pts":25},
 		{"id":14, "name":"Baneblade",			"pts":0},
 		{"id":15, "name":"Shadowsword",			"pts":0},
 		{"id":20, "name":"Lunar Class",			"pts":0},
@@ -105,4 +105,7 @@
 		{"max":1, "from":[42]},
 		{"max":1, "from":[43]}
 	]
+}, 	{"max":1, "from":[12]}
+	]
 }
+
