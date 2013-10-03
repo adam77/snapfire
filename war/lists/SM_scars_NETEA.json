@@ -1,7 +1,7 @@
 {
 	"id":"White Scars",
 	"version":"NetEA Army Compendium v20120208",
-	"by":"lindstrom",
+	"by":"lindstrom, last edit 13-10-03 Parintachin",
 	"sections":[
 		{"name":"DETACHMENTS", "formations":[
 			{"id":500, "name":"Assault Detachment", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18]},
@@ -40,7 +40,6 @@
 		{"id":16, "name":"Chaplain", 		"pts":50},
 		{"id":17, "name":"Librarian", 		"pts":50},
 		{"id":18, "name":"Supreme Commander",	"pts":100},
-		{"id":30, "name":"Dreadnought",				"pts":50},
 		{"id":31, "name":"Hunter", 					"pts":50},
 		{"id":32, "name":"Land Raider", 				"pts":100},
 		{"id":33, "name":"Razorback",					"pts":25},
@@ -58,7 +57,6 @@
 		{"min":4, "max":4, "from":[24,25], "appliesTo":[506]},
 		{"max":1, "name":"Cmdr", "from":[15,16,17,18]},
 		{"max":1, "perArmy":true, "from":[18]},
-		{"max":2, "from":[30]},
 		{"max":1, "from":[31]},
 		{"max":4, "from":[32]},
 		{"max":1, "from":[34]},
