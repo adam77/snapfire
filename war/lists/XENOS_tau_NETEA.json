@@ -1,58 +1,54 @@
 {
    "id": "Tau Third Phase Expansion",
-   "version": "NetEA Army Compendium v20120208",
-   "by": "Iron Bloke",
+   "version": "6.6 / NetEA Tournament Pack 2013",
+   "by": "Iron Bloke, latest edit 2013-10-4 Parintachin",
    "sections": [
       { "name": "CADRES",
          "formations": [
-            {"id": 532,"name": "Crisis Battlesuit Cadre","pts": 50,"upgrades": [17,50,51,34,35,36]},
-            {"id": 531,"name": "Fire Warrior Cadre","pts": 225,"upgrades": [60,55,61,34,35,36,54,56,62,63]}
+            {"id": 532,"name": "Crisis Battlesuit Cadre","pts": 50,"upgrades": [17,50,51,35]},
+            {"id": 531,"name": "Fire Warrior Cadre","pts": 225,"upgrades": [62,63,60,35,61,54,55]}
          ]
       },
       {"name": "SUPPORT GROUPS",
          "formations": [
-            {"id": 516,"name": "Armour Support Group","pts": 200,"upgrades": [55]},
-            {"id": 514,"name": "Broadside Group","pts": 300,"units": "6 XV88 Broadsides","upgrades": []},
+            {"id": 516,"name": "Armour Support Group","pts": 0,"upgrades": [22,55]},
+            {"id": 514,"name": "Broadside Group","pts": 325,"units": "6 XV88 Broadsides","upgrades": []},
             {"id": 518,"name": "Kroot Kindred","pts": 175,"units": "Kroot Master Shaper","upgrades": [58,59]},
-            {"id": 512,"name": "Pathfinder Group","pts": 200,"units": "4 Pathfinders, 2 Devilfish","upgrades": [34,35,36,54]},
-            {"id": 515,"name": "Recon Skimmer Group","pts": 175,"upgrades": [34,35,36,54]},
-            {"id": 517,"name": "Skysweep Support Group","pts": 275,"units": "3 Skyray Gunships","upgrades": []},
-            {"id": 513,"name": "Stealth Group","pts": 250,"units": "6 XV15 Stealth Units","upgrades": [34,35,36]}
+            {"id": 512,"name": "Pathfinder Group","pts": 200,"units": "4 Pathfinders, 2 Devilfish","upgrades": [35,54]},
+            {"id": 515,"name": "Recon Skimmer Group","pts": 175,"upgrades": [35,54]},
+            {"id": 517,"name": "Skysweep Support Group","pts": 250,"units": "3 Skyray Gunships","upgrades": []},
+            {"id": 513,"name": "Stealth Group","pts": 225,"units": "6 XV15 Stealth Units","upgrades": [35]}
          ]
       },
       { "name": "AIR CASTE",
          "formations": [
             {"id": 521,"name": "Barracuda Squadron","pts": 150,"units": "2 Barracuda Fighters","upgrades": []},
-            {"id": 522,"name": "Tiger Shark Squadron","pts": 175,"units": "2 Tiger Sharks","upgrades": [70]},
-            {"id": 523,"name": "AX-1-0 Squadron","pts": 375,"units": "2 Tiger Shark AX-1-0","upgrades": []},
             {"id": 524,"name": "Manta Dropship","pts": 675,"upgrades": []},
+            {"id": 526,"name": "Orca Dropship","pts": 150,"upgrades": []},
             {"id": 525,"name": "Spacecraft","pts": 200,"upgrades": []},
-            {"id": 526,"name": "Orca Dropship","pts": 150,"upgrades": []}
+            {"id": 522,"name": "Tiger Shark Squadron","pts": 175,"units": "2 Tiger Sharks","upgrades": [70]},
+            {"id": 523,"name": "AX-1-0 Squadron","pts": 375,"units": "2 Tiger Shark AX-1-0","upgrades": []}
          ]
       }
    ],
    "upgrades": [
       {"id": 17,"name": "XV8 Crisis Battlesuit","pts": 50},
-      {"id": 34,"name": "Gun Drone","pts": 25},
-      {"id": 35,"name": "2 Gun Drones","pts": 50},
-      {"id": 36,"name": "4 Gun Drones","pts": 75},
-      {"id": 60,"name": "Ethereal","pts": 75},
-      {"id": 61,"name": "2 Pathfinders, 1 Devilfish","pts": 125},
+      {"id": 35,"name": "2 Gun Drone units","pts": 25},
+      {"id": 60,"name": "Ethereal","pts": 50},
+      {"id": 61,"name": "2 Pathfinders, 1 Devilfish","pts": 100},
       {"id": 62,"name": "Bonded Team","pts": 25},
       {"id": 63,"name": "3 XV88 Broadsides","pts": 150},
-      {"id": 64,"name": "10 Fire Warriors, 3 Devilfish","pts": 75},
-      {"id": 65,"name": "10 Fire Warriors, 5 Devilfish","pts": 150},
-      {"id": 66,"name": "12 Fire Warriors","pts": 75},
-      {"id": 67,"name": "12 Fire Warriors, 2 Devilfish","pts": 150},
-      {"id": 50,"name": "Shas'el","pts": 50},
+      {"id": 31,"name": "8 Fire Warriors","pts": 0},
+      {"id": 32,"name": "6 Fire Warriors, 3 Devilfish","pts": 0},
+      {"id": 64,"name": "10 Fire Warriors, 3 Devilfish","pts": 100},
+      {"id": 65,"name": "10 Fire Warriors, 5 Devilfish","pts": 125},
+      {"id": 66,"name": "12 Fire Warriors","pts": 100},
+      {"id": 67,"name": "12 Fire Warriors, 2 Devilfish","pts": 125},
+      {"id": 50,"name": "Shas'el","pts": 25},
       {"id": 51,"name": "Shas'o","pts": 100},
       {"id": 54,"name": "3 Piranhas","pts": 75},
       {"id": 55,"name": "Skyray","pts": 100},
-      {"id": 56,"name": "2 Hammerheads","pts": 100},
-      {"id": 31,"name": "8 Fire Warriors","pts": 0},
-      {"id": 32,"name": "6 Fire Warriors, 3 Devilfish","pts": 0},
-      {"id": 22,"name": "4 Hammerheads","pts": 0},
-      {"id": 23,"name": "6 Hammerheads","pts": 100},
+      {"id": 22,"name": "Hammerhead gunship","pts": 50},
       {"id": 58,"name": "3 Kroot Hound Packs","pts": 50},
       {"id": 59,"name": "3 Krootox Herds","pts": 75},
       {"id": 19,"name": "9 Kroot Warriors","pts": 0},
@@ -75,19 +71,19 @@
       {"max": 1,"from": [34,35,36],"appliesTo": [532,531,512,515,513],"name": "Drone"},
       {"max": 1,"from": [60],"appliesTo": [531]},
       {"max": 1,"min": 1,"from": [31,32,64,65,66,67],"appliesTo": [531],"name": "Warriors"},
-      {"max": 1,"from": [55],"appliesTo": [531,516]},
+      {"max": 1,"from": [55],"appliesTo": [531]},
+      {"max": 6,"min": 4,"from": [22],"appliesTo": [516]},
       {"max": 1,"from": [61],"appliesTo": [531]},
       {"max": 1,"from": [54],"appliesTo": [531,512,515]},
-      {"max": 1,"from": [56],"appliesTo": [531]},
+      {"max": 1,"from": [56,57],"appliesTo": [531]},
       {"max": 1,"from": [62],"appliesTo": [531]},
       {"max": 1,"from": [63],"appliesTo": [531]},
-      {"max": 1,"min": 1,"from": [22,23],"appliesTo": [516]},
       {"max": 1,"from": [58],"appliesTo": [518]},
       {"max": 1,"from": [59],"appliesTo": [518]},
       {"max": 1,"min": 1,"from": [19,20],"appliesTo": [ 518]},
       {"max": 6,"min": 6,"from": [25,26],"appliesTo": [515]},
       {"max": 1,"from": [70],"appliesTo": [522]},
-      {"max": 3,"from": [60,55,61,34,35,36,54,56,62,63,64,65,66,67],"appliesTo": [531,532]},
+      {"max": 3,"from": [60,55,61,35,54,56,62,63,64,65,66,67],"appliesTo": [531,532]},
       {"max": 1,"min": 1,"from": [11,12],"appliesTo": [525]}
    ]
 }
