@@ -2,7 +2,7 @@
 	"id":"Legio Gryphonicus",
 	"version":"NetEA v3.18 *UNDER DEVELOPMENT*",
 	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
-	"by":"Iron Bloke",
+	"by":"Iron Bloke, last edit 2013-10-4 Parintachin",
 	"sections":[
 		{"name":"BATTLE TITANS", "formations":[
 			{"id":502, "name":"Emperor Titan", 		"pts":1250,"upgrades":[81,82,83,84]},
@@ -19,7 +19,7 @@
 			{"id":563, "name":"Thunderbolt Fighters",	"pts":150, "units":"2 Thunderbolts", "upgrades":[]},
 			{"id":564, "name":"Marauder Bombers",		"pts":250, "units":"2 Mauraders", "upgrades":[]},
 			{"id":565, "name":"Orbital Support",		"pts":175, "upgrades":[]},
-			{"id":566, "name":"Skitarii Demi-Century",	"pts":300, "units":"Tech Priest, 9 Hypaspists", "upgrades":[]},
+			{"id":566, "name":"Skitarii Demi-Century",	"pts":100, "units":"Tech Priest, 9 Hypaspists", "upgrades":[]},
 			{"id":567, "name":"Lysander Fighter",		"pts":75,	 "upgrades":[]}	
 		]}
 	],
