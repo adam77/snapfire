@@ -1,0 +1,66 @@
+{
+"id":"AMTL",
+"version":"EpicUKv2.0",
+"by":"IronBloke",
+"sections":[
+{
+"name":"COMPANIES",
+"formations":[
+	{"id":501,"name":"Warlord Battle Titan","pts":850,"units":"1 Warlord Battle Titan","upgrades":[10,11,12]},
+	{"id":502,"name":"Reaver Battle Titan","pts":650,"units":"1 Reaver Battle Titan","upgrades":[11,12]},
+	{"id":503,"name":"Warhound Scout Team","pts":550,"units":"2 Warhound Scout Titans","upgrades":[12]},
+	{"id":504,"name":"Warhound Scout Titan","pts":300,"units":"1 Warhound Scout Titan","upgrades":[12]}
+]},
+{"name":"SUPPORT FORMATIONS",
+"formations":[{
+	"id":521,"name":"Cybernetic Guards","pts":200,"units":"8 Robots","upgrades":[]}
+]},
+{"name":"IMPERIAL NAVY",
+"formations":[
+	{"id":531,"name":"Orbital Support","pts":150,"units":"1 Adeptus Mechanicsu Mars Cruiser","upgrades":[]},
+	{"id":532,"name":"Fighter Cohort","pts":150,"units":"2 Thunderbolt Fighter-bombmers","upgrades":[]},
+	{"id":533,"name":"MarauderBombers","pts":250,"units":"2 Marauder Bombers","upgrades":[]}
+]}
+],
+"upgrades":[
+	{"id":10,"name":"Legate","pts":50},
+	{"id":11,"name":"Carapace Multilasers","pts":50},
+	{"id":12,"name":"Veteran Princips","pts":50},
+	{"id":50,"name":"Quake Cannon","pts":0},
+	{"id":51,"name":"Volcano Cannon","pts":0},
+	{"id":52,"name":"Plasma Destructor","pts":0},
+	{"id":53,"name":"Deathstrike Missile","pts":0},
+	{"id":54,"name":"Barrage Missile","pts":0},
+	{"id":60,"name":"Gatling Blaster","pts":0},
+	{"id":61,"name":"Turbo Laser Destructor","pts":0},
+	{"id":62,"name":"Plasma Cannon","pts":0},
+	{"id":63,"name":"Multiple Rocket Launcer","pts":0},
+	{"id":64,"name":"Vulcan Mega Bolter","pts":0},
+	{"id":65,"name":"Inferno Gun","pts":0},
+	{"id":66,"name":"Melta Cannon","pts":0},
+	{"id":67,"name":"Lasburner","pts":0},
+	{"id":68,"name":"Close Combat Arm","pts":0},
+	{"id":69,"name":"Hydra Platfom (Carapace only)","pts":0},
+	{"id":70,"name":"Carapace Landing Platform (Carapace only)","pts":0},
+	{"id":80,"name":"Rocket Launcher","pts":0},
+	{"id":81,"name":"Scout Turbo Laser","pts":0},
+	{"id":82,"name":"Plasma Blastgun","pts":0},
+	{"id":83,"name":"Scout Inferno Gun","pts":0}
+],
+"formationConstraints":[
+	{"min":1,"from":[501]},
+	{"max":1, "perArmy":true, "from":[531]},
+	{"maxPercent":17,"name":"Imperial Navy","from":[531,532,533]},
+	{"max":1,"name":"Support Formations","from":[521],"forEach":[501,502,503,504],"name2":"Companies"}
+],
+"upgradeConstraints":[
+	{"max":1,"from":[11],"appliesTo":[501,502]},
+	{"max":1,"from":[12],"appliesTo":[501,502,504]},
+	{"max":1,"from":[12],"appliesTo":[503]},
+	{"max":1, "perArmy":true, "from":[10]},
+	{"min":4,"max":4,"from":[60,61,62,63,64,65,66,67,68,69,70,50,51,52,53,54],"appliesTo":[501]},
+	{"min":3,"max":3,"from":[60,61,62,63,64,65,66,67,68,69,70],"appliesTo":[502]},
+	{"min":4,"max":4,"from":[64,80,81,82,83],"appliesTo":[503]},
+	{"min":2,"max":2,"from":[64,80,81,82,83],"appliesTo":[504]}
+]
+}
