@@ -1,7 +1,7 @@
 {
 	"id":"Biel-Tan Craftworld",
 	"version":"NetEA Army Compendium v20120208",
-	"by":"Iron Bloke, Updated to 2012 by Parintachin",
+	"by":"Iron Bloke, last edit 2013-10-23 Parintachin",
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":507, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
@@ -13,22 +13,22 @@
 			{"id":512, "name":"Guardian Warhost (Mounted)",		"pts":350,	"units":"Farseer, 4 Wave Serpents",	"upgrades":[]}
 		]},	
 		{"name":"TROUPES", "formations":[
+			{"id":505, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36,37]},
+			{"id":504, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners"},
 			{"id":500, "name":"Ranger Troupe",					"pts":0, "upgrades":[11]},
-			{"id":501, "name":"War Walker Troupe",				"pts":200,"units":"6 War Walkers",  "upgrades":[]},
-			{"id":502, "name":"Windrider Troupe",				"pts":200, 	"upgrades":[]},
 			{"id":503, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[30,31,32]},
-			{"id":504, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners", "upgrades":[]},
-			{"id":505, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36,37]}
+			{"id":501, "name":"War Walker Troupe",				"pts":200,"units":"6 War Walkers"},
+			{"id":502, "name":"Windrider Troupe",				"pts":200}
 		]},
 		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
+			{"id":520, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
+			{"id":518, "name":"Phantom Titan",	"pts":750, "upgrades":[]},
+			{"id":521, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
+			{"id":519, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
 			{"id":515, "name":"Wraithship",	"pts":150, "upgrades":[]},
 			{"id":516, "name":"Dragonship",	"pts":300, "upgrades":[]},
-		 	{"id":517, "name":"Warlock Titan",	"pts":850, "upgrades":[]},
-			{"id":518, "name":"Phantom Titan",	"pts":750, "upgrades":[]},
-			{"id":519, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
-			{"id":520, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
-			{"id":521, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
-			{"id":522, "name":"Vampire Raider","pts":200, "upgrades":[]}
+			{"id":522, "name":"Vampire Raider","pts":200, "upgrades":[]},
+		 	{"id":517, "name":"Warlock Titan",	"pts":850, "upgrades":[]}
 		]}
 	],
 	"upgrades":[
@@ -44,7 +44,7 @@
 		{"id":22, "name":"Shining Spear",		"pts":0},
 		{"id":24, "name":"Guardians",				"pts":0},
 		{"id":25, "name":"Heavy Weapon Platform",	"pts":0},
-		{"id":27, "name":"Jetbike", 	"pts":0},
+		{"id":27, "name":"Jetbikes", 	"pts":0},
 		{"id":28, "name":"Vyper", 		"pts":0},
 		{"id":30, "name":"Falcon",		"pts":50},
 		{"id":31, "name":"Fire Storm",	"pts":50},
