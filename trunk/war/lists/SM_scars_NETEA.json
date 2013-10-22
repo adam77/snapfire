@@ -1,29 +1,29 @@
 {
 	"id":"White Scars",
-	"version":"NetEA Army Compendium v20120208",
-	"by":"lindstrom, last edit 13-10-03 Parintachin",
+	"version":"NetEA Tournament Pack 2013",
+	"by":"lindstrom, last edit 23-10-03 Parintachin",
 	"sections":[
 		{"name":"DETACHMENTS", "formations":[
-			{"id":500, "name":"Assault Detachment", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18]},
-			{"id":501, "name":"Bike Detachment", 			"pts":375, "upgrades":[15,16,17,18]},
-			{"id":504, "name":"Land Speeders",				"pts":200, "upgrades":[15,16,17,18]},
+			{"id":500, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18]},
+			{"id":501, "name":"Bike", 			"pts":375, "upgrades":[15,16,17,18]},
+			{"id":504, "name":"Land Speeder",				"pts":200, "upgrades":[15,16,17,18]},
 			{"id":505, "name":"Landing Craft",				"pts":350, "upgrades":[]},
-			{"id":506, "name":"Predators",					"pts":250, "upgrades":[15,16,17,18,31,35]},
-			{"id":507, "name":"Scout Detachment",			"pts":150, "units":"4 Scouts", "upgrades":[15,16,17,18,33,34,11,12]},
+			{"id":506, "name":"Predator",					"pts":250, "upgrades":[15,16,17,18,31,35]},
+			{"id":507, "name":"Scout",			"pts":150, "units":"4 Scouts", "upgrades":[15,16,17,18,33,34,11,12]},
 			{"id":509, "name":"Strike Cruiser",			"pts":200, "upgrades":[]},
 			{"id":510, "name":"Battle Barge",				"pts":350, "upgrades":[]}, 
-			{"id":511, "name":"Tactical Detachment",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,33,11,12]},
-			{"id":512, "name":"Terminator Detachment",		"pts":650, "units":"4 Terminators + 4 Land Raiders", "upgrades":[15,16,17,18]},
+			{"id":511, "name":"Tactical",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,33,11,12]},
+			{"id":512, "name":"Terminator",		"pts":650, "units":"4 Terminators + 4 Land Raiders", "upgrades":[15,16,17,18]},
 			{"id":513, "name":"Thunderhawk",				"pts":200, "upgrades":[]},
 			{"id":515, "name":"Whirlwinds",				"pts":300, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,31,35]}
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
-			{"id":517, "name":"Thunderbolt Fighters",	"pts":175, "units":"2 Fighters", "upgrades":[]},
-			{"id":518, "name":"Marauder Bombers",		"pts":250, "units":"2 Bombers", "upgrades":[]}
+			{"id":518, "name":"Marauder Bombers",		"pts":250, "units":"2 Bombers", "upgrades":[]},
+			{"id":517, "name":"Thunderbolt Fighters",	"pts":175, "units":"2 Fighters", "upgrades":[]}
 		]},
 		{"name":"TITAN LEGIONS", "formations":[
-			{"id":524, "name":"Warhound Pack",			"pts":500, "upgrades":[], "units":"2 Warhounds"},
-			{"id":522, "name":"Warhound Titan",		"pts":275, "upgrades":[]}
+			{"id":522, "name":"Warhound ",		"pts":275, "units":"1 Warhound Class Titans"},
+			{"id":524, "name":"Warhound Pack",			"pts":500, "units":"2 Warhound Class Titans"}
 		]}	
 	],
 	"upgrades":[
@@ -40,11 +40,11 @@
 		{"id":16, "name":"Chaplain", 		"pts":50},
 		{"id":17, "name":"Librarian", 		"pts":50},
 		{"id":18, "name":"Supreme Commander",	"pts":100},
-		{"id":31, "name":"Hunter", 					"pts":50},
+		{"id":31, "name":"Hunter", 					"pts":75},
 		{"id":32, "name":"Land Raider", 				"pts":100},
 		{"id":33, "name":"Razorback",					"pts":25},
 		{"id":34, "name":"Sniper",						"pts":25},
-		{"id":35, "name":"Vindicator",					"pts":75}
+		{"id":35, "name":"Vindicator",					"pts":50}
 	],
 	"formationConstraints":[
 		{"max":1, "name":"Spacecraft", "from":[509,510]},
