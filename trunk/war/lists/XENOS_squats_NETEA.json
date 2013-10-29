@@ -2,7 +2,7 @@
 	"id":"Thurgrim's Stronghold Squats",
 	"version":"Thurgrims Stronghold 1.4",
 	"notes":[
-		"If transport Upgrade is chosen, then you must take exactly enough transports of only one kind to transport all units in the formation. Only one formation in the army may be transported in Spartans. The transport upgrade counts towards the 3 upgrades limit per formation."
+		"If transport Upgrade is chosen, then you must take exactly enough transports of only one kind to transport all units in the formation."
 	],
 	"by":"Iron Bloke, last update 2013-10-29 Parintachin",
 	"sections":[
