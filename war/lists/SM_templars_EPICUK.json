@@ -12,7 +12,7 @@
 			{"id":105, "name":"Land Speeder", "pts":0, "upgrades":[11,12,14]},
 			{"id":106, "name":"Landing Craft", "pts":350, "units":"1 Landing Craft"},
 			{"id":107, "name":"Predators", "pts":0, "upgrades":[11,12,14,19,31,15]},
-			{"id":110, "name":"Tactical", "pts":300, "units":"6 Tactial units plus Transport", "upgrades":[11,12,14,32,33,18,19,31,15,21,22]},
+			{"id":110, "name":"Tactical", "pts":300, "units":"6 Tactical units plus Transport", "upgrades":[11,12,14,32,33,18,19,31,15,21,22]},
 			{"id":111, "name":"Terminator", "pts":350, "units":"4 Terminator units", "upgrades":[11,12,14,32,18,20,35,15]},
 			{"id":112, "name":"Thunderhawk", "pts":200, "units":"1 Thunderhawk gunship"},
 			{"id":114, "name":"Thunderhawk Transporter", "pts":200, "units":"1 Thunderhawk Transporter", "upgrades":[34]},
