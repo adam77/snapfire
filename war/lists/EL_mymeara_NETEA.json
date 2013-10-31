@@ -29,7 +29,7 @@
 			{"id":522, "name":"Vampire Raider","pts":200},
 			{"id":518, "name":"Phantom Titan",	"pts":750},
 			{"id":519, "name":"Revenants","pts":650, "units":"2 Revenant Titans"},
-			{"id":519, "name":"Revenant Single","pts":375, "units":"1 Revenant Titans"}
+			{"id":523, "name":"Revenant Single","pts":375, "units":"1 Revenant Titans"}
 		]}
 	],
 	"upgrades":[
@@ -69,10 +69,10 @@
 		{"id":52, "name":"Lynx",	"pts":125}
 	],
 	"formationConstraints":[
-		{"max":3, "name":"Troupes", "from":[500,501,502,503,504,505], "forEach":[510,511,512], "name2":"Warhost"},
+		{"max":3, "name":"Troupes", "from":[501,502,504,505,506,507,508,509,], "forEach":[503,512], "name2":"Warhost"},
 		{"max":2, "from":[507]},
 		{"max":1, "from":[517]},
-		{"maxPercent":33, "name":"Aircraft & Titans", "from":[515,516,517,518,519,520,521,522]},		
+		{"maxPercent":33, "name":"AIR, SPACE & TITANS", "from":[515,516,518,519,520,521,522,523]},		
 		{"max":1, "name":"Spacecraft", "from":[515,516]}		
 	],
 	"upgradeConstraints":[
