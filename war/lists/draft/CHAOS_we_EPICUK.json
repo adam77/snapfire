@@ -1,0 +1,92 @@
+{
+   "id": "World Eaters",
+   "version": "Epic UK v10042013",
+   "by": "Kyussinchains",
+   "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 4. 2) 1 Dreadclaw must be purchased per unit in the formation. 3) both Rhinos and Dreadclaws count towards the upgrade allowance of a formation"],
+   "sections": [
+      {"name": "CORE", "formations": [
+            {"id": 501, "name": "World Eater Retinue", "pts": 300, "units": "8 Berserkers", "upgrades": [52,53,64,65,66,54,67,68,56,57,71,72,63,69,70,60,62,58]},
+            {"id": 551, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
+         ]},
+	  {"name": "ELITE", "formations": [
+			{"id": 503, "name": "World Eater Terminators", "pts": 400, "units": "4 Terminators", "upgrades": [52,56,57,71,72,63,69,70,60,53,64,65,66]},
+			{"id": 508, "name": "World Eater Juggernaughts", "pts": 375, "units": "8 Juggernaughts", "upgrades": [56,60]},
+            {"id": 509, "name": "Bike Company", "pts": 350, "units": "8 Bikes", "upgrades": [56,60]}
+        ]},
+      {"name": "SUPPORT", "formations": [
+            {"id": 504, "name": "Chaos Space Marines", "pts": 250, "units": "6 Chaos Marines, 3 Rhinos", "upgrades": [56]},
+            {"id": 505, "name": "Daemonic Artillery", "pts": 200, "units": "4 Cannons of Khorne", "upgrades": []},
+            {"id": 506, "name": "Daemonic Assault Engine Pack", "pts": -25, "upgrades": [37,63,69,70]},
+            {"id": 507, "name": "Armoured Company", "pts": 0, "upgrades": [30,31,54,67,68,57,71,72]},
+            {"id": 510, "name": "Defiler Assault Pack", "pts": 250, "units": "4 World Eater Defilers", "upgrades": [63,69,70,57,71,72]}
+         ]},
+      {"name": "CHAOS TITANS", "formations": [
+            {"id": 520, "name": "Banelord Titan", "pts": 800, "upgrades": []},
+            {"id": 521, "name": "Ravager Titan", "pts": 650, "upgrades": []},
+            {"id": 522, "name": "Lord of Battles", "pts": 0, "upgrades": [39]}
+         ]},
+      {"name": "CHAOS NAVY", "formations": [
+            {"id": 530, "name": "Hellblade Flight", "pts": 200, "units": "3 Fighters", "upgrades": []},
+            {"id": 531, "name": "Helltalon Flight", "pts": 250, "units": "2 Bombers", "upgrades": []},
+            {"id": 533, "name": "Styx Class Cruiser", "pts": 150, "upgrades": []}
+		 ]}
+   ],
+   "upgrades": [
+      {"id": 17, "name": "Chaos Lord", "pts": 0},
+      {"id": 19, "name": "Daemon Prince", "pts": 50},
+      {"id": 20, "name": "Chaos Warlord (Supreme Commander)", "pts": 50},
+      {"id": 21, "name": "Daemon Prince (Supreme Commander)", "pts": 100},
+      {"id": 53, "name": "Chaos Land Raider", "pts": 75},
+	  {"id": 64, "name": "2 Chaos Land Raiders", "pts": 150},
+	  {"id": 65, "name": "3 Chaos Land Raiders", "pts": 225},
+	  {"id": 66, "name": "4 Chaos Land Raiders", "pts": 300},
+      {"id": 54, "name": "Chaos Vindicator", "pts": 35},
+	  {"id": 67, "name": "2 Chaos Vindicators", "pts": 70},
+	  {"id": 68, "name": "3 Chaos Vindicators", "pts": 105},
+      {"id": 60, "name": "Icon Bearer", "pts": 25},
+      {"id": 52, "name": "Chaos Champion", "pts": 50},
+      {"id": 56, "name": "Daemonic Pact", "pts": 25},
+      {"id": 63, "name": "Dreadnought", "pts": 50},
+	  {"id": 69, "name": "2 Dreadnoughts", "pts": 100},
+	  {"id": 70, "name": "3 Dreadnoughts", "pts": 150},
+      {"id": 57, "name": "World Eater Defiler", "pts": 65},
+	  {"id": 71, "name": "2 World Eater Defilers", "pts": 130},
+	  {"id": 72, "name": "3 World Eater Defilers", "pts": 195},
+      {"id": 62, "name": "Rhino", "pts": 10},
+      {"id": 58, "name": "Dreadclaw Drop Pod", "pts": 5},
+      {"id": 50, "name": "Greater Daemon", "pts": 50},
+      {"id": 51, "name": "Lesser Daemon", "pts": 15},
+      {"id": 37, "name": "Daemonic Assault Engine", "pts": 75},
+      {"id": 27, "name": "Chaos Predator", "pts": 50},
+      {"id": 29, "name": "Chaos Vindicator", "pts": 50},
+	  {"id": 30, "name": "Chaos Predator", "pts": 50},
+      {"id": 31, "name": "Chaos Land Raider", "pts": 75},
+      {"id": 64, "name": "Daemon Assault Engine", "pts": 75},
+	  {"id": 41, "name": "Defiler", "pts": 65},
+      {"id": 39, "name": "Lord of Battles", "pts": 400}
+   ],
+   "formationConstraints": [
+      {"max": 1, "from": [551]},
+      {"max": 1, "from": [533]},
+      {"maxPercent": 33, "name": "War Engines & Allies", "from": [520,521,522,530,531,533]},
+      {"max": 2, "name": "Support Formations", "from": [504,505,506,507,510], "forEach": [501], "name2": "Retinue"},
+	  {"max": 1, "name": "Elite Formation", "from": [503,508,509], "forEach": [501], "name2": "Retinue"}
+   ],
+   "upgradeConstraints": [
+      {"max": 1, "perArmy": true, "from": [20]},
+      {"max": 1, "perArmy": true, "from": [19,21]},
+      {"max": 1, "min": 1, "from": [17,19,20,21], "appliesTo": [501,503]},
+	  {"max": 1, "min": 1, "from": [17,20], "appliesTo": [508,509]},
+	  {"max": 4, "from": [53,64,65,66,54,67,68,60,52,56,63,69,70,57,71,72], "appliesTo": [501,503,508,509,504,506,507,510],"name": "Upgrades"},
+	  {"max": 1, "from": [54,67,68], "appliesTo": [501,503]}, 
+	  {"max": 1, "from": [53,64,65,66], "appliesTo": [501,507]}, 
+	  {"max": 1, "from": [63,69,70], "appliesTo": [501,503,510,506]}, 
+	  {"max": 1, "from": [57,71,72], "appliesTo": [501,503,507,510,506]},  
+	  {"max": 1, "from": [60], "appliesTo": [501,503,508,509]},
+      {"max": 1, "from": [52], "appliesTo": [501,503]},
+      {"max": 1, "from": [56], "appliesTo": [501,503,504,508,509]},
+      {"max": 6, "min": 4, "from": [37], "appliesTo": [506]},
+      {"max": 8, "min": 4, "from": [30,31], "appliesTo": [507]},
+      {"max": 2, "min": 1, "from": [39], "appliesTo": [522]}
+   ]
+}
