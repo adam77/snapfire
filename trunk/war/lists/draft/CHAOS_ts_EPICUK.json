@@ -1,0 +1,91 @@
+{
+   "id": "Thousand Sons",
+   "version": "Epic UK v10042013",
+   "by": "Kyussinchains",
+   "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 5. 2) Rhinos count towards the upgrade allowance of a formation"],
+   "sections": [
+      {"name": "CORE", "formations": [
+			{"id": 501, "name": "Thousand Sons Retinue", "pts": 275, "upgrades": [22,53,64,65,66,60,52,57,67,68,62]},
+			{"id": 552, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
+	]},
+      {"name": "SUPPORT", "formations": [
+			{"id": 503, "name": "Terminators", "pts": 400, "units": "4 Terminators", "upgrades": [22,63,70,71,53,64,65,66,56,60,57,67,68]},
+			{"id": 506, "name": "Defiler Pack", "pts": 275, "units": "4 Defilers",  "upgrades": [63]},
+			{"id": 508, "name": "Disc Riders", "pts": 275, "units": "8 Disc Riders", "upgrades": [56,60]},
+			{"id": 509, "name": "Armoured Company", "pts": 0, "upgrades": [29,30,57,67,68,28,72,73]},
+			{"id": 510, "name": "Silver Towers", "pts": 325, "units": "4 Silver Towers", "upgrades": []}
+      ]},
+      {"name": "CHAOS TITANS", "formations": [
+			{"id": 520, "name": "Warplord Titan", "pts": 800, "upgrades": []},
+			{"id": 521, "name": "Mutator Titan", "pts": 650, "upgrades": []},
+			{"id": 522, "name": "Warphound Tian", "pts": 275, "upgrades": []}
+      ]},
+      {"name": "CHAOS NAVY & DAEMONIC ENGINES", "formations": [
+            {"id": 530, "name": "Doomwings", "pts": 150, "units": "3 Doomwings", "upgrades": []},
+            {"id": 531, "name": "Firelords", "pts": 250, "units": "2 Firelords", "upgrades": [39]},
+            {"id": 533, "name": "Devastation Class Cruiser", "pts": 150, "upgrades": []},
+            {"id": 534, "name": "Despoiler Class Battleship", "pts": 250, "upgrades": []}
+         ]}
+   ],
+   "upgrades": [
+      {"id": 34, "name": "5 Thousand Sons", "pts": 0},
+      {"id": 35, "name": "8 Thousand Sons", "pts": 175},
+      {"id": 53, "name": "Chaos Land Raider", "pts": 75},
+	  {"id": 64, "name": "2 Chaos Land Raiders", "pts": 150},
+	  {"id": 65, "name": "3 Chaos Land Raiders", "pts": 225},
+	  {"id": 66, "name": "4 Chaos Land Raiders", "pts": 300},
+      {"id": 60, "name": "Icon Bearer", "pts": 50},
+      {"id": 52, "name": "Aspiring Sorcerer", "pts": 50},
+      {"id": 57, "name": "Thousand Sons Defiler", "pts": 75},
+	  {"id": 67, "name": "2 Thousand Sons Defilers", "pts": 150},
+	  {"id": 68, "name": "3 Thousand Sons Defilers", "pts": 225},
+	  {"id": 62, "name": "Rhino", "pts": 10},
+      {"id": 50, "name": "Greater Daemon", "pts": 50},
+      {"id": 51, "name": "Lesser Daemon", "pts": 15},
+	  {"id": 23, "name": "Cabal of Sorcerers", "pts": 0},
+      {"id": 18, "name": "Sorcerer Lord", "pts": 0},
+      {"id": 19, "name": "Daemon Prince", "pts": 50},
+      {"id": 20, "name": "Chaos Warlord (Supreme Commander)", "pts": 50},
+      {"id": 21, "name": "Daemon Prince (Supreme Commander)", "pts": 100},
+	  {"id": 22, "name": "Chaos Champion", "pts": 50},
+      {"id": 63, "name": "Dreadnought", "pts": 50},
+	  {"id": 70, "name": "2 Dreadnoughts", "pts": 100},
+	  {"id": 71, "name": "3 Dreadnoughts", "pts": 150},
+	  {"id": 56, "name": "Daemonic Pact", "pts": 25},
+      {"id": 27, "name": "Chaos Predator", "pts": 50},
+	  {"id": 28, "name": "Chaos Vindicator", "pts": 35},
+	  {"id": 29, "name": "Chaos Predator", "pts": 50},
+	  {"id": 30, "name": "Chaos Land Raider", "pts": 75},
+	  {"id": 72, "name": "2 Chaos Vindicators", "pts": 70},
+	  {"id": 73, "name": "3 Chaos Vindicators", "pts": 105},
+      {"id": 39, "name": "Firelord", "pts": 100}
+   ],
+   "formationConstraints": [
+      {"max": 1, "from": [552]},
+      {"max": 1, "name": "Spacecraft", "from": [533,534]},
+      {"maxPercent": 33, "name": "War Engines & Allies", "from": [520,521,522,530,531,533,534]},
+      {"max": 2, "name": "Support Formations", "from": [503,506,508,509,510], "forEach": [501], "name2": "Retinue"}
+   ],
+   "upgradeConstraints": [
+      {"max": 1, "min": 1, "from": [34,35], "appliesTo": [501]},
+	  {"max": 1, "min": 1, "from": [23,19,20,21], "appliesTo": [501]},
+	  {"max": 1, "perArmy": true, "from": [19,21]},
+	  {"max": 4, "from": [53,64,65,66,60,52,57,67,68,22,63,70,71,56,28,72,73], "appliesTo": [501,503,506,508,509],"name": "Upgrades"},
+	  {"max": 1, "from": [28,72,73], "appliesTo": [509]}, 
+	  {"max": 1, "from": [53,64,65,66], "appliesTo": [501,503]}, 
+	  {"max": 1, "from": [63,70,71], "appliesTo": [503,506]}, 
+	  {"max": 1, "from": [57,67,68], "appliesTo": [501,503,509]},  
+	  {"max": 1, "from": [22], "appliesTo": [501,503]},
+      {"max": 4, "from": [53], "appliesTo": [501,503]},
+      {"max": 1, "from": [60], "appliesTo": [501,503,508]},
+      {"max": 1, "from": [52], "appliesTo": [501]},
+      {"max": 3, "from": [57], "appliesTo": [501,503]},
+      {"max": 1, "perArmy": true, "from": [20]},
+      {"max": 1, "perArmy": true, "from": [21]},
+      {"max": 1, "min": 1, "from": [18,19,20,21], "appliesTo": [503,508]},
+      {"max": 3, "from": [63], "appliesTo": [503,506]},
+      {"max": 1, "from": [56], "appliesTo": [503,508]},
+      {"max": 9, "min": 4, "from": [29,30], "appliesTo": [509]},
+      {"max": 1, "from": [39], "appliesTo": [531]}
+   ]
+}
