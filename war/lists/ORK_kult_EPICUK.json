@@ -4,192 +4,19 @@
    "by": "Iron Bloke",
    "sections": [
       {
-         "name": "FORMATIONS",
-         "formations": [
-            {
-               "id": 500,
-               "name": "Speed Freaks Warband",
-               "pts": -10,
-               "upgrades": [
-                  12,
-                  120,
-                  101,
-                  68,
-                  20,
-                  21,
-                  22,
-                  72,
-                  73,
-                  74,
-                  76,
-                  77,
-                  87,
-                  110
-               ]
-            },
-            {
-               "id": 501,
-               "name": "Speed Freaks Warband (Big)",
-               "pts": -45,
-               "upgrades": [
-                  12,
-                  120,
-                  101,
-                  68,
-                  20,
-                  21,
-                  22,
-                  72,
-                  73,
-                  74,
-                  76,
-                  77,
-                  87,
-                  110
-               ]
-            },
-            {
-               "id": 502,
-               "name": "Speed Freaks Warband ('Uge)",
-               "pts": -80,
-               "upgrades": [
-                  12,
-                  120,
-                  101,
-                  68,
-                  20,
-                  21,
-                  22,
-                  72,
-                  73,
-                  74,
-                  76,
-                  77,
-                  87,
-                  110
-               ]
-            },
-            {
-               "id": 503,
-               "name": "Kult of Speed",
-               "pts": 0,
-               "upgrades": [
-                  20,
-                  21,
-                  22,
-                  74,
-                  76,
-                  77,
-                  87,
-                  110
-               ]
-            },
-            {
-               "id": 504,
-               "name": "Kult of Speed (Big)",
-               "pts": -50,
-               "upgrades": [
-                  20,
-                  21,
-                  22,
-                  74,
-                  76,
-                  77,
-                  87,
-                  110
-               ]
-            },
-            {
-               "id": 505,
-               "name": "Kult of Speed ('Uge)",
-               "pts": -100,
-               "upgrades": [
-                  20,
-                  21,
-                  22,
-                  74,
-                  76,
-                  77,
-                  87,
-                  110
-               ]
-            },
-            {
-               "id": 506,
-               "name": "Blitz Brigade",
-               "pts": 10,
-               "upgrades": [
-                  20,
-                  21,
-                  22,
-                  77,
-                  74,
-                  76,
-                  87,
-                  95,
-                  79,
-                  120,
-                  110
-               ]
-            },
-            {
-               "id": 507,
-               "name": "Blitz Brigade (Big)",
-               "pts": -30,
-               "upgrades": [
-                  20,
-                  21,
-                  22,
-                  77,
-                  74,
-                  76,
-                  87,
-                  95,
-                  79,
-                  120,
-                  110
-               ]
-            },
-            {
-               "id": 508,
-               "name": "Blitz Brigade ('Uge)",
-               "pts": -70,
-               "upgrades": [
-                  20,
-                  21,
-                  22,
-                  77,
-                  74,
-                  76,
-                  87,
-                  95,
-                  79,
-                  120,
-                  110
-               ]
-            },
-            {
-               "id": 509,
-               "name": "Warbike Outriders",
-               "pts": 150,
-               "units": "5 Warbikes",
-               "upgrades": [
-                  110
-               ]
-            },
-            {
-               "id": 510,
-               "name": "Warbike Outriders (Big)",
-               "pts": 250,
-               "units": "10 Warbikes",
-               "upgrades": [
-                  110
-               ]
-            },
-            {
-               "id": 511,
-               "name": "Warbike Outriders ('Uge)",
-               "pts": 350,
+         "name": "FORMATIONS", "formations": [
+            {"id": 500, "name": "Speed Freaks Warband", "pts": -10, "upgrades": [12,120,101,68,20,21,22,72,73,74,76,77,87,110]},
+            {"id": 501, "name": "Speed Freaks Warband (Big)",  "pts": -45, "upgrades": [12,120,101,68,20,21,22,72,73,74,76,77,87,110]},
+            {"id": 502, "name": "Speed Freaks Warband ('Uge)", "pts": -80, "upgrades": [12,120,101,68,20,21,22,72,73,74,76,77,87,110]},
+            {"id": 503, "name": "Kult of Speed", "pts": 0, "upgrades": [20,21,22,74,76,77,87,110]},
+            {"id": 504, "name": "Kult of Speed (Big)", "pts": -50, "upgrades": [20,21,22,74,76,77,87,110]},
+            {"id": 505, "name": "Kult of Speed ('Uge)", "pts": -100, "upgrades": [20,21,22,74,76,77,87,110]},
+            {"id": 506, "name": "Blitz Brigade", "pts": 10,"upgrades": [20,21,22,77,74,76,87,95,79,120,110]},
+            {"id": 507, "name": "Blitz Brigade (Big)", "pts": -30, "upgrades": [20,21,22,77,74,76,87,95,79,120,110]},
+            {"id": 508, "name": "Blitz Brigade ('Uge)", "pts": -70, "upgrades": [20,21,22,77,74,76,87,95,79,120,110]},
+            {"id": 509, "name": "Warbike Outriders", "pts": 150, "units": "5 Warbikes", "upgrades": [110]},
+            {"id": 510, "name": "Warbike Outriders (Big)", "pts": 250, "units": "10 Warbikes", "upgrades": [110]},
+            {"id": 511, "name": "Warbike Outriders ('Uge)", "pts": 350,
                "units": "15 Warbikes",
                "upgrades": [
                   110
@@ -385,13 +212,7 @@
          "from": [
             519,
             520
-         ]},
-     {
-        "max": 1,
-        "name": "Supreme Commander",
-        "from": [
-             110
-          ]
+         ]
       },
       {
          "maxPercent": 33,

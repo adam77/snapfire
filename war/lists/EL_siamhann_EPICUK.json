@@ -1,457 +1,87 @@
 {
    "id": "Saim-Hann Craftworld",
-   "version": "Epic-UK v20101230",
-   "by": "Iron Bloke",
+   "version": "Epic-UK v121013",
+   "by": "Kyussinchains",
    "sections": [
-      {
-         "name": "INDIVIDUALS",
-         "formations": [
-            {
-               "id": 507,
-               "name": "Wraithgate",
-               "pts": 50,
-               "upgrades": []
-            },
-            {
-               "id": 508,
-               "name": "Avatar",
-               "pts": 0,
-               "upgrades": []
-            }
-         ]
-      },
-      {
-         "name": "WARHOSTS",
-         "formations": [
-            {
-               "id": 510,
-               "name": "Aspect Warrior Warhost",
-               "pts": 300,
-               "upgrades": [
-                  39
-               ]
-            },
-            {
-               "id":513,
-               "name":"Wild Rider Warhost",
-               "pts":325,
-               "upgrades":[47,49,50]
-            }
-         ]
-      },
-      {
-         "name": "TROUPES",
-         "formations": [
-            {
-               "id": 500,
-               "name": "Ranger Troupe",
-               "pts": 0,
-               "upgrades": [
-                  11
-               ]
-            },
-            {
-               "id": 501,
-               "name": "War Walker Troupe",
-               "pts": 200,
-               "units": "6 Warwalkers",
-               "upgrades": [
-                  46
-               ]
-            },
-            {
-               "id": 503,
-               "name": "Falcon Troupe",
-               "pts": 0,
-               "upgrades": [
-                  46
-               ]
-            },
-            {
-               "id": 504,
-               "name": "Night Spinner Troupe",
-               "pts": 175,
-               "units": "3 Night Spinners",
-               "upgrades": [
-                  46
-               ]
-            },
-            {
-               "id": 505,
-               "name": "Engines of Vaul Troupe",
-               "pts": 0,
-               "upgrades": [
-                  34,
-                  35,
-                  36,
-                  46
-               ]
-            },
-            {
-               "id": 530,
-               "name": "Fire Prism Troupe",
-               "pts": 250,
-               "units": "3 Fire Prisms",
-               "upgrades": [
-                  46
-               ]
-            },
-            {
-               "id": 531,
-               "name": "Mounted Aspect Troupe",
-               "pts": 400,
-               "units": "3 Wave Serpents",
-               "upgrades": [
-                  39
-               ]
-            }
-         ]
-      },
-      {
-         "name": "SPACESHIPS, AIRCRAFT &amp; TITANS",
-         "formations": [
-            {
-               "id": 515,
-               "name": "Wraithship",
-               "pts": 150,
-               "upgrades": []
-            },
-            {
-               "id": 516,
-               "name": "Dragonship",
-               "pts": 300,
-               "upgrades": []
-            },
-            {
-               "id": 517,
-               "name": "Warlock Titan",
-               "pts": 850,
-               "upgrades": []
-            },
-            {
-               "id": 518,
-               "name": "Phantom Titan",
-               "pts": 750,
-               "upgrades": []
-            },
-            {
-               "id": 519,
-               "name": "Revenant Titans",
-               "pts": 650,
-               "units": "2 Revenant Titans",
-               "upgrades": []
-            },
-            {
-               "id": 520,
-               "name": "Nightwings",
-               "pts": 300,
-               "units": "3 Nightwing Interceptors",
-               "upgrades": []
-            },
-            {
-               "id": 521,
-               "name": "Phoenix Bombers",
-               "pts": 350,
-               "units": "3 Phoenix Bombers",
-               "upgrades": []
-            },
-            {
-               "id": 522,
-               "name": "Vampire Hunter",
-               "pts": 225,
-               "upgrades": []
-            }
-         ]
-      }
+      {"name": "INDIVIDUALS","formations": [
+            {"id": 507, "name": "Wraithgate", "pts": 50, "upgrades": []},
+            {"id": 508, "name": "Avatar", "pts": 0, "upgrades": []}
+         ]},
+      {"name": "WARHOSTS", "formations": [
+            {"id": 510, "name": "Aspect Warrior Warhost", "pts": 300, "upgrades": [39]},
+            {"id": 513, "name": "Wild Rider Host", "pts":300, "upgrades":[46,47,49,50]}
+         ]},
+      {"name": "TROUPES", "formations": [
+			{"id": 500, "name": "Ranger Troupe", "pts": 0, "upgrades": [11]},
+            {"id": 501, "name": "War Walker Troupe", "pts": 200, "units": "6 Warwalkers", "upgrades": [46]},
+            {"id": 503, "name": "Falcon Troupe", "pts": 0, "upgrades": [46]},
+            {"id": 504, "name": "Night Spinner Troupe", "pts": 175, "units": "3 Night Spinners", "upgrades": [46]},
+            {"id": 505, "name": "Engines of Vaul Troupe", "pts": 0, "upgrades": [46,51,52,53]},
+            {"id": 530, "name": "Fire Prism Troupe", "pts": 250, "units": "3 Fire Prisms", "upgrades": [46]},
+            {"id": 531, "name": "Mounted Aspect Troupe", "pts": 250, "upgrades": [39,41,42]}
+         ]},
+      {"name": "SPACESHIPS, AIRCRAFT &amp; TITANS", "formations": [
+            {"id": 515, "name": "Wraithship", "pts": 150, "upgrades": []},
+            {"id": 516, "name": "Dragonship", "pts": 300, "upgrades": []},
+            {"id": 519, "name": "Revenant Titans", "pts": 650, "units": "2 Revenant Titans", "upgrades": []},
+            {"id": 520, "name": "Nightwings", "pts": 300, "units": "3 Nightwing Interceptors", "upgrades": []},
+            {"id": 521, "name": "Phoenix Bombers", "pts": 300, "units": "3 Phoenix Bombers", "upgrades": []},
+            {"id": 522, "name": "Vampire Hunter", "pts": 225, "upgrades": []}
+         ]}
    ],
    "upgrades": [
-      {
-         "id": 21,
-         "name": "Swooping Hawk",
-         "pts": 0
-      },
-      {
-         "id": 22,
-         "name": "Shining Spear",
-         "pts": 0
-      },
-      {
-         "id": 39,
-         "name": "Exarch",
-         "pts": 25
-      },
-      {
-         "id": 124,
-         "name": "Wild Riders",
-         "pts": 0
-      },
-      {
-         "id": 125,
-         "name": "Vypers",
-         "pts": 0
-      },
-      {"id": 47, "name": "3 Wild Riders", "pts": 100},
-      {"id": 49, "name": "Mounted Farseer", "pts": 75},
+      {"id": 21, "name": "Swooping Hawk", "pts": 0},
+      {"id": 22, "name": "Shining Spear", "pts": 0},
+      {"id": 39, "name": "Exarch", "pts": 25},
+      {"id": 124, "name": "Wild Riders", "pts": 0},
+      {"id": 125, "name": "Vypers", "pts": 0},
+      {"id": 47, "name": "3 Wild Riders", "pts": 75},
+      {"id": 49, "name": "Mounted Farseer", "pts": 50},
       {"id": 50, "name": "Wild Rider Chieftain", "pts": 50},
-      {
-         "id": 11,
-         "name": "Ranger",
-         "pts": 25
-      },
-      {
-         "id": 46,
-         "name": "Spirit Stones",
-         "pts": 25
-      },
-      {
-         "id": 30,
-         "name": "Falcon",
-         "pts": 50
-      },
-      {
-         "id": 31,
-         "name": "Fire Storm",
-         "pts": 50
-      },
-      {
-         "id": 34,
-         "name": "Cobra",
-         "pts": 250
-      },
-      {
-         "id": 35,
-         "name": "Scorpion",
-         "pts": 250
-      },
-      {
-         "id": 36,
-         "name": "Storm Serpent",
-         "pts": 250
-      },
-      {
-         "id": 131,
-         "name": "Dark Reapers",
-         "pts": 0
-      },
-      {
-         "id": 132,
-         "name": "Dire Avengers",
-         "pts": 0
-      },
-      {
-         "id": 133,
-         "name": "Fire Dragons",
-         "pts": 0
-      },
-      {
-         "id": 134,
-         "name": "Howling Banshees",
-         "pts": 0
-      },
-      {
-         "id": 135,
-         "name": "Striking Scropions",
-         "pts": 0
-      }
+      {"id": 11, "name": "Ranger", "pts": 25},
+      {"id": 46, "name": "Spirit Stones", "pts": 25},
+      {"id": 30, "name": "Falcon", "pts": 50},
+      {"id": 31, "name": "Fire Storm", "pts": 50},
+      {"id": 34, "name": "Cobra", "pts": 250},
+      {"id": 35, "name": "Scorpion", "pts": 250},
+      {"id": 36, "name": "Storm Serpent", "pts": 250},
+	  {"id": 51, "name": "Cobra", "pts": 200},
+      {"id": 52, "name": "Scorpion", "pts": 200},
+      {"id": 53, "name": "Storm Serpent", "pts": 200},
+      {"id": 131, "name": "Dark Reapers", "pts": 0},
+      {"id": 132, "name": "Dire Avengers", "pts": 0},
+      {"id": 133, "name": "Fire Dragons", "pts": 0},
+      {"id": 134, "name": "Howling Banshees", "pts": 0},
+      {"id": 135, "name": "Striking Scropions", "pts": 0},
+	  {"id": 41, "name": "Wave Serpent", "pts": 50},
+      {"id": 42, "name": "2 Falcons", "pts": 125}
    ],
    "formationConstraints": [
-      {
-         "max": 1,
-         "from": [
-            507
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            508
-         ]
-      },
-      {
-         "max": 1,
-         "name": "Spacecraft",
-         "from": [
-            515,
-            516
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            517
-         ]
-      },
-      {
-         "maxPercent": 33,
-         "name": "War Engines & Allies",
-         "from": [
-            515,
-            516,
-            517,
-            518,
-            519,
-            520,
-            521,
-            522
-         ]
-      },
-      {
-         "max": 2,
-         "name": "Troupes",
-         "from": [
-            500,
-            501,
-            503,
-            504,
-            505,
-            530
-         ],
-         "forEach": [
-            510,
-            513
-         ],
-         "name2": "Warhost"
-      }
+      {"max": 1, "from": [507]},
+      {"max": 1, "from": [508]},
+      {"max": 1, "name": "Spacecraft", "from": [515,516]},
+      {"max": 1, "from": [517]},
+      {"maxPercent": 33, "name": "War Engines & Allies", "from": [515,516,517,518,519,520,521,522]},
+      {"max": 2, "name": "Troupes", "from": [500,501,503,504,505,530,531], "forEach": [510,513], "name2": "Warhost"},
+	  {"max": 1, "name": "Aspect Warrior Warhost", "from": [510], "forEach": [513], "name2": "Wild Rider Host"}
    ],
    "upgradeConstraints": [
-      {
-         "max": 8,
-         "min": 8,
-         "from": [
-            21,
-            22
-         ],
-         "appliesTo": [
-            510
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            39
-         ],
-         "appliesTo": [
-            510,
-            531
-         ],
-         "name": "Exarch"
-      },
-      {
-         "max": 9,
-         "from": [
-            124
-         ],
-         "appliesTo": [
-            513
-         ]
-      },
-      {
-         "max": 6,
-         "from": [
-            125
-         ],
-         "appliesTo": [
-            513
-         ]
-      },
-      {
-         "max": 9,
-         "min": 9,
-         "from": [
-            124,
-            125
-         ],
-         "appliesTo": [
-            513
-         ]
-      },
+      {"max": 8, "min": 8, "from": [21,22], "appliesTo": [510]},
+      {"max": 1, "from": [39], "appliesTo": [531], "name": "Exarch"},
+	  {"max": 2, "from": [39], "appliesTo": [510], "name": "Exarch"},
+      {"max": 9, "from": [124], "appliesTo": [513]},
+      {"max": 9, "from": [125], "appliesTo": [513]},
+      {"max": 9, "min": 9, "from": [124,125], "appliesTo": [513]},
       {"min:":1, "max":1, "from":[47,48], "appliesTo":[513]},
-      {
-         "max": 1,
-         "perArmy": true,
-         "from": [
-            50
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            49,
-            50
-         ],
-         "appliesTo": [
-            513
-         ],
-         "name": "Mounted Farseer"
-      },
-      {
-         "max": 8,
-         "min": 4,
-         "from": [
-            11
-         ],
-         "appliesTo": [
-            500
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            46
-         ],
-         "appliesTo": [
-            501,
-            503,
-            504,
-            505,
-            530
-         ]
-      },
-      {
-         "max": 2,
-         "from": [
-            31
-         ],
-         "appliesTo": [
-            503
-         ]
-      },
-      {
-         "max": 5,
-         "min": 5,
-         "from": [
-            30,
-            31
-         ],
-         "appliesTo": [
-            503
-         ]
-      },
-      {
-         "max": 3,
-         "min": 1,
-         "from": [
-            34,
-            35,
-            36
-         ],
-         "appliesTo": [
-            505
-         ]
-      },
-      {
-         "max": 6,
-         "min": 6,
-         "from": [
-            131,
-            132,
-            133,
-            134,
-            135
-         ],
-         "appliesTo": [
-            531
-         ]
-      }
+      {"max": 1, "perArmy": true, "from": [50]},
+      {"max": 1, "from": [49], "appliesTo": [513], "name": "Mounted Farseer"},
+	  {"max": 8, "min": 4, "from": [11], "appliesTo": [500]},
+      {"max": 1, "from": [46], "appliesTo": [501,503,504,505,530]},
+      {"max": 2, "from": [31], "appliesTo": [503]},
+      {"max": 5, "min": 5, "from": [30,31], "appliesTo": [503]},
+      {"max": 1, "min": 1, "from": [34,35,36], "appliesTo": [505]},
+	  {"max": 2, "from": [51,52,53], "appliesTo": [505]},
+      {"max": 6, "min": 6, "from": [131,132,133,134,135], "appliesTo": [531]},
+	  {"max": 3, "min": 3, "from": [41,42], "appliesTo": [531], "name": "Aspect Transport"}
    ]
 }
