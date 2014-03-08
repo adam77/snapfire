@@ -2,7 +2,7 @@
 	"id":"Dark Eldar",
 	"version":"EpicUK V.10042013",
 	"by":"Kyussinchains",
-	"notes":["All Dark eldar formations with the 'transport' upgrade option may only select enough transports to transport the formation with no transport spaces left over after any upgrades have been added to the formation"]
+	"notes":["All Dark eldar formations with the 'transport' upgrade option may only select enough transports to transport the formation with no transport spaces left over after any upgrades have been added to the formation"],
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":530, "name":"Webway Portal", "pts":50, "upgrades":[]},
