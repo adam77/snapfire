@@ -27,7 +27,7 @@
          ]},
       {"name": "CHAOS NAVY", "formations": [
             {"id": 530, "name": "Hellblade Flight", "pts": 200, "units": "3 Fighters", "upgrades": []},
-            {"id": 531, "name": "Helltalon Flight", "pts": 250, "units": "2 Bombers", "upgrades": []},
+            {"id": 531, "name": "Helltalon Flight", "pts": 225, "units": "2 Bombers", "upgrades": []},
             {"id": 533, "name": "Styx Class Cruiser", "pts": 150, "upgrades": []}
 		 ]}
    ],
