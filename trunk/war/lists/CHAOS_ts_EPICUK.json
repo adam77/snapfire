@@ -5,7 +5,7 @@
    "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 5. 2) Rhinos count towards the upgrade allowance of a formation"],
    "sections": [
       {"name": "CORE", "formations": [
-			{"id": 501, "name": "Thousand Sons Retinue", "pts": 275, "upgrades": [22,53,64,65,66,60,52,57,67,68,62]},
+			{"id": 501, "name": "Thousand Sons Retinue", "pts": 275, "upgrades": [22,53,64,65,66,60,57,67,68,62]},
 			{"id": 552, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
 	]},
       {"name": "SUPPORT", "formations": [
@@ -35,7 +35,7 @@
 	  {"id": 65, "name": "3 Chaos Land Raiders", "pts": 225},
 	  {"id": 66, "name": "4 Chaos Land Raiders", "pts": 300},
       {"id": 60, "name": "Icon Bearer", "pts": 50},
-      {"id": 52, "name": "Aspiring Sorcerer", "pts": 50},
+      
       {"id": 57, "name": "Thousand Sons Defiler", "pts": 75},
 	  {"id": 67, "name": "2 Thousand Sons Defilers", "pts": 150},
 	  {"id": 68, "name": "3 Thousand Sons Defilers", "pts": 225},
