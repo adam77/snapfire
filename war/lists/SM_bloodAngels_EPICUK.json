@@ -1,12 +1,12 @@
 {
 	"id":"Blood Angels",
-	"version":"170711",
+	"version":"070414",
 	"by":"Epic-UK",
         "notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1) The formation may be dropped from a purchansed Space Ship at no additional cost. 2) It may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 3) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks."],
 	"sections":[
 		{"name":"Detachments", "formations":[
 			{"id":101, "name":"Assault", "pts":250, "units":"6 Assault units", "upgrades":[11,12,13,14,15]},
-			{"id":115, "name":"Baal Predators", "pts":300, "units":"4 Baal Predators", "upgrades":[11,12,13,14,15,19]},
+			{"id":115, "name":"Baal Predators", "pts":275, "units":"4 Baal Predators", "upgrades":[11,12,13,14,15,19]},
 			{"id":102, "name":"Bike", "pts":200, "upgrades":[11,12,13,14,16]},
 			{"id":104, "name":"Land Raider", "pts":350, "units":"4 Land Raiders", "upgrades":[11,12,13,14,19,15]},
 			{"id":105, "name":"Land Speeder", "pts":0, "upgrades":[11,12,13,14]},
