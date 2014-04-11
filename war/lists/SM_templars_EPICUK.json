@@ -19,7 +19,7 @@
 			{"id":113, "name":"Vindicator", "pts":250, "units":"4 Vindicators", "upgrades":[11,12,14,19,31]}
 		]}
       
-      {"name":"Detachments", "formations":[
+      {"name":"Support", "formations":[
 			{"id":115, "name":"Storm Talon", "pts":200, "units":"2 Storm Talons", "upgrades":[]}
     ]}
 	],
