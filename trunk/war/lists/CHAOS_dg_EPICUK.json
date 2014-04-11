@@ -1,11 +1,11 @@
 {
    "id": "Death Guard",
-   "version": "Epic UK v08042013",
+   "version": "Epic UK v070414",
    "by": "Kyussinchains",
    "notes":["If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 4. No transport spaces may be left over if possible. Rhinos count towards the number of upgrade allowances of a formation"],
    "sections": [
          {"name": "CORE", "formations": [
-            {"id": 501, "name": "Death Guard Retinue", "pts": 325, "upgrades": [53,67,68,69,54,70,71,60,52,56,64,65,72,73,63,74,75,57,76,77,66]},
+            {"id": 501, "name": "Death Guard Retinue", "pts": 300, "upgrades": [53,67,68,69,54,70,71,60,52,56,64,65,72,73,63,74,75,57,76,77,66]},
             {"id": 551, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
          ]},
       {"name": "ELITE", "formations": [
