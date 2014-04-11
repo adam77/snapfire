@@ -15,9 +15,13 @@
 			{"id":110, "name":"Tactical", "pts":300, "units":"6 Tactical units plus Transport", "upgrades":[11,12,14,32,33,18,19,31,15,21,22]},
 			{"id":111, "name":"Terminator", "pts":350, "units":"4 Terminator units", "upgrades":[11,12,14,32,18,20,35,15]},
 			{"id":112, "name":"Thunderhawk", "pts":200, "units":"1 Thunderhawk gunship"},
-			{"id":114, "name":"Thunderhawk Transporter", "pts":200, "units":"1 Thunderhawk Transporter", "upgrades":[34]},
+			{"id":114, "name":"Thunderhawk Transporter", "pts":175, "units":"1 Thunderhawk Transporter", "upgrades":[34]},
 			{"id":113, "name":"Vindicator", "pts":250, "units":"4 Vindicators", "upgrades":[11,12,14,19,31]}
 		]}
+      
+      {"name":"Detachments", "formations":[
+			{"id":115, "name":"Storm Talon", "pts":200, "units":"2 Storm Talons", "upgrades":[]}
+    ]}
 	],
 	"fixedFormations":[
 			{"id":109, "name":"Spaceship", "pts":0}			
@@ -44,7 +48,7 @@
 		{"id":30, "name":"Battle Barge", "pts":350},
 		{"id":31, "name":"2 x Hunters", "pts":125},
 		{"id":32, "name":"Emperor's Champion", "pts":75},
-		{"id":33, "name":"Neophyte", "pts":25},
+		{"id":33, "name":"2 Neophyte", "pts":25},
 		{"id":34, "name":"1 Thunderhawk Transporter", "pts":100},
 		{"id":35, "name":"Land Raider Crusader", "pts":75},
 		{"id":36, "name":"Land Raider", "pts":87.5},
@@ -72,7 +76,7 @@
 		{"max":6, "from":[21,22], "appliesTo":[110]},
 		{"max":4, "from":[20,35], "appliesTo":[111]},
         {"max":2, "from":[20,35], "appliesTo":[103]},
-		{"max":2, "from":[33], "appliesTo":[110]},
+		{"max":1, "from":[33], "appliesTo":[110]},
 		{"max":1, "from":[34], "appliesTo":[114]},
 		{"min":4, "max":4, "from":[36,37], "appliesTo":[104]}
 	]
