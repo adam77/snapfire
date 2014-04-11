@@ -1,6 +1,6 @@
 {
    "id": "Thousand Sons",
-   "version": "Epic UK v10042013",
+   "version": "Epic UK v070414",
    "by": "Kyussinchains",
    "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 5. 2) Rhinos count towards the upgrade allowance of a formation"],
    "sections": [
@@ -18,7 +18,7 @@
       {"name": "CHAOS TITANS", "formations": [
 			{"id": 520, "name": "Warplord Titan", "pts": 800, "upgrades": []},
 			{"id": 521, "name": "Mutator Titan", "pts": 650, "upgrades": []},
-			{"id": 522, "name": "Warphound Tian", "pts": 275, "upgrades": []}
+			{"id": 522, "name": "Warphound Tian", "pts": 300, "upgrades": []}
       ]},
       {"name": "CHAOS NAVY & DAEMONIC ENGINES", "formations": [
             {"id": 530, "name": "Doomwings", "pts": 150, "units": "3 Doomwings", "upgrades": []},
