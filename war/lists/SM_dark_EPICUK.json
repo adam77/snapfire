@@ -1,14 +1,14 @@
 {
 "id":"Dark Angels",
-"version":170711,
+"version":070414,
 "by":"Epic-UK",
 "notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1) The formation may be dropped from a purchansed Space Ship at no additional cost. 2) It may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 3) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks."],
 "sections":[
 	{"name":"Detachments",
 		"formations":[
 			{"id":101,"name":"Assault","pts":175,"units":"4 Assault units","upgrades":[11,12,13,14,15]},
-			{"id":102,"name":"Ravenwing","pts":190,"units":"4 Land Speeders","upgrades":[11,12,13,14]},
-			{"id":103,"name":"Devastator","pts":275,"units":"4 Devastator Units plus Transport","upgrades":[11,12,13,14,18,19,31,15,20,21,22]},
+			{"id":102,"name":"Ravenwing","pts":165,"units":"4 Land Speeders","upgrades":[11,12,13,14]},
+			{"id":103,"name":"Devastator","pts":250,"units":"4 Devastator Units plus Transport","upgrades":[11,12,13,14,18,19,31,15,20,21,22]},
 			{"id":104,"name":"Land Raider","pts":350,"units":"4 Land Raiders","upgrades":[11,12,13,14,19,31,15]},
 			{"id":105,"name":"Ravenwing Support","pts":0,"upgrades":[11,12,13,14]},
 			{"id":106,"name":"Landing Craft","pts":350,"units":"1 Landing Craft"},
@@ -21,6 +21,8 @@
 			{"id":113,"name":"Vindicator","pts":250,"units":"4 Vindicators","upgrades":[11,12,13,14,19,31]},
 			{"id":114,"name":"Whirlwind","pts":300,"units":"4 Whirlwinds","upgrades":[11,12,13,14,19,31]}
 			]}
+    {"name":"Support","formations":[
+			{"id":115,"name":"Nephilim","pts":200,"units":"2 Nephilim Fighters","upgrades":[]},
 		],
 		"upgrades":[
 			{"id":11,"name":"Captain","pts":50},
