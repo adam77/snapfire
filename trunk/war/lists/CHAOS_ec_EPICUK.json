@@ -1,414 +1,89 @@
 {
    "id": "Emperors Children",
-   "version": "Epic UK v090710",
-   "by": "Iron Bloke",
+   "version": "Epic UK v070414",
+   "by": "Kyussinchains",
+   "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 3. 2) 1 Dreadclaw must be purchased per unit in the formation. 3) both Rhinos and Dreadclaws count towards the upgrade allowance of a formation"],
    "sections": [
-      {
-         "name": "CORE",
-         "formations": [
-            {
-               "id": 501,
-               "name": "Emperors Children Retinue",
-               "pts": 275,
-               "upgrades": [
-                  53,
-                  60,
-                  56,
-                  52,
-                  63,
-                  57,
-                  62,
-                  58
-               ]
-            },
-            {
-               "id": 551,
-               "name": "Bike Retinue",
-               "pts": 325,
-               "units": "6 Emperors Children Bikes",
-               "upgrades": [
-                  56
-               ]
-            },
-            {
-               "id": 552,
-               "name": "Daemon Pool",
-               "pts": 0,
-               "upgrades": [
-                  50,
-                  51
-               ]
-            }
-         ]
-      },
-      {
-         "name": "SUPPORT",
-         "formations": [
-            {
-               "id": 503,
-               "name": "Terminators",
-               "pts": 400,
-               "units": "4 Terminators",
-               "upgrades": [
-                  63,
-                  53,
-                  56,
-                  52,
-                  60,
-                  58,
-                  57
-               ]
-            },
-            {
-               "id": 506,
-               "name": "Defiler Pack",
-               "pts": 300,
-               "units": "4 Defilers",
-               "upgrades": [
-                  63
-               ]
-            },
-            {
-               "id": 508,
-               "name": "Chaos Space Marines",
-               "pts": 250,
-               "units": "6 Chaos Marines, 3 Rhinos",
-               "upgrades": [
-                  56
-               ]
-            },
-            {
-               "id": 509,
-               "name": "Armoured Company",
-               "pts": 0,
-               "upgrades": [
-                  27,
-                  53
-               ]
-            },
-            {
-               "id": 510,
-               "name": "Daemonic Knights",
-               "pts": 275,
-               "units": "4 Daemon Knights",
-               "upgrades": []
-            }
-         ]
-      },
-      {
-         "name": "CHAOS TITANS",
-         "formations": [
-            {
-               "id": 520,
-               "name": "Painlord Titan",
-               "pts": 800,
-               "upgrades": []
-            },
-            {
-               "id": 521,
-               "name": "Reviler Titan",
-               "pts": 650,
-               "upgrades": []
-            },
-            {
-               "id": 522,
-               "name": "Questor Titan",
-               "pts": 275,
-               "upgrades": []
-            },
-            {
-               "id": 523,
-               "name": "Subjugator Titan",
-               "pts": 225,
-               "upgrades": []
-            }
-         ]
-      },
-      {
-         "name": "CHAOS NAVY",
-         "formations": [
-            {
-               "id": 530,
-               "name": "Hellblade Flight",
-               "pts": 200,
-               "units": "3 Fighters",
-               "upgrades": []
-            },
-            {
-               "id": 531,
-               "name": "Helltalon Flight",
-               "pts": 250,
-               "units": "2 Bombers",
-               "upgrades": []
-            },
-            {
-               "id": 533,
-               "name": "Devastation Class Cruiser",
-               "pts": 150,
-               "upgrades": []
-            },
-            {
-               "id": 534,
-               "name": "Despoiler Class Battleship",
-               "pts": 250,
-               "upgrades": []
-            }
-         ]
-      }
+      {"name": "CORE", "formations": [
+            {"id": 501, "name": "Emperors Children Retinue", "pts": 275, "upgrades": [52,53,64,65,66,22,71,72,56,57,69,70,63,67,68,60,62,58]},
+            {"id": 552, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
+         ]},
+	  {"name": "ELITE", "formations": [
+            {"id": 503, "name": "Terminators", "pts": 400, "units": "4 Terminators", "upgrades": [52,56,57,69,70,63,67,68,60,53,64,65,66]},
+            {"id": 551, "name": "Bike Company", "pts": 300, "units": "6 Emperors Children Bikes", "upgrades": [56]}
+         ]}, 
+      {"name": "SUPPORT", "formations": [
+            {"id": 506, "name": "Defiler Pack", "pts": 275, "units": "4 Defilers", "upgrades": [63,67,68]},
+            {"id": 508, "name": "Chaos Space Marines", "pts": 250, "units": "6 Chaos Marines, 3 Rhinos", "upgrades": [56]},
+            {"id": 509, "name": "Armoured Company", "pts": 0, "upgrades": [28,29,57,69,70,22,71,72]},
+            {"id": 510, "name": "Daemonic Knights", "pts": 300, "units": "4 Daemon Knights", "upgrades": []}
+         ]},
+      {"name": "CHAOS TITANS", "formations": [
+            {"id": 520, "name": "Painlord Titan", "pts": 800, "upgrades": []},
+            {"id": 521, "name": "Reviler Titan", "pts": 650, "upgrades": []},
+            {"id": 522, "name": "Questor Titan", "pts": 275, "upgrades": []},
+            {"id": 523, "name": "Subjugator Titan", "pts": 225, "upgrades": []}
+         ]},
+      {"name": "CHAOS NAVY", "formations": [
+            {"id": 530, "name": "Hellblade Flight", "pts": 200, "units": "3 Fighters", "upgrades": []},
+            {"id": 531, "name": "Helltalon Flight", "pts": 225, "units": "2 Bombers", "upgrades": []},
+            {"id": 533, "name": "Devastation Class Cruiser", "pts": 150, "upgrades": []},
+            {"id": 534, "name": "Despoiler Class Battleship", "pts": 250, "upgrades": []}
+         ]}
    ],
    "upgrades": [
-      {
-         "id": 17,
-         "name": "Chaos Lord",
-         "pts": 0
-      },
-      {
-         "id": 18,
-         "name": "Sorcerer Lord",
-         "pts": 0
-      },
-      {
-         "id": 19,
-         "name": "Daemon Prince",
-         "pts": 50
-      },
-      {
-         "id": 20,
-         "name": "Chaos Warlord (Supreme Commander)",
-         "pts": 50
-      },
-      {
-         "id": 21,
-         "name": "Daemon Prince (Supreme Commander)",
-         "pts": 100
-      },
-      {
-         "id": 34,
-         "name": "6 Noise Marines",
-         "pts": 0
-      },
-      {
-         "id": 35,
-         "name": "4 Noise Marines, 2 Havocs",
-         "pts": 40
-      },
-      {
-         "id": 53,
-         "name": "Chaos Land Raider",
-         "pts": 75
-      },
-      {
-         "id": 60,
-         "name": "Icon Bearer",
-         "pts": 50
-      },
-      {
-         "id": 56,
-         "name": "Daemonic Pact",
-         "pts": 25
-      },
-      {
-         "id": 52,
-         "name": "Chaos Champion",
-         "pts": 50
-      },
-      {
-         "id": 63,
-         "name": "Dreadnought",
-         "pts": 50
-      },
-      {
-         "id": 57,
-         "name": "Emperors Children Defiler",
-         "pts": 75
-      },
-      {
-         "id": 62,
-         "name": "Rhino",
-         "pts": 10
-      },
-      {
-         "id": 58,
-         "name": "Dreadclaw Drop Pod",
-         "pts": 5
-      },
-      {
-         "id": 50,
-         "name": "Greater Daemon",
-         "pts": 75
-      },
-      {
-         "id": 51,
-         "name": "Lesser Daemon",
-         "pts": 20
-      },
-      {
-         "id": 27,
-         "name": "Chaos Predator",
-         "pts": 50
-      }
+    {"id": 17, "name": "Chaos Lord", "pts": 0},
+    {"id": 18, "name": "Sorcerer Lord", "pts": 0},
+    {"id": 19, "name": "Daemon Prince", "pts": 50},
+    {"id": 20, "name": "Chaos Warlord (Supreme Commander)", "pts": 50},
+    {"id": 21, "name": "Daemon Prince (Supreme Commander)", "pts": 100},
+    {"id": 34, "name": "6 Noise Marines", "pts": 0},
+    {"id": 35, "name": "4 Noise Marines, 2 Havocs", "pts": 25},
+    {"id": 53, "name": "Chaos Land Raider", "pts": 75}, 
+	  {"id": 64, "name": "2 Chaos Land Raiders", "pts": 150},
+	  {"id": 65, "name": "3 Chaos Land Raiders", "pts": 225},
+	  {"id": 66, "name": "4 Chaos Land Raiders", "pts": 300},
+    {"id": 60, "name": "Icon Bearer", "pts": 25},
+    {"id": 56, "name": "Daemonic Pact", "pts": 25},
+    {"id": 52, "name": "Chaos Champion", "pts": 50},
+    {"id": 63, "name": "Dreadnought", "pts": 50}, 
+	  {"id": 67, "name": "2 Dreadnoughts", "pts": 100},
+	  {"id": 68, "name": "3 Dreadnoughts", "pts": 150},
+	  {"id": 57, "name": "Emperors Children Defiler", "pts": 75}, 
+	  {"id": 69, "name": "2 Emperors Children Defilers", "pts": 150},
+	  {"id": 70, "name": "3 Emperors Children Defilers", "pts": 225},
+    {"id": 62, "name": "Rhino", "pts": 10},
+    {"id": 58, "name": "Dreadclaw Drop Pod", "pts": 5},
+    {"id": 50, "name": "Greater Daemon", "pts": 50},
+    {"id": 51, "name": "Lesser Daemon", "pts": 15},
+    {"id": 27, "name": "Chaos Predator", "pts": 50},
+	  {"id": 28, "name": "Chaos Land Raider", "pts": 75},
+    {"id": 29, "name": "Chaos Predator", "pts": 50},
+	  {"id": 22, "name": "Chaos Vindicator", "pts": 35}, 
+	  {"id": 71, "name": "2 Chaos Vindicators", "pts": 70},
+	  {"id": 72, "name": "3 Chaos Vindicators", "pts": 105}
    ],
    "formationConstraints": [
-      {
-         "max": 1,
-         "from": [
-            552
-         ]
-      },
-      {
-         "max": 1,
-         "name": "Spacecraft",
-         "from": [
-            533,
-            534
-         ]
-      },
-      {
-         "maxPercent": 33,
-         "name": "War Engines & Allies",
-         "from": [
-            520,
-            521,
-            522,
-            523,
-            530,
-            531,
-            533,
-            534
-         ]
-      },
-      {
-         "max": 2,
-         "name": "Support Formations",
-         "from": [
-            503,
-            506,
-            508,
-            509,
-            510
-         ],
-         "forEach": [
-            501,
-            551
-         ],
-         "name2": "Retinue"
-      }
+    {"max": 1, "from": [552]},
+    {"max": 1, "name": "Spacecraft", "from": [533,534]},
+    {"maxPercent": 33, "name": "War Engines & Allies", "from": [520,521,522,523,530,531,533,534]},
+    {"max": 2, "name": "Support Formations", "from": [506,508,509,510], "forEach": [501], "name2": "Retinue" },
+	  {"max": 1, "name": "Elite Formation", "from": [503,551], "forEach": [501], "name2": "Retinue" }
    ],
    "upgradeConstraints": [
-      {
-         "max": 1,
-         "perArmy": true,
-         "from": [
-            20
-         ]
-      },
-      {
-         "max": 1,
-         "perArmy": true,
-         "from": [
-            21
-         ]
-      },
-      {
-         "max": 1,
-         "min": 1,
-         "from": [
-            17,
-            18,
-            19,
-            20,
-            21
-         ],
-         "appliesTo": [
-            501,
-            551,
-            503
-         ]
-      },
-      {
-         "max": 1,
-         "min": 1,
-         "from": [
-            34,
-            35
-         ],
-         "appliesTo": [
-            501
-         ]
-      },
-      {
-         "max": 4,
-         "from": [
-            53
-         ],
-         "appliesTo": [
-            501,
-            503
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            60
-         ],
-         "appliesTo": [
-            501,
-            503
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            56
-         ],
-         "appliesTo": [
-            501,
-            551,
-            503,
-            508
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            52
-         ],
-         "appliesTo": [
-            501,
-            503
-         ]
-      },
-      {
-         "max": 3,
-         "from": [
-            63
-         ],
-         "appliesTo": [
-            501,
-            503,
-            506
-         ]
-      },
-      {
-         "max": 3,
-         "from": [
-            57
-         ],
-         "appliesTo": [
-            501,
-            503
-         ]
-      },
-      {
-         "max": 6,
-         "min": 4,
-         "from": [
-            27,
-            53
-         ],
-         "appliesTo": [
-            509
-         ]
-      }
+	  {"max": 1, "perArmy": true, "from": [20,21]},
+    {"max": 1, "perArmy": true, "from": [19,21]},
+    {"max": 1, "min": 1, "from": [17,18,19,20,21], "appliesTo": [501,503,551]},
+    {"max": 1, "min": 1, "from": [34,35], "appliesTo": [501]},
+	  {"max": 4, "from": [53,64,65,66,63,67,68,60,52,56,63,67,68,57,69,70,22,71,72], "appliesTo": [501,503,506,508,509,510,551],"name": "Upgrades"},
+	  {"max": 1, "from": [22,71,72], "appliesTo": [501,509]}, 
+	  {"max": 1, "from": [53,64,65,66], "appliesTo": [501,503]}, 
+	  {"max": 1, "from": [63,67,68], "appliesTo": [501,503,506]}, 
+	  {"max": 1, "from": [57,69,70], "appliesTo": [501,503,509]}, 
+	  {"max": 1, "from": [60], "appliesTo": [501,503]},
+    {"max": 1, "from": [56], "appliesTo": [501,551,503,508]},
+    {"max": 1, "from": [52], "appliesTo": [501,503]},
+    {"max": 6, "min": 4, "from": [28,29], "appliesTo": [509]}
    ]
 }
+
