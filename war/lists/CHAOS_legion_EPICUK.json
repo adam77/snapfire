@@ -1,6 +1,6 @@
 {
    "id": "Black Legion",
-   "version": "Epic UK v08042013",
+   "version": "Epic UK v070414",
    "by": "Kyussinchains",
    "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 8. 2) 1 Dreadclaw must be purchased per unit in the formation. 3) both Rhinos and Dreadclaws count towards the upgrade allowance of a formation"], 
    "sections": [
@@ -54,9 +54,9 @@
 	  {"id": 71, "name": "3 Chaos Vindicators", "pts": 105},
       {"id": 55, "name": "4 Cult Marines", "pts": 150},
       {"id": 56, "name": "Daemonic Pact", "pts": 25},
-      {"id": 57, "name": "Defiler", "pts": 75}, 
-	  {"id": 72, "name": "2 Defilers", "pts": 150},
-	  {"id": 73, "name": "3 Defilers", "pts": 225},
+      {"id": 57, "name": "Defiler", "pts": 65}, 
+	  {"id": 72, "name": "2 Defilers", "pts": 130},
+	  {"id": 73, "name": "3 Defilers", "pts": 195},
       {"id": 58, "name": "Dreadclaw Drop Pod", "pts": 5},
       {"id": 59, "name": "4 Havocs", "pts": 150},
       {"id": 60, "name": "Icon Bearer", "pts": 50},
