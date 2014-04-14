@@ -1,30 +1,33 @@
 {
 	"id":"Imperial Fists",
-	"version":"NetEA Army Compendium v20120208",
-	"by":"lindstrom",
-	"notes":["SPECIAL RULE – Masters of Siege: Imperial Fists formations may re-roll any dangerous terrain test required to move into or through Minefields they have purchased as part of their army selection."],
+	"version":"NetEA V0.2",
+	"by":"Kyussinchains",
+	"notes":["SPECIAL RULE – Masters of Siege: Imperial Fists formations may re-roll any dangerous terrain test required to move into or through Minefields or Razor Wire they have purchased as part of their army selection."],
+	"notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1)The formation may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 2) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks, 3) A formation may exchange its 'plus transport' for 50cm x 2.5cm of minefields or razorwire and 2 bunkers for free "],
 	"sections":[
 		{"name":"DETACHMENTS", "formations": [
-			{ "id":501, "name":"Assault", 							"pts":150, "units":"4 Assault units", "upgrades":[11,12,13,14] },
-			{ "id":502, "name":"Devastator", 						"pts":225, "units":"4 Devastator units", "upgrades":[11,12,13,14,16,17,20,25,30,31,22,23]},
-			{ "id":507, "name":"Land Raiders", 						"pts":325, "upgrades":[11,12,13,14,16,22] },
-			{ "id":508, "name":"Lands Speeders", 						"pts":200, "upgrades":[11,12,13,14] },
-			{ "id":511, "name":"Predators",							"pts":250, "upgrades":[11,12,13,16,22]},
-			{ "id":503, "name":"Scout Snipers", "units":"4 Scout Sniper units", 		"pts":200, "upgrades":[11,12,13,14,17,22] },
-			{ "id":504, "name":"Tactical", "units":"6 Tactical units", 			"pts":250, "upgrades":[11,12,13,14,16,17,20,25,30,31,22,23] },
-			{ "id":505, "name":"Termintators", "units":"4 Terminator Assault units", 	"pts":350, "upgrades":[11,12,13,14] },
-			{ "id":506, "name":"Thunderfire Battery", 					"pts":250, "units":"4 Thunderfire Cannons", "upgrades":[17] },
-			{ "id":509, "name":"Vindicator", 						"pts":25, "upgrades":[11,12,13,14,16,22] },
-			{ "id":510, "name":"Whirlwind Battery", 					"pts":175, "upgrades":[11,12,13,14,16,23] }
+			{ "id":501, "name":"Assault", 							"pts":175, "units":"4 Assault units", "upgrades":[11,12,13,14,22,43] },
+			{ "id":502, "name":"Devastator", 						"pts":225, "units":"4 Devastator units plus transport", "upgrades":[11,12,13,14,16,17,20,22,43,41,42,44,45]},
+			{ "id":507, "name":"Land Raiders", 						"pts":325, "upgrades":[11,12,13,14,15,16,22,43] },
+			{ "id":508, "name":"Land Speeders", 					"pts":200, "upgrades":[11,12,13,14] },
+			{ "id":511, "name":"Predators",							"pts":250, "upgrades":[11,12,13,16,22,43]},
+			{ "id":503, "name":"Scouts", "units":"4 Scout units plus transport", 		"pts":150, "upgrades":[11,12,13,14,17,22,43,46] },
+			{ "id":504, "name":"Tactical", "units":"6 Tactical units plus transport", 	"pts":275, "upgrades":[11,12,13,14,16,17,20,22,43,41,42,44,45] },
+			{ "id":505, "name":"Terminators", "units":"4 Terminator Assault units", 	"pts":325, "upgrades":[11,12,13,14,41,42] },
+			{ "id":506, "name":"Thunderfire Battery", 				"pts":250, "units":"4 Thunderfire Cannons", "upgrades":[15,17] },
+			{ "id":509, "name":"Vindicator", 						"pts":225, "upgrades":[11,12,13,14,16,22,43] },
+			{ "id":510, "name":"Whirlwind Battery", 				"pts":300, "upgrades":[11,12,13,14,16,23] },
+			{ "id":512, "name":"Fellblade", "units":"1 Fellblade",	"pts":350, "upgrades":[] },
+			{ "id":513, "name":"Bastion", "units":"1 Bastion, 4 Tarantulas, 4 Emplacements",	"pts":250, "upgrades":[15,44,45] }
 		]},
 		{"name":"Static Defenses", "formations": [
-			{ "id":521, "name":"Fortified Positions", 		"pts":50, "units":"50cm x 2,5 cm Minefield, 1 Firebase", "upgrades":[] },
+			{ "id":521, "name":"Fortified Positions", 		"pts":50, "units":"50cm x 2,5 cm Minefield or Razorwire, 2 Bunkers", "upgrades":[] },
 			{ "id":522, "name":"Hyperios Platforms", 		"pts":125, "units":"3 Hyperios Platforms", "upgrades":[] },
-			{ "id":523, "name":"Tarantula Sentry Guns", 		"pts":125, "units":"6 Tarantulas", "upgrades": [] }
+			{ "id":523, "name":"Tarantula Sentry Guns", 	"pts":100, "units":"4 Tarantulas, 4 Emplacements", "upgrades": [] }
 		]},
 		{"name":"Navy", "formations":[
-			{ "id":531, "name":"2 Thunderbolt Fighters", 		"pts":175, "upgrades":[] },
-			{ "id":532, "name":"1 Marauder Bomber", 		"pts":150, "upgrades":[] }
+			{ "id":531, "name":"2 Thunderbolt Fighters", 	"pts":175, "upgrades":[] },
+			{ "id":532, "name":"1 Marauder Colossus", 		"pts":175, "upgrades":[] }
 		]},
 		{"name":"War Engines", "formations":[
 			{ "id":541, "name":"Warlord Class Titan", 		"pts":825, "upgrades":[] },
@@ -36,47 +39,57 @@
 		{ "id":12, "name":"Chaplain", "pts":50 },
 		{ "id":13, "name":"Librarian", "pts":50 },
 		{ "id":14, "name":"Supreme Commander", "pts":100 },
+		{ "id":15, "name":"Techmarine", "pts":25 },
 		{ "id":16, "name":"Hunter", "pts":75 },
-		{ "id":25, "name":"Thunderfire Cannon", "pts":50 },
-		{ "id":18, "name":"Land Speeder Tordnado", "pts":0 },
+		
+		{ "id":18, "name":"Land Speeder Tornado", "pts":0 },
 		{ "id":19, "name":"Land Speeder Typhoon", "pts":25 },
-		{ "id":30, "name":"2 Land Raider Crusaders", "pts":175 },
+		{ "id":30, "name":"Land Raider Crusader", "pts":0 },
 		{ "id":22, "name":"Vindicator", "pts":50 },
 		{ "id":23, "name":"2 Whirlwinds", "pts":125 },
-		{ "id":17, "name":"Dreadnought (Hellfire or Siege in any combination)", "pts":50 },
+		{ "id":17, "name":"Dreadnought", "pts":50 },
 		{ "id":27, "name":"Land speeder", "pts":0 },
 		{ "id":28, "name":"4 Whirlwinds", "pts":125 },
-		{ "id":20, "name":"Razorback",			"pts":25},
-		{ "id":31, "name":"Rhinos",			"pts":25},
-		{ "id":24, "name":"2 Land Raider Achilles", "pts":225 },
-		{ "id":15, "name":"Land Raider Achilles", "pts":25 },
+		{ "id":20, "name":"Razorback",	"pts":25},
+		
+		{ "id":24, "name":"Land Raider", "pts":0 },
+		{ "id":40, "name":"Land Raider Achilles", "pts":25 },
 		{ "id":26, "name":"Land Raider", "pts":0 },
-		{ "id":32, "name":"4 Land Raiders", "pts":0 },
-		{ "id":33, "name":"3 Land Raiders + 1 Land Raider Achilles", "pts":25 },
-		{ "id":34, "name":"2 Land Raiders + 2 Land Raider Achilles", "pts":50 },
-		{ "id":35, "name":"1 Land Raider + 3 Land Raider Achilles", "pts":75 },
-		{ "id":36, "name":"4 Land Raider Achilles", 			"pts":75 },
+		{ "id":41, "name":"Land Raider", "pts":75 },
+		{ "id":42, "name":"Land Raider Crusader", "pts":75 },
+		{ "id":43, "name":"2 Vindicators", "pts":75 },
+		{ "id":44, "name":"1 Centurion", "pts":75 },
+		{ "id":45, "name":"2 Centurions","pts":125 },
+		{ "id":46, "name":"Snipers","pts":50 },
 		{ "id":37, "name":"Annihilator",				"pts":0},
 		{ "id":38, "name":"Destructor",					"pts":0}
 
 	],
 	"formationConstraints":[
-		{"maxPercent":33, "name":"Static Defenses, Navy & War Engines", "from":[521,522,523,531,532,541,542,543,544]}
+		{"maxPercent":33, "name":"Static Defenses, Navy & War Engines", "from":[521,522,523,531,532,541,542,543,544]},
+		{"max": 1, "name": "Bastion", "from": [513], "forEach": [504], "name2": "Tactical Detachment"},
+		{"max": 1, "name": "Fortified Positions", "from": [521], "forEach": [504,502], "name2": "Tactical or Devastator Detachment"},
+		{"max": 1, "name": "Hyperios Platforms", "from": [522], "forEach": [503], "name2": "Scout Detachment"},
+		{"max": 1, "name": "Tarantula Sentry Guns", "from": [523], "forEach": [503], "name2": "Scout Detachment"}
 	],
 	"upgradeConstraints":[
 		{"max":1, "perArmy":true, "from":[14]},
-		{"max":1, "name":"Commander", "from":[11,12,13,14]},
-		{"max":1, "from":[30,24,31]},
+		{"max":1, "name":"Commander", "from":[11,12,13,14,15]},
+		{"max":1, "from":[44,45]},
+		{"max":1, "from":[22,43]},
 		{"max":2, "from":[25]},
-		{"max":2, "from":[16]},
+		{"max":1, "from":[16]},
 		{"max":2, "from":[17]},
 		{"max":1, "from":[21]},
 		{"max":2, "from":[22], "appliesTo":[502,503,507]},
 		{"max":1, "from":[23]},
-		{"min":1, "max":1, "from":[32,33,34,35,36], "appliesTo":[507]},
+		
+		{"max":4, "from":[41,42]},
+		{"min":4, "max":4, "from":[24,40,30], "appliesTo":[507]},
 		{"min":4, "max":4, "from":[37,38], "appliesTo":[511]},
 		{"min":5, "max":5, "from":[27,18,19], "appliesTo":[508]},
-		{"min":4, "max":6, "from":[22], "appliesTo":[509]},
-		{"min":1, "max":1, "from":[28,29], "appliesTo":[510]}
+		{"min":4, "max":6, "from":[22], "appliesTo":[509]}
+		
 	]
 }
+
