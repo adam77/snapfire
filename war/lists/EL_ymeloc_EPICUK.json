@@ -1,0 +1,84 @@
+{
+	"id":"Yme-Loc Craftworld",
+	"version":"Epic_UK 070414",
+	"by":"Kyussinchains",
+	"sections":[
+		{"name":"INDIVIDUALS", "formations":[
+			{"id":501, "name":"Gate of Vaul",	"pts":100,		"upgrades":[]},
+			{"id":502, "name":"Avatar",		"pts":0,		"upgrades":[]}
+		]},
+		{"name":"WARHOSTS", "formations":[
+			{"id":510, "name":"Engines of Vaul Warhost", "pts":25, "upgrades":[33,34,35,36]},
+			{"id":511, "name":"Falcon Warhost",	"pts":300, "upgrades":[33]}
+		]},	
+		{"name":"TROUPES", "formations":[
+			{"id":520, "name":"Mounted Aspect Warrior Troupe", "pts":400, "upgrades":[39,40]},
+			{"id":524, "name":"Mounted Guardian Troupe", "units":"Farseer, 2 Wave Serpents, 2 Falcons", "pts":325, "upgrades":[]},
+			{"id":521, "name":"Night Spinner Troupe", "pts":175, "units":"3 Night Spinners", "upgrades":[33]},			
+			{"id":525, "name":"Fire Prism Troupe", "units":"3 Fire Prisms",	"pts":250, "upgrades":[33]},
+			{"id":526, "name":"Warp Hunter Troupe", "units":"3 Warp Hunters", "pts":175, "upgrades":[33]},
+			{"id":527, "name":"Wind Rider Troupe", "units":"6 Vyper units",	"pts":200, "upgrades":[33]},
+			{"id":528, "name":"Hornet Troupe", "units":"5 Hornets",	"pts":225, "upgrades":[33]}			
+		]},
+		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
+			{"id":530, "name":"Wraithship",	"pts":150, "upgrades":[]},
+			{"id":531, "name":"Dragonship",	"pts":300, "upgrades":[]},
+		 	{"id":532, "name":"Warlock Titan",	"pts":850, "upgrades":[]},
+			{"id":533, "name":"Phantom Titan",	"pts":750, "upgrades":[]},
+			{"id":534, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
+			{"id":535, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
+			{"id":536, "name":"Phoenix Bombers","pts":300, "units":"3 Phoenix Bombers", "upgrades":[]}			
+		]}
+	],
+	"upgrades":[		
+		{"id":15, "name":"Dire Avenger",		"pts":0},
+		{"id":16, "name":"Striking Scorpion",	"pts":0},
+		{"id":17, "name":"Howling Banshee",	"pts":0},
+		{"id":18, "name":"Fire Dragon",		"pts":0},		
+		{"id":20, "name":"Dark Reaper",		"pts":0},
+		{"id":21, "name":"Swooping Hawk",		"pts":0},		
+		{"id":24, "name":"Guardians",				"pts":0},
+		{"id":25, "name":"Heavy Weapon Platform",	"pts":0},
+		{"id":30, "name":"Falcon",		"pts":50},
+		{"id":31, "name":"Fire Storm",	"pts":50},		
+		{"id":33, "name":"Spirit Stones",	"pts":25},		
+		{"id":34, "name":"Cobra",			"pts":200},
+		{"id":35, "name":"Scorpion",		"pts":200},
+		{"id":36, "name":"Storm Serpent",	"pts":200},		
+		{"id":39, "name":"Exarch", 	"pts":25},
+		{"id":40, "name":"Autarch", 	"pts":75},
+		{"id":41, "name":"Wave Serpent",	"pts":50},
+		{"id":66, "name":"Wave Serpent",	"pts":0},
+				
+		{"id":63, "name":"Farseer",	"pts":50},
+		{"id":65, "name":"2 Falcons",	"pts":50}		
+	],
+	"formationConstraints":[
+		{"max":2, "name":"Troupes", "from":[520,521,524,525,526,527,528], "forEach":[510,511], "name2":"Warhost"},
+		{"min":1, "from":[510]},
+		{"max":1, "from":[501]},
+		{"max":1, "from":[502]},
+		{"max":1, "from":[532]},
+		{"maxPercent":33, "name":"Aircraft & Titans", "from":[530,531,532,533,534,535,536]},		
+		{"max":1, "name":"Spacecraft", "from":[530,531]}		
+	],
+	"upgradeConstraints":[
+		{"max":3, "from":[25]},
+		{"max":2, "from":[31]},
+		{"max":1, "perArmy":true, "from":[40]},
+		{"min":2, "max":3, "from":[34,35,36], "appliesTo":[510]},
+		{"min":6, "max":6, "from":[30,31], "appliesTo":[511]},
+		{"min":5, "max":5, "from":[24,25], "appliesTo":[524]},
+		{"max":2, "from":[31], "appliesTo":[511]},
+		{"min":6, "max":6, "from":[15,16,17,18,20,21], "appliesTo":[520]},
+		{"max":6, "from":[30], "appliesTo":[520]},
+		{"min":3, "max":3, "from":[66,65], "appliesTo":[520]},
+		{"max":1, "from":[39], "appliesTo":[520]},
+		{"max":1, "from":[40], "appliesTo":[520]},
+		{"min":1, "max":1, "from":[34,35,36], "appliesTo":[522]},
+		
+			
+		{"max":3, "from":[25], "appliesTo":[524]}		
+				
+	]
+}
