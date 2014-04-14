@@ -54,8 +54,7 @@
                 {"id":37, "name":"Land Raider Crusader", "pts":87.5}
         ],
         "formationConstraints":[
-                {"maxPercent":33, "name":"Titan/Air",
-                        "from":[115,301,302,303,304,305,306] },
+                {"maxPercent":33, "name":"Support Formations", "from":[115] },
                 {"min":1, "max":1, "from":[109]},
                 {"max":1, "perArmy":true, "from":[32]}
         ],
