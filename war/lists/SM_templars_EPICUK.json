@@ -72,8 +72,8 @@
                 {"min":1, "max":1, "from":[29,30], "appliesTo":[109]},
                 {"max":1, "perArmy":true, "from":[29,30]},
                 {"max":6, "from":[21,22], "appliesTo":[110]},
-                {"max":4, "from":[20,35], "appliesTo":[111]},
-        {"max":2, "from":[20,35], "appliesTo":[103,110]},
+                {"max":4, "from":[20,35], "appliesTo":[110,111]},
+                {"max":2, "from":[20,35], "appliesTo":[103]},
                 {"max":2, "from":[33], "appliesTo":[110]},
                 {"max":1, "from":[34], "appliesTo":[114]},
                 {"min":4, "max":4, "from":[36,37], "appliesTo":[104]}
