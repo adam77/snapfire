@@ -16,7 +16,7 @@
       {"name": "SUPPORT", "formations": [
             {"id": 504, "name": "Chaos Space Marines", "pts": 250, "units": "6 Chaos Marines, 3 Rhinos", "upgrades": [56]},
             {"id": 505, "name": "Daemonic Artillery", "pts": 200, "units": "4 Cannons of Khorne", "upgrades": []},
-            {"id": 506, "name": "Daemonic Assault Engine Pack", "pts": -25, "upgrades": [37,63,69,70]},
+            {"id": 506, "name": "Daemonic Assault Engine Pack", "pts": 15, "upgrades": [37,63,69,70]},
             {"id": 507, "name": "Armoured Company", "pts": 0, "upgrades": [30,31,54,67,68,57,71,72]},
             {"id": 510, "name": "Defiler Assault Pack", "pts": 250, "units": "4 World Eater Defilers", "upgrades": [63,69,70,57,71,72]}
          ]},
