@@ -9,7 +9,7 @@
 		]},
 		{"name":"WARHOSTS", "formations":[
 			{"id":510, "name":"Engines of Vaul Warhost", "pts":25, "upgrades":[33,34,35,36]},
-			{"id":511, "name":"Falcon Warhost",	"pts":300, "upgrades":[33]}
+			{"id":511, "name":"Falcon Warhost",	"pts":0, "upgrades":[33]}
 		]},	
 		{"name":"TROUPES", "formations":[
 			{"id":520, "name":"Mounted Aspect Warrior Troupe", "pts":400, "upgrades":[39,40]},
