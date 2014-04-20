@@ -60,7 +60,7 @@
 		{"id":36, "name":"2 Dreadnoughts", "pts":100},
 		{"id":37, "name":"Vindicator", "pts":50},
 		{"id":40, "name":"2 Vindicators", "pts":100},
-		{"id":41, "name":"Jump Packs (all infantry units gain a speed of 30cm and the jump packs ability but lose the plus transport rule)", "pts":50},
+		{"id":41, "name":"Jump Packs (all infantry units gain a speed of 30cm and the jump packs ability but lose the plus transport rule)", "pts":0},
 		{"id":38, "name":"Hunter", "pts":75}		
 	],
 	"formationConstraints":[
