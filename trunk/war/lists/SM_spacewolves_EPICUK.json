@@ -11,7 +11,7 @@
 			
 			{"id":512, "name":"Wolf Scouts", "pts":175, "upgrades":[27,28,29,30,34], "units":"4 Wolf Scouts plus transport"},
 			{"id":513, "name":"Long Fangs", "pts":300, "upgrades":[10,27,28,29,30,38,55,35,39,36], "units":"4 Long Fangs units plus transport"},
-			{"id":514, "name":"Blood Claws", "pts":250, "upgrades":[27,28,29,30,39,36,35], "units":"6 Blood Claws units plus transport"},
+			{"id":514, "name":"Blood Claws", "pts":250, "upgrades":[27,28,29,30,39,36,35,41], "units":"6 Blood Claws units plus transport"},
 			{"id":516, "name":"Swift Claws", "pts":200, "upgrades":[27,28,29,30]},
 			{"id":517, "name":"Fenrisian Wolves", "pts":150, "upgrades":[27,28,29,30], "units":"5 Fenrisian Wolves units"}
 		]},
