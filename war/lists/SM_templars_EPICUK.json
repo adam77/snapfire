@@ -5,7 +5,7 @@
         "notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1) The formation may be dropped from a purchansed Space Ship at no additional cost. 2) It may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 3) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks."],
         "sections":[
                 {"name":"Detachments", "formations":[
-                        {"id":101, "name":"Assault", "pts":175, "units":"4 Assault units", "upgrades":[11,12,14,15]},
+                        {"id":101, "name":"Assault", "pts":175, "units":"4 Assault units", "upgrades":[11,12,14,15,18]},
                         {"id":102, "name":"Bike", "pts":200, "upgrades":[11,12,14]},
                         {"id":103, "name":"Devastator", "pts":250, "units":"4 Devastator Units plus Transport", "upgrades":[11,12,14,18,19,31,15,20,35,21,22]},
                         {"id":104, "name":"Land Raider", "pts":0, "units":"", "upgrades":[11,12,14,19,31,15]},
@@ -63,7 +63,7 @@
                 {"max":1, "perArmy":true, "from":[14]},
                 {"max":2, "from":[15], "appliesTo":[101,103,104,107,110,111]},
                 {"min":5, "max":5, "from":[17,16], "appliesTo":[102]},
-                {"max":2, "from":[18], "appliesTo":[103,110,111]},
+                {"max":2, "from":[18], "appliesTo":[101,103,110,111]},
                 {"max":1, "from":[19,31], "appliesTo":[103,104,107,110,113,114]},
                 {"max":4, "from":[20,21,22,35], "appliesTo":[103]},
                 {"min":5, "max":5, "from":[23,24,25], "appliesTo":[105]},
