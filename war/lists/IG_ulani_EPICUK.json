@@ -16,7 +16,8 @@
             {"id": 505, "name": "Super-heavy Tank Platoon", "pts": 200, "upgrades": [] },
             {"id": 506, "name": "Anti-tank Platoon", "pts": 200, "units": "3 Leman Russ Tank Hunters", "upgrades": [] },
             {"id": 507, "name": "Flak Platoon", "pts": 150, "units": "3 Hydra", "upgrades": [] },
-            {"id": 508, "name": "Conqueror Support", "pts": 250, "units": "6 Leman Russ Conquerors", "upgrades": [] }
+            {"id": 508, "name": "Conqueror Support", "pts": 250, "units": "6 Leman Russ Conquerors", "upgrades": [] },
+            {"id": 509, "name": "Hellhound Support", "pts": 150, "units": "3 Hellhound Flame Tanks", "upgrades": [] }
          ]},
       {  "name": "IMPERIAL NAVY",
          "formations": [
@@ -51,7 +52,7 @@
    "formationConstraints": [
       {"max": 1, "from": [521]},
       {"maxPercent": 33, "name": "War Engines & Allies", "from": [531,532,504]},
-      {"max": 2, "name": "Support Formations", "from": [501,502,503,505,506,507,508],"forEach": [521,522], "name2": "Company"}
+      {"max": 2, "name": "Support Formations", "from": [501,502,503,505,506,507,508,509],"forEach": [521,522], "name2": "Company"}
    ],
    "upgradeConstraints": [
       {"max": 9, "min": 9, "from": [16,17], "appliesTo": [521]},
