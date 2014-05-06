@@ -15,7 +15,7 @@
                         {"id":110, "name":"Tactical", "pts":300, "units":"6 Tactical units plus Transport", "upgrades":[11,12,14,32,33,18,19,31,15,21,22,20,35]},
                         {"id":111, "name":"Terminator", "pts":350, "units":"4 Terminator units", "upgrades":[11,12,14,32,18,20,35,15]},
                         {"id":112, "name":"Thunderhawk", "pts":200, "units":"1 Thunderhawk gunship"},
-                        {"id":114, "name":"Thunderhawk Transporter", "pts":200, "units":"1 Thunderhawk Transporter", "upgrades":[34]},
+                        {"id":114, "name":"Thunderhawk Transporter", "pts":175, "units":"1 Thunderhawk Transporter", "upgrades":[34]},
                         {"id":113, "name":"Vindicator", "pts":250, "units":"4 Vindicators", "upgrades":[11,12,14,19,31]}
                 ]},
                 {"name":"SUPPORT", "formations":[
