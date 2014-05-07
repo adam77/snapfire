@@ -9,7 +9,7 @@
             {"id": 551, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
          ]},
       {"name": "ELITE", "formations": [
-			{"id": 503, "name": "Death Guard Terminators", "pts": 400, "units": "4 Terminators", "upgrades": [63,74,75,53,67,68,69,56,60,57,76,77]},     
+			{"id": 503, "name": "Death Guard Terminators", "pts": 400, "units": "4 Terminators", "upgrades": [52,63,74,75,53,67,68,69,56,60,57,76,77]},     
 			{"id": 506, "name": "Death Guard Defiler Pack", "pts": 275, "units": "4 Defilers", "upgrades": [63,74,75]}
          ]},
 	  {"name": "SUPPORT", "formations": [
@@ -88,7 +88,7 @@
 	  {"max": 1, "from": [63,74,75], "appliesTo": [501,503,506]}, 
 	  {"max": 1, "from": [57,76,77], "appliesTo": [501,503,507,505,509]}, 
       {"max": 1, "from": [60], "appliesTo": [501,503]},
-      {"max": 1, "from": [52], "appliesTo": [501]},
+      {"max": 1, "from": [52], "appliesTo": [501, 503]},
       {"max": 1, "from": [56], "appliesTo": [501,503,508]},
       {"max": 1, "from": [64], "appliesTo": [501,505]},
       {"max": 3, "min": 1, "from": [37], "appliesTo": [507]},
