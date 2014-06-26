@@ -6,23 +6,23 @@
 	"sections":[
 		{"name":"CORE", "formations":[
 			{"id":501, "name":"Iron Warriors Company", 	"pts":300, "units":"6 Chaos Space Marines and 2 Havocs", "upgrades":[53,54,59,61,62,63,66,67,68]},
-			{"id":502, "name":"Defiler Assault Pack",	"pts":275, "units":"4 Defilers", "upgrades":[54,57,63,68]},
-			{"id":540, "name":"Grand Battery",			"pts":650, "units":"9 Chaos Basilisks", "upgrades":[64]},
-			{"id":541, "name":"Armoured Assault Company",	"pts":250, "units":"6 Chaos Vindicators", "upgrades":[27,54,57]}
+			{"id":502, "name":"Defiler Assault Pack",	"pts":400, "units":"6 Defilers", "upgrades":[54,57,63,68]},
+			{"id":540, "name":"Grand Battery",			"pts":650, "units":"9 Chaos Basilisks", "upgrades":[64,66]},
+			{"id":541, "name":"Armoured Assault Company",	"pts":250, "units":"6 Chaos Vindicators", "upgrades":[27,54,57,66]}
 		]},
-		{"name":"SEIGE ASSAULT 0-1 per Core formation", "formations":[
+		{"name":"SIEGE ASSAULT 0-1 per Core formation", "formations":[
 			{"id":503, "name":"Iron Warrior Terminators", "pts":35, "upgrades":[32, 63, 57, 53, 61]},
 			{"id":504, "name":"Chosen", "pts":125, "units":"4 Chaos Space Marine Scouts", "upgrades":[62, 58, 63]},
-			{"id":511, "name":"Obliterator Cult", "pts":425, "units":"5 Obliterators", "upgrades":[]},
+			{"id":511, "name":"Obliterator Cult", "pts":350, "units":"4 Obliterators", "upgrades":[]},
 			{"id":510, "name":"Raptors", "pts":35, "upgrades":[30,63]},
 			{"id":512, "name":"Havoc Company", "pts":300, "units":"4 Havocs and 2 Land Raiders", "upgrades":[59,63,57,28,66]},
 			{"id":513, "name":"Siegehammer Company", "pts":225, "units":"6 Iron Warrior Assault Marines", "upgrades":[67,62,63,54,66,58,68]},
-			{"id":514, "name":"Dreadnought Assault Pack", "pts":225, "units":"5 Chaos Dreadnoughts", "upgrades":[57,58,68]}
+			{"id":514, "name":"Dreadnought Assault Pack", "pts":225, "units":"5 Chaos Dreadnoughts", "upgrades":[21,57,58,68]}
 		]},
-		{"name":"SEIGE SUPPORT 0-2 per Core formation", "formations":[
+		{"name":"SIEGE SUPPORT 0-2 per Core formation", "formations":[
 			{"id":507, "name":"Armoured Company",	"pts":0, "upgrades":[27,28,57,54,66,69]},
-			{"id":508, "name":"Artillery Battery",	"pts":300, "units":"3 Chaos Basilisks", "upgrades":[64]},
-			{"id":509, "name":"Daemonic Artillery",	"pts":325, "units":"3 Daemonic Artillery units", "upgrades":[64]},
+			{"id":508, "name":"Artillery Battery",	"pts":300, "units":"3 Chaos Basilisks", "upgrades":[64,66]},
+			{"id":509, "name":"Daemonic Artillery",	"pts":325, "units":"3 Daemonic Artillery units", "upgrades":[64,66]},
 			{"id":505, "name":"Super Heavy Company - Decimator", "pts":0, "upgrades":[25,54,57,69]},
 			{"id":506, "name":"Super Heavy Company - Stormsword", "pts":0, "upgrades":[65,54,57,69]}
 		]},
@@ -36,13 +36,14 @@
 		{"name":"DARK MECHANICUS", "formations":[
 			{"id":520, "name":"Siegelord Titan",		"pts":850, "upgrades":[]},
 			{"id":521, "name":"Ravager Titan",			"pts":650, "upgrades":[]},
-			{"id":522, "name":"Ordinatus Medrengard",			"pts":600, "upgrades":[]}
+			{"id":522, "name":"Ordinatus Medrengard",			"pts":625, "upgrades":[]}
 		]}
 	],
 	"upgrades":[
 		{"id":17, "name":"Iron Warriors Lord", 		"pts":0},
 		{"id":19, "name":"Daemon Prince (Supreme Commander)", 	"pts":100},
 		{"id":20, "name":"Warsmith (Supreme Commander)", "pts":50},
+		{"id":21, "name":"Dreadnought Warsmith (Supreme Commander)", "pts":100},
 		{"id":27, "name":"Chaos Predator", 	"pts":50},
 		{"id":28, "name":"Chaos Land Raider", 	"pts":75},
 		{"id":30, "name":"Raptor", "pts":35},
@@ -64,6 +65,7 @@
 		{"id":69, "name":"Chaos Basilisks", "pts":50}
 	],
 	"formationConstraints":[
+		{"max":1, "name":"Obliterator Cult", "from":[511]},
 		{"max":1, "name":"Spacecraft", "from":[533,534]},
 		{"max":1, "name":"Siege Assault Formation", "from":[503,504,510,511,512,513,514], "forEach":[501,502,540,541], "name2":"Core formation"},
 		{"max":2, "name":"Siege Support Formations", "from":[505,506,507,508,509], "forEach":[501,502,540,541], "name2":"Core Formation"},
@@ -71,7 +73,7 @@
 	],
 	"upgradeConstraints":[
 		{"min":1, "max":1, "from":[17,19,20], "appliesTo":[501,503,510,512,513]},
-		{"max":1, "perArmy":true, "from":[19,20]},
+		{"max":1, "perArmy":true, "from":[19,20,21]},
 		{"min":4, "max":8, "name":"Vehicles", "from":[27,28], "appliesTo":[507]},
 		{"min":4, "max":8, "from":[30], "appliesTo":[510]},
 		{"min":4, "max":6, "from":[32], "appliesTo":[503]},
