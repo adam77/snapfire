@@ -1,0 +1,64 @@
+{
+	"id":"Dark Angels",
+	"version":"NetEA Dark Angels 2.1 *EXPERIMENTAL* ",
+	"by":"SpeakerToMachines, latest edit 2014-06-27 SpeakerToMachines",
+	"sections":[
+		{"name":"DARK ANGELS DETACHMENTS", "formations":[
+			{"id":532, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18]},
+			{"id":533, "name":"Ravenwing Attack", 			"pts":350, "units":"4 Bike, 2 Attack Bike, 2 Land Speeder Tornado", "upgrades":[15,16,17,18]},
+			{"id":534, "name":"Devastator",		"pts":250, "upgrades":[47,48,11,12,15,16,17,18,26,21,22,23,32]},
+			{"id":535, "name":"Land Raider",			"pts":325, "units":"4 Land Raiders", "upgrades":[15,16,17,18,22,31,32]},
+			{"id":536, "name":"Ravenwing Support",			"pts":200, "upgrades":[15,16,17,18]},
+			{"id":537, "name":"Landing Craft",			"pts":350, "units":"1 Landing Craft", "upgrades":[]},
+			{"id":538, "name":"Ironwing",				"pts":50, "upgrades":[15,16,17,18,22,31,32]},
+			{"id":539, "name":"Scout",			"pts":200, "units":"4 Sniper Scouts", "upgrades":[15,16,17,18,26,11,12]},
+			{"id":541, "name":"Strike Cruiser",			"pts":200, "upgrades":[]}, 
+			{"id":542, "name":"Battle Barge",			"pts":350, "upgrades":[]},
+			{"id":543, "name":"Tactical",		"pts":275, "units":"6 Plasma Tacticals", "upgrades":[11,12,15,16,17,18,21,22,23,26,31,32,41,42]},
+			{"id":544, "name":"Deathwing",		"pts":0, "upgrades":[15,16,17,18,21,23,31,41,42,43,44,45]},
+			{"id":545, "name":"Thunderhawk",			"pts":200, "upgrades":[]},
+			{"id":547, "name":"Whirlwind",				"pts":300, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,22,32]}
+		]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Rhinos",			"pts":0},
+		{"id":12, "name":"Drop Pods",			"pts":0},
+		{"id":28, "name":"5 Land Speeder",		"pts":0},
+		{"id":29, "name":"5 Land Speeder Tornado",	"pts":0},
+		{"id":15, "name":"Company Master",		"pts":50},
+		{"id":16, "name":"Interrogator Chaplain", 	"pts":50},
+		{"id":17, "name":"Deathwing Librarian", 	"pts":50},
+		{"id":18, "name":"Grand Master",		"pts":100},
+		{"id":21, "name":"Dreadnought", 		"pts":50},
+		{"id":22, "name":"Hunter", 			"pts":75},
+		{"id":23, "name":"Land Raider", 		"pts":75},
+		{"id":32, "name":"2 Hunter", 			"pts":125},
+		{"id":26, "name":"Razorback",			"pts":25},
+		{"id":31, "name":"Predator or Vindicator",	"pts":50},
+		{"id":41, "name":"2 Terminators",		"pts":175},
+		{"id":42, "name":"2 Assault Terminators",	"pts":175},
+		{"id":43, "name":"4 Terminators",		"pts":350},
+		{"id":44, "name":"4 Assault Terminators",	"pts":350},
+		{"id":45, "name":"2 Terminators, 2 Assault Terminators","pts":350},
+		{"id":47, "name":"Devastator",		"pts":0},
+		{"id":48, "name":"Plasma Devastator",		"pts":0}
+	],
+	"formationConstraints":[
+		{"max":1, "name":"Spacecraft", "from":[541,542]}		
+	],
+	"upgradeConstraints":[
+		{"max":1, "name":"Transport", "from":[11,12]},
+		{"min":1, "max":1, "from":[28,29], "appliesTo":[536]},
+		{"max":1, "name":"Master", "from":[15,16,17,18]},
+		{"max":1, "perArmy":true, "from":[18]},
+		{"min":1, "max":1, "from":[43,44,45], "appliesTo":[544]},
+		{"max":1, "from":[41,42]},
+		{"max":2, "from":[21]},
+		{"max":1, "from":[22,32]},
+		{"max":4, "from":[23]},
+		{"max":6, "from":[26]},
+		{"max":2, "from":[31], "appliesTo":[535,543,544]},
+		{"min":4, "max":6, "from":[31], "appliesTo":[538]},
+		{"min":4, "max":4, "from":[47,48], "appliesTo":[534]}
+	]
+}
