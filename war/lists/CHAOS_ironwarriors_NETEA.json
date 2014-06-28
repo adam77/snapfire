@@ -1,6 +1,6 @@
 {
 	"id":"Iron Warriors",
-	"version":"NetEA v2.0a *UNDER DEVELOPMENT*",
+	"version":"NetEA v2.5a *UNDER DEVELOPMENT*",
 	"notes":["If a Daemon Prince is selected, then it replaces the unit with an Iron Warrior Lord."],
 	"by":"Onyx",
 	"sections":[
