@@ -55,7 +55,7 @@
     {"max":1, "from":[13], "appliesTo":[200]},
     {"min":3,"max":6, "from":[9], "appliesTo":[300]},
     {"max":1, "from":[2,13], "appliesTo":[300]},
-    {"min":3,"max":6, "from":[16], "appliesTo":[400]},
+    
     {"max":1, "from":[13], "appliesTo":[400]},
     {"min":3,"max":6, "from":[16], "appliesTo":[400]},
     {"max":1, "from":[13], "appliesTo":[400]},
