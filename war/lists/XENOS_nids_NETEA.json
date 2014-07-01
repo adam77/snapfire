@@ -1,6 +1,6 @@
 {
   "id":"Hive Fleet Onachus Tyranids",
-  "version":"NetEA v10.2 *UNDER DEVELOPMENT*",
+  "version":"NetEA v10.2.1 *APPROVED*",
   "by":"Dave",
   "notes":["No more than one third of the points available may be spent on war engines."],
   "sections":[
@@ -36,13 +36,13 @@
     {"id":10, "name":"Termagants", "pts":20},
     {"id":11, "name":"Hormagants", "pts":20},
     {"id":12, "name":"Biovore", "pts":25},
-    {"id":13, "name":"Gargoyles (745.M41)", "pts":25},
+    {"id":13, "name":"Gargoyles (745.M41)", "pts":20},
     {"id":14, "name":"Zoanthrope (745.M41)", "pts":25},
     {"id":15, "name":"Raveners", "pts":35},
     {"id":16, "name":"Carnifex", "pts":50},
     {"id":17, "name":"Haruspex", "pts":50},
     {"id":18, "name":"Malefactor", "pts":50},
-    {"id":19, "name":"Dactylis", "pts":60},
+    {"id":19, "name":"Dactylis", "pts":75},
     {"id":20, "name":"Exocrine", "pts":50},
     {"id":21, "name":"Trygon", "pts":60},
     {"id":23, "name":"Tyranid Warriors", "pts":50},
@@ -83,3 +83,4 @@
     {"max":6, "from":[30], "appliesTo":[1200]}
   ]
 }
+
