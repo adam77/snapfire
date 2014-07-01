@@ -9,7 +9,7 @@
 		]},
 		{"name":"ELDAR TITAN WARHOSTS", "formations":[
 			{"id":510, "name":"Warlock Titan", "units":"1 Warlock Titan", "pts":725, "upgrades":[40]},
-			{"id":512, "name":"Phantom Titan", "units":"1 Phantom Titan", "pts":650, "upgrades":[79,80]},
+			{"id":512, "name":"Phantom Titan", "units":"1 Phantom Titan", "pts":650, "upgrades":[80]},
 			{"id":513, "name":"Revenant Titan Host" , "units":"Each Revenant Titan is armed with 2 weapons, Revenant Pulse Lasers or Revenant Sonic Lances, in any combination.", "pts":0, "upgrades":[81,39]}
 		]},	
 		{"name":"CRAFTWORLD ALLIES", "formations":[
