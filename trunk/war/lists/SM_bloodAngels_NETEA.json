@@ -60,7 +60,8 @@
 {"id":37, "name":"Blood Angels Bike",				"pts":0},
 {"id":38, "name":"Attack Bike",					"pts":0},
 {"id":39, "name":"Rhinos",					"pts":0},
-{"id":40, "name":"Drop Pods",					"pts":0}
+{"id":40, "name":"Drop Pods",					"pts":0},
+{"id":41, "name":"Predator Annihilator",					"pts":75}
 
 
 
@@ -79,7 +80,7 @@
 {"max":1, "name":"Transport", "from":[39,40]},		
 {"min":5, "max":5, "from":[27,28,29], "appliesTo":[536]},		
 {"min":4, "max":4, "from":[37], "appliesTo":[533]},		
-{"min":4, "max":4, "from":[19,20], "appliesTo":[538]},		
+{"min":4, "max":4, "from":[19,41], "appliesTo":[538]},		
 {"min":1, "max":1, "from":[38], "appliesTo":[533]},		
 {"max":1, "name":"Movement", "from":[39,35], "appliesTo":[534]},
 {"max":6, "name":"Razorbacks", "from":[24,25]},
