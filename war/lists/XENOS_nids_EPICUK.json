@@ -28,9 +28,9 @@
 
 		]},
 		{"name":"RARE FORMATIONS", "formations":[
-			{"id":301, "name":"Ariel Spore Swarn", "pts":0,
-				"upgrades":[26] },
-			{"id":302, "name":"Harassment Swarn", "pts":225,
+			{"id":301, "name":"Spore Mine Swarm", "pts":150,
+          "upgrades":[26], "units":"6 Spore Mine Clusters" },
+			{"id":302, "name":"Harassment Swarm", "pts":225,
 				"upgrades":[17], "units":"1 Harridan and 0-4 Gargoyles" },
 			{"id":303, "name":"Heirophant Bio-titan", "pts":300,
 				"units":"1 Heirophant" },
@@ -58,7 +58,7 @@
 		{"id":23, "name":"Dactylis", "pts":50},
 		{"id":24, "name":"Hierodule", "pts":125},
 		{"id":25, "name":"Genestealer", "pts":25},
-		{"id":26, "name":"Meiotic Spore Mine", "pts":50},
+		{"id":26, "name":"Spore Mine Cluster", "pts":50},
 		{"id":27, "name":"Lictor", "pts":50},
                 {"id":28, "name":"Ravener", "pts":30},
                 {"id":29, "name":"Zoanthrope", "pts":35}
@@ -111,7 +111,7 @@
 		{"max":6, "from":[16,29], "appliesTo":[204]},
 		{"max":4, "from":[22,23], "appliesTo":[203]},
 		{"max":8, "from":[22,23], "appliesTo":[204]},
-		{"min":3, "max":6, "from":[26], "appliesTo":[301]},
+		{"max":3, "from":[26], "appliesTo":[301]},
 		{"max":2, "from":[17], "appliesTo":[302]},
 		{"min":4, "max":7, "from":[27], "appliesTo":[305]},
 		{"max":4, "from":[28], "appliesTo":[306]}
