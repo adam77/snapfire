@@ -44,7 +44,7 @@
 	  {"id": 65, "name": "3 Chaos Land Raiders", "pts": 225},
 	  {"id": 66, "name": "4 Chaos Land Raiders", "pts": 300},
     {"id": 60, "name": "Icon Bearer", "pts": 25},
-    {"id": 56, "name": "Daemonic Pact", "pts": 25},
+    {"id": 56, "name": "Daemonic Pact (includes 1 lesser daemon)", "pts": 25},
     {"id": 52, "name": "Chaos Champion", "pts": 50},
     {"id": 63, "name": "Dreadnought", "pts": 50}, 
 	  {"id": 67, "name": "2 Dreadnoughts", "pts": 100},
