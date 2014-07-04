@@ -47,7 +47,7 @@
       {"id": 54, "name": "Chaos Vindicator", "pts": 35}, 
 	  {"id": 70, "name": "2 Chaos Vindicators", "pts": 70},
 	  {"id": 71, "name": "3 Chaos Vindicators", "pts": 105},
-      {"id": 60, "name": "Icon Bearer", "pts": 50},
+      {"id": 60, "name": "Icon Bearer", "pts": 25},
       {"id": 52, "name": "Chaos Champion", "pts": 50},
       {"id": 56, "name": "Daemonic Pact", "pts": 25},
       {"id": 64, "name": "Plague Tower", "pts": 325},
