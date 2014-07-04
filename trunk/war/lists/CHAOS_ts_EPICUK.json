@@ -51,7 +51,7 @@
       {"id": 63, "name": "Dreadnought", "pts": 50},
 	  {"id": 70, "name": "2 Dreadnoughts", "pts": 100},
 	  {"id": 71, "name": "3 Dreadnoughts", "pts": 150},
-	  {"id": 56, "name": "Daemonic Pact", "pts": 25},
+	  {"id": 56, "name": "Daemonic Pact (includes 1 lesser daemon)", "pts": 25},
       {"id": 27, "name": "Chaos Predator", "pts": 50},
 	  {"id": 28, "name": "Chaos Vindicator", "pts": 35},
 	  {"id": 29, "name": "Chaos Predator", "pts": 50},
