@@ -53,7 +53,7 @@
 	  {"id": 70, "name": "2 Chaos Vindicators", "pts": 70},
 	  {"id": 71, "name": "3 Chaos Vindicators", "pts": 105},
       {"id": 55, "name": "4 Cult Marines", "pts": 150},
-      {"id": 56, "name": "Daemonic Pact", "pts": 25},
+      {"id": 56, "name": "Daemonic Pact (includes 1 lesser daemon)", "pts": 25},
       {"id": 57, "name": "Defiler", "pts": 65}, 
 	  {"id": 72, "name": "2 Defilers", "pts": 130},
 	  {"id": 73, "name": "3 Defilers", "pts": 195},
