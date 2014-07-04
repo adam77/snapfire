@@ -14,8 +14,8 @@
 			{"id":552, "name":"Warhound Titan Pack",	"pts":500, "upgrades":[80,82]}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
-			{"id":561, "name":"Forge Knights",			"pts":250, "units":"5 Forge Knights", "upgrades":[]},
-			{"id":562, "name":"Recon Platoon",			"pts":100, "units":"4 Sentinels", "upgrades":[]},
+			{"id":561, "name":"Forge Knight Maniple",			"pts":250, "units":"5 Forge Knights", "upgrades":[]},
+			{"id":562, "name":"Recon Cohort",			"pts":100, "units":"4 Sentinels", "upgrades":[]},
 			{"id":563, "name":"Thunderbolt Squadron",	"pts":150, "units":"2 Thunderbolts", "upgrades":[]},
 			{"id":564, "name":"Marauder Squadron",		"pts":250, "units":"2 Marauders", "upgrades":[]},
 			{"id":565, "name":"Orbital Support",		"pts":200, "units":"One Ark Mechanicus Battleship", "upgrades":[]},
