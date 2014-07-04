@@ -49,7 +49,7 @@
 	  {"id": 71, "name": "3 Chaos Vindicators", "pts": 105},
       {"id": 60, "name": "Icon Bearer", "pts": 25},
       {"id": 52, "name": "Chaos Champion", "pts": 50},
-      {"id": 56, "name": "Daemonic Pact", "pts": 25},
+      {"id": 56, "name": "Daemonic Pact (includes 1 lesser daemon)", "pts": 25},
       {"id": 64, "name": "Plague Tower", "pts": 325},
       {"id": 65, "name": "Contagion Engine", "pts": 75}, 
 	  {"id": 72, "name": "2 Contagion Engines", "pts": 150},
