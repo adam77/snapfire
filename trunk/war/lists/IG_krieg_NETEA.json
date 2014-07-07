@@ -26,7 +26,7 @@
 			{ "id":526, "name":"Trenchworks", "pts":100, "units":"80cm of Trenches and Razor Wire, 4 bunkers", "upgrades":[] }
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
-			{ "id":532, "name":"Marauder Bomber", "pts":250},
+			{ "id":532, "name":"Marauder Heavy Bomber", "pts":150},
 			{ "id":531, "name":"Thunderbolt Fighters", "pts":150, "units":"2 Thunderbolts"}
 		]},
 		{"name":"TITAN LEGIONS", "formations":[
