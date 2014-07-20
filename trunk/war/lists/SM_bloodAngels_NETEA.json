@@ -10,14 +10,14 @@
 {"id":532, "name":"Assault Detachment", 		"pts":250, "units":"6 Assault Units", "upgrades":[11,30,31,32,33,13,14,15,16,17,18,19,20,21,22,23,26]},
 {"id":533, "name":"Bike Detachment", 			"pts":200, "upgrades":[30,31,32,33,15,16,17]},
 {"id":534, "name":"Death Company", 			"pts":225, "upgrades":[39,13,14,26]},
-{"id":535, "name":"Devastator Detachment",		"pts":250, "units":"4 Devastators", "upgrades":[39,40,30,31,32,33,13,14,18,19,20,21,22,23,24,25,26]},	
+{"id":535, "name":"Devastator Detachment",		"pts":250, "units":"4 Devastators", "upgrades":[39,40,30,31,32,33,13,14,18,19,20,21,22,23,24,25,26,42,43]},	
 {"id":536, "name":"Land Speeders",			"pts":200, "upgrades":[30,31,32,33]},
 {"id":537, "name":"Landing Craft",			"pts":350, "upgrades":[]},
 {"id":538, "name":"Predators",				"pts":-25, "upgrades":[30,31,32,33,15,16,17,23]},
 {"id":539, "name":"Scout Detachment",			"pts":150, "units":"4 Scouts", "upgrades":[39,30,31,32,33,26]},
 {"id":540, "name":"Spacecraft",				"pts":200, "upgrades":[]}, 
 {"id":541, "name":"Stormraven",				"pts":250, "units":"4 Stormraven Gunships", "upgrades":[]},
-{"id":542, "name":"Tactical Detachment",		"pts":275, "units":"6 Tacticals", "upgrades":[39,40,11,30,31,32,33,13,14,15,16,17,18,19,20,21,22,23,24,25,26]},
+{"id":542, "name":"Tactical Detachment",		"pts":275, "units":"6 Tacticals", "upgrades":[39,40,11,30,31,32,33,13,14,15,16,17,18,19,20,21,22,23,24,25,26,42,43]},
 {"id":543, "name":"Terminator Detachment",		"pts":350, "units":"4 Terminators", "upgrades":[30,31,32,33,13,14,18,19,20,21,22,26]},
 {"id":544, "name":"Thunderhawk",			"pts":200, "upgrades":[]},
 {"id":545, "name":"Whirlwinds",				"pts":300, "units":"4 Blood Angels Whirlwinds", "upgrades":[23]}
@@ -61,6 +61,8 @@
 {"id":38, "name":"Attack Bike",					"pts":0},
 {"id":39, "name":"Rhinos",					"pts":0},
 {"id":40, "name":"Drop Pods",					"pts":0},
+{"id":42, "name":"Razorback (Lascannon)",					"pts":25},
+{"id":43, "name":"Razorback (Heavy Bolter)",					"pts":25},
 {"id":41, "name":"Predator Annihilator",					"pts":75}
 
 
