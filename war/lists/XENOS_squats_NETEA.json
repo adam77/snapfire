@@ -28,7 +28,7 @@
 			{"id":532, "name":"Leviathan", 	"pts":375, "units":"1 Leviathan","upgrades":[9]},
 			{"id":533, "name":"Colossus", 	"pts":450, "units":"1 Colossus","upgrades":[9]},
 			{"id":534, "name":"Cyclops", 	"pts":475, "units":"1 Cyclops","upgrades":[9]},
-			{"id":535, "name":"Land Train", "pts":0, "units":"1 Land Train Engine","upgrades":[9,30,31,32,33]}
+			{"id":535, "name":"Land Train", "pts":200, "units":"1 Land Train Engine","upgrades":[9,30,31,32,33]}
 		]}
 	],
 	"upgrades":[
