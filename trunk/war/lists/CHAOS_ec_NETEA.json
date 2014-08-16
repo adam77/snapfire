@@ -8,7 +8,7 @@
 			{ "id":500, "name":"Daemon Pool", "pts":0, "upgrades":[11,12] }
 		]},
 		{"name":"Emperor's Children Core formations", "formations": [
-			{ "id":501, "name":"Retinue", "pts":225, "units":"6 Chaos Marine units", "upgrades":[17,18,20,21,22,23,24,25,26,27,29,30] }
+			{ "id":501, "name":"Retinue", "pts":225, "units":"6 Chaos Marine units", "upgrades":[17,18,19,20,21,22,23,24,25,26,27,29,30] }
 		]},
 		{"name":"Emperor's Children Elite formations", "formations": [
 			{ "id":510, "name":"Chosen", "pts":125, "units":"4 Chaos Space Marine Chosen", "upgrades":[19,20,17,29] },
