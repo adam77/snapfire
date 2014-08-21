@@ -19,7 +19,7 @@
 			{"id":516, "name":"Hellhound Platoon", "pts":250, "upgrades":[], "units":"6 Hellhounds"},
 			{"id":517, "name":"Sentinel Squadron", "pts":100, "upgrades":[] },
 			{"id":518, "name":"Super Heavy Tank Platoon", "pts":200, "upgrades":[] },
-			{"id":519, "name":"Tank Platoon", "pts":300, "upgrades":[] }
+			{"id":519, "name":"Tank Platoon", "pts":400, "upgrades":[] }
 		]},
 		{"name":"ADEPTUS MECHANICUS", "formations":[
 			{"id":520, "name":"Warlord Class Titan",	"pts":825, "upgrades":[]},
