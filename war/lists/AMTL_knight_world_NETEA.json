@@ -1,6 +1,6 @@
 {
   "id":"Knight World",
-  "version":"NetEA v2.1 *UNDER DEVELOPMENT*",
+  "version":"NetEA v2.2 *UNDER DEVELOPMENT*",
   "by":"Dave",
   "notes":["Up to a quarter of the points available may be spent on Imperial Navy Aircraft formations."],
   "sections":[
@@ -8,15 +8,15 @@
       {"id":100, "name":"Knight Household", "pts":30, "upgrades":[2,8,10,13]}
     ]},
     {"name":"Support Households", "formations":[
-      {"id":200, "name":"Custodian Household", "pts":-30, "upgrades":[6,7,13]},
+      {"id":200, "name":"Custodian Household", "pts":20, "upgrades":[6,7,13]},
       {"id":300, "name":"Lancer Household", "pts":30, "upgrades":[2,9,13]},
-      {"id":400, "name":"Warden Household", "pts":30, "upgrades":[13,16]}
+      {"id":400, "name":"Warden Household", "pts":20, "upgrades":[13,16]}
     ]},
     {"name":"Support Levy", "formations":[
       {"id":500, "name":"AA Gun Battery", "pts":125, "units":"3 AA Guns", "upgrades":[3,4]},
       {"id":600, "name":"Howitzer Battery", "pts":175, "units":"3 Howitzers", "upgrades":[3,4]},
       {"id":700, "name":"Infantry Platoon", "pts":175, "units":"1 Levy Command, 8 Infantry Levy", "upgrades":[1,5,11,14,15,17]},
-      {"id":800, "name":"Rough Rider Platoon", "pts":0, "upgrades":[1,12]}
+      {"id":800, "name":"Rough Rider Platoon", "pts":150, "units":"6 Rough Riders", "upgrades":[1]}
     ]},
     {"name":"Imperial Navy Aircraft", "formations":[
       {"id":900, "name":"Marauder Squadron", "pts":250, "units":"2 Marauder Bombers", "upgrades":[]},
@@ -35,11 +35,10 @@
     {"id":9, "name":"Knight Lancer", "pts":90},
     {"id":10, "name":"Knight Paladin", "pts":90},
     {"id":11, "name":"Rapier", "pts":25},
-    {"id":12, "name":"Rough Riders", "pts":25},
     {"id":13, "name":"Seneschal", "pts":25},
     {"id":14, "name":"Snipers", "pts":25},
     {"id":15, "name":"Thudd Gun", "pts":25},
-    {"id":16, "name":"Warden", "pts":90},
+    {"id":16, "name":"Warden", "pts":85},
     {"id":17, "name":"52cm of Trench and 52cm of Razor Wire", "pts":50}
   ],
   "formationConstraints":[
@@ -51,12 +50,10 @@
     {"max":1, "perArmy":true, "from":[2]},
     {"min":3,"max":6, "from":[8,10], "appliesTo":[100]},
     {"max":1, "from":[2,13], "appliesTo":[100]},
-    {"min":3,"max":3, "from":[6,7], "appliesTo":[200]},
+    {"min":3,"max":4, "from":[6,7], "appliesTo":[200]},
     {"max":1, "from":[13], "appliesTo":[200]},
     {"min":3,"max":6, "from":[9], "appliesTo":[300]},
     {"max":1, "from":[2,13], "appliesTo":[300]},
-    
-    {"max":1, "from":[13], "appliesTo":[400]},
     {"min":3,"max":6, "from":[16], "appliesTo":[400]},
     {"max":1, "from":[13], "appliesTo":[400]},
     {"min":1,"max":1, "from":[3,4], "appliesTo":[500]},
@@ -66,7 +63,7 @@
     {"max":3, "from":[11,15], "appliesTo":[700]},
     {"max":2, "from":[14], "appliesTo":[700]},
     {"max":1, "from":[17], "appliesTo":[700]},
-    {"max":1, "from":[1], "appliesTo":[800]},
-    {"min":4,"max":6, "from":[12], "appliesTo":[800]}
+    {"max":1, "from":[1], "appliesTo":[800]}
   ]
 }
+
