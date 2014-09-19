@@ -1,100 +1,112 @@
-{
-   "id": "Tau Vior'la 0.8",
-   "version": "0.8 Experimental",
-   "by": "Iron Bloke, Parintachin",
-   "sections": 
-   [
-      {
-         "name": "Tau Core Formations",
-         "formations": 
-         [
-            {"id": 501, "name": "Crisis Battlesuit Cadre", "pts": 50, "upgrades": [31, 51, 41, 42] },
-            {"id": 502, "name": "Fire Warrior Cadre", "pts": 225, "upgrades": [32, 31, 33, 43, 44, 41, 42, 45, 46]}
-         ]
-      },
-      {
-         "name": "Support Formations",
-         "formations": 
-         [
-            {"id": 510, "name": "Armoured Support Group", "pts": 175, "upgrades": [46]},
-            {"id": 511, "name": "Armoured Attack Group", "pts": 200, "upgrades": [46, 48]},
-            {"id": 512, "name": "Broadside Group", "pts": 300, "units": "6 XV88 Broadside battlesuits"},
-            {"id": 513, "name": "Pathfinder Group", "pts": 200, "units": "6 Pathfinder units", "upgrades": [41, 42, 49]},
-            {"id": 514, "name": "Recon Skimmer Group", "pts": 150, "upgrades": [41, 42, 47]},
-            {"id": 515, "name": "XV104 Riptide Formation", "pts": 250, "units": "2 XV104 Riptides", "upgrades": [50]},
-            {"id": 516, "name": "Skysweep Support Group", "pts": 250, "units": "3 Skyray Air Defense Gunships"},
-            {"id": 517, "name": "Stealth Group", "pts": 225, "units": "6 XV15 Stealth Units", "upgrades": [41, 42]}
-         ]
-      },
-      {
-         "name": "Air Caste Formations",
-         "formations": 
-         [
-            {"id": 521, "name": "Barracuda Squadron", "pts": 150, "units": "2 Barracuda Fighters"},
-            {"id": 522, "name": "Razorshark Squadron", "pts": 175, "units": "3 Razorshark strike Fighters"},
-            {"id": 523, "name": "Manta Dropship", "pts": 675},
-            {"id": 524, "name": "Moray", "pts": 300},
-            {"id": 525, "name": "Orca Assault Dropship", "pts": 175},
-            {"id": 526, "name": "Spacecraft", "pts": 250, "units": "1 Custodian Class Battleship"},
-            {"id": 527, "name": "Tiger Shark AX-1-0", "pts": 375, "units": "2 Tiger Shark AX-1-0"},
-            {"id": 528, "name": "Sun Shark Squadron", "pts": 175, "units": "2 Sun Shark Bombers"}
-         ]
-      }
-   ],
-   "upgrades": 
-   [
-      {"id": 31, "name": "Shas'o Commander", "pts": 100 },
-      {"id": 32, "name": "Cadre Fireblade", "pts": 50 },
-      {"id": 33, "name": "Ethereal", "pts": 50 },
-      
-      {"id": 41, "name": "2 Gun Drones", "pts": 25 },
-      {"id": 42, "name": "4 Gun Drones", "pts": 50 },
-      {"id": 43, "name": "4 more Fire Warrior units", "pts": 100 },
-      {"id": 44, "name": "4 more Fire Warrior units, 2 Devilfishes", "pts": 150 },
-      {"id": 45, "name": "2 Pathfinder units and 1 Devilfish or 3 pathfinder units", "pts": 100 }, 
-      {"id": 46, "name": "Skyray", "pts": 100 }, 
-      {"id": 47, "name": "3 Piranhas", "pts": 75 }, 
-      {"id": 48, "name": "2 Hammerhead gunships", "pts": 75 }, 
-      {"id": 49, "name": "Three Devilfish", "pts": 100 },
-      {"id": 50, "name": "2 Shielded missile drones", "pts": 50 }, 
+   {
+      "id": "Tau Vior'la 1.1",
+      "version": "1.1 Developmental",
+      "by": "Iron Bloke, Parintachin",
+      "sections": 
+      [
+         {
+            "name": "Tau Core Formations",
+            "formations": 
+            [
+               {"id": 501, "name": "Crisis Battlesuit Cadre", "pts": 50, "upgrades": [31, 51, 32, 41] },
+               {"id": 502, "name": "Fire Warrior Cadre", "pts": 225, "upgrades": [32, 31, 33, 43, 44, 41, 45, 46]}
+            ]
+         },
+         {
+            "name": "Support Formations",
+            "formations": 
+            [
+               {"id": 510, "name": "Armoured Support Group", "pts": 175, "upgrades": [46]},
+               {"id": 511, "name": "Armoured Attack Group", "pts": 225, "upgrades": [46, 48]},
+               {"id": 512, "name": "Broadside Group", "pts": 325, "units": "6 XV88 Broadside battlesuits", "upgrades": [41] },
+               {"id": 513, "name": "Pathfinder Group", "pts": 200, "units": "", "upgrades": [41]},
+               {"id": 514, "name": "Recon Skimmer Group", "pts": 150, "upgrades": [47]},
+               {"id": 516, "name": "Skysweep Support Group", "pts": 250, "units": "3 Skyray Air Defense Gunships"},
+               {"id": 517, "name": "Stealth Group", "pts": 225, "units": "6 XV15 Stealth Units", "upgrades": [41]},
+               {"id": 518, "name": "Moray", "pts": 300, "units": "One Moray"},
+               {"id": 519, "name": "Vespid Swarm", "pts": 0},
+               {"id": 515, "name": "XV104 Riptide Formation", "pts": 300, "units": "3 XV104 Riptides", "upgrades": [31, 50]}
+            ]
+         },
+         {
+            "name": "Air Caste Formations",
+            "formations": 
+            [
+               {"id": 521, "name": "Barracuda Squadron", "pts": 150, "units": "2 Barracuda Fighters"},
+               {"id": 522, "name": "Razorshark Squadron", "pts": 175, "units": "3 Razorshark strike Fighters"},
+               {"id": 523, "name": "Manta Dropship", "pts": 675},
+               {"id": 525, "name": "Orca Assault Dropship", "pts": 175},
+               {"id": 526, "name": "Spacecraft", "pts": 250, "units": "1 Custodian Class Battleship"},
+               {"id": 527, "name": "Tiger Shark AX-1-0", "pts": 375, "units": "2 Tiger Shark AX-1-0"},
+               {"id": 528, "name": "Sun Shark Squadron", "pts": 175, "units": "2 Sun Shark Bombers"}
+            ]
+         }
+      ],
+      "upgrades": 
+      [
+         {"id": 31, "name": "Shas'o Commander", "pts": 100 },
+         {"id": 32, "name": "Cadre Fireblade", "pts": 25 },
+         {"id": 33, "name": "Ethereal", "pts": 50 },
+         
+         {"id": 41, "name": "2 Gun Drones", "pts": 25 },
+         {"id": 42, "name": "4 Gun Drones", "pts": 50 },
+         {"id": 43, "name": "6 more Fire Warrior units", "pts": 150 },
+         {"id": 44, "name": "6 more Fire Warrior units, 3 Devilfishes", "pts": 200 },
+         {"id": 45, "name": "2 Pathfinder units and 1 Devilfish or 3 pathfinder units", "pts": 100 }, 
+         {"id": 46, "name": "Skyray", "pts": 100 }, 
+         {"id": 47, "name": "3 Piranhas", "pts": 75 }, 
+         {"id": 48, "name": "2 Hammerhead gunships", "pts": 75 }, 
+         {"id": 49, "name": "Three Devilfish", "pts": 100 },
+         {"id": 50, "name": "Shielded missile drones", "pts": 25 }, 
 
 
-      {"id": 51, "name": "XV8 Crisis Battlesuit units", "pts": 50},
-      {"id": 52, "name": "4 'Railhead' Hammerhead gunships", "pts": 0 }, 
-      {"id": 53, "name": "6 'Railhead' Hammerhead gunships", "pts": 100 }, 
-      {"id": 54, "name": "8 Fire Warrior units", "pts": 0 }, 
-      {"id": 55, "name": "6 Fire Warrior Units, 3 Devilfishes", "pts": 0 }, 
-      {"id": 56, "name": "4 Hammerhead gunships", "pts": 0 }, 
-      {"id": 57, "name": "6 Hammerhead gunships", "pts": 75 }, 
-      {"id": 58, "name": "Pathfinder Tetra", "pts": 0 }, 
-      {"id": 59, "name": "Piranha", "pts": 0 } 
+         {"id": 51, "name": "XV8 Crisis Battlesuit unit", "pts": 50},
+         {"id": 52, "name": "4 'Railhead' Hammerhead gunships", "pts": 0 }, 
+         {"id": 53, "name": "6 'Railhead' Hammerhead gunships", "pts": 100 }, 
+         {"id": 54, "name": "8 Fire Warrior units", "pts": 0 }, 
+         {"id": 55, "name": "6 Fire Warrior Units, 3 Devilfishes", "pts": 0 }, 
+         {"id": 56, "name": "4 Hammerhead gunships", "pts": 0 }, 
+         {"id": 57, "name": "6 Hammerhead gunships", "pts": 75 }, 
+         {"id": 58, "name": "Pathfinder Tetra", "pts": 0 }, 
+         {"id": 59, "name": "Piranha", "pts": 0 }, 
 
-   ], 
-   "formationConstraints": 
-   [ 
-      { "max": 1, "from": [ 526 ] }, 
-      { "maxPercent": 33, "name": "War Engines & Allies", "from": [ 521, 522, 523, 524, 525, 526, 527, 528 ] }, 
-      { "max": 3, "name": "Support Groups", "from": [ 510, 511, 512, 513, 514, 515, 516, 517 ], "forEach": [ 501, 502 ], "name2": "Cadre" } 
-   ], 
-   "upgradeConstraints": 
-   [ 
-      { "max": 1, "perArmy": true, "from": [ 31 ], "name": "Cmdr"  }, 
-      { "max": 1, "perArmy": true, "from": [ 33 ] },
-      { "max": 1, "from": [ 32 ] }, 
-      { "max": 1, "from": [ 45 ] }, 
-      { "max": 1, "from": [ 46 ] }, 
-      { "max": 1, "from": [ 47 ] }, 
-      { "max": 1, "from": [ 48 ] }, 
-      { "max": 1, "from": [ 49 ] }, 
-      { "max": 1, "from": [ 50 ] },
-      { "max": 1, "from": [ 41, 42 ], "name": "Drone" }, 
-      { "max": 1, "from": [ 43, 44 ], "name": "Warriors" }, 
-      { "max": 1, "from": [ 53, 48 ] }, 
+    
+         {"id": 80, "name": "4 Pathfinder units, 2 Devilfishes", "pts": 200 },
+         {"id": 81, "name": "6 Pathfinder units", "pts": 300 },
+         {"id": 82, "name": "6 Pathfinder units, 3 Devilfishes", "pts": 300 },
+         {"id": 85, "name": "6 Vespid Stingwing units ", "pts": 150 },
+         {"id": 86, "name": "9 Vespid Stingwing units ", "pts": 225 }
 
-      { "min": 4, "max": 8, "from": [ 51 ], "appliesTo": [ 501 ] }, 
-      { "max": 1, "min": 1, "from": [ 54, 55 ], "appliesTo": [ 502 ] }, 
-      { "max": 1, "min": 1, "from": [ 56, 57 ], "appliesTo": [ 510 ] }, 
-      { "max": 1, "min": 1, "from": [ 52, 53 ], "appliesTo": [ 511 ] }, 
-      { "max": 5, "min": 5, "from": [ 58, 59 ], "appliesTo": [ 514 ] } 
-   ]
-}
+      ], 
+      "formationConstraints": 
+      [ 
+         { "max": 1, "from": [ 526 ] }, 
+         { "max": 2, "from": [ 519 ] }, 
+         { "maxPercent": 33, "name": "War Engines & Allies", "from": [ 521, 522, 523, 525, 526, 527, 528 ] }, 
+         { "max": 3, "name": "Support Groups", "from": [ 510, 511, 512, 513, 514, 515, 516, 517, 518, 519 ], "forEach": [ 501, 502 ], "name2": "Cadre" } 
+      ], 
+      "upgradeConstraints": 
+      [ 
+         { "max": 1, "perArmy": true, "from": [ 31 ], "name": "Cmdr"  }, 
+         { "max": 1, "perArmy": true, "from": [ 33 ] },
+         { "max": 1, "from": [ 32 ] }, 
+         { "max": 1, "from": [ 45 ] }, 
+         { "max": 1, "from": [ 46 ] }, 
+         { "max": 1, "from": [ 47 ] }, 
+         { "max": 1, "from": [ 48 ] }, 
+         { "max": 1, "from": [ 49 ] }, 
+         { "max": 3, "from": [ 50 ] },
+         { "max": 1, "from": [ 41, 42 ], "name": "Drone" }, 
+         { "max": 1, "from": [ 43, 44 ], "name": "Warriors" }, 
+         { "max": 1, "from": [ 53, 48 ] }, 
+
+         { "min": 4, "max": 8, "from": [ 51 ], "appliesTo": [ 501 ] }, 
+         { "max": 1, "min": 1, "from": [ 54, 55 ], "appliesTo": [ 502 ] }, 
+         { "max": 1, "min": 1, "from": [ 56, 57 ], "appliesTo": [ 510 ] }, 
+         { "max": 1, "min": 1, "from": [ 52, 53 ], "appliesTo": [ 511 ] }, 
+         { "max": 1, "min": 1, "from": [ 80, 81, 82 ], "appliesTo": [ 513 ] }, 
+         { "max": 5, "min": 5, "from": [ 58, 59 ], "appliesTo": [ 514 ] } , 
+         { "max": 1, "min": 1, "from": [ 85, 86 ], "appliesTo": [ 519 ] } 
+      ]
+   }
+
