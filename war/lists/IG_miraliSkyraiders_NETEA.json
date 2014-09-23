@@ -1,0 +1,66 @@
+{
+	"id":"Mirali Skyraiders",
+	"version":"Mirali Skyraiders 2.0",
+	"notes": [
+	"Mirali Skyraiders may include 1 Commissar per 500 points or part thereof",
+	"If any Vendetta is chosen, select the free upgrade to make sure upgrades are counted correctly"],
+	"by":"LargoW",
+	"sections":[
+		{"name":"SPECIAL", "formations":[
+			{"id":500, "name":"Forward Operating Base", 		"pts":50, "upgrades":[], "units":"1 Forward Operating Base"}
+		]},
+		{"name":"COMPANIES", "formations":[
+			{"id":511, "name":"Mirali HQ Company", 				"pts":350, "upgrades":[12,13,14,15,16,17,18,19,20,21,22,23], "units":"Supreme Commander, 8 Infantry Units, 3 Bunkers"},
+			{"id":512, "name":"Air Cavalry Company",			"pts":250, "upgrades":[12,14,15,17,18,20,21,22,23], "units":"Commander, 8 Infantry Units"}
+		]},
+		{"name":"SUPPORT FORMATIONS", "formations":[
+			{"id":501, "name":"Vulture Squadron",				"pts":300, "upgrades":[], "units":"4 Vultures"},
+			{"id":502, "name":"Vulture Punisher Squadron",		"pts":400, "upgrades":[], "units":"4 Vulture Punishers"},
+			{"id":503, "name":"Vulture Slick Squadron",			"pts":125, "upgrades":[], "units":"4 Vulture Slicks"},
+			{"id":504, "name":"Regimental Artillery Battery",	"pts":150, "upgrades":[], "units":"3 Howitzer Weapons Platforms, 3 Gun Emplacements"},
+			{"id":505, "name":"Regimental Anti-Air Battery",	"pts":125, "upgrades":[], "units":"3 Blitzen Weapons Platforms, 3 Gun Emplacements"},
+			{"id":506, "name":"Deathstrike Missile Battery",	"pts":200, "upgrades":[], "units":"2 Deathstrike Erector-Launchers, 2 Gun Emplacements"},
+			{"id":507, "name":"Firebase Defense Company",		"pts":250, "upgrades":[], "units":"Commander, 8 Infantry Units, 3 Bunkers"},
+			{"id":508, "name":"Mirali Trackers Company",		"pts":200, "upgrades":[], "units":"6 Mirali Trackers"}		
+		]},
+		{"name":"IMPERIAL NAVY", "formations":[
+			{"id":521, "name":"Thunderbolt Flight",				"pts":150, "upgrades":[], "units":"2 Thunderbolt Fighters"},
+			{"id":522, "name":"Lightning Strike Flight",		"pts":150, "upgrades":[], "units":"2 Lightning Strike Fighters"},
+			{"id":523, "name":"Marauder",						"pts":250, "upgrades":[], "units":"1 Marauder Heavy Bomber"},
+			{"id":524, "name":"Marauder Destroyer",				"pts":250, "upgrades":[], "units":"1 Mirali Heavy Marauder Destroyer"}
+		]}
+	],
+	"upgrades":[
+		{"id":10, "name":"Valkyrie",								"pts":25},
+		{"id":11, "name":"Mirali Vendetta",							"pts":50},
+		{"id":12, "name":"2 Fire Support Units, 1 Valkyrie",		"pts":100},
+		{"id":13, "name":"2 Fire Support Units, 1 Mirali Vendetta",	"pts":125},
+		{"id":14, "name":"3 Fire Support Units, 1 Bunker",			"pts":100},
+		{"id":15, "name":"2 Infantry Units, 1 Valkyrie",			"pts":75},
+		{"id":16, "name":"2 Infantry Units, 1 Mirali Vendetta",		"pts":100},
+		{"id":17, "name":"3 Infantry Units, 1 Bunker",				"pts":75},
+		{"id":18, "name":"2 Sniper Units, 1 Valkyrie",				"pts":100},
+		{"id":19, "name":"2 Sniper Units, 1 Mirali Vendetta",		"pts":125},
+		{"id":20, "name":"3 Sniper Units, 1 Bunker",				"pts":100},
+		{"id":21, "name":"1 Vulture",								"pts":75},
+		{"id":22, "name":"1 Vulture Punisher",						"pts":100},
+		{"id":23, "name":"Mirali Vendetta Upgrade taken", 			"pts":0}
+		],
+	"formationConstraints":[
+		{"max":2, "name":"Support Formations", "from":[501,502,503,504,505,506,507,508], "forEach":[511,512], "name2":"Company"},
+		{"maxPercent":33, "name":"Navy", "from":[521,522,523,524]},
+		{"max":1, "from":[500]},
+		{"max":1, "from":[511]},
+		{"max":1, "from":[506]}
+	],
+	"upgradeConstraints":[
+		{"max":3,  "name":"Upgrades", "from":[12,13,14,15,16,17,18,19,20,21,22,23]},
+		{"min":5,  "name":"Valkyries","from": [10,11], "appliesTo": [512]},
+		{"max":2,  "name":"Vendettas", "from":[11,13,16,19]},
+		{"max":1,  "name":"Fire Support Upgrade", "from":[12,13,14]},
+		{"max":1,  "name":"Infantry Upgrade", "from":[15,16,17]},
+		{"max":1,  "name":"Sniper Upgrade", "from":[18,19,20]},
+		{"max":1,  "name":"Vulture Variant", "from":[21,22]},
+		{"max":1,  "from":[23]}
+	]
+}
