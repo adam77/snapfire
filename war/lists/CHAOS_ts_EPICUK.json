@@ -18,7 +18,7 @@
       {"name": "CHAOS TITANS", "formations": [
 			{"id": 520, "name": "Warplord Titan", "pts": 800, "upgrades": []},
 			{"id": 521, "name": "Mutator Titan", "pts": 650, "upgrades": []},
-			{"id": 522, "name": "Warphound Tian", "pts": 300, "upgrades": []}
+			{"id": 522, "name": "Warphound Titan", "pts": 300, "upgrades": []}
       ]},
       {"name": "CHAOS NAVY & DAEMONIC ENGINES", "formations": [
             {"id": 530, "name": "Doomwings", "pts": 150, "units": "3 Doomwings", "upgrades": []},
