@@ -55,7 +55,7 @@
       {"max":2, "name":"Support Formations", "from":[535,536,537,538], "forEach":[532,533,534], "name2":"Company"},
       {"max":1, "name":"Light Artillery Battery", "from":[538], "forEach":[535], "name2":"Reconnaissance Squadron"},
       {"max":1, "name":"Spacecraft", "from":[542]},
-      {"max":1, "perPoints":2000, "from":[15]},
+     {"max":1, "name":"Forward Observer", "perPoints":2000, "from":[15]},
       {"maxPercent":33, "name":"Navy & Support", "from":[539,540,541,542,543,544]}
    ],
    "upgradeConstraints":[
