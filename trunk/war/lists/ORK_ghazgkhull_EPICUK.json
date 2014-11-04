@@ -98,6 +98,7 @@
                "name": "Stormboyz Warhorde",
                "pts": 0,
                "upgrades": [
+                  81,
                   52,
                   51,
                   53,
@@ -111,6 +112,7 @@
                "name": "Kult of Speed",
                "pts": 0,
                "upgrades": [
+                  81,
                   53,
                   54,
                   55,
@@ -126,6 +128,7 @@
                "name": "Kult of Speed (Big)",
                "pts": -50,
                "upgrades": [
+                  81,
                   53,
                   54,
                   55,
@@ -141,6 +144,7 @@
                "name": "Kult of Speed ('Uge)",
                "pts": -100,
                "upgrades": [
+                  81,
                   53,
                   54,
                   55,
@@ -156,6 +160,7 @@
                "name": "Blitz Brigade",
                "pts": 10,
                "upgrades": [
+                  81,
                   53,
                   54,
                   55,
@@ -172,6 +177,7 @@
                "name": "Blitz Brigade (Big)",
                "pts": -30,
                "upgrades": [
+                  81,
                   53,
                   54,
                   55,
@@ -188,6 +194,7 @@
                "name": "Blitz Brigade ('Uge)",
                "pts": -70,
                "upgrades": [
+                  81,
                   53,
                   54,
                   55,
@@ -204,6 +211,7 @@
                "name": "Mekboy Stompamob",
                "pts": 0,
                "upgrades": [
+                  81,
                   57,
                   60,
                   61,
