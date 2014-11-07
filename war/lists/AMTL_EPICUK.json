@@ -18,7 +18,7 @@
 {"name":"IMPERIAL NAVY",
 "formations":[
         {"id":531,"name":"Orbital Support","pts":150,"units":"1 Adeptus Mechanicsu Mars Cruiser","upgrades":[]},
-        {"id":532,"name":"Fighter Cohort","pts":150,"units":"2 Thunderbolt Fighter-bombmers","upgrades":[]},
+        {"id":532,"name":"Fighter Cohort","pts":150,"units":"2 Thunderbolt Fighter-bombers","upgrades":[]},
         {"id":533,"name":"MarauderBombers","pts":250,"units":"2 Marauder Bombers","upgrades":[]}
 ]}
 ],
