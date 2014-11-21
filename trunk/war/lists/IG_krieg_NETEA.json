@@ -1,7 +1,7 @@
 {
 	"id":"Death Korps of Krieg",
 	"version":"NetEA Tournament Pack 2013",
-	"by":"Iron Bloke, last update 2013-10-23 Parintachin",
+	"by":"Iron Bloke, last update 2014-11-21 Kyussinchains",
 	"sections":[
 		{"name":"DEATH KORPS COMPANIES", "formations":[
 			{ "id":503, "name":"Death Rider Company", "pts":250, "units":"12 Death Korps Rough Rider units", "upgrades":[114,109,105,120,111,102,121,122] },
@@ -23,7 +23,7 @@
 			{ "id":513, "name":"Tank Platoon", "pts":280, "upgrades":[] }
 		]},
 		{"name":"TRENCHWORKS", "formations":[
-			{ "id":526, "name":"Trenchworks", "pts":100, "units":"80cm of Trenches and Razor Wire, 4 bunkers", "upgrades":[] }
+			{ "id":526, "name":"Trenchworks", "pts":75, "units":"80cm of Trenches and Razor Wire, 4 bunkers", "upgrades":[] }
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
 			{ "id":532, "name":"Marauder Heavy Bomber", "pts":150},
@@ -33,14 +33,14 @@
 			{ "id":537, "name":"Reaver Titan", "pts":650},
 			{ "id":539, "name":"Warhound Titan", "pts":275},
 			{ "id":538, "name":"Warhound Titan Pack", "pts":500, "units":"2 Warhounds"},
-			{ "id":536, "name":"Warlord Titan", "pts":850}
+			{ "id":536, "name":"Warlord Titan", "pts":825}
 		]}	
 	],
 	"upgrades":[
 		{ "id":11, "name":"Leman Russ Thunderer", "pts":0 },
 		{ "id":12, "name":"Leman Russ", "pts":20 },
-		{ "id":13, "name":"Leman Russ Demolisher", "pts":10 },
-		{ "id":14, "name":"Leman Russ Vanquisher", "pts":50 },
+		{ "id":13, "name":"Leman Russ Demolisher", "pts":20 },
+		{ "id":14, "name":"Leman Russ Vanquisher", "pts":45 },
 		{ "id":21, "name":"Baneblade", "pts":0 },
 		{ "id":22, "name":"Shadowsword", "pts":0 },
 		{ "id":23, "name":"Stormblade", "pts":0 },
@@ -64,7 +64,7 @@
 		{ "id":114, "name":"Fire Support Battery (4 Fire Support)", "pts":75 },
 		{ "id":111, "name":"Infantry Platoon (10 Death Korps Infantry)", "pts":175 },
 		{ "id":109, "name":"Heavy Tank (Macharius)", "pts":125 },
-		{ "id":105, "name":"Hellhound Squadron (3 Hellhounds)", "pts":125},
+		{ "id":105, "name":"Hellhound Squadron (3 Hellhounds)", "pts":100},
 		{ "id":107, "name":"Gorgon Siege Transporters (2 Gorgons)", "pts":125 },
 		{ "id":102, "name":"Tank Squadron (3 Leman Russ Variants)", "pts":140},
 		{ "id":121, "name":"Leman Russ Surcharge for Tank Squadron", "pts":20},
