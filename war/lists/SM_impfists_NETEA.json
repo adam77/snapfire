@@ -25,7 +25,7 @@
                         { "id":522, "name":"Hyperios Platforms",                "pts":125, "units":"3 Hyperios Platforms", "upgrades":[] },
                         { "id":523, "name":"Tarantula Sentry Guns",     "pts":100, "units":"4 Tarantulas, 4 Emplacements", "upgrades": [] }
                 ]},
-                {"name":"IMPERIAL NAVY", "formations":[
+                {"name":"AIRCRAFT", "formations":[
                         { "id":531, "name":"2 Storm Talons",    "pts":200, "upgrades":[] },
                         { "id":532, "name":"1 Marauder Colossus",               "pts":175, "upgrades":[] }
                 ]},
