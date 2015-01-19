@@ -1,0 +1,22 @@
+HOW TO MAKE A LIST:
+
+Run Local Version...
+1. Unzip attached file to a directory.
+2. Open index.html in browser (Firefox only).
+3. Navigate to a list and check it works normally.
+
+Create New File...
+1. Copy a file in the 'lists' directory (e.g. SM_codex.json) to a new
+file (e.g. SM_mylist_NETEA.json).
+2. Navigate to a list in the browser, and change the last part of the
+URL to point at the new file (e.g. list=SM_mylist_NETEA) and press
+return.
+3. The list should load as before.
+
+Edit New File...
+1. Get hold of a text editor (notepad++ is good and a free download).
+2. Open new list file in text editor.
+3. Change name of list to something new; check it works in browser.
+4. Finish making changes. Start with formations, then upgrades, then
+constraints (be careful to always match up quotation marks; and that
+there are no trailing commas in lists).
