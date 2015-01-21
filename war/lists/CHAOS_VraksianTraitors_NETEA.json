@@ -1,0 +1,92 @@
+{
+	"id":"Vraksian Traitors",
+	"version":"NetEA v1.06",
+	"by":"Mard",
+	"sections":[
+		{"name":"COMPANIES", "formations":[
+			{"id":6612, "name":"Regimental HQ Platoon", 		"pts":375, "upgrades":[19,25,26,27,28,29,30,31,32,33,34,35], "units":"Supreme Commander, 12 Infantry"},
+			{"id":6613, "name":"Infantry Company", 				"pts":275, "upgrades":[25,26,27,28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry"},
+			{"id":6614, "name":"Leman Russ Tank Company", 		"pts":625, "upgrades":[11,12,25,26,27,28,29,30,31,32,33,34,35]},
+			{"id":6615, "name":"Malcador Tank Company", 		"pts":650, "upgrades":[13,14,15,25,26,27,28,29,30,31,32,33,34,35]},
+		 	{"id":6616, "name":"Artillery Company", 			"pts":650, "upgrades":[16,17,18,25,26,27,28,29,30,31,32,33,34,35]}
+		]},
+		{"name":"SUPPORT FORMATIONS", "formations":[
+			{"id":6602, "name":"Artillery Battery",				"pts":250, "upgrades":[20,21,22]},
+			{"id":6603, "name":"Sentinel Squadron",				"pts":100, "upgrades":[], "units":"4 Sentinels"},
+			{"id":6604, "name":"Flak Battery",					"pts":150, "upgrades":[], "units":"3 Hydra"},
+			{"id":6605, "name":"Disciples of Xaphan",			"pts":300, "upgrades":[], "units":"8 Disciples of Xaphan, 4 Chimeras"},
+			{"id":6606, "name":"Heavy Artillery Squadron",		"pts":350, "upgrades":[], "units":"3 Minotaur Artillery Tanks"},
+			{"id":6607, "name":"Tank Hunter Squadron",			"pts":200, "upgrades":[23,24]},
+			{"id":6608, "name":"Armoured Fist Platoon",			"pts":325, "upgrades":[], "units":"10 Imperial Guard, 5 Chimeras, 1 Salamander Command Vehicle"},
+			{"id":6609, "name":"Deathstrike Missile Battery",	"pts":200, "upgrades":[], "units":"2 Deathstrike Missile Launchers"}
+		]},
+		{"name":"ALPHA LEGIONS", "formations":[
+			{"id":7702, "name":"Alpha Legion Retinue",		"pts":325, "upgrades":[], "units":"8 Alpha Legion Marines, 1 Alpha Legion Lord, 4 Alpha Legion Rhinos"},
+			{"id":7703, "name":"Hellblade Squadron",		"pts":200, "upgrades":[], "units":"3 Hellblade Fighters"},
+			{"id":7704, "name":"HellTalon Squadron",		"pts":175, "upgrades":[], "units":"2 HellTalon FighterBombers"},
+			{"id":7705, "name":"Harbinger Bomber",			"pts":450, "upgrades":[], "units":"1 Harbinger Bomber"}
+		]},
+		{"name":"CHAOS TITAN LEGIONS", "formations":[
+			{"id":8802, "name":"Chaos Warhound Titan",		"pts":275, "upgrades":[]},
+			{"id":8803, "name":"Chaos Warhound Pack",		"pts":500, "upgrades":[], "units":"2 Chaos Warhounds"},
+			{"id":8804, "name":"Chaos Reaver Titan",		"pts":675, "upgrades":[]},
+			{"id":8805, "name":"Chaos Warlord Titan",		"pts":875, "upgrades":[]}	
+		]}
+	],	
+	
+	"upgrades":[
+		{"id":11, "name":"Leman Russ",								"pts":0},
+		{"id":12, "name":"Leman Russ Vanquisher",					"pts":25},
+		{"id":13, "name":"Malcador",								"pts":0},
+		{"id":14, "name":"Malcador Annihilator",					"pts":0},
+		{"id":15, "name":"Malcador Defender",						"pts":0},
+		{"id":16, "name":"Bombards",								"pts":0},
+		{"id":17, "name":"Basilisk",								"pts":0},
+		{"id":18, "name":"Manticore",								"pts":0},
+		{"id":19, "name":"Chimeras (7 Chimeras)",					"pts":150},
+		{"id":20, "name":"3 Basilisks",								"pts":0},
+		{"id":21, "name":"3 Bombards",								"pts":0},
+		{"id":22, "name":"3 Manticores",							"pts":0},
+		{"id":23, "name":"3 Leman Russ Destroyer Tank Hunters", 	"pts":0},
+		{"id":24, "name":"3 Valdor Tank Hunters", 					"pts":50},
+		{"id":25, "name":"Fire Support Squad (4 Fire Support Units)",			"pts":100},
+		{"id":26, "name":"Infantry Reinforcements (6 Infantry Units)",			"pts":100},
+		{"id":27, "name":"Tank Squadron (3 Leman Russ)",			"pts":200},
+		{"id":28, "name":"Tank Squadron (3 Demolishers)",			"pts":200},
+		{"id":29, "name":"Tank Squadron (3 Malcadors)",				"pts":200},
+		{"id":30, "name":"Tank Squadron (3 Malcador Defenders)",	"pts":200},
+		{"id":31, "name":"Tank Squadron (3 Malcador Annihilators)",	"pts":200},
+		{"id":32, "name":"Hellhound Squadron (3 Hellhounds)",		"pts":125},
+		{"id":33, "name":"Griffon Battery (3 Griffons)",			"pts":75},
+		{"id":34, "name":"3 Ogryn Beserkers",						"pts":100},
+		{"id":35, "name":"Flak (1 Hydra)",									"pts":50}
+
+	],
+	"formationConstraints":[
+		{"max":2, "name":"Support Formations", "from":[6602,6603,6604,6605,6606,6607,6608,6609], "forEach":[6612,6613,6614,6615,6616], "name2":"Company"},
+		{"maxPercent":33, "name":"ALPHA LEGIONS & CHAOS TITAN LEGIONS", "from":[7702,7703,7704,7705,8802,8803,8804,8805]},
+		{"max":1, "from":[6612]},
+		{"max":1, "from":[6609]}
+
+	],
+	"upgradeConstraints":[
+		{"min":10, "max":10, "from":[11,12], "appliesTo":[6614]},
+		{"min":10, "max":10, "from":[13,14,15], "appliesTo":[6615]},
+		{"min":1, "max":1, "from":[20,21,22], "appliesTo":[6602]},
+		{"min":1, "max":1, "from":[23,24], "appliesTo":[6607]},
+		{"min":0, "max":1, "from":[19], "appliesTo":[6612]},
+		{"min":9, "max":9, "from":[16,17,18], "appliesTo":[6616]},
+		{"max":3, "name":"Upgrades", "from":[25,26,27,28,29,30,31,32,33,34,35]},
+		
+		{"min":0, "max":1, "from":[27,28,29,30,31], "appliesTo":[6612,6613,6614,6615,6616]},
+		
+		{"max":1, "from":[12]},
+		{"max":1, "from":[25]},
+		{"max":1, "from":[26]},
+
+		{"max":1, "from":[32]},
+		{"max":1, "from":[33]},
+		{"max":1, "from":[34]},
+		{"max":1, "from":[35]}
+	]
+}
