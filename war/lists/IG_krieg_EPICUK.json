@@ -1,6 +1,6 @@
 {
 	"id":"Death Korps of Krieg",
-	"version":"EpicUK v15022013",
+	"version":"EpicUK v01122014",
 	"by":"Iron Bloke, Parintachin, Kyussinchains",
 	"sections":[
 		{"name":"DEATH KORPS COMPANIES", "formations":[
@@ -12,10 +12,10 @@
 			{ "id":521, "name":"Artillery Battery", "pts":200, "units":"3 Earthshaker Platforms", "upgrades":[46,47] },
 			{ "id":519, "name":"Death Rider Scout Platoon", "pts":175, "units":"6 Death Korps Rough Rider units (with 'scout' ability)", "upgrades":[] },
 			{ "id":520, "name":"Deathstrike Battery", "pts":200, "units":"2 Death Korps Deathstrike Missile Launchers", "upgrades":[] },
-			{ "id":512, "name":"Medusa Battery", "pts":150, "units":"3 Medusa Platforms", "upgrades":[46,47] },
+			{ "id":512, "name":"Medusa Battery", "pts":125, "units":"3 Medusa Platforms", "upgrades":[46,47] },
 			{ "id":511, "name":"Grenadiers Platoon", "pts":200, "units":"8 Death Korps Grenadier units", "upgrades":[51,52] },
 			{ "id":516, "name":"Flak Battery", "pts":150, "units":"3 Heavy AA gun platforms", "upgrades":[46,47] },
-			{ "id":514, "name":"Heavy Tank Platoon", "pts":350, "units":"3 Macharius Heavy Tanks", "upgrades":[] },
+			{ "id":514, "name":"Heavy Tank Platoon", "pts":325, "units":"3 Macharius Heavy Tanks", "upgrades":[] },
 			{ "id":515, "name":"Support Battery", "pts":150, "units":"4 Imperial Guard Light Artillery", "upgrades":[48,49] },
 			{ "id":517, "name":"Self-Propelled Heavy Support", "pts":250, "units":"3 Bombards", "upgrades":[] },
 			{ "id":518, "name":"Super-heavy Tank Platoon", "pts":200, "upgrades":[] },
@@ -31,7 +31,7 @@
 		{"name":"TITAN LEGIONS", "formations":[
 			{ "id":536, "name":"Warlord Titan", "pts":850, "upgrades":[] },
 			{ "id":537, "name":"Reaver Titan", "pts":650, "upgrades":[] },
-			{ "id":539, "name":"Warhound Titan", "pts":275, "upgrades":[] },
+			
 			{ "id":538, "name":"Warhound Titan Pack", "pts":500, "units":"2 Warhounds", "upgrades":[] }
 		]}	
 	],
@@ -48,11 +48,12 @@
 		{ "id":49, "name":"4 Gun Emplacements", "pts":0 },
 		{ "id":51, "name":"8 Tractors", "pts":75 },
 		{ "id":52, "name":"Gorgon", "pts":75 },
+      
 		{ "id":114, "name":"Fire Support Platoon (4 Fire Support)", "pts":100 },
 		{ "id":111, "name":"Infantry Platoon (10 Death Korps Infantry)", "pts":150 },
 		{ "id":109, "name":"Heavy Tank (Macharius)", "pts":100 },
 		{ "id":105, "name":"Hellhound Squadron (3 Hellhounds)", "pts":100},
-		{ "id":107, "name":"Gorgon Siege Transporters (2 Gorgons)", "pts":150 },
+		{ "id":107, "name":"Gorgon Siege Transporters (2 Gorgons)", "pts":175 },
 		{ "id":102, "name":"Tank Squadron (3 Leman Russ)", "pts":175},
 		{ "id":103, "name":"Tank Squadron (3 Demolishers)", "pts":175},
 		{ "id":120, "name":"Infantry Platoon (10 Death Korps Infantry and 1 Gorgon)", "pts":225}
@@ -60,7 +61,7 @@
 	],
 	"formationConstraints":[
 		
-		{"maxPercent":33, "name":"Titans & Navy", "from":[531,532,536,537,538,539]},
+		{"maxPercent":33, "name":"Titans & Navy", "from":[531,532,536,537,538]},
 		{"max":2, "name":"Support Formations", "from":[511,512,513,514,515,516,517,518,519,520,521], "forEach":[501,502,503], "name2":"Company"},
 		{"max":1, "name":"Trenchworks", "from":[526], "forEach":[501,502], "name2":"Company"},
 		{"max":1, "from":[520]},
