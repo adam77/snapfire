@@ -1,7 +1,7 @@
 {
    "id": "Burning Death Speed Freeks",
-   "version": "Epic UK v100909",
-   "by": "Iron Bloke",
+   "version": "Epic UK v011214",
+   "by": "Kyussinchains",
    "sections": [
       {
          "name": "FORMATIONS", "formations": [
@@ -215,7 +215,7 @@
          ]
       },
       {
-         "maxPercent": 33,
+         "maxPercent": 25,
          "name": "War Engines & Allies",
          "from": [
             516,
