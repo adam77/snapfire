@@ -31,7 +31,7 @@
 		]}
 	],
 	"upgrades":[
-		{ "id":11, "name":"Adeptus Exempla", "pts":0 },
+		{ "id":11, "name":"Sorcerer Lord", "pts":0 },
 		{ "id":12, "name":"Daemon Prince of Tzeentch", "pts":50 },
 		{ "id":13, "name":"Daemonic Pact", "pts":25 },
 		{ "id":14, "name":"Chaos Dreadnought", "pts":50 },
