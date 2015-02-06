@@ -1,7 +1,7 @@
 {
 	"id":"Thousand Sons",
-	"version":"5.1",
-	"by":"Parintachin",
+	"version":"5.X",
+	"by":"Kyussinchains",
 	"notes":["This list is rated 'Under Development'","If taking Dreadclaws, you must take just enough to transport the entire formation.", "Each unit can take a maximum of 4 types of upgrades","List must contain at least one Rubric Fellowship formation."],
 	"sections":[
 		{"name":"Daemon Pool", "formations": [
@@ -32,15 +32,15 @@
 	],
 	"upgrades":[
 		{ "id":11, "name":"Adeptus Exempla", "pts":0 },
-		{ "id":12, "name":"Magister Templi", "pts":50 },
+		{ "id":12, "name":"Daemon Prince of Tzeentch", "pts":50 },
 		{ "id":13, "name":"Daemonic Pact", "pts":25 },
-		{ "id":14, "name":"Defiler", "pts":75 },
+		{ "id":14, "name":"Chaos Dreadnought", "pts":50 },
 		{ "id":15, "name":"Deceiver", "pts":75 },
 		{ "id":16, "name":"Dreadclaw", "pts":5 },
-		{ "id":17, "name":"Icon Bearer", "pts":50 },
+		{ "id":17, "name":"Icon Bearer", "pts":25 },
 		{ "id":18, "name":"Rhino", "pts":10 },
 		{ "id":19, "name":"Land Raider", "pts":75 },
-		{ "id":20, "name":"Thrall Characters", "pts":50 },
+		{ "id":20, "name":"Thrall Characters", "pts":20 },
 		{ "id":21, "name":"Predator", "pts":50 },
 		{ "id":22, "name":"Silver Tower", "pts":90 },
 		{ "id":23, "name":"Thousand Sons Terminator", "pts":85 },
@@ -60,7 +60,8 @@
 	"upgradeConstraints":[
 		{"max":1, "perArmy":true, "from":[12]},
 		{"min":1, "max":1, "from":[11,12], "appliesTo":[501]},
-		{"max":3, "from":[14,15]},
+		{"max":3, "from":[14]},
+    {"max":3, "from":[15]},
 		{"max":3, "from":[20]},
 		{"max":1, "from":[13]},
 		{"max":1, "from":[17]},
