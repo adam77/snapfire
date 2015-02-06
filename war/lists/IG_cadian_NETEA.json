@@ -1,19 +1,19 @@
 {
 	"id":"Cadian Shock Troopers",
-	"version":"NetEA Army Compendium v20120208 *EXPERIMENTAL*",
-	"by":"Parintachin",
+	"version":"NetEA v1.5 *DEVELOPMENT*",
+	"by":"uvenlord",
 	"sections":[
 		{"name":"CADIAN SHOCK COMPANIES", "formations":[
 			{"id":500, "name":"Cadian Infantry Company", "pts":250, "upgrades":[10,11,12,13,14,15,16,17,18,19], "units":"1 Imperial Guard Commander unit and 12 Imperial Guard units"},
-			{"id":501, "name":"Cadian Regimental Headquarters", "pts":600, "upgrades":[10,11,12,13,14,15,16,17,18,19], "units":"1 Imperial Guard Supreme Commander unit, 7 Kasrkin units and 1 Leviathan Mobile Command Centre"},
+			{"id":501, "name":"Cadian Regimental Headquarters", "pts":550, "upgrades":[10,11,12,13,14,15,16,17,18,19], "units":"1 Imperial Guard Supreme Commander unit, 7 Kasrkin units and 1 Leviathan Mobile Command Centre"},
 			{"id":502, "name":"Cadian Whiteshield Company", "pts":200, "upgrades":[10,11,12,13,14,15,16,17,18,19], "units":"1 Imperial Guard Commander unit and 12 Imperial Guard units"},
-			{"id":503, "name":"Kasrkin Infantry Company", "pts":200, "upgrades":[10,11,12,13,14,15,16,17,18,19], "units":"1 Imperial Guard Commander unit and 7 Kasrkin units"}
+			{"id":503, "name":"Kasrkin Infantry Company", "pts":175, "upgrades":[10,11,12,13,14,15,16,17,18,19], "units":"1 Imperial Guard Commander unit and 7 Kasrkin units"}
 		]},
 		{"name":"CADIAN SHOCK SUPPORT FORMATIONS", "formations":[
-			{"id":510, "name":"Airborne Kasrkin", "pts":325, "upgrades":[], "units":"1 Imperial Guard Commander unit, 7 Kasrkin units, and 4 Valkyries"},
-			{"id":511, "name":"Armored Fist Platoon", "pts":300, "upgrades":[], "units":"10 Imperial Guard Infantry units and 5 Chimeras"},
+			{"id":510, "name":"Airborne Kasrkin", "pts":300, "upgrades":[], "units":"1 Imperial Guard Commander unit, 7 Kasrkin units, and 4 Valkyries"},
+			{"id":511, "name":"Mechanized Platoon", "pts":300, "upgrades":[], "units":"10 Imperial Guard Infantry units and 5 Chimeras"},
 			{"id":512, "name":"Artillery Battery", "pts":250, "upgrades":[]},
-			{"id":513, "name":"Deathstrike Missile Battery", "pts":200, "upgrades":[], "units":"2 Deathstrike Missile Launchers"},
+			{"id":513, "name":"Deathstrike Battery", "pts":200, "upgrades":[], "units":"2 Deathstrike Missile Launchers"},
 			{"id":514, "name":"Flak Battery", "pts":150, "upgrades":[], "units":"3 hydras"},
 			{"id":515, "name":"Griffon Platoon", "pts":200, "upgrades":[], "units":"6 Griffons"},
 			{"id":516, "name":"Hellhound Platoon", "pts":250, "upgrades":[], "units":"6 Hellhounds"},
@@ -28,11 +28,8 @@
 		]},
 		{"name":"IMPERIAL NAVY AIRCRAFT", "formations":[
 			{"id":523, "name":"Thunderbolt Fighters", "pts":150, "upgrades":[], "units":"2 Thunderbolts"},
-			{"id":524, "name":"Marauder Bombers", "pts":150, "upgrades":[], "units":"1 Marauder Heavy Bomber"},
-			{"id":525, "name":"Colossus Squadron", "pts":300, "upgrades":[], "units":"1 Marauder Colossus"}
-		]},
-		{"name":"CADIAN FORTIFICATIONS", "formations":[
-			{"id":530, "name":"Fortified Position", "pts":100, "upgrades":[], "units":"Up to 50cm of trenches and up to 6 Gun Emplacements"}
+			{"id":524, "name":"Marauder Bombers", "pts":250, "upgrades":[], "units":"2 Marauder Bombers"},
+			{"id":525, "name":"Colossus Squadron", "pts":250, "upgrades":[], "units":"1 Marauder Colossus"}
 		]}
 	],
 	"upgrades":[
@@ -41,7 +38,7 @@
 		{"id":12, "name":"Fire Support Platoon (4 support Squad units)", "pts":100},
 		{"id":13, "name":"Infantry Platoon (6 Imperial Guard Infantry units)", "pts":100},
 		{"id":14, "name":"Kasrkin Platoon (4 Kasrkin units)", "pts":100},
-		{"id":15, "name":"Sabre Platforms (3 Sabre Platforms)", "pts":100},
+		{"id":15, "name":"Sabre Platforms (3 Sabre Platforms)", "pts":50},
 		{"id":16, "name":"Sanctioned Psykers (1 Sanctioned Psyker unit)", "pts":25},
 		{"id":17, "name":"Sanctioned Psykers (2 Sanctioned Psyker units)", "pts":50},
 		{"id":18, "name":"Snipers (1 Sniper unit)", "pts":25},
@@ -77,3 +74,4 @@
 		{"min":1, "max":1, "from":[38,39], "appliesTo":[519]}
 	]
 }
+
