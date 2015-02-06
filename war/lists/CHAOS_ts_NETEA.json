@@ -44,8 +44,8 @@
 		{ "id":21, "name":"Predator", "pts":50 },
 		{ "id":22, "name":"Silver Tower", "pts":90 },
 		{ "id":23, "name":"Thousand Sons Terminator", "pts":85 },
-		{ "id":24, "name":"Greater daemon (Lord of Change)", "pts":75 },
-		{ "id":25, "name":"Lesser Daemons (Horror, Screamer, Flamer and Daemonic Beast units)", "pts":20 },
+		{ "id":24, "name":"Greater daemon (Lord of Change)", "pts":50 },
+		{ "id":25, "name":"Lesser Daemons (Horror, Screamer, Flamer and Daemonic Beast units)", "pts":15 },
 		{ "id":26, "name":"Greater Spire of Tzeentch", "pts":200 },
 		{ "id":27, "name":"Firelord Bombers", "pts":150 }
 	],
