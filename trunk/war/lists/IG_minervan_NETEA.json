@@ -4,7 +4,7 @@
 	"by":"Iron Bloke, Parintachin, last update 2013-10-23 Parintachin",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
-		 	{"id":517, "name":"Artillery Company",	"pts":650, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]},
+		 	{"id":517, "name":"Artillery Company",	"pts":600, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]},
 			{"id":516, "name":"Super-Heavy Tank Company", 			"pts":500, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]},
 			{"id":515, "name":"Tank Company", 						"pts":425, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]}
 		]},
@@ -49,7 +49,7 @@
 		{"id":27, "name":"Vanquisher","pts":45},
 		{"id":28, "name":"Destroyer",	"pts":70},
 		{"id":30, "name":"Lunar Class",	"pts":0},
-		{"id":31, "name":"Emperor Class",	"pts":150},
+		{"id":31, "name":"Emperor Class",	"pts":50},
 		{"id":41, "name":"3 Basilisks",	"pts":0},
 		{"id":42, "name":"3 Bombards",		"pts":0},
 		{"id":43, "name":"3 Manticores",	"pts":0},
@@ -64,8 +64,8 @@
 		{"id":51, "name":"Supreme Commander", 					"pts":100},
 		{"id":52, "name":"Flak Support (Hydra)",				"pts":50},
 		{"id":53, "name":"Flak Support (2 Hydra)",				"pts":100},
-		{"id":54, "name":"Hellhound Squadron (3 Hellhounds)",	"pts":125},
-		{"id":55, "name":"Griffon Battery (3 Griffons)",		"pts":75},
+		{"id":54, "name":"Hellhound Squadron (3 Hellhounds)",	"pts":100},
+		{"id":55, "name":"Griffon Battery (3 Griffons)",		"pts":50},
 		{"id":56, "name":"Salamander Command Vehicle",			"pts":25},
 		{"id":57, "name":"Tank Squadron (3 Russ Variants)",	"pts":140},
 		{"id":61, "name":"(Leman Russ Surcharge for Tank Squadron)",	"pts":20},
