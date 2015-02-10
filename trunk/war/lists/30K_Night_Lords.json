@@ -1,0 +1,188 @@
+{
+	"id":"Night Lords Legion",
+	"version":"Heresy V 0.8.3",
+	"by":"J.Barr AKA Fattdex. Updated by Mard",
+	"sections":[
+		{"name":"NIGHT LORDS DETACHMENTS", "formations":[
+			{"id":500, "name":"Night Lords Legion Tactical Detachment", 		"pts":275, "upgrades":[14,15,16,17,20,36,21,22,23,25,26,27,28,24,95,96,97,98,99]},
+			{"id":501, "name":"Night Lords Terror Squad Detachment",				"pts":175, "upgrades":[37,95,96,97,98,99], "units":"4 Terror Squad units"},
+			{"id":502, "name":"Night Lords Legion Assault Marine Squad",				"pts":0, "upgrades":[39,29,95,96,97,98,99]}
+		]},
+		{"name":"NIGHT LORDS SUPPORT DETACHMENTS", "formations":[
+			{"id":601, "name":"Night Lords Legion Space Craft",							"pts":0, "upgrades":[]},
+			{"id":602, "name":"Night Lords Land Raider Battle Squadron",				"pts":0, "upgrades":[40,41,24,98,99]},
+			{"id":603, "name":"Night Lords Legion Artillery Squadron",					"pts":0, "upgrades":[24]},
+			{"id":604, "name":"Night Lords Legion Terminator Detachment", 		"pts":0, "upgrades":[13,21,22,23,29,31,95,96,97,98,99]},
+			{"id":605, "name":"Night Lords Legion Breacher Siege Detachment",			"pts":200, "upgrades":[21,22,23,30,95,96,97]},
+			{"id":606, "name":"Night Lords Legion Contemptor Dreadnought Talon",		"pts":0, "upgrades":[46,37]},
+			{"id":607, "name":"Night Lords Legion Dreadnought Talon",					"pts":0, "upgrades":[45,37]},
+			{"id":608, "name":"Night Lords Legion Javelin Attack Speeder Squadron",		"pts":250, "upgrades":[95,96,97], "units":"5 Javelin Attack Speeder units"},
+			{"id":609, "name":"Night Lords Legion Land Speeder Squadron",				"pts":200, "upgrades":[95,96,97], "units":"5 Land Speeder units"},
+			{"id":610, "name":"Night Lords Legion Malcador Assault Tank Squadron",		"pts":200, "upgrades":[24]},
+			{"id":611, "name":"Night Lords Legion Outrider Squadron",					"pts":200, "upgrades":[95,96,97,98,99]},
+			{"id":612, "name":"Night Lords Legion Predator Strike Armour Squadron",		"pts":0, "upgrades":[52,53,54,55,56,24]},
+			{"id":620, "name":"Night Lords Legion Night Raptor Squad",					"pts":250, "upgrades":[29,95,96,97,98,99], "units":"4 Night Raptor Units"},
+			{"id":613, "name":"Night Lords Legion Rapier Weapons Battery",				"pts":240, "upgrades":[]},
+			{"id":614, "name":"Night Lords Legion Reconnaissance Squad",				"pts":150, "upgrades":[20,29,95,96,97,98,99], "units":"4 Reconnaissance Marine units"},
+			{"id":615, "name":"Night Lords Legion Sicaran Battle Tank Squad",			"pts":0, "upgrades":[24,59,60]},
+			{"id":616, "name":"Night Lords Legion Sky Hunter Squadron",					"pts":250, "upgrades":[95,96,97], "units":"5 Legion Jetbike units"},
+			{"id":617, "name":"Night Lords Legion Storm Eagle Gunship Wing",			"pts":0, "upgrades":[61]},
+			{"id":618, "name":"Night Lords Legion Thunderhawk Gunship",					"pts":200, "upgrades":[], "units":"1 Thunderhawk Gunship"},
+			{"id":619, "name":"Night Lords Legion Thunderhawk Transporter",				"pts":0, "upgrades":[62]}
+
+		]},
+		{"name":"ALLIES & LORDS OF WAR", "formations":[
+			{"id":701, "name":"Konrad Curze, Primarch of the Night Lords",							"pts":375, "upgrades":[29]},
+			{"id":702, "name":"Fire Raptor Wing",							"pts":300, "upgrades":[], "units":"2 Fire Raptor Gunship units"},
+			{"id":703, "name":"Imperial Navy Primaris-Lightning Wing",		"pts":225, "upgrades":[], "units":"2 Primaris-Lightning Fighter units"},
+			{"id":704, "name":"Storm Bird",									"pts":450, "upgrades":[], "units":"1 Legion Storm Bird Heavy Gunship"},
+			{"id":705, "name":"Super Heavy Tank",							"pts":250, "upgrades":[98,99]},
+			{"id":706, "name":"Super Heavy Tank Battery",					"pts":400, "upgrades":[]},
+			{"id":712, "name":"Fellblade Squadron",							"pts":500, "upgrades":[98,99], "units":"3 Fellblade Units"},
+			{"id":707, "name":"Super Heavy Tank Destroyer",					"pts":300, "upgrades":[], "units":"1 Falchion Unit"},
+			{"id":708, "name":"Warhound Scout Titan",						"pts":275, "upgrades":[], "units":"1 Warhound Scout Titan unit"},
+			{"id":709, "name":"Warhound Scout Titan Pack",					"pts":500, "upgrades":[], "units":"2 Warhound Scout Titan units"},
+			{"id":710, "name":"Reaver Titan",								"pts":675, "upgrades":[], "units":"1 Reaver Titan unit"},
+			{"id":711, "name":"Warlord Titan",								"pts":850, "upgrades":[], "units":"1 Warlord Titan"}
+		]}
+	],	
+	
+	"upgrades":[
+		{"id":11, "name":"8 Tactical Marines with Bolters",								"pts":0},
+		{"id":12, "name":"8 Tactical Marines with Assault Weapons",						"pts":0},
+		{"id":13, "name":"Terminators",													"pts":75},
+		{"id":14, "name":"Dreadnought: Legion Dreadnought",								"pts":50},
+		{"id":15, "name":"Dreadnought: Legion Contemptor Dreadnought",					"pts":60},
+		{"id":16, "name":"Support Squad: Legion Tactical Support",						"pts":50},
+		{"id":17, "name":"Support Squad: Legion Heavy Support",							"pts":50},
+		{"id":18, "name":"Rapier Battery: Rapier Laser Destroyer",						"pts":50},
+		{"id":19, "name":"Rapier Battery: Thudd Gun Units",								"pts":50},
+		{"id":20, "name":"Transport: Rhinos",											"pts":0},
+		{"id":21, "name":"Heavy Transport: Spartan Assault Tank",						"pts":125},
+		{"id":22, "name":"Heavy Transport: Land Raider Proteus",						"pts":75},
+		{"id":23, "name":"Heavy Transport: Land Raider Phobos",							"pts":75},
+		{"id":24, "name":"Hyperios",													"pts":75},
+		{"id":25, "name":"Tank: Vindicator",											"pts":50},
+		{"id":26, "name":"Tank: Predator Annihilator",								"pts":60},
+		{"id":27, "name":"Tank: Predator Destructor",								"pts":60},
+		{"id":28, "name":"Tank: Sicaran",											"pts":75},
+		{"id":29, "name":"Assault Claw: Kharybdis Assault Claw",						"pts":100},
+		{"id":30, "name":"Assault Ram:  Caestus Assault Ram",							"pts":75},
+		{"id":31, "name":"Teleport",													"pts":25},
+		{"id":32, "name":"Drop Pods",													"pts":25},
+		
+		{"id":35, "name":"Night Raptors",										"pts":0},
+		{"id":36, "name":"Transport: Dreadclaws",										"pts":0},
+		{"id":37, "name":"Dreadclaws",													"pts":25},
+		{"id":38, "name":"Breacher Marine",												"pts":0},
+		{"id":39, "name":"Assault Marine",												"pts":40},
+		
+		{"id":40, "name":"Land Raider Phobos",											"pts":80},
+		{"id":41, "name":"Land Raider Proteus",											"pts":80},
+		{"id":42, "name":"4 Medusas",													"pts":200},
+		{"id":43, "name":"4 Whirlwinds",												"pts":325},
+		{"id":44, "name":"4 Basilisks",													"pts":325},
+		{"id":45, "name":"Legion Dreadnought",											"pts":50},
+		{"id":46, "name":"Legion Contemptor Dreadnought",								"pts":60},
+		{"id":47, "name":"3 Malcadors",													"pts":0},
+		{"id":48, "name":"3 Malcador Defenders",										"pts":0},
+		{"id":49, "name":"3 Malcador Annihilators",										"pts":0},
+		{"id":50, "name":"5 Outrider Bikes",											"pts":0},
+		{"id":51, "name":"5 Attack Bike",												"pts":0},
+		{"id":52, "name":"Predator Destructor",											"pts":60},
+		{"id":53, "name":"Predator Annihilator",										"pts":60},
+		{"id":54, "name":"Predator Infernus",											"pts":60},
+		{"id":55, "name":"Predator Support: Predator Executioner",					"pts":90},
+		{"id":56, "name":"Predator Support: Whirlwind Scorpius",						"pts":90},
+		{"id":57, "name":"6 Rapier Laser Destroyers",									"pts":0},
+		{"id":58, "name":"6 Thudd Gun units",											"pts":0},
+		{"id":59, "name":"Sicaran",														"pts":80},
+		{"id":60, "name":"Sicaran Venator",												"pts":130},
+		{"id":61, "name":"Storm Eagle Assault Gunship",									"pts":125},
+		{"id":62, "name":"Thunderhawk Transporters",									"pts":125},	
+		{"id":63, "name":"Fellblade",																	"pts":0},
+		{"id":64, "name":"Glaive",																		"pts":0},
+		{"id":65, "name":"3 Typhon Heavy Siege Tank",													"pts":0},
+		{"id":66, "name":"3 Cerberus Heavy Tank Destroyer",												"pts":0},
+		{"id":67, "name":"Strike Cruiser",												"pts":200},
+		{"id":68, "name":"Battle Barge",												"pts":350},
+	
+		
+		{"id":94, "name":"Konrad Curze, Primarch of the Night Lords",									"pts":0},
+		{"id":95, "name":"Centurion: Librarian",							"pts":50},
+		{"id":96, "name":"Centurion: Chaplain",								"pts":50},
+		{"id":97, "name":"Centurion: Legion Champion",						"pts":50},
+		{"id":98, "name":"Praetor: Lieutenant Commander",					"pts":50},
+		{"id":99, "name":"Praetor: Lord Commander",							"pts":100}
+		
+
+
+		
+
+		
+	],
+	"formationConstraints":[
+		{"max":3, "name":"Support Detachment", "from":[601,602,603,604,605,606,607,608,609,610,611,612,613,614,615,616,617,618,619,620], "forEach":[500,501,502], "name2":"Detachment"},
+		{"maxPercent":33, "name":"ALLIES & LORDS OF WAR", "from":[701,702,703,704,705,706,707,708,709,710,711,712]},
+		{"max":1, "from":[701]},
+		{"max":1, "from":[601]}
+	],
+	"upgradeConstraints":[
+		{"min":0, "max":1, "from":[95,96,97,98,99], "appliesTo":[500,501,604,611,614,620,502]},
+		{"min":0, "max":1, "from":[98,99], "appliesTo":[602,705,712]},
+		{"min":0, "max":1, "from":[95,96,97], "appliesTo":[603,608,609,616,605]},
+		
+		{"min":1, "max":1, "from":[11,12], "appliesTo":[500]},
+		{"min":0, "max":2, "from":[14,15], "appliesTo":[500]},
+		{"min":0, "max":3, "from":[21], "appliesTo":[500]},
+		{"min":0, "max":6, "from":[22,23], "appliesTo":[500]},
+		{"min":0, "max":4, "from":[16,17], "appliesTo":[500]},
+		{"min":0, "max":2, "from":[25,26,27,28], "appliesTo":[500]},
+		
+		{"min":4, "max":6, "from":[13], "appliesTo":[604]},
+		{"min":0, "max":3, "from":[21], "appliesTo":[604]},
+		{"min":0, "max":6, "from":[22,23], "appliesTo":[604]},
+		{"min":0, "max":3, "from":[29], "appliesTo":[604]},
+		
+		{"min":4, "max":6, "from":[40,41], "appliesTo":[602]},
+		{"min":1, "max":1, "from":[42,43,44], "appliesTo":[603]},
+		
+		{"min":4, "max":8, "from":[39], "appliesTo":[502]},
+		{"min":0, "max":2, "from":[29], "appliesTo":[502]},
+		{"min":4, "max":4, "from":[38], "appliesTo":[605]},
+		{"min":0, "max":2, "from":[30], "appliesTo":[605]},
+		{"min":0, "max":2, "from":[22,23], "appliesTo":[605]},
+		{"min":0, "max":1, "from":[21], "appliesTo":[605]},
+		{"min":4, "max":6, "from":[45], "appliesTo":[607]},
+		{"min":4, "max":6, "from":[46], "appliesTo":[606]},
+		{"min":1, "max":1, "from":[47,48,49], "appliesTo":[610]},
+		{"min":1, "max":1, "from":[50,51], "appliesTo":[611]},
+		
+		{"min":4, "max":6, "from":[52,53,55,56], "appliesTo":[612]},
+		{"min":0, "max":1, "from":[55,56], "appliesTo":[612]},
+	
+		{"min":1, "max":1, "from":[57,58], "appliesTo":[613]},
+		{"min":0, "max":1, "from":[29], "appliesTo":[614]},
+		{"min":4, "max":6, "from":[59,60], "appliesTo":[615]},
+		{"min":0, "max":1, "from":[60], "appliesTo":[615]},
+		{"min":1, "max":3, "from":[61], "appliesTo":[617]},
+		{"min":2, "max":4, "from":[62], "appliesTo":[619]},
+		
+		{"min":1, "max":1, "from":[94], "appliesTo":[701]},
+		{"min":3, "max":3, "from":[35], "appliesTo":[701]},
+		{"min":0, "max":2, "from":[29], "appliesTo":[701]},
+		{"min":1, "max":1, "from":[63,64], "appliesTo":[705]},
+		{"min":1, "max":1, "from":[66], "appliesTo":[706]},
+		{"min":0, "max":1, "from":[29], "appliesTo":[620]},
+		{"min":1, "max":1, "from":[67,68], "appliesTo":[601]},
+		
+		
+		{"max":1, "from":[37]},
+		{"max":1, "from":[24]},
+		{"max":1, "from":[31]},
+		{"max":1, "from":[32]},
+		{"max":1, "perArmy":true, "from":[99,94]}
+	
+				
+	]
+}
