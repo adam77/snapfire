@@ -1,7 +1,7 @@
 {
 	"id":"Minervan Tank Legion",
-	"version":"NetEA Tournament Pack 2013",
-	"by":"Iron Bloke, Parintachin, last update 2013-10-23 Parintachin",
+	"version":"NetEA Tournament Pack 2014",
+	"by":"Iron Bloke, Parintachin, Kyussinchains last update 2015-02-10 Kyussinchains",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
 		 	{"id":517, "name":"Artillery Company",	"pts":600, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]},
