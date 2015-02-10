@@ -1,7 +1,7 @@
 {
 	"id":"Saranes Expanse Imperial Crusade",
-	"version":"1.3 / NetEA Army Compendium v20120208 *Experimental*",
-	"by":"Stu'sIdle, last edit 2013-11-26 Parintachin",
+	"version":"1.3 / NetEA Army Compendium v2014 *Experimental*",
+	"by":"Stu'sIdle,Kyussinchains last edit 2015-02-10 Kyussinchains",
 	"sections":[
 		{"name":"IMPERIAL CRUSADE COMPANIES", "formations":[
 			{"id":519, "name":"Lord General Militant Command HQ", 		"pts":450, "upgrades":[35,32,31,28,29,30,33,34], "units":"Supreme Commander, 6 Guard, 4 Stormtrooper, 6 Chimera"},
@@ -42,7 +42,7 @@
 		{"id":14, "name":"Baneblade",			"pts":0},
 		{"id":15, "name":"Shadowsword",			"pts":0},
 		{"id":20, "name":"Lunar Class Cruiser",			"pts":0},
-		{"id":21, "name":"Emperor Class Cruiser",			"pts":150},
+		{"id":21, "name":"Emperor Class Cruiser",			"pts":50},
 		{"id":22, "name":"Space Marine Strike Cruiser",	"pts":50},
 		{"id":24,	"name":"3 Basilisks",			"pts":0},
 		{"id":25,	"name":"3 Bombards",			"pts":0},
@@ -50,8 +50,8 @@
 		{"id":28, "name":"Mechanized Fire Support Platoon (4 Fire Support, 2 Chimeras)",	"pts":150},
 		{"id":29, "name":"Mechanized Infantry Platoon (6 Infantry, 3 Chimeras)",		"pts":175},
 		{"id":30, "name":"Mechanized Snipers (2 Snipers, 1 Chimera)",				"pts":75},
-		{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",					"pts":125},
-		{"id":32, "name":"Griffon Battery (3 Griffons)",						"pts":75},
+		{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",					"pts":100},
+		{"id":32, "name":"Griffon Battery (3 Griffons)",						"pts":50},
 		{"id":33, "name":"Tank Squadron (3 Leman Russ)",						"pts":175},
 		{"id":34, "name":"Tank Squadron (3 Demolishers)",						"pts":175},
 		{"id":35, "name":"Flak (1 Hydra)",								"pts":50},
