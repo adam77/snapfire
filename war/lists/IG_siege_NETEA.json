@@ -1,7 +1,7 @@
 {
 	"id":"Baran Siege Masters",
-	"version":"NetEA Tournament Pack 2013",
-	"by":"Iron Bloke, last edit 2013-10-23 Parintachin",
+	"version":"NetEA Tournament Pack 2014",
+	"by":"Iron Bloke, last edit 2014-02-10 Kyussinchains",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
 		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[31,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
@@ -35,8 +35,8 @@
 		{"id":28, "name":"Siege Infantry Platoon (6 Siege Infantry)","pts":75},
 		{"id":29, "name":"Rapier Platoon (3 Rapier laser destroyer units)",			"pts":75},
 		{"id":30, "name":"Thudd Gun Platoon (3 Guns)",			"pts":75},
-		{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",	"pts":125},
-		{"id":32, "name":"Griffon Battery (3 Griffons)",		"pts":75},
+		{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",	"pts":100},
+		{"id":32, "name":"Griffon Battery (3 Griffons)",		"pts":50},
 		{"id":33, "name":"2 Sniper units",							"pts":50},
 		{"id":34, "name":"Sniper unit",								"pts":25}
 	],
