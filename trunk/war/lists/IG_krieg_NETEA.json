@@ -1,7 +1,7 @@
 {
 	"id":"Death Korps of Krieg",
-	"version":"NetEA Tournament Pack 2013",
-	"by":"Iron Bloke, last update 2014-11-21 Kyussinchains",
+	"version":"NetEA Tournament Pack 2014",
+	"by":"Iron Bloke, last update 2015-02-10 Kyussinchains",
 	"sections":[
 		{"name":"DEATH KORPS COMPANIES", "formations":[
 			{ "id":503, "name":"Death Rider Company", "pts":250, "units":"12 Death Korps Rough Rider units", "upgrades":[114,109,105,120,111,102,121,122] },
