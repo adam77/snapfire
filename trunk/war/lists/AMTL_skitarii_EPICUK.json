@@ -1,0 +1,71 @@
+{
+	"id":"EpicUK Skitarii",
+	"version":"210115",
+	"notes":["When selecting the transport upgrade, you may choose enough chimeras to transport the formation with no slots left over, OR you may select one Gorgon"],
+	"by":"Kyussinchains",
+	"sections":[
+		{"name":"SKITARII COHORTS", "formations":[
+			{"id":566, "name":"Skitarii",	"pts":225, "units":"1 Secutor units, 9 Hypaspist units", "upgrades":[101,102,103,104,105,106,107,108,109,110]}			
+		]},
+		{"name":"SKITARII MANIPLES", "formations":[
+			{"id":567, "name":"Sagitarii",	"pts":175, "units":"5 Sagitarii units",	 "upgrades":[101,103,104,105,106,107,108,109,110]},	
+			{"id":561, "name":"Sentry",			"pts":150, "units":"4 Robots, 3 Rapiers", "upgrades":[101]},
+			{"id":563, "name":"Praetorian",		"pts":225, "units":"5 Praetorian units", "upgrades":[104,105,107,108,109,110]},
+			{"id":580, "name":"Cataphractii",			"pts":400, "units":"6 Leman Russ Tanks", "upgrades":[]},
+			{"id":571, "name":"Ordinatus Minorus",	"pts":50, "upgrades":[107,108,109,110,112,113,114]},
+			{"id":572, "name":"Ordinatus Majorus",	"pts":400, "units":"1 Ordinatus Majorus", "upgrades":[111]}	
+		]},
+		{"name":"MECHANICUS ALLIES", "formations":[
+			
+			{"id":503, "name":"Warlord Titan", 		"pts":850, "upgrades":[]},
+			{"id":504, "name":"Reaver Titan",			"pts":650, "upgrades":[]},
+			{"id":552, "name":"Warhound Titan Pack",	"pts":500, "upgrades":[]}
+		]},
+		{"name":"KNIGHT HOUSEHOLD", "formations":[
+			
+			{"id":576, "name":"Six Paladin Knights",	"pts":500, "upgrades":[]}
+		]},
+		{"name":"ADEPTUS MECHANICUS AUXILLA", "formations":[
+			
+			{"id":564, "name":"Thunderbolt Squadron",		"pts":150, "units":"2 Thunderbolt Fighter-Bombers", "upgrades":[]},
+			{"id":575, "name":"Marauder Bomber Squadron",		"pts":250, "units":"2 Marauder Bombers", "upgrades":[]},
+			{"id":565, "name":"Orbital Support",		"pts":150, "units":"One Adeptus Mechanicus Cruiser", "upgrades":[]}
+		]}
+		
+			
+	],
+	"upgrades":[	
+		{"id":101, "name":"3 Rapier Laser Destroyers",		"pts":50},
+		{"id":102, "name":"Magos",	"pts":50},
+		{"id":103, "name":"Hydra",				"pts":50},
+		{"id":104, "name":"Chimera",			"pts":25},
+		{"id":105, "name":"Gorgon",			"pts":75},
+		{"id":106, "name":"2 Sagitarii Units",			"pts":50},
+		{"id":111, "name":"Hellfire Missiles",	"pts":50},
+		{"id":107, "name":"Minorus (3x Twin-Hydra Autocannons)",		"pts":125},
+		{"id":108, "name":"Minorus (Plasma Cannon)",		"pts":125},
+		{"id":109, "name":"Minorus (Turbo-laser Destructor)",	"pts":125},
+		{"id":110, "name":"Minorus (Apocalypse Missile Launcher)",	"pts":125},
+		{"id":112, "name":"Minorus (Quake Cannon)",			"pts":150},
+		{"id":113, "name":"Minorus (Volcano Cannon)",		"pts":150},
+		{"id":114, "name":"Minorus (Plasma Destructor)",		"pts":150}
+		
+	],
+	"formationConstraints":[
+		{"max":1, "perArmy":true, "from":[565]},
+		{"max":1, "perArmy":true, "from":[572]},
+		{"max":3, "name":"Skitarii Maniples", "from":[567,561,563,571,572,580], "forEach":[566], "name2":"Skitarii Cohort"},
+		{"maxPercent":33, "name":"Mechanicus Allies", "from":[503,504,552,576,564,575,565]}
+	],
+	"upgradeConstraints":[
+		{"max":3, "min":2, "from":[107,108,109,110,112,113,114], "appliesTo":[571]},
+		{"max":1, "from":[112,113,114], "appliesTo":[571]},
+		{"max":1, "from":[111], "appliesTo":[572]},
+		{"max":1, "from":[101]},
+		{"max":1,  "perArmy":true,  "from":[102]},
+		{"max":1, "from":[103]},
+		{"max":1, "from":[106]},
+		{"max":1, "from":[107,108,109,110], "appliesTo":[566,567,563]}
+		
+	]
+}
