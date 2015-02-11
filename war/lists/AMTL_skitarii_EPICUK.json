@@ -13,7 +13,7 @@
 			{"id":563, "name":"Praetorian",		"pts":225, "units":"5 Praetorian units", "upgrades":[104,105,107,108,109,110]},
 			{"id":580, "name":"Cataphractii",			"pts":400, "units":"6 Leman Russ Tanks", "upgrades":[]},
 			{"id":571, "name":"Ordinatus Minorus",	"pts":50, "upgrades":[107,108,109,110,112,113,114]},
-			{"id":572, "name":"Ordinatus Majorus",	"pts":500, "units":"1 Ordinatus Majorus", "upgrades":[111]}	
+			{"id":572, "name":"Ordinatus Majorus",	"pts":500, "units":"1 Ordinatus Majorus", "upgrades":[111,115,116]}	
 		]},
 		{"name":"MECHANICUS ALLIES", "formations":[
 			
@@ -42,6 +42,8 @@
 		{"id":105, "name":"Gorgon",			"pts":75},
 		{"id":106, "name":"2 Sagitarii Units",			"pts":50},
 		{"id":111, "name":"Hellfire Missiles",	"pts":50},
+    {"id":115, "name":"Nova Cannon",		"pts":0},
+		{"id":116, "name":"Sonic Disruption Cannon",		"pts":0},
 		{"id":107, "name":"Minorus (3x Twin-Hydra Autocannons)",		"pts":125},
 		{"id":108, "name":"Minorus (Plasma Cannon)",		"pts":125},
 		{"id":109, "name":"Minorus (Turbo-laser Destructor)",	"pts":125},
@@ -59,6 +61,7 @@
 	],
 	"upgradeConstraints":[
 		{"max":3, "min":2, "from":[107,108,109,110,112,113,114], "appliesTo":[571]},
+    {"max":1, "min":1, "from":[111,115,116], "appliesTo":[572]},
 		{"max":1, "from":[112,113,114], "appliesTo":[571]},
 		{"max":1, "from":[111], "appliesTo":[572]},
 		{"max":1, "from":[101]},
