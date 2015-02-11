@@ -13,7 +13,7 @@
 			{"id":563, "name":"Praetorian",		"pts":225, "units":"5 Praetorian units", "upgrades":[104,105,107,108,109,110]},
 			{"id":580, "name":"Cataphractii",			"pts":400, "units":"6 Leman Russ Tanks", "upgrades":[]},
 			{"id":571, "name":"Ordinatus Minorus",	"pts":50, "upgrades":[107,108,109,110,112,113,114]},
-			{"id":572, "name":"Ordinatus Majorus",	"pts":400, "units":"1 Ordinatus Majorus", "upgrades":[111]}	
+			{"id":572, "name":"Ordinatus Majorus",	"pts":500, "units":"1 Ordinatus Majorus", "upgrades":[111]}	
 		]},
 		{"name":"MECHANICUS ALLIES", "formations":[
 			
