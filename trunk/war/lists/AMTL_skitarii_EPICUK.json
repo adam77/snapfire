@@ -12,8 +12,8 @@
 			{"id":561, "name":"Sentry",			"pts":150, "units":"4 Robots, 3 Rapiers", "upgrades":[101]},
 			{"id":563, "name":"Praetorian",		"pts":225, "units":"5 Praetorian units", "upgrades":[104,105,107,108,109,110]},
 			{"id":580, "name":"Cataphractii",			"pts":400, "units":"6 Leman Russ Tanks", "upgrades":[]},
-			{"id":571, "name":"Ordinatus Minorus",	"pts":50, "upgrades":[107,108,109,110,112,113,114]},
-			{"id":572, "name":"Ordinatus Majorus",	"pts":500, "units":"1 Ordinatus Majorus", "upgrades":[111,115,116]}	
+			{"id":571, "name":"Ordinatus Minoris",	"pts":50, "upgrades":[107,108,109,110,112,113,114]},
+			{"id":572, "name":"Ordinatus Majoris",	"pts":500, "units":"1 Ordinatus Majorus", "upgrades":[111,115,116]}	
 		]},
 		{"name":"MECHANICUS ALLIES", "formations":[
 			
@@ -44,13 +44,13 @@
 		{"id":111, "name":"Hellfire Missiles",	"pts":50},
     {"id":115, "name":"Nova Cannon",		"pts":0},
 		{"id":116, "name":"Sonic Disruption Cannon",		"pts":0},
-		{"id":107, "name":"Minorus (3x Twin-Hydra Autocannons)",		"pts":125},
-		{"id":108, "name":"Minorus (Plasma Cannon)",		"pts":125},
-		{"id":109, "name":"Minorus (Turbo-laser Destructor)",	"pts":125},
-		{"id":110, "name":"Minorus (Apocalypse Missile Launcher)",	"pts":125},
-		{"id":112, "name":"Minorus (Quake Cannon)",			"pts":150},
-		{"id":113, "name":"Minorus (Volcano Cannon)",		"pts":150},
-		{"id":114, "name":"Minorus (Plasma Destructor)",		"pts":150}
+		{"id":107, "name":"Minoris (3x Twin-Hydra Autocannons)",		"pts":125},
+		{"id":108, "name":"Minoris (Plasma Cannon)",		"pts":125},
+		{"id":109, "name":"Minoris (Turbo-laser Destructor)",	"pts":125},
+		{"id":110, "name":"Minoris (Apocalypse Missile Launcher)",	"pts":125},
+		{"id":112, "name":"Minoris (Quake Cannon)",			"pts":150},
+		{"id":113, "name":"Minoris (Volcano Cannon)",		"pts":150},
+		{"id":114, "name":"Minoris (Plasma Destructor)",		"pts":150}
 		
 	],
 	"formationConstraints":[
