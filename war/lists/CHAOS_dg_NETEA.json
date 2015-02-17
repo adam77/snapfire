@@ -11,7 +11,7 @@
       ]},
       
     {"name": "ELITE", "formations": [
-			{"id": 503, "name": "Death Shroud Terminators", "pts": 20, "upgrades": [63,53,56,57,78,81,92]},
+			{"id": 503, "name": "Death Shroud Terminators", "pts": 60, "upgrades": [63,53,56,57,78,81,92]},
 			{"id": 510, "name": "Blight Drone Swarm", "pts": 250, "units": "5 Blight Drones", "upgrades": []}		
 			]},
 	  
