@@ -1,7 +1,7 @@
 {
 	"id":"Alaitoc Craftworld",
-	"version":"NetEA Army Compendium v20120208",
-	"by":"Iron Bloke, Updated to 2012 by Parintachin",
+	"version":"NetEA Army Compendium 2014 (V4.2)",
+	"by":"Iron Bloke, Updated to 2014 by Kyussinchains",
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":507, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
@@ -19,7 +19,8 @@
 			{"id":503, "name":"Windrider Troupe",				"pts":200, 	"upgrades":[]},
 			{"id":504, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[30,31,32]},
 			{"id":505, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners", "upgrades":[]},
-			{"id":506, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36,37]}
+      {"id":508, "name":"Void Spinner",			"pts":0, 	"upgrades":[37]},
+			{"id":506, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36]}
 		]},
 		{"id":523, "name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
 			{"id":515, "name":"Wraithship",	"pts":150, "upgrades":[]},
@@ -28,7 +29,7 @@
 			{"id":518, "name":"Phantom Titan",	"pts":750, "upgrades":[]},
 			{"id":519, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
 			{"id":520, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
-			{"id":521, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
+			{"id":521, "name":"Phoenix Bombers","pts":325, "units":"3 Phoenix Bombers", "upgrades":[]},
 			{"id":522, "name":"Vampire Raider","pts":200, "upgrades":[]}
 		]}
 	],
@@ -56,7 +57,7 @@
 		{"id":34, "name":"Scorpion",		"pts":250},
 		{"id":35, "name":"Cobra",			"pts":250},
 		{"id":36, "name":"Storm Serpent",	"pts":250},
-		{"id":37, "name":"Void Spinner",	"pts":250},
+		{"id":37, "name":"Void Spinner",	"pts":275},
 		{"id":38, "name":"Exarch", "pts":25},
 		{"id":39, "name":"Autarch", "pts":75},
 		{"id":41, "name":"Wave Serpent",	"pts":50},
@@ -81,7 +82,8 @@
 		{"max":1, "from":[43]},
 		{"max":1, "perArmy":true, "from":[39]},
 		{"max":1, "from":[38,39]},
-		{"min":1, "max":3, "from":[34,35,36,37], "appliesTo":[506]},
+		{"min":1, "max":3, "from":[34,35,36], "appliesTo":[506]},
+    {"min":1, "max":3, "from":[37], "appliesTo":[508]},
 		{"min":5, "max":6, "from":[30,31,32], "appliesTo":[504]},
 		{"max":2, "from":[31], "appliesTo":[504]},
 		{"min":6, "max":6, "from":[27,28], "appliesTo":[503]},
