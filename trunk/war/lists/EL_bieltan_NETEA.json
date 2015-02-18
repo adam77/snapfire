@@ -1,7 +1,7 @@
 {
 	"id":"Biel-Tan Craftworld",
-	"version":"NetEA Army Compendium v20120208",
-	"by":"Iron Bloke, last edit 2013-10-23 Parintachin",
+	"version":"NetEA Army Compendium v2014 (v4.2)",
+	"by":"Iron Bloke, last edit 2015-02-18 Kyussinchains",
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":507, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
@@ -13,17 +13,18 @@
 			{"id":512, "name":"Guardian Warhost (Mounted)",		"pts":350,	"units":"Farseer, 4 Wave Serpents",	"upgrades":[]}
 		]},	
 		{"name":"TROUPES", "formations":[
-			{"id":505, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36,37]},
+			{"id":505, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36]},
+      {"id":506, "name":"Void Spinner",			"pts":0, "upgrades":[37]},
 			{"id":504, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners"},
 			{"id":500, "name":"Ranger Troupe",					"pts":0, "upgrades":[11]},
 			{"id":503, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[30,31,32]},
-			{"id":501, "name":"War Walker Troupe",				"pts":200,"units":"6 War Walkers"},
+      {"id":501, "name":"War Walker Troupe",				"pts":50, "upgrades":[13]},
 			{"id":502, "name":"Windrider Troupe",				"pts":200}
 		]},
 		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
 			{"id":520, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
 			{"id":518, "name":"Phantom Titan",	"pts":750, "upgrades":[]},
-			{"id":521, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
+			{"id":521, "name":"Phoenix Bombers","pts":325, "units":"3 Phoenix Bombers", "upgrades":[]},
 			{"id":519, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
 			{"id":515, "name":"Wraithship",	"pts":150, "upgrades":[]},
 			{"id":516, "name":"Dragonship",	"pts":300, "upgrades":[]},
@@ -33,7 +34,7 @@
 	],
 	"upgrades":[
 		{"id":11, "name":"Ranger",		"pts":25},
-		{"id":13, "name":"War Walker",	"pts":35},
+		{"id":13, "name":"War Walker",	"pts":25},
 		{"id":15, "name":"Dire Avenger",		"pts":0},
 		{"id":16, "name":"Striking Scorpion",	"pts":0},
 		{"id":17, "name":"Howling Banshee",	"pts":0},
@@ -74,11 +75,13 @@
 		{"max":3, "from":[25]},
 		{"max":2, "from":[31]},	
 		{"max":1, "from":[47]},	
+    {"min":4, "max":6, "from":[13], "appliesTo":[502]},
 		{"max":1, "name":"Wraithguard", "from":[45,46]},	
 		{"max":1, "from":[43]},	
 		{"max":1, "perArmy":true, "from":[40]},	
 		{"max":2, "name":"Exarchs", "from":[39,40]},
-		{"min":1, "max":3, "from":[34,35,36,37], "appliesTo":[505]},		
+		{"min":1, "max":3, "from":[34,35,36], "appliesTo":[505]},	
+    {"min":1, "max":3, "from":[37], "appliesTo":[506]},	   
 		{"min":5, "max":6, "name":"Falcons", "from":[30,31,32], "appliesTo":[503]},			
 		{"min":6, "max":6, "from":[27,28], "appliesTo":[502]},			
 		{"min":7, "max":7, "from":[24,25], "appliesTo":[511,512]},		
