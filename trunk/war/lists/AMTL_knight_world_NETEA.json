@@ -1,21 +1,21 @@
 {
   "id":"Knight World",
-  "version":"NetEA v2.2 *UNDER DEVELOPMENT*",
+  "version":"NetEA v2.2.1 *APPROVED*",
   "by":"Dave",
   "notes":["Up to a quarter of the points available may be spent on Imperial Navy Aircraft formations."],
   "sections":[
     {"name":"Knight Households", "formations":[
-      {"id":100, "name":"Knight Household", "pts":30, "upgrades":[2,8,10,13]}
+      {"id":100, "name":"Knight Household", "pts":30, "upgrades":[8,10,2,13]}
     ]},
     {"name":"Support Households", "formations":[
-      {"id":200, "name":"Custodian Household", "pts":20, "upgrades":[6,7,13]},
-      {"id":300, "name":"Lancer Household", "pts":30, "upgrades":[2,9,13]},
-      {"id":400, "name":"Warden Household", "pts":20, "upgrades":[13,16]}
+      {"id":200, "name":"Custodian Household", "pts":30, "upgrades":[6,7,13]},
+      {"id":300, "name":"Lancer Household", "pts":30, "upgrades":[9,2,13]},
+      {"id":400, "name":"Warden Household", "pts":20, "upgrades":[16,13]}
     ]},
     {"name":"Support Levy", "formations":[
       {"id":500, "name":"AA Gun Battery", "pts":125, "units":"3 AA Guns", "upgrades":[3,4]},
       {"id":600, "name":"Howitzer Battery", "pts":175, "units":"3 Howitzers", "upgrades":[3,4]},
-      {"id":700, "name":"Infantry Platoon", "pts":175, "units":"1 Levy Command, 8 Infantry Levy", "upgrades":[1,5,11,14,15,17]},
+      {"id":700, "name":"Infantry Platoon", "pts":175, "units":"1 Levy Command, 8 Infantry Levy", "upgrades":[1,5,14,11,15,17]},
       {"id":800, "name":"Rough Rider Platoon", "pts":150, "units":"6 Rough Riders", "upgrades":[1]}
     ]},
     {"name":"Imperial Navy Aircraft", "formations":[
@@ -29,8 +29,8 @@
     {"id":3, "name":"3 Gun Emplacements", "pts":0},
     {"id":4, "name":"3 Gun Transporters", "pts":0},
     {"id":5, "name":"2 Infantry Levy", "pts":25},
-    {"id":6, "name":"Knight Castellan", "pts":110},
-    {"id":7, "name":"Knight Crusader", "pts":110},
+    {"id":6, "name":"Knight Castellan", "pts":115},
+    {"id":7, "name":"Knight Crusader", "pts":115},
     {"id":8, "name":"Knight Errant", "pts":90},
     {"id":9, "name":"Knight Lancer", "pts":90},
     {"id":10, "name":"Knight Paladin", "pts":90},
@@ -48,7 +48,7 @@
   ],
   "upgradeConstraints":[
     {"max":1, "perArmy":true, "from":[2]},
-    {"min":3,"max":6, "from":[8,10], "appliesTo":[100]},
+    {"min":3,"max":6, "from":[10,8], "appliesTo":[100]},
     {"max":1, "from":[2,13], "appliesTo":[100]},
     {"min":3,"max":4, "from":[6,7], "appliesTo":[200]},
     {"max":1, "from":[13], "appliesTo":[200]},
@@ -56,8 +56,8 @@
     {"max":1, "from":[2,13], "appliesTo":[300]},
     {"min":3,"max":6, "from":[16], "appliesTo":[400]},
     {"max":1, "from":[13], "appliesTo":[400]},
-    {"min":1,"max":1, "from":[3,4], "appliesTo":[500]},
-    {"min":1,"max":1, "from":[3,4], "appliesTo":[600]},
+    {"min":1,"max":1, "from":[4,3], "appliesTo":[500]},
+    {"min":1,"max":1, "from":[4,3], "appliesTo":[600]},
     {"max":1, "from":[1], "appliesTo":[700]},
     {"max":2, "from":[5], "appliesTo":[700]},
     {"max":3, "from":[11,15], "appliesTo":[700]},
