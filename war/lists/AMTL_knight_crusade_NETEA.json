@@ -8,9 +8,9 @@
       {"id":100, "name":"Knight Household", "pts":30, "upgrades":[8,10,2,13]}
     ]},
     {"name":"Support Households", "formations":[
-      {"id":400, "name":"Castigator Household", "pts":30, "upgrades":[16,2,13]}
+      {"id":400, "name":"Castigator Household", "pts":30, "upgrades":[16,2,13]},
       {"id":200, "name":"Custodian Household", "pts":30, "upgrades":[6,7,13]},
-      {"id":300, "name":"Lancer Household", "pts":30, "upgrades":[9,2,13]},
+      {"id":300, "name":"Lancer Household", "pts":30, "upgrades":[9,2,13]}
     ]},
     {"name":"Support Levy", "formations":[
       {"id":500, "name":"Artillery Battery", "pts":250, "units":"3 Basilisks", "upgrades":[]},
@@ -24,8 +24,8 @@
     ]},
     {"name":"Titan Legion Battlegroups", "formations":[
       {"id":1100, "name":"Reaver", "pts":650, "units":"1 Reaver Class Titan", "upgrades":[]},
-      {"id":1200, "name":"Warhound", "pts":275, "units":"1 Warhound Class Titan", "upgrades":[]}
-      {"id":1300, "name":"Warhound Pack", "pts":500, "units":"2 Warhound Class Titan", "upgrades":[]}
+      {"id":1200, "name":"Warhound", "pts":275, "units":"1 Warhound Class Titan", "upgrades":[]},
+      {"id":1300, "name":"Warhound Pack", "pts":500, "units":"2 Warhound Class Titan", "upgrades":[]},
       {"id":1400, "name":"Warlord", "pts":825, "units":"1 Warlord Class Titan", "upgrades":[]}
     ]}
   ],
