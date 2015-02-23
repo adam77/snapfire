@@ -47,7 +47,7 @@
   "formationConstraints":[
     {"max":1, "name":"Support Household", "from":[200,300,400], "forEach":[100], "name2":"Knight Household"},
     {"max":1, "name":"Support Levy", "from":[500,600,700,800], "forEach":[100], "name2":"Knight Household"},
-    {"maxPercent":33.334, "name":"Imperial Ally Formations", "from":[900,1000]}
+    {"maxPercent":33.334, "name":"Imperial Ally Formations", "from":[900,1000,1100,1200,1300,1400]}
   ],
   "upgradeConstraints":[
     {"max":1, "perArmy":true, "from":[2]},
