@@ -14,7 +14,7 @@
 
 {"id":535, "name":"Supa Stompa", 	"pts":325, "units":"1 Supa Stompa", "upgrades":[11,12,13,14,16,17,36,37,38,39,40,41,42]},
 {"id":536, "name":"Stompa Mob (Normal)", 	"pts":200, "upgrades":[11,12,13,14]},
-["id":537, "name":"Stompa Mob (Big)", 		"pts":350, "upgrades":[11,12,13,14]},
+{"id":537, "name":"Stompa Mob (Big)", 		"pts":350, "upgrades":[11,12,13,14]},
 {"id":541, "name":"Stompa Mob (Huge)", 	"pts":500, "upgrades":[11,12,13,14]},
 {"id":538, "name":"Loota Warband (Normal)", 	"pts":175, "units":"6 Boyz, 2 Grotz", "upgrades":[11,12,13,14,15,18,19,20]},
 {"id":539, "name":"Loota Warband (Big)", 	"pts":325, "units":"12 Boyz, 4 Grotz", "upgrades":[11,12,13,14,15,18,19,20]},
