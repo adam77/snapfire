@@ -15,9 +15,9 @@
 {"id":560, "name":"Stompa Mob (Normal)",       "pts":20, "upgrades":[11,12,13,14,16,17]},
 {"id":561, "name":"Stompa Mob (Big)",       "pts":-10, "upgrades":[11,12,13,14,16,17]},
 {"id":562, "name":"Stompa Mob (Uge)",       "pts":-40, "upgrades":[11,12,13,14,16,17]},
-{"id":538, "name":"Loota Warband (Normal)",     "pts":175, "units":"6 Boyz, 2 Grotz", "upgrades":[11,12,13,14,15,18,19,20]},
-{"id":539, "name":"Loota Warband (Big)",        "pts":325, "units":"12 Boyz, 4 Grotz", "upgrades":[11,12,13,14,15,18,19,20]},
-{"id":540, "name":"Loota Warband (Huge)",       "pts":450, "units":"18 Boyz, 6 Grotz", "upgrades":[11,12,13,14,15,18,19,20]}]},
+{"id":538, "name":"Loota Warband (Normal)",     "pts":125, "units":"6 Boyz, 2 Grotz", "upgrades":[11,12,13,14,15,18,19,20]},
+{"id":539, "name":"Loota Warband (Big)",        "pts":275, "units":"12 Boyz, 4 Grotz", "upgrades":[11,12,13,14,15,18,19,20]},
+{"id":540, "name":"Loota Warband (Huge)",       "pts":400, "units":"18 Boyz, 6 Grotz", "upgrades":[11,12,13,14,15,18,19,20]}]},
                
 {"name":"AVIATION", "formations":[
                        
