@@ -1,7 +1,9 @@
 {
 	"id":"Codex Astartes",
-	"version":"NetEA Tournament Pack 2013",
-	"by":"lindstrom, latest edit 2013-10-6 Parintachin",
+	"version":"NetEA Tournament Pack 2014",
+	"by":"lindstrom, latest edit 27-02-2015 Kyussinchains",
+   "notes":["Be aware that landspeeder typhoons are 25 points for 1-2 and 50 points for 3-5, this may affect army values for tournament play so please check and make the organiser aware where neccessary"],
+
 	"sections":[
 		{"name":"SPACE MARINE DETACHMENTS", "formations":[
 			{"id":532, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18,31]},
@@ -11,7 +13,7 @@
 			{"id":536, "name":"Land Speeder",			"pts":200, "upgrades":[15,16,17,18]},
 			{"id":537, "name":"Landing Craft",			"pts":350, "units":"1 Landing Craft", "upgrades":[]},
 			{"id":538, "name":"Predator",				"pts":250, "upgrades":[15,16,17,18,22,31]},
-			{"id":539, "name":"Scout",			"pts":150, "units":"4 Scouts", "upgrades":[15,16,17,18,26,27,11,12]},
+			{"id":539, "name":"Scout",			"pts":150, "units":"4 Scouts", "upgrades":[15,16,17,18,26,27,40,11,12]},
 			{"id":541, "name":"Strike Cruiser",			"pts":200, "upgrades":[]}, 
 			{"id":542, "name":"Battle Barge",			"pts":350, "upgrades":[]},
 			{"id":543, "name":"Tactical",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,26,21,22,23,31,11,12]},
@@ -40,7 +42,8 @@
 		{"id":25, "name":"Destructor",		"pts":0},
 		{"id":28, "name":"Landspeeder",		"pts":0},
 		{"id":29, "name":"Tornado",		"pts":0},
-		{"id":30, "name":"Typhoon",		"pts":25},
+		{"id":30, "name":"Typhoon",		"pts":10},
+      
 		{"id":15, "name":"Captain",		"pts":50},
 		{"id":16, "name":"Chaplain", 		"pts":50},
 		{"id":17, "name":"Librarian", 		"pts":50},
@@ -49,7 +52,8 @@
 		{"id":22, "name":"Hunter", 						"pts":75},
 		{"id":23, "name":"Land Raider", 					"pts":75},
 		{"id":26, "name":"Razorback",						"pts":25},
-		{"id":27, "name":"Sniper",						"pts":25},
+		{"id":27, "name":"2 Snipers",						"pts":25},
+    {"id":40, "name":"4 Snipers",						"pts":50},  
 		{"id":31, "name":"Vindicator",						"pts":50}
 	],
 	"formationConstraints":[
@@ -65,6 +69,7 @@
 		{"max":1, "perArmy":true, "from":[18]},
 		{"max":2, "from":[21]},
 		{"max":1, "from":[22]},
+    {"max":1, "from":[27,40]},
 		{"max":4, "from":[23]},
 		{"max":1, "from":[27]},
 		{"max":2, "from":[31]}
