@@ -27,7 +27,7 @@
       {"id": 507, "name": "Plague Reapers", "pts": 0, "upgrades": [37]},
 			{"id": 520, "name": "Plaguelord Titan", "pts": 850, "upgrades": []},
 			{"id": 521, "name": "Rupugnant Titan", "pts": 625, "upgrades": []},
-      {"id": 522, "name": "Plaguehound Titan", "pts": 275, "upgrades": []}
+      {"id": 522, "name": "Fester Titan", "pts": 275, "upgrades": []}
       ]},
       
     {"name": "CHAOS NAVY", "formations": [
