@@ -1,8 +1,8 @@
 {
 	"id":"Legio Gryphonicus",
-	"version":"NetEA v3.23 *UNDER DEVELOPMENT*",
+	"version":"NetEA v3.24 *APPROVED*",
 	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
-	"by":"Iron Bloke, last edit 2014-06-26 SpeakerToMachines",
+	"by":"Iron Bloke, last edit 2015-02-28 Kyussinchains",
 	"sections":[
 		{"name":"BATTLE TITANS", "formations":[
 			{"id":502, "name":"Emperor Titan", 		"pts":1250,"upgrades":[81,82,83,84]},
@@ -15,7 +15,7 @@
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
 			{"id":561, "name":"Forge Knight Maniple",			"pts":250, "units":"5 Forge Knights", "upgrades":[]},
-			{"id":562, "name":"Recon Cohort",			"pts":100, "units":"4 Sentinels", "upgrades":[]},
+			{"id":562, "name":"Crusader Scout Maniple",			"pts":150, "units":"4 Crusader Robots", "upgrades":[]},
 			{"id":563, "name":"Thunderbolt Squadron",	"pts":150, "units":"2 Thunderbolts", "upgrades":[]},
 			{"id":564, "name":"Marauder Squadron",		"pts":250, "units":"2 Marauders", "upgrades":[]},
 			{"id":565, "name":"Orbital Support",		"pts":200, "units":"One Ark Mechanicus Battleship", "upgrades":[]},
@@ -61,7 +61,9 @@
 		{"min":4, "max":4, "from":[13,14,15,16], "appliesTo":[552]},
 		{"min":3, "max":3, "from":[30,13,14,15,16,25,26,27,28,29,31,32,33,34,35,36,37], "appliesTo":[504]},
 		{"min":4, "max":4, "from":[16,13,14,15,25,26,27,28,29,30,31,32,33,34,35,36,37], "appliesTo":[503]},
-		{"max":1, "from":[80]},
+    {"max":2, "from":[35], "appliesTo":[503]},
+    {"max":1, "from":[35], "appliesTo":[504]},
+    {"max":1, "from":[80]},
 		{"max":1, "perArmy":true, "from":[81]},
 		{"max":1, "from":[82]},
 		{"max":1, "from":[83]},
