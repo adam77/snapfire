@@ -61,10 +61,10 @@
 		{"min":4, "max":4, "from":[13,14,15,16], "appliesTo":[552]},
 		{"min":3, "max":3, "from":[30,13,14,15,16,25,26,27,28,29,31,32,33,34,35,36,37], "appliesTo":[504]},
 		{"min":4, "max":4, "from":[16,13,14,15,25,26,27,28,29,30,31,32,33,34,35,36,37], "appliesTo":[503]},
-    {"max":2, "from":[35], "appliesTo":[503]},
-    {"max":1, "from":[35], "appliesTo":[504]},
-    {"max":2, "from":[36], "appliesTo":[503]},
-    {"max":1, "from":[36], "appliesTo":[504]},
+    {"max":2, "from":[35,36], "appliesTo":[503]},
+    {"max":1, "from":[35,36], "appliesTo":[504]},
+    
+    
     {"max":1, "from":[80]},
 		{"max":1, "perArmy":true, "from":[81]},
 		{"max":1, "from":[82]},
