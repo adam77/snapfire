@@ -7,12 +7,12 @@
         "sections":[
                 {"name":"DETACHMENTS", "formations": [
                         { "id":501, "name":"Centurion",                                                 "pts":0, "upgrades":[22,43,41,50,51,52,42,53,54,55] },
-                        { "id":502, "name":"Devastator",                                                "pts":250, "units":"4 Devastator units plus transport", "upgrades":[11,12,13,14,16,17,20,21,22,43,41,50,51,52,42,53,54,55,47,56,48,49,60,61,62,63]},
+                        { "id":502, "name":"Devastator",                                                "pts":250, "units":"4 Devastator units", "upgrades":[11,12,13,14,16,17,20,21,22,43,41,50,51,52,42,53,54,55,47,56,48,49,60,61,62,63]},
                         { "id":507, "name":"Land Raiders",                                              "pts":325, "upgrades":[11,12,13,14,15,16,22,43] },
                         { "id":508, "name":"Land Speeders",                                     "pts":200, "upgrades":[11,12,13,14] },
                         { "id":511, "name":"Predators",                                                 "pts":250, "upgrades":[11,12,13,16,22,43]},
-                        { "id":503, "name":"Scouts", "units":"4 Scout units plus transport",            "pts":150, "upgrades":[11,12,13,14,17,20,21,22,43,46,60,61,62,63] },
-                        { "id":504, "name":"Tactical", "units":"6 Tactical units plus transport",       "pts":275, "upgrades":[11,12,13,14,16,17,20,21,22,43,41,50,51,52,42,53,54,55,47,56,48,49,60,61,62,63] },
+                        { "id":503, "name":"Scouts", "units":"4 Scout units",            "pts":150, "upgrades":[11,12,13,14,17,20,21,22,43,46,60,61,62,63] },
+                        { "id":504, "name":"Tactical", "units":"6 Tactical units",       "pts":275, "upgrades":[11,12,13,14,16,17,20,21,22,43,41,50,51,52,42,53,54,55,47,56,48,49,60,61,62,63] },
                         { "id":505, "name":"Terminators", "units":"4 Terminator units",         "pts":325, "upgrades":[11,12,13,14,17,22,43,41,50,51,52,42,53,54,55] },
                         { "id":506, "name":"Thunderfire Battery",                               "pts":250, "units":"4 Thunderfire Cannons", "upgrades":[15,17] },
                         { "id":509, "name":"Vindicator",                                                "pts":225, "upgrades":[11,12,13,14,16,22,43] },
