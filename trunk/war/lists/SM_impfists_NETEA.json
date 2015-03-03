@@ -48,7 +48,7 @@
                { "id":62, "name":"2 Bunkers + Trenches", "pts":0 },
                { "id":63, "name":"2 Bunkers + Razorwire", "pts":0 },
                 { "id":18, "name":"Land Speeder Tornado", "pts":0 },
-                { "id":19, "name":"Land Speeder Typhoon", "pts":25 },
+                { "id":19, "name":"Land Speeder Typhoon", "pts":10 },
                 { "id":30, "name":"Land Raider Crusader", "pts":0 },
                 { "id":22, "name":"Vindicator", "pts":50 },
                 { "id":23, "name":"2 Whirlwinds", "pts":125 },
