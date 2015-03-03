@@ -56,13 +56,13 @@
 {"id":33, "name":"Battlekrooza",                "pts":200},
 {"id":34, "name":"Mekboy Big Boss",             "pts":0},
 {"id":35, "name":"Fighta-Bommers",              "pts":50},
-{"id":36, "name":"(Kustom) Wyrdboy Tower",      "pts":0},
-{"id":37, "name":"(Kustom) Transporta",         "pts":0},
-{"id":38, "name":"(Kustom) Power Fields",       "pts":0},
-{"id":39, "name":"(Kustom) Reinforced Boiler",  "pts":0},
-{"id":40, "name":"(Kustom) Extra Armour Bitz",  "pts":0},
-{"id":43, "name":"(Kustom) More Dakka",         "pts":0},
-{"id":41, "name":"(Kustom) Head of Mork/Gork",  "pts":0}],
+{"id":36, "name":"(Kustom) Wyrdboy Tower",      "pts":25},
+{"id":37, "name":"(Kustom) Transporta",         "pts":25},
+{"id":38, "name":"(Kustom) Power Fields",       "pts":25},
+{"id":39, "name":"(Kustom) Reinforced Boiler",  "pts":25},
+{"id":40, "name":"(Kustom) Extra Armour Bitz",  "pts":25},
+{"id":43, "name":"(Kustom) More Dakka",         "pts":25},
+{"id":41, "name":"(Kustom) Head of Mork/Gork",  "pts":25}],
        
 "formationConstraints":[
                
