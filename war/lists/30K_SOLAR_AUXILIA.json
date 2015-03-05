@@ -1,12 +1,12 @@
 {
-	"id":"Solar Auxilia",
-	"version":"Heresy V 2.0",
+	"id":"Solar Auxilia V 0.1.3",
+	"version":"Heresy V 0.1.3",
 	"by":"J.Barr AKA Fattdex. Updated by Mard",
 	"sections":[
 		{"name":"SOLAR AUXILIA DETACHMENTS", "formations":[
 			{"id":500, "name":"Leman Russ Strike Squadron", 				"pts":350, "upgrades":[99]},
-			{"id":501, "name":"Solar Auxilia Infantry Terico", 				"pts":150, "upgrades":[14,15,16,17,18,19,99], "units":"1x Auxilia Tactical Command Section, 7x Solar Auxilia Lasrifle units"},
-			{"id":502, "name":"Solar Auxilia Veletaris Storm Cohort", 		"pts":200, "upgrades":[99], "units":"1x Auxilia Tactical Command Section, 7x Veletaris Storm units"}
+			{"id":501, "name":"Solar Auxilia Infantry Terico", 				"pts":150, "upgrades":[14,15,16,17,18,19,38,39,99], "units":"1x Auxilia Tactical Command Section, 7x Solar Auxilia Lasrifle units"},
+			{"id":502, "name":"Solar Auxilia Veletaris Storm Cohort", 		"pts":200, "upgrades":[14,15,16,38,39,99], "units":"1x Auxilia Tactical Command Section, 7x Veletaris Storm units"}
 		]},
 		{"name":"SUPPORT DETACHMENTS", "formations":[
 			{"id":601, "name":"Orbital Support",							"pts":0, "upgrades":[]},
@@ -15,7 +15,8 @@
 			{"id":604, "name":"Auxilia Super Heavy Tank Platoon",			"pts":500, "upgrades":[]},
 			{"id":605, "name":"Auxilia Tank Hunter Squadron",				"pts":250, "upgrades":[], "units":"3x Valdor Tank Hunters"},
 			{"id":606, "name":"Leman Russ Assault Squadron",				"pts":200, "upgrades":[]},
-			{"id":607, "name":"Tarantula Sentry Gun Battery",				"pts":125, "upgrades":[], "units":"4x Tarantula, 1x Tarantula Hyperios"}
+			{"id":607, "name":"Tarantula Sentry Gun Battery",				"pts":125, "upgrades":[], "units":"4x Tarantula, 1x Tarantula Hyperios"},
+			{"id":608, "name":"Auxilia Malcador Squadron",					"pts":200, "upgrades":[]}
 
 		]},
 		{"name":"ALLIES & LORDS OF WAR", "formations":[
@@ -54,7 +55,14 @@
 		{"id":33, "name":"Leman Russ Demolisher",										"pts":0},
 		{"id":34, "name":"Leman Russ Incenerator",										"pts":0},
 		{"id":35, "name":"Leman Russ Executioner",										"pts":25},
-		{"id":67, "name":"Dauntles Class Light Cruiser",								"pts":150},
+		{"id":36, "name":"Malcador ",													"pts":0},
+		{"id":37, "name":"Malcador Infernus",											"pts":0},
+		{"id":38, "name":"Infantry Support Tank: Malcador Infernus",					"pts":50},
+		{"id":39, "name":"Infantry Support Tank: Leman Russ Demolisher",				"pts":50},
+		
+		
+		
+		{"id":67, "name":"Dauntless Class Light Cruiser",								"pts":150},
 		{"id":68, "name":"Emperor Class Battleship",									"pts":300},
 		{"id":99, "name":"Lord Marshall",												"pts":100}
 		
@@ -65,7 +73,7 @@
 		
 	],
 	"formationConstraints":[
-		{"max":2, "name":"Support Detachment", "from":[601,602,603,604,605,606,607], "forEach":[500,501,502], "name2":"Detachment"},
+		{"max":2, "name":"Support Detachment", "from":[601,602,603,604,605,606,607,608], "forEach":[500,501,502], "name2":"Detachment"},
 		{"maxPercent":33, "name":"ALLIES & LORDS OF WAR", "from":[701,702,703,704,705,706]},
 		{"max":1, "from":[601]}
 		
@@ -75,7 +83,7 @@
 		{"min":0, "max":1, "from":[99], "appliesTo":[500,501,502]},
 		{"min":6, "max":6, "from":[11,12,13], "appliesTo":[500]},
 		
-		{"min":0, "max":4, "from":[14,15], "appliesTo":[501]},
+		{"min":0, "max":4, "from":[14,15], "appliesTo":[501,502]},
 		{"min":0, "max":1, "from":[16], "appliesTo":[501,502]},
 		{"min":0, "max":1, "from":[17], "appliesTo":[501]},
 		{"min":0, "max":1, "from":[18,19], "appliesTo":[501]},
@@ -86,6 +94,10 @@
 		{"min":1, "max":1, "from":[23,24,25,26,27], "appliesTo":[603]},
 		{"min":1, "max":1, "from":[28,29,30,31,32], "appliesTo":[604]},
 		{"min":3, "max":3, "from":[33,34,35], "appliesTo":[606]},
+		
+		{"min":0, "max":2, "from":[38,39], "appliesTo":[501,502]},
+		{"min":3, "max":3, "from":[36,37], "appliesTo":[608]},
+		
 		
 		{"max":1, "from":[13]},
 		{"max":1, "from":[35]},
