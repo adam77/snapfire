@@ -1,6 +1,6 @@
 {
         "id":"Imperial Fists",
-        "version":"NetEA V1.1 - Developmental",
+        "version":"NetEA V1.2 - Developmental",
         "by":"Kyussinchains",
         
         "notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1)The formation may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 2) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks, 3) A formation may exchange its 'plus transport' for 50cm x 2.5cm of minefields, trenches or razorwire and 2 bunkers for free "],
@@ -18,7 +18,7 @@
                         { "id":509, "name":"Vindicator",                                                "pts":225, "upgrades":[11,12,13,14,16,22,43] },
                         { "id":510, "name":"Whirlwind Battery",                                 "pts":300, "upgrades":[11,12,13,14,16,23] },
                         { "id":512, "name":"Fellblade", "units":"1 Fellblade",  "pts":350, "upgrades":[] },
-                        { "id":513, "name":"Bastion", "units":"1 Bastion, 4 Tarantulas, 4 Emplacements",        "pts":250, "upgrades":[15,48,49] }
+                        { "id":513, "name":"Bastion", "units":"1 Bastion",        "pts":200, "upgrades":[15,48,49,60] }
                 ]},
                 {"name":"STATIC DEFENCES", "formations": [
                         { "id":521, "name":"Fortified Positions",               "pts":50, "units":"50cm x 2,5 cm Minefield, Trenches or Razorwire, 2 Bunkers", "upgrades":[] },
@@ -27,7 +27,7 @@
                 ]},
                 {"name":"AIRCRAFT", "formations":[
                         { "id":531, "name":"2 Storm Talons",    "pts":200, "upgrades":[] },
-                        { "id":532, "name":"1 Marauder Colossus",               "pts":175, "upgrades":[] }
+                        { "id":532, "name":"1 Thunderhawk Saturation Bomber",               "pts":275, "upgrades":[] }
                 ]},
                 {"name":"WAR ENGINES", "formations":[
                         { "id":541, "name":"Warlord Class Titan (Deathstrike Configuration)",           "pts":825, "upgrades":[] },
@@ -74,6 +74,7 @@
                 { "id":44, "name":"Assault Centurion", "pts":75 },
                 { "id":45, "name":"Devastator Centurion","pts":75 },
                 { "id":46, "name":"Snipers","pts":50 },
+                { "id":60, "name":"Tarantula + Emplacement","pts":25 },
                 { "id":37, "name":"Annihilator",                                "pts":0},
                 { "id":38, "name":"Destructor",                                 "pts":0}
 
@@ -93,6 +94,7 @@
                 {"max":1, "from":[60,61,62,63]},
                 {"max":2, "from":[25]},
                 {"max":4, "from":[48,49]},
+          {"max":4, "from":[60], "appliesTo":[513]},
                 {"max":1, "from":[16]},
                 {"max":2, "from":[17]},
                 {"max":1, "from":[21]},
