@@ -12,7 +12,7 @@ function binomialEqual(trials, pSuccess, X) {
 	}
 	else {
 		
-//n! hmmm
+//n! hmmm ahaa
 		var z=1;
 		for(var i=a; i>=1; i--) {
 			z=z*i;
