@@ -18,7 +18,7 @@
                         { "id":509, "name":"Vindicator",                                                "pts":225, "upgrades":[11,12,13,14,16,22,43] },
                         { "id":510, "name":"Whirlwind Battery",                                 "pts":300, "upgrades":[11,12,13,14,16,23] },
                         { "id":512, "name":"Fellblade", "units":"1 Fellblade",  "pts":350, "upgrades":[] },
-                        { "id":513, "name":"Bastion", "units":"1 Bastion",        "pts":200, "upgrades":[15,48,49,60] }
+                        { "id":513, "name":"Bastion", "units":"1 Bastion",        "pts":200, "upgrades":[15,48,49,70] }
                 ]},
                 {"name":"STATIC DEFENCES", "formations": [
                         { "id":521, "name":"Fortified Positions",               "pts":50, "units":"50cm x 2,5 cm Minefield, Trenches or Razorwire, 2 Bunkers", "upgrades":[] },
