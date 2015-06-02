@@ -1,111 +1,128 @@
 {
    "id": "Necron Sautekh Legion",
-   "version": "Necron Sautekh Legion v0.3",
-   "by": "Borka",
+   "version": "0.5",
+   "by": "Atension, 2015-01-10",
    "sections": [
       {"name": "INDIVIDUALS", "formations": [
-            {"id": 601, "name": "Tomb Complex", "pts": 75, "upgrades": []}
+            {"id": 500, "name": "Tomb Complex", "pts": 75}
          ]
       },
-      {"name": "NECRON PHALANXES",
+      {"name": "SAUTEKH NECRON PHALANXES",
          "formations": [
-            {"id": 701, "name": "Infantry Phalanx", "pts": 175, "upgrades": [100,101,103,201,202,203,204]},
-            {"id": 702, "name": "Immortal Phalanx", "pts": 250, "upgrades": [100,103,201,202,203,204]}
-            
+            {"id": 600, "name": "Warrior Phalanx", "pts": 25, "upgrades": [50,21,22,23,24,25,5]},
+            {"id": 601, "name": "Warrior Phalanx in Ghost Arks", "pts": 25, "upgrades": [21,22,23,24,25,5]},
+            {"id": 602, "name": "Immortal Phalanx", "pts": 250, "upgrades": [21,22,23,24,25,5]}
          ]
       },
-      {"name": "NECRON SUPPORT",
+      {"name": "SAUTEKH NECRON SUPPORT FORMATIONS",
          "formations": [
-            {"id": 500, "name": "Iudicium Maniple", "pts": 300, "upgrades": [104,200]},
-            {"id": 501, "name": "Venator Maniple", "pts": 200, "units": "6 Flayed Ones", "upgrades": [104,103]},
-            {"id": 502, "name": "Eques Maniple", "pts": 300, "upgrades": [104]},
-            {"id": 503, "name": "Monolith Maniple", "pts": 0, "upgrades": []},
-            {"id": 504, "name": "Letum Maniple", "pts": 200, "units": "4 Deathmarks", "upgrades": [104,204]},
-            {"id": 505, "name": "Triarch Maniple", "pts": 275, "units": "4 Triarch Praetorians", "upgrades": [104,107,100,103,201,202,203,204]},
-            {"id": 506, "name": "Sepulchrum Maniple", "pts": 200, "units": "6 Tomb Blades", "upgrades": []},
-            {"id": 507, "name": "Sentry Maniple", "pts": 50, "upgrades": []},
-            {"id": 508, "name": "Arcanthrite Swarm", "pts": 175, "units": "6 Canoptek Arcanthrites", "upgrades": []},
-            {"id": 509, "name": "Stalker Maniple", "pts": 250, "units": "4 Triarch Stalkers", "upgrades": []}
-            
+            {"id": 700, "name": "Iudicium Maniple", "pts": 250, "upgrades": [1,3]},
+            {"id": 701, "name": "Eques Maniple", "pts": 300, "upgrades": [1]},
+            {"id": 702, "name": "Monolith Maniple", "pts": 175, "upgrades": [26,27]},
+            {"id": 703, "name": "Venator Maniple", "units":"6 Flayed Ones units", "pts": 200, "upgrades": [22]},
+            {"id": 704, "name": "Letum Maniple", "units":"4 Deathmark units", "pts": 200, "upgrades": [1,5]},
+            {"id": 705, "name": "Triarch Maniple", "pts": 275, "upgrades": [1,6,5,25,23,24,22]},
+            {"id": 706, "name": "Blade Maniple", "units":"6 Tomb Blade units", "pts": 200},
+            {"id": 708, "name": "Stalker Maniple", "units":"4 Triarch Stalkers", "pts": 200},
+			{"id": 709, "name": "Sentry Pylon", "units":"4 Sentry pylons", "pts": 250}
          ]
       },
-      {"name": "HARVESTERS",
+      {"name": "SAUTEKH NECRON HARVESTERS AND AIRCRAFT",
          "formations": [
-            {"id": 802, "name": "Scythe Class Harvester", "pts": 350, "upgrades": []},
-            {"id": 803, "name": "Abattoir", "pts": 750, "upgrades": []},
-            {"id": 804, "name": "Aeonic Orb", "pts": 750, "upgrades": []},
-            {"id": 805, "name": "Warbarque", "pts": 300, "upgrades": [107]},
-            {"id": 806, "name": "Pylon", "pts": 200, "units": "Pylon", "upgrades": [62]},
-            {"id": 807, "name": "Tesseract Vault", "pts": 275, "upgrades": []}
-         ]
-      },
-      {"name": "AIRCRAFT",
-         "formations": [
-            {"id": 900, "name": "Night Scythe", "units": "2 Night Scythes", "pts": 175, "upgrades": []},
-            {"id": 901, "name": "Doom Scythe", "pts": 250, "upgrades": []},
-            {"id": 902, "name": "Night Shroud Bomber", "units": "2 Night Shroud Bombers ", "pts": 375, "upgrades": []}
+            {"id": 800, "name": "Harvester Engine", "pts": 600},
+            {"id": 801, "name": "Spacecraft", "units":"1 Scythe Class Harvester", "pts": 250},
+            {"id": 802, "name": "Warbarques", "units":"1 Warbarque", "pts": 300},
+            {"id": 803, "name": "Pylon", "pts": 25, "upgrades": [72]},
+            {"id": 804, "name": "Tesseract Vault", "units":"1 Tesseract Vault", "pts": 300},
+            {"id": 805, "name": "Doom Scythes", "pts": 0, "upgrades": [73]},
+            {"id": 806, "name": "Night Scythes", "units":"2 Night Scythes", "pts": 175},
+            {"id": 807, "name": "Night Shroud Bomber", "units":"2 Night Shroud Bombers", "pts": 275}
          ]
       }
    ],
    "upgrades": [
-      {"id": 11, "name": "6 Sautekh Warriors", "pts": 0},
-      {"id": 12, "name": "7 Sautekh Warriors", "pts": 25},
-      {"id": 13, "name": "8 Sautekh Warriors", "pts": 50},
-      {"id": 14, "name": "9 Sautekh Warriors", "pts": 75},
-      {"id": 15, "name": "10 Sautekh Warriors", "pts": 100},
-      {"id": 21, "name": "6 Immortals", "pts": 0},
-      {"id": 22, "name": "7 Immortals", "pts": 50},
-      {"id": 23, "name": "8 Immortals", "pts": 75},
-      {"id": 30, "name": "4 Doomsday Arks", "pts": 0},
-      {"id": 31, "name": "5 Doomsday Arks", "pts": 75},
-      {"id": 32, "name": "6 Doomsday Arks", "pts": 125},
-      {"id": 40, "name": "Destroyers", "pts": 0},
-      {"id": 41, "name": "Heavy Destroyers","pts": 0},
-      {"id": 50, "name": "1 Monolith, 2 Obelisks", "pts": 200},
-      {"id": 51, "name": "3 Monoliths", "pts": 275},
-      {"id": 60, "name": "4 Sentry Pylon", "pts": 200},
-      {"id": 61, "name": "6 Sentry Pylon", "pts": 300},
-      {"id": 62, "name": "2 Sentry Pylon", "pts": 100},
-      {"id": 70, "name": "2 Doom Scythes", "pts": 0},
-      {"id": 71, "name": "3 Doom Scythes", "pts": 125},
-      {"id": 100, "name": "Tomb Spyders", "pts": 50},
-      {"id": 101, "name": "Ghost Arks", "pts": 150},
-      {"id": 103, "name": "Wraiths", "pts": 50},
-      {"id": 104, "name": "Necron Lord", "pts": 25},
-      {"id": 107, "name": "Necron Overlord", "pts": 75},
-      {"id": 200, "name": "Command Barge", "pts": 50},
-      {"id": 201, "name": "Triarch Stalker", "pts": 50},
-      {"id": 202, "name": "Annihilation Barge", "pts": 50},
-      {"id": 203, "name": "C'tan Shard", "pts": 125},
-      {"id": 204, "name": "Canoptek", "pts": 50}
+      {"id": 1, "name": "Necron Lord", "pts": 25},
+      {"id": 2, "name": "Necron Overlord", "pts": 100},
+      {"id": 3, "name": "Necron Lord in Command Barge", "pts": 50},
+      {"id": 4, "name": "Necron Overlord in Command Barge", "pts": 75},
+      {"id": 5, "name": "Cryptek character", "pts": 50},
+	  {"id": 6, "name": "Necron Overlord", "pts": 75},
+
+      {"id": 20, "name": "3 Ghost Arks", "pts": 75},
+      {"id": 21, "name": "Tomb Spyder", "pts": 50},
+      {"id": 22, "name": "Wraith", "pts": 50},
+      {"id": 23, "name": "Triarch Stalkers", "pts": 50},
+      {"id": 24, "name": "C'Tan Shard", "pts": 125},
+      {"id": 25, "name": "Annihilation Barge", "pts": 50},
+      {"id": 26, "name": "Obelisk", "pts": 50},
+      {"id": 27, "name": "Monolith", "pts": 75},
+
+      {"id": 50, "name": "Sautekh Warrior unit", "pts": 25},
+      {"id": 51, "name": "6 Immortal units", "pts": 0},
+      {"id": 52, "name": "7 Immortal units", "pts": 50},
+      {"id": 53, "name": "8 Immortal units", "pts": 75},
+
+      {"id": 54, "name": "4 Doomsday Ark units", "pts": 0},
+      {"id": 55, "name": "5 Doomsday Ark units", "pts": 50},
+      {"id": 56, "name": "6 Doomsday Ark units", "pts": 100},
+
+      {"id": 57, "name": "Destroyer", "pts": 0},
+      {"id": 58, "name": "Heavy Destroyer", "pts": 0},
+
+      {"id": 59, "name": "2 Monolith", "pts": 0},
+
+      {"id": 61, "name": "4 Triarch Praetorian Units", "pts": 0},
+      {"id": 62, "name": "5 Triarch Praetorian Units", "pts": 75},
+      {"id": 63, "name": "6 Triarch Praetorian Units", "pts": 125},
+
+      {"id": 70, "name": "Abattoir", "pts": 0},
+      {"id": 71, "name": "Aeonic Orb", "pts": 0},
+      {"id": 72, "name": "Pylon", "pts": 175},
+      {"id": 73, "name": "Doom Scythe", "pts": 100},
+	  {"id": 74, "name": "Monolith", "pts": 75},
+	  {"id": 75, "name": "Obelisk", "pts": 50}
    ],
    "formationConstraints": [
-      {"max": 1, "from": [601]},
-      {"max": 1, "from": [802]},
-      {"max": 1, "from": [807]},
-      {"max": 1, "name": "Lrg Harvester Eng", "from": [803,804]},
-      {"max": 2, "from": [805]},
-      {"maxPercent": 33, "name": "War Engines & Aircraft", "from": [802,803,804,805,806,807,900,901,902]},
-      {"max": 3, "name": "Necron Support", "from": [501,502,503,504,505,506,507,508,509], "forEach": [701,702], "name2": "Necron Phalanx"}
+      {"max": 1, "from": [500]},
+      {"max": 1, "from": [800]},
+      {"max": 1, "from": [801]},
+      {"max": 2, "from": [802]},
+      {"max": 1, "from": [804]},
+      {"maxPercent": 33.4, "name": "Harvesters and Aircraft", "from": [800,801,802,803,804,805,806,807]},
+      {"max": 3, "name": "Support Formations", "from": [700,701,702,703,704,705,706,707,708], "forEach": [600,601,602], "name2": "Necron Phalanx"}
    ],
    "upgradeConstraints": [
-   	  {"max": 1, "from": [107], "perArmy": true},
-   	  {"max": 1, "from": [203], "perArmy": true},
-      {"max": 1, "min": 1, "from": [104,107], "appliesTo": [701,702]},
-      {"max": 1, "min": 0, "from": [104,107,805], "appliesTo": [505]},
-      {"max": 1, "min": 1, "from": [11,12,13,14,15], "appliesTo": [701]},
-      {"max": 1, "min": 0, "from": [101,12,13,14,15], "appliesTo": [701]},
-      {"max": 1, "min": 1, "from": [21,22,23], "appliesTo": [702]},
-      {"max": 1, "min": 1, "from": [30,31,32], "appliesTo": [500]},
-      {"max": 1, "min": 1, "from": [60,61], "appliesTo": [507]},
-      {"max": 1, "min": 0, "from": [62], "appliesTo": [806]},
-      {"max": 3, "from": [100], "appliesTo": [701,702]},
-      {"max": 1, "from": [101], "appliesTo": [701]},
-      {"max": 3, "from": [103], "appliesTo": [701,501,502]},
-      {"max": 1, "from": [104], "appliesTo": [501,502]},
-      {"max": 6, "min": 6, "from": [40,41], "appliesTo": [502]},
-      {"max": 1, "min": 1, "from": [50,51], "appliesTo": [503]},
-      {"max": 1, "min": 1, "from": [70,71], "appliesTo": [901]},
-      {"max": 3, "from": [105], "appliesTo": [504]}
+      {"max": 1, "from": [2,4,6], "perArmy": true},
+      {"max": 1, "from": [1]},
+      {"max": 1, "from": [3]},
+      {"max": 1, "from": [5]},
+
+      {"min": 1,"max": 1, "from": [20], "appliesTo": [601]},
+      {"max": 3, "from": [21]},
+      {"max": 3, "from": [22]},
+      {"max": 3, "from": [23]},
+      {"max": 1, "from": [24], "perArmy": true},
+      {"max": 3, "from": [25]},
+	  {"max": 2, "from": [27]},
+	  {"max": 3, "from": [26]},
+	  {"max": 3, "from": [72]},
+
+      {"min": 1,"max": 1, "from": [1,2], "appliesTo": [600,601]},
+      {"min": 1,"max": 1, "from": [1], "appliesTo": [602]},
+
+
+      {"min": 6,"max": 10, "from": [50], "appliesTo": [600]},
+      {"min": 6,"max": 6, "from": [50], "appliesTo": [601]},
+      {"min": 1,"max": 1, "from": [51,52,53], "appliesTo": [602]},
+
+      {"max": 1, "from": [1,3], "name":"lord", "appliesTo": [700]},
+      {"min": 1,"max": 1, "from": [54,55,56], "appliesTo": [700]},
+      {"min": 6,"max": 6, "from": [57,58], "appliesTo": [701]},
+      {"min": 1,"max": 1, "from": [59], "appliesTo": [702]},
+      {"min": 1,"max": 1, "from": [61,62,63], "appliesTo": [705]},
+
+      {"min": 1,"max": 1, "from": [70,71], "appliesTo": [800]},
+      {"min": 1,"max": 1, "from": [72], "appliesTo": [803]},
+      {"min": 2,"max": 3, "from": [73], "appliesTo": [805]}
    ]
 }
