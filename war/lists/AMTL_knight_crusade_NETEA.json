@@ -8,30 +8,31 @@
       {"id":100, "name":"Knight Household", "pts":30, "upgrades":[8,10,2,13]}
     ]},
     {"name":"Support Households", "formations":[
-      {"id":400, "name":"Castigator Household", "pts":30, "upgrades":[16,2,13]},
-      {"id":200, "name":"Custodian Household", "pts":30, "upgrades":[6,7,13]},
-      {"id":300, "name":"Lancer Household", "pts":30, "upgrades":[9,2,13]}
+      {"id":110, "name":"Castigator Household", "pts":30, "upgrades":[16,2,13]},
+      {"id":111, "name":"Custodian Household", "pts":30, "upgrades":[6,7,13]},
+      {"id":112, "name":"Lancer Household", "pts":30,
+      "upgrades":[9,2,13]}
     ]},
     {"name":"Support Levy", "formations":[
-      {"id":500, "name":"Artillery Battery", "pts":250, "units":"3 Basilisks", "upgrades":[]},
-      {"id":600, "name":"Flak Battery", "pts":150, "units":"3 Hydras", "upgrades":[]},
-      {"id":700, "name":"Infantry Platoon", "pts":175, "units":"1 Commander, 8 Infantry", "upgrades":[1,5,14,11,15]},
-      {"id":800, "name":"Sentinel Squadron", "pts":125, "units":"4 Sentinels", "upgrades":[]}
+      {"id":120, "name":"Artillery Battery", "pts":250, "units":"3 Basilisks", "upgrades":[]},
+      {"id":121, "name":"Flak Battery", "pts":150, "units":"3 Hydras", "upgrades":[]},
+      {"id":122, "name":"Infantry Platoon", "pts":175, "units":"1 Commander, 8 Infantry", "upgrades":[1,5,14,11,15]},
+      {"id":123, "name":"Sentinel Squadron", "pts":125, "units":"4 Sentinels", "upgrades":[]}
     ]},
     {"name":"Imperial Navy Aircraft", "formations":[
-      {"id":900, "name":"Marauder Squadron", "pts":250, "units":"2 Marauder Bombers", "upgrades":[]},
-      {"id":1000, "name":"Thunderbolt Squadron", "pts":150, "units":"2 Thunderbolt Fighters", "upgrades":[]}
+      {"id":130, "name":"Marauder Squadron", "pts":250, "units":"2 Marauder Bombers", "upgrades":[]},
+      {"id":131, "name":"Thunderbolt Squadron", "pts":150, "units":"2 Thunderbolt Fighters", "upgrades":[]}
     ]},
     {"name":"Titan Legion Battlegroups", "formations":[
-      {"id":1100, "name":"Reaver", "pts":650, "units":"1 Reaver Class Titan", "upgrades":[]},
-      {"id":1200, "name":"Warhound", "pts":275, "units":"1 Warhound Class Titan", "upgrades":[]},
-      {"id":1300, "name":"Warhound Pack", "pts":500, "units":"2 Warhound Class Titan", "upgrades":[]},
-      {"id":1400, "name":"Warlord", "pts":825, "units":"1 Warlord Class Titan", "upgrades":[]}
+      {"id":140, "name":"Reaver", "pts":650, "units":"1 Reaver Class Titan", "upgrades":[]},
+      {"id":141, "name":"Warhound", "pts":275, "units":"1 Warhound Class Titan", "upgrades":[]},
+      {"id":142, "name":"Warhound Pack", "pts":120, "units":"2 Warhound Class Titan", "upgrades":[]},
+      {"id":143, "name":"Warlord", "pts":825, "units":"1 Warlord Class Titan", "upgrades":[]}
     ]}
   ],
   "upgrades":[
     {"id":1, "name":"Commissar", "pts":25},
-    {"id":2, "name":"Baron", "pts":200},
+    {"id":2, "name":"Baron", "pts":111},
     {"id":5, "name":"2 Infantry", "pts":25},
     {"id":6, "name":"Knight Castellan", "pts":115},
     {"id":7, "name":"Knight Crusader", "pts":115},
@@ -45,24 +46,24 @@
     {"id":16, "name":"Knight Castigator", "pts":90}
   ],
   "formationConstraints":[
-    {"max":1, "name":"Support Household", "from":[200,300,400], "forEach":[100], "name2":"Knight Household"},
-    {"max":1, "name":"Support Levy", "from":[500,600,700,800], "forEach":[100], "name2":"Knight Household"},
-    {"maxPercent":33.334, "name":"Imperial Ally Formations", "from":[900,1000,1100,1200,1300,1400]}
+    {"max":1, "name":"Support Household", "from":[111,112,110], "forEach":[100], "name2":"Knight Household"},
+    {"max":1, "name":"Support Levy", "from":[120,121,122,123], "forEach":[100], "name2":"Knight Household"},
+    {"maxPercent":33.334, "name":"Imperial Ally Formations", "from":[130,131,140,141,142,143]}
   ],
   "upgradeConstraints":[
     {"max":1, "perArmy":true, "from":[2]},
     {"min":3,"max":6, "from":[10,8], "appliesTo":[100]},
     {"max":1, "from":[2,13], "appliesTo":[100]},
-    {"min":3,"max":4, "from":[6,7], "appliesTo":[200]},
-    {"max":1, "from":[13], "appliesTo":[200]},
-    {"min":3,"max":6, "from":[9], "appliesTo":[300]},
-    {"max":1, "from":[2,13], "appliesTo":[300]},
-    {"min":3,"max":6, "from":[16], "appliesTo":[400]},
-    {"max":1, "from":[2,13], "appliesTo":[400]},
-    {"max":1, "from":[1], "appliesTo":[700]},
-    {"max":2, "from":[5], "appliesTo":[700]},
-    {"max":8, "from":[11], "appliesTo":[700]},
-    {"max":1, "from":[15], "appliesTo":[700]},
-    {"max":2, "from":[14], "appliesTo":[700]}
+    {"min":3,"max":4, "from":[6,7], "appliesTo":[111]},
+    {"max":1, "from":[13], "appliesTo":[111]},
+    {"min":3,"max":6, "from":[9], "appliesTo":[112]},
+    {"max":1, "from":[2,13], "appliesTo":[112]},
+    {"min":3,"max":6, "from":[16], "appliesTo":[110]},
+    {"max":1, "from":[2,13], "appliesTo":[110]},
+    {"max":1, "from":[1], "appliesTo":[122]},
+    {"max":2, "from":[5], "appliesTo":[122]},
+    {"max":8, "from":[11], "appliesTo":[122]},
+    {"max":1, "from":[15], "appliesTo":[122]},
+    {"max":2, "from":[14], "appliesTo":[122]}
   ]
 }
