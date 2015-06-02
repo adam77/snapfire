@@ -70,7 +70,7 @@
       {"max": 1, "name": "Spacecraft", "from": [515,516]},
       {"max": 1, "from": [517]},
       {"maxPercent": 33, "name": "War Engines & Allies", "from": [515,516,517,518,519,520,521,522]},
-      {"max": 2, "name": "Troupes", "from": [500,501,502,503,504,505,530], "forEach": [510,511], "name2": "Warhost"}
+      {"max": 2, "name": "Troupes", "from": [500,501,502,503,504,505,530,531], "forEach": [510,511], "name2": "Warhost"}
 	  ],
    "upgradeConstraints": [
       {"max": 1, "perArmy": true, "from": [103]},
