@@ -46,8 +46,8 @@
                 {"id":29, "name":"Strike Cruiser", "pts":200},
                 {"id":30, "name":"Battle Barge", "pts":350},
                 {"id":31, "name":"2 x Hunters", "pts":125},
-                {"id":32, "name":"Emperor's Champion", "pts":75},
-                {"id":33, "name":"Neophyte", "pts":25},
+                {"id":32, "name":"Emperor's Champion", "pts":25},
+                {"id":33, "name":"2 Neophytes", "pts":25},
                 {"id":34, "name":"1 Thunderhawk Transporter", "pts":100},
                 {"id":35, "name":"Land Raider Crusader", "pts":75},
                 {"id":36, "name":"Land Raider", "pts":87.5},
@@ -74,7 +74,7 @@
                 {"max":6, "from":[21,22], "appliesTo":[110]},
                 {"max":4, "from":[20,35], "appliesTo":[110,111]},
                 {"max":2, "from":[20,35], "appliesTo":[103]},
-                {"max":2, "from":[33], "appliesTo":[110]},
+                {"max":1, "from":[33], "appliesTo":[110]},
                 {"max":1, "from":[34], "appliesTo":[114]},
                 {"min":4, "max":4, "from":[36,37], "appliesTo":[104]}
         ]
