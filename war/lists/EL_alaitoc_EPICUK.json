@@ -29,7 +29,7 @@
 			{"id":518, "name":"Phantom Titan",	"pts":750, "upgrades":[]},
 			{"id":519, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
 			{"id":520, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
-			{"id":521, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
+			{"id":521, "name":"Phoenix Bombers","pts":300, "units":"3 Phoenix Bombers", "upgrades":[]},
 			{"id":522, "name":"Vampire Raider","pts":200, "upgrades":[]}
 		]}
 	],
@@ -77,7 +77,8 @@
 		{"max":1, "name":"Spacecraft", "from":[515,516]}		
 	],
 	"upgradeConstraints":[
-		{"max":3, "from":[25]},		
+		{"max":3, "from":[25]},	
+		{"max":3, "from":[41], "appliesTo":[501]},	
 		{"max":1, "from":[50]},
 		{"max":1, "name":"Wraithguard", "from":[46]},
 		{"max":1, "from":[43]},
