@@ -70,7 +70,7 @@
 	],
 	"upgradeConstraints":[
 		{"min":10, "max":10, "from":[11,12], "appliesTo":[515]},
-		{"min":1, "max":1, "from":[14,15], "appliesTo":[516]},
+		{"min":3, "max":3, "from":[14,15], "appliesTo":[516]},
     {"min":1, "max":1, "from":[41,42,43], "appliesTo":[502]},
 		{"min":1, "max":1, "from":[14,15], "appliesTo":[507]},
 		{"min":9, "max":9, "from":[20,21], "appliesTo":[517]},
