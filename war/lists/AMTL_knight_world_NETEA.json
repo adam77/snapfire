@@ -5,27 +5,27 @@
   "notes":["Up to a quarter of the points available may be spent on Imperial Navy Aircraft formations."],
   "sections":[
     {"name":"Knight Households", "formations":[
-      {"id":100, "name":"Knight Household", "pts":30, "upgrades":[8,10,2,13]}
+      {"id":500, "name":"Knight Household", "pts":30, "upgrades":[8,10,2,13]}
     ]},
     {"name":"Support Households", "formations":[
-      {"id":200, "name":"Custodian Household", "pts":30, "upgrades":[6,7,13]},
-      {"id":300, "name":"Lancer Household", "pts":30, "upgrades":[9,2,13]},
-      {"id":400, "name":"Warden Household", "pts":20, "upgrades":[16,13]}
+      {"id":510, "name":"Custodian Household", "pts":30, "upgrades":[6,7,13]},
+      {"id":511, "name":"Lancer Household", "pts":30, "upgrades":[9,2,13]},
+      {"id":512, "name":"Warden Household", "pts":20, "upgrades":[16,13]}
     ]},
     {"name":"Support Levy", "formations":[
-      {"id":500, "name":"AA Gun Battery", "pts":125, "units":"3 AA Guns", "upgrades":[3,4]},
-      {"id":600, "name":"Howitzer Battery", "pts":175, "units":"3 Howitzers", "upgrades":[3,4]},
-      {"id":700, "name":"Infantry Platoon", "pts":175, "units":"1 Levy Command, 8 Infantry Levy", "upgrades":[1,5,14,11,15,17]},
-      {"id":800, "name":"Rough Rider Platoon", "pts":150, "units":"6 Rough Riders", "upgrades":[1]}
+      {"id":520, "name":"AA Gun Battery", "pts":125, "units":"3 AA Guns", "upgrades":[3,4]},
+      {"id":521, "name":"Howitzer Battery", "pts":175, "units":"3 Howitzers", "upgrades":[3,4]},
+      {"id":522, "name":"Infantry Platoon", "pts":175, "units":"1 Levy Command, 8 Infantry Levy", "upgrades":[1,5,14,11,15,17]},
+      {"id":523, "name":"Rough Rider Platoon", "pts":150, "units":"6 Rough Riders", "upgrades":[1]}
     ]},
     {"name":"Imperial Navy Aircraft", "formations":[
-      {"id":900, "name":"Marauder Squadron", "pts":250, "units":"2 Marauder Bombers", "upgrades":[]},
-      {"id":1000, "name":"Thunderbolt Squadron", "pts":150, "units":"2 Thunderbolt Fighters", "upgrades":[]}
+      {"id":530, "name":"Marauder Squadron", "pts":250, "units":"2 Marauder Bombers", "upgrades":[]},
+      {"id":531, "name":"Thunderbolt Squadron", "pts":150, "units":"2 Thunderbolt Fighters", "upgrades":[]}
     ]}
   ],
   "upgrades":[
     {"id":1, "name":"Aspirant", "pts":25},
-    {"id":2, "name":"Baron", "pts":200},
+    {"id":2, "name":"Baron", "pts":110},
     {"id":3, "name":"3 Gun Emplacements", "pts":0},
     {"id":4, "name":"3 Gun Transporters", "pts":0},
     {"id":5, "name":"2 Infantry Levy", "pts":25},
@@ -42,28 +42,28 @@
     {"id":17, "name":"52cm of Trench and 52cm of Razor Wire", "pts":50}
   ],
   "formationConstraints":[
-    {"max":1, "name":"Support Household", "from":[200,300,400], "forEach":[100], "name2":"Knight Household"},
-    {"max":1, "name":"Support Levy", "from":[500,600,700,800], "forEach":[100], "name2":"Knight Household"},
-    {"maxPercent":25, "name":"Imperial Navy Aircraft", "from":[900,1000]}
+    {"max":1, "name":"Support Household", "from":[510,511,512], "forEach":[500], "name2":"Knight Household"},
+    {"max":1, "name":"Support Levy", "from":[520,521,522,523], "forEach":[500], "name2":"Knight Household"},
+    {"maxPercent":25, "name":"Imperial Navy Aircraft", "from":[530,531]}
   ],
   "upgradeConstraints":[
     {"max":1, "perArmy":true, "from":[2]},
-    {"min":3,"max":6, "from":[10,8], "appliesTo":[100]},
-    {"max":1, "from":[2,13], "appliesTo":[100]},
-    {"min":3,"max":4, "from":[6,7], "appliesTo":[200]},
-    {"max":1, "from":[13], "appliesTo":[200]},
-    {"min":3,"max":6, "from":[9], "appliesTo":[300]},
-    {"max":1, "from":[2,13], "appliesTo":[300]},
-    {"min":3,"max":6, "from":[16], "appliesTo":[400]},
-    {"max":1, "from":[13], "appliesTo":[400]},
-    {"min":1,"max":1, "from":[4,3], "appliesTo":[500]},
-    {"min":1,"max":1, "from":[4,3], "appliesTo":[600]},
-    {"max":1, "from":[1], "appliesTo":[700]},
-    {"max":2, "from":[5], "appliesTo":[700]},
-    {"max":3, "from":[11,15], "appliesTo":[700]},
-    {"max":2, "from":[14], "appliesTo":[700]},
-    {"max":1, "from":[17], "appliesTo":[700]},
-    {"max":1, "from":[1], "appliesTo":[800]}
+    {"min":3,"max":6, "from":[10,8], "appliesTo":[500]},
+    {"max":1, "from":[2,13], "appliesTo":[500]},
+    {"min":3,"max":4, "from":[6,7], "appliesTo":[510]},
+    {"max":1, "from":[13], "appliesTo":[510]},
+    {"min":3,"max":6, "from":[9], "appliesTo":[511]},
+    {"max":1, "from":[2,13], "appliesTo":[511]},
+    {"min":3,"max":6, "from":[16], "appliesTo":[512]},
+    {"max":1, "from":[13], "appliesTo":[512]},
+    {"min":1,"max":1, "from":[4,3], "appliesTo":[520]},
+    {"min":1,"max":1, "from":[4,3], "appliesTo":[521]},
+    {"max":1, "from":[1], "appliesTo":[522]},
+    {"max":2, "from":[5], "appliesTo":[522]},
+    {"max":3, "from":[11,15], "appliesTo":[522]},
+    {"max":2, "from":[14], "appliesTo":[522]},
+    {"max":1, "from":[17], "appliesTo":[522]},
+    {"max":1, "from":[1], "appliesTo":[523]}
   ]
 }
 
