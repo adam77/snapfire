@@ -16,7 +16,7 @@
                         {"id":108,"name":"Scout","pts":150,"units":"4 Scouts plus Transport","upgrades":[11,12,13,14,21,22,28]},
                         {"id":109,"name":"Spaceship","pts":0,"upgrades":[29,30]},
                         {"id":110,"name":"Tactical","pts":300,"units":"6 Tactical units plus Transport","upgrades":[11,12,13,14,18,19,31,15,21,22]},
-                        {"id":111,"name":"Deathwing","pts":350,"units":"4 Dethwing Terminator units","upgrades":[11,12,13,14,18,20,15]},
+                        {"id":111,"name":"Deathwing","pts":350,"units":"4 Deathwing Terminator units","upgrades":[11,12,13,14,18,20,15]},
                         {"id":112,"name":"Thunderhawk","pts":200,"units":"1 Thunderhawk gunship"},
                         {"id":113,"name":"Vindicator","pts":250,"units":"4 Vindicators","upgrades":[11,12,13,14,19,31]},
                         {"id":114,"name":"Whirlwind","pts":300,"units":"4 Whirlwinds","upgrades":[11,12,13,14,19,31]}
