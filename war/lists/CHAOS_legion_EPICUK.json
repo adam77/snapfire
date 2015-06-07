@@ -81,7 +81,7 @@
       {"max": 1, "from": [551]},
       {"max": 1, "name": "Spacecraft", "from": [533,534]},
       {"maxPercent": 33, "name": "War Engines & Allies", "from": [505,520,521,522,523,530,531,533,534]},
-      {"max": 1, "name": "Elite Formation", "from": [503,504], "forEach": [501,507], "name2": "Retinue"},
+      {"max": 1, "name": "Elite Formation", "from": [503,504], "forEach": [501], "name2": "Retinue"},
       {"max": 2, "name": "Support Formations", "from": [511,508,509,510], "forEach": [501,507], "name2": "Retinue"}
    ],
    "upgradeConstraints": [
