@@ -15,15 +15,15 @@
 {"id":560, "name":"Stompa Mob (Normal)",       "pts":20, "upgrades":[11,12,13,14,16,17]},
 {"id":561, "name":"Stompa Mob (Big)",       "pts":-10, "upgrades":[11,12,13,14,16,17]},
 {"id":562, "name":"Stompa Mob (Uge)",       "pts":-40, "upgrades":[11,12,13,14,16,17]},
-{"id":538, "name":"Loota Warband (Normal)",     "pts":125, "units":"6 Boyz, 2 Grotz", "upgrades":[11,12,13,14,15,18,19,20]},
-{"id":539, "name":"Loota Warband (Big)",        "pts":275, "units":"12 Boyz, 4 Grotz", "upgrades":[11,12,13,14,15,18,19,20]},
-{"id":540, "name":"Loota Warband (Huge)",       "pts":400, "units":"18 Boyz, 6 Grotz", "upgrades":[11,12,13,14,15,18,19,20]}]},
+{"id":538, "name":"Loota Warband (Normal)",     "pts":125, "units":"6 Boyz, 2 Grotz", "upgrades":[11,12,13,14,15,17,18,19,20]},
+{"id":539, "name":"Loota Warband (Big)",        "pts":275, "units":"12 Boyz, 4 Grotz", "upgrades":[11,12,13,14,15,17,18,19,20]},
+{"id":540, "name":"Loota Warband (Huge)",       "pts":400, "units":"18 Boyz, 6 Grotz", "upgrades":[11,12,13,14,15,17,18,19,20]}]},
                
 {"name":"AVIATION", "formations":[
                        
-{"id":550, "name":"Drop Rok",   "pts":200, "upgrades":[]},
+
 {"id":551, "name":"Fighta-Bommers",     "pts":0, "upgrades":[35]},
-{"id":552, "name":"Bommer",     "pts":200, "upgrades":[]},
+{"id":552, "name":"Bommer",     "pts":175, "upgrades":[]},
 {"id":553, "name":"Spacecraft",         "pts":0, "upgrades":[]}
 ]}],
        
@@ -35,7 +35,7 @@
 {"id":14, "name":"Deth Koptas",                 "pts":35},
 {"id":15, "name":"Nobz",                        "pts":35},
 {"id":16, "name":"Stompa",                      "pts":60},
-{"id":17, "name":"Flak Wagonz",                 "pts":35},
+{"id":17, "name":"Flak Wagon",                 "pts":35},
 {"id":18, "name":"Oddboy",                      "pts":50},
 {"id":19, "name":"Battlefortress",              "pts":115},
 {"id":20, "name":"Gunfortress",                 "pts":125},
@@ -68,7 +68,7 @@
                
 {"max":1, "name":"Spacecraft", "from":[553]},
 
-{"maxPercent":33, "name":"Navy", "from":[550,551,552,553]}
+{"maxPercent":33, "name":"Navy", "from":[551,552,553]}
 ],
 
 "upgradeConstraints":[
