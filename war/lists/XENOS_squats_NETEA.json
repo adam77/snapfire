@@ -1,31 +1,30 @@
 {
 	"id":"Thurgrim's Stronghold Squats",
-	"version":"Thurgrims Stronghold 1.4",
+	"version":"Thurgrims Stronghold 1.5",
 	"notes":[
 		"If transport Upgrade is chosen, then you must take exactly enough transports of only one kind to transport all units in the formation."
 	],
-	"by":"Iron Bloke, last update 2013-10-29 Parintachin",
+	"by":"Iron Bloke, last update 2015-06-02 atension",
 	"sections":[
 		{"name":"SQUAT INDIVIDUALS", "formations":[
 			{"id":500, "name":"Pithead", 				"pts":50}
 		]},
 		{"name":"SQUAT BROTHERHOODS & GUILDS", "formations":[
-			{"id":501, "name":"Warrior Brotherhood", 	"pts":300, "upgrades":[1,2,3,4,7,8,9,50,51], "units":"1 Hearthguard unit"},
-			{"id":502, "name":"Berzerker Brotherhood", 				"pts":175, "upgrades":[1,2,3,4,7,8], "units":"1 Hearthguard unit"}
+			{"id":501, "name":"Warrior Brotherhood", 	"pts":300, "upgrades":[1,2,3,4,7,8,9,34,50,51], "units":"1 Hearthguard unit"},
+			{"id":502, "name":"Berzerker Brotherhood", 				"pts":175, "upgrades":[1,2,3,4,7,8,34], "units":"1 Hearthguard unit"}
 		]},
 		{"name":"SQUAT SUPPORT FORMATIONS", "formations":[
 			{"id":511, "name":"Tarantula", 	"pts":175, "units":"5 Tarantula units"},
 			{"id":512, "name":"Robot", 	"pts":225, "units":"5 Robot units"},
 			{"id":513, "name":"Thudd Gun", 	"pts":225, "units":"6 Thudd Gun units"},
-			{"id":514, "name":"Thunderfire", 	"pts":-25,"upgrades":[14]},
+			{"id":514, "name":"Thunderfire", 	"pts":-50,"upgrades":[14,19]},
 			{"id":515, "name":"Mole Mortar", 	"pts":175, "units":"6 Mole Mortar units"},
 			{"id":516, "name":"Bikers Guild", 	"pts":225},
+			{"id":530, "name":"Overlord", 	"pts":25 ,"upgrades":[20]},
 			{"id":517, "name":"Iron Hawk", 	"pts":200}
 		]},
 		{"name":"WAR ENGINE FORMATIONS", "formations":[
-			{"id":530, "name":"Overlord", 	"pts":25 ,"upgrades":[20]},
 			{"id":531, "name":"Goliath", 	"pts":0,"upgrades":[21]},
-			{"id":532, "name":"Leviathan", 	"pts":375, "units":"1 Leviathan","upgrades":[9]},
 			{"id":533, "name":"Colossus", 	"pts":450, "units":"1 Colossus","upgrades":[9]},
 			{"id":534, "name":"Cyclops", 	"pts":475, "units":"1 Cyclops","upgrades":[9]},
 			{"id":535, "name":"Land Train", "pts":200, "units":"1 Land Train Engine","upgrades":[9,30,31,32,33]}
@@ -35,7 +34,7 @@
 		{"id":1, "name":"Rhino", "pts":0},
 		{"id":2, "name":"Terminte Tunneller", "pts":0},
 		{"id":3, "name":"Mole Tunneller", "pts":50},
-		{"id":4, "name":"Hellbore Tunneller", "pts":150},
+		{"id":4, "name":"Hellbore Tunneller", "pts":125},
 
 		{"id":5, "name":"Guildmaster", "pts":0},
 		{"id":6, "name":"Grand Warlord", "pts":50},
@@ -53,7 +52,7 @@
 		{"id":16, "name":"Guild trike", "pts":0},
 		{"id":17, "name":"Iron Hawk", "pts":0},
 		{"id":18, "name":"Iron Eagle", "pts":25},
-
+        {"id":19, "name":"4 Warrior units", "pts":100},
 		{"id":20, "name":"Overlord Airship", "pts":225},
 		{"id":21, "name":"Goliath Mega-Cannon", "pts":150},
 
@@ -61,7 +60,7 @@
 		{"id":31, "name":"Bomb Battle Car", "pts":125},
 		{"id":32, "name":"Dragon Battle Car", "pts":75},
 		{"id":33, "name":"Mortar Battle Car", "pts":50},
-
+        {"id":34, "name":"Leviathan", "pts":375},
 
 		{"id":50, "name":"4 Rapier units", "pts":100},
 		{"id":51, "name":"4 Thunderer units", "pts":100}
@@ -69,8 +68,8 @@
 
 	],
 	"formationConstraints":[
-		{"max":2, "name":"Support Formations", "from":[511,512,513,514,515,516,517], "forEach":[501,502], "name2":"Brotherhood"},
-		{"maxPercent":33, "name":"War Engine Formations", "from":[530,531,532,533,534,535]},
+		{"max":2, "name":"Support Formations", "from":[511,512,513,514,515,516,517,530], "forEach":[501,502], "name2":"Brotherhood"},
+		{"maxPercent":33.4, "name":"War Engine Formations", "from":[531,532,533,534,535]},
 		{"max":1, "from":[500]},
 		{"max":3, "from":[506]},
 		{"max":1, "from":[513]}
@@ -81,6 +80,8 @@
 		{"max":1,  "from":[8], "perArmy": true},
 		{"max":1,  "from":[9], "perArmy": true},
 
+		{"min":0, "max":1, "from":[34], "appliesTo":[501]},
+		{"min":0, "max":1, "from":[34], "appliesTo":[502]},
 		{"min":1, "max":1, "from":[10,11], "appliesTo":[501]},
 		{"min":1, "max":1, "from":[12,13], "appliesTo":[502]},
 		{"min":2, "max":3, "from":[14], "appliesTo":[514]},
