@@ -1,0 +1,55 @@
+{
+  "id":"Knight World",
+  "version":"EpicUK 290515",
+  "by":"Kyussinchains",
+  "notes":["Up to a quarter of the points available may be spent on Imperial Navy Aircraft formations."],
+  "sections":[
+    {"name":"Knight Households", "formations":[
+      {"id":500, "name":"Baron Retinue", "pts":600, "units":"1 Baron, 5 Paladins", "upgrades":[8,10,2,13]},
+	  {"id":501, "name":"Knight Household", "pts":600, "units":"6 Paladins", "upgrades":[8,10,2,13]}
+    ]},
+    {"name":"Support Households", "formations":[
+      {"id":510, "name":"Support Household", "pts":50, "upgrades":[13]},
+      {"id":511, "name":"Lancer Household", "pts":0, "upgrades":[13]},
+      {"id":512, "name":"Errant Household", "pts":50, "upgrades":[8,13]}
+    ]},
+    {"name":"Retainers", "formations":[
+      {"id":520, "name":"AA Gun Battery", "pts":150, "units":"3 Heavy AA Guns, 3 tractors", "upgrades":[]},
+      {"id":521, "name":"Artillery Battery", "pts":200, "units":"3 Earthshaker platforms, 3 tractors", "upgrades":[]},
+      {"id":522, "name":"Militia", "pts":125, "units":"6 Militia units", "upgrades":[5]},
+      {"id":523, "name":"Field Guns", "pts":150, "units":"4 light artillery units, 4 tractors", "upgrades":[]},
+	  {"id":524, "name":"Rapiers", "pts":150, "units":"4 Rapier units, 4 tractors", "upgrades":[]},
+	  {"id":525, "name":"Light Tank Platoon", "pts":175, "units":"6 Siegfried light tanks", "upgrades":[]}
+    ]},
+    {"name":"Imperial Navy Aircraft", "formations":[
+      {"id":530, "name":"Marauder Squadron", "pts":250, "units":"2 Marauder Bombers", "upgrades":[]},
+      {"id":531, "name":"Thunderbolt Squadron", "pts":150, "units":"2 Thunderbolt Fighters", "upgrades":[]}
+    ]}
+  ],
+  "upgrades":[
+   
+    {"id":5, "name":"6 Tractors", "pts":50},
+    {"id":6, "name":"Knight Castellan", "pts":100},
+    {"id":7, "name":"Knight Crusader", "pts":100},
+    {"id":8, "name":"Knight Errant", "pts":100},
+    {"id":13, "name":"Seneschal", "pts":25}
+    
+  ],
+  "formationConstraints":[
+    {"max":2, "name":"Support Household", "from":[510,511,512], "forEach":[500,501], "name2":"Knight Household"},
+	{"max":1, "from": [500]},
+    {"max":1, "name":"Retainers", "from":[520,521,522,523,524,525], "forEach":[500,501,510,511,512], "name2":"Knight Household or Support Household"},
+    {"maxPercent":25, "name":"Imperial Navy Aircraft", "from":[530,531]}
+  ],
+  "upgradeConstraints":[
+    
+    {"min":3,"max":4, "from":[6,7], "appliesTo":[510]},
+	{"min":3,"max":4, "from":[13], "appliesTo":[512]},
+    {"max":1, "from":[5], "appliesTo":[522]},
+	{"max":1, "from":[6,7], "appliesTo":[500,501]},
+	{"max":1, "from":[8], "appliesTo":[500,501]},
+	{"max":1, "from":[13], "appliesTo":[500,501,510,511,512]}
+        
+   
+     ]
+}
