@@ -5,7 +5,7 @@
    "sections": [
       { "name": "CADRES",
          "formations": [
-            {"id": 532,"name": "Crisis Battlesuit Cadre","pts": 50,"upgrades": [17,35]},
+            {"id": 532,"name": "Crisis Battlesuit Cadre","pts": 25,"upgrades": [17,35]},
             {"id": 531,"name": "Fire Warrior Cadre","pts": 225,"upgrades": [62,63,60,35,80,81,82,61,54,55]}
          ]
       },
