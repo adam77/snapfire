@@ -6,7 +6,7 @@
    
    "sections": [
     {"name": "CORE", "formations": [
-      {"id": 501, "name": "Death Guard Retinue", "pts": 325, "upgrades": [52,60,56,53,64,65,63,57,78,81,66,90]},
+      {"id": 501, "name": "Death Guard Retinue", "pts": 300, "upgrades": [52,60,56,53,64,65,63,57,78,81,66,90]},
       {"id": 551, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
       ]},
       
@@ -33,7 +33,7 @@
     {"name": "CHAOS NAVY", "formations": [
       {"id": 530, "name": " Death Guard Hellblades", "pts": 200, "units": "3 Death Guard Hellblade Fighters", "upgrades": []},
       {"id": 531, "name": "Death Guard Helltalons", "pts": 225, "units": "2 Death Guard Helltalon Fighter-Bombers", "upgrades": []},
-      {"id": 533, "name": "Plague Ship", "pts": 175, "upgrades": []}
+      {"id": 533, "name": "Plague Ship", "pts": 200, "upgrades": []}
       ]}
    ],
    
@@ -67,7 +67,7 @@
     {"id": 27, "name": "Chaos Predator", "pts": 50},
 	  {"id": 66, "name": "Death Guard Rhino", "pts": 10},
 	  {"id": 28, "name": "Nurgle Predator", "pts": 50},
-	  {"id": 87, "name": "Nurgle Vindicator", "pts": 50},
+	  {"id": 87, "name": "Nurgle Vindicator", "pts": 35},
 	  {"id": 29, "name": "Nurgle Land Raider", "pts": 75}
    ],
    
@@ -99,8 +99,9 @@
     {"max": 3, "min": 1, "from": [37], "appliesTo": [507]},
 	  {"max": 3, "min": 1, "from": [64], "appliesTo": [508]},
 	  {"max": 4, "min": 4, "from": [84,85,86], "appliesTo": [506]},
-	  {"max": 7, "min": 4, "from": [92,91], "appliesTo": [503]},
+	  {"max": 4, "min": 4, "from": [92,91], "appliesTo": [503]},
 	  {"max": 2, "from": [91], "appliesTo": [503]},
-	  {"max": 7, "min": 4, "from": [28,29,87], "appliesTo": [509]}
+	  {"max": 3, "from": [87], "appliesTo": [509]},
+	  {"max": 7, "min": 4, "from": [28,29], "appliesTo": [509]}
    ]
 }
