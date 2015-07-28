@@ -1,10 +1,9 @@
 {
 	"id":"Red Corsairs",
-	"version":"3.3",
-	"by":"Parintachin, last update 2013-10-16",
+	"version":"3.4",
+	"by":"Kyussinchains, last update 2015-07-28",
 	"notes":["This list is rated 'Developmental'",
 	"Formations deploying by drop pod or Rhino must take just enough to transport the entire formation.",
-	"Cult engines can only be added to formations that contain marines from the same cult", 
 	"Add one free Lesser Daemon to Daemon pool per Daemonic Pact"],
 	"sections":[
 		{"name":"Daemon Pool", "formations": [
@@ -12,35 +11,31 @@
 		]},
 		{"name":"Red Corsairs Core Formations", "formations": [
 			{ "id":501, "name":"Hounds Squadron", "pts":300, "units":"8 Chaos Space Marine Bike units", "upgrades":[13,14] },
-			{ "id":502, "name":"Terminator Retinue", "pts":35	, "units":"", "upgrades":[50,15,16,17,18,19,21,22,13,28,29,14,35] },
-			{ "id":503, "name":"Renegade Warband", "pts":275, "upgrades":[13,14,15,16,17,18,19,20,21,22,28,29,30,31,32,33,35] }
+			{ "id":502, "name":"Terminator Retinue", "pts":35	, "units":"", "upgrades":[50,15,16,17,18,19,21,22,13,28,14,35] },
+			{ "id":503, "name":"Renegade Warband", "pts":275, "upgrades":[13,14,15,16,17,18,19,20,21,22,28,35] }
 		]},
 		{"name":"Red Corsairs Support Formatons", "formations": [
-			{ "id":510, "name":"Armoured Company", "pts":0, "upgrades":[51,19,18,22,28,29] },
+			{ "id":510, "name":"Armoured Company", "pts":0, "upgrades":[51,19,18,22,28] },
 			{ "id":511, "name":"Spaceship", "pts":0},
-			{ "id":512, "name":"Chaos Thunderhawk", "units":"1 Chaos Thunderhawk Gunship", "pts":250},
+			{ "id":512, "name":"Chaos Thunderhawk", "units":"1 Chaos Thunderhawk Gunship", "pts":200},
 			{ "id":513, "name":"Chosen", "units":"6 Chaos Space Marine Units - all have the Scout ability", "pts":200, "upgrades":[15,17,20,13] },
-			{ "id":514, "name":"Khornate Cult Marines", "units":"6 Khorne Berzerker units", "pts":275, "upgrades":[15,16,17,20,13,28,29,30] },
-			{ "id":515, "name":"Tzeenchian Cult Marines", "units":"6 Thousand Sons units", "pts":275, "upgrades":[15,16,17,20,13,28,29,31] },
-			{ "id":516, "name":"Nurglish Cult Marines", "units":"6 Plague Marine units", "pts":275, "upgrades":[15,16,17,20,13,28,29,32] },
-			{ "id":517, "name":"Slaaneeshi Cult Marines", "units":"6 Noise Marine units", "pts":275, "upgrades":[15,16,17,20,13,28,29,33] },
-			{ "id":518, "name":"Defiler Assaut Force", "units":"4 Defilers", "pts":250, "upgrades":[28,29] },
-			{ "id":519, "name":"Blood Slaughterer Pack", "units":"5 Blood Slaughterers", "pts":225, "upgrades":[28,29,30] },
-			{ "id":520, "name":"Brass Scorpion Onlsaught", "units":"2 Brass Scorpions", "pts":250, "upgrades":[28,29,30] },
-			{ "id":521, "name":"Silver Tower Circle", "units":"4 Silver Towers", "pts":250, "upgrades":[28,29,31] },
-			{ "id":522, "name":"Blight Drone Swarm", "units":"6 Blight Drones", "pts":300, "upgrades":[28,29,32] },
-			{ "id":523, "name":"Daemon Knight Pavane", "units":"4 Daemon Knights", "pts":250, "upgrades":[28,29,33] },
+			{ "id":514, "name":"Khornate Cult Marines", "units":"6 Khorne Berzerker units", "pts":275, "upgrades":[15,16,17,20,13,28] },
+			{ "id":515, "name":"Tzeenchian Cult Marines", "units":"6 Thousand Sons units", "pts":275, "upgrades":[15,16,17,20,13,28] },
+			{ "id":516, "name":"Nurglish Cult Marines", "units":"6 Plague Marine units", "pts":275, "upgrades":[15,16,17,20,13,28] },
+			{ "id":517, "name":"Slaaneeshi Cult Marines", "units":"6 Noise Marine units", "pts":275, "upgrades":[15,16,17,20,13,28] },
+			{ "id":518, "name":"Defiler Assaut Force", "units":"4 Defilers", "pts":275, "upgrades":[] },
+			{ "id":519, "name":"Blood Slaughterer Pack", "units":"5 Blood Slaughterers", "pts":225, "upgrades":[] },
+			{ "id":520, "name":"Brass Scorpion Onlsaught", "units":"2 Brass Scorpions", "pts":250, "upgrades":[] },
+			{ "id":521, "name":"Silver Tower Circle", "units":"4 Silver Towers", "pts":250, "upgrades":[] },
+			{ "id":522, "name":"Blight Drone Swarm", "units":"6 Blight Drones", "pts":300, "upgrades":[] },
+			{ "id":523, "name":"Daemon Knight Pavane", "units":"4 Daemon Knights", "pts":250, "upgrades":[] },
 			{ "id":524, "name":"Raptor Cult", "pts":35, "upgrades":[54,13] }
 		]},
 		{"name":"Chaos Navy Aircraft", "formations":[
 			{ "id":531, "name":"Three Hellblade Interceptors", "pts":200},
 			{ "id":532, "name":"Two Hell Talon Fighter-Bombers", "pts":225},
 			{ "id":533, "name":"One Harbinger Bomber", "pts":400}
-		]},
-		{"name":"Chaos Titan Legion Battlegroups", "formations":[
-			{ "id":540, "name":"One Chaos Warlord Class Titan", "pts":800},
-			{ "id":541, "name":"One Chaos Reaver Class Titan", "pts":625},
-			{ "id":542, "name":"One Chaos Warhound Class Titan", "pts":300}
+		
 		]}
 	],
 	"upgrades":[
@@ -50,7 +45,7 @@
 		{ "id":14, "name":"Icon Bearer", "pts":25 },
 		{ "id":15, "name":"Chaos Champion", "pts":50 },
 		{ "id":16, "name":"Chaos Dreadnaught", "pts":50 },
-		{ "id":17, "name":"Chaos Drop Pod", "pts":5 },
+		{ "id":17, "name":"Chaos Drop Pod", "pts":10 },
 		{ "id":18, "name":"Chaos Hunter", "pts":50 },
 		{ "id":19, "name":"Chaos Land Raider", "pts":75 },
 		{ "id":20, "name":"Chaos Rhino", "pts":10 },
@@ -68,12 +63,7 @@
 		{ "id":39, "name":"4 Havoc units, 4 Plague Marine units", "pts":100 },
 		{ "id":40, "name":"4 Havoc units, 4 Thousand Sons units", "pts":100 },
 		{ "id":28, "name":"Defiler", "pts":75 },
-		{ "id":29, "name":"Desecrator", "pts":75 },
-		{ "id":30, "name":"Blood Slaughterer", "pts":50 },
-		{ "id":31, "name":"Silver Tower", "pts":75 },
-		{ "id":32, "name":"Blight Drone", "pts":50 },
-		{ "id":33, "name":"Daemon Knight", "pts":75 },
-		{ "id":35, "name":"Obliterators", "pts":75 },
+		{ "id":35, "name":"Obliterators", "pts":85 },
 
 		{ "id":50, "name":"Terminator unit", "pts":60 },
 		{ "id":51, "name":"Chaos Predator", "pts":50 },
@@ -109,7 +99,7 @@
 		{"max":1, "from":[23,24,25,26]},
 		{"max":1, "perArmy":true, "from":[93]},
 		{"max":1, "perArmy":true, "from":[92]},
-		{"max":3, "from":[28,29,30,32,32,33]},
+		{"max":3, "from":[28]},
 		{"max":1, "from":[34]},
 		{"max":3, "from":[35]},
 
