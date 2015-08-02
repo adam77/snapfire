@@ -5,8 +5,8 @@
   "notes":["Up to a quarter of the points available may be spent on Imperial Navy Aircraft formations."],
   "sections":[
     {"name":"Knight Households", "formations":[
-      {"id":500, "name":"Baron Retinue", "pts":600, "units":"1 Baron, 5 Paladins", "upgrades":[8,10,2,13]},
-	  {"id":501, "name":"Knight Household", "pts":600, "units":"6 Paladins", "upgrades":[8,10,2,13]}
+      {"id":500, "name":"Baron Retinue", "pts":600, "units":"1 Baron, 5 Paladins", "upgrades":[8]},
+	  {"id":501, "name":"Knight Household", "pts":500, "units":"6 Paladins", "upgrades":[8,13]}
     ]},
     {"name":"Support Households", "formations":[
       {"id":510, "name":"Support Household", "pts":50, "upgrades":[13]},
