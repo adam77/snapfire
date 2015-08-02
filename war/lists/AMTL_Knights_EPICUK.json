@@ -10,7 +10,7 @@
     ]},
     {"name":"Support Households", "formations":[
       {"id":510, "name":"Support Household", "pts":50, "upgrades":[13]},
-      {"id":511, "name":"Lancer Household", "pts":0, "upgrades":[13]},
+      {"id":511, "name":"Lancer Household", "pts":300, "units":"3 Lancers", "upgrades":[13]},
       {"id":512, "name":"Errant Household", "pts":50, "upgrades":[8,13]}
     ]},
     {"name":"Retainers", "formations":[
