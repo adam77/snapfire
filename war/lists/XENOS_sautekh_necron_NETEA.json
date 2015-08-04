@@ -1,7 +1,7 @@
 {
    "id": "Necron Sautekh Legion",
-   "version": "0.5",
-   "by": "Atension, 2015-01-10",
+   "version": "Developmental V1.0",
+   "by": "Atension, 2015-05-26",
    "sections": [
       {"name": "INDIVIDUALS", "formations": [
             {"id": 500, "name": "Tomb Complex", "pts": 75}
@@ -9,14 +9,14 @@
       },
       {"name": "SAUTEKH NECRON PHALANXES",
          "formations": [
-            {"id": 600, "name": "Warrior Phalanx", "pts": 25, "upgrades": [50,21,22,23,24,25,5]},
-            {"id": 601, "name": "Warrior Phalanx in Ghost Arks", "pts": 25, "upgrades": [21,22,23,24,25,5]},
+            {"id": 600, "name": "Warrior Phalanx", "pts": 25, "upgrades": [50,21,22,23,24,5]},
+            {"id": 601, "name": "Warrior Phalanx in Ghost Arks", "pts": 25, "upgrades": [21,22,23,24,25,7,5]},
             {"id": 602, "name": "Immortal Phalanx", "pts": 250, "upgrades": [21,22,23,24,25,5]}
          ]
       },
       {"name": "SAUTEKH NECRON SUPPORT FORMATIONS",
          "formations": [
-            {"id": 700, "name": "Iudicium Maniple", "pts": 250, "upgrades": [1,3]},
+            {"id": 700, "name": "Iudicium Maniple", "pts": 250, "upgrades": [3]},
             {"id": 701, "name": "Eques Maniple", "pts": 300, "upgrades": [1]},
             {"id": 702, "name": "Monolith Maniple", "pts": 175, "upgrades": [26,27]},
             {"id": 703, "name": "Venator Maniple", "units":"6 Flayed Ones units", "pts": 200, "upgrades": [22]},
@@ -29,7 +29,8 @@
       },
       {"name": "SAUTEKH NECRON HARVESTERS AND AIRCRAFT",
          "formations": [
-            {"id": 800, "name": "Harvester Engine", "pts": 600},
+            {"id": 800, "name": "Aeonic Orb", "pts": 600},
+			{"id": 809, "name": "Abattoir", "pts": 700},
             {"id": 801, "name": "Spacecraft", "units":"1 Scythe Class Harvester", "pts": 250},
             {"id": 802, "name": "Warbarques", "units":"1 Warbarque", "pts": 300},
             {"id": 803, "name": "Pylon", "pts": 25, "upgrades": [72]},
@@ -47,6 +48,7 @@
       {"id": 4, "name": "Necron Overlord in Command Barge", "pts": 75},
       {"id": 5, "name": "Cryptek character", "pts": 50},
 	  {"id": 6, "name": "Necron Overlord", "pts": 75},
+	  {"id": 7, "name": "Doomsday Ark", "pts": 50},
 
       {"id": 20, "name": "3 Ghost Arks", "pts": 75},
       {"id": 21, "name": "Tomb Spyder", "pts": 50},
@@ -62,9 +64,9 @@
       {"id": 52, "name": "7 Immortal units", "pts": 50},
       {"id": 53, "name": "8 Immortal units", "pts": 75},
 
-      {"id": 54, "name": "4 Doomsday Ark units", "pts": 0},
-      {"id": 55, "name": "5 Doomsday Ark units", "pts": 50},
-      {"id": 56, "name": "6 Doomsday Ark units", "pts": 100},
+      {"id": 54, "name": "5 Doomsday Ark units", "pts": 0},
+      {"id": 55, "name": "5 Obelisk units", "pts": 0},
+      {"id": 56, "name": "5 Annihilation Barge units", "pts": 0},
 
       {"id": 57, "name": "Destroyer", "pts": 0},
       {"id": 58, "name": "Heavy Destroyer", "pts": 0},
@@ -75,8 +77,6 @@
       {"id": 62, "name": "5 Triarch Praetorian Units", "pts": 75},
       {"id": 63, "name": "6 Triarch Praetorian Units", "pts": 125},
 
-      {"id": 70, "name": "Abattoir", "pts": 0},
-      {"id": 71, "name": "Aeonic Orb", "pts": 0},
       {"id": 72, "name": "Pylon", "pts": 175},
       {"id": 73, "name": "Doom Scythe", "pts": 100},
 	  {"id": 74, "name": "Monolith", "pts": 75},
@@ -88,7 +88,8 @@
       {"max": 1, "from": [801]},
       {"max": 2, "from": [802]},
       {"max": 1, "from": [804]},
-      {"maxPercent": 33.4, "name": "Harvesters and Aircraft", "from": [800,801,802,803,804,805,806,807]},
+	  {"max": 1, "from": [809]},
+      {"maxPercent": 33.4, "name": "Harvesters and Aircraft", "from": [800,801,802,803,804,805,806,807,809]},
       {"max": 3, "name": "Support Formations", "from": [700,701,702,703,704,705,706,707,708], "forEach": [600,601,602], "name2": "Necron Phalanx"}
    ],
    "upgradeConstraints": [
@@ -115,13 +116,12 @@
       {"min": 6,"max": 6, "from": [50], "appliesTo": [601]},
       {"min": 1,"max": 1, "from": [51,52,53], "appliesTo": [602]},
 
-      {"max": 1, "from": [1,3], "name":"lord", "appliesTo": [700]},
+      {"max": 1, "from": [1,3], "name": "lord", "appliesTo": [700]},
       {"min": 1,"max": 1, "from": [54,55,56], "appliesTo": [700]},
       {"min": 6,"max": 6, "from": [57,58], "appliesTo": [701]},
       {"min": 1,"max": 1, "from": [59], "appliesTo": [702]},
       {"min": 1,"max": 1, "from": [61,62,63], "appliesTo": [705]},
 
-      {"min": 1,"max": 1, "from": [70,71], "appliesTo": [800]},
       {"min": 1,"max": 1, "from": [72], "appliesTo": [803]},
       {"min": 2,"max": 3, "from": [73], "appliesTo": [805]}
    ]
