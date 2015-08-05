@@ -1,5 +1,5 @@
 {"id":"Gargant Bigmob",
-        "version":"3.2 - Developmental",
+        "version":"3.2.1 - Developmental",
  "notes":["Each Mega or Great Gargant taken allows you to purchase up to 4 non-gargant mobs, each Gargant taken allows you to purchase up to 3 non-gargant mobs"],    "by":"Kyussinchains",
        
 "sections":[
@@ -7,8 +7,8 @@
 {"name":"GARGANT MOB", "formations":[
                        
 {"id":532, "name":"Mega Gargant",               "pts":1050, "upgrades":[11,12,13,14,16,17,34]},
-{"id":533, "name":"Great Gargant",              "pts":675, "upgrades":[11,12,13,14,16,17,34,36,37,38,39,40,41,43]},
-{"id":534, "name":"Gargant",                    "pts":500, "upgrades":[11,12,13,14,16,17,36,37,38,39,40,41,43]}]},
+{"id":533, "name":"Great Gargant",              "pts":650, "upgrades":[11,12,13,14,16,17,34,36,37,38,39,40,41,43]},
+{"id":534, "name":"Gargant",                    "pts":475, "upgrades":[11,12,13,14,16,17,36,37,38,39,40,41,43]}]},
 
 {"name":"NON-GARGANT MOBS", "formations":[
 {"id":535, "name":"Supa Stompa",       "pts":175, "upgrades":[11,12,13,14,16,17,36,37,38,39,40,41,43]},
