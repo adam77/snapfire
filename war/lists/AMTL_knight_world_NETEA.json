@@ -1,15 +1,15 @@
 {
   "id":"Knight World",
-  "version":"NetEA v2.2.1 *APPROVED*",
+  "version":"NetEA v2.2.2 *APPROVED*",
   "by":"Dave",
   "notes":["Up to a quarter of the points available may be spent on Imperial Navy Aircraft formations."],
   "sections":[
     {"name":"Knight Households", "formations":[
-      {"id":500, "name":"Knight Household", "pts":30, "upgrades":[8,10,2,13]}
+      {"id":500, "name":"Knight Household", "pts":30, "upgrades":[8,10,13,2]}
     ]},
     {"name":"Support Households", "formations":[
       {"id":510, "name":"Custodian Household", "pts":30, "upgrades":[6,7,13]},
-      {"id":511, "name":"Lancer Household", "pts":30, "upgrades":[9,2,13]},
+      {"id":511, "name":"Lancer Household", "pts":30, "upgrades":[9,13,2]},
       {"id":512, "name":"Warden Household", "pts":20, "upgrades":[16,13]}
     ]},
     {"name":"Support Levy", "formations":[
@@ -25,13 +25,13 @@
   ],
   "upgrades":[
     {"id":1, "name":"Aspirant", "pts":25},
-    {"id":2, "name":"Baron", "pts":110},
+    {"id":2, "name":"Baron", "pts":200},
     {"id":3, "name":"3 Gun Emplacements", "pts":0},
     {"id":4, "name":"3 Gun Transporters", "pts":0},
     {"id":5, "name":"2 Infantry Levy", "pts":25},
     {"id":6, "name":"Knight Castellan", "pts":115},
     {"id":7, "name":"Knight Crusader", "pts":115},
-    {"id":8, "name":"Knight Errant", "pts":90},
+    {"id":8, "name":"Knight Errant", "pts":100},
     {"id":9, "name":"Knight Lancer", "pts":90},
     {"id":10, "name":"Knight Paladin", "pts":90},
     {"id":11, "name":"Rapier", "pts":25},
