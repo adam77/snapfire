@@ -5,18 +5,18 @@
   "notes":["Up to a third of the points available may be spent on Imperial Navy Aircraft and Titan Legion Battlegroup formations."],
   "sections":[
     {"name":"Knight Households", "formations":[
-      {"id":500, "name":"Knight Household", "pts":30, "upgrades":[8,10,2,13]}
+      {"id":500, "name":"Knight Household", "pts":30, "upgrades":[8,10,13,2]}
     ]},
     {"name":"Support Households", "formations":[
-      {"id":510, "name":"Castigator Household", "pts":30, "upgrades":[16,2,13]},
+      {"id":510, "name":"Castigator Household", "pts":30, "upgrades":[16,13,2]},
       {"id":511, "name":"Custodian Household", "pts":30, "upgrades":[6,7,13]},
       {"id":512, "name":"Lancer Household", "pts":30,
-      "upgrades":[9,2,13]}
+      "upgrades":[9,13,2]}
     ]},
     {"name":"Support Levy", "formations":[
       {"id":520, "name":"Artillery Battery", "pts":250, "units":"3 Basilisks", "upgrades":[]},
       {"id":521, "name":"Flak Battery", "pts":150, "units":"3 Hydras", "upgrades":[]},
-      {"id":522, "name":"Infantry Platoon", "pts":175, "units":"1 Commander, 8 Infantry", "upgrades":[1,5,14,11,15]},
+      {"id":522, "name":"Infantry Platoon", "pts":175, "units":"1 Commander, 8 Infantry", "upgrades":[5,14,11,15,1]},
       {"id":523, "name":"Sentinel Squadron", "pts":125, "units":"4 Sentinels", "upgrades":[]}
     ]},
     {"name":"Imperial Navy Aircraft", "formations":[
@@ -32,7 +32,7 @@
   ],
   "upgrades":[
     {"id":1, "name":"Commissar", "pts":25},
-    {"id":2, "name":"Baron", "pts":110},
+    {"id":2, "name":"Baron", "pts":200},
     {"id":5, "name":"2 Infantry", "pts":25},
     {"id":6, "name":"Knight Castellan", "pts":115},
     {"id":7, "name":"Knight Crusader", "pts":115},
@@ -46,7 +46,7 @@
     {"id":16, "name":"Knight Castigator", "pts":90}
   ],
   "formationConstraints":[
-    {"max":1, "name":"Support Household", "from":[511,512,510], "forEach":[500], "name2":"Knight Household"},
+    {"max":1, "name":"Support Household", "from":[510,511,512], "forEach":[500], "name2":"Knight Household"},
     {"max":1, "name":"Support Levy", "from":[520,521,522,523], "forEach":[500], "name2":"Knight Household"},
     {"maxPercent":33.334, "name":"Imperial Ally Formations", "from":[530,531,540,541,542,543]}
   ],
@@ -63,7 +63,7 @@
     {"max":1, "from":[1], "appliesTo":[522]},
     {"max":2, "from":[5], "appliesTo":[522]},
     {"max":8, "from":[11], "appliesTo":[522]},
-    {"max":1, "from":[15], "appliesTo":[522]},
-    {"max":2, "from":[14], "appliesTo":[522]}
+    {"max":2, "from":[14], "appliesTo":[522]},
+    {"max":1, "from":[15], "appliesTo":[522]}
   ]
 }
