@@ -1,7 +1,7 @@
 {
    "id": "Tau Third Phase Expansion",
    "version": "6.8 Approved",
-   "by": "Iron Bloke, latest edit 2015-06-11 Kyussinchains",
+   "by": "Iron Bloke, latest edit 2015-08-16 Kyrt",
    "sections": [
       { "name": "CADRES",
          "formations": [
@@ -82,7 +82,7 @@
       {"max": 1,"from": [34,35,36],"appliesTo": [532,531,512,515,513],"name": "Drone"},
       {"max": 1,"from": [60],"appliesTo": [531]},
       {"max": 1,"min": 1,"from": [31,32,64,65,66,67],"appliesTo": [531],"name": "Warriors"},
-      {"max": 1,"from": [55],"appliesTo": [531]},
+      {"max": 1,"from": [55],"appliesTo": [531,516]},
       {"max": 1,"from": [61],"appliesTo": [531]},
       {"max": 1,"from": [54],"appliesTo": [531,512,515]},
       {"max": 1,"from": [56,57],"appliesTo": [531]},
