@@ -61,10 +61,9 @@
 		{"id":82, "name":"Veteran Princeps",		"pts":25},
 		{"id":83, "name":"Carapace Multi-Lasers",	"pts":50},
 		{"id":84, "name":"Sacred Icon",			"pts":50},
-		{"id":213, "name":"Minorus with Inferno Gun", 			"pts":125},
+		
 		{"id":214, "name":"Minorus with Vulcan Megabolter",		"pts":125},
-		{"id":215, "name":"Minorus with Plasma Blastgun",		"pts":125},
-		{"id":216, "name":"Minorus with Turbo-laser Destructor",	"pts":150},
+		
 		{"id":230, "name":"Minorus with Apocalypse Missile Launcher",	"pts":150},
 		{"id":225, "name":"Minorus with Laser Burner",			"pts":125},
 		{"id":226, "name":"Minorus with Corvus Assault Pod",		"pts":125},
@@ -100,7 +99,7 @@
 		{"min":1, "max":1, "from":[110,111,112], "appliesTo":[572]},
 		{"min":3, "max":3, "from":[13,14,15,16,25,26,27,28,29,30,31,32,33,34,35,36,37], "appliesTo":[504]},
 		{"min":4, "max":4, "from":[13,14,15,16,25,26,27,28,29,30,31,32,33,34,35,36,37], "appliesTo":[503]},
-		{"max":3, "from":[103,104,105,213,214,215,216,225,226,227,228,229,231,232,233,234,235,237,238], "appliesTo":[563,566,567]},
+		{"max":3, "from":[103,104,105,214,225,226,227,228,229,231,232,233,234,235,237,238], "appliesTo":[563,566,567]},
 		{"max":1, "from":[80]},
 		{"max":1, "from":[82]},
 		{"max":1, "from":[83]},
