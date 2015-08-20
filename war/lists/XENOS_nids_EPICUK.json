@@ -60,7 +60,7 @@
 		{"id":25, "name":"Genestealer", "pts":25},
 		{"id":26, "name":"Spore Mine Cluster", "pts":50},
 		{"id":27, "name":"Lictor", "pts":35},
-                {"id":28, "name":"Ravener", "pts":30},
+                {"id":28, "name":"Ravener", "pts":35},
                 {"id":29, "name":"Zoanthrope", "pts":35}
 	],
 	"formationConstraints":[
