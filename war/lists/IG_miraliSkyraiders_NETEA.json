@@ -25,9 +25,9 @@
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
 			{"id":521, "name":"Thunderbolt Flight",				"pts":150, "upgrades":[], "units":"2 Thunderbolt Fighters"},
-			{"id":522, "name":"Lightning Strike Flight",		"pts":150, "upgrades":[], "units":"2 Lightning Strike Fighters"},
-			{"id":523, "name":"Marauder",						"pts":250, "upgrades":[], "units":"1 Marauder Heavy Bomber"},
-			{"id":524, "name":"Marauder Destroyer",				"pts":250, "upgrades":[], "units":"1 Mirali Heavy Marauder Destroyer"}
+			{"id":522, "name":"Lightning Strike Flight",		"pts":200, "upgrades":[], "units":"2 Lightning Strike Fighters"},
+			{"id":523, "name":"Marauder",						"pts":150, "upgrades":[], "units":"1 Marauder Heavy Bomber"},
+			{"id":524, "name":"Marauder Destroyer",				"pts":175, "upgrades":[], "units":"1 Mirali Heavy Marauder Destroyer"}
 		]}
 	],
 	"upgrades":[
