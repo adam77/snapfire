@@ -1,27 +1,30 @@
 {
 	"id":"Thousand Sons",
-	"version":"5.X",
+	"version":"6.0.2",
 	"by":"Kyussinchains",
 	"notes":["This list is rated 'Under Development'","If taking Dreadclaws, you must take just enough to transport the entire formation.", "Each unit can take a maximum of 4 types of upgrades","List must contain at least one Rubric Fellowship formation."],
 	"sections":[
+		{"name":"Individuals", "formations": [
+			{ "id":541, "name":"Wraithgate", "pts":50, "upgrades":[] }
+		]},
 		{"name":"Daemon Pool", "formations": [
 			{ "id":500, "name":"Thousand Sons Daemon Pool", "pts":0, "upgrades":[24,25] }
 		]},
 		{"name":"Thousand Sons Retinues", "formations": [
 			{ "id":501, "name":"Scarab Occult", "pts":400, "units":"5 Thousand Sons Adeptus", "upgrades":[13,14,15,16,17,18,19,20] },
-			{ "id":502, "name":"Ahriman's Chosen", "pts":450, "units":"Sorcerer Lord, 9 Thousand Sons Marines units. All have the Teleport ability", "upgrades":[] },
-			{ "id":503, "name":"Rubric Fellowship", "pts":275, "units":"Sorcerer Lord, 6 Thousand Sons Marines units.", "upgrades":[13,14,15,16,17,18,19,20] },
+			{ "id":502, "name":"Ahriman's Chosen", "pts":450, "units":"Sorcerer, 9 Thousand Sons Marines units. All have the Teleport ability", "upgrades":[] },
+			{ "id":503, "name":"Rubric Fellowship", "pts":275, "units":"Sorcerer, 6 Thousand Sons Marines units.", "upgrades":[13,14,15,16,17,18,19,20] },
 			{ "id":504, "name":"Thousand Sons Armor", "pts":0, "upgrades":[21,19,14,15] },
 			{ "id":505, "name":"Silver Tower Company", "pts":0, "upgrades":[22] }
 		]},
 		{"name":"Thousand Sons Support Formatons", "formations": [
-			{ "id":511, "name":"Thousand Sons Warcoven", "pts":10, "units":"Sorcerer Lord", "upgrades":[23,13,14,15,16,19,20] },
-			{ "id":512, "name":"Sekhmet Disc Riders", "pts":325, "units":"Sorcerer Lord, 9 Disc Riders", "upgrades":[13] },
+			{ "id":511, "name":"Thousand Sons Warcoven", "pts":10, "units":"Sorcerer", "upgrades":[23,13,14,15,16,19,20] },
+			{ "id":512, "name":"Sekhmet Disc Riders", "pts":325, "units":"Sorcerer, 9 Disc Riders", "upgrades":[13] },
 			{ "id":513, "name":"Neophyte Class", "pts":175, "units":"One Thousand Sons Preceptor, 9 Neophyte units", "upgrades": [13,17,18,20] }
 		]},
 		{"name":"War Engines of Tzeentch", "formations":[
-			{ "id":521, "name":"Greater Spires of Tzeentch", "pts":0, "upgrades":[26] },
-			{ "id":522, "name":"Warp Palace of Tzeentch", "pts":550, "upgrades":[] }
+			{ "id":521, "name":"Greater Spires of Tzeentch", "pts":0, "upgrades":[26,13,20] },
+			{ "id":522, "name":"Warp Palace of Tzeentch", "pts":550, "upgrades":[13,20] }
 		]},
 		{"name":"Chaos Navy and Spacecraft", "formations":[
 			{ "id":531, "name":"Doomwing fighters", "pts":150, "units":"3 Doomwing Fighters", "upgrades":[] },
@@ -40,19 +43,21 @@
 		{ "id":17, "name":"Icon Bearer", "pts":25 },
 		{ "id":18, "name":"Rhino", "pts":10 },
 		{ "id":19, "name":"Land Raider", "pts":75 },
-		{ "id":20, "name":"Thrall Characters", "pts":20 },
+		{ "id":20, "name":"Thralls", "pts":20 },
 		{ "id":21, "name":"Predator", "pts":50 },
 		{ "id":22, "name":"Silver Tower", "pts":90 },
 		{ "id":23, "name":"Thousand Sons Terminator", "pts":85 },
 		{ "id":24, "name":"Greater daemon (Lord of Change)", "pts":50 },
 		{ "id":25, "name":"Lesser Daemons (Horror, Screamer, Flamer and Daemonic Beast units)", "pts":15 },
 		{ "id":26, "name":"Greater Spire of Tzeentch", "pts":200 },
-		{ "id":27, "name":"Firelord Bombers", "pts":150 }
+		{ "id":27, "name":"Firelord Bombers", "pts":150 },
+		{ "id":28, "name":"Sorcerer", "pts":0 }
 	],
 	"formationConstraints":[
 		{"max":1, "from":[501]},
 		{"max":1, "from":[502]},
 		{"min":1, "from":[503]},
+		{"max":1, "from":[541]},
 		{"max":1, "name":"spaceship","from":[533,534]},
 		{"max":2, "name":"Support formations", "from":[511,512,513], "forEach":[503], "name2":"Rubric Fellowship"},
 		{"maxPercent":33, "name":"Chaos Navy and Titan Formations", "from":[521,522,523,531,532,533,534]}
