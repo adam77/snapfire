@@ -60,7 +60,7 @@
 	"formationConstraints":[
                 {"maxPercent":33, "name":"Titans & Navy", "from":[519,520,522,523,524]},
 		{"max":1, "perArmy":true, "from":[512]},
-		{"max":3, "name":"Support Formations", "from":[500,501,502,505,506,507,508,509,510], "forEach":[512,513,514,515,516,517], "name2":"Company"},
+		{"max":2, "name":"Support Formations", "from":[500,501,502,505,506,507,508,509,510], "forEach":[512,513,514,515,516,517], "name2":"Company"},
 		{"max":1, "perArmy":true, "from":[506]},
 		{"max":1, "perArmy":true, "from":[508]}		
 	],
