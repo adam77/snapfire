@@ -14,8 +14,8 @@
 			{"id":107, "name":"Predators", "pts":0, "upgrades":[11,12,13,14,19,15]},
 			{"id":108, "name":"Scout", "pts":150, "units":"4 Scouts plus Transport", "upgrades":[11,12,13,14,21,22,28]},
 			{"id":109, "name":"Spaceship", "pts":0, "upgrades":[29,30]},
-			{"id":110, "name":"Tactical", "pts":300, "units":"6 Tactical units plus Transport", "upgrades":[11,12,13,14,18,19,15,21,22]},
-			{"id":111, "name":"Terminator", "pts":350, "units":"4 Terminator units", "upgrades":[11,12,13,14,18,20,15]},
+			{"id":110, "name":"Tactical", "pts":300, "units":"6 Tactical units plus Transport", "upgrades":[11,12,13,14,18,34,19,15,21,22]},
+			{"id":111, "name":"Terminator", "pts":350, "units":"4 Terminator units", "upgrades":[11,12,13,14,18,34,20,15]},
 			{"id":112, "name":"Thunderhawk", "pts":200, "units":"1 Thunderhawk gunship"},
 			{"id":113, "name":"Vindicator", "pts":250, "units":"4 Vindicators", "upgrades":[11,12,13,14,19]},
 			{"id":114, "name":"Whirlwind", "pts":300, "units":"4 Whirlwinds", "upgrades":[11,12,13,14,19]}
@@ -40,14 +40,14 @@
 		{"id":15, "name":"Vindicators", "pts":50},
 		{"id":16, "name":"Attack Bikes", "pts":0},
 		{"id":17, "name":"Bikes", "pts":0},
-		{"id":18, "name":"Dreadnoughts", "pts":50},
+		{"id":18, "name":"Dreadnought CC", "pts":50},
 		{"id":19, "name":"Hunter", "pts":75},
 		{"id":20, "name":"Land Raider", "pts":75},
 		{"id":21, "name":"Razorback HB", "pts":25},
 		{"id":22, "name":"Razorback LAS", "pts":25},
 		{"id":23, "name":"Land Speeder", "pts":40},
-		{"id":24, "name":"Tornado", "pts":40},
-		{"id":25, "name":"Typhon", "pts":50},
+		{"id":24, "name":"Land Speeder Tornado", "pts":40},
+		{"id":25, "name":"Land Speeder Typhoon", "pts":50},
 		{"id":26, "name":" 2 x Predator Destructors", "pts":112.5},
 		{"id":27, "name":" 2 x Predator Annihilators", "pts":137.5},
 		{"id":28, "name":"Snipers", "pts":50},
@@ -55,7 +55,8 @@
 		{"id":30, "name":"Battle Barge", "pts":350},
 		{"id":31, "name":"Death Company Dreadnought", "pts":75},
 		{"id":32, "name":"Jump packs", "pts":50},
-		{"id":33, "name":"plus Transport", "pts":0}
+		{"id":33, "name":"plus Transport", "pts":0},
+		{"id":34, "name":"Dreadnought AC", "pts":50}
 	],
 	"formationConstraints":[
 		{"maxPercent":33, "name":"Titan/Air",
@@ -71,7 +72,7 @@
 		{"max":1, "perArmy":true, "from":[14]},
 		{"max":2, "from":[15], "appliesTo":[101,104,107,110,111,115]},
 		{"min":5, "max":5, "from":[17,16], "appliesTo":[102]},
-		{"max":2, "from":[18], "appliesTo":[110,111]},
+		{"max":2, "from":[18,34], "appliesTo":[110,111]},
 		{"max":1, "from":[19], "appliesTo":[104,107,110,113,114,115]},
 		{"min":5, "max":5, "from":[23,24,25], "appliesTo":[105]},
 		{"min":2, "max":2, "from":[26,27], "appliesTo":[107]},
@@ -80,6 +81,7 @@
 		{"max":1, "perArmy":true, "from":[29,30]},
 		{"max":6, "from":[21,22], "appliesTo":[110]},
 		{"max":4, "from":[20], "appliesTo":[111]},
-		{"min":1, "max":1, "from":[33,32], "appliesTo":[116]}
+		{"min":1, "max":1, "from":[33,32], "appliesTo":[116]},
+		{"max":1, "from":[28]}
 	]
 }

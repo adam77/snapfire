@@ -5,13 +5,13 @@
 	"notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1) The formation may be dropped from a purchansed Space Ship at no additional cost. 2) It may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 3) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders (These must be used to transport any Wolf Guard units first). Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks."],
 	"sections":[
 		{"name":"Great Company", "formations":[
-			{"id":501, "name":"Great Company", "pts":325, "units":"8 Grey Hunter units plus transport", "upgrades":[10,13,16,21,35,39,36,37,40,38]}
+			{"id":501, "name":"Great Company", "pts":325, "units":"8 Grey Hunter units plus transport", "upgrades":[10,13,16,21,37,40,38,35,39,36,47,48,49]}
 		]},
 		{"name":"SPACE WOLVES PACKS", "formations":[
 			
 			{"id":512, "name":"Wolf Scouts", "pts":175, "upgrades":[27,28,29,30,34], "units":"4 Wolf Scouts plus transport"},
-			{"id":513, "name":"Long Fangs", "pts":300, "upgrades":[10,27,28,29,30,38,55,35,39,36], "units":"4 Long Fangs units plus transport"},
-			{"id":514, "name":"Blood Claws", "pts":250, "upgrades":[27,28,29,30,39,36,35,41], "units":"6 Blood Claws units plus transport"},
+			{"id":513, "name":"Long Fangs", "pts":300, "upgrades":[10,27,28,29,30,38,55,35,39,36,47,48,49], "units":"4 Long Fangs units plus transport"},
+			{"id":514, "name":"Blood Claws", "pts":250, "upgrades":[27,28,29,30,41,35,39,36,47,48,49], "units":"6 Blood Claws units plus transport"},
 			{"id":516, "name":"Swift Claws", "pts":200, "upgrades":[27,28,29,30]},
 			{"id":517, "name":"Fenrisian Wolves", "pts":150, "upgrades":[27,28,29,30], "units":"5 Fenrisian Wolves units"}
 		]},
@@ -56,8 +56,11 @@
 		{"id":33, "name":"Attack Bikes", "pts":0},		
 		{"id":34, "name":"Sniper (all space wolves scout units in the formation gain the sniper ability)", "pts":50},
 		{"id":35, "name":"Venerable Dreadnought", "pts":75},
-		{"id":39, "name":"Dreadnought", "pts":50},
-		{"id":36, "name":"2 Dreadnoughts", "pts":100},
+		{"id":39, "name":"Dreadnought PF", "pts":50},
+		{"id":36, "name":"Dreadnought LAS", "pts":50},
+		{"id":47, "name":"2x Dreadnought PF", "pts":100},
+		{"id":48, "name":"2x Dreadnought LAS", "pts":100},
+		{"id":49, "name":"Dreadnought PF, Dreadnought LAS", "pts":100},
 		{"id":37, "name":"Vindicator", "pts":50},
 		{"id":40, "name":"2 Vindicators", "pts":100},
 		{"id":41, "name":"Jump Packs (all infantry units gain a speed of 30cm and the jump packs ability but lose the plus transport rule)", "pts":0},
@@ -89,7 +92,7 @@
 		{"max":1, "from":[13]},
 		{"max":1, "from":[14]},
 		{"max":1, "from":[15]},
-		{"max":1, "from":[39,36,35]},
+		{"max":1, "from":[39,36,35,47,48,49]},
 		{"max":1, "from":[40,37]},
 		{"max":1, "from":[17]},
 		{"max":1, "from":[31]},
