@@ -1,0 +1,95 @@
+{
+	"id":"EpicUK Squats",
+	"version":"EpicUK 191115",
+	"notes":[
+		"If transport Upgrade is chosen, then you must take exactly enough transports of only one kind to transport all units in the formation."
+	],
+	"by":"Iron Bloke, last update 2013-10-29 Parintachin",
+	"sections":[
+		
+		{"name":"SQUAT BROTHERHOODS & GUILDS", "formations":[
+			{"id":501, "name":"Warrior Brotherhood", 	"pts":250, "upgrades":[1,2,3,4,7,8,9,14,50] },
+			{"id":502, "name":"Berzerker Brotherhood", 	"pts":200, "upgrades":[1,2,3,4,7,8], "units":"1 Hearthguard unit and 7 Berzerker units"}
+		]},
+		{"name":"SQUAT SUPPORT FORMATIONS", "formations":[
+			{"id":511, "name":"Heavy Support", 	"pts":200, "upgrades":[50]},
+			{"id":514, "name":"Thunderfire", 	"pts":175,"units":"3 Thunderfire cannons plus transport"},
+			{"id":515, "name":"Thunderer", 	"pts":200, "units":"4 Thunderer units plus transport", "upgrades":[50]},
+			{"id":518, "name":"Overlord", 	"pts":25, "upgrades":[20]},
+			{"id":516, "name":"Bikers", 	"pts":225},
+			{"id":517, "name":"Iron Eagle", "units":"4 Iron Eagles", "pts":200}
+		]},
+		{"name":"WAR ENGINE FORMATIONS", "formations":[
+			
+			{"id":531, "name":"Goliath", 	"pts":300},
+			{"id":532, "name":"Leviathan", 	"pts":350, "units":"1 Leviathan","upgrades":[9]},
+			{"id":533, "name":"Colossus", 	"pts":475, "units":"1 Colossus","upgrades":[9]},
+			{"id":534, "name":"Cyclops", 	"pts":475, "units":"1 Cyclops","upgrades":[9]},
+			{"id":535, "name":"Land Train", "pts":200, "units":"1 Land Train Engine","upgrades":[9,30,31,32,33]}
+		]}
+	],
+	"upgrades":[
+		{"id":1, "name":"Rhinos", "pts":0},
+		{"id":2, "name":"Termite Tunnellers", "pts":0},
+		{"id":3, "name":"2 Mole Tunnellers", "pts":100},
+		{"id":4, "name":"Hellbore Tunneller", "pts":125},
+
+		{"id":5, "name":"Guildmaster", "pts":0},
+		{"id":6, "name":"Grand Warlord", "pts":50},
+
+		{"id":7, "name":"Warlord", "pts":50},
+		{"id":8, "name":"Grand Warlord", "pts":100},
+		{"id":9, "name":"Living Ancestor", "pts":25},
+
+		{"id":10, "name":"1 Hearthguard unit and 9 Warrior units", "pts":0},
+		{"id":11, "name":"1 Hearthguard unit and 13 Warrior units", "pts":75},
+		
+		{"id":14, "name":"2 Thunderer units", "pts":75},
+		{"id":15, "name":"Bike", "pts":0},
+		{"id":16, "name":"Trike", "pts":0},
+		
+		{"id":20, "name":"Overlord Airship", "pts":225},
+		{"id":21, "name":"Goliath Mega-Cannon", "pts":150},
+
+		{"id":30, "name":"Berserker Battle Car", "pts":75},
+		{"id":31, "name":"Bomb Battle Car", "pts":100},
+		{"id":32, "name":"Dragon Battle Car", "pts":75},
+		{"id":33, "name":"Mortar Battle Car", "pts":75},
+
+
+		{"id":50, "name":"4 Rapier units", "pts":100},
+	
+		
+		{"id":60, "name":"Robot", "pts":0},
+		{"id":61, "name":"Thudd Gun", "pts":0},
+		{"id":60, "name":"Tarantula", "pts":0},
+		{"id":61, "name":"Mole Mortar", "pts":0}
+
+
+	],
+	"formationConstraints":[
+		{"max":2, "name":"Support Formations", "from":[511,512,513,514,515,516,517], "forEach":[501,502], "name2":"Brotherhood"},
+		{"maxPercent":33, "name":"War Engine Formations", "from":[530,531,532,533,534,535]},
+		{"max":1, "from":[500]},
+		{"max":3, "from":[506]},
+		{"max":1, "from":[513]}
+
+	],
+	"upgradeConstraints":[
+		{"max":1, "name":"Warlord", "from":[7,8]},
+		{"max":1,  "from":[8], "perArmy": true},
+		{"max":1,  "from":[9], "perArmy": true},
+		{"max":1,  "from":[1,2,3,4], "appliesTo":[501,502]},
+		{"min":1, "max":1, "from":[10,11], "appliesTo":[501]},
+		{"max":1,  "from":[50], "appliesTo":[501,511,515]},
+		{"max":1,  "from":[14], "appliesTo":[501]},
+		{"min":6, "max":6, "from":[15,16], "appliesTo":[516]},
+		{"min":6, "max":6, "from":[60,61,62,63], "appliesTo":[511]},
+		{"max":3, "from":[16], "appliesTo":[516]},
+		{"min":1, "max":1, "from":[5,6], "appliesTo":[516]},
+		
+		{"min":1, "max":2, "from":[20], "appliesTo":[518]},
+		
+		{"min":2, "max":4, "from":[30,31,32,33], "appliesTo":[535]}
+	]
+}
