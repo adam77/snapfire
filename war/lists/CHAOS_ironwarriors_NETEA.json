@@ -1,6 +1,6 @@
 {
 	"id":"Iron Warriors",
-	"version":"NetEA v3.0 *UNDER DEVELOPMENT*",
+	"version":"NetEA v3.1 *UNDER DEVELOPMENT*",
 	"notes":["If a Daemon Prince is selected, then it replaces the unit with an Iron Warrior Lord."],
 	"by":"Onyx",
 	"sections":[
@@ -21,10 +21,9 @@
 		]},
 		{"name":"SIEGE SUPPORT 0-2 per Core formation", "formations":[
 			{"id":507, "name":"Armoured Company",	"pts":0, "upgrades":[27,28,54,66]},
-			{"id":508, "name":"Artillery Battery",	"pts":300, "units":"3 Chaos Basilisks", "upgrades":[64,66]},
+			{"id":508, "name":"Artillery Battery",	"pts":325, "units":"4 Chaos Basilisks", "upgrades":[64,66]},
 			{"id":509, "name":"Daemonic Artillery",	"pts":325, "units":"3 Daemonic Artillery units", "upgrades":[64,66]},
-			{"id":505, "name":"Super Heavy Company - Decimator", "pts":0, "upgrades":[25]},
-			{"id":506, "name":"Super Heavy Company - Stormsword", "pts":0, "upgrades":[65]}
+			{"id":505, "name":"Super Heavy Company - Decimator", "pts":0, "upgrades":[25]}
 		]},
 		{"name":"CHAOS NAVY", "formations":[
 			{"id":530, "name":"Hellblade Flight",	"pts":200, "units":"3 Fighters", "upgrades":[]},
@@ -33,7 +32,7 @@
 			{"id":533, "name":"Devastation Class Cruiser",	"pts":150, "upgrades":[]}, 
 			{"id":534, "name":"Despoiler Class Battleship","pts":250, "upgrades":[]}
 		]},
-		{"name":"DARK MECHANICUS", "formations":[
+		{"name":"DARK MECHANICUM", "formations":[
 			{"id":520, "name":"Siegelord Titan",		"pts":850, "upgrades":[]},
 			{"id":521, "name":"Ravager Titan",			"pts":650, "upgrades":[]},
 			{"id":522, "name":"Ordinatus Medrengard",			"pts":625, "upgrades":[]}
@@ -50,15 +49,14 @@
 		{"id":32, "name":"Iron Warrior Terminator", "pts":60},
 		{"id":25, "name":"Decimator", "pts":225},
 		{"id":53, "name":"Chaos Land Raider", "pts":75},
-		{"id":54,	"name":"Chaos Vindicator", "pts":35},
+		{"id":54, "name":"Chaos Vindicator", "pts":35},
 		{"id":57, "name":"Defiler", "pts":75},
 		{"id":58, "name":"Dreadclaw Drop Pod", "pts":5},
 		{"id":59, "name":"4 Havocs", "pts":150},
 		{"id":61, "name":"Obliterator", "pts":75},
 		{"id":62, "name":"Chaos Rhino", "pts":10},
 		{"id":63, "name":"Chaos Dreadnought", "pts":50},
-		{"id":64, "name":"3 Emplacements", "pts":25},
-		{"id":65, "name":"Stormsword", "pts":200},
+		{"id":64, "name":"Emplacements", "pts":25},
 		{"id":66, "name":"Stalker", "pts":50},
 		{"id":67, "name":"4 Iron Warrior Assault Marines", "pts":125},
 		{"id":68, "name":"Chaos Siege Dreadnought", "pts":50},
