@@ -18,9 +18,9 @@
 {"id":538, "name":"Loota Warband (Normal)",     "pts":125, "units":"6 Boyz, 2 Grotz", "upgrades":[11,12,13,14,15,17,18,19,20]},
 {"id":539, "name":"Loota Warband (Big)",        "pts":275, "units":"12 Boyz, 4 Grotz", "upgrades":[11,12,13,14,15,17,18,19,20]},
 {"id":540, "name":"Loota Warband (Huge)",       "pts":400, "units":"18 Boyz, 6 Grotz", "upgrades":[11,12,13,14,15,17,18,19,20]}
-{"id":, "name":"Killa Kanz Mob (Normal)",       "pts":0, "upgrades":[11,13,14,17]},
-{"id":, "name":"Killa Kanz Mob (Big)",       "pts":-25, "upgrades":[11,13,14,17]},
-{"id":, "name":"Killa Kanz Mob (Uge)",       "pts":-50, "upgrades":[11,13,14,17]},
+{"id":541, "name":"Killa Kanz Mob (Normal)",       "pts":0, "upgrades":[11,13,14,17]},
+{"id":542, "name":"Killa Kanz Mob (Big)",       "pts":-25, "upgrades":[11,13,14,17]},
+{"id":543, "name":"Killa Kanz Mob (Uge)",       "pts":-50, "upgrades":[11,13,14,17]},
 ]},
                
 {"name":"AVIATION", "formations":[
