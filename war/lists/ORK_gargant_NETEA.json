@@ -1,5 +1,5 @@
 {"id":"Gargant Bigmob",
-        "version":"3.2.1 - Developmental",
+        "version":"3.2.2 - Developmental",
  "notes":["Each Mega or Great Gargant taken allows you to purchase up to 4 non-gargant mobs, each Gargant taken allows you to purchase up to 3 non-gargant mobs"],    "by":"Kyussinchains",
        
 "sections":[
@@ -17,7 +17,11 @@
 {"id":562, "name":"Stompa Mob (Uge)",       "pts":-40, "upgrades":[11,12,13,14,16,17]},
 {"id":538, "name":"Loota Warband (Normal)",     "pts":125, "units":"6 Boyz, 2 Grotz", "upgrades":[11,12,13,14,15,17,18,19,20]},
 {"id":539, "name":"Loota Warband (Big)",        "pts":275, "units":"12 Boyz, 4 Grotz", "upgrades":[11,12,13,14,15,17,18,19,20]},
-{"id":540, "name":"Loota Warband (Huge)",       "pts":400, "units":"18 Boyz, 6 Grotz", "upgrades":[11,12,13,14,15,17,18,19,20]}]},
+{"id":540, "name":"Loota Warband (Huge)",       "pts":400, "units":"18 Boyz, 6 Grotz", "upgrades":[11,12,13,14,15,17,18,19,20]}
+{"id":, "name":"Killa Kanz Mob (Normal)",       "pts":0, "upgrades":[11,13,14,17]},
+{"id":, "name":"Killa Kanz Mob (Big)",       "pts":-25, "upgrades":[11,13,14,17]},
+{"id":, "name":"Killa Kanz Mob (Uge)",       "pts":-50, "upgrades":[11,13,14,17]},
+]},
                
 {"name":"AVIATION", "formations":[
                        
@@ -73,9 +77,9 @@
 
 "upgradeConstraints":[
                
-{"min":2, "name":"Lootas", "from":[11,12], "appliesTo":[538]},
-{"min":4, "name":"Lootas", "from":[11,12], "appliesTo":[539]},
-{"min":6, "name":"Lootas", "from":[11,12], "appliesTo":[540]},
+{"min":1, "name":"Lootas", "from":[11,12], "appliesTo":[538]},
+{"min":2, "name":"Lootas", "from":[11,12], "appliesTo":[539]},
+{"min":3, "name":"Lootas", "from":[11,12], "appliesTo":[540]},
 {"min":3, "max":3, "name":"Gargant Weapons", "from":[21,22,23,24,25,26,27,28,29,30,31,42], "appliesTo":[533,534]},
 {"max":2, "name":"Kustom Upgrades", "from":[36,37,38,39,40,43,41], "appliesTo":[533,534]},
 {"max":1, "name":"Kustom Upgrade", "from":[36,37,38,39,40,43,41], "appliesTo":[535]},
