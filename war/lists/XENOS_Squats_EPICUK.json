@@ -4,7 +4,7 @@
 	"notes":[
 		"If transport Upgrade is chosen, then you must take exactly enough transports of only one kind to transport all units in the formation."
 	],
-	"by":"Iron Bloke, last update 2013-10-29 Parintachin",
+	"by":"Kyussinchains",
 	"sections":[
 		
 		{"name":"SQUAT BROTHERHOODS & GUILDS", "formations":[
@@ -21,7 +21,7 @@
 		]},
 		{"name":"WAR ENGINE FORMATIONS", "formations":[
 			
-			{"id":531, "name":"Goliath", 	"pts":300},
+			{"id":531, "name":"Goliath", 	"pts":300, "units":"2 Goliath Mega Cannons"},
 			{"id":532, "name":"Leviathan", 	"pts":350, "units":"1 Leviathan","upgrades":[9]},
 			{"id":533, "name":"Colossus", 	"pts":475, "units":"1 Colossus","upgrades":[9]},
 			{"id":534, "name":"Cyclops", 	"pts":475, "units":"1 Cyclops","upgrades":[9]},
@@ -70,10 +70,7 @@
 	"formationConstraints":[
 		{"max":2, "name":"Support Formations", "from":[511,512,513,514,515,516,517], "forEach":[501,502], "name2":"Brotherhood"},
 		{"maxPercent":33, "name":"War Engine Formations", "from":[530,531,532,533,534,535]},
-		{"max":1, "from":[500]},
-		{"max":3, "from":[506]},
-		{"max":1, "from":[513]}
-
+		
 	],
 	"upgradeConstraints":[
 		{"max":1, "name":"Warlord", "from":[7,8]},
