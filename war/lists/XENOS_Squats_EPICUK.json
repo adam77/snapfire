@@ -69,7 +69,7 @@
 	],
 	"formationConstraints":[
 		{"max":2, "name":"Support Formations", "from":[511,512,513,514,515,516,517], "forEach":[501,502], "name2":"Brotherhood"},
-		{"maxPercent":33, "name":"War Engine Formations", "from":[530,531,532,533,534,535]},
+		{"maxPercent":33, "name":"War Engine Formations", "from":[530,531,532,533,534,535]}
 		
 	],
 	"upgradeConstraints":[
