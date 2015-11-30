@@ -4,23 +4,22 @@
 	"by":"uvenlord",
 	"sections":[
 		{"name":"CADIAN SHOCK COMPANIES", "formations":[
-			{"id":500, "name":"Cadian Infantry Company", "pts":250, "upgrades":[10,11,12,13,14,15,16,17,18,19], "units":"1 Imperial Guard Commander unit and 12 Imperial Guard units"},
-			{"id":501, "name":"Cadian Regimental Headquarters", "pts":550, "upgrades":[10,11,12,13,14,15,16,17,18,19], "units":"1 Imperial Guard Supreme Commander unit, 7 Kasrkin units and 1 Leviathan Mobile Command Centre"},
-			{"id":502, "name":"Cadian Whiteshield Company", "pts":200, "upgrades":[10,11,12,13,14,15,16,17,18,19], "units":"1 Imperial Guard Commander unit and 12 Imperial Guard units"},
-			{"id":503, "name":"Kasrkin Infantry Company", "pts":175, "upgrades":[10,11,12,13,14,15,16,17,18,19], "units":"1 Imperial Guard Commander unit and 7 Kasrkin units"}
+			{"id":500, "name":"Cadian Infantry Company", "pts":250, "upgrades":[10,11,12,13,14,15,16,17,18,19,20], "units":"1 Imperial Guard Commander unit and 12 Imperial Guard units"},
+			{"id":501, "name":"Cadian Regimental Headquarters", "pts":550, "upgrades":[10,11,12,13,14,15,16,17,18,19,20], "units":"1 Imperial Guard Supreme Commander unit, 7 Kasrkin units and 1 Leviathan Mobile Command Centre"},
+			{"id":502, "name":"Cadian Whiteshield Company", "pts":200, "upgrades":[10,11,12,13,14,15,16,17,18,19,20], "units":"1 Imperial Guard Commander unit and 12 Imperial Guard units"},
+			{"id":503, "name":"Kasrkin Infantry Company", "pts":175, "upgrades":[10,11,12,13,14,15,16,17,18,19,20], "units":"1 Imperial Guard Commander unit and 7 Kasrkin units"}
 		]},
 		{"name":"CADIAN SHOCK SUPPORT FORMATIONS", "formations":[
-			{"id":510, "name":"Airborne Kasrkin", "pts":300, "upgrades":[], "units":"1 Imperial Guard Commander unit, 7 Kasrkin units, and 4 Valkyries"},
-			{"id":511, "name":"Mechanized Platoon", "pts":300, "upgrades":[], "units":"10 Imperial Guard Infantry units and 5 Chimeras"},
-			{"id":512, "name":"Artillery Battery", "pts":250, "upgrades":[]},
-			{"id":513, "name":"Deathstrike Battery", "pts":200, "upgrades":[], "units":"2 Deathstrike Missile Launchers"},
-			{"id":514, "name":"Flak Battery", "pts":150, "upgrades":[], "units":"3 hydras"},
-			{"id":515, "name":"Griffon Platoon", "pts":200, "upgrades":[], "units":"6 Griffons"},
-			{"id":516, "name":"Hellhound Platoon", "pts":250, "upgrades":[], "units":"6 Hellhounds"},
-			{"id":517, "name":"Sentinel Squadron", "pts":100, "upgrades":[] },
-			{"id":518, "name":"Super Heavy Tank Platoon", "pts":200, "upgrades":[] },
-			{"id":519, "name":"Tank Platoon", "pts":400, "upgrades":[] },
-			{"id":520, "name":"Vulture Squadron", "pts":300, "upgrades":[], "units":"4 Vultures" }
+			{"id":510, "name":"Mechanized Kasrkin", "pts":250, "upgrades":[20], "units":"1 Imperial Guard Commander unit, 7 Kasrkin units"},
+			{"id":512, "name":"Artillery Battery", "pts":250, "upgrades":[20]},
+			{"id":513, "name":"Deathstrike Battery", "pts":200, "upgrades":[20], "units":"2 Deathstrike Missile Launchers"},
+			{"id":514, "name":"Flak Battery", "pts":150, "upgrades":[20], "units":"3 hydras"},
+			{"id":515, "name":"Griffon Platoon", "pts":200, "upgrades":[20], "units":"6 Griffons"},
+			{"id":516, "name":"Hellhound Platoon", "pts":250, "upgrades":[20], "units":"6 Hellhounds"},
+			{"id":517, "name":"Sentinel Squadron", "pts":125, "upgrades":[20], "units":"6 Cadian Sentinels"},
+			{"id":518, "name":"Super Heavy Tank Platoon", "pts":200, "upgrades":[20] },
+			{"id":519, "name":"Tank Platoon", "pts":400, "upgrades":[20] },
+			{"id":520, "name":"Vulture Squadron", "pts":300, "upgrades":[20], "units":"4 Vultures" }
 		]},
 		{"name":"ADEPTUS MECHANICUS", "formations":[
 			{"id":521, "name":"Warlord Class Titan",	"pts":825, "upgrades":[]},
@@ -44,12 +43,13 @@
 		{"id":17, "name":"Sanctioned Psykers (2 Sanctioned Psyker units)", "pts":50},
 		{"id":18, "name":"Snipers (1 Sniper unit)", "pts":25},
 		{"id":19, "name":"Snipers (2 Sniper units)", "pts":50},
+		{"id":20, "name":"Commissar", "pts":0},
 		
 		{"id":30, "name":"3 Basilisks", "pts":0},
 		{"id":31, "name":"3 Bombards", "pts":0},
 		{"id":32, "name":"3 Manticores", "pts":0},
-		{"id":33, "name":"4 Sentinels", "pts":0},
-		{"id":34, "name":"6 Cadian Sentinels", "pts":0},
+		{"id":33, "name":"4 Chimeras", "pts":0},
+		{"id":34, "name":"4 Valkyries", "pts":50},
 		{"id":35, "name":"Baneblade", "pts":0},
 		{"id":36, "name":"Shadowsword", "pts":0},
 		{"id":37, "name":"Stormsword", "pts":0},
@@ -58,19 +58,19 @@
 	],
 	"formationConstraints":[
 		{"max":1, "from":[501]},
+		{"max":1, "from":[502]},
 		{"max":1, "from":[522]},
-		{"max":1, "name":"Whiteshield Company", "from":[502], "forEach":[500], "name2":"Infantry Company"},
 		{"max":2, "name":"Support Formations", "from":[510,511,512,513,514,515,516,517,518,519,520], "forEach":[500,501,502,503], "name2":"Company"},
-		{"maxPercent":33, "name":"Imperial Allies formations", "from":[521,522,523,524,525,526]},
-		{"max":1, "name":"Fortification choice", "from":[530], "forEach":[500,501,502,503], "name2":"Cadian Shock Company"}
+		{"maxPercent":33, "name":"Imperial Allies formations", "from":[521,522,523,524,525,526]}
 	],
 	"upgradeConstraints":[
 		{"max":1, "from":[10,11]},
 		{"max":1, "from":[16,17]},
 		{"max":1, "from":[18,19]},
 		{"max":3, "name":"Upgrades", "from":[10,11,12,13,14,15,16,17,18,19]},
+		{"max":1, "name":"Upgrades", "from":[20]},
+		{"min":1, "max":1, "from":[33,34], "appliesTo":[510]},
 		{"min":1, "max":1, "from":[30,31,32], "appliesTo":[512]},
-		{"min":1, "max":1, "from":[33,34], "appliesTo":[517]},
 		{"min":1, "max":1, "from":[35,36,37], "appliesTo":[518]},
 		{"min":1, "max":1, "from":[38,39], "appliesTo":[519]}
 	]
