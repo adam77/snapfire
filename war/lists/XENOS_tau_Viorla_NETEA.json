@@ -73,8 +73,8 @@
          {"id": 80, "name": "4 Pathfinder units, 2 Devilfishes", "pts": 200 },
          {"id": 81, "name": "6 Pathfinder units", "pts": 200 },
          {"id": 82, "name": "6 Pathfinder units, 3 Devilfishes", "pts": 300 },
-         {"id": 85, "name": "6 Vespid Stingwing units ", "pts": 150 },
-         {"id": 86, "name": "9 Vespid Stingwing units ", "pts": 225 },
+         {"id": 95, "name": "6 Vespid Stingwing units ", "pts": 150 },
+         {"id": 96, "name": "9 Vespid Stingwing units ", "pts": 225 },
          
          {"id": 80,"name": "2 Hammerhead Gunships (Ionhead)","pts": 75},
          {"id": 81,"name": "1 Hammerhead Gunship (Rail- or Fusionhead)","pts": 50},
@@ -120,7 +120,7 @@
          { "max": 1, "min": 1, "from": [ 52, 53, 60 ], "appliesTo": [ 511 ] }, 
          { "max": 1, "min": 1, "from": [ 80, 81, 82 ], "appliesTo": [ 513 ] }, 
          { "max": 5, "min": 5, "from": [ 58, 59 ], "appliesTo": [ 514 ] } , 
-         { "max": 1, "min": 1, "from": [ 85, 86 ], "appliesTo": [ 519 ] } 
+         { "max": 1, "min": 1, "from": [ 95, 96 ], "appliesTo": [ 519 ] } 
       ]
    }
 
