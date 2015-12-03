@@ -18,9 +18,9 @@
 			{ "id":505, "name":"Silver Tower Company", "pts":0, "upgrades":[22] }
 		]},
 		{"name":"Thousand Sons Support Formatons", "formations": [
-			{ "id":511, "name":"Thousand Sons Warcoven", "pts":10, "units":"Sorcerer", "upgrades":[23,13,14,15,16,19,20] },
+			{ "id":511, "name":"Thousand Sons Warcoven", "pts":10, "units":"Sorcerer", "upgrades":[23,13,14,15,16,17,19,20] },
 			{ "id":512, "name":"Sekhmet Disc Riders", "pts":325, "units":"Sorcerer, 9 Disc Riders", "upgrades":[13] },
-			{ "id":513, "name":"Neophyte Class", "pts":175, "units":"One Thousand Sons Preceptor, 9 Neophyte units", "upgrades": [13,17,18,20] }
+			{ "id":513, "name":"Neophyte Class", "pts":175, "units":"One Sorcerer, 9 Neophyte units", "upgrades": [13,17,18,20] }
 		]},
 		{"name":"War Engines of Tzeentch", "formations":[
 			{ "id":521, "name":"Greater Spires of Tzeentch", "pts":0, "upgrades":[26,13,20] },
