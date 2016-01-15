@@ -33,7 +33,7 @@
 				"units":"1 Heirophant" },
 			{"id":534, "name":"Hydraphant Bio-titan", "pts":500,
 				"units":"1 Hydraphant" },
-			{"id":535, "name":"Lictor Swarm", "pts":50,
+			{"id":535, "name":"Lictor Swarm", "pts":75,
 				"upgrades":[27] },
 			{"id":536, "name":"Subterranean Swarm", "pts":250,
 				"upgrades":[28], "units":"1 Trygon and 2 Raveners" }
