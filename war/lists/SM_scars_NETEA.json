@@ -12,8 +12,8 @@
 			{"id":507, "name":"Scout",			"pts":150, "units":"4 Scouts", "upgrades":[15,16,17,18,33,34,11,12]},
 			{"id":509, "name":"Strike Cruiser",			"pts":200, "upgrades":[]},
 			{"id":510, "name":"Battle Barge",				"pts":350, "upgrades":[]}, 
-			{"id":511, "name":"Tactical",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,33,11,12]},
-			{"id":512, "name":"Terminator",		"pts":650, "units":"4 Terminators + 4 Land Raiders", "upgrades":[15,16,17,18]},
+			{"id":511, "name":"Tactical",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,33,11,12,31]},
+			{"id":512, "name":"Terminator",		"pts":650, "units":"4 Terminators + 4 Land Raiders", "upgrades":[15,16,17,18,31]},
 			{"id":513, "name":"Thunderhawk",				"pts":200, "upgrades":[]},
 			{"id":515, "name":"Whirlwinds",				"pts":300, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,31,35]}
 		]},
