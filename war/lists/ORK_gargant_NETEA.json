@@ -1,6 +1,6 @@
 {"id":"Gargant Bigmob",
         "version":"3.2.2 - Developmental",
- "notes":["Each Mega or Great Gargant taken allows you to purchase up to 4 non-gargant mobs, each Gargant taken allows you to purchase up to 3 non-gargant mobs"],    "by":"Kyussinchains",
+ "notes":["Each Mega or Great Gargant taken allows you to purchase up to 4 non-gargant mobs or aviation formations, each Gargant taken allows you to purchase up to 3 non-gargant mobs or aviation formations"],    "by":"Kyussinchains",
        
 "sections":[
                
@@ -53,7 +53,7 @@
 {"id":27, "name":"Mega Choppa",                 "pts":25},
 {"id":28, "name":"Mega Lobba",                  "pts":50},
 {"id":29, "name":"Ripper Fist",                 "pts":50},
-{"id":30, "name":"Snappa",                      "pts":50},
+{"id":30, "name":"Supa Skorcha",                "pts":50},
 {"id":31, "name":"Soopa Lifta Droppa",          "pts":50},
 {"id":42, "name":"Soopa Zzap Gun",              "pts":50},
 {"id":32, "name":"KillKrooza",                  "pts":150},
