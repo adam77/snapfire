@@ -1,46 +1,46 @@
 {
 	"id":"Death Korps of Krieg",
-	"version":"NetEA Tournament Pack 2014",
-	"by":"Iron Bloke, last update 2015-02-10 Kyussinchains",
+	"version":"NetEA DKoK 2.0",
+	"by":"Iron Bloke, Borka",
 	"sections":[
-		{"name":"DEATH KORPS COMPANIES", "formations":[
-			{ "id":503, "name":"Death Rider Company", "pts":250, "units":"12 Death Korps Rough Rider units", "upgrades":[114,109,105,120,111,102,121,122] },
-			{ "id":502, "name":"Infantry Company", "pts":300, "units":"Death Korps Commander, 19 Death Korps Infantry units", "upgrades":[114,107,109,105,111,120,102,121,122] },
-			{ "id":501, "name":"Regimental HQ", "pts":400, "units":"Death Korps Supreme Commander, 19 Death Korps Infantry units" , "upgrades":[114,107,109,105,111,120,102,121,122] }
+		{"name":"DEATH KORPS CORE COMPANIES", "formations":[
+			{ "id":501, "name":"Regimental HQ", "pts":400, "units":"Death Korps Supreme Commander, 19 Death Korps Infantry" , "upgrades":[102,107,105,108,109,111,114,121,122] },
+			{ "id":502, "name":"Infantry Company", "pts":300, "units":"Death Korps Commander, 19 Death Korps Infantry", "upgrades":[102,107,105,108,109,111,114,121,122] },
+			{ "id":503, "name":"Death Rider Company", "pts":275, "units":"12 Death Korps Rough Riders", "upgrades":[102,105,109,111,114,121,122] }
 		]},
-		{"name":"DEATH KORPS SUPPORT FORMATIONS", "formations":[
-			{ "id":521, "name":"Artillery Support Company", "pts":600, "units":"9 Earthshaker Platforms", "upgrades":[37,38] },
-			{ "id":519, "name":"Death Rider Scout Platoon", "pts":150, "units":"6 Death Korps Rough Rider units (with 'scout' ability)", "upgrades":[] },
-			{ "id":520, "name":"Deathstrike Silo", "pts":250, "units":"Death Korps Deathstrike Missile Silo", "upgrades":[] },
-			{ "id":512, "name":"Engineers Platoon", "pts":300, "units":"8  Death Korps Engineer units, Hades Breaching Drill", "upgrades":[] },
-			{ "id":511, "name":"Grenadiers Platoon", "pts":225, "units":"8 Death Korps Grenadier units", "upgrades":[51,52,53] },
+		{"name":"SUPPORT FORMATIONS", "formations":[
+			{ "id":511, "name":"Grenadiers Platoon", "pts":200, "units":"8 Death Korps Grenadiers", "upgrades":[51,53] },
+			{ "id":512, "name":"Engineers Platoon", "pts":250, "units":"8  Death Korps Engineers, Hades Breaching Drill", "upgrades":[] },
+			{ "id":513, "name":"Tank Platoon", "pts":280, "upgrades":[] },
+			{ "id":514, "name":"Heavy Tank Platoon", "pts":175, "upgrades":[103,101] },
+			{ "id":515, "name":"Light Support Battery", "pts":150, "upgrades":[34,35] },
 			{ "id":516, "name":"Heavy Support Battery", "pts":0, "upgrades":[46,47] },
-			{ "id":514, "name":"Heavy Tank Platoon", "pts":350, "units":"2 Macharius Tanks, Macharius Command Tank", "upgrades":[] },
-			{ "id":515, "name":"Light Support Battery", "pts":200, "upgrades":[34,35] },
 			{ "id":517, "name":"Self-Propelled Heavy Support", "pts":250, "units":"3 Bombards", "upgrades":[] },
 			{ "id":518, "name":"Super-heavy Tank Platoon", "pts":200, "upgrades":[] },
-			{ "id":522, "name":"Super-heavy Tank Support Company", "pts":500, "upgrades":[] },
-			{ "id":513, "name":"Tank Platoon", "pts":280, "upgrades":[] }
+			{ "id":519, "name":"Death Rider Scout Platoon", "pts":150, "units":"6 Death Korps Rough Riders (with 'scout' ability)", "upgrades":[] },
+			{ "id":520, "name":"Deathstrike Silo", "pts":225, "units":"Death Korps Deathstrike Missile Silo", "upgrades":[] },
+			{ "id":521, "name":"Artillery Support Company", "pts":600, "units":"9 Earthshaker Platforms", "upgrades":[37,38] },
+			{ "id":522, "name":"Super-heavy Tank Support Company", "pts":500, "upgrades":[] }
 		]},
 		{"name":"TRENCHWORKS", "formations":[
-			{ "id":526, "name":"Trenchworks", "pts":75, "units":"80cm of Trenches and Razor Wire, 4 bunkers", "upgrades":[] }
+			{ "id":526, "name":"Trenchworks", "pts":75, "units":"80cm of Trenches, 20cm of Razor Wire, 4 Bunkers", "upgrades":[] }
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
-			{ "id":532, "name":"Marauder Heavy Bomber", "pts":150},
-			{ "id":531, "name":"Thunderbolt Fighters", "pts":150, "units":"2 Thunderbolts"}
+			{ "id":531, "name":"Thunderbolt Fighters", "pts":150, "units":"2 Thunderbolts", "upgrades":[] },
+			{ "id":532, "name":"Marauder Bomber", "pts":150, "upgrades":[] }
 		]},
 		{"name":"TITAN LEGIONS", "formations":[
-			{ "id":537, "name":"Reaver Titan", "pts":650},
-			{ "id":539, "name":"Warhound Titan", "pts":275},
-			{ "id":538, "name":"Warhound Titan Pack", "pts":500, "units":"2 Warhounds"},
-			{ "id":536, "name":"Warlord Titan", "pts":825}
+			{ "id":536, "name":"Warlord Titan", "pts":850, "upgrades":[] },
+			{ "id":537, "name":"Reaver Titan", "pts":650, "upgrades":[] },
+			{ "id":538, "name":"Warhound Pack", "pts":500, "units":"2 Warhounds", "upgrades":[] },
+			{ "id":539, "name":"Warhound Titan", "pts":275, "upgrades":[] }
 		]}	
 	],
 	"upgrades":[
 		{ "id":11, "name":"Leman Russ Thunderer", "pts":0 },
 		{ "id":12, "name":"Leman Russ", "pts":20 },
 		{ "id":13, "name":"Leman Russ Demolisher", "pts":20 },
-		{ "id":14, "name":"Leman Russ Vanquisher", "pts":45 },
+		{ "id":14, "name":"Leman Russ Vanquisher", "pts":50 },
 		{ "id":21, "name":"Baneblade", "pts":0 },
 		{ "id":22, "name":"Shadowsword", "pts":0 },
 		{ "id":23, "name":"Stormblade", "pts":0 },
@@ -49,30 +49,30 @@
 		{ "id":32, "name":"4 Heavy Mortars", "pts":0 },
 		{ "id":34, "name":"4 Centaurs", "pts":0 },
 		{ "id":35, "name":"20cm of Trenches", "pts":0 },
-		
 		{ "id":37, "name":"9 Trojans", "pts":0 },
 		{ "id":38, "name":"9 Gun Emplacements", "pts":0 },
-		
 		{ "id":41, "name":"3 Hydra or Heavy Anti-Aircraft Platform", "pts":125 },
 		{ "id":43, "name":"3 Earthshaker Platform", "pts":200 },
-		{ "id":44, "name":"3 Medusa Platform", "pts":275 },
-		{ "id":46, "name":"3 Trojans", "pts":0 },
+		{ "id":44, "name":"3 Medusa Platform", "pts":250 },
+		{ "id":46, "name":"3 Trojans", "pts":25 },
 		{ "id":47, "name":"3 Gun Emplacements", "pts":0 },
-		{ "id":51, "name":"8 Centaurs", "pts":75 },
-		{ "id":52, "name":"Gorgon (with mortars)", "pts":75 },
-		{ "id":53, "name":"Gorgon (with heavy bolters)", "pts":75 },
-		{ "id":114, "name":"Fire Support Battery (4 Fire Support)", "pts":75 },
+		{ "id":51, "name":"8 Centaurs", "pts":100 },
+		{ "id":53, "name":"Gorgon (with heavy bolters)", "pts":100 },
+		{ "id":114, "name":"Fire Support Battery (6 Fire Support)", "pts":75 },
 		{ "id":111, "name":"Infantry Platoon (10 Death Korps Infantry)", "pts":175 },
-		{ "id":109, "name":"Heavy Tank (Macharius)", "pts":125 },
-		{ "id":105, "name":"Hellhound Squadron (3 Hellhounds)", "pts":100},
-		{ "id":107, "name":"Gorgon Siege Transporters (2 Gorgons)", "pts":125 },
+		{ "id":101, "name":"Hydra", "pts":50 },
+		{ "id":103, "name":"Macharius", "pts":75 },
+		{ "id":104, "name":"Macharius Command Tank", "pts":0 },
+		{ "id":109, "name":"Heavy Tank (Macharius)", "pts":100 },
+		{ "id":105, "name":"Hellhound Squadron (3 Hellhounds)", "pts":125},
+		{ "id":107, "name":"Siege Transports (2 Gorgons)", "pts":200 },
+		{ "id":108, "name":"Siege Transports (2 Gorgons with mortars)", "pts":225 },
 		{ "id":102, "name":"Tank Squadron (3 Leman Russ Variants)", "pts":140},
 		{ "id":121, "name":"Leman Russ Surcharge for Tank Squadron", "pts":20},
-		{ "id":122, "name":"Demolisher Surcharge for Tank Squadron", "pts":20},
-		{ "id":120, "name":"Additional Gorgon for Infantry Platoon", "pts":50}
+		{ "id":122, "name":"Demolisher Surcharge for Tank Squadron", "pts":20}
 	],
 	"formationConstraints":[
-		{"max":1, "name":"Death Rider Company", "perPoints":1500, "from":[503]},
+		{"max":1, "perPoints":1500, "from":[503]},
 		{"maxPercent":33, "name":"Titans & Navy", "from":[531,532,536,537,538,539]},
 		{"max":2, "name":"Support Formations", "from":[511,512,513,514,515,516,517,518,519,520,521,522], "forEach":[501,502,503], "name2":"Company"},
 		{"max":1, "name":"Trenchworks", "from":[526], "forEach":[501,502,503], "name2":"Company"},
@@ -85,12 +85,14 @@
 		{"min":1, "max":1, "from":[21,22,23,24], "appliesTo":[518]},
 		{"min":1, "max":1, "from":[31,32], "appliesTo":[515]},
 		{"min":1, "max":1, "from":[41,43,44], "appliesTo":[516]},
+		{"min":2, "max":3, "from":[103], "appliesTo":[514]},
+		{"min":1, "max":1, "from":[104], "appliesTo":[514]},
 		{"max":1, "from":[14]},
 		{"max":1, "from":[114]},
 		{"max":1, "from":[111]},
 		{"max":1, "from":[109]},
 		{"max":1, "from":[105]},
-		{"max":1, "from":[107]},
+		{"max":1, "from":[107,108]},
 		{"max":1, "from":[102]},
 		{"max":3, "from":[121]},
 		{"max":3, "from":[122]},
@@ -99,6 +101,6 @@
 		{"max":1, "name":"Support", "from":[37,38]},
 		{"max":1, "name":"Support", "from":[46,47]},
 		{"max":1, "name":"Support", "from":[51,52,53]},
-		{"max":3, "name":"Upgrades", "from":[114,111,109,105,107,102]}
+		{"max":3, "name":"Upgrades", "from":[114,111,108,109,105,107,102]}
 	]
 }
