@@ -1,7 +1,7 @@
 {
 	"id":"White Scars",
-	"version":"NetEA Tournament Pack 2013",
-	"by":"lindstrom, last edit 23-10-03 Parintachin",
+	"version":"NetEA Tournament Pack 2016",
+	"by":"lindstrom, last edit 11/02/2016 Kyussinchains",
 	"sections":[
 		{"name":"DETACHMENTS", "formations":[
 			{"id":500, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18]},
