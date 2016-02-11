@@ -6,9 +6,9 @@
                
 {"name":"GARGANT MOB", "formations":[
                        
-{"id":532, "name":"Mega Gargant",               "pts":1050, "upgrades":[11,12,13,14,16,17,34]},
-{"id":533, "name":"Great Gargant",              "pts":650, "upgrades":[11,12,13,14,16,17,34,36,37,38,39,40,41,43]},
-{"id":534, "name":"Gargant",                    "pts":475, "upgrades":[11,12,13,14,16,17,36,37,38,39,40,41,43]}]},
+{"id":532, "name":"Mega Gargant",               "pts":1050, "upgrades":[34]},
+{"id":533, "name":"Great Gargant",              "pts":650, "upgrades":[34,36,37,38,39,40,41,43]},
+{"id":534, "name":"Gargant",                    "pts":475, "upgrades":[36,37,38,39,40,41,43]}]},
 
 {"name":"NON-GARGANT MOBS", "formations":[
 {"id":535, "name":"Supa Stompa",       "pts":175, "upgrades":[11,12,13,14,16,17,36,37,38,39,40,41,43]},
@@ -52,7 +52,7 @@
 {"id":26, "name":"Twin Soopagun",               "pts":75},
 {"id":27, "name":"Mega Choppa",                 "pts":25},
 {"id":28, "name":"Mega Lobba",                  "pts":50},
-{"id":29, "name":"Ripper Fist",                 "pts":50},
+{"id":29, "name":"Ripper Fist",                 "pts":25},
 {"id":30, "name":"Supa Skorcha",                "pts":50},
 {"id":31, "name":"Soopa Lifta Droppa",          "pts":50},
 {"id":42, "name":"Soopa Zzap Gun",              "pts":50},
