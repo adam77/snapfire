@@ -5,9 +5,9 @@
 	"notes":["A Warlord must be selected. If the army has a Great Gargant, then the Warlord must be assigned to it, otherwise, assign to a Nobz or Gargant unit."],
 	"sections":[
 		{"name":"WAR HORDES", "formations":[
-			{"id":500, "name":"Warband",				"pts":200, "units":"6 Boyz, 2 Grotz", "upgrades":[81,63,50,82,51,25,11,12,13,43,94,95,57,58,24,60,25,23,90,91,37,72,73,92,93]},
-			{"id":501, "name":"Warband (Big)",			"pts":350, "units":"12 Boyz, 4 Grotz", "upgrades":[81,63,50,82,51,25,11,12,13,43,94,95,57,58,24,60,25,23,90,91,37,72,73,92,93]},
-			{"id":502, "name":"Warband ('Uge)",		"pts":500, "units":"18 Boyz, 6 Grotz", "upgrades":[81,63,50,82,51,25,11,12,13,43,94,95,57,58,24,60,25,23,90,91,37,72,73,92,93]},
+			{"id":500, "name":"Warband",				"pts":130, "units":"6 Boyz, 2 Grotz", "upgrades":[81,63,50,82,51,25,11,12,13,43,94,95,57,58,24,60,25,23,90,91,37,72,73,92,93]},
+			{"id":501, "name":"Warband (Big)",			"pts":210, "units":"12 Boyz, 4 Grotz", "upgrades":[81,63,50,82,51,25,11,12,13,43,94,95,57,58,24,60,25,23,90,91,37,72,73,92,93]},
+			{"id":502, "name":"Warband ('Uge)",		"pts":290, "units":"18 Boyz, 6 Grotz", "upgrades":[81,63,50,82,51,25,11,12,13,43,94,95,57,58,24,60,25,23,90,91,37,72,73,92,93]},
 			{"id":503, "name":"Stormboyz Warhorde",		"pts":0, "upgrades":[35,51, 11,12,13,24]},
 			{"id":504, "name":"Kult of Speed",			"pts":0, "upgrades":[11,12,13,24,25,23,90,91]},
 			{"id":505, "name":"Kult of Speed (Big)",	"pts":-50, "upgrades":[11,12,13,24,25,23,90,91]},
