@@ -1,5 +1,5 @@
 {"id":"Gargant Bigmob",
-        "version":"3.2.2 - Developmental",
+        "version":"3.2.3 - Developmental",
  "notes":["Each Mega or Great Gargant taken allows you to purchase up to 4 non-gargant mobs or aviation formations, each Gargant taken allows you to purchase up to 3 non-gargant mobs or aviation formations"],    "by":"Kyussinchains",
        
 "sections":[
@@ -11,7 +11,7 @@
 {"id":534, "name":"Gargant",                    "pts":475, "upgrades":[36,37,38,39,40,41,43]}]},
 
 {"name":"NON-GARGANT MOBS", "formations":[
-{"id":535, "name":"Supa Stompa",       "pts":175, "upgrades":[11,12,13,14,16,17,36,37,38,39,40,41,43]},
+{"id":535, "name":"Supa Stompa",       "pts":125, "upgrades":[11,12,13,14,16,17,36,37,38,39,40,41,43]},
 {"id":560, "name":"Stompa Mob (Normal)",       "pts":20, "upgrades":[11,12,13,14,16,17]},
 {"id":561, "name":"Stompa Mob (Big)",       "pts":-10, "upgrades":[11,12,13,14,16,17]},
 {"id":562, "name":"Stompa Mob (Uge)",       "pts":-40, "upgrades":[11,12,13,14,16,17]},
