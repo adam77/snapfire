@@ -23,8 +23,8 @@
 			{ "id":524, "name":"Thunderhawk CAS", "pts":250, "units":"Thunderhawk (Close Air Support configuration)"}
 		]},
 		{"name":"IMPERIAL NAVY AIRCRAFT", "formations":[
-			{ "id":521, "name":"Fighter Squadron", "pts":150, "units":"2 Thunderbolt Fighters"},
-			{ "id":522, "name":"Bomber Squadron", "pts":150, "units":"2 Marauder Bombers"}
+			{ "id":521, "name":"Fighter Squadron", "pts":175, "units":"2 Thunderbolt Fighters"},
+			{ "id":522, "name":"Bomber Squadron", "pts":250, "units":"2 Marauder Bombers"}
 		]},
 		{"name":"TITAN LEGION BATTLEGROUPS", "formations":[
 			{ "id":542, "name":"Reaver", "pts":650, "units":"1 Reaver Class Titan"},
