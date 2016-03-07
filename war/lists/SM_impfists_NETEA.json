@@ -27,7 +27,7 @@
                 ]},
                 {"name":"AIRCRAFT", "formations":[
                         { "id":531, "name":"2 Storm Talons",    "pts":200, "upgrades":[] },
-                        { "id":532, "name":"1 Thunderhawk Saturation Bomber",               "pts":275, "upgrades":[] }
+                        { "id":532, "name":"1 Thunderhawk Saturation Bomber",               "pts":250, "upgrades":[] }
                 ]},
                 {"name":"WAR ENGINES", "formations":[
                         { "id":541, "name":"Warlord Class Titan (Deathstrike Configuration)",           "pts":825, "upgrades":[] },
