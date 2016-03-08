@@ -10,7 +10,7 @@
 			{ "id":505, "name":"Land Raider", "pts":25, "upgrades":[55,56,57,71,72,73,204,205,100]},
 			{ "id":506, "name":"Landing Craft", "pts":350},
 			{ "id":507, "name":"Predator", "pts":250, "upgrades":[96,97,98,55,56,57,100] },
-			{ "id":508, "name":"Scout", "pts":150, "units":"4 Scout units plus transport", "upgrades":[55,56,57,81,82,103] },
+			{ "id":508, "name":"Scout", "pts":150, "units":"4 Scout units plus transport", "upgrades":[55,56,57,81,82,104,103] },
 			{ "id":509, "name":"Spacecraft", "pts":150},
 			{ "id":511, "name":"Tactical", "pts":200, "units":"4 Tactical units plus transport", "upgrades":[97,98,96,55,56,57,100,81,82] },
 			{ "id":512, "name":"Terminator", "pts":350, "units":"4 Terminator units", "upgrades":[55,56,57,71,72,73, 204,205] },
@@ -68,7 +68,8 @@
 		{ "id":81, "name":"Razorback (twin lascannon)", "pts":25 },
 		{ "id":82, "name":"Razorback (twin heavy bolter)", "pts":25 },
 		{ "id":100, "name":"Hunter", "pts":75 },
-		{ "id":103, "name":"Sniper", "pts":50 }
+		{ "id":104, "name":"1x Sniper", "pts":25 },
+		{ "id":103, "name":"4x Snipers", "pts":50 }
 	],
 	"formationConstraints":[
 		{"max":1, "from":[509]},
