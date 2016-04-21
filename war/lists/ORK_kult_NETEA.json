@@ -1,7 +1,7 @@
 {
    "id": "Burning Death Speed Freeks",
    "version": "NetEA Tournament Pack 2013",
-   "by": "berzerkmonkey, last update 2013-10-23 Parintachin",
+   "by": "berzerkmonkey, last update 2015-04-21 Kyussinchains",
    "sections": [
       {
          "name": "FORMATIONS",
@@ -178,7 +178,7 @@
                "id": 501,
                "name": "Speed Freaks Warband (Big)",
                "pts": 175,
-               "units": "6 Boyz, 6 Trukks",
+               "units": "6 Boyz, 8 Trukks",
                "upgrades": [
                   66,
                   68,
@@ -199,7 +199,7 @@
                "id": 502,
                "name": "Speed Freaks Warband ('Uge)",
                "pts": 250,
-               "units": "9 Boyz, 9 Trukks",
+               "units": "9 Boyz, 12 Trukks",
                "upgrades": [
                   68,
                   20,
