@@ -61,7 +61,11 @@
 		{"id":82, "name":"Veteran Princeps",		"pts":25},
 		{"id":83, "name":"Carapace Multi-Lasers",	"pts":50},
 		{"id":84, "name":"Sacred Icon",			"pts":50},
-		
+		{"id":301, "name":"2 Secutor units, 8 Hypaspist units",	"pts":0},
+		{"id":302, "name":"5 Secutor units, 5 Gun Servitor Units", "pts":150},
+		{"id":303, "name":"2 Secutor units, 3 Hypaspist units, 5 Gun Servitor Units",	"pts":0},
+		{"id":304, "name":"5 Secutor units, 5 Hypaspist units",		"pts":150},
+		{"id":305, "name":"5 Gun Servitor Unit",		"pts":0},
 		{"id":214, "name":"Minorus with Vulcan Megabolter",		"pts":125},
 		
 		{"id":230, "name":"Minorus with Apocalypse Missile Launcher",	"pts":150},
