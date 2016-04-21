@@ -79,7 +79,7 @@
 	"formationConstraints":[
 		{"max":1, "from":[500]},
 		{"max":1, "name":"spaceship","from":[511]},
-		{"max":2, "name":"Support formations", "from":[510.511,512,513,514,515,516,517,518,519,520,521,522,523,524,525], "forEach":[501,502,503], "name2":"Core Formation"},
+		{"max":2, "name":"Support formations", "from":[510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525], "forEach":[501,502,503], "name2":"Core Formation"},
 		{"maxPercent":33, "name":"Chaos Navy and Titan Formations", "from":[531,532,533,540,541,542]}
 	],
 	"upgradeConstraints":[
