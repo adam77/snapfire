@@ -2,11 +2,11 @@
 	"id":"Gryphonne IV Skitarii Legion",
 	"version":"NetEA v2.04 *EXPERIMENTAL*",
 	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
-	"by":"SpeakerToMachines, last edit 2014-06-29 SpeakerToMachines",
+	"by":"SpeakerToMachines, last edit 2016-04-27 Kyussinchains",
 	"sections":[
 		{"name":"SKITARII CORE FORMATIONS", "formations":[
 			{"id":566, "name":"Skitarii Demi-Century",	"pts":250, "upgrades":[103,104,105,214,225,226,227,228,229,231,232,233,234,235,237,238]},
-			{"id":567, "name":"Sagitarii Demi-Century",	"pts":275, "units":"5 Sagitarii units",	 "upgrades":[101,102,103,104,214,225,226,227,228,229,231,232,233,234,235,237,238]}	
+			{"id":567, "name":"Sagitarii Demi-Century",	"pts":275, "units":"5 Sagitarii units",	 "upgrades":[103,104,214,225,226,227,228,229,231,232,233,234,235,237,238]}	
 		]},
 		{"name":"CENTURIO ORDINATUS FORMATIONS", "formations":[
 			{"id":571, "name":"Ordinatus Minorus",	"pts":300, "units":"2 Ordinatus Minorus", "upgrades":[]},
