@@ -63,7 +63,7 @@
 		{ "id":39, "name":"4 Havoc units, 4 Plague Marine units", "pts":100 },
 		{ "id":40, "name":"4 Havoc units, 4 Thousand Sons units", "pts":100 },
 		{ "id":28, "name":"Defiler", "pts":75 },
-		{ "id":35, "name":"Obliterators", "pts":85 },
+		{ "id":35, "name":"Obliterators", "pts":75 },
 
 		{ "id":50, "name":"Terminator unit", "pts":60 },
 		{ "id":51, "name":"Chaos Predator", "pts":50 },
