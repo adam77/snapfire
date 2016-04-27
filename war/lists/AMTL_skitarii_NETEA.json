@@ -5,7 +5,7 @@
 	"by":"SpeakerToMachines, last edit 2014-06-29 SpeakerToMachines",
 	"sections":[
 		{"name":"SKITARII CORE FORMATIONS", "formations":[
-			{"id":566, "name":"Skitarii Demi-Century",	"pts":250, "units":"2 Secutor units, 8 Hypaspist units", "upgrades":[103,104,105,214,225,226,227,228,229,231,232,233,234,235,237,238]},
+			{"id":566, "name":"Skitarii Demi-Century",	"pts":250, "upgrades":[103,104,105,214,225,226,227,228,229,231,232,233,234,235,237,238]},
 			{"id":567, "name":"Sagitarii Demi-Century",	"pts":275, "units":"5 Sagitarii units",	 "upgrades":[101,102,103,104,214,225,226,227,228,229,231,232,233,234,235,237,238]}	
 		]},
 		{"name":"CENTURIO ORDINATUS FORMATIONS", "formations":[
@@ -97,6 +97,7 @@
 		{"max":1, "from":[104]},
 		{"max":1, "perArmy":true, "from":[105]},
 		{"min":1, "max":1, "from":[11,12], "appliesTo":[502]},
+		{"min":1, "max":1, "from":[301,302,303,304], "appliesTo":[566]},
 		{"min":2, "max":2, "from":[13,14,15,16], "appliesTo":[551]},
 		{"min":4, "max":4, "from":[13,14,15,16], "appliesTo":[552]},
 		{"min":2, "max":2, "from":[14,25,26,27,28,29,30,31,32,33,34,35,37,38], "appliesTo":[571]},
