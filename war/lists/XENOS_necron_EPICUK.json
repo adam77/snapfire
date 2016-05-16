@@ -1,7 +1,7 @@
 {
 	"id":"Necrons",
-	"version":"EpicUK v140612",
-	"by":"Epic-UK",
+	"version":"EpicUK v140516",
+	"by":"Epic-UK last edit - 160516 kyussinchains",
 	"sections":[
 		{"name":"Characters", "formations":[
 			{"id":501, "name":"Tomb Complex", "pts":75},
@@ -18,10 +18,11 @@
 				"upgrades":[16,15]},
 			{"id":505, "name":"Flayer Maniple", "pts":200,
 				"upgrades":[16,13,14,15], "units":"6 Flayed One units" },
-			{"id":506, "name":"Monolith Maniple", "pts":200,
-				"units":"1 Monolith" },
+			{"id":506, "name":"Monolith Maniple", "pts":150},
 			{"id":507, "name":"Obelisk Maniple", "pts":300,
-				"units":"6 Obelisk units" }
+				"units":"6 Obelisk units" },
+			{"id":513, "name":"Wraith Maniple", "pts":200,
+				"units":"4 Wraith units" }
 		]},
 		{"name":"Harversters", "formations":[
 			{"id":508, "name":"Abattoir", "pts":650,
@@ -38,24 +39,25 @@
 	],
 	"upgrades":[
 		{"id":11, "name":"C'tan", "pts":250},
-		{"id":12, "name":"3 x Immortal units", "pts":100},
+		{"id":12, "name":"2 x Immortal units", "pts":75},
 		{"id":13, "name":"1 x Pariah", "pts":50},
 		{"id":14, "name":"Tomb Spiders", "pts":50},
 		{"id":15, "name":"Wraiths", "pts":50},
 		{"id":16, "name":"Necron Lord", "pts":25},
 		{"id":17, "name":"Destroyer", "pts":50},
 		{"id":18, "name":"Heavy Destroyer", "pts":50},
-		{"id":19, "name":"2 x Obelisks", "pts":0},
-		{"id":20, "name":"2 x Monoliths", "pts":75}
+		{"id":19, "name":"Obelisk", "pts":0},
+		{"id":20, "name":"Monolith", "pts":50}
+		
 		],
 	"formationConstraints":[
 		{"max":1, "perArmy":true, "from":[501]},
 		{"max":1, "perArmy":true, "from":[502]},
 		{"max":1, "perArmy":true, "from":[512]},
 		{"maxPercent":33, "name":"Rare Formations",
-			"from":[502,508,509,510,511,512] },
+			"from":[508,509,510,511,512] },
 		{"max": 2, "name": "Support",
-			"from": [504,505,506,507], "forEach": [503], "name2": "Phalanx"}
+			"from": [504,505,506,507,513], "forEach": [503], "name2": "Phalanx"}
 	],
 	"upgradeConstraints":[
 		{"max":1, "from":[11], "appliesTo":[502]},
@@ -65,6 +67,7 @@
 		{"max":3, "from":[15], "appliesTo":[503,504]},
 		{"max":1, "from":[16], "appliesTo":[504,505]},
 		{"min":6, "max":6, "from":[17,18], "appliesTo":[504]},
-		{"min":1, "max":1, "from":[19,20], "appliesTo":[506]}
+		{"min":1, "from":[20], "appliesTo":[506]},
+		{"min":3, "max":3, "from":[19,20], "appliesTo":[506]}
 	]
 }
