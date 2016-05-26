@@ -1,5 +1,5 @@
 {"id":"Gargant Bigmob",
-        "version":"3.2.3 - Developmental",
+        "version":"3.3.1 - Developmental",
  "notes":["Each Mega or Great Gargant taken allows you to purchase up to 4 non-gargant mobs or aviation formations, each Gargant taken allows you to purchase up to 3 non-gargant mobs or aviation formations"],    "by":"Kyussinchains",
        
 "sections":[
@@ -7,11 +7,11 @@
 {"name":"GARGANT MOB", "formations":[
                        
 {"id":532, "name":"Mega Gargant",               "pts":1050, "upgrades":[34]},
-{"id":533, "name":"Great Gargant",              "pts":650, "upgrades":[34,36,37,38,39,40,41,43]},
-{"id":534, "name":"Gargant",                    "pts":475, "upgrades":[36,37,38,39,40,41,43]}]},
+{"id":533, "name":"Great Gargant",              "pts":650, "upgrades":[34,36,37,38,40,41,43]},
+{"id":534, "name":"Gargant",                    "pts":475, "upgrades":[36,37,38,40,41,43]}]},
 
 {"name":"NON-GARGANT MOBS", "formations":[
-{"id":535, "name":"Supa Stompa",       "pts":125, "upgrades":[11,12,13,14,16,17,36,37,38,39,40,41,43]},
+{"id":535, "name":"Supa Stompa",       "pts":125, "upgrades":[11,12,13,14,16,17,36,37,38,40,41,43]},
 {"id":560, "name":"Stompa Mob (Normal)",       "pts":20, "upgrades":[11,12,13,14,16,17]},
 {"id":561, "name":"Stompa Mob (Big)",       "pts":-10, "upgrades":[11,12,13,14,16,17]},
 {"id":562, "name":"Stompa Mob (Uge)",       "pts":-40, "upgrades":[11,12,13,14,16,17]},
@@ -60,7 +60,7 @@
 {"id":33, "name":"Battlekrooza",                "pts":200},
 {"id":34, "name":"Mekboy Big Boss",             "pts":0},
 {"id":35, "name":"Fighta-Bommers",              "pts":50},
-{"id":36, "name":"(Kustom) Wyrdboy Tower",      "pts":25},
+{"id":36, "name":"(Kustom) Flakka Dakka",      "pts":25},
 {"id":37, "name":"(Kustom) Transporta",         "pts":25},
 {"id":38, "name":"(Kustom) Power Fields",       "pts":25},
 {"id":39, "name":"(Kustom) Reinforced Boiler",  "pts":25},
