@@ -1,11 +1,11 @@
 {
 	"id":"Scions of Iron",
-	"version":"NetEA Tournament Pack 2013",
-	"by":"Iron Bloke, last update 2013-10-25 Parintachin",
+	"version":"NetEA Tournament Pack 2016",
+	"by":"Iron Bloke, last update 2016-06-14 Kyussinchains",
 	"sections":[
 		{"name":"SCIONS OF IRON DETACHMENTS", "formations": [
 			{ "id":502, "name":"Bike", "pts":175, "upgrades":[55,56,57,61,62,63] },
-			{ "id":503, "name":"Heavy Tactical", "pts":175, "units":"4 Tactical units", "upgrades":[55,56,57,71,72,73,204,205]},
+			{ "id":503, "name":"Heavy Tactical", "pts":175, "units":"4 Tactical units", "upgrades":[55,56,57,71,72,73,100]},
 			{ "id":504, "name":"Helios", "pts":425, "units":"4 Land Raider Helios", "upgrades":[55,56,57,100] },
 			{ "id":505, "name":"Land Raider", "pts":25, "upgrades":[55,56,57,71,72,73,204,205,100]},
 			{ "id":506, "name":"Landing Craft", "pts":350},
@@ -83,7 +83,7 @@
 		{"max":2, "from":[96,97,98], "appliesTo":[507,514]},
 		{"max":3, "from":[61,62,63]},
 		{"max":4, "from":[71,72,73, 204,205], "name":"Land Raider", "appliesTo": [512]},
-		{"min":2, "max":6, "from":[71,72,204,205], "appliesTo": [503]},
+		{"min":2, "max":4, "from":[71,72,204,205], "appliesTo": [503]},
 		{"max":4, "from":[73], "appliesTo": [503]},
 		{"max":1, "from":[76,77,78]},
 		{"max":4, "from":[81,82]},
