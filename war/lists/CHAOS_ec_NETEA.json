@@ -1,6 +1,6 @@
 {
 	"id":"Emperor's Children",
-	"version":"4.0",
+	"version":"4.1 - Approved",
 	"by":"Kyussinchains",
 	"notes":["Dreadnoughts, Land Raiders, Chaos Marines, Dreadclaws and Rhinos count towards the maximum number of upgrades available to a formation"],
 	"sections":[
@@ -54,15 +54,15 @@
 		{ "id":25, "name":"Replace 2 chaos marine units with 2 Havok units", "pts":25 },
 		{ "id":26, "name":"Replace 4 chaos marine units with 4 Havok units", "pts":50 },
 		{ "id":27, "name":"Stalker", "pts":50 },
-		{ "id":28, "name":"Emperors Children Predator", "pts":50 },
+		{ "id":28, "name":"Emperors Children Predator", "pts":55 },
 		{ "id":29, "name":"Rhino", "pts":10 },
-		{ "id":30, "name":"Emperors Children Land Raider", "pts":75 },
+		{ "id":30, "name":"Emperors Children Land Raider", "pts":80 },
 		{ "id":31, "name":"Noise Marine", "pts":35 },
 		{ "id":32, "name":"Daemon Prince (supreme commander)", "pts":100 },
 		{ "id":33, "name":"Raptor", "pts":35 },
 		{ "id":34, "name":"Hell-Strider", "pts":50 },
 		{ "id":35, "name":"Hell-Knight", "pts":75 },
-		{ "id":36, "name":"Hell-Scourge", "pts":75 },
+		{ "id":36, "name":"Hell-Scourge", "pts":90 },
 		{ "id":37, "name":"Terminator", "pts":60 }
 		
 	],
@@ -75,8 +75,7 @@
 	],
 	"upgradeConstraints":[
 		{"max":1, "perArmy":true, "name":"Supreme Commander", "from":[15,32]},
-		{"min":1, "max":1, "from":[13,14,16,15,32], "appliesTo":[501,512]},
-		{"min":1, "max":1, "from":[13,14], "appliesTo":[521,522]},
+		{"min":1, "max":1, "from":[13,14,16,15,32], "appliesTo":[501,512,521,522,511]},
 		{"max":3, "from":[17]},
 		{"max":1, "from":[19]},
 		{"max":1, "from":[25,26]},
