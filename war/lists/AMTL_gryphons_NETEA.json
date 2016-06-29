@@ -1,7 +1,7 @@
 {
 	"id":"Legio Gryphonicus",
 	"version":"NetEA v3.24 *APPROVED*",
-	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
+	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased. A maximum of one Skitarii Demi-Century may be purchased for each Corvus Assault pod taken"],
 	"by":"Iron Bloke, last edit 2015-02-28 Kyussinchains",
 	"sections":[
 		{"name":"BATTLE TITANS", "formations":[
