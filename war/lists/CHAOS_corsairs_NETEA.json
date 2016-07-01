@@ -1,8 +1,8 @@
 {
 	"id":"Red Corsairs",
-	"version":"3.4",
-	"by":"Kyussinchains, last update 2015-07-28",
-	"notes":["This list is rated 'Developmental'",
+	"version":"3.4 - Developmental",
+	"by":"Kyussinchains, last update 2016-07-01",
+	"notes":["You may only include Blood Slaughterer, Brass Scorpion, Silver Tower, Blight Drone and Daemon Knight formations if the force also includes at least one Cult Marine formation dedicated to the appropriate chaos power'",
 	"Formations deploying by drop pod or Rhino must take just enough to transport the entire formation.",
 	"Add one free Lesser Daemon to Daemon pool per Daemonic Pact"],
 	"sections":[
