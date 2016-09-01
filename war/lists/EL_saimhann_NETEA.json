@@ -1,7 +1,7 @@
 {
 	"id":"Saim-Hann Craftworld",
-	"version":"NetEA Army Compendium v20120208",
-	"by":"Parintachin",
+	"version":"NetEA 4.2 APPROVED",
+	"by":"Parintachin, last edit 01092016 - Kyussinchians",
 	"notes":["All Aspect Warrior units in the Saim-Hann Craftworld army, apart from Shining Spears, Swooping Hawks and Warp Spiders, must be transported in Wave Serpents and/or Falcons. You must take exactly enough transport vehicles to carry the units that require transport, without any spare transport space being left over."],
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
@@ -9,17 +9,17 @@
 			{"id":501, "name":"Avatar",		"pts":0,		"upgrades":[]}
 		]},
 		{"name":"WARHOSTS", "formations":[
-			{"id":510, "name":"Wild Rider Clan Warhost (small)", 			"pts":250,	"upgrades":[64,65,40]},
-			{"id":511, "name":"Wild Rider Clan Warhost (medium)", 			"pts":350,	"upgrades":[64,65,40]},
-			{"id":512, "name":"Wild Rider Clan Warhost (large)", 			"pts":450,	"upgrades":[64,65,40]},
-			{"id":513, "name":"Shining Spears Aspect Warrior Warhost", 			"pts":200,		"upgrades":[39]}
+			{"id":510, "name":"Wild Rider Clan Warhost (small)", 			"pts":250,	"upgrades":[65,40]},
+			{"id":511, "name":"Wild Rider Clan Warhost (medium)", 			"pts":325,	"upgrades":[65,40]},
+			{"id":512, "name":"Wild Rider Clan Warhost (large)", 			"pts":400,	"upgrades":[65,40]},
+			{"id":513, "name":"Shining Spears Warhost", 			"pts":200,		"upgrades":[39]}
 		]},	
 		{"name":"TROUPES", "formations":[
 			{"id":520, "name":"Saim-Hann Guardian Troupe",					"pts":250, "upgrades":[]},
 			{"id":521, "name":"Saim-Hann Guardian Troupe w. Wraithguards",					"pts":375, "upgrades":[]},
 			{"id":522, "name":"Aspect Warrior Troupe", 			"pts":225,	"upgrades":[30,41,39]},
-			{"id":523, "name":"Hornet Troupe",				"pts":250, 	"upgrades":[]},
-			{"id":524, "name":"Ranger Troupe",					"pts":0, "upgrades":[11]},
+			{"id":523, "name":"Hornet Troupe",				"pts":0, 	"upgrades":[70]},
+			
 			{"id":525, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[30,31,32]},
 			{"id":526, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners", "upgrades":[]},
 			{"id":527, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36]}
@@ -37,7 +37,7 @@
 		{"id":60, "name":"Wild Rider",		"pts":0},
 		{"id":63, "name":"8 Shining Spears",		"pts":100},
 		{"id":64, "name":"3 Shining Spears",		"pts":100},
-		{"id":65, "name":"Mounted Farseer",		"pts":50},
+		{"id":65, "name":"Farseer",		"pts":50},
 		{"id":11, "name":"Ranger",		"pts":25},
 		{"id":13, "name":"War Walker",	"pts":35},
 		{"id":15, "name":"Dire Avenger",		"pts":0},
@@ -67,7 +67,8 @@
 		{"id":46, "name":"3 Wraithguards", "pts": 150},
 		{"id":67, "name":"6 Hornets",	"pts":0},
 		{"id":68, "name":"3 Wave Serpents", "pts": 0},
-		{"id":69, "name":"4 Wave Serpents, 2 Wraithguards", "pts": 0}
+		{"id":69, "name":"4 Wave Serpents, 2 Wraithguards", "pts": 0},
+		{"id":70, "name":"Hornet",	"pts":50},
 	],
 	"formationConstraints":[
 		{"max":2, "name":"Troupes", "from":[520,521,522,523,524,525,526,527], "forEach":[510,511,512,513], "name2":"Warhost"},
@@ -82,8 +83,9 @@
 		{"max":1, "name":"Wraithguard", "from":[45,46]},	
 		{"max":1, "perArmy":true, "from":[40]},	
 		{"min":1, "max":3, "from":[34,35,36], "appliesTo":[527]},		
-		{"min":5, "max":6, "name":"Falcons", "from":[30,31,32], "appliesTo":[525]},		
-		{"min":6, "max":6, "from":[15,16,17,18,19,20,21,22], "appliesTo":[522]},	
+		{"min":5, "max":6, "name":"Falcons", "from":[30,31,32], "appliesTo":[525]},	
+		{"min":4, "max":5, "name":"Hornets", "from":[70], "appliesTo":[523]},
+		{"min":6, "max":6, "from":[15,16,17,18,19,20,21], "appliesTo":[522]},	
 		{"max":6, "from":[30], "appliesTo":[522]},	
 		{"max":3, "from":[41], "appliesTo":[522]},	
 		{"max":1, "from":[39], "appliesTo":[522]},	
