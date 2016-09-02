@@ -1,6 +1,6 @@
 {
 	"id":"Thousand Sons",
-	"version":"6.0.2",
+	"version":"6.1.1",
 	"by":"Kyussinchains",
 	"notes":["This list is rated 'Under Development'","If taking Dreadclaws, you must take just enough to transport the entire formation.", "Each unit can take a maximum of 4 types of upgrades","List must contain at least one Rubric Fellowship formation."],
 	"sections":[
@@ -15,7 +15,7 @@
 			{ "id":502, "name":"Ahriman's Chosen", "pts":450, "units":"Sorcerer, 9 Thousand Sons Marines units. All have the Teleport ability", "upgrades":[] },
 			{ "id":503, "name":"Rubric Fellowship", "pts":275, "units":"Sorcerer, 6 Thousand Sons Marines units.", "upgrades":[13,14,15,16,17,18,19,20] },
 			{ "id":504, "name":"Thousand Sons Armor", "pts":0, "upgrades":[21,19,14,15] },
-			{ "id":505, "name":"Silver Tower Company", "pts":0, "upgrades":[22] }
+			{ "id":505, "name":"Silver Tower Company", "pts":25, "upgrades":[22] }
 		]},
 		{"name":"Thousand Sons Support Formatons", "formations": [
 			{ "id":511, "name":"Thousand Sons Warcoven", "pts":10, "units":"Sorcerer", "upgrades":[23,13,14,15,16,17,19,20] },
@@ -28,7 +28,7 @@
 		]},
 		{"name":"Chaos Navy and Spacecraft", "formations":[
 			{ "id":531, "name":"Doomwing fighters", "pts":150, "units":"3 Doomwing Fighters", "upgrades":[] },
-			{ "id":532, "name":"Firelord Bombers", "pts":0, "upgrades":[27] },
+			{ "id":532, "name":"Firelord Bombers", "pts":50, "upgrades":[27] },
 			{ "id":533, "name":"Devastation Class Cruiser", "pts":150, "upgrades":[] },
 			{ "id":534, "name":"Despoiler Battleship", "pts":250, "upgrades":[] }
 		]}
@@ -43,14 +43,14 @@
 		{ "id":17, "name":"Icon Bearer", "pts":25 },
 		{ "id":18, "name":"Rhino", "pts":10 },
 		{ "id":19, "name":"Land Raider", "pts":75 },
-		{ "id":20, "name":"Thralls", "pts":20 },
+		{ "id":20, "name":"Champion of Tzeentch", "pts":50 },
 		{ "id":21, "name":"Predator", "pts":50 },
-		{ "id":22, "name":"Silver Tower", "pts":90 },
+		{ "id":22, "name":"Silver Tower", "pts":75 },
 		{ "id":23, "name":"Thousand Sons Terminator", "pts":85 },
 		{ "id":24, "name":"Greater daemon (Lord of Change)", "pts":50 },
 		{ "id":25, "name":"Lesser Daemons (Horror, Screamer, Flamer and Daemonic Beast units)", "pts":15 },
 		{ "id":26, "name":"Greater Spire of Tzeentch", "pts":200 },
-		{ "id":27, "name":"Firelord Bombers", "pts":150 },
+		{ "id":27, "name":"Firelord Bombers", "pts":100 },
 		{ "id":28, "name":"Sorcerer", "pts":0 }
 	],
 	"formationConstraints":[
@@ -72,9 +72,9 @@
 		{"max":1, "from":[17]},
 		{"max":1, "from":[13]},
 		{"min":4, "max":9, "from":[21,19], "appliesTo":[504]},
-		{"min":4, "max":6, "from":[22], "appliesTo":[505]},
+		{"min":4, "max":9, "from":[22], "appliesTo":[505]},
 		{"min":4, "max":6, "from":[23], "appliesTo":[511]},
 		{"min":1, "max":3, "from":[26], "appliesTo":[521]},
-		{"min":1, "max":3, "from":[27], "appliesTo":[532]}
+		{"min":2, "max":3, "from":[27], "appliesTo":[532]}
 	]
 }
