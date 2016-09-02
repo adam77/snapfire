@@ -19,7 +19,7 @@
 			{"id":521, "name":"Saim-Hann Guardian Troupe w. Wraithguards",					"pts":375, "upgrades":[]},
 			{"id":522, "name":"Aspect Warrior Troupe", 			"pts":225,	"upgrades":[30,41,39]},
 			{"id":523, "name":"Hornet Troupe",				"pts":0, 	"upgrades":[70]},
-			
+			{"id":524, "name":"Scout Rider Troupe",				"pts":200, 	"upgrades":[]},
 			{"id":525, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[30,31,32]},
 			{"id":526, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners", "upgrades":[]},
 			{"id":527, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36]}
@@ -30,7 +30,7 @@
 			{"id":532, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
 			{"id":533, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
 			{"id":534, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
-			{"id":535, "name":"Vampire Hunters","pts":500, "units":"2 Vampire Hunters", "upgrades":[]}
+			{"id":535, "name":"Vampire Hunter","pts":275, "units":"1 Vampire Hunter", "upgrades":[]}
 		]}
 	],
 	"upgrades":[
@@ -68,10 +68,11 @@
 		{"id":67, "name":"6 Hornets",	"pts":0},
 		{"id":68, "name":"3 Wave Serpents", "pts": 0},
 		{"id":69, "name":"4 Wave Serpents, 2 Wraithguards", "pts": 0},
-		{"id":70, "name":"Hornet",	"pts":50},
+		{"id":70, "name":"Hornet",	"pts":50}
 	],
 	"formationConstraints":[
-		{"max":2, "name":"Troupes", "from":[520,521,522,523,524,525,526,527], "forEach":[510,511,512,513], "name2":"Warhost"},
+		{"max":2, "name":"Troupes", "from":[520,521,522,523,525,526,527], "forEach":[510,511,512,513], "name2":"Warhost"},
+		{"max":1, "name":"Scout Rider Troupe", "from":[524], "forEach":[510,511,512], "name2":"Wild Rider Clan"},
 		{"max":1, "from":[500]},
 		{"max":1, "from":[501]},
 		{"maxPercent":33, "name":"Aircraft & Titans", "from":[530,531,532,533,534,535]},		
@@ -92,6 +93,8 @@
 		{"min":4, "max":8, "from":[11], "appliesTo":[524]},
 		{"min":1, "max":1, "from":[60], "appliesTo":[510]},
 		{"min":6, "max":6, "from":[27,28], "appliesTo":[510]},
+		{"min":6, "max":6, "from":[27,28], "appliesTo":[524]},
+		{"max":2, "from":[28], "appliesTo":[524]},
 		{"max":1, "from":[64], "appliesTo":[510]},
 		{"max":1, "from":[65], "appliesTo":[510]},
 		{"min":1, "max":1, "from":[60], "appliesTo":[511]},
@@ -106,10 +109,10 @@
 		{"max":2, "from":[39], "appliesTo":[513]},
 		{"min":1, "max":1, "from":[68], "appliesTo":[520]},
 		{"min":6, "max":6, "from":[24,25], "appliesTo":[520]},
-		{"max":2, "from":[25], "appliesTo":[520]},
+		{"max":3, "from":[25], "appliesTo":[520]},
 		{"min":1, "max":1, "from":[69], "appliesTo":[521]},
 		{"min":4, "max":4, "from":[24,25], "appliesTo":[521]},
-		{"max":2, "from":[25], "appliesTo":[521]},
+		{"max":3, "from":[25], "appliesTo":[521]},
 		{"min":1, "max":1, "from":[67], "appliesTo":[523]}
 	]
 }
