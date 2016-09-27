@@ -82,6 +82,7 @@
 	"formationConstraints":[
 		{"max":2, "name":"Troupes", "from":[520,521,522,523,525,526,527], "forEach":[510,511,512,513], "name2":"Warhost"},
 		{"max":1, "name":"Scout Rider Troupe", "from":[524], "forEach":[510,511,512], "name2":"Wild Rider Clan"},
+		{"max":1, "name":"Shining Spear Warhost", "from":[523], "forEach":[510,511,512], "name2":"Wild Rider Clan"},
 		{"max":1, "from":[500]},
 		{"max":1, "from":[501]},
 		{"maxPercent":33, "name":"Aircraft & Titans", "from":[530,531,532,533,534,535]},		
