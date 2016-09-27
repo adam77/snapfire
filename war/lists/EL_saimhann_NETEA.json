@@ -16,7 +16,7 @@
 		]},	
 		{"name":"TROUPES", "formations":[
 			{"id":520, "name":"Saim-Hann Guardian Troupe",					"pts":250, "upgrades":[]},
-			{"id":521, "name":"Saim-Hann Guardian Troupe w. Wraithguards",					"pts":375, "upgrades":[]},
+			
 			{"id":522, "name":"Aspect Warrior Troupe", 			"pts":225,	"upgrades":[30,41,39]},
 			{"id":523, "name":"Hornet Troupe",				"pts":0, 	"upgrades":[70]},
 			{"id":524, "name":"Scout Rider Troupe",				"pts":200, 	"upgrades":[]},
@@ -37,7 +37,7 @@
 		{"id":60, "name":"Wild Rider",		"pts":0},
 		{"id":63, "name":"8 Shining Spears",		"pts":100},
 		{"id":64, "name":"3 Shining Spears",		"pts":100},
-		{"id":65, "name":"Farseer",		"pts":50},
+		{"id":65, "name":"Farseer",		"pts":25},
 		{"id":11, "name":"Ranger",		"pts":25},
 		{"id":13, "name":"War Walker",	"pts":35},
 		{"id":15, "name":"Dire Avenger",		"pts":0},
@@ -68,7 +68,16 @@
 		{"id":67, "name":"6 Hornets",	"pts":0},
 		{"id":68, "name":"3 Wave Serpents", "pts": 0},
 		{"id":69, "name":"4 Wave Serpents, 2 Wraithguards", "pts": 0},
-		{"id":70, "name":"Hornet",	"pts":50}
+		{"id":70, "name":"Hornet",	"pts":50},
+		{"id":80, "name":"6 Guardians", "pts": 0},
+		{"id":81, "name":"5 Guardians, 1 Heavy Weapon Platform", "pts": 0},
+		{"id":82, "name":"4 Guardians, 2 Heavy Weapon Platforms", "pts": 0},
+		{"id":83, "name":"3 Guardians, 3 Heavy Weapon Platforms", "pts": 0},
+		{"id":84, "name":"4 Guardians, 2 Wraithguard", "pts": 125},
+		{"id":85, "name":"3 Guardians, 1 Heavy Weapon Platform, 2 Wraithguard", "pts": 125},
+		{"id":86, "name":"2 Guardians, 2 Heavy Weapon Platforms, 2 Wraithguard", "pts": 125},
+		{"id":87, "name":"1 Guardian, 3 Heavy Weapon Platforms, 2 Wraithguard", "pts": 125}
+		
 	],
 	"formationConstraints":[
 		{"max":2, "name":"Troupes", "from":[520,521,522,523,525,526,527], "forEach":[510,511,512,513], "name2":"Warhost"},
@@ -90,7 +99,7 @@
 		{"max":6, "from":[30], "appliesTo":[522]},	
 		{"max":3, "from":[41], "appliesTo":[522]},	
 		{"max":1, "from":[39], "appliesTo":[522]},	
-		{"min":4, "max":8, "from":[11], "appliesTo":[524]},
+		
 		{"min":1, "max":1, "from":[60], "appliesTo":[510]},
 		{"min":6, "max":6, "from":[27,28], "appliesTo":[510]},
 		{"min":6, "max":6, "from":[27,28], "appliesTo":[524]},
@@ -108,11 +117,8 @@
 		{"min":1, "max":1, "from":[63], "appliesTo":[513]},
 		{"max":2, "from":[39], "appliesTo":[513]},
 		{"min":1, "max":1, "from":[68], "appliesTo":[520]},
-		{"min":6, "max":6, "from":[24,25], "appliesTo":[520]},
-		{"max":3, "from":[25], "appliesTo":[520]},
-		{"min":1, "max":1, "from":[69], "appliesTo":[521]},
-		{"min":4, "max":4, "from":[24,25], "appliesTo":[521]},
-		{"max":3, "from":[25], "appliesTo":[521]},
-		{"min":1, "max":1, "from":[67], "appliesTo":[523]}
+		{"min":1, "max":1, "from":[80,81,82,83,84,85,86,87], "appliesTo":[520]}
+		
+				
 	]
 }
