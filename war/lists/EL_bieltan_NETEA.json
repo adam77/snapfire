@@ -1,7 +1,7 @@
 {
 	"id":"Biel-Tan Craftworld",
-	"version":"NetEA Army Compendium v2014 (v4.2)",
-	"by":"Iron Bloke, last edit 2015-02-18 Kyussinchains",
+	"version":"Biel-Tan Craftworld (v4.2)",
+	"by":"Iron Bloke, last edit 2016-09-27 Kyussinchains",
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":507, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
