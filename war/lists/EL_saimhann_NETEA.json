@@ -15,7 +15,7 @@
 			{"id":513, "name":"Shining Spears Warhost", 			"pts":200,		"upgrades":[39]}
 		]},	
 		{"name":"TROUPES", "formations":[
-			{"id":520, "name":"Saim-Hann Guardian Troupe",					"pts":250, "upgrades":[]},
+			{"id":520, "name":"Saim-Hann Guardian Troupe",					"pts":250, "upgrades":[65]},
 			
 			{"id":522, "name":"Aspect Warrior Troupe", 			"pts":225,	"upgrades":[30,41,39]},
 			{"id":523, "name":"Hornet Troupe",				"pts":0, 	"upgrades":[70]},
