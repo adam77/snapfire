@@ -217,6 +217,7 @@ var ArmyforgeUI = {
 	
 		// load the army list...
 		new Ajax.Request(listFile, {
+			method:'get',
 			onSuccess: function(response) {
 				var list = JSON.parse( response.responseText );
 				ArmyList.init(list);
