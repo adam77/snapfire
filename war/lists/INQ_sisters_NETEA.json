@@ -6,10 +6,10 @@
    
    "sections": [
         {"name": "COMPANIES", "formations": [
-            {"id": 512, "name": "Mission", "pts": 275 , "units": "8 Battle Sister Units", "upgrades": [11,18,12,14,16,20,22,23,24] },
+            {"id": 512, "name": "Mission", "pts": 275 , "upgrades": [11,18,16,22,23,24] },
             {"id": 513, "name": "Exorcism", "pts": 0, "upgrades": [16,17] },
 	    {"id": 514, "name": "Choir", "pts": 250, "units": "6 Seraphim Sister Units", "upgrades": [11,18] },
-	    {"id": 515, "name": "Retribution", "pts":250 , "units": "6 Retributor Sister Units", "upgrades": [11,18,12,14,16,22,23,24] },
+	    {"id": 515, "name": "Retribution", "pts":160 , "upgrades": [11,18,16,22,23,24] },
             {"id": 516, "name": "Coven", "pts": 200, "units": "4 Dominion Sister Units", "upgrades": [18,14,22,23,24] },
             {"id": 517, "name": "Repentance", "pts": 250, "units": "One Mistress Character and 6 Repentia Sister Units", "upgrades": [15,30,31,22,23,24] },
 	    {"id": 519, "name": "Purgeance", "pts": 100, "upgrades": [16,17] }
@@ -54,7 +54,13 @@
 	  {"id": 26, "name": "Inquisitorial Storm Trooper","pts": 0},
 	  {"id": 27, "name": "Inquisitorial Veteran Warrior Acolyte","pts": 15},
 	  {"id": 28, "name": "Inquisitorial Support Staff","pts": 15},
-	  {"id": 29, "name": "Death Cult Assassin","pts": 20}
+	  {"id": 29, "name": "Death Cult Assassin","pts": 20},
+	    {"id": 32, "name": "Battle Sister","pts": 0},
+	    {"id": 33, "name": "Celestian Sister","pts": 20},
+	    {"id": 34, "name": "Dominion Sister","pts": 15},
+	    {"id": 35, "name": "Retribution Sister","pts": 15}
+	   
+	   
 	  
 	 	  
 
@@ -81,6 +87,12 @@
 	  {"min": 5, "max": 7, "from": [16], "appliesTo": [513] },
 	  {"min": 6, "max": 6, "from": [22,23], "appliesTo": [519] },
 	  {"min": 8, "max": 8, "from": [26,27,28,29], "appliesTo": [518] },
+	   {"min": 8, "max": 8, "from": [32,33,34,35], "appliesTo": [512] },
+	   {"min": 6, "max": 6, "from": [33,34,35], "appliesTo": [515] },
+	   {"max": 2, "from": [33], "appliesTo": [512,515] },
+	   {"max": 2, "from": [34], "appliesTo": [512,515] },
+	   {"max": 2, "from": [35], "appliesTo": [512] },
+	   
 	  {"max": 2, "from": [27], "appliesTo": [518] },
 	  {"max": 2, "from": [28], "appliesTo": [518] },
 	  {"max": 1, "from": [29], "appliesTo": [518] }
