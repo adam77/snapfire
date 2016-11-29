@@ -19,7 +19,7 @@
             {"id": 518, "name": "Inquisitor Hereticus Retinue", "pts": 200, "units": "One Inquisitor Hereticus Character", "upgrades": [10,21,19,13,22,23,24] },
 	    {"id": 600, "name": "Crusaders", "pts": 200, "units": "1 Priest Character and 10 Redemptionist Units", "upgrades": [13,15,30,31,25] },
             {"id": 602, "name": "Conclave", "pts": 250, "units": "6 Arco-Flagellant Units", "upgrades": [15,30,31,22,23,24] },
-            {"id": 605, "name": "Pentinence", "pts": 35, "upgrades": [15] }     
+            {"id": 605, "name": "Pentinence", "pts": 35, "upgrades": [32] }     
          ]},
 	   
         {"name": "WAR ENGINES AND IMPERIAL NAVY", "formations": [
@@ -50,7 +50,7 @@
 	  {"id": 23, "name": "Repressor","pts": 25},
           {"id": 24, "name": "Rhino","pts": 0},
 	  {"id": 25, "name": "Civilian Light Vehicles","pts": 10},
-	  
+	  {"id": 32, "name": "Pentinent Engine","pts": 35},
 	  {"id": 26, "name": "Inquisitorial Storm Trooper","pts": 0},
 	  {"id": 27, "name": "Inquisitorial Veteran Warrior Acolyte","pts": 15},
 	  {"id": 28, "name": "Inquisitorial Support Staff","pts": 15},
@@ -77,7 +77,7 @@
 	  {"max": 1, "from": [10,21], "appliesTo": [518]},
 	  {"max": 2, "from": [16], "appliesTo":[512,515]},
           {"max": 4, "from": [21] },
-	  {"min": 4, "max": 7, "from": [15], "appliesTo": [605] },
+	  {"min": 4, "max": 7, "from": [32], "appliesTo": [605] },
 	  {"min": 5, "max": 7, "from": [16], "appliesTo": [513] },
 	  {"min": 6, "max": 6, "from": [22,23], "appliesTo": [519] },
 	  {"min": 8, "max": 8, "from": [26,27,28,29], "appliesTo": [518] },
