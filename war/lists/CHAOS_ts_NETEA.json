@@ -1,6 +1,6 @@
 {
 	"id":"Thousand Sons",
-	"version":"6.1.1",
+	"version":"6.1.2",
 	"by":"Kyussinchains",
 	"notes":["This list is rated 'Under Development'","If taking Dreadclaws, you must take just enough to transport the entire formation.", "Each unit can take a maximum of 4 types of upgrades","List must contain at least one Rubric Fellowship formation."],
 	"sections":[
@@ -20,7 +20,8 @@
 		{"name":"Thousand Sons Support Formatons", "formations": [
 			{ "id":511, "name":"Thousand Sons Warcoven", "pts":10, "units":"Sorcerer", "upgrades":[23,13,14,15,16,17,19,20] },
 			{ "id":512, "name":"Sekhmet Disc Riders", "pts":325, "units":"Sorcerer, 9 Disc Riders", "upgrades":[13] },
-			{ "id":513, "name":"Neophyte Class", "pts":175, "units":"One Sorcerer, 9 Neophyte units", "upgrades": [13,17,18,20] }
+			{ "id":513, "name":"Neophyte Class", "pts":175, "units":"One Sorcerer, 9 Neophyte units", "upgrades": [13,17,18,20] },
+			{ "id":514, "name":"Decievers", "pts":275, "units":"4 Deciever units", "upgrades": [14] }
 		]},
 		{"name":"War Engines of Tzeentch", "formations":[
 			{ "id":521, "name":"Greater Spires of Tzeentch", "pts":0, "upgrades":[26,13,20] },
@@ -59,7 +60,7 @@
 		{"min":1, "from":[503]},
 		{"max":1, "from":[541]},
 		{"max":1, "name":"spaceship","from":[533,534]},
-		{"max":2, "name":"Support formations", "from":[511,512,513], "forEach":[503], "name2":"Rubric Fellowship"},
+		{"max":2, "name":"Support formations", "from":[511,512,513,514], "forEach":[503], "name2":"Rubric Fellowship"},
 		{"maxPercent":33, "name":"Chaos Navy and Titan Formations", "from":[521,522,523,531,532,533,534]}
 	],
 	"upgradeConstraints":[
