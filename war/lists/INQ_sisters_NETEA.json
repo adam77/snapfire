@@ -1,60 +1,62 @@
 {
    "id": "Adepta Sororitas",
-   "version": "V1.1 - Developmental",
+   "version": "V1.5 - Developmental",
    "by": "Kyussinchains",
-   "notes":["If Using transports (Immolator, Repressor, Rhinos, Civilian Light Vehicles) you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible."],
+   "notes":["If Using transports (Immolator, Repressor, Rhinos, Civilian Light Vehicles, Valkyries, Aquilas, Arvus) you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible."],
    
    "sections": [
         {"name": "COMPANIES", "formations": [
-            {"id": 512, "name": "Mission", "pts": 225 , "units": "8 Battle Sister Units", "upgrades": [11,18,12,14,16,20,22,23,24] },
+            {"id": 512, "name": "Mission", "pts": 275 , "units": "8 Battle Sister Units", "upgrades": [11,18,12,14,16,20,22,23,24] },
             {"id": 513, "name": "Exorcism", "pts": 0, "upgrades": [16,17] },
-			{"id": 514, "name": "Choir", "pts": 225, "units": "6 Seraphim Sister Units", "upgrades": [11,18] },
-			{"id": 515, "name": "Retribution", "pts":225 , "units": "6 Retributor Sister Units", "upgrades": [11,18,12,14,16,22,23,24] },
-            {"id": 516, "name": "Coven", "pts": 175, "units": "4 Dominion Sister Units", "upgrades": [18,14,22,23,24] },
-            {"id": 517, "name": "Repentance", "pts": 250, "units": "One Mistress Character and 6 Repentia Sister Units", "upgrades": [15,22,23,24] },
-			{"id": 518, "name": "Inquisitor Hereticus Retinue", "pts": 250, "units": "One Inquisitor Hereticus Unit", "upgrades": [10,19,13,21] }
-         ]},
+	    {"id": 514, "name": "Choir", "pts": 250, "units": "6 Seraphim Sister Units", "upgrades": [11,18] },
+	    {"id": 515, "name": "Retribution", "pts":250 , "units": "6 Retributor Sister Units", "upgrades": [11,18,12,14,16,22,23,24] },
+            {"id": 516, "name": "Coven", "pts": 200, "units": "4 Dominion Sister Units", "upgrades": [18,14,22,23,24] },
+            {"id": 517, "name": "Repentance", "pts": 250, "units": "One Mistress Character and 6 Repentia Sister Units", "upgrades": [15,30,31,22,23,24] },
+	    {"id": 519, "name": "Purgeance", "pts": 100, "upgrades": [16,17] }
+	  ]},
+	   
         {"name": "SUPPORT FORMATIONS", "formations": [
-            {"id": 600, "name": "Crusaders", "pts": 200, "units": "1 Priest Character and 10 Redemptionist Units", "upgrades": [13,15,25] },
-            {"id": 601, "name": "Inquisitorial Armoured Fist", "pts": 300, "units": "6 Storm Trooper Units and 3 Chimera Units", "upgrades": [19] },
-            {"id": 602, "name": "Conclave", "pts": 250, "units": "6 Arco-Flagellant Units", "upgrades": [15,22,23,24] },
-            {"id": 605, "name": "Pentinence", "pts": 225, "units": "4 Pentinent Engines", "upgrades": [15] },
-            {"id": 606, "name": "Emperors Chapels", "pts": 350 , "units": "2 Emperors Chapel War Engines", "upgrades": [] },
-            {"id": 607, "name": "Cathedral of Purification", "pts": 500, "upgrades": [] }
-            
+            {"id": 518, "name": "Inquisitor Hereticus Retinue", "pts": 200, "units": "One Inquisitor Hereticus Character", "upgrades": [10,21,19,13,22,23,24] },
+	    {"id": 600, "name": "Crusaders", "pts": 200, "units": "1 Priest Character and 10 Redemptionist Units", "upgrades": [13,15,30,31,25] },
+            {"id": 602, "name": "Conclave", "pts": 250, "units": "6 Arco-Flagellant Units", "upgrades": [15,30,31,22,23,24] },
+            {"id": 605, "name": "Pentinence", "pts": 35, "upgrades": [15] }     
          ]},
-        {"name": "IMPERIAL NAVY", "formations": [
+	   
+        {"name": "WAR ENGINES AND IMPERIAL NAVY", "formations": [
             {"id": 719, "name": "Lightning Squadron", "pts": 150, "units": "2 Lightning Strike Fighters", "upgrades": [] },
             {"id": 720, "name": "Marauder Squadron", "pts": 250, "units": "2 Marauder Bombers", "upgrades": [] },
-			{"id": 708, "name": "Orbital Support", "pts": 150, "units": "1 Lunar Class Cruiser", "upgrades": [] }
+	    {"id": 708, "name": "Orbital Support", "pts": 150, "units": "1 Lunar Class Cruiser", "upgrades": [] },
+	    {"id": 606, "name": "Emperors Chapels", "pts": 400 , "units": "2 Emperors Chapel War Engines", "upgrades": [] },
+            {"id": 607, "name": "Cathedral of Purification", "pts": 500, "upgrades": [] }
          ]}
 		
    ],
    "upgrades": [
-      {"id": 10, "name": "2 Death Cult Assassins","pts":75 },
+      	  {"id": 10, "name": "Aquila lander and 3 Arvus Lighters","pts":75 },
 	  {"id": 11, "name": "Canoness","pts": 100},
-      {"id": 12, "name": "2 Celestian Sister Units","pts": 100},
+	  {"id": 12, "name": "2 Celestian Sister Units","pts": 100},
 	  {"id": 13, "name": "Inquisitorial Chimera","pts": 25},
-      {"id": 14, "name": "2 Dominion Sister Units","pts": 75},
-	  {"id": 15, "name": "2 Pentinent Engines","pts": 75},
+          {"id": 14, "name": "2 Dominion Sister Units","pts": 75},
+	  {"id": 15, "name": "1 Pentinent Engine","pts": 35},
+	   {"id": 30, "name": "2 Pentinent Engines","pts": 70},
+	   {"id": 31, "name": "3 Pentinent Engines","pts": 105},
 	  {"id": 16, "name": "Exorcist","pts": 50},
-      {"id": 17, "name": "Hunter","pts": 75},
+          {"id": 17, "name": "Hunter","pts": 75},
 	  {"id": 18, "name": "Palatine","pts": 50},
-      {"id": 19, "name": "Priest","pts": 50},
+          {"id": 19, "name": "Priest","pts": 50},
 	  {"id": 20, "name": "2 Repentia Sister Units","pts": 75},
-	  {"id": 21, "name": "Inquisitorial Land Raider","pts": 75},
-      {"id": 22, "name": "Immolator","pts": 25},
+	  {"id": 21, "name": "Inquisitorial Valyrie","pts": 150},
+          {"id": 22, "name": "Immolator","pts": 25},
 	  {"id": 23, "name": "Repressor","pts": 25},
-      {"id": 24, "name": "Rhino","pts": 0},
+          {"id": 24, "name": "Rhino","pts": 0},
 	  {"id": 25, "name": "Civilian Light Vehicles","pts": 10},
 	  
 	  {"id": 26, "name": "Inquisitorial Storm Trooper","pts": 0},
-	  {"id": 27, "name": "Inquisitorial Henchmen Acolyte","pts": 0},
-	  {"id": 28, "name": "Inquisitorial Henchmen Sage","pts": 0},
-	  {"id": 29, "name": "Inquisitorial Henchmen Chirurgeon","pts": 0},
-	  {"id": 30, "name": "Inquisitorial Henchmen Servitor","pts": 0},
-	  {"id": 31, "name": "Inquisitorial Henchmen Crusader","pts": 0},
-	  {"id": 32, "name": "Inquisitorial Henchmen Pentinent","pts": 0}	  
+	  {"id": 27, "name": "Inquisitorial Veteran Warrior Acolyte","pts": 15},
+	  {"id": 28, "name": "Inquisitorial Support Staff","pts": 15},
+	  {"id": 29, "name": "Death Cult Assassin","pts": 20}
+	  
+	 	  
 
    ],
    "formationConstraints": [
@@ -66,16 +68,22 @@
    "upgradeConstraints": [
       {"max": 1, "from": [11,18,19] },
 	  {"max": 1, "perArmy": true, "from": [11]},
-      {"max": 1, "from": [10]},
+      
 	  {"max": 1, "from": [12]},
 	  {"max": 1, "from": [14]},
 	  {"max": 1, "from": [15]},
 	  {"max": 1, "from": [17]},
 	  {"max": 1, "from": [20]},
+	  {"max": 1, "from": [10,21], "appliesTo": [518]},
 	  {"max": 2, "from": [16], "appliesTo":[512,515]},
-      {"max": 4, "from": [21] },
-	  {"min": 4, "max": 6, "from": [16], "appliesTo": [513] },
-	  {"min": 5, "max": 5, "from": [26,27,28,29,30,31,32], "appliesTo": [518] }
+          {"max": 4, "from": [21] },
+	  {"min": 4, "max": 7, "from": [15], "appliesTo": [605] },
+	  {"min": 5, "max": 7, "from": [16], "appliesTo": [513] },
+	  {"min": 6, "max": 6, "from": [22,23], "appliesTo": [519] },
+	  {"min": 8, "max": 8, "from": [26,27,28,29], "appliesTo": [518] },
+	  {"max": 2, "from": [27], "appliesTo": [518] },
+	  {"max": 2, "from": [28], "appliesTo": [518] },
+	  {"max": 1, "from": [29], "appliesTo": [518] }
 	  
    ]
 }
