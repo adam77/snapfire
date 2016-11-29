@@ -55,7 +55,7 @@
 	  {"id": 27, "name": "Inquisitorial Veteran Warrior Acolyte","pts": 15},
 	  {"id": 28, "name": "Inquisitorial Support Staff","pts": 15},
 	  {"id": 29, "name": "Death Cult Assassin","pts": 20},
-	    {"id": 32, "name": "Battle Sister","pts": 0},
+	    {"id": 42, "name": "Battle Sister","pts": 0},
 	    {"id": 33, "name": "Celestian Sister","pts": 20},
 	    {"id": 34, "name": "Dominion Sister","pts": 15},
 	    {"id": 35, "name": "Retribution Sister","pts": 15}
@@ -87,7 +87,7 @@
 	  {"min": 5, "max": 7, "from": [16], "appliesTo": [513] },
 	  {"min": 6, "max": 6, "from": [22,23], "appliesTo": [519] },
 	  {"min": 8, "max": 8, "from": [26,27,28,29], "appliesTo": [518] },
-	   {"min": 8, "max": 8, "from": [32,33,34,35], "appliesTo": [512] },
+	   {"min": 8, "max": 8, "from": [42,33,34,35], "appliesTo": [512] },
 	   {"min": 6, "max": 6, "from": [33,34,35], "appliesTo": [515] },
 	   {"max": 2, "from": [33], "appliesTo": [512,515] },
 	   {"max": 2, "from": [34], "appliesTo": [512,515] },
