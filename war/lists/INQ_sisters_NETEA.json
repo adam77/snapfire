@@ -63,7 +63,7 @@
       {"max": 1, "from": [518]},
       
       {"maxPercent": 33, "name": "Aircraft and Spacecraft", "from": [719,720,708]},
-      {"max": 1, "name": "Support Formations", "from": [600,601,602,603,604,605,606,607], "forEach": [512,513,514,515,516,517,518], "name2": "Company" }
+      {"max": 1, "name": "Support Formations", "from": [518,600,602,605], "forEach": [512,513,514,515,516,517,519], "name2": "Company" }
    ],
    "upgradeConstraints": [
       {"max": 1, "from": [11,18,19] },
