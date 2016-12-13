@@ -27,7 +27,7 @@
             {"id": 720, "name": "Marauder Squadron", "pts": 250, "units": "2 Marauder Bombers", "upgrades": [] },
 	    {"id": 708, "name": "Orbital Support", "pts": 150, "units": "1 Lunar Class Cruiser", "upgrades": [] },
 	    {"id": 606, "name": "Emperors Chapels", "pts": 400 , "units": "2 Emperors Chapel War Engines", "upgrades": [] },
-            {"id": 607, "name": "Cathedral of Purification", "pts": 500, "upgrades": [] }
+            {"id": 607, "name": "Cathedral of Purification", "pts": 600, "upgrades": [] }
          ]}
 		
    ],
@@ -41,7 +41,7 @@
 	   {"id": 30, "name": "2 Pentinent Engines","pts": 70},
 	   {"id": 31, "name": "3 Pentinent Engines","pts": 105},
 	  {"id": 16, "name": "Exorcist","pts": 50},
-          {"id": 17, "name": "Hunter","pts": 75},
+          {"id": 17, "name": "Hunter","pts": 50},
 	  {"id": 18, "name": "Palatine","pts": 50},
           {"id": 19, "name": "Priest","pts": 50},
 	  {"id": 20, "name": "2 Repentia Sister Units","pts": 75},
@@ -72,7 +72,8 @@
       {"max": 1, "name": "Support Formations", "from": [518,600,602,605], "forEach": [512,513,514,515,516,517,519], "name2": "Company" }
    ],
    "upgradeConstraints": [
-      {"max": 1, "from": [11,18,19] },
+      {"max": 1, "from": [11,18] },
+	   {"max": 1, "from": [19] },
 	  {"max": 1, "perArmy": true, "from": [11]},
       
 	  {"max": 1, "from": [12]},
