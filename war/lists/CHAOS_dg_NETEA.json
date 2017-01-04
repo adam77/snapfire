@@ -1,8 +1,8 @@
 
 {
    "id": "Death Guard",
-   "version": "NetEA V0.4.1",
-   "by": "IJW Wartrader based on Kyussinchains' 0.2 file - last edit 22 December 2016 22:42:12 GMT by IJW Wartrader",
+   "version": "NetEA V0.4.2",
+   "by": "IJW Wartrader based on Kyussinchains' 0.2 file - last edit 4 January 2017 10:09:40 GMT by IJW Wartrader",
    "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 4. No transport spaces may be left over if possible. Rhinos count towards the number of upgrade allowances of a formation. 2) Each formation may select a maximum of four upgrades of different types. 3) Formations marked with a * have Initiative 2+."],
    
    "sections": [
@@ -48,9 +48,6 @@
     {"id": 21, "name": "Death Guard Daemon Prince (Supreme Commander)", "pts": 100},
     {"id": 34, "name": "7 Plague Marines", "pts": 0},
     {"id": 35, "name": "4 Plague Marines, 3 Havocs", "pts": 25},
-    {"id": 36, "name": "4 Plague Marines, 2 Havocs, 1 Destroyer", "pts": 25},
-    {"id": 37, "name": "4 Plague Marines, 1 Havoc, 2 Destroyers", "pts": 25},
-    {"id": 39, "name": "4 Plague Marines, 3 Destroyers", "pts": 25},
     {"id": 53, "name": "Death Guard Land Raider", "pts": 75}, 
     {"id": 60, "name": "Icon Bearer", "pts": 25},
     {"id": 52, "name": "Chaos Champion", "pts": 50},
@@ -94,7 +91,7 @@
     {"max": 1, "min": 1, "from": [17,18,19,20,21], "appliesTo": [501]},
     {"max": 1, "min": 1, "from": [17,18], "appliesTo": [502]},
 	  {"max": 1, "min": 1, "from": [17,18,19,20,21], "appliesTo": [503]},
-    {"max": 1, "min": 1, "from": [34,35,36,37,39], "appliesTo": [501]},
+    {"max": 1, "min": 1, "from": [34,35], "appliesTo": [501]},
 	  {"max": 3, "from": [57,78,81], "appliesTo": [501,503,505,508,509,511]}, 
 	  {"max": 4, "from": [53], "appliesTo": [501,503]}, 
 	  {"max": 3, "from": [64], "appliesTo": [501,505]}, 
