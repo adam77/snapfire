@@ -11,7 +11,7 @@
 {"id":534, "name":"Gargant",                    "pts":475, "upgrades":[36,37,38,40,41,43]}]},
 
 {"name":"NON-GARGANT MOBS", "formations":[
-{"id":535, "name":"Supa Stompa",       "pts":125, "upgrades":[11,12,13,14,16,17,36,37,38,40,41,43]},
+{"id":535, "name":"Supa Stompa",       "pts":150, "upgrades":[11,12,13,14,16,17,36,37,38,40,41,43]},
 {"id":560, "name":"Stompa Mob (Normal)",       "pts":20, "upgrades":[11,12,13,14,16,17]},
 {"id":561, "name":"Stompa Mob (Big)",       "pts":-10, "upgrades":[11,12,13,14,16,17]},
 {"id":562, "name":"Stompa Mob (Uge)",       "pts":-40, "upgrades":[11,12,13,14,16,17]},
@@ -71,6 +71,7 @@
 "formationConstraints":[
                
 {"max":1, "name":"Spacecraft", "from":[553]},
+        {"min":1,"from":[533,532]},
 
 {"maxPercent":33, "name":"Navy", "from":[551,552,553]}
 ],
