@@ -1,0 +1,98 @@
+{
+	"id":"Knight Household & Legio Titanicus Cohesive Allies",
+	"version":"Heresy v 0.3.?",
+	"by":"freefall",
+	"sections":[
+		{"name":"LINE DETACHMENTS", "formations":[
+			{"id":500, "name":"Questorius Knights", 		"pts":450, "upgrades":[100,101,102,103,104,105,106, 200,201,202,203,204]}
+         ]},
+		{"name":"SUPPORT DETACHMENTS", "formations":[
+			{"id":600, "name":"Cerastus  Knights",			"pts":450, "upgrades":[110,111,112,113, 200,201,202,203,204]}
+		]},
+		{"name":"ALLIES & LORDS OF WAR", "formations":[
+			{"id":700, "name":"Warhound Scout Pack",		"pts":500,  "upgrades":[], "units":"2 Warhound Scout Titans"},
+            {"id":701, "name":"Reaver Titan",				"pts":575,  "upgrades":[], "units":"1 Reaver Titan"},
+			{"id":702, "name":"Warlord Titan",				"pts":725,  "upgrades":[], "units":"1 Warlord Titan"},
+		 	{"id":703, "name":"Emperor Class Titan",		"pts":1350, "upgrades":[400,401]}
+		
+         ]}
+	],	
+	
+	"upgrades":[
+		{"id":100, "name":"Questorius Knight-Crusader",						"pts":0},
+		{"id":101, "name":"Questorius Knight-Errant",						"pts":0},
+		{"id":102, "name":"Questorius Knight-Gallant",						"pts":0},
+		{"id":103, "name":"Questorius Knight-Magaera",						"pts":0},
+		{"id":104, "name":"Questorius Knight-Paladin",						"pts":0},
+		{"id":105, "name":"Questorius Knight-Styrix",						"pts":0},
+		{"id":106, "name":"Questorius Knight-Warden",						"pts":0},
+		
+		{"id":110, "name":"Cerastus  Knight-Acheron",						"pts":0},
+		{"id":111, "name":"Cerastus  Knight-Atropos",						"pts":0},
+		{"id":112, "name":"Cerastus  Knight-Castigator",					"pts":0},
+		{"id":113, "name":"Cerastus  Knight-Lancer",						"pts":0},
+
+	
+		{"id":200, "name":"Upgrade: Aspirants",								"pts":-50},
+		{"id":201, "name":"Upgrade: Scions of Uhlan",						"pts":0},
+		{"id":202, "name":"Character: Lord Scion",							"pts":25},
+		{"id":203, "name":"Character: Preceptor",							"pts":25},
+	    {"id":204, "name":"Character: Seneschal",							"pts":75},
+		
+		{"id":300, "name":"Scout Titan Weapon: Inferno Gun",				"pts":0},
+		{"id":301, "name":"Scout Titan Weapon: Vulcan Megabolter",			"pts":0},
+		{"id":302, "name":"Scout Titan Weapon: Plasma Blastgun",			"pts":0},
+		{"id":303, "name":"Scout Titan Weapon: Turbolaser Destructor",		"pts":25},
+		
+		{"id":304, "name":"Battle Titan Weapon: Laser Burner",				"pts":0},
+		{"id":305, "name":"Battle Titan Weapon: Corvus Assault Pord",		"pts":0},
+		{"id":306, "name":"Battle Titan Weapon: Carapace Landing Pad",		"pts":0},
+		{"id":307, "name":"Battle Titan Weapon: Plasma Cannon",				"pts":25},
+		{"id":308, "name":"Battle Titan Weapon: Gatling Blaster",			"pts":25},
+		{"id":309, "name":"Battle Titan Weapon: Apocalypse Rocket Launcher","pts":25},
+		{"id":310, "name":"Battle Titan Weapon: Close Combat Weapon",		"pts":25},
+		{"id":311, "name":"Battle Titan Weapon: Melta Cannon",				"pts":50},
+		{"id":312, "name":"Battle Titan Weapon: Laser Blaster",				"pts":50},
+		{"id":313, "name":"Battle Titan Weapon: Volcano Cannon",			"pts":50},
+		{"id":314, "name":"Battle Titan Weapon: Plasma Destructor",			"pts":75},
+		{"id":315, "name":"Battle Titan Weapon: Support Missile",			"pts":75},
+		{"id":316, "name":"Battle Titan Weapon: Quake Cannon",				"pts":75},
+		
+		{"id":350, "name":"Veteran Princeps",								"pts":25},
+		{"id":351, "name":"Air Defence: Carapace Multi-Lasers",				"pts":50},
+		{"id":352, "name":"Sacred Icon",									"pts":50},
+		
+		{"id":400, "name":"Support Titan: Imperator",					"pts":0},
+		{"id":401, "name":"Support Titan: Warmonger",					"pts":0}
+		
+    ],
+	"formationConstraints":[
+		{"max":1, "name":"Support Detachment", "from":[600], "forEach":[500], "name2":"Line Household"},
+		{"maxPercent":33, "name":"ALLIES & LORDS OF WAR", "from":[700,701,702,703]},
+		{"max":1, "from":[704]}
+		
+	],
+	"upgradeConstraints":[
+		{"min":0, "max":1, "from":[200], "appliesTo":[500,600]},
+		{"min":0, "max":1, "from":[201], "appliesTo":[500,600]},
+		{"min":0, "max":1, "from":[202,203,204], "appliesTo":[500,600]},
+		
+		{"min":4, "max":4, "from":[100,101,102,103,104,105,106], "appliesTo":[500]},
+		{"min":4, "max":4, "from":[110,111,112,113], "appliesTo":[600]},
+
+		{"min":4, "max":4, "from":[300,301,302,303], "appliesTo":[700]},
+		
+		{"min":3, "max":3, "from":[304,305,306,307,308,309,310,311,312,313,314, 300,301,302,303], "appliesTo":[701]},
+		{"min":4, "max":4, "from":[304,305,306,307,308,309,310,311,312,313,314, 300,301,302,303], "appliesTo":[702]},
+		
+		{"min":0, "max":1, "from":[350], "appliesTo":[700,701,702,703]},
+		{"min":0, "max":1, "from":[351], "appliesTo":[701,702]},
+		{"min":0, "max":1, "from":[352], "appliesTo":[701,702]},
+		
+		{"min":1, "max":1, "from":[400,401], "appliesTo":[703]},
+		
+        {"max":1, "perArmy":true, "from":[204]}
+	
+				
+	]
+}
