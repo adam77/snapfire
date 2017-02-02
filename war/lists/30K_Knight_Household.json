@@ -4,10 +4,10 @@
 	"by":"freefall",
 	"sections":[
 		{"name":"LINE DETACHMENTS", "formations":[
-			{"id":500, "name":"Questorius Knights", 		"pts":450, "upgrades":[100,101,102,103,104,105,106, 200,201,202,203,204]}
+			{"id":500, "name":"Questorius Knights", 		"pts":-25, "upgrades":[100,101,102,103,104,105,106, 200,201,202,203,204]}
          ]},
 		{"name":"SUPPORT DETACHMENTS", "formations":[
-			{"id":600, "name":"Cerastus  Knights",			"pts":450, "upgrades":[110,111,112,113, 200,201,202,203,204]}
+			{"id":600, "name":"Cerastus  Knights",			"pts":25, "upgrades":[110,111,112,113, 200,201,202,203,204]}
 		]},
 		{"name":"ALLIES & LORDS OF WAR", "formations":[
 			{"id":700, "name":"Warhound Scout Pack",		"pts":500,  "upgrades":[], "units":"2 Warhound Scout Titans"},
@@ -19,18 +19,18 @@
 	],	
 	
 	"upgrades":[
-		{"id":100, "name":"Questorius Knight-Crusader",						"pts":0},
-		{"id":101, "name":"Questorius Knight-Errant",						"pts":0},
-		{"id":102, "name":"Questorius Knight-Gallant",						"pts":0},
-		{"id":103, "name":"Questorius Knight-Magaera",						"pts":0},
-		{"id":104, "name":"Questorius Knight-Paladin",						"pts":0},
-		{"id":105, "name":"Questorius Knight-Styrix",						"pts":0},
-		{"id":106, "name":"Questorius Knight-Warden",						"pts":0},
+		{"id":100, "name":"Questorius Knight-Paladin",						"pts":100},
+		{"id":101, "name":"Questorius Knight-Errant",						"pts":100},
+		{"id":102, "name":"Questorius Knight-Gallant",						"pts":125},
+		{"id":103, "name":"Questorius Knight-Magaera",						"pts":125},
+		{"id":104, "name":"Questorius Knight-Crusader",						"pts":125},
+		{"id":105, "name":"Questorius Knight-Styrix",						"pts":125},
+		{"id":106, "name":"Questorius Knight-Warden",						"pts":125},
 		
-		{"id":110, "name":"Cerastus  Knight-Acheron",						"pts":0},
-		{"id":111, "name":"Cerastus  Knight-Atropos",						"pts":0},
-		{"id":112, "name":"Cerastus  Knight-Castigator",					"pts":0},
-		{"id":113, "name":"Cerastus  Knight-Lancer",						"pts":0},
+		{"id":110, "name":"Cerastus  Knight-Lancer",						"pts":100},
+		{"id":111, "name":"Cerastus  Knight-Castigator",					"pts":100},
+		{"id":112, "name":"Cerastus  Knight-Atropos",						"pts":150},
+		{"id":113, "name":"Cerastus  Knight-Acheron",						"pts":150},
 
 	
 		{"id":200, "name":"Upgrade: Aspirants",								"pts":-50},
@@ -77,8 +77,8 @@
 		{"min":0, "max":1, "from":[201], "appliesTo":[500,600]},
 		{"min":0, "max":1, "from":[202,203,204], "appliesTo":[500,600]},
 		
-		{"min":4, "max":4, "from":[100,101,102,103,104,105,106], "appliesTo":[500]},
-		{"min":4, "max":4, "from":[110,111,112,113], "appliesTo":[600]},
+		{"min":4, "max":6, "from":[100,101,102,103,104,105,106], "appliesTo":[500]},
+		{"min":4, "max":6, "from":[110,111,112,113], "appliesTo":[600]},
 
 		{"min":4, "max":4, "from":[300,301,302,303], "appliesTo":[700]},
 		
