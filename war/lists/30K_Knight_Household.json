@@ -2,6 +2,7 @@
 	"id":"Knight Household & Legio Titanicus Cohesive Allies",
 	"version":"Heresy v 0.3.?",
 	"by":"freefall",
+	"notes":["Titans are not part of this list. Legion Titanicus is a different Army Lists. It's put here just for the convenience."],
 	"sections":[
 		{"name":"LINE DETACHMENTS", "formations":[
 			{"id":500, "name":"Questorius Knights", 		"pts":-25, "upgrades":[100,101,102,103,104,105,106, 200,201,202,203,204]}
@@ -9,9 +10,10 @@
 		{"name":"SUPPORT DETACHMENTS", "formations":[
 			{"id":600, "name":"Cerastus  Knights",			"pts":-75, "upgrades":[110,111,112,113, 200,201,202,203,204]}
 		]},
-		{"name":"ALLIES & LORDS OF WAR", "formations":[
-		
-			{"id":699, "name":"Acastus Knight Porphyrion",	"pts":0,  "upgrades":[202,203,402]},
+		{"name":"LORDS OF WAR", "formations":[
+			{"id":699, "name":"Acastus Knight Porphyrion",	"pts":0,  "upgrades":[202,203,402]}
+		]},
+		{"name":"LEGIO TITANICUS COHESIVE ALLIES", "formations":[
 			{"id":700, "name":"Warhound Scout Pack",		"pts":500,  "upgrades":[], "units":"2 Warhound Scout Titans"},
             {"id":701, "name":"Reaver Titan",				"pts":575,  "upgrades":[], "units":"1 Reaver Titan"},
 			{"id":702, "name":"Warlord Titan",				"pts":725,  "upgrades":[], "units":"1 Warlord Titan"},
