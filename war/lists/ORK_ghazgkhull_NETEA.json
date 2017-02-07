@@ -61,7 +61,7 @@
       {"id": 43, "name": "Big Gunz", "pts": 25},
       {"id": 49, "name": "Fighta Bomba", "pts": 50},
       {"id": 80, "name": "Kill Kroozer", "pts": 0},
-      {"id": 81, "name": "Battle Kroozer", "pts": 50}
+      {"id": 91, "name": "Battle Kroozer", "pts": 50}
    ],
    "formationConstraints": [
       {"max": 1, "name": "Spacecraft", "from": [520]},
@@ -97,6 +97,6 @@
       {"min": 15, "from": [43], "appliesTo": [515]},
       {"max": 3, "from": [64], "appliesTo": [515]},
       {"max": 9, "min": 3, "from": [49], "appliesTo": [517]},
-      {"max": 1, "min": 1, "from": [80,81], "appliesTo": [520]}
+      {"max": 1, "min": 1, "from": [80,91], "appliesTo": [520]}
    ]
 }
