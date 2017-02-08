@@ -2,7 +2,7 @@
 	"id":"Knight Household & Legio Titanicus Cohesive Allies",
 	"version":"Heresy v 0.3.?",
 	"by":"freefall",
-	"notes":["Titans are not part of this list. Legion Titanicus is a different Army Lists. It's put here just for the convenience."],
+	"notes":["Titans are not part of this list. Legion Titanicus is a different Army List. It's put here just for the convenience."],
 	"sections":[
 		{"name":"LINE DETACHMENTS", "formations":[
 			{"id":500, "name":"Questorius Knights", 		"pts":-25, "upgrades":[100,101,102,103,104,105,106, 200,201,202,203,204]}
