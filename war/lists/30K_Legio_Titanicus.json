@@ -1,0 +1,74 @@
+{
+	"id":"Legio Titanicus",
+	"version":"Heresy v ?",
+	"by":"freefall",
+	"notes":["One Warhound Titan formation per 4000 pts."],
+	"sections":[
+		{"name":"LINE DETACHMENTS", "formations":[
+			{"id":699, "name":"Warhound Titan",				"pts":275,  "upgrades":[350], "units":"1 Warhound Scout Titan"},
+			{"id":700, "name":"Warhound Scout Pack",		"pts":500,  "upgrades":[350], "units":"2 Warhound Scout Titans"},
+            {"id":701, "name":"Reaver Titan",				"pts":575,  "upgrades":[349,350,351,352], "units":"1 Reaver Titan"},
+			{"id":702, "name":"Warlord Titan",				"pts":725,  "upgrades":[349,350,351,352], "units":"1 Warlord Titan"} 	
+		
+         ]},
+		{"name":"LORDS OF WAR", "formations":[
+			{"id":703, "name":"Emperor Class Titan",		"pts":1350, "upgrades":[349,350,400,401]}
+		]}
+	],	
+	
+	"upgrades":[
+		
+		{"id":300, "name":"Scout Titan Weapon: Inferno Gun",				"pts":0},
+		{"id":301, "name":"Scout Titan Weapon: Vulcan Megabolter",			"pts":0},
+		{"id":302, "name":"Scout Titan Weapon: Plasma Blastgun",			"pts":0},
+		{"id":303, "name":"Scout Titan Weapon: Turbolaser Destructor",		"pts":25},
+		
+		{"id":304, "name":"Battle Titan Weapon: Laser Burner",				"pts":0},
+		{"id":305, "name":"Battle Titan Weapon: Corvus Assault Pord",		"pts":0},
+		{"id":306, "name":"Battle Titan Weapon: Carapace Landing Pad",		"pts":0},
+		{"id":307, "name":"Battle Titan Weapon: Plasma Cannon",				"pts":25},
+		{"id":308, "name":"Battle Titan Weapon: Gatling Blaster",			"pts":25},
+		{"id":309, "name":"Battle Titan Weapon: Apocalypse Rocket Launcher","pts":25},
+		{"id":310, "name":"Battle Titan Weapon: Close Combat Weapon",		"pts":25},
+		{"id":311, "name":"Battle Titan Weapon: Melta Cannon",				"pts":50},
+		{"id":312, "name":"Battle Titan Weapon: Laser Blaster",				"pts":50},
+		{"id":313, "name":"Battle Titan Weapon: Volcano Cannon",			"pts":50},
+		{"id":314, "name":"Battle Titan Weapon: Plasma Destructor",			"pts":75},
+		{"id":315, "name":"Battle Titan Weapon: Support Missile",			"pts":75},
+		{"id":316, "name":"Battle Titan Weapon: Quake Cannon",				"pts":75},
+		
+		{"id":349, "name":"Legate",											"pts":50},
+		{"id":350, "name":"Veteran Princeps",								"pts":25},
+		{"id":351, "name":"Air Defence: Carapace Multi-Lasers",				"pts":50},
+		{"id":352, "name":"Sacred Icon",									"pts":50},
+		
+		{"id":400, "name":"Support Titan: Imperator",					"pts":0},
+		{"id":401, "name":"Support Titan: Warmonger",					"pts":0}
+		
+    ],
+	"formationConstraints":[
+		{"maxPercent":33.34, "name":"ALLIES & LORDS OF WAR", "from":[703]},
+		{"max":1, "perPoints":4000, "from":[699]},
+        {"max":1, "from":[704]}
+		
+	],
+	"upgradeConstraints":[
+		
+		
+		{"min":4, "max":4, "from":[300,301,302,303], "appliesTo":[700]},
+		
+		{"min":3, "max":3, "from":[304,305,306,307,308,309,310,311,312,313,314, 300,301,302,303], "appliesTo":[701]},
+		{"min":4, "max":4, "from":[304,305,306,307,308,309,310,311,312,313,314, 300,301,302,303], "appliesTo":[702]},
+		
+		{"min":0, "max":1, "from":[349], "appliesTo":[700,701,702,703]},
+		{"min":0, "max":1, "from":[350], "appliesTo":[699,700,701,702,703]},
+		{"min":0, "max":1, "from":[351], "appliesTo":[701,702]},
+		{"min":0, "max":1, "from":[352], "appliesTo":[701,702]},
+		
+		{"min":1, "max":1, "from":[400,401], "appliesTo":[703]},
+		
+		{"max":1, "perArmy":true, "from":[349]}
+	
+				
+	]
+}

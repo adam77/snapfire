@@ -14,10 +14,10 @@
 			{"id":699, "name":"Acastus Knight Porphyrion",	"pts":0,  "upgrades":[202,203,402]}
 		]},
 		{"name":"LEGIO TITANICUS COHESIVE ALLIES", "formations":[
-			{"id":700, "name":"Warhound Scout Pack",		"pts":500,  "upgrades":[], "units":"2 Warhound Scout Titans"},
-            {"id":701, "name":"Reaver Titan",				"pts":575,  "upgrades":[], "units":"1 Reaver Titan"},
-			{"id":702, "name":"Warlord Titan",				"pts":725,  "upgrades":[], "units":"1 Warlord Titan"},
-		 	{"id":703, "name":"Emperor Class Titan",		"pts":1350, "upgrades":[400,401]}
+			{"id":700, "name":"Warhound Scout Pack",		"pts":500,  "upgrades":[350], "units":"2 Warhound Scout Titans"},
+            {"id":701, "name":"Reaver Titan",				"pts":575,  "upgrades":[350,351,352], "units":"1 Reaver Titan"},
+			{"id":702, "name":"Warlord Titan",				"pts":725,  "upgrades":[350,351,352], "units":"1 Warlord Titan"},
+		 	{"id":703, "name":"Emperor Class Titan",		"pts":1350, "upgrades":[350,400,401]}
 		
          ]}
 	],	
@@ -100,7 +100,7 @@
 		{"min":1, "max":1, "from":[400,401], "appliesTo":[703]},
 		{"min":1, "max":2, "from":[402], "appliesTo":[699]},
 		
-        {"max":1, "perArmy":true, "from":[204]}
+		{"max":1, "perArmy":true, "from":[204]}
 	
 				
 	]
