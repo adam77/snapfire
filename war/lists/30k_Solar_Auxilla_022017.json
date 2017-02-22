@@ -1,0 +1,87 @@
+{
+	"id":"Solar Auxilia V 0.1.3",
+	"version":"v0.1.3 (FEB-2017)",
+	"by":"by freefall.",
+	"notes":["If Solar Auxilia Support upgrade is taken you must select exactly four Support squads/sections",
+	"If transports are taken you must take just enough vehicles to transport a formation"],
+	"sections":[
+		{"name":"LINE DETACHMENTS", "formations":[
+			{"id":500, "name":"Solar Auxilla Command Retinue", 				"pts":300, "upgrades":[1,2,3,4,5,7,8,9], "units":"1x Lord Marshall and 7 Veletaris Storm units"},
+			{"id":501, "name":"Solar Auxilla Strike Company", 				"pts":0, "upgrades":[]},
+			{"id":502, "name":"Solar Auxilia Infantry Terico", 				"pts":150, "upgrades":[1,2,3,4,5,6,7,8,9], "units":"1x Auxilia Tactical Command Section, 7x Solar Auxilia Infantry Section units"},
+			{"id":503, "name":"Solar Auxilia Veletaris Storm Cohort", 		"pts":200, "upgrades":[3,4,5,7,8,9], "units":"1x Auxilia Tactical Command Section, 7x Veletaris Storm units"}
+		]},
+		{"name":"SUPPORT DETACHMENTS", "formations":[
+			{"id":600, "name":"Orbital Support",							"pts":0, "upgrades":[]},
+			{"id":601, "name":"Auxilia Assault Gun Platoon",				"pts":200, "upgrades":[], "units":"4x Medusa"},
+			{"id":602, "name":"Auxilia Artillery Tank Battery",				"pts":275, "upgrades":[]},
+			{"id":603, "name":"Auxilia Malcador Squadron",					"pts":350, "upgrades":[]},
+			{"id":604, "name":"Auxilia Super Heavy Tank",					"pts":200, "upgrades":[]},
+			{"id":605, "name":"Auxilia Super Heavy Tank Squadron",			"pts":500, "upgrades":[]},
+			{"id":606, "name":"Auxilia Close Support Squadron",				"pts":350, "upgrades":[]},
+			{"id":607, "name":"Auxilia Tank Hunter Squadron",				"pts":250, "upgrades":[], "units":"3x Valdor Tank Hunters"},
+			{"id":608, "name":"Auxilia Tarantula Battery",					"pts":125, "upgrades":[], "units":"4x Tarantula, 1x Tarantula Hyperios"}
+
+		]},
+		{"name":"LORDS OF WAR", "formations":[
+			{"id":700, "name":"Solar Auxilla Avenger Wing",					"pts":250, "upgrades":[], "units":"2x Avenger Strike Fighter"},
+			{"id":701, "name":"Solar Auxilia Primaris-Lightning Wing",		"pts":225, "upgrades":[], "units":"2x Primaris-Lightning Fighter"}
+		]}
+	],	
+	
+	"upgrades":[
+		{"id":1, "name":"Support: Auxilia Flamer Section",	"pts":18.75},
+		{"id":2, "name":"Support: Veletaris Storm Squad",	"pts":18.75},
+		{"id":3, "name":"Leman Russ Demolisher",	"pts":50},
+		{"id":4, "name":"Malcador Infernus",		"pts":50},
+		{"id":5, "name":"2x Ogryn Charonite units",	"pts":75},
+		{"id":6, "name":"4x Rapier Platform",		"pts":100},
+		{"id":7, "name":"Transport: Dracosan",		"pts":75},
+		{"id":8, "name":"Transport: Stormlord",		"pts":200},
+		{"id":9, "name":"Transport: Arvus Lighter",	"pts":25},
+		{"id":10, "name":"Leman Russ Battle Tank",	"pts":60},
+		{"id":11, "name":"Leman Russ Exterminator",	"pts":60},
+		{"id":12, "name":"Leman Russ Vanquisher",	"pts":85},
+		{"id":13, "name":"Basilisk",				"pts":0},
+		{"id":14, "name":"Bombard",					"pts":0},
+		{"id":15, "name":"Malcador Heavy Tank",		"pts":0},
+		{"id":16, "name":"Malcador Infernus",		"pts":0},
+		{"id":17, "name":"Baneblade",				"pts":0},
+		{"id":18, "name":"Shadowsword",				"pts":0},
+		{"id":19, "name":"Stormsword",				"pts":0},
+		{"id":20, "name":"Stormhammer",				"pts":0},
+		{"id":21, "name":"Leman Russ Demolisher",	"pts":0},
+		{"id":22, "name":"Leman Russ Incinerator",	"pts":0},
+		{"id":23, "name":"Leman Russ Executioner",	"pts":25},
+		{"id":24, "name":"Emperor Class Battleship",	"pts":300},
+		{"id":25, "name":"Dauntless Class Light Cruiser",	"pts":150}
+		
+		
+	],
+	"formationConstraints":[
+		{"max":2, "name":"Support Detachment", "from":[600,601,602,603,604,605,606,607,608], "forEach":[500,501,502,503], "name2":"Line Detachment"},
+		{"maxPercent":33.34, "name":"LORDS OF WAR", "from":[700,702]},
+		{"max":1, "from":[500]},
+		{"max":1, "from":[600]}
+	],
+	"upgradeConstraints":[
+		
+		{"min":10, "max":10, "from":[10,11,12], "appliesTo":[501]},
+		{"min":0, "max":1, "from":[12], "appliesTo":[501]},
+		{"min":4, "max":4, "from":[13,14], "appliesTo":[602]},
+		{"min":5, "max":5, "from":[15,16], "appliesTo":[603]},
+		{"min":1, "max":1, "from":[17,18,19,20], "appliesTo":[604]},
+		{"min":3, "max":3, "from":[17,18,19,20], "appliesTo":[605]},
+		{"min":5, "max":5, "from":[21,22,23], "appliesTo":[606]},
+		{"min":0, "max":1, "from":[23], "appliesTo":[606]},
+		{"min":1, "max":1, "from":[25,24], "appliesTo":[600]},
+		
+		{"min":0, "max":2, "from":[3,4], "appliesTo":[500,502,503]},
+		{"min":0, "max":1, "from":[5], "appliesTo":[500,502,503]},
+		{"min":0, "max":4, "from":[1,2], "appliesTo":[500,502]},
+		{"min":0, "max":4, "from":[7], "appliesTo":[500,502,503]},
+		{"min":0, "max":4, "from":[8], "appliesTo":[500,502,503]},
+		{"min":0, "max":8, "from":[9], "appliesTo":[500,502,503]},
+		{"min":0, "max":1, "from":[6], "appliesTo":[502]}
+	]
+}
