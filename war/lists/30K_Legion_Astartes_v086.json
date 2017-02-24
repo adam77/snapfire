@@ -5,7 +5,7 @@
 	"notes":["You're allowed to take just enough transports to carry all units in a formation. No more."],
 	"sections":[
 		{"name":"DETACHMENTS", "formations":[
-			{"id":500, "name":"Legion Tactical Detachment", 		"pts":275, "upgrades":[14,15,105,106,16,17,18,19,20,21,22,23,123,25,26,27,28,128,129,24,95,96,97,98,99]},
+			{"id":500, "name":"Legion Tactical Detachment", 		"pts":275, "upgrades":[14,15,105,106,16,17,18,19,20,21,22,23,123,25,26,27,28,128,129,24,95,96,97,98,99,130]},
 			{"id":501, "name":"Legion Terminator Detachment", 		"pts":0, "upgrades":[13,14,15,105,106,21,22,23,123,25,26,27,28,128,129,29,31,95,96,97,98,99]},
 		    {"id":502, "name":"Legion Assault Marine Detachment",	"pts":300, "upgrades":[39,95,96,97,98,99], "units":"8 Assault Squads"},
 			{"id":503, "name":"Legion Breacher Detachment",			"pts":300, "upgrades":[14,15,105,106,20,21,22,23,25,26,27,28,128,129,24,123,29,30,39,95,96,97,98,99], "units":"8 Breacher Squads"}
@@ -124,7 +124,8 @@
 		{"id":124, "name":"Land Raider Proteus",						"pts":80},
         {"id":125, "name":"Land Raider Phobos",						"pts":80},
         {"id":126, "name":"Land Raider Achilles",						"pts":105},
-		{"id":127, "name":"Vindicator Laser Destroyer",					"pts":70}
+		{"id":127, "name":"Vindicator Laser Destroyer",					"pts":70},
+		{"id":130, "name":"Drop Assault: Drop Pods or Dreadclaws",		"pts":0}
 
 		
 	],
@@ -183,7 +184,7 @@
 		{"min":4, "max":6, "from":[124,125,126], "appliesTo":[623]},
         {"min":0, "max":2, "from":[126], "appliesTo":[623]},
 
-		{"max":1, "from":[20]},
+		{"max":1, "from":[20,130]},
 		{"max":1, "from":[24]},
 		{"max":1, "from":[31]},
 		{"max":1, "perArmy":true, "from":[99,94]}
