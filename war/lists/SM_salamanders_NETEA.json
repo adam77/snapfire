@@ -28,7 +28,7 @@
 			{ "id":542, "name":"Reaver", "pts":650, "units":"1 Reaver Class Titan"},
 			{ "id":543, "name":"Warhound", "pts":275, "units":"1 Warhound Class Titan"},
 			{ "id":544, "name":"Warhound Pack", "pts":500, "units":"2 Warhound Class Titans"},
-			{ "id":541, "name":"Warlord", "pts":850, "units":"1 Warlord Class Titan"}
+			{ "id":541, "name":"Warlord", "pts":825, "units":"1 Warlord Class Titan"}
 		]}
 	],
 	"upgrades":[
