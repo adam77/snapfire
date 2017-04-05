@@ -11,7 +11,7 @@
 		]},
 		{"name":"KABALS", "formations":[
 			{"id":511, "name":"Kabal Coterie", "pts":250, "units":"4 Incubi, 1 Archon character", "upgrades":[71,55,61,70,57,76,80,81]},
-			{"id":512, "name":"Kabal Syndicate", "pts":200,	"upgrades":[51,61,71,60,57,80,81,61,70,76], "units":"6 Warriors"},
+			{"id":512, "name":"Kabal Syndicate", "pts":200,	"upgrades":[51,61,71,60,57,80,81,70,76], "units":"6 Warriors"},
 			{"id":513, "name":"Kabal Flotilla", "pts":25, "upgrades":[51,61]}
 		]},
 		{"name":"PARTISANS", "formations":[
@@ -79,7 +79,8 @@
 		{"max":1, "from":[80]},
 		{"max":1, "from":[81]},
 		{"max":2, "from":[74]},
-		{"max":1, "from":[75]}
+		{"max":1, "from":[75]},
+		{"max":2, "from":[55,57,60,75,80,81], "appliesTo":[511,512,513,501,502,503,504,505,506,507,508]}
 		
 	]
 }
