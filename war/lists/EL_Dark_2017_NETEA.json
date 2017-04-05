@@ -3,6 +3,7 @@
 	"version":"NetEA 2017",
 	"by":"Kyussinchains",
 	"notes":["All Dark eldar formations with the 'transport' upgrade option may only select enough transports to transport the formation with no transport spaces left over after any upgrades have been added to the formation"],
+	"notes":["Up to 2 upgrades may be selected for each Kabal or Partisan formation. Each upgrade may only be chosen once by each formation"],
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":530, "name":"Webway Portal", "pts":50, "upgrades":[]},
@@ -10,8 +11,8 @@
 		]},
 		{"name":"KABALS", "formations":[
 			{"id":511, "name":"Kabal Coterie", "pts":250, "units":"4 Incubi, 1 Archon character", "upgrades":[71,55,61,70,57,76,80,81]},
-			{"id":512, "name":"Kabal Syndicate", "pts":200,	"upgrades":[51,61,70,76], "units":"6 Warriors"},
-			{"id":513, "name":"Kabal Flotilla", "pts":25, "upgrades":[51,71,60,57,80,81,61,70,76]}
+			{"id":512, "name":"Kabal Syndicate", "pts":200,	"upgrades":[51,61,71,60,57,80,81,61,70,76], "units":"6 Warriors"},
+			{"id":513, "name":"Kabal Flotilla", "pts":25, "upgrades":[51,61]}
 		]},
 		{"name":"PARTISANS", "formations":[
 			{"id":501, "name":"Haemonculi Coven", "pts":250, "units":"2 Haemonculi, 4 Wracks", "upgrades":[22,71,60,73,70,76]},
@@ -41,7 +42,7 @@
 		{"id":52, "name":"Archon", "pts":100},
 		{"id":55, "name":"2 Incubi", "pts":75},
 		{"id":57, "name":"2 Warriors", "pts":50},
-		{"id":60, "name":"1 Haemonuculi unit, 2 Grotesques", "pts":100},
+		{"id":60, "name":"1 Haemonuculi unit, 1 Grotesque", "pts":100},
 		{"id":61, "name":"Ravager", "pts":50},
 		{"id":75, "name":"2 Warp Beasts", "pts":50},
 		{"id":70, "name":"Raider", "pts":0},
@@ -69,9 +70,9 @@
 		{"min":4, "max":6, "name":"Ravagers", "from":[61], "appliesTo":[513]},
 		{"max":1, "from":[60]},
 		{"max":2, "from":[74]},
-		{"max":4, "from":[70,76]},
+		{"max":3, "from":[70,76]},
 		{"max":3, "from":[71]},
-		{"max":2, "from":[73]},				
+		{"max":4, "from":[73]},				
 		{"max":2, "from":[61], "appliesTo":[511,512]},
 		{"max":1, "from":[55]}, 
 		{"max":1, "from":[57]},
