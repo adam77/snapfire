@@ -21,14 +21,14 @@
 			{"id":504, "name":"Hellions", "pts":200, "units":"6 Hellions", "upgrades":[18,82]},
 			{"id":505, "name":"Reavers", "pts":200, "units":"6 Reavers", "upgrades":[18,83]},
 			{"id":506, "name":"Mandrakes", "pts":200, "units":"6 Mandrakes", "upgrades":[]},
-			{"id":507, "name":"Scourges", "pts":250, "units":"6 Scourges", "upgrades":[18]},
+			{"id":507, "name":"Scourges", "pts":250, "units":"6 Scourges", "upgrades":[18,80]},
 			{"id":508, "name":"Heavy Barge", "pts":250, "units":"1 Vessel of Pain", "upgrades":[]}
 		]},
 		{"name":"SPACESHIPS & AIRCRAFT", "formations":[
 			{"id":522, "name":"Torture Class Cruiser", "pts":250, "upgrades":[]},
 			{"id":523, "name":"Slavebringer", "pts":200, "upgrades":[]}, 
 			{"id":525, "name":"Executioner Assault Ship", "pts":500, "upgrades":[]},
-			{"id":526, "name":"Razorwing Fighters", "pts":200, "upgrades":[84]},
+			{"id":526, "name":"Razorwing Fighters", "pts":0, "upgrades":[84]},
 			{"id":527, "name":"Voidraven Bombers", "pts":225, "units":"2 Voidravens", "upgrades":[]},
 			{"id":528, "name":"Tormentor", "pts":500, "units":"1 Tormentor Titan", "upgrades":[]}
 		]}
