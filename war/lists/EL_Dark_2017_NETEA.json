@@ -18,8 +18,8 @@
 			{"id":501, "name":"Haemonculi Coven", "pts":250, "units":"2 Haemonculi, 4 Wracks", "upgrades":[22,71,60,73,70,76]},
 			{"id":502, "name":"Talos", "pts":225, "units":"4 Talos", "upgrades":[73,74]},
 			{"id":503, "name":"Wych Cult", "pts":200, "units":"6 Wyches", "upgrades":[71,75,18,70,76]},
-			{"id":504, "name":"Hellions", "pts":200, "units":"6 Hellions", "upgrades":[18]},
-			{"id":505, "name":"Reavers", "pts":200, "units":"6 Reavers", "upgrades":[18]},
+			{"id":504, "name":"Hellions", "pts":200, "units":"6 Hellions", "upgrades":[18,82]},
+			{"id":505, "name":"Reavers", "pts":200, "units":"6 Reavers", "upgrades":[18,83]},
 			{"id":506, "name":"Mandrakes", "pts":200, "units":"6 Mandrakes", "upgrades":[]},
 			{"id":507, "name":"Scourges", "pts":250, "units":"6 Scourges", "upgrades":[18]},
 			{"id":508, "name":"Heavy Barge", "pts":250, "units":"1 Vessel of Pain", "upgrades":[]}
@@ -28,7 +28,7 @@
 			{"id":522, "name":"Torture Class Cruiser", "pts":250, "upgrades":[]},
 			{"id":523, "name":"Slavebringer", "pts":200, "upgrades":[]}, 
 			{"id":525, "name":"Executioner Assault Ship", "pts":500, "upgrades":[]},
-			{"id":526, "name":"Razorwing Fighters", "pts":200, "units":"2 Razorwings", "upgrades":[]},
+			{"id":526, "name":"Razorwing Fighters", "pts":200, "upgrades":[84]},
 			{"id":527, "name":"Voidraven Bombers", "pts":225, "units":"2 Voidravens", "upgrades":[]},
 			{"id":528, "name":"Tormentor", "pts":500, "units":"1 Tormentor Titan", "upgrades":[]}
 		]}
@@ -52,11 +52,14 @@
 		{"id":73, "name":"Talos", "pts":50},
 		{"id":74, "name":"Perditor", "pts":150},
 		{"id":80, "name":"2 Scourges", "pts":75},
-		{"id":81, "name":"2 Wyches", "pts":50}
+		{"id":81, "name":"2 Wyches", "pts":50},
+		{"id":82, "name":"2 Hellions", "pts":50},
+		{"id":83, "name":"2 Reavers", "pts":50},
+		{"id":84, "name":"Razorwing", "pts":100}
 		
 	],
 	"formationConstraints":[
-		{"maxPercent":33, "name": "Spaceships, Aircraft & Horrors", "from":[522,523,525,526,527,528]},
+		{"maxPercent":33.34, "name": "Spaceships, Aircraft & Titans", "from":[522,523,525,526,527,528]},
 		{"max":1, "from":[530]},
 		{"max":1, "from":[531]},		
 		{"min":1, "max":1, "from":[511]},				
@@ -68,6 +71,7 @@
 		{"max":1, "name":"Ancient", "from":[22], "appliesTo":[501]},
 		{"max":1, "name":"Succubus", "from":[18], "appliesTo":[503,504,505]},
 		{"min":4, "max":6, "name":"Ravagers", "from":[61], "appliesTo":[513]},
+		{"min":2, "max":3, "name":"Razorwings", "from":[84], "appliesTo":[526]},
 		{"max":1, "from":[60]},
 		{"max":2, "from":[74]},
 		{"max":3, "from":[70,76]},
@@ -80,7 +84,7 @@
 		{"max":1, "from":[81]},
 		{"max":2, "from":[74]},
 		{"max":1, "from":[75]},
-		{"max":2, "from":[55,57,60,75,80,81], "appliesTo":[511,512,513,501,502,503,504,505,506,507,508]}
+		{"max":2, "from":[55,57,60,75,80,81,82,83], "appliesTo":[511,512,513,501,502,503,504,505,506,507,508]}
 		
 	]
 }
