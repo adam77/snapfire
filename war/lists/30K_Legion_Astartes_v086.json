@@ -5,10 +5,10 @@
 	"notes":["You're allowed to take just enough transports to carry all units in a formation. No more."],
 	"sections":[
 		{"name":"DETACHMENTS", "formations":[
-			{"id":500, "name":"Legion Tactical Detachment", 		"pts":275, "upgrades":[14,15,105,106,16,17,18,19,20,21,22,23,123,25,26,27,28,128,129,24,95,96,97,98,99,130]},
-			{"id":501, "name":"Legion Terminator Detachment", 		"pts":0, "upgrades":[13,14,15,105,106,21,22,23,123,25,26,27,28,128,129,29,31,95,96,97,98,99]},
+			{"id":500, "name":"Legion Tactical Detachment", 		"pts":275, "upgrades":[14,15,131,105,106,16,17,18,19,20,21,22,23,123,25,26,27,28,128,129,24,95,96,97,98,99,130]},
+			{"id":501, "name":"Legion Terminator Detachment", 		"pts":0, "upgrades":[13,14,15,131,105,106,21,22,23,123,25,26,27,28,128,129,29,31,95,96,97,98,99]},
 		    {"id":502, "name":"Legion Assault Marine Detachment",	"pts":300, "upgrades":[39,95,96,97,98,99], "units":"8 Assault Squads"},
-			{"id":503, "name":"Legion Breacher Detachment",			"pts":300, "upgrades":[14,15,105,106,20,21,22,23,25,26,27,28,128,129,24,123,29,30,39,95,96,97,98,99], "units":"8 Breacher Squads"}
+			{"id":503, "name":"Legion Breacher Detachment",			"pts":300, "upgrades":[14,15,131,105,106,20,21,22,23,25,26,27,28,128,129,24,123,29,30,39,95,96,97,98,99], "units":"8 Breacher Squads"}
 		 
         ]},
 		{"name":"SUPPORT DETACHMENTS", "formations":[
@@ -16,7 +16,7 @@
 			{"id":603, "name":"Legion Artillery Squadron",					"pts":0, "upgrades":[24]},
 			{"id":604, "name":"Legion Assault Marine Squad",				"pts":175, "upgrades":[39,95,96,97], "units":"4 Assault Squads"},
 			{"id":605, "name":"Legion Breacher Marine Squad",   			"pts":225, "upgrades":[20,21,22,23,123,29,30,39,95,96,97]},
-            {"id":606, "name":"Legion Contemptor Dreadnought Talon",		"pts":0, "upgrades":[46,39,105]},
+            {"id":606, "name":"Legion Contemptor Dreadnought Talon",		"pts":0, "upgrades":[46,132,39,105]},
 			{"id":607, "name":"Legion Dreadnought Talon",					"pts":0, "upgrades":[45,39]},
 			{"id":620, "name":"Legion Leviathan Dreadnought Talon",			"pts":225, "upgrades":[39], "units":"3 Leviathan Pattern Siege Dreadnought units"},
             {"id":621, "name":"Legion Destroyer Detachment",			    "pts":225, "upgrades":[39,95,96,97], "units":"4 Destroyer Squad units"},
@@ -24,7 +24,7 @@
 			{"id":609, "name":"Legion Land Speeder Squadron",				"pts":200, "upgrades":[95,96,97], "units":"5 Land Speeder units"},
 			{"id":623, "name":"Legion Land Raider Squadron",		        "pts":0, "upgrades":[124,125,126,24,95,96,97]},
 			
-            {"id":611, "name":"Legion Outrider Squadron",					"pts":200, "upgrades":[95,96,97]},
+            {"id":611, "name":"Legion Outrider Squadron",					"pts":175, "upgrades":[95,96,97]},
 			{"id":612, "name":"Legion Predator Strike Armour Squadron",		"pts":0, "upgrades":[52,53,54,55,56,24]},
 			{"id":613, "name":"Legion Rapier Weapons Battery",				"pts":240, "upgrades":[39]},
 			{"id":614, "name":"Legion Reconnaissance Squad",				"pts":150, "upgrades":[20,29,95,96,97,98,99], "units":"4 Reconnaissance Marine units"},
@@ -56,6 +56,7 @@
 		{"id":13, "name":"Terminators",													"pts":75},
 		{"id":14, "name":"Dreadnought: Legion Dreadnought",								"pts":50},
 		{"id":15, "name":"Dreadnought: Legion Contemptor Dreadnought",					"pts":60},
+		{"id":131, "name":"Dreadnought: Legion Contemptor Dreadnought with Havoc Launcher",	"pts":65},
 		{"id":105, "name":"Dreadnought: Legion Deredeo Dreadnought",					"pts":100},
 		{"id":106, "name":"Dreadnought: Legion Leviathan Dreadnought",					"pts":100},
         {"id":16, "name":"Support Squad: Legion Tactical Support",						"pts":25},
@@ -89,6 +90,7 @@
 		{"id":44, "name":"4 Basilisks",													"pts":325},
 		{"id":45, "name":"Legion Dreadnought",											"pts":50},
 		{"id":46, "name":"Legion Contemptor Dreadnought",								"pts":60},
+		{"id":132, "name":"Legion Contemptor Dreadnought with Havoc Launcher",			"pts":65},
 		{"id":47, "name":"3 Malcadors",													"pts":0},
 		{"id":48, "name":"3 Malcador Defenders",										"pts":0},
 		{"id":49, "name":"3 Malcador Annihilators",										"pts":0},
@@ -140,7 +142,7 @@
 		{"min":0, "max":1, "from":[95,96,97], "appliesTo":[602,603,604,608,609,611,614,616,605,621]},
 		
 		{"min":1, "max":1, "from":[11,12], "appliesTo":[500]},
-		{"min":0, "max":2, "from":[14,15,105,106], "appliesTo":[500,501,503]},
+		{"min":0, "max":2, "from":[14,15,105,106,131], "appliesTo":[500,501,503]},
 		{"min":0, "max":3, "from":[21,123], "appliesTo":[500,501,503]},
 		{"min":0, "max":6, "from":[22,23], "appliesTo":[500,503]},
 		{"min":0, "max":4, "from":[18,19], "appliesTo":[500]},
@@ -162,7 +164,7 @@
 		{"min":0, "max":2, "from":[22,23], "appliesTo":[605]},
 		{"min":0, "max":1, "from":[21], "appliesTo":[605]},
 		{"min":4, "max":6, "from":[45], "appliesTo":[607]},
-		{"min":4, "max":6, "from":[46,105], "appliesTo":[606]},
+		{"min":4, "max":6, "from":[46,132,105], "appliesTo":[606]},
 		{"min":0, "max":2, "from":[105], "appliesTo":[606]},
         {"min":1, "max":1, "from":[50,51], "appliesTo":[611]},
 		
