@@ -1,8 +1,8 @@
 {
 	"id":"Red Corsairs",
-	"version":"3.4 - Developmental",
+	"version":"3.4.3 - Developmental",
 	"by":"Kyussinchains, last update 2016-07-01",
-	"notes":["You may only include Blood Slaughterer, Brass Scorpion, Silver Tower, Blight Drone and Daemon Knight formations if the force also includes at least one Cult Marine formation dedicated to the appropriate chaos power'",
+	"notes":["You may only include Blood Slaughterer, Brass Scorpion, Silver Tower, Blight Drone and Daemon Knight formations if the force also includes at least one Cult Marine formation or upgrade dedicated to the appropriate chaos power'",
 	"Formations deploying by drop pod or Rhino must take just enough to transport the entire formation.",
 	"Add one free Lesser Daemon to Daemon pool per Daemonic Pact"],
 	"sections":[
@@ -11,15 +11,15 @@
 		]},
 		{"name":"Red Corsairs Core Formations", "formations": [
 			{ "id":501, "name":"Hounds Squadron", "pts":300, "units":"8 Chaos Space Marine Bike units", "upgrades":[13,14] },
-			{ "id":502, "name":"Terminator Retinue", "pts":35	, "units":"", "upgrades":[50,15,16,17,18,19,22,13,28,14,35] },
+			{ "id":502, "name":"Terminator Retinue", "pts":100	, "units":"", "upgrades":[50,15,16,17,18,19,22,13,28,14,35] },
 			{ "id":503, "name":"Renegade Warband", "pts":275, "upgrades":[13,14,15,16,17,18,19,20,22,28,35] }
 		]},
 		{"name":"Red Corsairs Support Formatons", "formations": [
 			{ "id":510, "name":"Armoured Company", "pts":0, "upgrades":[51,19,18,22,28] },
 			{ "id":511, "name":"Spaceship", "pts":0},
 			{ "id":512, "name":"Chaos Thunderhawk", "units":"1 Chaos Thunderhawk Gunship", "pts":200},
-			{ "id":513, "name":"Chosen", "units":"6 Chaos Space Marine Units - all have the Scout ability", "pts":200, "upgrades":[15,17,20,13] },
-			{ "id":514, "name":"Khornate Cult Marines", "units":"6 Khorne Berzerker units", "pts":275, "upgrades":[15,16,17,20,13,28] },
+			{ "id":513, "name":"Chosen", "units":"6 Chaos Chosen units", "pts":175, "upgrades":[15,17,20,13] },
+			{ "id":514, "name":"Khornate Cult Marines", "units":"8 Khorne Berzerker units", "pts":275, "upgrades":[15,16,17,20,13,28] },
 			{ "id":515, "name":"Tzeenchian Cult Marines", "units":"6 Thousand Sons units", "pts":275, "upgrades":[15,16,17,20,13,28] },
 			{ "id":516, "name":"Nurglish Cult Marines", "units":"6 Plague Marine units", "pts":275, "upgrades":[15,16,17,20,13,28] },
 			{ "id":517, "name":"Slaaneeshi Cult Marines", "units":"6 Noise Marine units", "pts":275, "upgrades":[15,16,17,20,13,28] },
@@ -40,11 +40,11 @@
 	],
 	"upgrades":[
 		{ "id":11, "name":"Greater daemon", "pts":50 },
-		{ "id":12, "name":"Lesser Daemons", "pts":15 },
+		{ "id":12, "name":"Minor Daemons", "pts":10 },
 		{ "id":13, "name":"Daemonic Pact", "pts":25 },
 		{ "id":14, "name":"Icon Bearer", "pts":25 },
 		{ "id":15, "name":"Chaos Champion", "pts":50 },
-		{ "id":16, "name":"Chaos Dreadnaught", "pts":50 },
+		{ "id":16, "name":"Chaos Dreadnought", "pts":50 },
 		{ "id":17, "name":"Chaos Drop Pod", "pts":10 },
 		{ "id":18, "name":"Chaos Hunter", "pts":50 },
 		{ "id":19, "name":"Chaos Land Raider", "pts":75 },
@@ -65,7 +65,7 @@
 		{ "id":28, "name":"Defiler", "pts":75 },
 		{ "id":35, "name":"Obliterators", "pts":75 },
 
-		{ "id":50, "name":"Terminator unit", "pts":60 },
+		{ "id":50, "name":"Terminator unit", "pts":50 },
 		{ "id":51, "name":"Chaos Predator", "pts":50 },
 		{ "id":52, "name":"Chaos Strike Cruiser", "pts":200 },
 		{ "id":53, "name":"Chaos Battle Barge", "pts":350 },
