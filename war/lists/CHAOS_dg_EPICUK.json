@@ -1,6 +1,6 @@
 {
    "id": "Death Guard",
-   "version": "Epic UK v070414",
+   "version": "Epic UK v210617",
    "by": "Kyussinchains",
    "notes":["If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 4. No transport spaces may be left over if possible. Rhinos count towards the number of upgrade allowances of a formation"],
    "sections": [
@@ -17,7 +17,8 @@
             {"id": 505, "name": "Plague Engines", "pts": 325, "units": "4 Contagion Engines", "upgrades": [65,72,73,64,57,76,77]},
             {"id": 507, "name": "Plague Reapers", "pts": 0, "upgrades": [37,57,76,77,65,72,73]},
             {"id": 508, "name": "Chaos Space Marines", "pts": 250, "units": "6 Chaos Marines, 3 Rhinos", "upgrades": [56]},
-            {"id": 509, "name": "Armoured Company", "pts": 0, "upgrades": [28,29,54,70,71,57,76,77]}
+            {"id": 509, "name": "Armoured Company", "pts": 0, "upgrades": [28,29,54,70,71,57,76,77]},
+	    {"id": 510, "name": "Blight Drones", "pts": 200, "units": "4 Blight Drones", "upgrades": []}
          ]},
       {"name": "CHAOS TITANS", "formations": [
             {"id": 520, "name": "Plaguelord Titan", "pts": 800, "upgrades": []},
@@ -72,7 +73,7 @@
       {"max": 1, "from": [551]},
       {"max": 1, "from": [533]},
       {"maxPercent": 33, "name": "War Engines & Allies", "from": [520,521,522,530,531,533]},
-      {"max": 2, "name": "Support Formations", "from": [504,505,507,508,509], "forEach": [501], "name2": "Retinue" },
+      {"max": 2, "name": "Support Formations", "from": [504,505,507,508,509,510], "forEach": [501], "name2": "Retinue" },
 	  {"max": 1, "name": "Elite Formations", "from": [503,506], "forEach": [501], "name2": "Retinue" }
    ],
    "upgradeConstraints": [
