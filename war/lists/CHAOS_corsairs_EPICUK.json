@@ -26,7 +26,7 @@
 			{ "id":518, "name":"Defiler Assaut Force", "units":"4 Defilers", "pts":275, "upgrades":[] },
 			{ "id":520, "name":"Brass Scorpion Onlsaught", "units":"2 Brass Scorpions", "pts":250, "upgrades":[] },
 			{ "id":521, "name":"Silver Tower Circle", "units":"4 Silver Towers", "pts":250, "upgrades":[] },
-			{ "id":522, "name":"Blight Drone Swarm", "units":"6 Blight Drones", "pts":300, "upgrades":[] },
+			{ "id":522, "name":"Blight Drone Swarm", "units":"4 Blight Drones", "pts":200, "upgrades":[] },
 			{ "id":523, "name":"Daemon Knight Pavane", "units":"4 Daemon Knights", "pts":250, "upgrades":[] },
 			{ "id":524, "name":"Raptor Cult", "pts":35, "upgrades":[54,13] }
 		]},
