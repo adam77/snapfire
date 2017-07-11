@@ -18,7 +18,8 @@
             {"id": 505, "name": "Daemonic Artillery", "pts": 200, "units": "4 Cannons of Khorne", "upgrades": []},
             {"id": 506, "name": "Daemonic Assault Engine Pack", "pts": 15, "upgrades": [37,63,69,70]},
             {"id": 507, "name": "Armoured Company", "pts": 0, "upgrades": [30,31,54,67,68,57,71,72]},
-            {"id": 510, "name": "Defiler Assault Pack", "pts": 250, "units": "4 World Eater Defilers", "upgrades": [63,69,70,57,71,72]}
+            {"id": 510, "name": "Defiler Assault Pack", "pts": 250, "units": "4 World Eater Defilers", "upgrades": [63,69,70,57,71,72]},
+	    {"id": 511, "name": "Brass Scorpions", "pts": 250, "units": "2 Chaos Brass Scorpions", "upgrades": []}
          ]},
       {"name": "CHAOS TITANS", "formations": [
             {"id": 520, "name": "Banelord Titan", "pts": 800, "upgrades": []},
@@ -69,7 +70,7 @@
       {"max": 1, "from": [551]},
       {"max": 1, "from": [533]},
       {"maxPercent": 33, "name": "War Engines & Allies", "from": [520,521,522,530,531,533]},
-      {"max": 2, "name": "Support Formations", "from": [504,505,506,507,510], "forEach": [501], "name2": "Retinue"},
+      {"max": 2, "name": "Support Formations", "from": [504,505,506,507,510,511], "forEach": [501], "name2": "Retinue"},
 	  {"max": 1, "name": "Elite Formation", "from": [503,508,509], "forEach": [501], "name2": "Retinue"}
    ],
    "upgradeConstraints": [
