@@ -25,7 +25,7 @@
 			{ "id":517, "name":"Slaaneeshi Cult Marines", "units":"6 Noise Marine units", "pts":275, "upgrades":[15,16,17,20,13,28] },
 			{ "id":518, "name":"Defiler Assaut Force", "units":"4 Defilers", "pts":275, "upgrades":[] },
 			{ "id":520, "name":"Brass Scorpion Onlsaught", "units":"2 Brass Scorpions", "pts":250, "upgrades":[] },
-			{ "id":521, "name":"Silver Tower Circle", "units":"4 Silver Towers", "pts":250, "upgrades":[] },
+			{ "id":521, "name":"Silver Tower Circle", "units":"4 Silver Towers", "pts":300, "upgrades":[] },
 			{ "id":522, "name":"Blight Drone Swarm", "units":"4 Blight Drones", "pts":200, "upgrades":[] },
 			{ "id":523, "name":"Daemon Knight Pavane", "units":"4 Daemon Knights", "pts":250, "upgrades":[] },
 			{ "id":524, "name":"Raptor Cult", "pts":35, "upgrades":[54,13] }
