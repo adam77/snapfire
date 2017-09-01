@@ -119,7 +119,6 @@
 	"formationConstraints":[
 		{"max":1, "from":[561]},
 		{"max":2, "name":"SUPPORT FORMATIONS", "from":[510,511,512,513], "forEach":[501,502,503], "name2":"CORE FORMATIONS"},
-		{"maxPercent":100, "from":[501,502,503]},
 		{"max":1, "name":"ELITES FORMATIONS", "from":[521,522,523,524,525], "forEach":[501,502,503], "name2":"CORE FORMATIONS"},
 		{"max":1, "name":"ELITES FORMATIONS", "from":[521,522,523,524,525], "forEach":[501,502,503], "name2":"CORE FORMATIONS"},
 		{"maxPercent":34, "from":[531,532,533,534,541,542,543,544,551,552,561]}
