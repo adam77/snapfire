@@ -21,7 +21,7 @@
 			{ "id":522, "name":"Ironstrider Cavaliers", "pts":200, "upgrades":[61,67,41,68,42] },			
 			{ "id":523, "name":"Sydonian Cavaliers", "pts":200, "upgrades":[61,67,41,68,42] },
 			{ "id":524, "name":"Onager Cohort", "pts":200, "upgrades":[77,44] },
-			{ "id":525, "name":"Kastelan Maniple", "pts":250, "upgrades":[62] }
+			{ "id":525, "name":"Kastelan Maniple", "pts":225, "upgrades":[62] }
 		]},
 		{"name":"WAR ENGINES", "formations":[
 			{ "id":531, "name":"Knight Households", "pts":300, "upgrades":[] },
@@ -30,7 +30,7 @@
 			{ "id":534, "name":"Ordinatus Majoris", "pts":500, "upgrades":[71] }
 		]},
 
-		{"name":"ATML ALLIES", "formations":[
+		{"name":"ATML SUPPORT", "formations":[
 			{"id":541, "name":"Warlord Titan", 		"pts":725, "upgrades":[80,82,83,84]},
 			{"id":542, "name":"Reaver Titan",		"pts":575, "upgrades":[80,82,83,84]},
 			{"id":543, "name":"Warhound Titan",		"pts":275, "upgrades":[80,82]},
@@ -76,20 +76,20 @@
 		{"id":65, "name":"Skitarii Rangers",							"pts":25},
 		{"id":66, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":50},
 		{"id":67, "name":"Ironstrider Ballistarius - Twin Cognis Autocannon",			"pts":50},
-		{"id":68, "name":"Sydonian Dragoon - Radium Jezzail and Taser lance",			"pts":50},
+		{"id":68, "name":"Sydonian Dragoon - Radium Jezzail",					"pts":50},
 		{"id":69, "name":"Triaros Armoured Conveyer",						"pts":50},
 		{"id":70, "name":"Macrocarid Explorator",						"pts":50},
 		{"id":71, "name":"Tech-Priest Engineer",						"pts":50},
 		{"id":72, "name":"Ordinatus Minorus - Bellacosa Volcano cannon",			"pts":200},
-		{"id":73, "name":"Battle Servitors - Heavy bolter",					"pts":20},
-		{"id":74, "name":"Battle Servitors - Multi-melta",					"pts":20},
+		{"id":73, "name":"Battle Servitors - Heavy bolter",					"pts":15},
+		{"id":74, "name":"Battle Servitors - Multi-melta",					"pts":15},
 		{"id":75, "name":"Battle Servitors - Plasma cannon",					"pts":20},
-		{"id":76, "name":"Battle Servitors - Servo-arm",					"pts":20},
+		{"id":76, "name":"Battle Servitors - Servo-arm",					"pts":15},
 		{"id":77, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":50},
 		{"id":78, "name":"Knight Errant surcharge",						"pts":15},
 		{"id":40, "name":"Onager Dunecrawler - Neutron Laser and a Cognis Heavy Stubber",	"pts":50},
-		{"id":41, "name":"Ironstrider Ballistarius - Twin Cognis Autocannon",			"pts":50},
-		{"id":42, "name":"Sydonian Dragoon - Phosphor Serpent and Taser lance",			"pts":50},
+		{"id":41, "name":"Ironstrider Ballistarius - Twin Cognis Lascannon",			"pts":50},
+		{"id":42, "name":"Sydonian Dragoon - Taser lance",					"pts":50},
 		{"id":43, "name":"Ordinatus Minorus - Ulator Sonic Destroyer",				"pts":200},
 		{"id":44, "name":"Onager Dunecrawler - Neutron Laser and a Cognis Heavy Stubber",	"pts":50},
 
@@ -102,8 +102,8 @@
 		{"id":51, "name":"Kastelan Robots - Incendine combustor and Kastelan fists",		"pts":0},
 		{"id":52, "name":"Ironstrider Ballistarius - Twin Cognis Autocannon",			"pts":0},
 		{"id":53, "name":"Ironstrider Ballistarius - Twin Cognis Lascannon",			"pts":0},
-		{"id":54, "name":"Sydonian Dragoon - Radium Jezzail and Taser lance",			"pts":0},
-		{"id":55, "name":"Sydonian Dragoon - Phosphor Serpent and Taser lance",			"pts":0},
+		{"id":54, "name":"Sydonian Dragoon - Radium Jezzail",					"pts":0},
+		{"id":55, "name":"Sydonian Dragoon - Taser lance",					"pts":0},
 		{"id":56, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":0},
 		{"id":57, "name":"Onager Dunecrawler - Neutron Laser and a Cognis Heavy Stubber",	"pts":0},
 		{"id":58, "name":"Knight Paladin",							"pts":0},
@@ -134,8 +134,8 @@
 		{"min":3, "max":3, "from":[58,59,60], "appliesTo":[531]},
 		{"min":4, "max":4, "from":[57,56], "appliesTo":[524]},
 		{"max":2, "from":[56,66], "appliesTo":[524]},
-		{"min":5, "max":5, "from":[54,55], "appliesTo":[523]},
-		{"min":5, "max":5, "from":[52,53], "appliesTo":[522]},
+		{"min":6, "max":6, "from":[54,55], "appliesTo":[523]},
+		{"min":6, "max":6, "from":[52,53], "appliesTo":[522]},
 		{"min":5, "max":5, "from":[50,51], "appliesTo":[525]},
 		{"min":8, "max":8, "from":[49,96], "appliesTo":[513]},
 		{"min":6, "max":6, "from":[47,48], "appliesTo":[511]},
