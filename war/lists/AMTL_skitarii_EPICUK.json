@@ -67,6 +67,7 @@
 		{"max":1, "from":[101]},
 		{"max":1,  "perArmy":true,  "from":[102]},
 		{"max":1, "from":[103]},
+		{"max":1, "from":[105]},
 		{"max":1, "from":[106]},
 		{"max":1, "from":[107,108,109,110], "appliesTo":[566,567,563]}
 		
