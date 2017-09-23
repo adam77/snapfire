@@ -38,7 +38,7 @@
 		]},
 
 		{"name":"NEOTECH LEGIONS NAVY ", "formations":[
-			{ "id":551, "name":"Avenger Strike Fighters", "pts":175, "units":"2 Avenger Strike Fighters", "upgrades":[] },
+			{ "id":551, "name":"Avenger Strike Fighters", "pts":150, "units":"2 Avenger Strike Fighters", "upgrades":[] },
 			{ "id":552, "name":"Voss Pattern Lightning Strike Fighter", "pts":175, "units":"2 Voss Pattern Lightning Strike Fighters", "upgrades":[] }
 		]},
 		{"name":"NEOTECH LEGIONS SPACECRAFT", "formations":[
@@ -103,7 +103,7 @@
 		{"id":52, "name":"Ironstrider Ballistarius - Twin Cognis Autocannon",			"pts":0},
 		{"id":53, "name":"Ironstrider Ballistarius - Twin Cognis Lascannon",			"pts":0},
 		{"id":54, "name":"Sydonian Dragoon - Radium Jezzail",					"pts":0},
-		{"id":55, "name":"Sydonian Dragoon - Taser lance",					"pts":0},
+		{"id":55, "name":"Sydonian Dragoon - Taser lance",					"pts":10},
 		{"id":56, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":25},
 		{"id":57, "name":"Onager Dunecrawler - Neutron Laser and a Cognis Heavy Stubber",	"pts":0},
 		{"id":58, "name":"Questorius Knight-Styrix ",						"pts":0},
