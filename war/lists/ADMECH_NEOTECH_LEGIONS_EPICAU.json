@@ -6,8 +6,8 @@
 	"sections":[
 
 		{"name":"CORE FORMATIONS", "formations": [
-			{ "id":501, "name":"Vanguard Maniple", "pts":200, "units":"8 Skitarii Vanguard", "upgrades":[61,63,64,65,66,69,70,72,43,73,74,75,76] },
-			{ "id":502, "name":"Adsecularis Covenent", "pts":200, "units":"10 Tech-Thrall and 2 Tech-Priest Dominus", "upgrades":[61,63,64,65,66,69,70,72,43,73,74,75,76] },
+			{ "id":501, "name":"Vanguard Maniple", "pts":225, "units":"8 Skitarii Vanguard", "upgrades":[61,63,64,65,66,69,70,72,43,73,74,75,76] },
+			{ "id":502, "name":"Adsecularis Covenent", "pts":225, "units":"10 Tech-Thrall and 2 Tech-Priest Dominus", "upgrades":[61,63,64,65,66,69,70,72,43,73,74,75,76] },
 			{ "id":503, "name":"Krios Squadron", "pts":200, "upgrades":[61,66,72,43] }
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations": [
@@ -17,14 +17,14 @@
 			{ "id":513, "name":"Sicarian Killclade", "pts":200, "upgrades":[61] }
 		]},
 		{"name":"ELITES FORMATIONS", "formations": [
-			{ "id":521, "name":"Fulgurite Maniple", "pts":200, "units":"5 Fulgurite Electro-Priests", "upgrades":[] },
-			{ "id":522, "name":"Ironstrider Cavaliers", "pts":200, "upgrades":[61,67,41,68,42] },			
-			{ "id":523, "name":"Sydonian Cavaliers", "pts":200, "upgrades":[61,67,41,68,42] },
+			{ "id":521, "name":"Fulgurite Maniple", "pts":175, "units":"5 Fulgurite Electro-Priests", "upgrades":[] },
+			{ "id":522, "name":"Ironstrider Cavaliers", "pts":225, "upgrades":[61,67,41,68,42] },			
+			{ "id":523, "name":"Sydonian Dragoons", "pts":200, "upgrades":[61,67,41,68,42] },
 			{ "id":524, "name":"Onager Cohort", "pts":200, "upgrades":[77,44] },
 			{ "id":525, "name":"Kastelan Maniple", "pts":225, "upgrades":[62] }
 		]},
 		{"name":"WAR ENGINES", "formations":[
-			{ "id":531, "name":"Knight Households", "pts":300, "upgrades":[] },
+			{ "id":531, "name":"Knight Squadron", "pts":300, "upgrades":[97,98,99] },
 			{ "id":532, "name":"Acastus Knight Porpyhrion", "pts":275, "units":"Acastus Knight Porpyhrion with a Tech-Priest Engineer", "upgrades":[] },
 			{ "id":533, "name":"Ordinatus Minorus", "pts":500, "upgrades":[71] },
 			{ "id":534, "name":"Ordinatus Majoris", "pts":500, "upgrades":[71] }
@@ -39,7 +39,7 @@
 
 		{"name":"NEOTECH LEGIONS NAVY ", "formations":[
 			{ "id":551, "name":"Avenger Strike Fighters", "pts":175, "units":"2 Avenger Strike Fighters", "upgrades":[] },
-			{ "id":552, "name":"Marauder Bombers", "pts":250, "units":"2 Marauder Bombers", "upgrades":[] }
+			{ "id":552, "name":"Voss Pattern Lightning Strike Fighter", "pts":175, "units":"2 Voss Pattern Lightning Strike Fighters", "upgrades":[] }
 		]},
 		{"name":"NEOTECH LEGIONS SPACECRAFT", "formations":[
 			{ "id":561, "name":"Ark Mechanicus Battleship", "pts":200, "upgrades":[] }
@@ -85,7 +85,7 @@
 		{"id":74, "name":"Battle Servitors - Multi-melta",					"pts":15},
 		{"id":75, "name":"Battle Servitors - Plasma cannon",					"pts":20},
 		{"id":76, "name":"Battle Servitors - Servo-arm",					"pts":15},
-		{"id":77, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":50},
+		{"id":77, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":75},
 		{"id":78, "name":"Knight Errant surcharge",						"pts":15},
 		{"id":40, "name":"Onager Dunecrawler - Neutron Laser and a Cognis Heavy Stubber",	"pts":50},
 		{"id":41, "name":"Ironstrider Ballistarius - Twin Cognis Lascannon",			"pts":50},
@@ -104,17 +104,21 @@
 		{"id":53, "name":"Ironstrider Ballistarius - Twin Cognis Lascannon",			"pts":0},
 		{"id":54, "name":"Sydonian Dragoon - Radium Jezzail",					"pts":0},
 		{"id":55, "name":"Sydonian Dragoon - Taser lance",					"pts":0},
-		{"id":56, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":0},
+		{"id":56, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":25},
 		{"id":57, "name":"Onager Dunecrawler - Neutron Laser and a Cognis Heavy Stubber",	"pts":0},
-		{"id":58, "name":"Knight Paladin",							"pts":0},
-		{"id":59, "name":"Knight Errant",							"pts":15},
-		{"id":60, "name":"Knight Warden",							"pts":0},
+		{"id":58, "name":"Questorius Knight-Styrix ",						"pts":0},
+		{"id":59, "name":"Questorius Knight-Magaera",						"pts":0},
+		{"id":60, "name":"Cerastus Knight-Atropos",						"pts":0},
 		{"id":91, "name":"Ordinatus Minorus - Bellacosa Volcano cannon",			"pts":0},
 		{"id":92, "name":"Ordinatus Minorus - Ulator Sonic Destroyer",				"pts":0},
 		{"id":93, "name":"Ordinatus Majoris - Sonic Disruptor",					"pts":0},
 		{"id":94, "name":"Ordinatus Majoris - Nova Cannon",					"pts":0},
 		{"id":95, "name":"Ordinatus Majoris - Hellfire Missiles",				"pts":0},
-		{"id":96, "name":"Sicarian Infiltrators",						"pts":0}
+		{"id":96, "name":"Sicarian Infiltrators",						"pts":0},
+		{"id":97, "name":"Questorius Knight-Styrix ",						"pts":100},
+		{"id":98, "name":"Questorius Knight-Magaera",						"pts":100},
+		{"id":99, "name":"Cerastus Knight-Atropos",						"pts":100}
+		
 	],
 	"formationConstraints":[
 		{"max":1, "from":[561]},
@@ -146,6 +150,7 @@
     {"max":1, "from":[80]},
 		{"max":1, "perArmy":true, "from":[64]},
 		{"max":1, "from":[66]},
+		{"max":1, "from":[98,98,99], "appliesTo":[531]},
 		{"max":1, "from":[61]},
 		{"max":1, "from":[62]},
 		{"max":1, "from":[63]},
