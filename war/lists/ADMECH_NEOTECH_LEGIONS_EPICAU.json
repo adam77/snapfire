@@ -23,7 +23,7 @@
 			{ "id":524, "name":"Onager Cohort", "pts":200, "upgrades":[77,44] },
 			{ "id":525, "name":"Kastelan Maniple", "pts":225, "upgrades":[62] }
 		]},
-		{"name":"WAR ENGINES", "formations":[
+		{"name":"LORDS OF WAR", "formations":[
 			{ "id":531, "name":"Knight Squadron", "pts":300, "upgrades":[97,98,99] },
 			{ "id":532, "name":"Acastus Knight Porpyhrion", "pts":275, "units":"Acastus Knight Porpyhrion with a Tech-Priest Engineer", "upgrades":[] },
 			{ "id":533, "name":"Ordinatus Minorus", "pts":500, "upgrades":[71] },
@@ -74,7 +74,7 @@
 		{"id":63, "name":"Magos",								"pts":50},
 		{"id":64, "name":"Archmagos",								"pts":100},
 		{"id":65, "name":"Skitarii Rangers",							"pts":25},
-		{"id":66, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":50},
+		{"id":66, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":75},
 		{"id":67, "name":"Ironstrider Ballistarius - Twin Cognis Autocannon",			"pts":50},
 		{"id":68, "name":"Sydonian Dragoon - Radium Jezzail",					"pts":50},
 		{"id":69, "name":"Triaros Armoured Conveyer",						"pts":50},
@@ -82,7 +82,7 @@
 		{"id":71, "name":"Tech-Priest Engineer",						"pts":50},
 		{"id":72, "name":"Ordinatus Minorus - Bellacosa Volcano cannon",			"pts":200},
 		{"id":73, "name":"Battle Servitors - Heavy bolter",					"pts":15},
-		{"id":74, "name":"Battle Servitors - Multi-melta",					"pts":15},
+		{"id":74, "name":"Battle Servitors - Multi-melta",					"pts":20},
 		{"id":75, "name":"Battle Servitors - Plasma cannon",					"pts":20},
 		{"id":76, "name":"Battle Servitors - Servo-arm",					"pts":15},
 		{"id":77, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":75},
