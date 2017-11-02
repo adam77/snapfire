@@ -1,0 +1,141 @@
+{
+	"id":"Kabal of Pain's Way",
+	"version":"NetEA Army List Compendium 2012",
+	"by":"Iron Bloke and Borka",
+	"sections":[
+		{"name":"INDIVIDUALS", "formations":[
+			{"id":530, "name":"Webway Portal",	"pts":50,		"upgrades":[]},
+			{"id":531, "name":"Kashnarak",		"pts":50,		"upgrades":[]}
+		]},
+		{"name":"KABALS", "formations":[
+			{"id":511, "name":"Kabal Coterie", 	"pts":200,	"upgrades":[53,10,12,14,16,56,57,19,22,23,24,61,70,71,72]},
+			{"id":512, "name":"Kabal Syndicate",	"pts":200,	"upgrades":[17,18,53,14,56,19,23,61,70,71,72]},
+			{"id":513, "name":"Kabal Flotilla",	"pts":250,	"upgrades":[17,18,53,69]}
+		]},
+		{"name":"PARTISANS", "formations":[
+			{"id":501, "name":"Haemonculi Coven",			"pts":250, "upgrades":[53,93,94,74,78]},
+			{"id":502, "name":"Talos Swarm",				"pts":200, "upgrades":[72,74,78]},
+			{"id":503, "name":"Wych Cult",					"pts":200, "upgrades":[75,76,77,53,70]},
+			{"id":504, "name":"Hellion Murder",				"pts":200, "upgrades":[53]},
+			{"id":505, "name":"Reaver Gang",				"pts":200, 	"upgrades":[53]},
+			{"id":506, "name":"Mandrake Throng",			"pts":225, "upgrades":[]},
+			{"id":507, "name":"Scourge Flight",				"pts":225, "upgrades":[53]},
+			{"id":508, "name":"Heavy Barges",				"pts":0,	"upgrades":[]}
+		]},
+		{"name":"SPACESHIPS, AIRCRAFT & HORRORS", "formations":[
+			{"id":522, "name":"Torture Class Cruiser",		"pts":300, "upgrades":[]},
+			{"id":523, "name":"Corsair Escorts",			"pts":0, "upgrades":[11]},
+			{"id":524, "name":"Tormentor Titan",			"pts":500, "upgrades":[]},
+			{"id":525, "name":"Executioner Landing Module","pts":750, "upgrades":[]},
+			{"id":526, "name":"Fighter Formation",			"pts":0, "upgrades":[13]},
+			{"id":527, "name":"Bomber Formation",			"pts":0, "upgrades":[15]}
+		]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Corsair Class Escort",	"pts":150},
+		{"id":13, "name":"Raven Fighter",			"pts":100},
+		{"id":15, "name":"Razorwing Bomber",		"pts":125},
+		{"id":17, "name":"Dracon", 				"pts":50},
+		{"id":18, "name":"Archon", 				"pts":100},
+		{"id":20, "name":"4 Ravagers",				"pts":0},
+		{"id":21, "name":"6 Ravagers",				"pts":100},
+		{"id":53, "name":"Sybarite", 			"pts":25},
+		
+		{"id":51, "name":"4 Incubi",			"pts":0},
+		{"id":52, "name":"6 Incubi",			"pts":125},
+		{"id":55, "name":"8 Incubi",			"pts":250},
+		{"id":56, "name":"2 Wyches",			"pts":100},
+		{"id":57, "name":"4 Wyches",			"pts":200},
+		{"id":10, "name":"2 Warriors",			"pts":100},
+		{"id":12, "name":"4 Warriors",			"pts":200},
+		{"id":14, "name":"2 Mandrakes",			"pts":125},
+		{"id":16, "name":"4 Mandrakes",			"pts":250},
+		{"id":19, "name":"2 Scourges",			"pts":125},
+		{"id":22, "name":"4 Scourges",			"pts":250},
+		{"id":23, "name":"Haemonculus, Grotesque",			"pts":150},
+		{"id":24, "name":"2 Haemonculi, 2 Grotesques",			"pts":300},
+		
+		{"id":25, "name":"6 Warriors",			"pts":0},
+		{"id":26, "name":"8 Warriors",			"pts":100},
+		
+		{"id":80, "name":"6 Scourges",			"pts":0},
+		{"id":81, "name":"8 Scourges",			"pts":125},
+		{"id":82, "name":"6 Mandrakes",			"pts":0},
+		{"id":83, "name":"8 Mandrakes",			"pts":125},
+		{"id":84, "name":"6 Reavers",			"pts":0},
+		{"id":85, "name":"8 Reavers",			"pts":100},
+		{"id":86, "name":"6 Hellions",			"pts":0},
+		{"id":87, "name":"8 Hellions",			"pts":100},
+		{"id":88, "name":"6 Wyches",			"pts":0},
+		{"id":89, "name":"8 Wyches",			"pts":100},
+		{"id":60, "name":"2 Haemonculi, 4 Grotesques",	"pts":0},
+		{"id":92, "name":"3 Haemonculi, 5 Grotesques",	"pts":150},
+		{"id":61, "name":"Ravager",			"pts":50},
+		{"id":75, "name":"2 Warp Beasts",		"pts":100},
+		{"id":76, "name":"2 Hellions",			"pts":100},
+		{"id":77, "name":"2 Reavers",			"pts":100},
+		{"id":69, "name":"Vessel of Pain",		"pts":250},
+		{"id":70, "name":"Raider",				"pts":0},
+		{"id":71, "name":"Barge of Pleasure",	"pts":125},
+		{"id":72, "name":"Slavebringer",		"pts":200},
+		{"id":73, "name":"4 Talos",				"pts":0},
+		{"id":74, "name":"Perditor",			"pts":150},
+		{"id":78, "name":"2 Perditors",			"pts":300},
+		{"id":90, "name":"5 Talos",			"pts":50},
+		{"id":91, "name":"6 Talos",			"pts":100},
+		{"id":93, "name":"Talos",			"pts":50},
+		{"id":94, "name":"2 Talos",			"pts":100}
+	],
+	"formationConstraints":[
+		{"maxPercent":33, "from":[522,523,524,525,526,527]},
+		{"max":1, "from":[530]},
+		{"max":1, "from":[531]},		
+		{"max":1, "from":[511]},				
+		{"max":2, "name":"Partisans", "from":[501,502,503,504,505,506,507,508], "forEach":[511,512,513], "name2":"Kabal"},
+		{"max":1, "name":"Spacecraft", "from":[522,523]}
+	],
+	"upgradeConstraints":[
+		{"max":1, "perArmy":true, "from":[18]},
+		{"min":2, "max":3, "from":[15], "appliesTo":[527]},			
+		{"min":2, "max":3, "from":[13], "appliesTo":[526]},		
+		{"min":1, "max":3, "from":[11], "appliesTo":[523]},
+		
+		{"min":1, "max":2, "from":[69], "appliesTo":[508]},
+		{"min":1, "max":1, "from":[80,81], "appliesTo":[507]},
+		{"min":1, "max":1, "from":[82,83], "appliesTo":[506]},
+		{"min":1, "max":1, "from":[84,85], "appliesTo":[505]},
+		{"min":1, "max":1, "from":[86,87], "appliesTo":[504]},
+		{"min":1, "max":1, "from":[88,89], "appliesTo":[503]},
+		{"min":1, "max":1, "from":[73,90,91], "appliesTo":[502]},
+		
+		{"min":1, "max":1, "from":[60,92], "appliesTo":[501]},
+		{"max":1, "name":"Dracon", "from":[17,18], "appliesTo":[512,513]},
+		{"max":1, "from":[53]},
+		{"max":1, "from":[89,75,76,77], "appliesTo":[503]},
+		{"max":1, "from":[72,74,78], "appliesTo":[502]},
+		{"max":1, "max":1, "from":[51,52,55], "appliesTo":[512]},
+		
+		{"min":1, "max":1, "from":[51,52,55], "appliesTo":[511]},
+		{"min":1, "max":1, "from":[17,18], "appliesTo":[511]},
+		{"max":1, "from":[52,55,12,16,57,22,24], "appliesTo":[511]},
+		{"max":1, "from":[10,55,12,16,57,22,24], "appliesTo":[511]},
+		{"max":1, "from":[14,55,12,16,57,22,24], "appliesTo":[511]},
+		{"max":1, "from":[56,55,12,16,57,22,24], "appliesTo":[511]},
+		{"max":1, "from":[19,55,12,16,57,22,24], "appliesTo":[511]},
+		{"max":1, "from":[23,55,12,16,57,22,24], "appliesTo":[511]},
+		{"max":2, "from":[52,10,14,56,19,23]},
+		
+		{"min":1, "max":1, "from":[25,26], "appliesTo":[512]},
+		{"max":1, "from":[14,56,19,23], "appliesTo":[512]},
+		{"max":1, "from":[69], "appliesTo":[513]},
+		{"min":1, "max":1, "from":[20,21], "appliesTo":[513]},
+		
+		{"max":4, "from":[70]},
+		{"max":2, "from":[71]},				
+		{"max":1, "from":[72]},		
+		{"max":1, "from":[61]},
+		{"max":1, "from":[93,94]},
+		{"max":1, "from":[74,78]}
+
+	]
+}
