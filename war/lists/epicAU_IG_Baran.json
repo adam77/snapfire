@@ -1,0 +1,63 @@
+{
+	"id":"Baran Siege Masters",
+	"version":"NetEA Tournament Pack 2014",
+	"by":"Iron Bloke, last edit 2014-02-10 Kyussinchains",
+	"sections":[
+		{"name":"COMPANIES", "formations":[
+		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[31,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
+			{"id":512, "name":"Regimental HQ", "pts":225, "upgrades":[31,32,29,34,33,28,30], "units":"Supreme Commander, 9 Siege Infantry"}
+		]},
+		{"name":"SUPPORT FORMATIONS", "formations":[
+			{"id":501, "name":"Artillery Battery", 			"pts":150, "upgrades":[], "units":"3 Götterdämmerung Howitzers, 3 Bruenhilde"},
+			{"id":500, "name":"Artillery Company", 			"pts":425, "upgrades":[], "units":"9 Götterdämmerung Howitzers, 9 Gun Emplacements"},
+			{"id":503, "name":"Bombard Battery",				"pts":250, "upgrades":[], "units":"3 Bombards"},
+			{"id":506, "name":"Deathstrike Missile Battery",	"pts":200, "upgrades":[], "units":"2 Deathstrike Missile Launchers"},
+			{"id":502, "name":"Flak Battery", 			"pts":100, "upgrades":[], "units":"3 Blitzen AA Guns"},
+			{"id":509, "name":"Heavy Tank Platoon",			"pts":300, "upgrades":[], "units":"6 Ragnarok Heavy Tanks"},
+			{"id":508, "name":"Light Tank Platoon",			"pts":150, "upgrades":[], "units":"6 Siegfried Light Tanks"},
+			{"id":505, "name":"Rough Rider Platoon",			"pts":150, "upgrades":[], "units":"6 Rough Riders"},
+			{"id":510, "name":"Sapper Platoon",				"pts":250, "upgrades":[], "units":"8 Sapper Units"},
+			{"id":507, "name":"Super-heavy Tank Platoon", 		"pts":200, "upgrades":[]}
+		]},
+		{"name":"SIEGE REGIMENT FORTIFICATIONS", "formations":[
+			{"id":530, "name":"Fortified Position",	"pts":75, "upgrades":[], "units":"Up to 50cm trenches, 50cm razor wire, plus 6 Gun Emplacements."}
+		]},
+		{"name":"IMPERIAL NAVY", "formations":[
+			{"id":520, "name":"Marauder Bombers",		"pts":250, "upgrades":[], "units":"2 Marauders"},
+			{"id":519, "name":"Thunderbolt Fighters",	"pts":150, "upgrades":[], "units":"2 Thunderbolts"}
+		]}
+	],
+	"upgrades":[
+		{"id":12, "name":"Gun Emplacements",			"pts":0},
+		{"id":11, "name":"Bruenhilde",				"pts":0},
+		{"id":17, "name":"Baneblade",					"pts":0},
+		{"id":18, "name":"Shadowsword",				"pts":0},
+		{"id":28, "name":"Siege Infantry Platoon (6 Siege Infantry)","pts":75},
+		{"id":29, "name":"Rapier Platoon (3 Rapier laser destroyer units)",			"pts":75},
+		{"id":30, "name":"Thudd Gun Platoon (3 Guns)",			"pts":75},
+		{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",	"pts":100},
+		{"id":32, "name":"Griffon Battery (3 Griffons)",		"pts":50},
+		{"id":33, "name":"2 Sniper units",							"pts":50},
+		{"id":34, "name":"Sniper unit",								"pts":25}
+	],
+	"formationConstraints":[
+		{"maxPercent":25, "name":"Navy", "from":[519,520]},
+		{"max":2, "name":"Support Formations", "from":[500,501,502,503,505,506,507,508,509,510], "forEach":[512,513], "name2":"Regiment Company"},
+		{"max":1, "from":[506]},
+		{"max":1, "from":[510]},
+		{"min":1, "max":1, "from":[512]},
+		{"max":1, "name":"Fortification", "from":[530], "forEach":[512,513], "name2":"Regiment Company"}
+	],
+	"upgradeConstraints":[
+		{"min":1, "max":1, "from":[12,11], "appliesTo":[502]},
+		{"min":1, "max":1, "from":[17,18], "appliesTo":[507]},
+		{"max":3, "name":"Upgrades", "from":[28,29,30,31,32,33,34]},
+		{"max":1, "from":[28]},
+		{"max":1, "from":[29]},
+		{"max":1, "from":[30]},
+		{"max":1, "from":[31]},
+		{"max":1, "from":[32]},
+		{"max":1, "name":"Sniper upgrade", "from":[34,33]},
+		{"max":1, "from":[35]}
+	]
+}
