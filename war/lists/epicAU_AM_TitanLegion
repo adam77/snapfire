@@ -1,0 +1,74 @@
+{
+	"id":"Legio Gryphonicus",
+	"version":"epicAU v3.24 *APPROVED*",
+	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased. A maximum of one Skitarii Demi-Century may be purchased for each Corvus Assault pod taken"],
+	"by":"Iron Bloke, last edit 2015-02-28 Kyussinchains",
+	"sections":[
+		{"name":"BATTLE TITANS", "formations":[
+			{"id":502, "name":"Emperor Titan", 		"pts":1250,"upgrades":[81,82,83,84]},
+			{"id":503, "name":"Warlord Titan", 		"pts":725, "upgrades":[80,81,82,83,84]},
+			{"id":504, "name":"Reaver Titan",			"pts":575, "upgrades":[80,81,82,83,84]}
+		]},
+		{"name":"SCOUT TITANS", "formations":[
+			{"id":551, "name":"Warhound Titan",		"pts":275, "upgrades":[80,82]},
+			{"id":552, "name":"Warhound Titan Pack",	"pts":500, "upgrades":[80,82]}
+		]},
+		{"name":"SUPPORT FORMATIONS", "formations":[
+			{"id":561, "name":"Forge Knight Maniple",			"pts":250, "units":"5 Forge Knights", "upgrades":[]},
+			{"id":562, "name":"Crusader Scout Maniple",			"pts":150, "units":"4 Crusader Robots", "upgrades":[]},
+			{"id":563, "name":"Thunderbolt Squadron",	"pts":150, "units":"2 Thunderbolts", "upgrades":[]},
+			{"id":564, "name":"Marauder Squadron",		"pts":250, "units":"2 Marauders", "upgrades":[]},
+			{"id":565, "name":"Orbital Support",		"pts":200, "units":"One Ark Mechanicus Battleship", "upgrades":[]},
+			{"id":566, "name":"Skitarii Demi-Century",	"pts":200, "units":"2 Secutor, 8 Hypaspists", "upgrades":[]},
+			{"id":567, "name":"Lysander Fighter",		"pts":75,	 "upgrades":[]}	
+		]}
+	],
+	"upgrades":[	
+		{"id":11, "name":"Imperator Configuration",	"pts":0},
+		{"id":12, "name":"Warmonger Configuration",	"pts":0},
+		{"id":13, "name":"Inferno Gun", 		"pts":0},
+		{"id":14, "name":"Vulcan Megabolter",		"pts":0},
+		{"id":15, "name":"Plasma Blastgun",		"pts":0},
+		{"id":16, "name":"Turbo-laser Destructor",	"pts":25},
+		{"id":30, "name":"Apocalypse Missile Launcher",	"pts":25},
+		{"id":25, "name":"Laser Burner",		"pts":0},
+		{"id":26, "name":"Corvus Assault Pod",		"pts":0},
+		{"id":27, "name":"Carapace Landing Pad",	"pts":0},
+		{"id":28, "name":"Plasma Cannon",		"pts":25},
+		{"id":29, "name":"Gatling Blaster",		"pts":25},
+		{"id":31, "name":"Close Combat Weapon",		"pts":25},
+		{"id":32, "name":"Melta Cannon",		"pts":50},
+		{"id":33, "name":"Laser Blaster",		"pts":50},
+		{"id":34, "name":"Volcano Cannon",		"pts":50},
+		{"id":35, "name":"Plasma Destructor",		"pts":75},
+		{"id":36, "name":"Support Missile",		"pts":75},
+		{"id":37, "name":"Quake Cannon",		"pts":75},
+		{"id":80, "name":"Single Weapon System Surcharge", 	"pts":25},
+		{"id":81, "name":"Legate",			"pts":50},
+		{"id":82, "name":"Veteran Princeps",		"pts":25},
+		{"id":83, "name":"Carapace Multi-Lasers",	"pts":50},
+		{"id":84, "name":"Sacred Icon",			"pts":50}
+	],
+	"formationConstraints":[
+		{"max":1, "from":[565]},
+		{"max":1, "name":"Support Formation", "from":[561,562,563,564,565,566,567], "forEach":[502,503,504,551,552], "name2":"Titan Formation"},
+		{"maxPercent":100, "from":[561,562,563,564,565,566,567]},
+		{"max":2, "name":"Scout Titan Formations", "from":[551,552], "forEach":[502,503,504], "name2":"Battle Titan"}
+	],
+	"upgradeConstraints":[
+		{"min":1, "max":1, "from":[11,12], "appliesTo":[502]},
+		{"min":2, "max":2, "from":[13,14,15,16], "appliesTo":[551]},
+		{"min":4, "max":4, "from":[13,14,15,16], "appliesTo":[552]},
+		{"min":3, "max":3, "from":[30,13,14,15,16,25,26,27,28,29,31,32,33,34,35,36,37], "appliesTo":[504]},
+		{"min":4, "max":4, "from":[16,13,14,15,25,26,27,28,29,30,31,32,33,34,35,36,37], "appliesTo":[503]},
+    {"max":2, "from":[35,36], "appliesTo":[503]},
+    {"max":1, "from":[35,36], "appliesTo":[504]},
+    
+    
+    {"max":1, "from":[80]},
+		{"max":1, "perArmy":true, "from":[81]},
+		{"max":1, "from":[82]},
+		{"max":1, "from":[83]},
+		{"max":1, "from":[84]}
+	]
+}
