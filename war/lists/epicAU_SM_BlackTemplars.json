@@ -1,89 +1,374 @@
 {
-	"id":"Black Templars",
-	"version":"epicAU 2017 - Experimental",
-	"by":"paulJam",
-   "notes":["Be aware that landspeeder typhoons are 25 points for 1-2 and 50 points for 3-5, this may affect army values for tournament play so please check and make the organiser aware where neccessary"],
+	"id": "Black Templars",
+	"version": "epicAU 2017 - Experimental",
+	"by": "paulJam",
+	"notes": ["Be aware that landspeeder typhoons are 25 points for 1-2 and 50 points for 3-5, this may affect army values for tournament play so please check and make the organiser aware where neccessary"],
 
-	"sections":[
-		{"name":"BLACK TEMPLAR DETACHMENTS", "formations":[
-			{"id":501, "name":"Crusaders",		"pts":275, "units":"6 Tacticals", "upgrades":[11,12,15,16,17,18,21,22,26,31,32,33,34,36]},
-		]},
-    
-    {"name":"BLACK TEMPLAR SUPPORTS", "formations":[
-			{"id":511, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18,31]},
-			{"id":512, "name":"Assault Terminators", 			"pts":350, "units":"4 Assault Terminator Units", "upgrades":[15,16,17,18]},
-			{"id":513, "name":"Bike", 			"pts":200, "upgrades":[15,16,17,18]},
-			{"id":514, "name":"Land Raider",			"pts":325, "units":"4 Land Raiders", "upgrades":[15,16,17,18,22,31]},
-			{"id":515, "name":"Land Speeder",			"pts":200, "upgrades":[15,16,17,18]},
-			{"id":516, "name":"Predator",				"pts":250, "upgrades":[15,16,17,18,22,31]},
-			{"id":517, "name":"Storm Raven Gunships",			"pts":220, "units":"4 Storm Raven Gunships", "upgrades":[15,16,17,18,26,27,40,11,12]},
-			{"id":518, "name":"Sword Brethren",			"pts":300, "units":"Sword Brethren", "upgrades":[]}, 
-			{"id":519, "name":"Terminator",		"pts":350, "units":"4 Terminators", "upgrades":[15,16,17,18,31,21,23]},
-			{"id":520, "name":"Vindicator",			"pts":225, "units":"4 Vindicators", "upgrades":[15,16,17,18,22]},
-			{"id":521, "name":"Whirlwind",				"pts":300, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,22]}
-		]},
-    
-		{"name":"BLACK TEMPLARS CRUSADE FLEET SUPPORT", "formations":[
-			{"id":550, "name":"Crusade Spacecraft",		"pts":0, "upgrades":[]},
-			{"id":551, "name":"Landing Craft",	"pts":350, "upgrades":[], "units":"Landing Craft"},
-      {"id":552, "name":"Stormtalon Interceptors",		"pts":150, "upgrades":[], "units":"2 Stormtalon Interceptors"},
-			{"id":553, "name":"Deathstorm Drop Pod",	"pts":200, "upgrades":[]},
-      {"id":554, "name":"Thunderhawk Gunship",		"pts":200, "upgrades":[], "units":"2 Maurader bombers"},
-			{"id":555, "name":"Thunderhawk Saturation Bomber",	"pts":250, "upgrades":[], "units":"Thunderhawk Saturation Bomber"},
-      {"id":556, "name":"Thunderhawk Transport",	"pts":100, "upgrades":[]}
-		]},
-    
+	"sections": [{
+			"name": "BLACK TEMPLAR DETACHMENTS",
+			"formations": [{
+				"id": 501,
+				"name": "Crusaders",
+				"pts": 275,
+				"units": "6 Tacticals",
+				"upgrades": [11, 12, 15, 16, 17, 18, 21, 22, 26, 31, 32, 33, 34, 36]
+			}]
+		},
+
+		{
+			"name": "BLACK TEMPLAR SUPPORTS",
+			"formations": [{
+					"id": 511,
+					"name": "Assault",
+					"pts": 175,
+					"units": "4 Assault Units",
+					"upgrades": [15, 16, 17, 18, 31]
+				},
+				{
+					"id": 512,
+					"name": "Assault Terminators",
+					"pts": 350,
+					"units": "4 Assault Terminator Units",
+					"upgrades": [15, 16, 17, 18]
+				},
+				{
+					"id": 513,
+					"name": "Bike",
+					"pts": 200,
+					"upgrades": [15, 16, 17, 18]
+				},
+				{
+					"id": 514,
+					"name": "Land Raider",
+					"pts": 325,
+					"units": "4 Land Raiders",
+					"upgrades": [15, 16, 17, 18, 22, 31]
+				},
+				{
+					"id": 515,
+					"name": "Land Speeder",
+					"pts": 200,
+					"upgrades": [15, 16, 17, 18]
+				},
+				{
+					"id": 516,
+					"name": "Predator",
+					"pts": 250,
+					"upgrades": [15, 16, 17, 18, 22, 31]
+				},
+				{
+					"id": 517,
+					"name": "Storm Raven Gunships",
+					"pts": 220,
+					"units": "4 Storm Raven Gunships",
+					"upgrades": [15, 16, 17, 18, 26, 27, 40, 11, 12]
+				},
+				{
+					"id": 518,
+					"name": "Sword Brethren",
+					"pts": 300,
+					"units": "Sword Brethren",
+					"upgrades": []
+				},
+				{
+					"id": 519,
+					"name": "Terminator",
+					"pts": 350,
+					"units": "4 Terminators",
+					"upgrades": [15, 16, 17, 18, 31, 21, 23]
+				},
+				{
+					"id": 520,
+					"name": "Vindicator",
+					"pts": 225,
+					"units": "4 Vindicators",
+					"upgrades": [15, 16, 17, 18, 22]
+				},
+				{
+					"id": 521,
+					"name": "Whirlwind",
+					"pts": 300,
+					"units": "4 Whirlwinds",
+					"upgrades": [15, 16, 17, 18, 22]
+				}
+			]
+		},
+
+		{
+			"name": "BLACK TEMPLARS CRUSADE FLEET SUPPORT",
+			"formations": [{
+					"id": 550,
+					"name": "Crusade Spacecraft",
+					"pts": 0,
+					"upgrades": []
+				},
+				{
+					"id": 551,
+					"name": "Landing Craft",
+					"pts": 350,
+					"upgrades": [],
+					"units": "Landing Craft"
+				},
+				{
+					"id": 552,
+					"name": "Stormtalon Interceptors",
+					"pts": 150,
+					"upgrades": [],
+					"units": "2 Stormtalon Interceptors"
+				},
+				{
+					"id": 553,
+					"name": "Deathstorm Drop Pod",
+					"pts": 200,
+					"upgrades": []
+				},
+				{
+					"id": 554,
+					"name": "Thunderhawk Gunship",
+					"pts": 200,
+					"upgrades": [],
+					"units": "2 Maurader bombers"
+				},
+				{
+					"id": 555,
+					"name": "Thunderhawk Saturation Bomber",
+					"pts": 250,
+					"upgrades": [],
+					"units": "Thunderhawk Saturation Bomber"
+				},
+				{
+					"id": 556,
+					"name": "Thunderhawk Transport",
+					"pts": 100,
+					"upgrades": []
+				}
+			]
+		}
+
 	],
-	"upgrades":[
-		{"id":11, "name":"Rhinos",		                	"pts":0},
-		{"id":12, "name":"Drop Pods",	                	"pts":0},
-		{"id":14, "name":"Bike Unit",		                "pts":0},
-		{"id":13, "name":"Attack Bike",               	"pts":0},
-		{"id":24, "name":"Annihilator",	              	"pts":0},
-		{"id":25, "name":"Destructor",	              	"pts":0},
-		{"id":28, "name":"Landspeeder",		              "pts":0},
-		{"id":29, "name":"Tornado",		                  "pts":0},
-		{"id":30, "name":"Typhoon",		                  "pts":10},
-      
-		{"id":15, "name":"Castellan (Captain)",	       	"pts":50},
-    {"id":16, "name":"Chaplain",          	      	"pts":50},
-		{"id":17, "name":"Librarian", 		              "pts":50},
-		{"id":18, "name":"Marshal (Supreme Commander)", "pts":100},
-		{"id":21, "name":"Dreadnought", 				      	"pts":50},
-		{"id":22, "name":"Hunter", 						          "pts":75},
-		{"id":23, "name":"Land Raider", 				      	"pts":75},
-		{"id":26, "name":"Razorback",						        "pts":25},
-		{"id":27, "name":"2 Snipers",					        	"pts":25},
-    {"id":40, "name":"4 Snipers",					        	"pts":50},  
-		{"id":31, "name":"Deathstorm Drop Pods",      	"pts":50}
-    {"id":32, "name":"Emperors Champion",						"pts":30}
-    {"id":33, "name":"2 Neophyte Units",						"pts":30}
-    {"id":34, "name":"4 Neophyte Units",						"pts":60}
-    {"id":35, "name":"Neophyte Bike",					    	"pts":50}
-    {"id":36, "name":"Stormraven Transports",				"pts":35}
-    {"id":37, "name":"Strike Cruiser",				      "pts":200}
-    {"id":38, "name":"Battle Barge",			        	"pts":350}
-    
+	"upgrades": [{
+			"id": 11,
+			"name": "Rhinos",
+			"pts": 0
+		},
+		{
+			"id": 12,
+			"name": "Drop Pods",
+			"pts": 0
+		},
+		{
+			"id": 14,
+			"name": "Bike Unit",
+			"pts": 0
+		},
+		{
+			"id": 13,
+			"name": "Attack Bike",
+			"pts": 0
+		},
+		{
+			"id": 24,
+			"name": "Annihilator",
+			"pts": 0
+		},
+		{
+			"id": 25,
+			"name": "Destructor",
+			"pts": 0
+		},
+		{
+			"id": 28,
+			"name": "Landspeeder",
+			"pts": 0
+		},
+		{
+			"id": 29,
+			"name": "Tornado",
+			"pts": 0
+		},
+		{
+			"id": 30,
+			"name": "Typhoon",
+			"pts": 10
+		},
+
+		{
+			"id": 15,
+			"name": "Castellan (Captain)",
+			"pts": 50
+		},
+		{
+			"id": 16,
+			"name": "Chaplain",
+			"pts": 50
+		},
+		{
+			"id": 17,
+			"name": "Librarian",
+			"pts": 50
+		},
+		{
+			"id": 18,
+			"name": "Marshal (Supreme Commander)",
+			"pts": 100
+		},
+		{
+			"id": 21,
+			"name": "Dreadnought",
+			"pts": 50
+		},
+		{
+			"id": 22,
+			"name": "Hunter",
+			"pts": 75
+		},
+		{
+			"id": 23,
+			"name": "Land Raider",
+			"pts": 75
+		},
+		{
+			"id": 26,
+			"name": "Razorback",
+			"pts": 25
+		},
+		{
+			"id": 27,
+			"name": "2 Snipers",
+			"pts": 25
+		},
+		{
+			"id": 40,
+			"name": "4 Snipers",
+			"pts": 50
+		},
+		{
+			"id": 31,
+			"name": "Deathstorm Drop Pods",
+			"pts": 50
+		},
+		{
+			"id": 32,
+			"name": "Emperors Champion",
+			"pts": 30
+		},
+		{
+			"id": 33,
+			"name": "2 Neophyte Units",
+			"pts": 30
+		},
+		{
+			"id": 34,
+			"name": "4 Neophyte Units",
+			"pts": 60
+		},
+		{
+			"id": 35,
+			"name": "Neophyte Bike",
+			"pts": 50
+		},
+		{
+			"id": 36,
+			"name": "Stormraven Transports",
+			"pts": 35
+		},
+		{
+			"id": 37,
+			"name": "Strike Cruiser",
+			"pts": 200
+		},
+		{
+			"id": 38,
+			"name": "Battle Barge",
+			"pts": 350
+		}
+
 	],
-	"formationConstraints":[
-		{"max":1, "name":"Spacecraft", "from":[541,542]},
-		{"maxPercent":33, "name":"BLACK TEMPLARS CRUSADE FLEET SUPPORT", "from":[550,551,552,553,554,555,556]}
+	"formationConstraints": [{
+			"max": 1,
+			"name": "Spacecraft",
+			"from": [541, 542]
+		},
+		{
+			"maxPercent": 33,
+			"name": "BLACK TEMPLARS CRUSADE FLEET SUPPORT",
+			"from": [550, 551, 552, 553, 554, 555, 556]
+		}
 	],
-	"upgradeConstraints":[
-    {"min":1, "max":1, "name":"Spacecraft", "from":[37,38]}, "appliesTo":[550]},
-		{"max":1, "name":"Transport", "from":[11,12]},
-		{"min":5, "max":5, "from":[28,29,30], "appliesTo":[536]},
-		{"min":5, "max":5, "from":[14,13], "appliesTo":[533]},
-		{"min":4, "max":4, "from":[24,25], "appliesTo":[538]},
-		{"max":1, "name":"Cmdr", "from":[15,16,17,18]},
-		{"max":1, "perArmy":true, "from":[18]},
-    {"max":1, "perArmy":true, "from":[32]},
-    {"min":1, "perArmy":true, "name":"Spacecraft", "from":[37,38]},
-		{"max":2, "from":[21]},
-		{"max":1, "from":[22]},
-    {"max":1, "from":[27,40]},
-		{"max":4, "from":[23]},
-		{"max":1, "from":[27]},
-		{"max":2, "from":[31]}
+	"upgradeConstraints": [{
+			"min": 1,
+			"max": 1,
+			"name": "Spacecraft",
+			"from": [37, 38],
+			"appliesTo": [550]
+		},
+		{
+			"max": 1,
+			"name": "Transport",
+			"from": [11, 12]
+		},
+		{
+			"min": 5,
+			"max": 5,
+			"from": [28, 29, 30],
+			"appliesTo": [536]
+		},
+		{
+			"min": 5,
+			"max": 5,
+			"from": [14, 13],
+			"appliesTo": [533]
+		},
+		{
+			"min": 4,
+			"max": 4,
+			"from": [24, 25],
+			"appliesTo": [538]
+		},
+		{
+			"max": 1,
+			"name": "Cmdr",
+			"from": [15, 16, 17, 18]
+		},
+		{
+			"max": 1,
+			"perArmy": true,
+			"from": [18]
+		},
+		{
+			"max": 1,
+			"perArmy": true,
+			"from": [32]
+		},
+		{
+			"min": 1,
+			"perArmy": true,
+			"name": "Spacecraft",
+			"from": [37, 38]
+		},
+		{
+			"max": 2,
+			"from": [21]
+		},
+		{
+			"max": 1,
+			"from": [22]
+		},
+		{
+			"max": 1,
+			"from": [27, 40]
+		},
+		{
+			"max": 4,
+			"from": [23]
+		},
+		{
+			"max": 1,
+			"from": [27]
+		},
+		{
+			"max": 2,
+			"from": [31]
+		}
 	]
 }
