@@ -62,7 +62,7 @@
 	],
 	"formationConstraints":[
 		{"max":2, "name":"Support Formations", "from":[500,501,502,505,506,507,508,509,510], "forEach":[512,513,514,515,516,517], "name2":"Company"},
-		{"maxPercent":33, "name":"Titans & Navy", "from":[522,523,524,526]},
+		{"maxPercent":33, "name":"Titans & Navy", "from":[519,520,522,523,524,526]},
 		{"max":1, "from":[508]},
 		{"max":1, "from":[506]},
 		{"max":1, "from":[512]}
