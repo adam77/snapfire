@@ -6,8 +6,8 @@
 	"sections":[
 		{"name":"BATTLE TITANS", "formations":[
 			{"id":502, "name":"Emperor Titan", 		"pts":1250,"upgrades":[81,82,83,84]},
-			{"id":503, "name":"Warlord Titan", 		"pts":725, "upgrades":[80,81,82,83,84]},
-			{"id":504, "name":"Reaver Titan",			"pts":575, "upgrades":[80,81,82,83,84]}
+			{"id":503, "name":"Warlord Titan", 		"pts":675, "upgrades":[80,81,82,83,84]},
+			{"id":504, "name":"Reaver Titan",			"pts":550, "upgrades":[80,81,82,83,84]}
 		]},
 		{"name":"SCOUT TITANS", "formations":[
 			{"id":551, "name":"Warhound Titan",		"pts":275, "upgrades":[80,82]},
