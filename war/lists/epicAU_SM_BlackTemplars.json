@@ -25,7 +25,7 @@
 			{"id":542, "name":"Stormtalon Squadron",			"pts":150, "upgrades":[], "units":"2 Stormtalon Squadron"},
 			{"id":543, "name":"Thunderhawk Gunship",			"pts":200, "upgrades":[], "units":"Thunderhawk Gunship"},
 			{"id":544, "name":"Thunderhawk Saturation Bomber",		"pts":250, "upgrades":[], "units":"Thunderhawk Saturation Bomber"},
-			{"id":545, "name":"Thunderhawk Transport",			"pts":0,   "upgrades":[]},
+			{"id":545, "name":"Thunderhawk Transport",			"pts":0,   "upgrades":[41]},
 			{"id":546, "name":"Landing Craft",				"pts":350, "upgrades":[], "units":"Landing Craft"},
 			{"id":547, "name":"Deathstorm Drop Pod",			"pts":200, "upgrades":[]}
 		]}
@@ -69,13 +69,14 @@
 	"formationConstraints":[
 		{"max":2, "name":"Support Detatachments", "from":[521,522,523,524,525,526,527,528,529,530,531], "forEach":[511], "name2":"Crusader Company"},
 		{"maxPercent":33, "name":"Crusdaer Fleet", "from":[541,542,543,544,545,546,547]},
-		{"max":1, "from":[512]}
+		{"max":1, "from":[522]}
+
 
 	],
 	"upgradeConstraints":[
-		{"max":1, "perArmy":true, "from":[14]},
-		{"max":1, "perArmy":true, "from":[11]},
-		{"max":1, "perArmy":true, "from":[39,40]},
+		{"min":1, "max":1, "perArmy":true, "from":[14]},
+		{"min":0, "max":1, "perArmy":true, "from":[11]},
+		{"min":1, "max":1, "perArmy":true, "from":[39,40]},
 
 		{"min":5, "max":5, "from":[22,23,24], "appliesTo":[525]},
 		{"min":5, "max":5, "from":[20,21], "appliesTo":[523]},
@@ -87,7 +88,7 @@
 		{"min":0, "max":6, "from":[34,35,36]},
 		{"min":0, "max":1, "from":[31,32], "appliesTo":[511]},
 		{"min":0, "max":1, "from":[30], "appliesTo":[511,524,526,530,531]},
-		{"min":0, "max":3, "from":[25,26,27]}, 
+		{"min":0, "max":4, "from":[25,26,27]}, 
 		{"min":0, "max":1, "from":[27]}, 
 		{"min":0, "max":2, "from":[28,29]}, 
 		{"min":0, "max":4, "from":[16,17]}, 
@@ -95,6 +96,7 @@
 		{"min":0, "max":4, "from":[33]}, 
 		{"min":0, "max":10, "from":[35,36]}, 
 		{"min":0, "max":5, "from":[34]}, 
+		{"min":1, "max":1, "from":[39,40], "appliesTo":[541]},
 		{"min":0, "max":6, "from":[38]}
 	]
 }
