@@ -8,7 +8,7 @@
          "name": "Tau Core Formations",
          "formations": 
          [
-            {"id": 501, "name": "Heavy Battlesuit Cadre", "pts": 25, "upgrades": [46] },
+            {"id": 501, "name": "Heavy Battlesuit Cadre", "pts": 25, "upgrades": [46, 90, 91, 92] },
             {"id": 502, "name": "Vior'la Fire Warrior Cadre", "pts": 225, "upgrades": [35, 32, 41, 31, 46]}
          ]
       },
@@ -19,8 +19,8 @@
             {"id": 512, "name": "Broadside Group", "pts": 300, "units": "6 XV88 Broadside battlesuits", "upgrades": [41] },
             {"id": 513, "name": "Pathfinder Group", "pts": 0, "upgrades": [41]},
             {"id": 517, "name": "Stealth Group", "pts": 225, "units": "6 XV15 Stealth Units", "upgrades": [42, 43]},                     
-            {"id": 515, "name": "KV128 Stormsurge Formation", "pts": 250, "units": "2 KV128 Stormsurge units"},
-            {"id": 511, "name": "KX139 Ta'unar Supremacy", "pts": 225, "units": "1 KX139 Ta'unar Supremacy unit", "upgrades": [70,71,72]}            
+            {"id": 515, "name": "KV128 Stormsurge Formation", "pts": 250, "units": "2 KV128 Stormsurge Battlesuit units"},
+            {"id": 511, "name": "KX139 Ta'unar Supremacy", "pts": 225, "units": "1 KX139 Ta'unar Supremacy Battlesuit unit", "upgrades": []}            
          ]
       },
       {
