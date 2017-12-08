@@ -29,7 +29,7 @@
          [
             {"id": 522, "name": "Razorshark Squadron", "pts": 200, "units": "3 Razorshark strike Fighters"},
             {"id": 525, "name": "Strike-Modified Orca Dropship", "pts": 200},
-            {"id": 526, "name": "Spacecraft", "pts": 200, "units": "1 Protectoor Class II Cruiser"},
+            {"id": 526, "name": "Spacecraft", "pts": 200, "units": "1 Protector Class II Cruiser"},
             {"id": 527, "name": "Tiger Shark AX-1-0 Squadron", "pts": 350, "units": "2 Tiger Shark AX-1-0"},
             {"id": 528, "name": "Sun Shark Squadron", "pts": 200, "units": "2 Sun Shark Bombers"}
          ]
