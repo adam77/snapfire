@@ -9,7 +9,7 @@
          "formations": 
          [
             {"id": 501, "name": "Heavy Battlesuit Cadre", "pts": 25, "upgrades": [46, 90, 91, 92] },
-            {"id": 502, "name": "Vior'la Fire Warrior Cadre", "pts": 225, "upgrades": [35, 31, 32, 41, 46]}
+            {"id": 502, "name": "Vior'la Fire Warrior Cadre", "pts": 225, "upgrades": [35, 31, 32, 41, 46, 51, 52]}
          ]
       },
       {
