@@ -62,8 +62,8 @@
 		{"id":37, "name":"Vindicator",					 		"pts":50},
 		{"id":38, "name":"Stormraven Transports",					"pts":35},
 
-		{"id":39, "name":"Strike Cruiser",						"pts":0},
-		{"id":40, "name":"Battle Barge",						"pts":0},
+		{"id":39, "name":"Strike Cruiser",						"pts":200},
+		{"id":40, "name":"Battle Barge",						"pts":350},
 		{"id":41, "name":"Thunderhawk Transport",					"pts":100}
 	],
 	"formationConstraints":[
