@@ -9,13 +9,13 @@
 		]},
 		{"name":"BLACK TEMPLARS SUPPORT DETACHMENTS", "formations":[
 			{"id":521, "name":"Assault",						"pts":175, "upgrades":[11,12,13,14,37,38], "units":"4 Assaults"},
-			{"id":522, "name":"0-1 Assault Terminators",				"pts":350, "upgrades":[11,12,13,16,17], "units":"4 Assault Terminators"},
+			{"id":522, "name":"Assault Terminators",				"pts":350, "upgrades":[11,12,13,16,17], "units":"4 Assault Terminators"},
 			{"id":523, "name":"Bikes",						"pts":200, "upgrades":[11,12,13,33]},
-			{"id":524, "name":"Land Raiders",					"pts":25,  "upgrades":[11,12,13, 30,37]},
+			{"id":524, "name":"Land Raiders",					"pts":25,  "upgrades":[11,12,13,30,37]},
 			{"id":525, "name":"Land Speeders",					"pts":200, "upgrades":[11,12,13]},
 			{"id":526, "name":"Predators", 						"pts":250, "upgrades":[11,12,13,30,37]},
 			{"id":527, "name":"Stormraven Gunships",				"pts":220, "upgrades":[], "units":"4 Stormraven Gunships"},
-			{"id":528, "name":"Sword Brethren",					"pts":150, "upgrades":[11,12,13,14,30,16,17,34,35,36,38], "units":"6 Sword Brethren"},
+			{"id":528, "name":"Sword Brethren",					"pts":300, "upgrades":[11,12,13,14,30,16,17,34,35,36,38], "units":"6 Sword Brethren"},
 			{"id":529, "name":"Terminators",					"pts":350, "upgrades":[11,12,13,16,17], "units":"4 Terminators"},
 			{"id":530, "name":"Vindicators",					"pts":225, "upgrades":[11,12,13,30,37], "units":"4 Vindicators"},
 			{"id":531, "name":"Whirlwinds",						"pts":300, "upgrades":[11,12,13,30], "units":"4 Whirlwinds"}
@@ -97,6 +97,8 @@
 		{"min":0, "max":10, "from":[35,36]}, 
 		{"min":0, "max":5, "from":[34]}, 
 		{"min":1, "max":1, "from":[39,40], "appliesTo":[541]},
+		{"min":4, "max":4, "from":[16,17], "appliesTo":[524]},
 		{"min":0, "max":6, "from":[38]}
+		
 	]
 }
