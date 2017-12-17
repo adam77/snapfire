@@ -4,7 +4,8 @@
 	"by":"ChrisC",
 	"sections":[
 		{"name":"BLACK TEMPLARS DETACHMENTS", "formations":[
-			{"id":511, "name":"Crusaders", 						"pts":275, "upgrades":[11,12,13,14,34,35,36,16,17,28,29,30,31,32,38], "units":"6 Tactical units"}
+			{"id":511, "name":"Crusaders", 						"pts":275, "upgrades":[11,12,13,14,34,35,36,16,17,28,29,30,31,32], "units":"6 Tactical units"},
+			{"id":512, "name":"Crusaders (Planetfall)", 		"pts":275, "upgrades":[11,12,13,14,28,29,61,62,38], "units":"6 Tactical units"}
 
 		]},
 		{"name":"BLACK TEMPLARS SUPPORT DETACHMENTS", "formations":[
@@ -38,7 +39,7 @@
 		{"id":14, "name":"Emperor’s Champion",				"pts":30},
 
 		{"id":16, "name":"Land Raider",					"pts":75},
-		{"id":17, "name":"Land Raider Crusdaer",			"pts":75},
+		{"id":17, "name":"Land Raider Crusader",			"pts":75},
 		{"id":18, "name":"Predator Annihilators",			"pts":0},
 		{"id":19, "name":"Predator Destructors",			"pts":0},
 		{"id":20, "name":"Attack Bike",					"pts":0},
@@ -55,6 +56,8 @@
 		{"id":30, "name":"Hunter",							"pts":75},
 		{"id":31, "name":"2 Neophyte",							"pts":30},
 		{"id":32, "name":"4 Neophyte",							"pts":60},
+		{"id":61, "name":"2 Neophyte units + 1x Stormraven",				"pts":65},
+		{"id":62, "name":"4 Neophyte units + 2x Stormravens",				"pts":130},
 		{"id":33, "name":"Neophyte Bike",						"pts":20},
 		{"id":34, "name":"Rhino",							"pts":0},
 		{"id":35, "name":"Razorback - Twin Heavy Bolter",				"pts":25},
@@ -67,16 +70,14 @@
 		{"id":41, "name":"Thunderhawk Transport",					"pts":100}
 	],
 	"formationConstraints":[
-		{"max":2, "name":"Support Detatachments", "from":[521,522,523,524,525,526,527,528,529,530,531], "forEach":[511], "name2":"Crusader Company"},
-		{"maxPercent":33, "name":"Crusdaer Fleet", "from":[541,542,543,544,545,546,547]},
-		{"max":1, "from":[522]}
-
-
+		{"max":2, "name":"Support Detachments", "from":[521,522,523,524,525,526,527,528,529,530,531], "forEach":[511,512], "name2":"Crusader Company"},
+		{"maxPercent":50, "name":"Crusader Fleet", "from":[541,542,543,544,545,546,547]},
+		{"max":1, "from":[522,541]},
+		{"min":1, "from":[541]}
 	],
 	"upgradeConstraints":[
 		{"min":1, "max":1, "perArmy":true, "from":[14]},
 		{"min":0, "max":1, "perArmy":true, "from":[11]},
-		{"min":1, "max":1, "perArmy":true, "from":[39,40]},
 
 		{"min":5, "max":5, "from":[22,23,24], "appliesTo":[525]},
 		{"min":5, "max":5, "from":[20,21], "appliesTo":[523]},
@@ -87,18 +88,18 @@
 		{"min":0, "max":1, "from":[11,12,13,14]},
 		{"min":0, "max":6, "from":[34,35,36]},
 		{"min":0, "max":1, "from":[31,32], "appliesTo":[511]},
+		{"min":0, "max":1, "from":[61,62], "appliesTo":[512]},
 		{"min":0, "max":1, "from":[30], "appliesTo":[511,524,526,530,531]},
-		{"min":0, "max":4, "from":[25,26,27]}, 
-		{"min":0, "max":1, "from":[27]}, 
-		{"min":0, "max":2, "from":[28,29]}, 
-		{"min":0, "max":4, "from":[16,17]}, 
-		{"min":0, "max":1, "from":[11,12,13,14], "appliesTo":[511]},
-		{"min":0, "max":4, "from":[33]}, 
-		{"min":0, "max":10, "from":[35,36]}, 
-		{"min":0, "max":5, "from":[34]}, 
+		{"min":0, "max":4, "from":[25,26,27]},
+		{"min":0, "max":1, "from":[27]},
+		{"min":0, "max":2, "from":[28,29]},
+		{"min":0, "max":4, "from":[16,17]},
+		{"min":0, "max":1, "from":[11,12,13,14], "appliesTo":[511,512]},
+		{"min":0, "max":4, "from":[33]},
+		{"min":0, "max":10, "from":[35,36]},
+		{"min":0, "max":5, "from":[34]},
 		{"min":1, "max":1, "from":[39,40], "appliesTo":[541]},
 		{"min":4, "max":4, "from":[16,17], "appliesTo":[524]},
-		{"min":0, "max":6, "from":[38]}
-		
+		{"min":3, "max":3, "from":[38], "appliesTo":[512]}
 	]
 }
