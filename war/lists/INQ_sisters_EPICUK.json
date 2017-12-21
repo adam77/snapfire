@@ -51,7 +51,7 @@
 	  {"id": 25, "name": "Civilian Light Vehicles","pts": 10},
 	  {"id": 32, "name": "Pentinent Engine","pts": 35},
 	  {"id": 26, "name": "6 Inquisitorial Storm Troopers","pts": 0},
-	  {"id": 27, "name": "4 Inquisitorial Storm Troopers and Two Death Cult Assassins","pts": 35},
+	  {"id": 27, "name": "4 Inquisitorial Storm Troopers and 2 Death Cult Assassins","pts": 35},
 	  {"id": 28, "name": "Inquisitorial Support Staff","pts": 15},
 	  {"id": 29, "name": "Death Cult Assassin","pts": 20},
 	  {"id": 42, "name": "Battle Sister","pts": 0},
