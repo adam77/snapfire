@@ -2,9 +2,14 @@
 	"id":"SPACE MARINE - BLACK TEMPLARS",
 	"version":"EpicAU Experimental",
 	"by":"ChrisC",
+	"notes":[
+		"One space craft must be taken in this army.",
+		"One Emperor's Champion must be attached to a Crusader formation in this army.",
+		"Two support formations may be taken for every Crusader formation taken."
+			],
 	"sections":[
 		{"name":"BLACK TEMPLARS DETACHMENTS", "formations":[
-			{"id":511, "name":"Crusaders", 						"pts":275, "upgrades":[11,12,13,14,34,35,36,16,17,28,29,30,31,32], "units":"6 Tactical units"},
+			{"id":511, "name":"Crusaders", 						"pts":275, "upgrades":[11,12,13,14,34,35,36,16,17,28,29,30,31,32,42], "units":"6 Tactical units"},
 			{"id":512, "name":"Crusaders (Planetfall)", 		"pts":275, "upgrades":[11,12,13,14,28,29,61,62,38], "units":"6 Tactical units"}
 
 		]},
@@ -16,14 +21,14 @@
 			{"id":525, "name":"Land Speeders",					"pts":200, "upgrades":[11,12,13]},
 			{"id":526, "name":"Predators", 						"pts":250, "upgrades":[11,12,13,30,37]},
 			{"id":527, "name":"Stormraven Gunships",				"pts":220, "upgrades":[], "units":"4 Stormraven Gunships"},
-			{"id":528, "name":"Sword Brethren",					"pts":300, "upgrades":[11,12,13,14,30,16,17,34,35,36,38], "units":"6 Sword Brethren"},
+			{"id":528, "name":"Sword Brethren",					"pts":300, "upgrades":[11,12,13,14,30,16,17,34,35,36,38,42], "units":"6 Sword Brethren"},
 			{"id":529, "name":"Terminators",					"pts":350, "upgrades":[11,12,13,16,17], "units":"4 Terminators"},
 			{"id":530, "name":"Vindicators",					"pts":225, "upgrades":[11,12,13,30,37], "units":"4 Vindicators"},
 			{"id":531, "name":"Whirlwinds",						"pts":300, "upgrades":[11,12,13,30], "units":"4 Whirlwinds"}
 		]},
 		{"name":"BLACK TEMPLARS CRUSADE FLEET SUPPORT", "formations":[
 			{"id":541, "name":"Crusade Spacecraft",				"pts":0,   "upgrades":[]},
-			{"id":542, "name":"Stormtalon Squadron",			"pts":150, "upgrades":[], "units":"2 Stormtalon Squadron"},
+			{"id":542, "name":"Stormtalon Squadron",			"pts":150, "upgrades":[], "units":"2 Stormtalon Interceptors"},
 			{"id":543, "name":"Thunderhawk Gunship",			"pts":200, "upgrades":[], "units":"Thunderhawk Gunship"},
 			{"id":544, "name":"Thunderhawk Saturation Bomber",		"pts":250, "upgrades":[], "units":"Thunderhawk Saturation Bomber"},
 			{"id":545, "name":"Thunderhawk Transport",			"pts":0,   "upgrades":[41]},
@@ -67,22 +72,28 @@
 
 		{"id":39, "name":"Strike Cruiser",						"pts":200},
 		{"id":40, "name":"Battle Barge",						"pts":350},
-		{"id":41, "name":"Thunderhawk Transport",					"pts":100}
+		{"id":41, "name":"Thunderhawk Transport",					"pts":100},
+
+		{"id":42, "name":"Drop Pods",		"pts":0}
 	],
 	"formationConstraints":[
 		{"max":2, "name":"Support Detachments", "from":[521,522,523,524,525,526,527,528,529,530,531], "forEach":[511,512], "name2":"Crusader Company"},
 		{"maxPercent":50, "name":"Crusader Fleet", "from":[541,542,543,544,545,546,547]},
-		{"max":1, "from":[522,541]},
-		{"min":1, "from":[541]}
+		{"max":1, "from":[541]},
+		{"min":1, "from":[541]},
+		{"max":1, "from":[522]},
+		{"min":0, "from":[522]}
 	],
 	"upgradeConstraints":[
+		{"max":1, "name":"Transport", "from":[34,42]},
+
 		{"min":1, "max":1, "perArmy":true, "from":[14]},
 		{"min":0, "max":1, "perArmy":true, "from":[11]},
 
 		{"min":5, "max":5, "from":[22,23,24], "appliesTo":[525]},
 		{"min":5, "max":5, "from":[20,21], "appliesTo":[523]},
 		{"min":4, "max":4, "from":[18,19], "appliesTo":[526]},
-		{"min":4, "max":4, "from":[25,26,27], "appliesTo":[547]},
+		{"min":1, "max":1, "from":[25,26,27], "appliesTo":[547]},
 		{"min":2, "max":3, "from":[41], "appliesTo":[545]},
 
 		{"min":0, "max":1, "from":[11,12,13,14]},
