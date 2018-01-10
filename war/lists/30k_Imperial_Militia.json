@@ -19,7 +19,7 @@
 			{"id":604, "name":"Auxilia Super Heavy Tank",					"pts":200, "upgrades":[]},
 			{"id":605, "name":"Auxilia Rapier Battery",					"pts":100, "upgrades":[], "units":"4 Auxilia Rapier Platform units"},
 			{"id":606, "name":"Auxiliary Battle Tank Attack Squadron",			"pts":350, "upgrades":[]},
-			{"id":607, "name":"Auxilia Sentinel Scout Squadron",				"pts":250, "upgrades":[], "units":"4 Auxilia Sentinel units "}
+			{"id":607, "name":"Auxilia Sentinel Scout Squadron",				"pts":100, "upgrades":[], "units":"4 Auxilia Sentinel units "}
 
 		]},
 		{"name":"LORDS OF WAR", "formations":[
@@ -58,7 +58,7 @@
 		
 	],
 	"formationConstraints":[
-		{"max":2, "name":"Support Detachment", "from":[600,601,602,603,604,605,606,607], "forEach":[500,501,502,503.504], "name2":"Line Detachment"},
+		{"max":2, "name":"Support Detachment", "from":[600,601,602,603,604,605,606,607], "forEach":[500,501,502,503,504], "name2":"Line Detachment"},
 		{"maxPercent":33.34, "name":"LORDS OF WAR", "from":[701,702,703]},
 		{"max":1, "from":[500]},
 		{"max":1, "from":[600]}
