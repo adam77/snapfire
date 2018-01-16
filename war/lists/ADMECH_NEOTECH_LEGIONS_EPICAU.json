@@ -12,15 +12,15 @@
 			{ "id":504, "name":"Kataphron Breachers", "pts":250, "units":"8 Kataphron Breachers", "upgrades":[61,70] }
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations": [
-			{ "id":510, "name":"Ranger Centuria", "pts":100, "units":"4 Skitarii Rangers", "upgrades":[65] },
-			{ "id":511, "name":"Secutarii Covenent", "pts":275, "upgrades":[70] },
-			{ "id":512, "name":"Ruststalker Killclade", "pts":250, "units":"8 Ruststalker", "upgrades":[] },
-			{ "id":513, "name":"Infiltrator Killclade", "pts":250, "units":"8 Infiltrators", "upgrades":[] }
+			{ "id":510, "name":"Ranger Centuria", "pts":100, "units":"4 Skitarii Rangers", "upgrades":[65]},
+			{ "id":511, "name":"Secutarii Covenent", "pts":275, "units":"8 Secutarii", "upgrades":[61,63,70]},
+			{ "id":512, "name":"Ruststalker Killclade", "pts":250, "units":"8 Ruststalker", "upgrades":[61,63]},
+			{ "id":513, "name":"Infiltrator Killclade", "pts":250, "units":"8 Infiltrators", "upgrades":[61,63]}
 		]},
 		{"name":"ELITES FORMATIONS", "formations": [
-			{ "id":521, "name":"Fulgurite Maniple", "pts":175, "units":"5 Fulgurite Electro-Priests", "upgrades":[] },
-			{ "id":522, "name":"Ironstrider Cavaliers", "pts":225, "units":"4 Onager Dunecrawlers", "upgrades":[61] },			
-			{ "id":523, "name":"Sydonian Dragoons", "pts":200, "units":"4 Onager Dunecrawlers", "upgrades":[61] },
+			{ "id":521, "name":"Fulgurite Maniple", "pts":175, "units":"5 Fulgurite Electro-Priests", "upgrades":[]},
+			{ "id":522, "name":"Ironstrider Cavaliers", "pts":225, "units":"6 Ironstrider Cavaliers", "upgrades":[61,63] },			
+			{ "id":523, "name":"Sydonian Dragoons", "pts":200, "units":"6 Sydonian Dragoons", "upgrades":[61,63] },
 			{ "id":524, "name":"Onager Cohort", "pts":200, "units":"4 Onager Dunecrawlers", "upgrades":[77,44] },
 			{ "id":525, "name":"Kastelan Maniple", "pts":225, "upgrades":[62] }
 		]},
@@ -147,6 +147,8 @@
 		{"max":1, "perArmy":true, "from":[64]},
 		{"max":1, "from":[66]},
 		{"max":1, "from":[97,98,99], "appliesTo":[531]},
+		{"max":1, "from":[70], "appliesTo":[503,504,511]},
+		{"max":1, "from":[61,63], "appliesTo":[511,512,513]},
 		{"max":1, "from":[61]},
 		{"max":1, "from":[62]},
 		{"max":1, "from":[63]},
