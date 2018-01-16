@@ -1,6 +1,6 @@
 {
    "id": "EpicUK Tau Vior'la",
-   "version": "1.0",
+   "version": "1.2",
    "by": "Kyussinchains",
    "sections": 
    [
@@ -18,7 +18,7 @@
          [
             {"id": 512, "name": "Broadside Group", "pts": 300, "units": "6 XV88 Broadside battlesuits", "upgrades": [41] },
             {"id": 513, "name": "Pathfinder Group", "pts": 0, "upgrades": [41]},
-            {"id": 517, "name": "Stealth Group", "pts": 225, "units": "6 XV15 Stealth Units", "upgrades": [42, 43]},                     
+            {"id": 517, "name": "Stealth Group", "pts": 225, "upgrades": [42]},                     
             {"id": 515, "name": "KV128 Stormsurge Formation", "pts": 250, "units": "2 KV128 Stormsurge Battlesuit units"},
             {"id": 511, "name": "KX139 Ta'unar Supremacy", "pts": 225, "units": "1 KX139 Ta'unar Supremacy Battlesuit unit", "upgrades": []}            
          ]
@@ -27,7 +27,7 @@
          "name": "Air Caste Formations",
          "formations": 
          [
-            {"id": 522, "name": "Razorshark Squadron", "pts": 200, "units": "3 Razorshark strike Fighters"},
+            {"id": 522, "name": "Razorshark Squadron", "pts": 175, "units": "3 Razorshark strike Fighters"},
             {"id": 525, "name": "Strike-Modified Orca Dropship", "pts": 200},
             {"id": 526, "name": "Spacecraft", "pts": 200, "units": "1 Protector Class II Cruiser"},
             {"id": 527, "name": "Tiger Shark AX-1-0 Squadron", "pts": 350, "units": "2 Tiger Shark AX-1-0"},
@@ -44,8 +44,8 @@
       
       {"id": 41, "name": "2 Gun Drones", "pts": 25 },
       {"id": 42, "name": "Stealth Drones", "pts": 25 },
-      {"id": 43, "name": "XV95 Ghostkeel Battlesuit unit", "pts": 75 },
-      {"id": 46, "name": "Skyray", "pts": 100 }, 
+      {"id": 43, "name": "XV95 Ghostkeel Battlesuit unit", "pts": 25 },
+      {"id": 46, "name": "Skyray", "pts": 75 }, 
       
       {"id": 51, "name": "XV8 Crisis Battlesuit unit", "pts": 50},
       {"id": 52, "name": "XV9 Hazard Battlesuit unit", "pts": 75},
@@ -53,6 +53,7 @@
       {"id": 55, "name": "6 Fire Warrior Units, 3 Devilfish", "pts": 0 }, 
       {"id": 60, "name": "10 Fire Warrior units", "pts": 50 }, 
       {"id": 61, "name": "8 Fire Warrior Units, 4 Devilfish", "pts": 75 }, 
+      {"id": 62, "name": "XV15 Stealthsuit unit", "pts": 0 }, 
       
       {"id": 70, "name": "Heavy Rail Cannon", "pts": 0 }, 
       {"id": 71, "name": "Nexus Missile Array", "pts": 0 }, 
@@ -87,6 +88,7 @@
       { "max": 1, "min": 1, "from": [ 34 ], "appliesTo": [ 501 ] } ,
       { "max": 1, "min": 1, "from": [ 80, 81 ], "appliesTo": [ 513 ] }, 
       { "max": 1, "min": 1, "from": [ 70, 71, 72 ], "appliesTo": [ 511 ] }, 
-      { "max": 4, "min": 3, "from": [ 90, 91, 92 ], "appliesTo": [ 501 ] } 
+      { "max": 4, "min": 3, "from": [ 90, 91, 92 ], "appliesTo": [ 501 ] },
+      { "max": 6, "min": 6, "from": [ 62, 43 ], "appliesTo": [ 517 ] } 
    ]
 }
