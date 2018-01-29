@@ -18,7 +18,7 @@
 			{ "id":510, "name":"Armoured Company", "pts":0, "upgrades":[51,19,18,22,28] },
 			{ "id":511, "name":"Spaceship", "pts":0},
 			{ "id":512, "name":"Chaos Thunderhawk", "units":"1 Chaos Thunderhawk Gunship", "pts":200},
-			{ "id":513, "name":"Chosen", "units":"6 Chaos Chosen units", "pts":175, "upgrades":[15,17,20,13] },
+			{ "id":513, "name":"Chosen", "pts":175, "upgrades":[15,17,20,13] },
 			{ "id":514, "name":"Khornate Cult Marines", "units":"8 Khorne Berzerker units", "pts":275, "upgrades":[15,16,17,20,13,28] },
 			{ "id":515, "name":"Tzeenchian Cult Marines", "units":"6 Thousand Sons units", "pts":275, "upgrades":[15,16,17,20,13,28] },
 			{ "id":516, "name":"Nurglesque Cult Marines", "units":"6 Plague Marine units", "pts":275, "upgrades":[15,16,17,20,13,28] },
@@ -67,6 +67,9 @@
 		{ "id":52, "name":"Chaos Strike Cruiser", "pts":200 },
 		{ "id":53, "name":"Chaos Battle Barge", "pts":350 },
 		{ "id":54, "name":"Raptor Unit", "pts":35 },
+		
+		{ "id":60, "name":"6 Chosen units", "pts":0 },
+		{ "id":61, "name":"4 Chosen units, 2 Chaos Rhinos", "pts":0 },
 
 		{ "id":90, "name":"Chaos Lord", "pts":0 },
 		{ "id":91, "name":"Sorceror Lord", "pts":0 },
@@ -83,10 +86,9 @@
 		{"min":1, "max":1, "from":[90,91,92], "appliesTo":[501,524]},
 		{"min":1, "max":1, "from":[90,91,93], "appliesTo":[516,517]},
 		{"min":1, "max":1, "from":[90,93], "appliesTo":[514]},
-		{"min":1, "max":1, "from":[91,93], "appliesTo":[515]},
+		{"min":1, "max":1, "from":[60,61], "appliesTo":[513]},
 		
-	
-		{"min":1, "max":1, "from":[90,91,92,93], "appliesTo":[502,503,525]},
+                {"min":1, "max":1, "from":[90,91,92,93], "appliesTo":[502,503,525]},
 		{"min":1, "max":1, "from":[23,24,25,26,27,36,37,38,39,40], "appliesTo":[503]},
 
 		{"max":1, "from":[13]},
