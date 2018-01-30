@@ -30,7 +30,7 @@
 		]}
 	],
 	"fixedFormations":[
-			{"id":116, "name":"Death Company", "pts":300, "units":"4 Death Company unis", "upgrades":[12,31]}
+			{"id":516, "name":"Death Company", "pts":300, "units":"4 Death Company units", "upgrades":[12,31]}
 	],
 	"upgrades":[
 		{"id":11, "name":"Captain", "pts":50},
