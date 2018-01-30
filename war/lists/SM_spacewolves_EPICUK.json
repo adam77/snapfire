@@ -72,7 +72,7 @@
 		{"min":1, "name":"Great Company", "from":[501]},
 		{"max": 3, "name": "Space Wolves Packs", "from": [512,513,514,516,517], "forEach": [501], "name2": "Great Company" },
 		{"max": 3, "name": "Space Wolves Support", "from": [521,522,523,524,525,526,527,528], "forEach": [501], "name2": "Great Company" },
-		{"maxPercent":33, "name":"Imperial Navy", "from":[549,550]}
+		{"maxPercent":33.34, "name":"Aircraft", "from":[527,549,550]}
 	],
 	"upgradeConstraints":[		
 		{"max":2, "from":[16], "appliesTo":[501]},
