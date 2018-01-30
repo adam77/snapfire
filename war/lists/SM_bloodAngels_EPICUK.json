@@ -60,7 +60,7 @@
 	],
 	"formationConstraints":[
 		{"maxPercent":33, "name":"Titan/Air",
-			"from":[551,552,553,554,555,556] },
+			"from":[512,551,552,553,554,555,556] },
 		{"max":1, "perArmy":true, "from":[509]},
 		{"min":1, "max":1, "perArmy":true, "from":[516]}
 	],
