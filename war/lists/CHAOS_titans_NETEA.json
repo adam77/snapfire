@@ -1,0 +1,450 @@
+{
+	"id":"Traitor Titan Legions",
+	"version":"NetEA v1.8",
+	"notes":["One Lesser Daemon Engine formation may be taken for each Battle Titan, Greater Daemon Possession and Greater Daemon Engine Model."],
+	"by":"IJW Wartrader and MrDieAlot",
+	"sections":[
+		{"name":"BATTLE TITANS", "formations":[
+			{"id":501, "name":"CARRION LORD   (Chaos Emperor Titan of Chaos Undivided)", 		"pts":1125,"upgrades":[10,11,12,13,14,15,31,32,33,34,35,36,51,52,53,54,55,56]},
+			{"id":502, "name":"SKULLHOARDER   (Chaos Emperor Titan of Khorne)", 		"pts":1125,"upgrades":[10,11,12,13,14,16,17,31,32,33,34,35,37,38,39,40,51,52,53,54,57,58,59]},
+			{"id":503, "name":"VICEKEEPER   (Chaos Emperor Titan of Slaanesh)", 		"pts":1125,"upgrades":[10,11,12,13,14,20,31,32,33,34,35,48,49,50,51,52,53,54,68,69]},
+			{"id":504, "name":"BLIGHTSPREADER   (Chaos Emperor Titan of Nurgle)", 		"pts":1125,"upgrades":[10,11,12,13,14,19,31,32,33,34,35,44,45,46,47,51,52,53,54,64,65,66,67]},
+			{"id":505, "name":"GIFTGRANTER   (Chaos Emperor Titan of Tzeentch)", 		"pts":1125,"upgrades":[10,11,12,13,14,18,31,32,33,34,35,41,42,43,51,52,53,54,60,61,62,63]},
+			
+			{"id":506, "name":"FORGELORD   (Chaos Warlord Titan of Chaos Undivided)", 		"pts":800, "upgrades":[10,11,12,13,14,15,31,32,33,34,35,36,51,52,53,54,55,56,200,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235]},
+			{"id":507, "name":"BANELORD (Chaos Warlord Titan of Khorne)", 		"pts":800, "upgrades":[10,11,12,13,14,16,17,31,32,33,34,35,39,40,51,52,53,54,57,58,200,201,202,203,204]},
+			{"id":508, "name":"PAINLORD  (Chaos Warlord Titan of Slaanesh)", 		"pts":800, "upgrades":[10,11,12,13,14,20,31,32,33,34,35,48,49,50,68,69,200,201,202,203,204]},
+			{"id":509, "name":"PLAGUELORD (Chaos Warlord Titan of Nurgle)", 		"pts":800, "upgrades":[10,11,12,13,14,19,31,32,33,34,35,44,45,46,47,64,65,66,67,200,201,202,203,204]},
+			{"id":510, "name":"WARPLORD  (Chaos Warlord Titan of Tzeentch)", 		"pts":800, "upgrades":[10,11,12,13,14,18,31,32,33,34,35,41,42,43,60,61,62,63,200,201,202,203,204]},
+			
+			{"id":511, "name":"HERALD (Chaos Reaver Titan of Chaos Undivided)",			"pts":600, "upgrades":[31,32,33,34,35,36,51,52,53,54,55,56,300,301,302,303,304,305]},
+			{"id":512, "name":"RAVAGER (Chaos Reaver Titan of Khorne)",			"pts":600, "upgrades":[31,32,33,34,35,38,39,40,51,52,53,54,57,58,300,301,302,303,304,306,307]},
+			{"id":513, "name":"REVILER (Chaos Reaver Titan of Slaanesh)",			"pts":600, "upgrades":[31,32,33,34,35,48,49,50,68,69,300,301,302,303,304,310]},
+			{"id":514, "name":"REPUGNANT (Chaos Reaver Titan of Nurgle)",			"pts":600, "upgrades":[31,32,33,34,35,44,45,46,47,64,65,66,67,300,301,302,303,304,309]},
+			{"id":515, "name":"MUTATOR (Chaos Reaver Titan of Tzeentch)",			"pts":600, "upgrades":[31,32,33,34,35,41,42,43,60,61,62,63,300,301,302,303,304,308]}
+		]},
+		{"name":"GREATER DAEMON ENGINES", "formations":[
+			{"id":551, "name":"FORGEHOUND (Chaos Warhound of Chaos Undivided)",		"pts":300, "units":"One Forgehound Chaos Warhound", "upgrades":[]},
+			{"id":552, "name":"FORGEHOUND Pack (Chaos Warhounds of Chaos Undivided)",	"pts":550, "units": "Two Forgehound Chaos Warhounds", "upgrades":[]},
+			
+			{"id":553, "name":"FERAL WARHOUND Pack (Chaos Warhounds of Khorne)",	"pts":550, "units": "Two Feral Warhounds", "upgrades":[]},
+			
+			{"id":554, "name":"PLAGUEHOUND (Chaos Warhound of Nurgle)",		"pts":300, "units":"One Plaguehound Chaos Warhound",  "upgrades":[]},
+			{"id":555, "name":"PLAGUEHOUND Pack (Chaos Warhounds of Nurgle)",	"pts":550, "units": "Two Plaguehound Chaos Warhounds", "upgrades":[]},
+			
+			{"id":556, "name":"WARPHOUND (Chaos Warhound of Tzeentch)",		"pts":300, "units":"One Warphound Chaos Warhound",  "upgrades":[]},
+			{"id":557, "name":"WARPHOUND Pack (Chaos Warhounds of Tzeentch)",	"pts":550, "units": "Two Warphound Chaos Warhounds", "upgrades":[]},
+
+			{"id":558, "name":"DEATH WHEEL (Chaos Undivided)",	"pts":275,  "units":"One Death Wheel",  "upgrades":[400,401]},
+			{"id":559, "name":"LORD OF BATTLES (Khorne)",	"pts":400,  "units":"One Lord of Battles",  "upgrades":[402]},
+			{"id":560, "name":"GREATER BRASS SCORPION (Khorne)",  "units":"One Greater Brass Scorpion", 	"pts":200, "upgrades":[403,404]},
+			{"id":561, "name":"SUBJUGATOR (Slaanesh)",	"pts":225,  "units":"One Subjugator Scout Titan",  "upgrades":[405]},
+			{"id":562, "name":"QUESTOR (Slaanesh)",	"pts":275,  "units":"One Questor Scout Titan",  "upgrades":[406]}
+		]},
+		
+		{"name":"LESSER DAEMON ENGINES One Lesser Daemon Engine formation may be taken for each Battle Titan, Greater Daemon Possession and Greater Daemon Engine Model", "formations":[
+			{"id":570, "name":"DAEMON KNIGHTS Hell-Scourges (Slaanesh)",			"pts":225, "units":"Two Hell-Scourges", "upgrades":[407,408]},
+			{"id":571, "name":"DAEMON KNIGHTS Hell-Knights (Slaanesh)",			"pts":225, "units":"Three Hell-Knights", "upgrades":[409,410]},
+			{"id":572, "name":"DAEMON KNIGHTS Hell-Striders (Slaanesh)",			"pts":225, "units":"Four Hell-Striders", "upgrades":[411,412]},
+			{"id":573, "name":"CHAOS KNIGHTS (Chaos Undivided)",	"pts":225, "units":"Two Renegade Knights", "upgrades":[413,414]},
+			{"id":574, "name":"CHAOS KNIGHTS (Khorne)",	"pts":225, "units":"Two Mauler Knights", "upgrades":[415,416]},
+			{"id":575, "name":"CHAOS KNIGHTS (Nurgle)",	"pts":225, "units":"Two Decay Knights", "upgrades":[417,418]},
+			{"id":576, "name":"CHAOS KNIGHTS (Tzeentch)",	"pts":225, "units":"Two Change Knights", "upgrades":[419,420]},
+			{"id":577, "name":"DAEMON ASSAULT ENGINES (Khorne)",			"pts":225, "units":"Four Daemon Assault Engines", "upgrades":[421,422]},
+			{"id":578, "name":"DEFILERS (Chaos Undivided)",		"pts":200, "units":"Four Retlaxi-Pattern Defilers with Mark of Chaos Undivided", "upgrades":[423,424]},
+			{"id":579, "name":"DEFILERS (Nurgle)",		"pts":200, "units":"Four Retlaxi-Pattern Defilers with Trappings of Nurgle", "upgrades":[425,426]},
+			{"id":580, "name":"DEFILERS (Tzeentch)",		"pts":200, "units":"Four Retlaxi-Pattern Defilers with Gifts of Tzeentch", "upgrades":[427,428]},
+			{"id":581, "name":"DAEMONIC ARTILLERY (Khorne)",			"pts":200, "units":"Four Cannons of Khorne", "upgrades":[429,430]}
+		]},
+		{"name":"DAEMON POOL", "formations":[
+      		{"id": 600, "name": "LESSER DAEMON POOL", "pts": 0, "upgrades": [450]}
+			
+		]},
+		{"name": "CHAOS NAVY", "formations": [
+			{"id": 530, "name": "HELL BLADE SQUADRON", "pts": 200, "units": "Three Hell Blade Fighters", "upgrades": []},
+			{"id": 531, "name": "HELL TALON SQUADRON", "pts": 225, "units": "Two Hell Talon Fighter-Bombers", "upgrades": []},
+			{"id": 532, "name": "HARBRINGER BOMBER", "pts": 375, "units": "One Harbinger Bomber", "upgrades": []},
+			{"id": 533, "name": "CHAOS BATTLESHIP", "pts": 200, "units": "One Despoiler Class Battleship", "upgrades": []}
+      ]}
+
+
+	],
+	"upgrades":[	
+
+		{"id":10, "name":"Retlaxi Cyclone (Chaos Undivided Support Weapon (Arm))",		"pts":0},
+		{"id":11, "name":"Retlaxi Cyclone (Chaos Undivided Support Weapon (Carapace))",		"pts":0},
+		{"id":12, "name":"Cannon of Chaos (Chaos Undivided Support Weapon (Arm Only))",		"pts":0},
+		{"id":13, "name":"Havoc Vortex Missiles (Chaos Undivided Support Weapon (Carapace Only))",		"pts":0},
+		{"id":14, "name":"Havoc Warp Missiles (Chaos Undivided Support Weapon (Carapace Only))",		"pts":0},
+		{"id":15, "name":"Plasma Incinerator (Chaos Undivided Only Support Weapon (Arm Only))",		"pts":0}
+		,
+		{"id":16, "name":"Hellstrike Cannon (Khorne Support Weapon (Arm))",		"pts":0},
+		{"id":17, "name":"Hellstrike Cannon (Khorne Support Weapon (Carapace))",		"pts":0},
+		{"id":18, "name":"Beam of Change (Tzeentch Support Weapon (Carapace Only))",		"pts":0},
+		{"id":19, "name":"Heavy Plague Mortar (Nurgle Support Weapon (Carapace Only))",		"pts":0},
+		{"id":20, "name":"Beam of Ecstasy (Slaanesh Support Weapon (Arm Only))",		"pts":0},
+		
+		{"id":31, "name":"Infernal Projector (Chaos Undivided Battle Weapon (Arm))",		"pts":0},
+		{"id":32, "name":"Infernal Projector (Chaos Undivided Battle Weapon (Carapace))",		"pts":0},
+		{"id":33, "name":"Heretek Shrine (Chaos Undivided Battle Weapon (Carapace Only))",		"pts":0},
+		{"id":34, "name":"Battle Titan Close Combat Weapon (Chaos Undivided Close Combat Battle Weapon (Arm Only))",		"pts":0},
+		{"id":35, "name":"Havoc Barrage Missiles (Chaos Undivided Battle Weapon (Carapace Only))",		"pts":0},
+		{"id":36, "name":"Chaos Plasma Cremator (Chaos Undivided Only (Arm Only))",		"pts":0},
+
+		{"id":37, "name":"Doom Burner (Khorne Battle Weapon (Arm))",		"pts":0},
+		{"id":38, "name":"Doom Burner (Khorne Battle Weapon (Carapace))",		"pts":0},
+		{"id":39, "name":"Doom Fist (Khorne Close Combat Battle Weapon (Arm Only))",		"pts":0},
+		{"id":40, "name":"Mangler (Khorne Close Combat Battle Weapon (Carapace Only))",	"pts":0},
+		
+		{"id":41, "name":"Tzeentch Cannon (Tzeentch Battle Weapon (Arm Only))",		"pts":0},
+		{"id":42, "name":"Coruscant Hail (Tzeentch Battle Weapon (Arm))",		"pts":0},
+		{"id":43, "name":"Coruscant Hail (Tzeentch Battle Weapon (Carapace))",		"pts":0},
+		
+		{"id":44, "name":"Corruption Cannon (Nurgle Battle Weapon (Carapace Only))",		"pts":0},
+		{"id":45, "name":"Plague Flail (Nurgle Close Combat Battle Weapon (Arm Only))",		"pts":0},
+		{"id":46, "name":"Rot Cannon (Nurgle Battle Weapon (Arm))",		"pts":0},
+		{"id":47, "name":"Rot Cannon (Nurgle Battle Weapon (Carapace))",		"pts":0},
+		
+		{"id":48, "name":"Sonic Devastator (Slaanesh Battle Weapon (Arm))",		"pts":0},
+		{"id":49, "name":"Sonic Devastator (Slaanesh Battle Weapon (Carapace))",		"pts":0},
+		{"id":50, "name":"Musk Flail (Slaanesh Close Combat Battle Weapon (Arm Only))",		"pts":0},
+	
+
+		{"id":51, "name":"Chaos Reaper Mega Bolter (Chaos Undivided Scout Weapon (Arm))",	"pts":0},
+		{"id":52, "name":"Chaos Reaper Mega Bolter (Chaos Undivided Scout Weapon (Carapace))",	"pts":0},
+		{"id":53, "name":"Hellmouth (Chaos Undivided Scout Weapon (Arm))", 		"pts":0},
+		{"id":54, "name":"Hellmouth (Chaos Undivided Scout Weapon (Carapace))", 		"pts":0},
+		{"id":55, "name":"Chaos Plasma Furnace (Chaos Undivided Scout Weapon (Arm))",	"pts":0},
+		{"id":56, "name":"Chaos Plasma Furnace (Chaos Undivided Scout Weapon (Carapace))",	"pts":0},
+		
+		{"id":57, "name":"Death Storm (Khorne Scout Weapon (Arm))",		"pts":0},
+		{"id":58, "name":"Death Storm (Khorne Scout Weapon (Carapace))",		"pts":0},
+		{"id":59, "name":"Ursus Claw (Khorne Scout Weapon (Arm Only))",		"pts":0},
+			
+		{"id":60, "name":"Gaze of Tzeentch (Tzeentch Scout Weapon (Arm))",		"pts":0},
+		{"id":61, "name":"Gaze of Tzeentch (Tzeentch Scout Weapon (Carapace))",		"pts":0},
+		{"id":62, "name":"Arcane Cannons (Tzeentch Scout Weapon (Arm))",	"pts":0},
+		{"id":63, "name":"Arcane Cannons (Tzeentch Scout Weapon (Carapace))",	"pts":0},
+		
+		{"id":64, "name":"Pus Cannon (Nurgle Scout Weapon (Arm))",	"pts":0},
+		{"id":65, "name":"Pus Cannon (Nurgle Scout Weapon (Carapace))",	"pts":0},
+		{"id":66, "name":"Boil Cannon (Nurgle Scout Weapon (Arm))",	"pts":0},
+		{"id":67, "name":"Boil Cannon (Nurgle Scout Weapon (Carapace))",	"pts":0},
+		
+		{"id":68, "name":"Castigator Cannon (Slaanesh Scout Weapon (Arm))",	"pts":0},
+		{"id":69, "name":"Castigator Cannon (Slaanesh Scout Weapon (Carapace))",	"pts":0},
+		
+		
+		{"id":100, "name":"Chaos Reaper Mega Bolter x 2",	"pts":0},
+		{"id":101, "name":"Chaos Reaper Mega Bolter + Hellmouth", 		"pts":0},
+		{"id":102, "name":"Chaos Reaper Mega Bolter + Chaos Plasma Furnace",	"pts":0},
+		{"id":103, "name":"Hellmouth x 2", 		"pts":0},
+		{"id":104, "name":"Hellmouth + Chaos Plasma Furnace",	"pts":0},
+		{"id":105, "name":"Chaos Plasma Furnace x 2",	"pts":0},
+		
+		{"id":111, "name":"Chaos Reaper Mega Bolter + Death Storm", 		"pts":0},
+		{"id":112, "name":"Chaos Reaper Mega Bolter + Ursus Claw",	"pts":0},
+		{"id":113, "name":"Hellmouth + Death Storm", 		"pts":0},
+		{"id":114, "name":"Hellmouth + Ursus Claw",	"pts":0},
+		{"id":115, "name":"Death Storm + Ursus Claw",	"pts":0},
+
+		{"id":120, "name":"Chaos Reaper Mega Bolter + Gaze of Tzeentch", 		"pts":0},
+		{"id":121, "name":"Chaos Reaper Mega Bolter + Arcane Cannons", 		"pts":0},
+		{"id":122, "name":"Hellmouth + Gaze of Tzeentch", 		"pts":0},	
+		{"id":123, "name":"Hellmouth + Arcane Cannons", 		"pts":0},
+		{"id":124, "name":"Gaze of Tzeentch + Arcane Cannons", 		"pts":0},
+		{"id":125, "name":"Gaze of Tzeentch x 2", 		"pts":0},
+		{"id":126, "name":"Arcane Cannons x 2", 		"pts":0},	
+
+		{"id":130, "name":"Chaos Reaper Mega Bolter + Pus Cannon", 		"pts":0},
+		{"id":131, "name":"Chaos Reaper Mega Bolter + Boil cannon", 		"pts":0},
+		{"id":132, "name":"Hellmouth + Pus Cannon", 		"pts":0},	
+		{"id":133, "name":"Hellmouth + Boil Cannon", 		"pts":0},
+		{"id":134, "name":"Pus Cannon + Boild Cannon", 		"pts":0},
+		{"id":135, "name":"Pus cannon x 2", 		"pts":0},
+		{"id":136, "name":"Boil Cannon x 2", 		"pts":0},
+		
+	
+
+		{"id":200, "name":"Greater Daemon Possession",			"pts":50},
+		{"id":201, "name":"Greater Daemon Possession & Chaos Plasma Incinerator (Chaos Undivided Support Weapon (Arm Only))",			"pts":50},
+		{"id":202, "name":"Greater Daemon Possession & Chaos Plasma Cremator (Chaos Undivided Battle Weapon (Arm Only))",			"pts":50},
+		{"id":203, "name":"Greater Daemon Possession & Chaos Plasma Furnace (Chaos Undivided Scout Weapon (Arm))",			"pts":50},
+		{"id":204, "name":"Greater Daemon Possession & Chaos Plasma Furnace (Chaos Undivided Scout Weapon (Carapace))",			"pts":50},
+		
+		{"id":205, "name":"Greater Daemon Possession & Hellstrike Cannon (Khorne Support Weapon(Arm))",			"pts":50},
+		{"id":206, "name":"Greater Daemon Possession & Hellstrike Cannon (Khorne Support Weapon(Carapace))",			"pts":50},
+		{"id":207, "name":"Greater Daemon Possession & Beam of Change (Tzeentch Support Weapon(Carapace Only))",			"pts":50},
+		{"id":208, "name":"Greater Daemon Possession & Heavy Plague Mortar (Nurgle Support Weapon(Carapace Only))",			"pts":50},
+		{"id":209, "name":"Greater Daemon Possession & Beam of Ecstasy (Slaanesh Support Weapon(Arm Only))",			"pts":50},
+		
+		{"id":210, "name":"Greater Daemon Possession & Doom Burner (Khorne Battle Weapon(Arm))",			"pts":50},
+		{"id":211, "name":"Greater Daemon Possession & Doom Burner (Khorne Battle Weapon(Carapace))",			"pts":50},
+		{"id":212, "name":"Greater Daemon Possession & Doom Fist (Khorne Close Combat Battle Weapon(Arm Only))",			"pts":50},
+		{"id":213, "name":"Greater Daemon Possession & Mangler (Khorne Close Combat Battle Weapon(Carapace Only))",			"pts":50},
+		{"id":214, "name":"Greater Daemon Possession & Tzeentch Cannon (Tzeentch Battle Weapon(Arm Only))",			"pts":50},
+		{"id":215, "name":"Greater Daemon Possession & Coruscant Hail (Tzeentch Battle Weapon(Arm))",			"pts":50},
+		{"id":216, "name":"Greater Daemon Possession & Coruscant Hail (Tzeentch Battle Weapon(Carapace))",			"pts":50},
+		{"id":217, "name":"Greater Daemon Possession & Corruption Cannon (Nurgle Battle Weapon(Carapace Only))",			"pts":50},
+		{"id":218, "name":"Greater Daemon Possession & Plague Flail (Nurgle Close Combat Battle Weapon(Arm Only))",			"pts":50},
+		{"id":219, "name":"Greater Daemon Possession & Rot Cannon (Nurgle Battle Weapon(Arm))",			"pts":50},
+		{"id":220, "name":"Greater Daemon Possession & Rot Cannon (Nurgle Battle Weapon(Carapace))",			"pts":50},
+		{"id":221, "name":"Greater Daemon Possession & Sonic Devastator (Slaanesh Battle Weapon(Arm))",			"pts":50},
+		{"id":222, "name":"Greater Daemon Possession & Sonic Devastator (Slaanesh Battle Weapon(Carapace))",			"pts":50},
+		{"id":223, "name":"Greater Daemon Possession & Musk Flail (Slaanesh Close Combat Battle Weapon(Arm Only))",			"pts":50},
+		
+		{"id":224, "name":"Greater Daemon Possession & Death Storm (Khorne Scout Weapon(Arm))",			"pts":50},
+		{"id":225, "name":"Greater Daemon Possession & Death Storm (Khorne Scout Weapon(Carapace))",			"pts":50},
+		{"id":226, "name":"Greater Daemon Possession & Gaze of Tzeentch (Tzeentch Scout Weapon(Arm))",			"pts":50},
+		{"id":227, "name":"Greater Daemon Possession & Gaze of Tzeentch (Tzeentch Scout Weapon(Carapace))",			"pts":50},
+		{"id":228, "name":"Greater Daemon Possession & Arcane Cannons (Tzeentch Scout Weapon(Arm))",			"pts":50},
+		{"id":229, "name":"Greater Daemon Possession & Arcane Cannons (Tzeentch Scout Weapon(Carapace))",			"pts":50},
+		{"id":230, "name":"Greater Daemon Possession & Pus Cannon (Nurgle Scout Weapon(Arm))",			"pts":50},
+		{"id":231, "name":"Greater Daemon Possession & Pus Cannon (Nurgle Scout Weapon(Carapace))",			"pts":50},
+		{"id":232, "name":"Greater Daemon Possession & Boil Cannon (Nurgle Scout Weapon(Arm))",			"pts":50},
+		{"id":233, "name":"Greater Daemon Possession & Boil Cannon (Nurgle Scout Weapon(Carapace))",			"pts":50},
+		{"id":234, "name":"Greater Daemon Possession & Castigator Cannon (Slaanesh Scout Weapon(Arm))",			"pts":50},
+		{"id":235, "name":"Greater Daemon Possession & Castigator Cannon (Slaanesh Scout Weapon(Carapace))",			"pts":50},
+		
+		
+		{"id":240, "name":"Greater Daemon Possession",			"pts":0},
+		{"id":241, "name":"Greater Daemon Possession & Chaos Plasma Incinerator (Chaos Undivided Support Weapon (Arm only))",			"pts":0},
+		{"id":242, "name":"Greater Daemon Possession & Chaos Plasma Cremator (Chaos Undivided Battle Weapon (Arm only))",			"pts":0},
+		{"id":243, "name":"Greater Daemon Possession & Chaos Plasma Furnace (Chaos Undivided Scout Weapon (Arm))",			"pts":0},
+		{"id":244, "name":"Greater Daemon Possession & Chaos Plasma Furnace (Chaos Undivided Scout Weapon (Carapace))",			"pts":0},
+		
+		{"id":245, "name":"Greater Daemon Possession & Hellstrike Cannon (Khorne Support Weapon(Arm))",			"pts":0},
+		{"id":246, "name":"Greater Daemon Possession & Hellstrike Cannon (Khorne Support Weapon(Carapace))",			"pts":0},
+		{"id":247, "name":"Greater Daemon Possession & Beam of Change (Tzeentch Support Weapon(Carapace Only))",			"pts":0},
+		{"id":248, "name":"Greater Daemon Possession & Heavy Plague Mortar (Nurgle Support Weapon(Carapace Only))",			"pts":0},
+		{"id":249, "name":"Greater Daemon Possession & Beam of Ecstasy (Slaanesh Support Weapon(Arm Only))",			"pts":0},
+		
+		{"id":250, "name":"Greater Daemon Possession & Doom Burner (Khorne Battle Weapon(Arm))",			"pts":0},
+		{"id":251, "name":"Greater Daemon Possession & Doom Burner (Khorne Battle Weapon(Carapace))",			"pts":0},
+		{"id":252, "name":"Greater Daemon Possession & Doom Fist (Khorne Close Combat Battle Weapon(Arm Only))",			"pts":0},
+		{"id":253, "name":"Greater Daemon Possession & Mangler (Khorne Close Combat Battle Weapon(Carapace Only))",			"pts":0},
+		{"id":254, "name":"Greater Daemon Possession & Tzeentch Cannon (Tzeentch Battle Weapon(Arm Only))",			"pts":0},
+		{"id":255, "name":"Greater Daemon Possession & Coruscant Hail (Tzeentch Battle Weapon(Arm))",			"pts":0},
+		{"id":256, "name":"Greater Daemon Possession & Coruscant Hail (Tzeentch Battle Weapon(Carapace))",			"pts":0},
+		{"id":257, "name":"Greater Daemon Possession & Corruption Cannon (Nurgle Battle Weapon(Carapace Only))",			"pts":0},
+		{"id":258, "name":"Greater Daemon Possession & Plague Flail (Nurgle Close Combat Battle Weapon(Arm Only))",			"pts":0},
+		{"id":259, "name":"Greater Daemon Possession & Rot Cannon (Nurgle Battle Weapon(Arm))",			"pts":0},
+		{"id":260, "name":"Greater Daemon Possession & Sonic Devastator (Slaanesh Battle Weapon(Carapace))",			"pts":0},
+		{"id":261, "name":"Greater Daemon Possession & Sonic Devastator (Slaanesh Battle Weapon(Arm))",			"pts":0},
+		{"id":262, "name":"Greater Daemon Possession & Musk Flail (Slaanesh Close Combat Battle Weapon(Arm Only))",			"pts":0},
+		
+		{"id":263, "name":"Greater Daemon Possession & Death Storm (Khorne Scout Weapon(Arm))",			"pts":0},
+		{"id":264, "name":"Greater Daemon Possession & Death Storm (Khorne Scout Weapon(Carapace))",			"pts":0},
+		{"id":265, "name":"Greater Daemon Possession & Gaze of Tzeentch (Tzeentch Scout Weapon(Arm))",			"pts":0},
+		{"id":266, "name":"Greater Daemon Possession & Gaze of Tzeentch (Tzeentch Scout Weapon(Carapace))",			"pts":0},
+		{"id":267, "name":"Greater Daemon Possession & Arcane Cannons (Tzeentch Scout Weapon(Arm))",			"pts":0},
+		{"id":268, "name":"Greater Daemon Possession & Arcane Cannons (Tzeentch Scout Weapon(Carapace))",			"pts":0},
+		{"id":269, "name":"Greater Daemon Possession & Pus Cannon (Nurgle Scout Weapon(Arm))",			"pts":0},
+		{"id":270, "name":"Greater Daemon Possession & Pus Cannon (Nurgle Scout Weapon(Carapace))",			"pts":0},
+		{"id":271, "name":"Greater Daemon Possession & Boil Cannon (Nurgle Scout Weapon(Arm))",			"pts":0},
+		{"id":272, "name":"Greater Daemon Possession & Boil Cannon (Nurgle Scout Weapon(Carapace))",			"pts":0},
+		{"id":273, "name":"Greater Daemon Possession & Castigator Cannon (Slaanesh Scout Weapon(Arm))",			"pts":0},
+		{"id":274, "name":"Greater Daemon Possession & Castigator Cannon (Slaanesh Scout Weapon(Carapace))",			"pts":0},
+		
+		
+		{"id":300, "name":"Eye of the Gods & Retlaxi Cyclone (Chaos Undivided Support Weapon (Arm))",		"pts":25},
+		{"id":301, "name":"Eye of the Gods & Retlaxi Cyclone (Chaos Undivided Support Weapon (Carapace))",		"pts":25},
+		{"id":302, "name":"Eye of the Gods & Cannons of Chaos (Chaos Undivided Support Weapon (Arm Onlynly))",		"pts":25},
+		{"id":303, "name":"Eye of the Gods & Havoc Vortex Missiles (Chaos Undivided Support Weapon (Carapace Only))",		"pts":25},
+		{"id":304, "name":"Eye of the Gods & Havoc Warp Missiles (Chaos Undivided Support Weapon (Carapace Only)",		"pts":25},
+		{"id":305, "name":"Eye of the Gods & Plasma Incinerator (Chaos Undivided Support Weapon (Army Only)",		"pts":25},
+		{"id":306, "name":"Eye of the Gods & Hellstrike Cannon (Khorne Support Weapon (Arm))",		"pts":25},
+		{"id":307, "name":"Eye of the Gods & Hellstrike Cannon (Khorne Support Weapon (Carapace))",		"pts":25},
+		{"id":308, "name":"Eye of the Gods & Beam of Change (Chaos Undivided Support Weapon (Carapace Only))",		"pts":25},
+		{"id":309, "name":"Eye of the Gods & Heavy Plague Mortar (Chaos Undivided Support Weapon (Carapace Only))",		"pts":25},
+		{"id":310, "name":"Eye of the Gods & Beam of Ecstasy (Chaos Undivided Support Weapon (Arm Only))",		"pts":25},
+		
+		
+		
+		
+		{"id":350, "name":"Command Head (Chaos Undivided (Head))",		"pts":0},
+		{"id":351, "name":"Battle Head (Chaos Undivided (Head))",		"pts":0},
+		{"id":352, "name":"Void Head (Chaos Undivided (Head))",		"pts":0},
+		{"id":353, "name":"Daemon Maw (Tzeentch (Head))",		"pts":0},
+		{"id":354, "name":"Plague Maw (Nurgle (Head))",		"pts":0},
+		
+		{"id":355, "name":"Gun Tail (Chaos Undivided (Tail))",		"pts":0},
+		{"id":356, "name":"Razor Tail (Chaos Undivided (Tail))",		"pts":0},
+		{"id":357, "name":"Barrage Tail (Chaos Undivided (Tail))",		"pts":0},
+		{"id":358, "name":"Mace Tail (Khorne (Tail))",		"pts":0},
+		{"id":359, "name":"Lust Lash (Slaanesh (Tail))",		"pts":0},
+		
+		
+		
+		{"id":400,	"name":"One additional Death Wheel",	"pts":225},
+		{"id":401,	"name":"Two additional Death Wheels",	"pts":450},
+		{"id":402,	"name":"One additional Lord of Battles",	"pts":325},
+		{"id":403,	"name":"One additional Greater Brass Scorpion",	"pts":150},
+		{"id":404,	"name":"Two additional Greater Brass Scorpions",	"pts":300},
+		{"id":405,	"name":"One additional Subjugator Scout Titan",	"pts":175},
+		{"id":406,	"name":"One additional Questor Scout Titan",	"pts":225},
+		
+		{"id":407,	"name":"One additional Hell-Scourge",	"pts":75},
+		{"id":408,	"name":"Two additional Hell-Scourges",	"pts":150},
+		{"id":409,	"name":"One additional Hell-Knight",	"pts":65},
+		{"id":410,	"name":"Two additional Hell-Knights",	"pts":130},
+		{"id":411,	"name":"One additional Hell-Strider",	"pts":55},
+		{"id":412,	"name":"Two additional Hell-Striders",	"pts":110},
+		
+		{"id":413,	"name":"One additional Renegade Knight",	"pts":75},
+		{"id":414,	"name":"Two additional Renegade Knights",	"pts":150},
+		{"id":415,	"name":"One additional Mauler Knight",	"pts":75},
+		{"id":416,	"name":"Two additional Mauler Knights",	"pts":150},
+		{"id":417,	"name":"One additional Decay Knight",	"pts":75},
+		{"id":418,	"name":"Two additional Decay Knights",	"pts":150},
+		{"id":419,	"name":"One additional Change Knight",	"pts":75},
+		{"id":420,	"name":"Two additional Change Knights",	"pts":150},
+		
+		{"id":421,	"name":"One additional Daemonic Assault Engine",	"pts":55},
+		{"id":422,	"name":"Two additional Daemonic Assault Engines",	"pts":110},
+		
+		{"id":423,	"name":"One additional Retlaxi-Pattern Defiler with Mark of Chaos Undivided",	"pts":45},
+		{"id":424,	"name":"Two additional Retlaxi-Pattern Defilers with Mark of Chaos Undivided",	"pts":90},
+		{"id":425,	"name":"One additional Retlaxi-Pattern Defiler with Trappings of Nurgle",	"pts":45},
+		{"id":426,	"name":"Two additional Retlaxi-Pattern Defilers with Trappings of Nurgle",	"pts":90},
+		{"id":427,	"name":"One additional Retlaxi-Pattern Defiler with Gifts of Tzeentch",	"pts":45},
+		{"id":428,	"name":"Two additional Retlaxi-Pattern Defilers with Gifts of Tzeentch",	"pts":90},
+		
+		{"id":429,	"name":"One additional Cannon of Khorne",	"pts":45},
+		{"id":430,	"name":"Two additional Cannons of Khorne",	"pts":90},
+		
+		
+		{"id":450,	"name":"Lesser Daemons",	"pts":15}
+		
+		
+
+	],
+	"formationConstraints":[
+		{"max": 1, "name":"Greater Daemon Engine Formation", "from":[551,552,553,554,555,556,557,558,559,560,561,562], "forEach":[501,502,503,504,505,506,507,508,509,510,511,512,513,514,515], "name2":"Battle Titan"},
+		{"max": 1, "from": [501,502,503,504,505]},
+		{"max": 1, "from": [533]},
+		{"maxPercent": 25, "name": "Chaos Navy", "from": [530,531,532,533]}
+	],
+	"upgradeConstraints":[
+		{"min":1, "from":[240,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273], "appliesTo":[501]},
+		{"min":1, "from":[240,241,242,243,244], "appliesTo":[502,503,504,505]},
+		{"max":1, "perArmy": true, "from": [240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273], "appliesTo":[501,502,503,504,505]},
+		
+		{"max":3, "from":[10,11,12,13,14,15,16,17,18,19,20,241,242,245,246,247,248,249], "appliesTo":[501,502,503,504,505]},
+
+		{"min":1, "max":1, "from":[350,351,352], "appliesTo":[501]},
+		{"min":3, "max":3, "from":[355,356,357], "appliesTo":[501]},
+		{"max":2, "from":[11,13,14,32,33,35,52,54,56,246,247,248,251,253,256,257,260,264,266,268,270,272,274], "appliesTo":[501]},
+		{"max":2, "from":[10,12,15,31,34,36,51,53,55,245,249,250,252,254,255,258,259,261,262,263,265,267,269,271,273], "appliesTo":[501]},
+		
+		{"min":1, "max":1, "from":[351,352], "appliesTo":[502]},
+		{"min":1, "max":1, "from":[355,356,358], "appliesTo":[502]},
+		{"max":2, "from":[11,13,14,17,32,33,35,38,40,52,54,58,244], "appliesTo":[502]},
+		{"max":2, "from":[10,12,16,31,34,51,53,57,241,242,243], "appliesTo":[502]},
+		
+		{"min":1, "max":1, "from":[351,352], "appliesTo":[503]},
+		{"min":3, "max":3, "from":[355,356,359], "appliesTo":[503]},
+		{"max":2, "from":[11,13,14,32,33,35,49,52,54,69,244], "appliesTo":[503]},
+		{"max":2, "from":[10,12,20,31,34,48,50,51,53,68,241,242,243], "appliesTo":[503]},
+		
+		{"min":1, "max":1, "from":[352,354], "appliesTo":[504]},
+		{"max":2, "from":[11,13,14,19,32,33,35,44,47,52,54,65,67,244], "appliesTo":[504]},
+		{"max":2, "from":[10,12,31,34,45,46,51,53,64,66,241,242,243], "appliesTo":[504]},
+		
+		{"min":2, "max":2, "from":[352,353], "appliesTo":[505]},
+		{"max":2, "from":[11,13,14,18,32,33,35,43,52,54,61,63,244], "appliesTo":[505]},
+		{"max":2, "from":[10,12,31,34,41,42,51,53,60,62,241,242,243], "appliesTo":[505]},
+		
+
+		
+		{"max":1, "perArmy": true, "from": [200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235], "appliesTo":[506,507,508,509,510]},
+		
+		{"max":1, "from":[10,11,12,13,14,15,16,17,18,19,20,201,202,205,206,207,208,209,210], "appliesTo":[506,507,508,509,510]},
+		
+		{"min":1, "max":1, "from":[350,351,352], "appliesTo":[506]},
+		{"min":1, "max":1, "from":[355,356,357], "appliesTo":[506]},
+		{"min":1, "from":[34,51,52,53,54,55,56,224,225,226,227,228,229,230,231,232,233,234,235], "appliesTo":[506]},
+		{"max":2, "from":[11,13,14,32,33,35,52,54,56,206,207,208,209,211,213,216,217,220,222,225,227,229,231,233,235], "appliesTo":[506]},
+		{"max":2, "from":[10,12,15,31,34,36,51,53,55,205,209,210,212,214,215,218,219,221,223,224,226,228,230,232,234], "appliesTo":[506]},
+		
+		{"min":1, "max":1, "from":[351,352], "appliesTo":[507]},
+		{"min":1, "max":1, "from":[355,356,358], "appliesTo":[507]},
+		{"min":1, "from":[34,39,40,51,52,53,54,57,58,203,204], "appliesTo":[507]},
+		{"max":2, "from":[11,13,14,17,32,33,35,38,40,52,54,58,204], "appliesTo":[507]},
+		{"max":2, "from":[10,12,16,31,34,39,51,53,57,201,202,203], "appliesTo":[507]},
+		
+		{"min":1, "max":1, "from":[351,352], "appliesTo":[508]},
+		{"min":1, "max":1, "from":[355,356,359], "appliesTo":[508]},		
+		{"min":1, "from":[34,51,52,53,54,50,68,69,203,204], "appliesTo":[508]},
+		{"max":2, "from":[11,13,14,32,33,35,49,52,54,69,204], "appliesTo":[508]},
+		{"max":2, "from":[10,12,20,31,34,48,50,51,53,68,201,202,203], "appliesTo":[508]},
+		
+		{"min":1, "max":1, "from":[352,354], "appliesTo":[509]},
+		{"min":1, "from":[34,45,51,52,53,54,64,65,66,67,203,204], "appliesTo":[509]},
+		{"max":2, "from":[11,13,14,19,32,33,35,44,47,52,54,65,67,204], "appliesTo":[509]},
+		{"max":2, "from":[10,12,31,34,45,46,51,53,64,66,201,202,203], "appliesTo":[509]},
+		
+		{"min":1, "max":1, "from":[352,353], "appliesTo":[510]},
+		{"min":1, "from":[34,51,52,53,54,60,61,62,63,203,204], "appliesTo":[510]},
+		{"max":2, "from":[11,13,14,18,32,33,35,43,52,54,61,63,204], "appliesTo":[510]},
+		{"max":2, "from":[10,12,31,34,41,51,53,60,62,201,202,203], "appliesTo":[510]},
+		
+		
+		
+		{"max":1, "perArmy": true, "from":[300,301,302,303,304,305,306,307,308,309,310], "appliesTo":[511,512,513,514,515]},
+		
+		{"min":1, "max":1, "from":[350,351,352], "appliesTo":[511]},
+		{"min":1, "max":1, "from":[355,356,357], "appliesTo":[511]},
+		{"min":1, "from":[34,51,52,53,54,55,56], "appliesTo":[511]},
+		{"max":1, "from":[32,33,35,52,54,56,301,303,304], "appliesTo":[511]},
+		{"max":2, "from":[31,34,36,51,53,55,300,302,305], "appliesTo":[511]},
+		
+		{"min":1, "max":1, "from":[351,352], "appliesTo":[512]},
+		{"min":1, "max":1, "from":[355,356,358], "appliesTo":[512]},
+		{"min":1, "from":[34,39,40,51,52,53,54,57,58], "appliesTo":[512]},
+		{"max":1, "from":[32,33,35,38,40,52,54,58,301,303,304,307], "appliesTo":[512]},
+		{"max":2, "from":[31,34,39,51,53,57,300,302,306], "appliesTo":[512]},
+		
+		{"min":1, "max":1, "from":[351,352], "appliesTo":[513]},
+		{"min":1, "max":1, "from":[355,356,359], "appliesTo":[513]},
+		{"min":1, "from":[34,51,52,53,54,50,68,69], "appliesTo":[513]},
+		{"max":1, "from":[32,33,35,49,52,54,69,301,303,304], "appliesTo":[513]},
+		{"max":2, "from":[31,34,48,50,51,53,68,300,302,310], "appliesTo":[513]},
+		
+		{"min":1, "max":1, "from":[352,354], "appliesTo":[514]},
+		{"min":1, "from":[34,45,51,52,53,54,64,65,66,67], "appliesTo":[514]},
+		{"max":1, "from":[32,33,35,44,47,52,54,65,67,301,303,304], "appliesTo":[514]},
+		{"max":2, "from":[31,34,45,46,51,53,64,66,300,302,309], "appliesTo":[514]},
+		
+		{"min":1, "max":1, "from":[352,353], "appliesTo":[515]},
+		{"min":1, "from":[34,51,52,53,54,60,61,62,63], "appliesTo":[515]},
+		{"max":1, "from":[32,33,35,43,52,54,61,63,301,303,304,308], "appliesTo":[515]},
+		{"max":2, "from":[31,34,41,51,53,60,62,300,302], "appliesTo":[515]},
+		
+		
+		{"min":1, "max":1, "from":[350,351,352], "appliesTo":[551]},
+		{"min":1, "max":1, "from":[355,356,357], "appliesTo":[551]},
+		{"min":1, "max":1, "from":[100,101,102,103,104,105], "appliesTo":[551]},
+		{"min":2, "max":2, "from":[350,351,352], "appliesTo":[552]},
+		{"min":2, "max":2, "from":[355,356,357], "appliesTo":[552]},
+		{"min":2, "max":2, "from":[100,101,102,103,104,105], "appliesTo":[552]},
+		
+		{"min":2, "max":2, "from":[351,352], "appliesTo":[553]},
+		{"min":2, "max":2, "from":[100,101,103,111,112,113,114,115], "appliesTo":[553]},
+		
+		{"min":1, "max":1, "from":[100,101,103,130,131,132,133,134,135,136], "appliesTo":[554]},
+		{"min":2, "max":2, "from":[100,101,103,130,131,132,133,134,135,136], "appliesTo":[555]},
+
+		{"min":1, "max":1, "from":[352,353], "appliesTo":[556]},		
+		{"min":1, "max":1, "from":[100,101,103,120,121,122,123,124,125,126], "appliesTo":[556]},
+		{"min":2, "max":2, "from":[352,353], "appliesTo":[557]},	
+		{"min":2, "max":2, "from":[100,101,103,120,121,122,123,124,125,126], "appliesTo":[557]},
+		
+		
+		
+		{"max":1, "from":[400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430], "appliesTo":[558,559,560,561,562,570,571,572,573,574,575,576,577,578,579,580,581]}
+		
+
+		
+	]
+}
