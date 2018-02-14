@@ -1,0 +1,108 @@
+{
+   "id": "Tau Sa'Cea",
+   "version": "0.0 Fan list",
+   "by": "Resa F",
+   "sections": 
+   [
+      {
+         "name": "Sa’Cea Core Formations",
+         "formations": 
+         [
+            {"id": 501, "name": "Crisis Battlesuit Cadre", "pts": 25, "upgrades": [51,32,41,36,37] },
+            {"id": 502, "name": "Breacher Cadre", "pts": 275, "upgrades": [41,29,40,36,37,42,43]}
+         ]
+      },
+      {
+         "name": "Sa’Cea Support Formations",
+         "formations": 
+         [
+            {"id": 510, "name": "XV9 Hazard Suit Cadre", "pts": 325, "units": "6x XV9 Hazard Suits", "upgrades": [37] },
+            {"id": 512, "name": "Armour Support Group", "pts": 250, "upgrades": [44] },
+            {"id": 513, "name": "Sa’Cea Broadside Group", "pts": 300, "units": "6x Missile Broadsides", "upgrades": [36,37,38] },
+            {"id": 514, "name": "Sniper Group", "pts": 0, "upgrades": []},
+            {"id": 516, "name": "Skysweep Group", "pts": 250, "units": "3 Skyray Air Defense Gunships"},
+            {"id": 517, "name": "Harassment Group", "pts": 225, "units": "6 XV15 Stealth Units", "upgrades": [36,37,45,40]},
+            {"id": 518, "name": "Kroot Kindred", "pts": 175, "units": "Master Shaper, 9x Kroot Warrior", "upgrades": [46,47,48]},
+            {"id": 519, "name": "Ghostkeel Group", "pts": 75, "upgrades": [36]},
+            {"id": 520, "name": "Pathfinder Group", "pts": 200},
+            {"id": 521, "name": "KV128 Stormsurge Formation", "pts": 250, "units": "2 KV128 Stormsurge units"},
+            {"id": 522, "name": "KX139 Ta'unar Supremacy", "pts": 225, "units": "1 KX139 Ta'unar Supremacy unit"}
+
+
+         ]
+      },
+      {
+         "name": "Air Caste Formations",
+         "formations": 
+         [
+            {"id": 521, "name": "Barracuda Squadron", "pts": 150, "units": "2 Barracuda Fighters"},
+            {"id": 527, "name": "Tiger Shark Squadron", "pts": 175, "units": "2x Tiger Sharks", "upgrades": []},
+            {"id": 525, "name": "Strike-modified Orca", "pts": 175},
+            {"id": 526, "name": "Spacecraft", "pts": 200, "units": "1 Protectoor Class II Cruiser"}
+
+
+         ]
+      }
+   ],
+   "upgrades": 
+   [
+      {"id": 31, "name": "Shas'el Commander", "pts": 25 },
+      {"id": 32, "name": "Shas’O (XV81)", "pts": 75 },
+      {"id": 33, "name": "Shas’O (XV84)", "pts": 75 },
+      {"id": 34, "name": "Shas’O (XV89)", "pts": 75 },
+      {"id": 35, "name": "Crisis Suits", "pts": 50 },
+      {"id": 36, "name": "Bonded Team", "pts": 25 },
+      {"id": 37, "name": "2x Gun Drones", "pts": 25 },
+      {"id": 38, "name": "3x Missile Broadside", "pts": 150 },
+      {"id": 39, "name": "Ethereal", "pts": 50 },
+      {"id": 40, "name": "Shas’Vre", "pts": 50 },
+      {"id": 41, "name": "2x Pathfinder teams and 1 Sa’Cea Devilfish", "pts": 100 },
+      {"id": 42, "name": "2x Breacher teams", "pts": 50 },
+      {"id": 43, "name": "2x Breacher teams and 1 Sa’Cea Devilfish", "pts": 75 },
+      {"id": 44, "name": "Skyray", "pts": 100 }, 
+      {"id": 45, "name": "XV95 Ghostkeel", "pts": 75 }, 
+      {"id": 46, "name": "5x Kroot Warrior", "pts": 75 }, 
+      {"id": 47, "name": "3x Kroot Hound", "pts": 50 }, 
+      {"id": 48, "name": "3x Krootox", "pts": 50 },
+
+      {"id": 49, "name": "8x Breacher Teams", "pts": 0 },
+      {"id": 50, "name": "6x Breacher Teams and 3x Sa’Cea Devilfish", "pts": 25 },
+      {"id": 51, "name": "Hammerhead Gunship - Ion Cannon", "pts": 0 },
+      {"id": 52, "name": "Hammerhead Gunship - Twin Fusion Cannons", "pts": 0 },
+      {"id": 53, "name": "Hammerhead Gunship - Twin Missile Pods", "pts": 0 },
+      {"id": 54, "name": "Hammerhead Gunship - Twin Plasma Rifles", "pts": 0 },
+      {"id": 55, "name": "3x Sniper Drones, Firesight Marksman team", "pts": 125 },
+      {"id": 56, "name": "6x Sniper Drones, 2x Firesight Marksman team", "pts": 250 },
+      {"id": 57, "name": "4x Pathfinders, 2x Sa’Cea Devilfish", "pts": 0 },
+      {"id": 58, "name": "6x Pathfinders", "pts": 0 }
+   ], 
+   "formationConstraints":    
+   [ 
+      { "maxPercent": 33, "name": "War Engines & Allies", "from": [ 521, 522, 523, 525, 526, 527, 528 ] }, 
+      { "max": 3, "name": "Support Groups", "from": [ 510, 511, 512, 513, 514, 515, 516, 517, 518, 519 ], "forEach": [ 501, 502 ], "name2": "Cadre" } 
+   ], 
+   "upgradeConstraints": 
+   [ 
+      { "max": 1, "perArmy": true, "from": [ 32,33,34 ], "name": "Cmdr"  }, 
+      { "max": 1, "perArmy": true, "from": [ 39 ], "name": "Ethereal"},
+      { "max": 1, "from": [ 36 ] }, 
+      { "max": 1, "from": [ 37 ] }, 
+      { "max": 1, "from": [ 38 ] }, 
+      { "max": 1, "from": [ 40 ] }, 
+      { "max": 1, "from": [ 41 ] }, 
+      { "max": 1, "from": [ 42,43 ] }, 
+      { "max": 1, "from": [ 44 ] }, 
+      { "max": 1, "from": [ 45 ] },
+      { "max": 1, "from": [ 46 ] }, 
+      { "max": 1, "from": [ 47 ] }, 
+      { "max": 1, "from": [ 48 ] }, 
+
+      { "min": 1, "max": 1, "from": [ 31,32,33,34 ], "appliesTo": [ 501 ] }, 
+      { "min": 4, "max": 8, "from": [ 35 ], "appliesTo": [ 501 ] }, 
+      { "max": 1, "min": 1, "from": [ 49,50 ], "appliesTo": [ 502 ] }, 
+      { "max": 5, "min": 5, "from": [ 51,52,53,54], "appliesTo": [ 512 ] }, 
+      { "max": 1, "min": 1, "from": [ 55,56 ], "appliesTo": [ 514 ] } , 
+      { "max": 4, "min": 3, "from": [ 45 ], "appliesTo": [ 519 ] } ,
+      { "max": 1, "min": 1, "from": [ 57,58 ], "appliesTo": [ 520 ] }
+   ]
+}
