@@ -8,8 +8,8 @@
          "name": "Sa’Cea Core Formations",
          "formations": 
          [
-            {"id": 501, "name": "Crisis Battlesuit Cadre", "pts": 25, "upgrades": [51,32,41,36,37] },
-            {"id": 502, "name": "Breacher Cadre", "pts": 275, "upgrades": [41,29,40,36,37,42,43]}
+            {"id": 501, "name": "Crisis Battlesuit Cadre", "pts": 25, "upgrades": [35,36,37] },
+            {"id": 502, "name": "Breacher Cadre", "pts": 275, "upgrades": [36,37,38,39,41,42,43]}
          ]
       },
       {
@@ -35,10 +35,10 @@
          "name": "Air Caste Formations",
          "formations": 
          [
-            {"id": 521, "name": "Barracuda Squadron", "pts": 150, "units": "2 Barracuda Fighters"},
-            {"id": 527, "name": "Tiger Shark Squadron", "pts": 175, "units": "2x Tiger Sharks", "upgrades": []},
-            {"id": 525, "name": "Strike-modified Orca", "pts": 175},
-            {"id": 526, "name": "Spacecraft", "pts": 200, "units": "1 Protectoor Class II Cruiser"}
+            {"id": 531, "name": "Barracuda Squadron", "pts": 150, "units": "2 Barracuda Fighters"},
+            {"id": 532, "name": "Tiger Shark Squadron", "pts": 175, "units": "2x Tiger Sharks", "upgrades": [59]},
+            {"id": 533, "name": "Strike-modified Orca", "pts": 175},
+            {"id": 534, "name": "Spacecraft", "pts": 200, "units": "1 Protectoor Class II Cruiser"}
 
 
          ]
@@ -47,9 +47,9 @@
    "upgrades": 
    [
       {"id": 31, "name": "Shas'el Commander", "pts": 25 },
-      {"id": 32, "name": "Shas’O (XV81)", "pts": 75 },
-      {"id": 33, "name": "Shas’O (XV84)", "pts": 75 },
-      {"id": 34, "name": "Shas’O (XV89)", "pts": 75 },
+      {"id": 32, "name": "Shas’O (XV81)", "pts": 100 },
+      {"id": 33, "name": "Shas’O (XV84)", "pts": 100 },
+      {"id": 34, "name": "Shas’O (XV89)", "pts": 100 },
       {"id": 35, "name": "Crisis Suits", "pts": 50 },
       {"id": 36, "name": "Bonded Team", "pts": 25 },
       {"id": 37, "name": "2x Gun Drones", "pts": 25 },
@@ -65,6 +65,8 @@
       {"id": 47, "name": "3x Kroot Hound", "pts": 50 }, 
       {"id": 48, "name": "3x Krootox", "pts": 50 },
 
+      {"id": 59, "name": "6x Gun Drones", "pts": 100 },
+
       {"id": 49, "name": "8x Breacher Teams", "pts": 0 },
       {"id": 50, "name": "6x Breacher Teams and 3x Sa’Cea Devilfish", "pts": 25 },
       {"id": 51, "name": "Hammerhead Gunship - Ion Cannon", "pts": 0 },
@@ -78,31 +80,31 @@
    ], 
    "formationConstraints":    
    [ 
-      { "maxPercent": 33, "name": "War Engines & Allies", "from": [ 521, 522, 523, 525, 526, 527, 528 ] }, 
-      { "max": 3, "name": "Support Groups", "from": [ 510, 511, 512, 513, 514, 515, 516, 517, 518, 519 ], "forEach": [ 501, 502 ], "name2": "Cadre" } 
+      { "maxPercent": 33, "name": "War Engines & Allies", "from": [531,532,533,534]}, 
+      { "max": 3, "name": "Support Groups", "from": [510,512,513,514,516,517,518,519,520,521,522 ], "forEach": [ 501, 502 ], "name2": "Cadre" } 
    ], 
    "upgradeConstraints": 
    [ 
       { "max": 1, "perArmy": true, "from": [ 32,33,34 ], "name": "Cmdr"  }, 
       { "max": 1, "perArmy": true, "from": [ 39 ], "name": "Ethereal"},
-      { "max": 1, "from": [ 36 ] }, 
-      { "max": 1, "from": [ 37 ] }, 
-      { "max": 1, "from": [ 38 ] }, 
-      { "max": 1, "from": [ 40 ] }, 
-      { "max": 1, "from": [ 41 ] }, 
-      { "max": 1, "from": [ 42,43 ] }, 
-      { "max": 1, "from": [ 44 ] }, 
-      { "max": 1, "from": [ 45 ] },
-      { "max": 1, "from": [ 46 ] }, 
-      { "max": 1, "from": [ 47 ] }, 
-      { "max": 1, "from": [ 48 ] }, 
-
-      { "min": 1, "max": 1, "from": [ 31,32,33,34 ], "appliesTo": [ 501 ] }, 
-      { "min": 4, "max": 8, "from": [ 35 ], "appliesTo": [ 501 ] }, 
-      { "max": 1, "min": 1, "from": [ 49,50 ], "appliesTo": [ 502 ] }, 
-      { "max": 5, "min": 5, "from": [ 51,52,53,54], "appliesTo": [ 512 ] }, 
-      { "max": 1, "min": 1, "from": [ 55,56 ], "appliesTo": [ 514 ] } , 
-      { "max": 4, "min": 3, "from": [ 45 ], "appliesTo": [ 519 ] } ,
-      { "max": 1, "min": 1, "from": [ 57,58 ], "appliesTo": [ 520 ] }
+      { "max": 1, "from": [36], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [37], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [38], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [40], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [41], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [42,43], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [44], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [45], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [46], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [47], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [48], "appliesTo": [501,502,510,512,513,514,516,517,518,519,520,521,522]}, 
+      { "max": 1, "from": [59], "appliesTo": [532]}, 
+      { "min": 1, "max": 1, "from": [31,32,33,34], "appliesTo": [ 501 ] }, 
+      { "min": 4, "max": 8, "from": [35], "appliesTo": [ 501 ] }, 
+      { "max": 1, "min": 1, "from": [49,50], "appliesTo": [ 502 ] }, 
+      { "max": 5, "min": 5, "from": [51,52,53,54], "appliesTo": [ 512 ] }, 
+      { "max": 1, "min": 1, "from": [55,56], "appliesTo": [ 514 ] } , 
+      { "max": 4, "min": 3, "from": [45], "appliesTo": [ 519 ] } ,
+      { "max": 1, "min": 1, "from": [57,58], "appliesTo": [ 520 ] }
    ]
 }
