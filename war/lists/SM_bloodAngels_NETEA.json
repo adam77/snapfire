@@ -7,26 +7,26 @@
 		
 {"name":"DETACHMENTS", "formations":[
 			
-{"id":532, "name":"Assault Detachment", 		"pts":0,   "upgrades":[11,30,60,31,32,33,14,18,53]},
+{"id":532, "name":"Assault Detachment", 		"pts":0,   "upgrades":[11,30,60,31,32,33,14,71,18,53]},
 {"id":533, "name":"Bike Detachment", 			"pts":200, "upgrades":[30,31,32,33]},
-{"id":534, "name":"Death Company", 			"pts":225, "upgrades":[39,40,41,13]},
-{"id":535, "name":"Devastator Detachment",		"pts":250, "units":"4 Devastators", "upgrades":[39,40,30,31,32,33,13,14,18,53,21,22,23,26,42,43]},	
+{"id":534, "name":"Death Company", "units": "4 Death Company Units plus Transport",	"pts":225, "upgrades":[41,13]},
+{"id":535, "name":"Devastator Detachment", "pts":250, "units":"4 Devastator Units plus Transport", "upgrades":[30,31,32,33,14,71,18,53,21,22,23,26,42,43]},	
 {"id":536, "name":"Land Speeders",			"pts":200, "upgrades":[30,31,32,33]},
 {"id":537, "name":"Landing Craft",			"pts":350, "upgrades":[]},
 {"id":538, "name":"Predators",				"pts":275, "upgrades":[30,31,32,33,23]},
-{"id":550, "name":"Vindicators", 			"pts":0,   "upgrades":[30,31,32,33,23]},
-{"id":539, "name":"Scout Detachment",			"pts":150, "units":"4 Scouts", "upgrades":[39,30,31,32,33,42,43]},
+
+{"id":539, "name":"Scout Detachment",			"pts":150, "units":"4 Scouts plus Transport", "upgrades":[70,30,31,32,33,42,43]},
 {"id":540, "name":"Spacecraft",				"pts":200, "upgrades":[]}, 
 {"id":541, "name":"Stormraven",				"pts":325, "units":"4 Stormraven Gunships", "upgrades":[]},
-{"id":542, "name":"Tactical Detachment",		"pts":275, "units":"6 Blood Angels Tacticals", "upgrades":[39,40,30,31,32,33,14,18,53,21,22,23,26,42,43]},
-{"id":543, "name":"Terminator Detachment",		"pts":350, "units":"4 Terminators", "upgrades":[30,31,32,33,14,18,53,21,22,26]}
+{"id":542, "name":"Tactical Detachment",		"pts":275, "units":"6 Blood Angels Tacticals plus Transport", "upgrades":[30,31,32,33,14,71,18,53,21,22,23,26,42,43]},
+{"id":543, "name":"Terminator Detachment",		"pts":350, "units":"4 Terminators", "upgrades":[30,31,32,33,14,71,18,53,21,22,26]}
 
 		]},
 
 		{"name":"AIR SUPPORT", "formations":[
 			
 {"id":549, "name":"Storm Talons",		"pts":200, "upgrades":[], "units":"2 Storm Talons"},			
-{"id":544, "name":"Thunderhawk",			"pts":250, "upgrades":[], "units":"1 Thunderhawk Gunship"}
+{"id":544, "name":"Thunderhawk",			"pts":200, "upgrades":[], "units":"1 Thunderhawk Gunship"}
 		]}],
 	
 "upgrades":[
@@ -34,25 +34,24 @@
 {"id":11, "name":"Blood Angels Assault Marine Unit",		"pts":50},
 {"id":12, "name":"Battlebarge",					"pts":150},
 {"id":13, "name":"Death Company Dreadnought",			"pts":75},
-{"id":14, "name":"Furioso Dreadnought", 			"pts":50},
+{"id":14, "name":"Furioso Dreadnought (2x Power Fist)", 			"pts":50},
+{"id":71, "name":"Furioso Dreadnought (Frag Cannon)", 			"pts":50},
 {"id":15, "name":"2 Land Speeders",				"pts":100},
 {"id":16, "name":"Blood Angels Bike Unit",			"pts":0},
 {"id":17, "name":"Attack Bike",					"pts":0},
-{"id":18, "name":"Blood Angels Vindicator",			"pts":50},
-{"id":53, "name":"2 Blood Angels Vindicators",			"pts":75},
-{"id":50, "name":"4 Blood Angels Vindicators",			"pts":225},
-{"id":51, "name":"5 Blood Angels Vindicators",			"pts":275},
-{"id":52, "name":"6 Blood Angels Vindicators",			"pts":300},
+{"id":18, "name":"Vindicator",			"pts":50},
+{"id":53, "name":"2 Vindicators",			"pts":75},
+{"id":70, "name":"Sniper",				"pts":10},
 
 {"id":19, "name":"Baal Predator",				"pts":0},
 {"id":44, "name":"Baal Predator Infernus",			"pts":0},
 {"id":20, "name":"Predator Annihilator",			"pts":75},
 {"id":21, "name":"Land Raider", 				"pts":75},
 {"id":22, "name":"Land Raider Redeemer", 			"pts":75},
-{"id":23, "name":"Blood Angels Hunter",				"pts":75},
+{"id":23, "name":"Hunter",				"pts":75},
 {"id":24, "name":"Blood Angels TL Lascannon Razorback", 	"pts":25},
 {"id":25, "name":"Blood Angels TL Heavy Bolter Razorback", 	"pts":25},
-{"id":26, "name":"Stormraven Gunship", 				"pts":50},
+{"id":26, "name":"Stormraven Gunship", 				"pts":75},
 {"id":27, "name":"Land Speeder",				"pts":0},
 {"id":28, "name":"Land Speeder Tornado",			"pts":0},
 {"id":29, "name":"Land Speeder Typhoon",			"pts":10},
@@ -86,21 +85,25 @@
 	
 "upgradeConstraints":[
 		
-{"max":1, "name":"Transport", "from":[39,40,41]},		
+{"max":1, "from":[41]},	
+{"max":1, "from":[23]},	
+{"max":4, "from":[70]},	
 {"min":5, "max":5, "from":[27,28,29], "appliesTo":[536]},		
 {"min":5, "max":5, "from":[16,17], "appliesTo":[533]},		
 {"min":4, "max":4, "from":[19,44], "appliesTo":[538]},		
-{"min":1, "max":1, "from":[38], "appliesTo":[533]},		
+		
 {"max":6, "name":"Razorbacks", "from":[24,25]},
 {"min":1, "max":1, "from":[32], "appliesTo":[534]},	
 {"min":4, "max":6, "from":[11], "appliesTo":[532]},	
 {"max":1, "name":"Cmdr", "from":[30,60,31,32,33]},
 		
 {"max":1, "perArmy":true, "from":[30,60]},		
-{"max":2, "name":"Dreadnoughts", "from":[13,14]},		
+{"max":2, "name":"Dreadnoughts", "from":[13]},
+{"max":2, "name":"Dreadnoughts", "from":[14,71]},
 		
 {"max":1, "from":[18,53]},
 {"max":4, "name":"Land Raiders", "from":[21,22]},
+{"max":4, "name":"Storm Ravens", "from":[26]},
 {"max":4, "name":"Razorbacks", "from":[42,43], "appliesTo":[535,539]},
 {"max":6, "name":"Razorbacks", "from":[42,43], "appliesTo":[542]},
 {"min":1, "max":1, "name":"Vindicator", "from":[50,51,52], "appliesTo":[550]},
