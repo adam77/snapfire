@@ -7,9 +7,10 @@
 		
 {"name":"DETACHMENTS", "formations":[
 			
+{"id":534, "name":"Death Company", "units": "4 Death Company Units plus Transport",	"pts":250, "upgrades":[41,13]},
 {"id":532, "name":"Assault Detachment", 		"pts":0,   "upgrades":[11,30,60,31,32,33,14,71,18,53]},
 {"id":533, "name":"Bike Detachment", 			"pts":200, "upgrades":[30,31,32,33]},
-{"id":534, "name":"Death Company", "units": "4 Death Company Units plus Transport",	"pts":225, "upgrades":[41,13]},
+
 {"id":535, "name":"Devastator Detachment", "pts":250, "units":"4 Devastator Units plus Transport", "upgrades":[30,31,32,33,14,71,18,53,21,80,81,82,22,83,84,85,23,26,42,43]},	
 {"id":536, "name":"Land Speeders",			"pts":200, "upgrades":[30,31,32,33]},
 {"id":537, "name":"Landing Craft",			"pts":350, "upgrades":[]},
