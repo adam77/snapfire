@@ -19,7 +19,7 @@
 {"id":540, "name":"Spacecraft",				"pts":200, "upgrades":[]}, 
 {"id":541, "name":"Stormraven",				"pts":325, "units":"4 Stormraven Gunships", "upgrades":[]},
 {"id":542, "name":"Tactical Detachment",		"pts":275, "units":"6 Blood Angels Tacticals", "upgrades":[39,40,30,31,32,33,14,18,53,21,22,23,26,42,43]},
-{"id":543, "name":"Terminator Detachment",		"pts":350, "units":"4 Terminators", "upgrades":[30,31,32,33,14,18,53,21,22,26]},
+{"id":543, "name":"Terminator Detachment",		"pts":350, "units":"4 Terminators", "upgrades":[30,31,32,33,14,18,53,21,22,26]}
 
 		]},
 
