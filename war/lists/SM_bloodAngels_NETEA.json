@@ -45,6 +45,7 @@
 
 {"id":19, "name":"Baal Predator",				"pts":0},
 {"id":44, "name":"Baal Predator Infernus",			"pts":0},
+{"id":74, "name":"Baal Predator Infernus (Magna Melta)",	"pts":0},
 {"id":20, "name":"Predator Annihilator",			"pts":75},
 {"id":21, "name":"Land Raider", 				"pts":75},
 {"id":22, "name":"Land Raider Redeemer", 			"pts":75},
@@ -90,7 +91,7 @@
 {"max":4, "from":[70]},	
 {"min":5, "max":5, "from":[27,28,29], "appliesTo":[536]},		
 {"min":5, "max":5, "from":[16,17], "appliesTo":[533]},		
-{"min":4, "max":4, "from":[19,44], "appliesTo":[538]},		
+{"min":4, "max":4, "from":[19,44,74], "appliesTo":[538]},		
 		
 {"max":6, "name":"Razorbacks", "from":[24,25]},
 {"min":1, "max":1, "from":[32], "appliesTo":[534]},	
