@@ -1,17 +1,17 @@
 {"id":"Gargant Bigmob",
-        "version":"3.3.1 - Developmental",
- "notes":["Each Mega or Great Gargant taken allows you to purchase up to 4 non-gargant mobs or aviation formations, each Gargant taken allows you to purchase up to 3 non-gargant mobs or aviation formations"],    "by":"Kyussinchains",
+"version":"3.5.1 - Developmental",
+"by":"Kyussinchains",
        
 "sections":[
                
 {"name":"GARGANT MOB", "formations":[
                        
 {"id":532, "name":"Mega Gargant",               "pts":1050, "upgrades":[34]},
-{"id":533, "name":"Great Gargant",              "pts":650, "upgrades":[34,36,37,38,40,41,43]},
+{"id":533, "name":"Great Gargant",              "pts":675, "upgrades":[34,36,37,38,40,41,43]},
 {"id":534, "name":"Gargant",                    "pts":475, "upgrades":[36,37,38,40,41,43]}]},
 
 {"name":"NON-GARGANT MOBS", "formations":[
-{"id":535, "name":"Supa Stompa",       "pts":125, "upgrades":[11,12,13,14,16,17,36,37,38,40,41,43]},
+{"id":535, "name":"Supa Stompa",       "pts":150, "upgrades":[11,12,13,14,16,17,36,37,38,40,41,43]},
 {"id":560, "name":"Stompa Mob (Normal)",       "pts":20, "upgrades":[11,12,13,14,16,17]},
 {"id":561, "name":"Stompa Mob (Big)",       "pts":-10, "upgrades":[11,12,13,14,16,17]},
 {"id":562, "name":"Stompa Mob (Uge)",       "pts":-40, "upgrades":[11,12,13,14,16,17]},
@@ -62,17 +62,18 @@
 {"id":35, "name":"Fighta-Bommers",              "pts":50},
 {"id":36, "name":"(Kustom) Flakka Dakka",      "pts":25},
 {"id":37, "name":"(Kustom) Transporta",         "pts":25},
-{"id":38, "name":"(Kustom) Power Fields",       "pts":25},
+{"id":38, "name":"(Kustom) Power Fields",       "pts":50},
 {"id":39, "name":"(Kustom) Reinforced Boiler",  "pts":25},
-{"id":40, "name":"(Kustom) Extra Armour Bitz",  "pts":25},
-{"id":43, "name":"(Kustom) More Dakka",         "pts":25},
+{"id":40, "name":"(Kustom) Extra Armour Bitz",  "pts":50},
+{"id":43, "name":"(Kustom) Boss Nobz",         "pts":25},
 {"id":41, "name":"(Kustom) Head of Mork/Gork",  "pts":25}],
        
 "formationConstraints":[
                
 {"max":1, "name":"Spacecraft", "from":[553]},
-
-{"maxPercent":33, "name":"Navy", "from":[551,552,553]}
+{"min":1,"from":[533,532]},
+{"max":3, "name":"Support formations", "from":[535,560,561,562,538,539,540,541,542,543,551,552,553], "forEach":[532,533,534], "name2":"Gargant"},
+{"maxPercent":33, "name":"Aviation Formations", "from":[551,552,553]}
 ],
 
 "upgradeConstraints":[

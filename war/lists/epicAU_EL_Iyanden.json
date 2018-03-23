@@ -1,0 +1,126 @@
+{
+	"id":"Iyanden Craftworld",
+	"version":"4.2",
+	"by":"Mic Fair",
+	"notes":["This list is marked as 'Developmental'"],
+	"sections":[
+		{"name":"IYANDEN CRAFTWORLD INDIVIDUALS", "formations":[
+			{"id":500, "name":"Avatar",										"pts":0,		"upgrades":[]},
+			{"id":501, "name":"Wraithgate",									"pts":50,		"upgrades":[]}
+		]},
+		{"name":"IYANDEN CRAFTWORLD WARHOSTS", "formations":[
+			{"id":601, "name":"Spirit Wraithguard Warhost",					"pts":275, "upgrades":[11,12,13,60], "units":"4x Wraithguard units"},
+			{"id":602, "name":"Spirit Wraithblade Warhost",					"pts":225, "upgrades":[11,12,13,60], "units":"4x Wraithblade units"},
+			{"id":603, "name":"Spirit Wraithlord Warhost",					"pts":350, "upgrades":[], "units":"6x Wraithlord units"}
+			
+		]},	
+		{"name":"IYANDEN CRAFTWORLD TROUPES", "formations":[
+			{"id":701, "name":"Aspect Warrior Troupe", 						"pts":175,	"upgrades":[60,61,97]},
+			{"id":702, "name":"Ranger Troupe",								"pts":0, "upgrades":[22]},
+			{"id":703, "name":"Guardian Troupe",							"pts":150, 	"upgrades":[25,11,12,13,60]},
+			{"id":704, "name":"Windrider Troupe",							"pts":200, 	"upgrades":[]},
+			{"id":705, "name":"War Walker Troupe",							"pts":50, 	"upgrades":[28]},
+			{"id":706, "name":"Swords of Vaul Troupe",						"pts":0, "upgrades":[61]},
+			{"id":707, "name":"Night Spinner Troupe",						"pts":175, "upgrades":[], "units":"3x Night Spinner units"},
+			{"id":708, "name":"Engine of Vaul Troupe",						"pts":0, "upgrades":[64,65,66]}
+			
+			
+		]},
+		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
+			{"id":801, "name":"Spacecraft",							"pts":0, "upgrades":[]},
+			{"id":802, "name":"Nightwing Interceptors",				"pts":300, "upgrades":[], "units":"3x Nightwing Interceptors"},
+			{"id":803, "name":"Phoenix Bombers",					"pts":325, "upgrades":[], "units":"3x Phoenix Bombers"},
+			{"id":804, "name":"Vampire Raider",						"pts":200, "upgrades":[]},
+			{"id":805, "name":"Revenant Titans",					"pts":650, "upgrades":[], "units":"2 Revenant Titans"},
+			{"id":806, "name":"Phantom Titan",						"pts":750, "upgrades":[]},
+		 	{"id":807, "name":"Warlock Titan",						"pts":850, "upgrades":[]}
+			
+			
+			
+		
+			
+		]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Wraithguard",							"pts":50},
+		{"id":12, "name":"Wraithblade",							"pts":50},
+		{"id":13, "name":"Wraithlord",							"pts":50},
+		{"id":14, "name":"Dire Avenger",						"pts":0},
+		{"id":15, "name":"Striking Scorpion",					"pts":0},
+		{"id":16, "name":"Howling Banshee",						"pts":0},
+		{"id":17, "name":"Fire Dragon",							"pts":0},
+		{"id":18, "name":"Warp Spider",							"pts":0},
+		{"id":19, "name":"Dark Reaper",							"pts":0},
+		{"id":20, "name":"Swooping Hawk",						"pts":0},
+		{"id":21, "name":"Shining Spear",						"pts":0},
+		{"id":22, "name":"Ranger",								"pts":25},
+		{"id":23, "name":"Guardian",							"pts":0},
+		{"id":24, "name":"Guardian Heavy Weapon Platform",		"pts":0},
+		{"id":25, "name":"3x Support Weapon Platforms",			"pts":50},
+		{"id":26, "name":"Jetbike",								"pts":0},
+		{"id":27, "name":"Vyper",								"pts":0},
+		{"id":28, "name":"War Walker",							"pts":25},
+		
+		
+		
+		{"id":60, "name":"Wave Serpent",					"pts":50},
+		{"id":61, "name":"Falcons",							"pts":50},
+		{"id":62, "name":"Fire Prism",						"pts":65},
+		{"id":63, "name":"Fire Storm",						"pts":50},
+		{"id":64, "name":"Cobra",							"pts":250},
+		{"id":65, "name":"Scorpion",						"pts":250},
+		{"id":66, "name":"Storm Serpent",					"pts":250},
+		
+		{"id":80, "name":"Wraithship",						"pts":150},
+		{"id":81, "name":"Dragonship",						"pts":300},
+		
+		
+		{"id":96, "name":"Farseer",							"pts":0},
+		{"id":97, "name":"Exarch",							"pts":25},
+		{"id":98, "name":"Spiritseer",						"pts":0},
+		{"id":99, "name":"Wraithseer",						"pts":100}
+		
+		
+		
+		
+	],
+	"formationConstraints":[
+		{"max":2, "name":"Troupes", "from":[701,702,703,704,705,706,707,708], "forEach":[601,602,603], "name2":"Warhost"},
+		{"max":1, "name":"Wraithlord Warhost", "from":[603], "forEach":[601,602], "name2":"Spirit Wraithguard/Wraithblade Warhost"},
+		{"max":1, "from":[500]},
+		{"max":1, "from":[501]},
+		{"max":1, "from":[801]},
+		{"maxPercent":33, "name":"Aircraft & Titans", "from":[801,802,803,804,805,806,807]}				
+	],
+	"upgradeConstraints":[
+	
+		{"max":1, "perArmy":true, "name":"Supreme Commander", "from":[99]},
+		{"min":1, "max":1, "from":[98,99], "appliesTo":[601,602,603]},
+		{"min":0, "max":3, "from":[13], "appliesTo":[601,602,703]},
+		{"min":0, "max":2, "from":[11,12], "appliesTo":[601,602]},
+		{"min":0, "max":6, "from":[60], "appliesTo":[601,602]},
+		{"min":1, "max":3, "from":[64,65,66], "appliesTo":[708]},
+		{"min":4, "max":4, 	"from":[14,15,16,17,18,19,20,21], "appliesTo":[701]},
+		{"min":0, "max":1, "from":[97], "appliesTo":[701]},
+		{"min":0, "max":2, "from":[60], "appliesTo":[701]},
+		{"min":0, "max":4, "from":[61], "appliesTo":[701]},
+		
+		{"min":4, "max":8, "from":[22], "appliesTo":[702]},
+		
+		{"min":1, "max":1, "from":[96], "appliesTo":[703]},
+		{"min":7, "max":7, "from":[23,24], "appliesTo":[703]},
+		{"min":0, "max":3, "from":[24], "appliesTo":[703]},
+		{"min":0, "max":1, "from":[25], "appliesTo":[703]},
+		{"min":0, "max":3, "from":[11,12], "appliesTo":[703]},
+		{"min":0, "max":4, "from":[60], "appliesTo":[703]},
+		
+		{"min":6, "max":6, "from":[26,27], "appliesTo":[704]},
+		{"min":4, "max":6, "from":[28], "appliesTo":[705]},
+		
+		{"min":5, "max":6, "from":[61,62,63], "appliesTo":[706]},
+		{"min":0, "max":2, "from":[63], "appliesTo":[706]},
+		
+		{"min":1, "max":1, "from":[80,81], "appliesTo":[801]}
+		
+	]
+}

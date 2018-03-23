@@ -1,11 +1,11 @@
 {
    "id": "World Eaters",
-   "version": "Epic UK v070414",
+   "version": "Epic UK v210617",
    "by": "Kyussinchains",
-   "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 4. 2) 1 Dreadclaw must be purchased per unit in the formation. 3) both Rhinos and Dreadclaws count towards the upgrade allowance of a formation"],
+   "notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1) The formation may be dropped via dreadclaws from a purchased Space Ship at no additional cost. 2) It may take sufficent Chaos Rhinos to transport it once other upgrades with transports have been purchased. 3) When Land Raiders are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add the minimum number of Rhinos to transport the remainder of the formation as per the plus transport option"],
    "sections": [
       {"name": "CORE", "formations": [
-            {"id": 501, "name": "World Eater Retinue", "pts": 275, "units": "8 Berserkers", "upgrades": [52,53,64,65,66,54,67,68,56,57,71,72,63,69,70,60,62,58]},
+            {"id": 501, "name": "World Eater Retinue", "pts": 275, "units": "8 Berserkers plus transport", "upgrades": [52,53,64,65,66,54,67,68,56,57,71,72,63,69,70,60]},
             {"id": 551, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
          ]},
 	  {"name": "ELITE", "formations": [
@@ -18,7 +18,8 @@
             {"id": 505, "name": "Daemonic Artillery", "pts": 200, "units": "4 Cannons of Khorne", "upgrades": []},
             {"id": 506, "name": "Daemonic Assault Engine Pack", "pts": 15, "upgrades": [37,63,69,70]},
             {"id": 507, "name": "Armoured Company", "pts": 0, "upgrades": [30,31,54,67,68,57,71,72]},
-            {"id": 510, "name": "Defiler Assault Pack", "pts": 250, "units": "4 World Eater Defilers", "upgrades": [63,69,70,57,71,72]}
+            {"id": 510, "name": "Defiler Assault Pack", "pts": 250, "units": "4 World Eater Defilers", "upgrades": [63,69,70,57,71,72]},
+	    {"id": 511, "name": "Brass Scorpions", "pts": 250, "units": "2 Chaos Brass Scorpions", "upgrades": []}
          ]},
       {"name": "CHAOS TITANS", "formations": [
             {"id": 520, "name": "Banelord Titan", "pts": 800, "upgrades": []},
@@ -61,7 +62,6 @@
       {"id": 29, "name": "Chaos Vindicator", "pts": 50},
 	  {"id": 30, "name": "Chaos Predator", "pts": 50},
       {"id": 31, "name": "Chaos Land Raider", "pts": 75},
-      {"id": 64, "name": "Daemon Assault Engine", "pts": 75},
 	  {"id": 41, "name": "Defiler", "pts": 65},
       {"id": 39, "name": "Lord of Battles", "pts": 400}
    ],
@@ -69,7 +69,7 @@
       {"max": 1, "from": [551]},
       {"max": 1, "from": [533]},
       {"maxPercent": 33, "name": "War Engines & Allies", "from": [520,521,522,530,531,533]},
-      {"max": 2, "name": "Support Formations", "from": [504,505,506,507,510], "forEach": [501], "name2": "Retinue"},
+      {"max": 2, "name": "Support Formations", "from": [504,505,506,507,510,511], "forEach": [501], "name2": "Retinue"},
 	  {"max": 1, "name": "Elite Formation", "from": [503,508,509], "forEach": [501], "name2": "Retinue"}
    ],
    "upgradeConstraints": [
@@ -78,10 +78,10 @@
       {"max": 1, "min": 1, "from": [17,19,20,21], "appliesTo": [501,503]},
 	  {"max": 1, "min": 1, "from": [17,20], "appliesTo": [508,509]},
 	  {"max": 4, "from": [53,64,65,66,54,67,68,60,52,56,63,69,70,57,71,72], "appliesTo": [501,503,508,509,504,506,507,510],"name": "Upgrades"},
-	  {"max": 1, "from": [54,67,68], "appliesTo": [501,503]}, 
-	  {"max": 1, "from": [53,64,65,66], "appliesTo": [501,507]}, 
-	  {"max": 1, "from": [63,69,70], "appliesTo": [501,503,510,506]}, 
-	  {"max": 1, "from": [57,71,72], "appliesTo": [501,503,507,510,506]},  
+	  {"max": 1, "from": [54,67,68], "appliesTo": [501,503]},
+	  {"max": 1, "from": [53,64,65,66], "appliesTo": [501,507]},
+	  {"max": 1, "from": [63,69,70], "appliesTo": [501,503,510,506]},
+	  {"max": 1, "from": [57,71,72], "appliesTo": [501,503,507,510,506]},
 	  {"max": 1, "from": [60], "appliesTo": [501,503,508,509]},
       {"max": 1, "from": [52], "appliesTo": [501,503]},
       {"max": 1, "from": [56], "appliesTo": [501,503,504,508,509]},

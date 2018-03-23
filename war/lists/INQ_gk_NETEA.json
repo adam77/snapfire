@@ -1,0 +1,104 @@
+{
+   "id": "Grey Knights",
+   "version": "V1.3.2",
+   "by": "freefall",
+   "notes":["If using transports you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible.",
+   "Drop pods require space craft.",
+   "Land Raider Crusader may carry 2 Terminators or 3 Grey Knights.",
+   "Stormraven may carry a Dreadnought or Dreadknight in addition to infantry."],
+   "sections": [
+        {"name": "GREY KNIGHTS CORE FORMATIONS", "formations": [
+            {"id": 500, "name": "Grey Knights Strike Team", 	"pts": 300, "units": "6 Grey Knights plus transports", "upgrades": [1,2,3,4,5,6,7,8,14,15,16,17] },
+            {"id": 501, "name": "Grey Knights Terminators", 	"pts": 350, "units": "4 Grey Knights Terminators", "upgrades": [1,2,3,4,5,6,17,18,19,20] },
+			{"id": 502, "name": "Inquisitorial Warband", 		"pts": 175, "units": "Inqusitor", "upgrades": [9,10,11,12,13,21,22] }
+	  ]},
+	   
+        {"name": "SUPPORT FORMATIONS", "formations": [
+            {"id": 600, "name": "Grey Knights Interceptor Squad", 		 "pts": 250, "units": "4 Grey Knights Interceptor", "upgrades": [1,2,3,4,5,6,17] },
+			{"id": 601, "name": "Grey Knights Purgation Squad",   		 "pts": 250, "units": "4 Grey Knights Purgation plus transports", "upgrades": [1,2,3,4,5,6,7,8,14,15,16,17,18,19,20] },
+			{"id": 602, "name": "Grey Knights Land Raider", 	  		 "pts": 50, "upgrades": [1,2,3,4,23,24,25] },
+			{"id": 603, "name": "Grey Knights Thunderhawk Gunship", 	 "pts": 225, "upgrades": [] },
+			{"id": 604, "name": "Grey Knights Thunderhawk Transporters", "pts": 75, "upgrades": [26] },
+			{"id": 605, "name": "Grey Knights Landing Craft", 			 "pts": 350, "units": "1 Grey Knigths Landing Craft", "upgrades": [] },
+			{"id": 606, "name": "Grey Knights Strike Cruiser", 			 "pts": 200, "units": "1 Grey Knights Strike Cruiser", "upgrades": [] },
+			{"id": 607, "name": "Stormraven Flight", 		 			 "pts": 250, "units": "4 Grey Knights Stormraven Gunships", "upgrades": [1,2,3,4] }
+		
+		]},
+	   
+        {"name": "RESTRICTED SUPPORT FORMATIONS", "formations": [
+            {"id": 700, "name": "Stormtalons", 				 "pts": 200, "units": "2 Stormtalon Gunship Fighter-Bomber Aircraft", "upgrades": [] },
+            {"id": 701, "name": "Thunderhawk Bomber", 		 "pts": 250, "units": "1 Saturation Thunderhawk Bomber Aircraft", "upgrades": [] },
+			{"id": 702, "name": "Psi-Pattern Warlord Titan", "pts": 850, "units": "1 Psi-Pattern Warlord Titan", "upgrades": [] },
+			{"id": 703, "name": "Reaver", 					 "pts": 650, "units": "1 Reaver Titan", "upgrades": [] },
+			{"id": 704, "name": "Warhound Pack",			 "pts": 500, "units": "2 Warhound Scout Titans", "upgrades": [] },
+            {"id": 705, "name": "Warhound", 				 "pts": 275, "units": "1 Warhound Scout Titan", "upgrades": [] }
+         ]}
+		
+   ],
+   "upgrades": [
+		{"id": 1, "name": "Grand Master", 						"pts":100 },
+		{"id": 2, "name": "Librarian", 							"pts":50 },
+		{"id": 3, "name": "Brother Captain", 					"pts":50 },
+		{"id": 4, "name": "Brotherhood Champion", 				"pts":50 },
+		
+		{"id": 5, "name": "Grey Knights Dreadnought",			"pts":50 },
+		{"id": 6, "name": "Nemesis Dreadknight", 				"pts":75 },
+		
+		{"id": 7, "name": "1 Hunter",			 				"pts":75 },
+		{"id": 8, "name": "2 Hunters",			 				"pts":125 },
+		
+		{"id": 9, "name": "Warrior Acolyte",	 				"pts":0 },
+		{"id": 10, "name": "Death Cult Assassins", 				"pts":20 },
+		{"id": 11, "name": "Imperial Servitors", 				"pts":10 },
+		{"id": 12, "name": "Psyker Battle Squad", 				"pts":15 },
+		{"id": 13, "name": "Vindicare Assasin", 				"pts":50 },
+		
+		{"id": 14, "name": "Transport: Drop pod", 				"pts":0 },
+		{"id": 15, "name": "Transport: Rhino", 					"pts":0 },
+		{"id": 16, "name": "Transport: Razorback", 				"pts":25 },
+		{"id": 17, "name": "Transport: Stormraven", 			"pts":50 },
+		{"id": 18, "name": "Transport: Land Raider", 			"pts":75 },
+		{"id": 19, "name": "Transport: Land Raider Crusader", 	"pts":75 },
+		{"id": 20, "name": "Transport: Land Raider Redeemer", 	"pts":75 },
+		{"id": 21, "name": "Aquila lander and 3 Arvus Lighters", "pts":75 },
+		{"id": 22, "name": "Transport: 4 Chimeras", 			"pts":100 },
+		
+		{"id": 23, "name": "Land Raider", 			"pts":75 },
+		{"id": 24, "name": "Land Raider Crusader", 	"pts":75 },
+		{"id": 25, "name": "Land Raider Redeemer", 	"pts":75 },
+		
+		{"id": 26, "name": "Grey Knights Thunderhawk Transport", 	"pts":100 }
+	  
+	],
+   "formationConstraints": [
+      {"max": 3, "from": [502]},
+	  {"max": 3, "from": [606]},
+      {"maxPercent": 33.34, "name": "Restricted Support Formations", "from": [700,701,702,703,704,705]},
+      {"max": 2, "name": "Support Formations", "from": [600,601,602,603,604,605,606,607], "forEach": [500,501,502], "name2": "Core Formation" }
+   ],
+   "upgradeConstraints": [
+      {"max": 1, "perArmy": true, "from": [1]},
+	  {"max": 1, "from": [1,2,3,4], "appliesTo": [500,501,600,601,602,607] },
+	  {"max": 2, "from": [5,6], "appliesTo": [500,501,600,601] },
+	  {"max": 1, "from": [7,8], "appliesTo": [500,601] },
+	  
+	  
+	  {"min": 0, "max": 6, "from": [14,15,16,17], "appliesTo": [500] },
+	  {"min": 0, "max": 4, "from": [14,15,16], "appliesTo": [601] },
+	  {"min": 0, "max": 4, "from": [17,18,19,20], "appliesTo": [501] },
+	  {"min": 0, "max": 2, "from": [17,18,19,20], "appliesTo": [601] },
+	  {"min": 0, "max": 2, "from": [17], "appliesTo": [600] },
+	  
+	  
+	  {"min": 4, "max": 4, "from": [23,24,25], "appliesTo": [602] },
+	  {"max": 1, "from": [21,22], "appliesTo": [502] },
+	  {"min": 8,"max": 8, "from": [9,10,11,12,13], "appliesTo": [502] },
+	  {"max": 4, "from": [10,11,12,13], "appliesTo": [502] },
+	  {"max": 1, "from": [13], "appliesTo": [502] },
+	  
+	  {"min": 1,"max": 2, "from": [26], "appliesTo": [604] }
+		  
+	  
+	  
+   ]
+}

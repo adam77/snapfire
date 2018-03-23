@@ -68,7 +68,7 @@
 
     {"max":1, "name":"Elite Detachment", "from":[510,511,512,513], "forEach":[500,501,502,503], "name2":"Detachment"},
     {"max":1, "name":"Support Detachment", "from":[520,521,522], "forEach":[500,501,502,503], "name2":"Detachment"},
-    {"max":1, "name":"Aircraft", "from":[530,531], "forEach":[500,501,502,503], "name2":"Detachment, Elite Detachment or Support Detachment"},
+    {"max":1, "name":"Aircraft", "from":[530,531], "forEach":[500,501,502,503,510,511,512,513,520,521,522], "name2":"Detachment, Elite Detachment or Support Detachment"},
 
     {"maxPercent":33.334, "name":"Imperial Ally Formations", "from":[540,541,550,551]}
   ],
@@ -93,6 +93,6 @@
 
     {"max":1, "from":[17,18], "appliesTo":[502]},
 
-    {"max":1, "from":[19], "appliesTo":[502]}
+    {"max":4, "from":[19], "appliesTo":[502]}
   ]
 }

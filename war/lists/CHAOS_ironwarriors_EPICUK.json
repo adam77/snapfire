@@ -9,22 +9,22 @@
                 {"name":"CORE", "formations":[
                         {"id":501, "name":"Iron Warriors Company",      "pts":300, "units":"6 Chaos Space Marines and 2 Havocs", "upgrades":[53,79,80,81,54,71,72,59,61,75,76,62,63,70]},
                         {"id":502, "name":"Defiler Assault Pack",       "pts":275, "units":"4 Defilers", "upgrades":[57,73,74,63,70]},
-                        {"id":541, "name":"Vindicator Company",   "pts":250, "units":"6 Chaos Vindicators", "upgrades":[54,71,72]}
+                        {"id":541, "name":"Vindicator Company",   "pts":250, "units":"6 Chaos Vindicators", "upgrades":[54,71,72,90,91]}
                 ]},
 				{"name":"SUPPORT", "formations":[
-                        {"id":507, "name":"Armoured Company",   "pts":0, "upgrades":[27,28,69,77,78]},
-                        {"id":508, "name":"Artillery Battery",  "pts":325, "units":"4 Chaos Basilisks", "upgrades":[]},
+                        {"id":507, "name":"Armoured Company",   "pts":0, "upgrades":[27,28,69,77,78,90,91]},
+                        {"id":508, "name":"Artillery Battery",  "pts":275, "units":"4 Chaos Basilisks", "upgrades":[]},
                         {"id":506, "name":"Stormsword Company", "pts":550, "units":"3 Chaos Stormswords", "upgrades":[69,77,78,54,71,72,57,73,74]},
-						{"id":505, "name":"Havocs", "pts":0, "upgrades":[69,77,78,54,71,72,63,70]}
+						{"id":505, "name":"Havocs", "pts":0, "upgrades":[69,77,78,54,71,72,63,70,84]}
 				]},
                 {"name":"ASSAULT", "formations":[
                         {"id":503, "name":"Iron Warrior Terminators", "pts":35, "upgrades":[32,63,70,53,79,80,81,57,73,74,61,75,76]},
                         {"id":504, "name":"Chosen", "pts":125, "units":"4 Chaos Space Marine Chosen units", "upgrades":[62,58]},
                         {"id":511, "name":"Obliterators", "pts":425, "units":"5 Obliterators", "upgrades":[]},
-						{"id":515, "name":"Decimators", "pts":0, "units":"", "upgrades":[25,69,77,78,54,71,72,57,73,74]}, 
+						{"id":515, "name":"Decimators", "pts":0, "units":"", "upgrades":[25,69,77,78,54,71,72,57,73,74]},
                         {"id":513, "name":"Siegehammer", "pts":225, "units":"6 Iron Warrior Assault Marines", "upgrades":[62,63,70,54,71,72,58]},
                         {"id":514, "name":"Dreadnought Pack", "pts":250, "units":"5 Chaos Dreadnoughts", "upgrades":[57,73,74,58]}
-                ]},                
+                ]},
                 {"name":"CHAOS NAVY", "formations":[
                         {"id":530, "name":"Hellblade Flight",   "pts":200, "units":"3 Fighters", "upgrades":[]},
                         {"id":531, "name":"Helltalon Flight",   "pts":225, "units":"2 Fighter Bombers", "upgrades":[]},
@@ -41,10 +41,12 @@
         "upgrades":[
                 {"id":17, "name":"Iron Warriors Lord",          "pts":0},
                 {"id":18, "name":"Daemon Prince",   "pts":50},
-				{"id":19, "name":"Daemon Prince (Supreme Commander)",   "pts":100},				
+				{"id":19, "name":"Daemon Prince (Supreme Commander)",   "pts":100},
                 {"id":20, "name":"Warsmith (Supreme Commander)", "pts":50},
                 {"id":27, "name":"Chaos Predator",      "pts":50},
                 {"id":28, "name":"Chaos Land Raider",   "pts":75},
+		{"id":90, "name":"Chaos Hunter",   "pts":50},
+		{"id":91, "name":"2 Chaos Hunters",   "pts":75},
 				{"id":25, "name":"Decimator", "pts":225},
                 {"id":53, "name":"Chaos Land Raider", "pts":75},
 				{"id":79, "name":"2 Chaos Land Raider",   "pts":150},
@@ -68,7 +70,7 @@
                 {"id":63, "name":"Chaos Siege Dreadnought", "pts":50},
 				{"id":70, "name":"2 Chaos Siege Dreadnoughts", "pts":100},
                 {"id":65, "name":"Stormsword", "pts":200},
-                {"id":71, "name":"2 Havocs and 1 Chaos Land Raider", "pts":150},                
+                {"id":84, "name":"2 Havocs and 1 Chaos Land Raider", "pts":150},
                 {"id":69, "name":"Chaos Basilisk", "pts":60},
 				{"id":77, "name":"2 Chaos Basilisks", "pts":120},
 				{"id":78, "name":"3 Chaos Basilisks", "pts":180}
@@ -88,16 +90,16 @@
                 {"min":4, "max":6, "from":[32], "appliesTo":[503]},
                 {"min":1, "max":3, "from":[25], "appliesTo":[515]},
 				{"min":1, "max":1, "from":[82,83], "appliesTo":[505]},
-				{"max":4, "name":"Upgrades", "from":[63,70,54,71,72,57,73,74,61,75,76,69,77,78,53,79,80,81], "appliesTo":[501,502,503,504,505,506,507,513,514,515,541]},
+				{"max":4, "name":"Upgrades", "from":[63,70,54,71,72,57,73,74,61,75,76,69,77,78,53,79,80,81,90,91], "appliesTo":[501,502,503,504,505,506,507,513,514,515,541]},
                 {"max":1, "from":[53,79,80,81]},
                 {"max":1, "from":[54,71,72]},
                 {"max":1, "from":[57,73,74]},
                 {"max":1, "from":[69,77,78]},
-                {"max":1, "from":[59]},                
+                {"max":1, "from":[59]},
                 {"max":1, "from":[61,75,76]},
                 {"max":1, "from":[63,70]},
+		{"max":1, "from":[90,91]},
                 {"max":8, "from":[27]}
-                
+
                 ]
 }
-
