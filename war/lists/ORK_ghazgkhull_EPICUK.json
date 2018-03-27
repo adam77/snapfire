@@ -219,7 +219,9 @@
                   60,
                   61,
                   71,
-                  77
+                  91,
+                  77,
+                  90
                ]
             },
             {
@@ -412,7 +414,7 @@
       },
       {
          "id": 71,
-         "name": "Stompa",
+         "name": "Stompa (3x Big Gunz)",
          "pts": 75
       },
       {
@@ -432,7 +434,7 @@
       },
       {
          "id": 77,
-         "name": "Supa Stompa",
+         "name": "Supa Stompa (3x Soopaguns)",
          "pts": 250
       },
       {
@@ -444,6 +446,41 @@
          "id": 49,
          "name": "Fighta Bomba",
          "pts": 50
+      },
+      {
+         "id": 90,
+         "name": "Supa Stompa (2x Soopagun, 1x Mega Choppa)",
+         "pts": 250
+      },
+      {
+         "id": 91,
+         "name": "Stompa (2x Big Gun, 1x Kombat 'Ammer)",
+         "pts": 75
+      },
+      {
+         "id": 92,
+         "name": "Soopagun",
+         "pts": 0
+      },
+      {
+         "id": 93,
+         "name": "Twin Soopagun",
+         "pts": 0
+      },
+      {
+         "id": 94,
+         "name": "Supa-Zzap Gun",
+         "pts": 0
+      },
+      {
+         "id": 95,
+         "name": "Mega Choppa",
+         "pts": 0
+      },
+      {
+         "id": 96,
+         "name": "Lifta-Droppa",
+         "pts": 0
       }
    ],
    "formationConstraints": [
@@ -476,6 +513,11 @@
          ],
          "perArmy": true
       },
+      {"min":3,"max":3,"from":[92,94,95],"appliesTo":[522]},
+      {"max":1,"from":[94,95],"appliesTo":[522]},
+      {"min":1,"max":1,"from":[92],"appliesTo":[523]},
+      {"min":1,"max":2,"from":[93,96],"appliesTo":[523]},
+      {"max":1,"from":[96],"appliesTo":[523]},
       {
          "max": 2,
          "from": [
@@ -549,8 +591,8 @@
       {
          "min": 6,
          "from": [
-            51,
-            52
+            52,
+            51
          ],
          "appliesTo": [
             503
@@ -659,7 +701,7 @@
       {
          "min": 3,
          "from": [
-            71
+            71,91
          ],
          "appliesTo": [
             510
@@ -668,7 +710,7 @@
       {
          "max": 1,
          "from": [
-            77
+            77,90
          ],
          "appliesTo": [
             510
