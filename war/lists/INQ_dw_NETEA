@@ -1,0 +1,102 @@
+{
+   "id": "Death Watch",
+   "version": "Draft Version",
+   "by": "Norto",
+   "notes":["If using transports you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible.",
+   "Drop pods require space craft.",
+   "Land Raider Crusader may carry 3 Infantry or 2 Terminators.",
+   ""],
+   "sections": [
+        	{"name": "DEATH WATCH DETACHMENTS", "formations": [
+          {"id": 500, "name": "Deathwatch Kill Team", 			"pts": 250, "units": "4 Deathwatch Kill Team units", "upgrades": [1,2,3,4,14,15,13,18,19,20,33,34,35] },
+          {"id": 501, "name": "Deathwatch Terminators", 			"pts": 350, "units": "4 Deathwatch Terminator units", "upgrades": [2,3,4,18,19,20,33,34,35] },
+	    	  {"id": 502, "name": "Deathwatch Strike Team - Bikes", 		"pts": 200, "units": "", "upgrades": [2,3,4] },
+	    	  {"id": 503, "name": "Deathwatch Strike Team - Land Speeders", 	"pts": 200, "units": "", "upgrades": [2,3,4] },
+		      {"id": 504, "name": "Deathwatch Landing Craft", 		"pts": 350, "units": "1 Deathwatch Landing Craft aircraft", "upgrades": [] }
+	  	]},
+	   
+        	{"name": "DEATH WATCH SUPPORT DETACHMENTS", "formations": [
+          {"id": 600, "name": "Inquisitorial Warband", 			"pts": 175, "units": "Inquisitor", "upgrades": [1] },
+		      {"id": 601, "name": "Inquisitorial Storm Trooper Platoon",   	"pts": 300, "units": "8 Storm Trooper, 4 Chimeras and an Inquisitor", "upgrades": [36] },
+		      {"id": 605, "name": "Inquisitorial Fortress", 			"pts": 550, "units": "1 Capitol Imperialis and 8 Storm Troopers", "upgrades": [1,13] }
+
+		
+		  ]},
+	   
+        	{"name": "RESTRICTED SUPPORT FORMATIONS", "formations": [
+          {"id": 700, "name": "Corvus Black Stars", 			"pts": 200, "units": "3 Corvus Black Star", "upgrades": [] },
+		      {"id": 603, "name": "Thunderhawk Gunship", 			"pts": 200, "upgrades": [] },
+		      {"id": 604, "name": "Inquisitorial Black ship", 		"pts": 175, "upgrades": [] }
+         	]}
+		
+   ],
+   "upgrades": [
+		{"id": 1, "name": "Inquisitor Lord", 					      "pts":75},
+		{"id": 2, "name": "Librarian", 						          "pts":50 },
+		{"id": 3, "name": "Captain", 						            "pts":50 },
+		{"id": 4, "name": "Chaplin", 						            "pts":50 },
+		
+		{"id": 5, "name": "Venerable Dreadnought",				  "pts":50 },
+		{"id": 6, "name": "Deathwatch Bike", 					       "pts":0 },
+		{"id": 7, "name": "Deathwatch Attack Bike", 				"pts":0 },	
+		{"id": 8, "name": "Hunter",			 			              "pts":75 },
+
+		{"id": 9, "name":  "Warrior Acolyte",	 			                   	      "pts":0  },
+		{"id": 10, "name": "Death Cult Assassins", 			                   	  "pts":20 },
+		{"id": 11, "name": "4 Valkyries", 					                          "pts":150 },
+		{"id": 12, "name": "4 Chimeras", 					                            "pts":100 },
+		{"id": 13, "name": "2 Deathwatch Black Shield Units and transports", 	"pts":75 },
+
+		{"id": 14, "name": "Drop pods", 							        "pts":0  },
+		{"id": 15, "name": "Rhinos", 								          "pts":0  },
+		{"id": 16, "name": "Razorback", 							        "pts":25 },
+		{"id": 17, "name": "Stormraven", 							        "pts":50 },
+		{"id": 18, "name": "Land Raider", 							      "pts":50 },
+		{"id": 19, "name": "Land Raider Crusader", 						"pts":50 },
+		{"id": 20, "name": "Land Raider Redeemer", 						"pts":50 },
+		{"id": 33, "name": "2x Land Raider", 							    "pts":75 },
+		{"id": 34, "name": "2x Land Raider Crusader", 				"pts":75 },
+		{"id": 35, "name": "2x Land Raider Redeemer", 				"pts":75 },
+		{"id": 21, "name": "3 Arvus Lighters", 							  "pts":0},
+		{"id": 22, "name": "3 Chimeras", 							        "pts":0},
+		
+		{"id": 23, "name": "Land Raider", 							      "pts":75 },
+		{"id": 24, "name": "Land Raider Crusader", 						"pts":75 },
+		{"id": 25, "name": "Land Raider Redeemer", 						"pts":75 },
+		
+
+		{"id": 28, "name": "Nemesis Dreadknight (Brother Captain) *Replaces 1 unit", 		"pts":100 },
+		{"id": 29, "name": "Nemesis Dreadknight (Grand Master) *Replaces 1 unit", 		  "pts":125 },
+
+		{"id": 30, "name": "Inquisitorial Black ship", 			"pts":200 }, 
+		{"id": 31, "name": "Landspeeder Typhoon",			 			"pts":10 },
+		{"id": 32, "name": "Landspeeder Tornado",			 			"pts":0 },
+		{"id": 36, "name": "Hydra",			 					          "pts":50 }
+	],
+   "formationConstraints": [
+      {"max": 3, "from": [502]},
+      {"max": 1, "from": [604]},
+      {"maxPercent": 33.34, "name": "Restricted Support Formations", "from": [700,603,604]},
+      {"max": 2, "name": "DEATH WATCH SUPPORT DETACHMENTS", "from": [600,601,605], "forEach": [500,501,502,503,504], "name2": "DEATH WATCH DETACHMENTS" }
+   ],
+   "upgradeConstraints": [
+    {"max": 1, "perArmy": true, "from": [1]},
+    {"max": 1, "perArmy": true, "from": [4]},
+    {"max": 1, "perArmy": true, "from": [30]},
+	  {"max": 1, "from": [1,2,3,4], "appliesTo": [500,501,502,503] },
+	  {"max": 1, "from": [1], "appliesTo": [500,600,605]},
+	  {"min": 5, "max": 5, "from": [6,7], "appliesTo": [502] },
+	  {"max": 1, "from": [13], "appliesTo": [500] },
+	  {"max": 3, "from": [18,19,20], "appliesTo": [500] },	
+	  {"max": 2, "from": [18,19,20], "appliesTo": [501] },	
+	  {"max": 1, "from": [33,34,35], "appliesTo": [500] },	
+	  {"max": 1, "from": [33,34,35], "appliesTo": [501] },		  
+	  {"min": 5, "max": 5, "from": [32,31], "appliesTo": [503]},		  
+	  {"min": 6, "max": 6, "from": [9,10], "appliesTo": [600]},
+	  {"max": 2, "from": [10], "appliesTo": [600]},
+	  {"max": 1, "from": [14,15], "appliesTo": [500]},
+	  {"max": 8, "from": [16], "appliesTo": [500]},
+	  {"min": 1, "max": 1, "from": [21,22], "appliesTo": [600]},
+	  {"max": 1, "from": [11,12], "appliesTo": [601]}
+   ]
+}
