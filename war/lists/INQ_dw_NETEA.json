@@ -33,7 +33,7 @@
 		{"id": 1, "name": "Inquisitor Lord", 					"pts":75},
 		{"id": 2, "name": "Librarian", 						"pts":50 },
 		{"id": 3, "name": "Captain", 						"pts":50 },
-		{"id": 4, "name": "Chaplin", 						"pts":50 },
+		{"id": 4, "name": "Chaplain", 						"pts":50 },
 		{"id": 6, "name": "Inquisitor", 					"pts":0},
 		{"id": 5, "name": "Venerable Dreadnought",				"pts":50 },
 		{"id": 8, "name": "Hunter",			 			"pts":75 },
@@ -80,6 +80,8 @@
    "upgradeConstraints": [
       	  {"max": 1, "perArmy": true, "from": [1]},
       	  {"max": 1, "perArmy": true, "from": [30]},
+	  {"max": 1, "from": [14,44], "appliesTo": [500]},
+	  {"max": 1, "from": [14,45], "appliesTo": [500]},
 	  {"min": 1, "max": 1, "from": [6,1], "appliesTo": [600,601,605]},
 	  {"min": 4, "max": 4, "from": [41,42,43,44,45,46], "appliesTo": [500] },
 	  {"max": 1, "from": [1,2,3,4], "appliesTo": [500,501,503] },
