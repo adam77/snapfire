@@ -1,10 +1,10 @@
 {
    "id": "Grey Knights",
-   "version": "V1.3.2",
+   "version": "Draft",
    "by": "Norto",
    "notes":["If using transports you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible.",
    "Drop pods require space craft.",
-   "Land Raider Crusader may carry 2 Terminators or 3 Grey Knights.",
+   "Land Raider Crusader may carry 2 Terminators or 3 Grey Knights."],
    "sections": [
         	{"name": "GREY KNIGHTS CORE FORMATIONS", "formations": [
             	{"id": 500, "name": "Grey Knights Strike Team", 		"pts": 300, "units": "6 Grey Knights", "upgrades": [1,2,3,4,5,6,7,14,15,16,17,27] },
@@ -16,8 +16,6 @@
             	{"id": 600, "name": "Grey Knights Interceptor Squad", 		"pts": 225, "units": "4 Grey Knights Interceptor", "upgrades": [1,2,3,4,5,6,17] },
 		{"id": 601, "name": "Grey Knights Purgation Squad",   		"pts": 275, "units": "4 Grey Knights Purgation plus transports", "upgrades": [1,2,3,4,5,6,7,14,15,16,17,18,19,20,27] },
 		{"id": 602, "name": "Grey Knights Land Raider", 	  	"pts": 50, "upgrades": [7] },
-
-		{"id": 605, "name": "Grey Knights Landing Craft", 		"pts": 350, "units": "1 Grey Knigths Landing Craft", "upgrades": [] },
 		{"id": 606, "name": "Grey Knights Space Craft", 		"pts": 0, "upgrades": [] },
 		{"id": 607, "name": "Stormraven Flight", 		 	"pts": 325, "units": "4 Grey Knights Stormraven Gunships", "upgrades": [] }
 		
@@ -25,7 +23,6 @@
 	   
         	{"name": "RESTRICTED SUPPORT FORMATIONS", "formations": [
             	{"id": 700, "name": "Stormtalons", 				"pts": 200, "units": "2 Stormtalon Gunships", "upgrades": [] },
-		{"id": 603, "name": "Grey Knights Thunderhawk Gunship", 	"pts": 200, "upgrades": [] },
 		{"id": 604, "name": "Grey Knights Thunderhawk Transporters", 	"pts": 75, "upgrades": [26] }
          	]}
 		
@@ -50,7 +47,7 @@
 		{"id": 14, "name": "Drop pods", 							"pts":0  },
 		{"id": 15, "name": "Rhinos", 								"pts":0  },
 		{"id": 16, "name": "Razorback", 							"pts":25 },
-		{"id": 17, "name": "Stormraven", 							"pts":50 },
+		{"id": 17, "name": "Stormraven", 							"pts":75 },
 		{"id": 18, "name": "Land Raider", 							"pts":50 },
 		{"id": 19, "name": "Land Raider Crusader", 						"pts":50 },
 		{"id": 20, "name": "Land Raider Redeemer", 						"pts":50 },
