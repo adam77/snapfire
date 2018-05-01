@@ -9,8 +9,7 @@
    "sections": [
         	{"name": "DEATH WATCH DETACHMENTS", "formations": [
             	{"id": 500, "name": "Deathwatch Kill Team", 			"pts": 50, "upgrades": [2,3,4,5,8,14,15,16,23,24,25,33,34,35,37] },
-	    	{"id": 503, "name": "Deathwatch Strike Team - Land Speeders", 	"pts": 200, "units": "", "upgrades": [2,3,4] },
-		{"id": 504, "name": "Deathwatch Landing Craft", 		"pts": 350, "units": "1 Deathwatch Landing Craft aircraft", "upgrades": [] }
+	    	{"id": 503, "name": "Deathwatch Strike Team - Land Speeders", 	"pts": 200, "units": "", "upgrades": [2,3,4] }
 	  	]},
 	   
         	{"name": "DEATH WATCH SUPPORT DETACHMENTS", "formations": [
@@ -25,6 +24,7 @@
             	{"id": 700, "name": "Thunderbolt Fighters", 			"pts": 150, "units": "2 Thunderbolt Fighters", "upgrades": [] },
             	{"id": 701, "name": "Maurader Bombers", 			"pts": 250, "units": "2 Maurader Bombers", "upgrades": [] },
 		{"id": 603, "name": "Thunderhawk Gunship", 			"pts": 200, "upgrades": [] },
+		{"id": 504, "name": "Deathwatch Landing Craft", 		"pts": 350, "units": "1 Deathwatch Landing Craft aircraft", "upgrades": [] },
 		{"id": 604, "name": "Inquisitorial Black ship", 		"pts": 175, "upgrades": [] }
          	]}
 		
@@ -74,12 +74,13 @@
    "formationConstraints": [
       {"max": 3, "from": [502]},
       {"max": 1, "from": [604]},
-      {"maxPercent": 33.34, "name": "Restricted Support Formations", "from": [700,603,604]},
-      {"max": 2, "name": "DEATH WATCH SUPPORT DETACHMENTS", "from": [600,601,605], "forEach": [500,501,502,503,504], "name2": "DEATH WATCH DETACHMENTS" }
+      {"maxPercent": 33.34, "name": "Restricted Support Formations", "from": [700,603,604,504]},
+      {"max": 2, "name": "DEATH WATCH SUPPORT DETACHMENTS", "from": [600,601,605], "forEach": [500,501,502,503], "name2": "DEATH WATCH DETACHMENTS" }
    ],
    "upgradeConstraints": [
       	  {"max": 1, "perArmy": true, "from": [1]},
       	  {"max": 1, "perArmy": true, "from": [30]},
+
 	  {"min": 1, "max": 1, "from": [6,1], "appliesTo": [600,601,605]},
 	  {"min": 4, "max": 4, "from": [41,42,43,44,45,46], "appliesTo": [500] },
 	  {"max": 1, "from": [1,2,3,4], "appliesTo": [500,501,503] },
