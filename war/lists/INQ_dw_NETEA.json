@@ -1,6 +1,6 @@
 {
    "id": "Death Watch",
-   "version": "Draft Version",
+   "version": "V1.1",
    "by": "Norto",
    "notes":["If using transports you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible.",
    "Drop pods require space craft.",
@@ -94,7 +94,7 @@
 	  {"min": 5, "max": 5, "from": [32,31], "appliesTo": [503]},		  
 	  {"min": 6, "max": 6, "from": [9,10], "appliesTo": [600]},
 	  {"max": 2, "from": [10], "appliesTo": [600]},
-	  {"max": 2, "from": [14,15,37], "appliesTo": [500]},
+	  {"max": 4, "from": [14,15,37], "appliesTo": [500]},
 	  {"max": 8, "from": [16], "appliesTo": [500]},
 	  {"min": 1, "max": 1, "from": [22,21], "appliesTo": [600]},
 	  {"max": 1, "from": [11,12], "appliesTo": [601]}
