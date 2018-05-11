@@ -13,9 +13,9 @@
       {
          "name": "WAR HORDES",
          "formations": [
-            {"id": 500, "name": "Bad Moons Warband", "pts": 200, "units": "2 Nobz, 5 Boyz, 3 Grotz", "upgrades": [81,50,82,10,12,13,14,57,60,61,62,64,68,71,72,43]},
-            {"id": 501, "name": "Bad Moons Warband (Big)", "pts": 350, "units": "4 Nobz, 10 Boyz, 6 Grotz", "upgrades": [81,50,82,10,12,13,14,57,60,61,62,64,68,71,72,43]},
-            {"id": 502, "name": "Bad Moons Warband ('Uge)", "pts": 500, "units": "6 Nobz, 15 Boyz, 9 Grotz", "upgrades": [81,50,82,10,12,13,14,57,60,61,62,64,68,71,72,43]},
+            {"id": 500, "name": "Bad Moons Warband", "pts": 200, "units": "2 Nobz, 5 Boyz, 3 Grotz", "upgrades": [81,50,82,10,12,13,14,57,60,61,62,64,71,72,43]},
+            {"id": 501, "name": "Bad Moons Warband (Big)", "pts": 350, "units": "4 Nobz, 10 Boyz, 6 Grotz", "upgrades": [81,50,82,10,12,13,14,57,60,61,62,64,71,72,43]},
+            {"id": 502, "name": "Bad Moons Warband ('Uge)", "pts": 500, "units": "6 Nobz, 15 Boyz, 9 Grotz", "upgrades": [81,50,82,10,12,13,14,57,60,61,62,64,71,72,43]},
             {"id": 503, "name": "Flash Gitz", "pts": 90, "upgrades": [11,12]},
             {"id": 504, "name": "'Eavy Walker Mob", "pts": 75, "upgrades": [81,13,14]},
             {"id": 505, "name": "Mekboy 'Eavy Tanks Mob", "pts": 50, "upgrades": [81,15,16]},
@@ -27,8 +27,8 @@
             {"id": 513, "name": "Mekboy Gunzmob", "pts": 0, "upgrades": [81,68,69,12,64,61,43]},
             {"id": 514, "name": "Mekboy Gunzmob (Big)", "pts": -25, "upgrades": [81,68,69,12,64,61,43]},
             {"id": 515, "name": "Mekboy Gunzmob ('Uge)", "pts": -50, "upgrades": [81,68,69,12,64,61,43]},
-            {"id": 510, "name": "Mekboy Stompamob", "pts": 0, "upgrades": [81,77,68,69,71,72,57,60,61]},
-            {"id": 511, "name": "Mekboy Stompamob (Big)", "pts": -50, "upgrades": [81,77,68,69,71,72,57,60,61]}
+            {"id": 510, "name": "Mekboy Stompamob", "pts": 75, "upgrades": [81,77,68,69,71,72,57,60,61]},
+            {"id": 511, "name": "Mekboy Stompamob (Big)", "pts": 100, "upgrades": [81,77,68,69,71,72,57,60,61]}
             ]
       },
       {
@@ -48,8 +48,8 @@
       {"id": 10, "name": "Meganobz", "pts": 50},
       {"id": 11, "name": "Flash Gits", "pts": 35},
       {"id": 12, "name": "'Ardwagon", "pts": 50},
-      {"id": 13, "name": "Gorkanaut", "pts": 100},
-      {"id": 14, "name": "Morkanaut", "pts": 100},
+      {"id": 13, "name": "Gorkanaut", "pts": 75},
+      {"id": 14, "name": "Morkanaut", "pts": 75},
       {"id": 15, "name": "Kill Blasta", "pts": 125},
       {"id": 16, "name": "Kill Bursta", "pts": 125},
       {"id": 57, "name": "Killa Kan", "pts": 25},
