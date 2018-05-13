@@ -1,21 +1,19 @@
 {
    "id": "Death Watch",
-   "version": "V1.1",
+   "version": "V1.2",
    "by": "Norto",
    "notes":["If using transports you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible.",
-   "Drop pods require space craft.",
-   "Land Raider Crusader may carry 3 Infantry or 2 Terminators.",
-   ""],
+   "Drop pods require space craft. Also check the transport notes for access within a Watch Company.",
+   "Land Raider Crusader may carry 3 Infantry or 2 Terminators."],
    "sections": [
         	{"name": "DEATH WATCH DETACHMENTS", "formations": [
-            	{"id": 500, "name": "Deathwatch Kill Team", 			"pts": 50, "upgrades": [2,3,4,5,8,14,15,16,23,24,25,33,34,35,37] },
-	    	{"id": 503, "name": "Deathwatch Strike Team - Land Speeders", 	"pts": 200, "units": "", "upgrades": [2,3,4] }
+            	{"id": 500, "name": "Watch Company", 			"pts": 50, "upgrades": [1,2,3,4,5,8,14,15,16,23,24,25,33,34,35,37] },
+	    	{"id": 503, "name": "Strike Team - Land Speeders", 	"pts": 200, "units": "", "upgrades": [2,3,4] }
 	  	]},
 	   
         	{"name": "DEATH WATCH SUPPORT DETACHMENTS", "formations": [
             	{"id": 600, "name": "Inquisitorial Warband", 			"pts": 175, "upgrades": [] },
-		{"id": 601, "name": "Inquisitorial Storm Trooper Platoon",   	"pts": 300, "units": "8 Inquisitorial Storm Trooper, 4 Chimeras", "upgrades": [36] },
-		{"id": 605, "name": "Inquisitorial Fortress", 			"pts": 550, "units": "1 Capitol Imperialis and 8 Inquisitorial Storm Troopers", "upgrades": [1] }
+		{"id": 601, "name": "Inquisitorial Storm Trooper Platoon",   	"pts": 300, "units": "8 Inquisitorial Storm Trooper, 4 Chimeras", "upgrades": [36] }
 
 		
 		]},
@@ -30,7 +28,7 @@
 		
    ],
    "upgrades": [
-		{"id": 1, "name": "Inquisitor Lord", 					"pts":75},
+		{"id": 1, "name": "Watch Master", 					"pts":100},
 		{"id": 2, "name": "Librarian", 						"pts":50 },
 		{"id": 3, "name": "Captain", 						"pts":50 },
 		{"id": 4, "name": "Chaplain", 						"pts":50 },
