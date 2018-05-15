@@ -1,8 +1,8 @@
 {
    "id": "Nazdreg Ug Urdgrub's Bad Moon Waaagh",
    "version": "1.0",  
-   "notes": ["If the army includes any great gargants, the Warlord must be in one of them. Otherwize the Warlord will join a Nobz or Gargant unit."],
-   "notes": ["Each ork Boyz unit added to a warband allows the inclusion of one free grotz unit"],
+   "notes": ["If the army includes any great gargants, the Warlord must be in one of them. Otherwize the Warlord will join a Nobz or Gargant unit.",
+   "Each ork Boyz unit added to a warband allows the inclusion of one free grotz unit"],
    "by": "Kyussinchains",
    "sections": [
       {
