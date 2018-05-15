@@ -2,6 +2,7 @@
    "id": "Nazdreg Ug Urdgrub's Bad Moon Waaagh",
    "version": "1.0",  
    "notes": ["If the army includes any great gargants, the Warlord must be in one of them. Otherwize the Warlord will join a Nobz or Gargant unit."],
+   "notes": ["Each ork Boyz unit added to a warband allows the inclusion of one free grotz unit"],
    "by": "Kyussinchains",
    "sections": [
       {
@@ -13,9 +14,9 @@
       {
          "name": "WAR HORDES",
          "formations": [
-            {"id": 500, "name": "Bad Moons Warband", "pts": 200, "units": "2 Nobz, 5 Boyz, 3 Grotz", "upgrades": [81,50,82,10,12,13,14,57,60,61,62,64,71,72,43]},
-            {"id": 501, "name": "Bad Moons Warband (Big)", "pts": 350, "units": "4 Nobz, 10 Boyz, 6 Grotz", "upgrades": [81,50,82,10,12,13,14,57,60,61,62,64,71,72,43]},
-            {"id": 502, "name": "Bad Moons Warband ('Uge)", "pts": 500, "units": "6 Nobz, 15 Boyz, 9 Grotz", "upgrades": [81,50,82,10,12,13,14,57,60,61,62,64,71,72,43]},
+            {"id": 500, "name": "Bad Moons Warband", "pts": 5,  "upgrades": [81,50,20,82,10,12,13,14,57,60,61,62,64,71,72,43]},
+            {"id": 501, "name": "Bad Moons Warband (Big)", "pts": -40,  "upgrades": [81,50,20,82,10,12,13,14,57,60,61,62,64,71,72,43]},
+            {"id": 502, "name": "Bad Moons Warband ('Uge)", "pts": -85,  "upgrades": [81,50,20,82,10,12,13,14,57,60,61,62,64,71,72,43]},
             {"id": 503, "name": "Flash Gitz", "pts": 90, "upgrades": [11,12]},
             {"id": 504, "name": "'Eavy Walker Mob", "pts": 75, "upgrades": [81,13,14]},
             {"id": 505, "name": "Mekboy 'Eavy Tanks Mob", "pts": 50, "upgrades": [81,15,16]},
@@ -44,6 +45,7 @@
    "upgrades": [
       {"id": 81, "name": "Warlord", "pts": 0},
       {"id": 50, "name": "Boyz", "pts": 25},
+      {"id": 20, "name": "Grotz", "pts": 0},
       {"id": 82, "name": "Boyz + Grotz", "pts": 25},
       {"id": 10, "name": "Meganobz", "pts": 50},
       {"id": 11, "name": "Flash Gits", "pts": 35},
@@ -99,6 +101,23 @@
       {"min": 8, "from": [61,62], "appliesTo": [508], "name": "Wagonz"},
       {"min": 12, "from": [61,62], "appliesTo": [509], "name": "Wagonz"},
       {"min": 3, "from": [71,72], "appliesTo": [510]},
+      
+      {"min": 2, "max":4, "from": [64,10], "appliesTo": [500]},
+      {"min": 4, "max":6, "from": [64,10], "appliesTo": [501]},
+      {"min": 6, "max":8, "from": [64,10], "appliesTo": [502]},
+      {"min": 5, "from": [50], "appliesTo": [500]},
+      {"min": 10, "from": [50], "appliesTo": [501]},
+      {"min": 15, "from": [50], "appliesTo": [502]},
+      {"min": 3, "from": [20], "appliesTo": [500]},
+      {"min": 6, "from": [20], "appliesTo": [501]},
+      {"min": 9, "from": [20], "appliesTo": [502]},
+      {"max": 2, "from": [10], "appliesTo": [500]},
+      {"max": 4, "from": [10], "appliesTo": [501]},
+      {"max": 6, "from": [10], "appliesTo": [502]},
+      
+      {"min": 5, "from": [], "appliesTo": []},
+      {"min": 10, "from": [], "appliesTo": []},
+      {"min": 15, "from": [], "appliesTo": []},
       {"max": 1, "from": [77], "appliesTo": [510]},
       {"min": 6, "from": [71,72], "appliesTo": [511]},
       {"max": 2, "from": [77], "appliesTo": [511]},
