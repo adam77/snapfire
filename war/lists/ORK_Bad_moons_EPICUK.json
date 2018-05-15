@@ -17,7 +17,7 @@
             {"id": 500, "name": "Bad Moons Warband", "pts": 5,  "upgrades": [81,50,20,82,10,12,13,14,57,60,61,62,64,71,72,43]},
             {"id": 501, "name": "Bad Moons Warband (Big)", "pts": -40,  "upgrades": [81,50,20,82,10,12,13,14,57,60,61,62,64,71,72,43]},
             {"id": 502, "name": "Bad Moons Warband ('Uge)", "pts": -85,  "upgrades": [81,50,20,82,10,12,13,14,57,60,61,62,64,71,72,43]},
-            {"id": 503, "name": "Flash Gitz", "pts": 90, "upgrades": [11,12]},
+            {"id": 503, "name": "Flash Gitz", "pts": 110, "upgrades": [11,12]},
             {"id": 504, "name": "'Eavy Walker Mob", "pts": 75, "upgrades": [81,13,14]},
             {"id": 505, "name": "Mekboy 'Eavy Tanks Mob", "pts": 50, "upgrades": [81,15,16]},
             {"id": 506, "name": "Meganobz", "pts": 25, "upgrades": [81,10,12]},
