@@ -1,13 +1,13 @@
 {
   "id":"Raven Guard",
-  "version":"NetEA 2015-05-26 *UNDER DEVELOPMENT*",
+  "version":"NetEA 2018-04-23 *UNDER DEVELOPMENT*",
   "by":"Dave",
   "notes":["Up to a third of the points available may be spent on Imperial Navy Aircraft and Titan Legion Battlegroup formations."],
   "sections":[
     {"name":"Raven Guard Detachments", "formations":[
       {"id":500, "name":"Assault", "pts":175, "units": "Four Assault units", "upgrades":[1,2,3,4,5,6,7]},
       {"id":501, "name":"Devastator", "pts":250, "units": "Four Devastator units", "upgrades":[1,2,3,4,5,6,7,8,9,10]},
-      {"id":502, "name":"Scout", "pts":150, "units": "Four Scout units", "upgrades":[1,2,3,4,17,18,19,5,6,7]},
+      {"id":502, "name":"Scout", "pts":150, "units": "Four Scout units", "upgrades":[1,2,3,4,17,19,5,6,7]},
       {"id":503, "name":"Tactical", "pts":200, "units": "Four Tactical units", "upgrades":[1,2,3,4,5,6,7,8,9,10]}
     ]},
     {"name":"Raven Guard Elite Detachments", "formations":[
@@ -22,6 +22,7 @@
       {"id":522, "name":"Strike Cruiser", "pts":200, "units": "One Strike Cruiser", "upgrades":[16]}
     ]},
     {"name":"Raven Guard Aircraft", "formations":[
+      {"id":532, "name":"Storm Talon Squadron", "pts":200, "units": "Two Storm Talons"},
       {"id":530, "name":"Storm Eagle", "pts":150, "units": "One Storm Eagle"},
       {"id":531, "name":"Thunderhawk Gunship", "pts":200, "units": "One Thunderhawk Gunship"}
     ]},
@@ -53,13 +54,12 @@
     {"id":12, "name":"Bike", "pts":0},
     {"id":13, "name":"Attack Bike", "pts":0},
 
-    {"id":14, "name":"Land Speeder Tempest", "pts":15},
+    {"id":14, "name":"Land Speeder Tempest", "pts":50},
     {"id":15, "name":"Planetfall", "pts":25},
 
     {"id":16, "name":"Battle Barge", "pts":150},
 
-    {"id":17, "name":"(up to two Scout units with Sniper)", "pts":25},
-    {"id":18, "name":"(up to four Scout units with Sniper)", "pts":50},
+    {"id":17, "name":"Sniper", "pts":10},
     {"id":19, "name":"Land Speeder Storm", "pts":25}
   ],
   "formationConstraints":[
@@ -70,7 +70,7 @@
     {"max":1, "name":"Support Detachment", "from":[520,521,522], "forEach":[500,501,502,503], "name2":"Detachment"},
     {"max":1, "name":"Aircraft", "from":[530,531], "forEach":[500,501,502,503,510,511,512,513,520,521,522], "name2":"Detachment, Elite Detachment or Support Detachment"},
 
-    {"maxPercent":33.334, "name":"Imperial Ally Formations", "from":[540,541,550,551]}
+    {"maxPercent":33.334, "name":"Imperial Ally and Ravenguard Aircraft Formations", "from":[530,531,532,540,541,550,551]}
   ],
   "upgradeConstraints":[
     {"max":1, "perArmy":true, "from":[1]},
@@ -91,7 +91,7 @@
 
     {"max":1, "from":[16], "appliesTo":[522]},
 
-    {"max":1, "from":[17,18], "appliesTo":[502]},
+    {"max":4, "from":[17], "appliesTo":[502]},
 
     {"max":4, "from":[19], "appliesTo":[502]}
   ]
