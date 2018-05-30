@@ -63,7 +63,7 @@
                 { "id":41, "name":"Land Raider", "pts": [75, 50] },
 
                 { "id":42, "name":"Land Raider Crusader", "pts":[75, 50] },
-			          { "id":47, "name":"Land Raider Achilles", "pts":[100, 175] },
+			          { "id":47, "name":"Land Raider Achilles", "pts":[100, 75] },
                 { "id":44, "name":"Assault Centurion", "pts":75 },
                 { "id":45, "name":"Devastator Centurion","pts":75 },
                 { "id":46, "name":"Snipers","pts":50 },
