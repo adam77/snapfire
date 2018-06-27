@@ -19,7 +19,7 @@
             {"id": 515, "name": "Mekboy Gunzmob ('Uge)", "pts": -50, "upgrades": [81,43,58,61,64,68]},
             {"id": 510, "name": "Mekboy Stompamob", "pts": 75, "upgrades": [57,60,61,71,77]},
             {"id": 511, "name": "Mekboy Stompamob (Big)", "pts": 100, "upgrades": [57,60,61,71,77]},
-            {"id": 512, "name": "Mekboy Stompamob ('Uge)", "pts": 175, "upgrades": [57,60,61,71,77]},
+            {"id": 512, "name": "Mekboy Stompamob ('Uge)", "pts": 125, "upgrades": [57,60,61,71,77]},
             {"id": 503, "name": "Stormboyz Warhorde", "pts": 0, "upgrades": [52,51,53,54,55,59]},
             {"id": 550, "name": "Kommando Warhorde", "pts": 0, "upgrades": [51,52,53,54,55,59]},
             {"id": 500, "name": "Warband", "pts": 200, "units": "2 Nobz, 6 Boyz, 2 Grotz", "upgrades": [81,50,82,51,52,53,54,55,56,57,58,59,60,61,62,64,68,71,72,73]},
