@@ -46,19 +46,19 @@
           "id": 120,
           "name": "Warrior",
           "pts": 20,
-          "upgrades": [1, 20, 12, 16, 8, 19, 28, 29, 4, 10]
+          "upgrades": [1, 20, 12, 16, 4, 10, 28, 29]
         },
         {
           "id": 121,
           "name": "Warrior (M)",
           "pts": 15,
-          "upgrades": [1, 20, 12, 16, 8, 19, 28, 29, 4, 10]
+          "upgrades": [1, 20, 12, 16, 4, 10, 28, 29]
         },
         {
           "id": 122,
           "name": "Warrior (L)",
           "pts": -15,
-          "upgrades": [1, 20, 12, 16, 8, 19, 28, 29, 4, 10]
+          "upgrades": [1, 20, 12, 16, 4, 10, 28, 29]
         }
       ]
     },
@@ -139,70 +139,70 @@
           "name": "Air Attack Corps",
           "pts": 250,
           "units": "Overlord",
-          "upgrades": [10]
+          "upgrades": [4, 10]
         },
         {
           "id": 181,
           "name": "Air Attack Corps (M)",
           "pts": 475,
           "units": "2x Overlords",
-          "upgrades": [10]
+          "upgrades": [4, 10]
         },
         {
           "id": 182,
           "name": "Air Attack Corps (L)",
           "pts": 675,
           "units": "3x Overlords",
-          "upgrades": [10]
+          "upgrades": [4, 10]
         },
         {
           "id": 190,
           "name": "Colossus",
           "pts": 550,
           "units": "Colossus<br>Recon Iron Eagle",
-          "upgrades": [10]
+          "upgrades": [4, 10]
         },
         {
           "id": 200,
           "name": "Cyclops",
           "pts": 550,
           "units": "Cyclops",
-          "upgrades": [10]
+          "upgrades": [4, 10]
         },
         {
           "id": 210,
           "name": "Land Train",
           "pts": 175,
           "units": "Land Train",
-          "upgrades": [21, 22, 23, 24, 25, 26, 27, 10]
+          "upgrades": [21, 22, 23, 24, 25, 26, 27, 10, 4]
         },
         {
           "id": 220,
           "name": "Leviathan",
           "pts": 400,
           "units": "Leviathan",
-          "upgrades": [10]
+          "upgrades": [4, 10]
         },
         {
           "id": 230,
           "name": "Super-Heavy Artillery Battery",
           "pts": 175,
           "units": "Goliath",
-          "upgrades": [10]
+          "upgrades": [4, 10]
         },
         {
           "id": 231,
           "name": "Super-Heavy Artillery Battery (M)",
-          "pts": 625,
+          "pts": 325,
           "units": "2x Goliaths",
-          "upgrades": [10]
+          "upgrades": [4, 10]
         },
         {
           "id": 232,
           "name": "Super-Heavy Artillery Battery (L)",
           "pts": 450,
           "units": "3x Goliaths",
-          "upgrades": [10]
+          "upgrades": [4, 10]
         }
       ]
     }
