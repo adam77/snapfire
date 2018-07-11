@@ -1,125 +1,468 @@
 {
-	"id":"Saim-Hann Craftworld",
-	"version":"NetEA 4.2 APPROVED",
-	"by":"Parintachin, last edit 01092016 - Kyussinchians",
-	"notes":["All Aspect Warrior units in the Saim-Hann Craftworld army, apart from Shining Spears, Swooping Hawks and Warp Spiders, must be transported in Wave Serpents and/or Falcons. You must take exactly enough transport vehicles to carry the units that require transport, without any spare transport space being left over."],
-	"sections":[
-		{"name":"INDIVIDUALS", "formations":[
-			{"id":500, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
-			{"id":501, "name":"Avatar",		"pts":0,		"upgrades":[]}
-		]},
-		{"name":"WARHOSTS", "formations":[
-			{"id":510, "name":"Wild Rider Clan Warhost (small)", 			"pts":250,	"upgrades":[65,40]},
-			{"id":511, "name":"Wild Rider Clan Warhost (medium)", 			"pts":325,	"upgrades":[65,40]},
-			{"id":512, "name":"Wild Rider Clan Warhost (large)", 			"pts":400,	"upgrades":[65,40]},
-			{"id":513, "name":"Shining Spears Warhost", 			"pts":200,		"upgrades":[39]}
-		]},	
-		{"name":"TROUPES", "formations":[
-			{"id":520, "name":"Saim-Hann Guardian Troupe",					"pts":250, "upgrades":[65]},
-			
-			{"id":522, "name":"Aspect Warrior Troupe", 			"pts":225,	"upgrades":[30,41,39]},
-			{"id":523, "name":"Hornet Troupe",				"pts":0, 	"upgrades":[70]},
-			{"id":524, "name":"Scout Rider Troupe",				"pts":200, 	"upgrades":[]},
-			{"id":525, "name":"Swords of Vaul Troupe",			"pts":0, "upgrades":[30,31,32]},
-			{"id":526, "name":"Night Spinner Troupe",			"pts":175, 	"units":"3 Night Spinners", "upgrades":[]},
-			{"id":527, "name":"Engine of Vaul Troupe",			"pts":0, "upgrades":[34,35,36]}
-		]},
-		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
-			{"id":530, "name":"Wraithship",	"pts":150, "upgrades":[]},
-			{"id":531, "name":"Dragonship",	"pts":300, "upgrades":[]},
-			{"id":532, "name":"Revenant Titans","pts":650, "units":"2 Revenant Titans", "upgrades":[]},
-			{"id":533, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
-			{"id":534, "name":"Phoenix Bombers","pts":400, "units":"3 Phoenix Bombers", "upgrades":[]},
-			{"id":535, "name":"Vampire Hunter","pts":275, "units":"1 Vampire Hunter", "upgrades":[]}
-		]}
+	"id": "Saim-Hann Craftworld",
+	"version": "Tournament Pack",
+	"by": "Parintachin",
+	"notes": ["All infantry units in Aspect Warrior formations (apart from Swooping Hawks and Warp Spiders) must be transported in Wave Serpents and/or Falcons, or be entering play via a Webway Portal."],
+	"sections": [
+		{
+			"name": "Individuals",
+			"formations": [{
+					"id": 100,
+					"name": "Wraithgate",
+					"pts": 50
+				},
+				{
+					"id": 110,
+					"name": "Avatar",
+					"pts": 0,
+					"units": "Avatar"
+				}
+			]
+		},
+		{
+			"name": "Warhosts",
+			"formations": [{
+					"id": 120,
+					"name": "Shining Spears",
+					"pts": 20,
+					"upgrades": [1]
+				},
+				{
+					"id": 130,
+					"name": "Wild Rider Clan (6)",
+					"pts": 20,
+					"upgrades": [2, 3]
+				},
+				{
+					"id": 131,
+					"name": "Wild Rider Clan (9)",
+					"pts": 5,
+					"upgrades": [2, 3]
+				},
+				{
+					"id": 132,
+					"name": "Wild Rider Clan (12)",
+					"pts": -10,
+					"upgrades": [2, 3]
+				}
+			]
+		},
+		{
+			"name": "Troupes",
+			"formations": [{
+					"id": 140,
+					"name": "Aspect Warrior",
+					"pts": 15,
+					"upgrades": [19, 23, 1]
+				},
+				{
+					"id": 150,
+					"name": "Engine of Vaul",
+					"pts": 0,
+					"upgrades": [24, 25, 26]
+				},
+				{
+					"id": 160,
+					"name": "Guardian",
+					"pts": 10,
+					"upgrades": [2]
+				},
+				{
+					"id": 161,
+					"name": "Guardian (Wraithguard)",
+					"pts": 15,
+					"upgrades": [2]
+				},
+				{
+					"id": 170,
+					"name": "Hornet",
+					"pts": 0,
+					"upgrades": [17]
+				},
+				{
+					"id": 180,
+					"name": "Night Spinner",
+					"pts": 175,
+					"units": "3 Night Spinners"
+				},
+				{
+					"id": 190,
+					"name": "Scout Rider",
+					"pts": 20
+				},
+				{
+					"id": 200,
+					"name": "Swords of Vaul",
+					"pts": 0,
+					"upgrades": [19, 20, 21]
+				}
+			]
+		},
+		{
+			"name": "Spacecraft, Aircraft & Titans",
+			"formations": [{
+					"id": 210,
+					"name": "Nightwings",
+					"pts": 300,
+					"units": "3 Nightwing Interceptors"
+				},
+				{
+					"id": 220,
+					"name": "Phoenix Bombers",
+					"pts": 325,
+					"units": "3 Phoenix Bombers"
+				},
+				{
+					"id": 230,
+					"name": "Revenant Titans",
+					"pts": 650,
+					"units": "2 Revenant Titans"
+				},
+				{
+					"id": 240,
+					"name": "Spacecraft",
+					"pts": 0
+				},
+				{
+					"id": 250,
+					"name": "Vampire",
+					"pts": 275,
+					"units": "Vampire Hunter"
+				}
+			]
+		}
 	],
-	"upgrades":[
-		{"id":60, "name":"Wild Rider",		"pts":0},
-		{"id":63, "name":"8 Shining Spears",		"pts":100},
-		{"id":64, "name":"3 Shining Spears",		"pts":100},
-		{"id":65, "name":"Farseer",		"pts":25},
-		{"id":11, "name":"Ranger",		"pts":25},
-		{"id":13, "name":"War Walker",	"pts":35},
-		{"id":15, "name":"Dire Avenger",		"pts":0},
-		{"id":16, "name":"Striking Scorpion",	"pts":0},
-		{"id":17, "name":"Howling Banshee",	"pts":0},
-		{"id":18, "name":"Fire Dragon",		"pts":0},
-		{"id":19, "name":"Warp Spider",		"pts":0},
-		{"id":20, "name":"Dark Reaper",		"pts":0},
-		{"id":21, "name":"Swooping Hawk",		"pts":0},
-		{"id":22, "name":"Shining Spear",		"pts":0},
-		{"id":24, "name":"Guardians",				"pts":0},
-		{"id":25, "name":"Heavy Weapon Platform",	"pts":0},
-		{"id":27, "name":"Jetbike", 	"pts":0},
-		{"id":28, "name":"Vyper", 		"pts":0},
-		{"id":30, "name":"Falcon",		"pts":50},
-		{"id":31, "name":"Fire Storm",	"pts":50},
-		{"id":32, "name":"Fire Prism",	"pts":65},
-		{"id":34, "name":"Cobra",			"pts":250},
-		{"id":35, "name":"Scorpion",		"pts":250},
-		{"id":36, "name":"Storm Serpent",	"pts":250},
-		{"id":39, "name":"Exarch", 	"pts":25},
-		{"id":40, "name":"Wild Rider Chieftain (Autarch)", 	"pts":75},
-		{"id":41, "name":"Wave Serpent",	"pts":50},
-		{"id":66, "name":"Wave Serpent",	"pts":0},
-		{"id":42, "name":"Falcon",			"pts":65},
-		{"id":45, "name":"Wraithguards", "pts": 0},
-		{"id":46, "name":"3 Wraithguards", "pts": 150},
-		{"id":67, "name":"6 Hornets",	"pts":0},
-		{"id":68, "name":"3 Wave Serpents", "pts": 0},
-		{"id":69, "name":"4 Wave Serpents, 2 Wraithguards", "pts": 0},
-		{"id":70, "name":"Hornet",	"pts":50},
-		{"id":80, "name":"6 Guardians", "pts": 0},
-		{"id":81, "name":"5 Guardians, 1 Heavy Weapon Platform", "pts": 0},
-		{"id":82, "name":"4 Guardians, 2 Heavy Weapon Platforms", "pts": 0},
-		{"id":83, "name":"3 Guardians, 3 Heavy Weapon Platforms", "pts": 0},
-		{"id":84, "name":"4 Guardians, 2 Wraithguard", "pts": 125},
-		{"id":85, "name":"3 Guardians, 1 Heavy Weapon Platform, 2 Wraithguard", "pts": 125},
-		{"id":86, "name":"2 Guardians, 2 Heavy Weapon Platforms, 2 Wraithguard", "pts": 125},
-		{"id":87, "name":"1 Guardian, 3 Heavy Weapon Platforms, 2 Wraithguard", "pts": 125}
-		
+	"upgrades": [
+		{
+			"id": 1,
+			"name": "Exarch",
+			"pts": 25
+		},
+		{
+			"id": 2,
+			"name": "Farseer",
+			"pts": 25
+		},
+		{
+			"id": 3,
+			"name": "Wild Rider Chieftain",
+			"pts": 75
+		},
+
+		{
+			"id": 4,
+			"name": "Dark Reapers",
+			"pts": 35
+		},
+		{
+			"id": 5,
+			"name": "Dire Avengers",
+			"pts": 35
+		},
+		{
+			"id": 6,
+			"name": "Fire Dragons",
+			"pts": 35
+		},
+		{
+			"id": 7,
+			"name": "Guardians",
+			"pts": 15
+		},
+		{
+			"id": 8,
+			"name": "Heavy Weapon Platform",
+			"pts": 15
+		},
+		{
+			"id": 9,
+			"name": "Howling Banshees",
+			"pts": 35
+		},
+		{
+			"id": 10,
+			"name": "Saim-Hann Jetbikes",
+			"pts": 30
+		},
+		{
+			"id": 11,
+			"name": "Shining Spears",
+			"pts": 35
+		},
+		{
+			"id": 12,
+			"name": "Striking Scorpions",
+			"pts": 35
+		},
+		{
+			"id": 13,
+			"name": "Swooping Hawks",
+			"pts": 35
+		},
+		{
+			"id": 14,
+			"name": "Warp Spiders",
+			"pts": 35
+		},
+		{
+			"id": 15,
+			"name": "Wild Riders",
+			"pts": 50
+		},
+		{
+			"id": 16,
+			"name": "Wraithguard",
+			"pts": 50
+		},
+
+		{
+			"id": 17,
+			"name": "Hornet",
+			"pts": 50
+		},
+		{
+			"id": 18,
+			"name": "Saim-Hann Vyper",
+			"pts": 30
+		},
+		{
+			"id": 19,
+			"name": "Falcon",
+			"pts": 50
+		},
+		{
+			"id": 20,
+			"name": "Fire Prism",
+			"pts": 65
+		},
+		{
+			"id": 21,
+			"name": "Firestorm",
+			"pts": 50
+		},
+		{
+			"id": 22,
+			"name": "Night Spinner",
+			"pts": 50
+		},
+		{
+			"id": 23,
+			"name": "Wave Serpent",
+			"pts": 50
+		},
+
+		{
+			"id": 24,
+			"name": "Cobra",
+			"pts": 250
+		},
+		{
+			"id": 25,
+			"name": "Scorpion",
+			"pts": 250
+		},
+		{
+			"id": 26,
+			"name": "Storm Serpent",
+			"pts": 250
+		},
+		{
+			"id": 27,
+			"name": "Dragonship",
+			"pts": 300
+		},
+		{
+			"id": 28,
+			"name": "Wraithship",
+			"pts": 150
+		}
 	],
-	"formationConstraints":[
-		{"max":2, "name":"Troupes", "from":[520,521,522,523,525,526,527], "forEach":[510,511,512,513], "name2":"Warhost"},
-		{"max":1, "name":"Scout Rider Troupe", "from":[524], "forEach":[510,511,512], "name2":"Wild Rider Clan"},
-		{"max":1, "name":"Shining Spear Warhost", "from":[513], "forEach":[510,511,512], "name2":"Wild Rider Clan"},
-		{"max":1, "from":[500]},
-		{"max":1, "from":[501]},
-		{"maxPercent":33, "name":"Aircraft & Titans", "from":[530,531,532,533,534,535]},		
-		{"max":1, "name":"Spacecraft", "from":[530,531]}		
+	"formationConstraints": [
+		{
+			"max": 1,
+			"from": [100]
+		},
+		{
+			"max": 1,
+			"from": [110]
+		},
+		{
+			"max": 2,
+			"name": "Troupes",
+			"from": [140, 150, 160, 170, 180, 190, 200],
+			"forEach": [120, 130, 131, 132],
+			"name2": "Warhost"
+		},
+		{
+			"max": 1,
+			"name": "Scout Rider",
+			"from": [190],
+			"forEach": [130, 131, 132],
+			"name2": "Wild Rider Clan"
+		},
+		{
+			"max": 1,
+			"name": "Shining Spears",
+			"from": [120],
+			"forEach": [130, 131, 132],
+			"name2": "Wild Rider Clan"
+		},
+		{
+			"maxPercent": 33,
+			"name": "Aircraft & Titans",
+			"from": [210, 220, 230, 240, 250]
+		},
+		{
+			"max": 1,
+			"from": [240]
+		}
 	],
-	"upgradeConstraints":[
-		{"max":3, "from":[25]},
-		{"max":2, "from":[31]},	
-		{"max":1, "name":"Wraithguard", "from":[45,46]},	
-		{"max":1, "perArmy":true, "from":[40]},	
-		{"min":1, "max":3, "from":[34,35,36], "appliesTo":[527]},		
-		{"min":5, "max":6, "name":"Falcons", "from":[30,31,32], "appliesTo":[525]},	
-		{"min":4, "max":5, "name":"Hornets", "from":[70], "appliesTo":[523]},
-		{"min":6, "max":6, "from":[15,16,17,18,19,20,21], "appliesTo":[522]},	
-		{"max":6, "from":[30], "appliesTo":[522]},	
-		{"max":3, "from":[41], "appliesTo":[522]},	
-		{"max":1, "from":[39], "appliesTo":[522]},	
-		
-		{"min":1, "max":1, "from":[60], "appliesTo":[510]},
-		{"min":6, "max":6, "from":[27,28], "appliesTo":[510]},
-		{"min":6, "max":6, "from":[27,28], "appliesTo":[524]},
-		{"max":2, "from":[28], "appliesTo":[524]},
-		{"max":1, "from":[64], "appliesTo":[510]},
-		{"max":1, "from":[65], "appliesTo":[510]},
-		{"min":1, "max":1, "from":[60], "appliesTo":[511]},
-		{"min":9, "max":9, "from":[27,28], "appliesTo":[511]},
-		{"max":1, "from":[64], "appliesTo":[511]},
-		{"max":1, "from":[65], "appliesTo":[511]},
-		{"min":1, "max":1, "from":[60], "appliesTo":[512]},
-		{"min":12, "max":12, "from":[27,28], "appliesTo":[512]},
-		{"max":1, "from":[64], "appliesTo":[512]},
-		{"max":1, "from":[65], "appliesTo":[512]},
-		{"min":1, "max":1, "from":[63], "appliesTo":[513]},
-		{"max":2, "from":[39], "appliesTo":[513]},
-		{"min":1, "max":1, "from":[68], "appliesTo":[520]},
-		{"min":1, "max":1, "from":[80,81,82,83,84,85,86,87], "appliesTo":[520]}
-		
-				
+	"upgradeConstraints": [
+    {
+      "from": [3],
+      "max": 1,
+      "perArmy": true
+    },
+		{
+			"appliesTo": [120],
+			"from": [1],
+			"max": 2
+		},
+		{
+			"appliesTo": [120],
+			"from": [11],
+			"min": 8,
+			"max": 8
+		},
+		{
+			"appliesTo": [130, 131, 132],
+			"from": [2],
+			"max": 1
+		},
+		{
+			"appliesTo": [130, 131, 132],
+			"from": [3],
+			"max": 1
+		},
+		{
+			"appliesTo": [130, 131, 132],
+			"from": [15],
+			"min": 1,
+			"max": 1
+		},
+		{
+			"appliesTo": [130],
+			"from": [10, 18],
+			"min": 6,
+			"max": 6
+		},
+		{
+			"appliesTo": [131],
+			"from": [10, 18],
+			"min": 9,
+			"max": 9
+		},
+		{
+			"appliesTo": [132],
+			"from": [10, 18],
+			"min": 12,
+			"max": 12
+		},
+		{
+			"appliesTo": [140],
+			"from": [1],
+			"max": 1
+		},
+		{
+			"appliesTo": [140],
+			"from": [4, 5, 6, 9, 12, 13, 14],
+			"min": 6,
+			"max": 6
+		},
+		{
+			"appliesTo": [150],
+			"from": [24, 25, 26],
+			"min": 1,
+			"max": 3
+		},
+		{
+			"appliesTo": [160],
+			"from": [7, 8],
+			"min": 6,
+			"max": 6
+		},
+		{
+			"appliesTo": [160],
+			"from": [8],
+			"max": 3
+		},
+		{
+			"appliesTo": [160],
+			"from": [23],
+			"min": 3,
+			"max": 3
+		},
+		{
+			"appliesTo": [160, 161],
+			"from": [2],
+			"max": 1
+		},
+		{
+			"appliesTo": [161],
+			"from": [7, 8],
+			"min": 4,
+			"max": 4
+		},
+		{
+			"appliesTo": [161],
+			"from": [8],
+			"max": 2
+		},
+		{
+			"appliesTo": [161],
+			"from": [16],
+			"min": 2,
+			"max": 2
+		},
+		{
+			"appliesTo": [161],
+			"from": [23],
+			"min": 4,
+			"max": 4
+		},
+		{
+			"appliesTo": [170],
+			"from": [17],
+			"min": 4,
+			"max": 5
+		},
+		{
+			"appliesTo": [190],
+			"from": [10, 18],
+			"min": 6,
+			"max": 6
+		},
+		{
+			"appliesTo": [190],
+			"from": [18],
+			"max": 2
+		},
+		{
+			"appliesTo": [200],
+			"from": [19, 20, 21],
+			"min": 5,
+			"max": 6
+		},
+		{
+			"appliesTo": [200],
+			"from": [21],
+			"max": 2
+		},
+		{
+			"appliesTo": [240],
+			"from": [28, 27],
+			"min": 1,
+			"max": 1
+		}
 	]
 }
