@@ -1,42 +1,47 @@
 {
 	"id":"Catachan Deathworld Veterans",
-	"version":"NetEA Army Compendium v20120208 *EXPERIMENTAL*",
-	"by":"Parintachin",
+	"version":"NetEA Army Compendium v2.7 *EXPERIMENTAL*",
+	"by":"Norto",
 	"sections":[
 		{"name":"DEATHWORLD VETERANS COMPANIES", "formations":[
-			{"id":500, "name":"Deathworld Air Cavalry Company", "pts":450, "upgrades":[11,13,18,19,20], "units":"1 Imperial Guard Commander unit, plus 9 Imperial Guard Infantry units, plus 5 Catachan Valkyries"},
-			{"id":501, "name":"Deathworld Infantry Company", "pts":200, "upgrades":[10,11,12,13,14,15,16,17,18,19,20], "units":"1 Imperial Guard Commander unit, plus 9 Imperial Guard Infantry units"},
-			{"id":502, "name":"Deathworld Regimental HQ", "pts":300, "upgrades":[10,11,12,13,14,15,16,17,18,19,20], "units":"1 Supreme Commander unit, plus 9 Imperial Guard Infantry units"}
+			{"id":500, "name":"Deathworld Air Cavalry Company", "pts":450, "upgrades":[10,11,12,13,14,16,17,18,19,20], "units":"1 Imperial Guard Commander unit, plus 9 Imperial Guard Infantry units, plus 5 Catachan Valkyries"},
+			{"id":502, "name":"Deathworld Regimental HQ", "pts":300, "upgrades":[10,11,12,13,14,16,17,18,19,20], "units":"1 Supreme Commander unit, plus 9 Imperial Guard Infantry units"},
+			{"id":501, "name":"Deathworld Infantry Company", "pts":200, "upgrades":[10,11,12,13,14,16,17,18,19,20], "units":"1 Imperial Guard Commander unit, plus 9 Imperial Guard Infantry units"}
+
 		]},
 		{"name":"DEATHWORLD VETERANS SUPPORT FORMATIONS", "formations":[
 			{"id":510, "name":"Catachan Devils", "pts":300, "upgrades":[], "units":"6 Catachan Devil units (Special rules; see list)"},
-			{"id":511, "name":"Deathworld Mortar Platoon", "pts":150, "upgrades":[], "units":"6 Catachan Mortar Team units"},
-			{"id":512, "name":"Deathworld Sentinel Squadron", "pts":150, "upgrades":[], "units":"4 Catachan Sentinels"},
+			{"id":511, "name":"Deathworld Mortar Platoon", "pts":75, "upgrades":[], "units":"6 Catachan Mortar Team units"},
+			{"id":515, "name":"Ogryn Platoon", "pts":200, "upgrades":[], "units":"6 Ogryn Units"},
+
+			{"id":512, "name":"Deathworld Sentinel Squadron", "pts":150, "upgrades":[], "units":"6 Catachan Sentinels"},
 			{"id":513, "name":"Deathworld Veterans Platoon", "pts":200, "upgrades":[30], "units":"6 Deathworld Veteran units"},
 			{"id":514, "name":"Hellhound Platoon", "pts":250, "upgrades":[], "units":"6 Hellhounds"},
-			{"id":515, "name":"Ogryn Platoon", "pts":200, "upgrades":[], "units":"6 Ogryn Units"},
-			{"id":516, "name":"Support Tank Squadron", "pts":275, "upgrades":[], "units":"4 Lehman Russ Demolishers"}
+			{"id":516, "name":"Support Tank Squadron", "pts":275, "upgrades":[], "units":"4 Leman Russ Demolishers"},
+			{"id":517, "name":"Vulture Squadron", "pts":275, "upgrades":[], "units":"4 Vultures"},
+			{"id":518, "name":"Artillery Firebase", "pts":275, "upgrades":[], "units":"6 Earthshaker platforms"},
+			{"id":519, "name":"Traitor's Bane", "pts":225, "upgrades":[], "units":"1 Traitor's Bane Hellhammer"}
 		]},
 		{"name":"NAVAL SUPPORT", "formations":[
 			{"id":520, "name":"Orbital Support", "pts":0, "upgrades":[]},
-			{"id":521, "name":"Thunderbolt Fighters", "pts":250, "upgrades":[], "units":"3 Thunderbolt Fighters"},
+			{"id":521, "name":"Thunderbolt Fighters", "pts":150, "upgrades":[], "units":"2 Thunderbolt Fighters"},
 			{"id":522, "name":"Marauder Bombers", "pts":250, "upgrades":[], "units":"2 Marauder Bombers"}
 		]}
 	],
 	"upgrades":[
-		{"id":10, "name":"Fire Support Platoon (4 Support Squad units)", "pts":100},
-		{"id":11, "name":"Airborne Fire Support Platoon (4 Support Squad units, 2 Valkyries)", "pts":200},
-		{"id":12, "name":"Infantry Platoon (6 Infantry units)", "pts":100},
-		{"id":13, "name":"Airborne Infantry Platoon (6 Infantry units, 3 Valkyries)", "pts":250},
-		{"id":14, "name":"Mortar Section (3 Catachan Mortar Team units)", "pts":75},
-		{"id":15, "name":"Ogryns (2 Ogryn Units)", "pts":50},
-		{"id":16, "name":"Snipers (1 sniper unit)", "pts":25},
-		{"id":17, "name":"Snipers (2 sniper units)", "pts":50},
-		{"id":18, "name":"Airborne Snipers (1 sniper unit, 1 Valkyrie)", "pts":75},
-		{"id":19, "name":"Airborne Snipers (2 sniper units, 1 Valkyrie)", "pts":100},
-		{"id":20, "name":"Vulture Support (2 Vultures)", "pts":150},
+		{"id":10, "name":"6 Catachan Infantry units", "pts":100},
+		{"id":11, "name":"4 Support Squad units", "pts":100},
+		{"id":12, "name":"1 Catachan Missile Team unit", "pts":25},
+		{"id":13, "name":"2 Catachan Mortar Squad units", "pts":25},
+		{"id":14, "name":"2 Sniper units", "pts":50},
+		{"id":15, "name":"2 Ogryn Units", "pts":50},
+		{"id":16, "name":"2 Ogryn units", "pts":50},
+		{"id":17, "name":"2 Vultures", "pts":150},
+		{"id":18, "name":"Leman Russ Demolishers", "pts":50},
+		{"id":19, "name":"Hellhounds", "pts":50},
+		{"id":20, "name":"1 Hydra Flak Tank", "pts":50},
 		
-		{"id":30, "name":"3 Catachan Valkyries", "pts":100},
+		{"id":30, "name":"Catachan Valkyries", "pts":50},
 		{"id":31, "name":"Lunar Class Cruiser", "pts":150},
 		{"id":32, "name":"Emperor Class Battleship", "pts":300}
 	],
@@ -45,15 +50,22 @@
 		{"max":1, "from":[502]},
 		{"max":1, "from":[510]},
 		{"max":2, "from":[515]},
-		{"max":2, "name":"Support Formations", "from":[510,511,512,513,514,515,516], "forEach":[500,501,502], "name2":"Company"},
+		{"max":2, "name":"Support Formations", "from":[510,511,512,513,514,515,516,517,518,519], "forEach":[500,501,502], "name2":"Company"},
 		{"maxPercent":33, "name":"Navy Support formations", "from":[520,521,522,523,524,525]}
 	],
 	"upgradeConstraints":[
-		{"max":1, "from":[10,11]},
-		{"max":1, "from":[12,13]},
-		{"max":1, "from":[16,17,18,19]},
-		{"max":1, "from":[30]},
-		{"max":3, "name":"Upgrades", "from":[10,11,12,13,14,15,16,17,18,19,20]},
+		{"max":1, "from":[10]},
+		{"max":1, "from":[11]},
+		{"max":1, "from":[12]},
+		{"max":1, "from":[13]},
+		{"max":1, "from":[14]},
+		{"max":1, "from":[16]},
+		{"max":1, "from":[17]},
+		{"max":2, "from":[18]},
+		{"max":2, "from":[19]},
+		{"max":1, "from":[20]},
+		{"max":3, "from":[30]},
+		{"max":3, "name":"Upgrades", "from":[10,11,12,13,14,16,17,18,19,20]},
 		{"min":1, "max":1, "from":[31,32], "appliesTo":[520]}
 	]
 }
