@@ -1,35 +1,37 @@
 {
 	"id":"Codex Astartes",
-	"version":"NetEA Tournament Pack 2015",
-	"by":"lindstrom, latest edit 22-11-2016 Kyrt",
-   "notes":["Be aware that landspeeder typhoons are 25 points for 1-2 and 50 points for 3-5, this may affect army values for tournament play so please check and make the organiser aware where neccessary"],
+	"version":"NetEA Tournament Pack 2018",
+	"by":"lindstrom, latest edit 23-08-2018 Kyrt",
+  "notes":["The Thunderhawk counts towards the 1/3 points limit, but other Space Marine Fleet units do not"],
 
 	"sections":[
 		{"name":"SPACE MARINE DETACHMENTS", "formations":[
-			{"id":532, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18,31]},
+			{"id":543, "name":"Tactical",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,26,21,22,23,27,31,32,11,12]},
+			{"id":532, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18,31,32]},
+			{"id":534, "name":"Devastator",		"pts":250, "units":"4 Devastators", "upgrades":[15,16,17,18,26,21,22,23,27,11,12]},
 			{"id":533, "name":"Bike", 			"pts":200, "upgrades":[15,16,17,18]},
-			{"id":534, "name":"Devastator",		"pts":250, "units":"4 Devastators", "upgrades":[15,16,17,18,26,21,22,23,11,12]},
-			{"id":535, "name":"Land Raider",			"pts":325, "units":"4 Land Raiders", "upgrades":[15,16,17,18,22,31]},
+			{"id":539, "name":"Scout",			"pts":150, "upgrades":[15,16,17,18,26,11,12]},
+			{"id":544, "name":"Terminator",		"pts":350, "units":"4 Terminators", "upgrades":[15,16,17,18,31,32,21,23,27]},
+			{"id":535, "name":"Land Raider",			"pts":325, "units":"4 Land Raiders", "upgrades":[15,16,17,18,22,31,32]},
 			{"id":536, "name":"Land Speeder",			"pts":200, "upgrades":[15,16,17,18]},
-			{"id":537, "name":"Landing Craft",			"pts":350, "units":"1 Landing Craft", "upgrades":[]},
-			{"id":538, "name":"Predator",				"pts":250, "upgrades":[15,16,17,18,22,31]},
-			{"id":539, "name":"Scout",			"pts":150, "units":"4 Scouts", "upgrades":[15,16,17,18,26,27,40,11,12]},
-			{"id":541, "name":"Strike Cruiser",			"pts":200, "upgrades":[]}, 
-			{"id":542, "name":"Battle Barge",			"pts":350, "upgrades":[]},
-			{"id":543, "name":"Tactical",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,26,21,22,23,31,11,12]},
-			{"id":544, "name":"Terminator",		"pts":350, "units":"4 Terminators", "upgrades":[15,16,17,18,31,21,23]},
-			{"id":545, "name":"Thunderhawk",			"pts":200, "upgrades":[]},
+			{"id":538, "name":"Predator",				"pts":250, "upgrades":[15,16,17,18,22,31,32]},
 			{"id":546, "name":"Vindicator",			"pts":225, "units":"4 Vindicators", "upgrades":[15,16,17,18,22]},
 			{"id":547, "name":"Whirlwind",				"pts":300, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,22]}
 		]},
+		{"name":"SPACE MARINE FLEET", "formations":[
+			{"id":545, "name":"Thunderhawk",		"pts":200, "upgrades":[]},
+			{"id":537, "name":"Landing Craft",	"pts":350, "units":"1 Landing Craft", "upgrades":[]},
+			{"id":541, "name":"Strike Cruiser", "pts":200, "upgrades":[]},
+			{"id":542, "name":"Battle Barge",		"pts":350, "upgrades":[]}
+		]},
 		{"name":"IMPERIAL NAVY", "formations":[
-			{"id":550, "name":"Marauder Squadron",		"pts":250, "upgrades":[], "units":"2 Maurader bombers"},
-			{"id":549, "name":"Thunderbolt Squadron",	"pts":175, "upgrades":[], "units":"2 Thunderbolt Fighters"}
+			{"id":549, "name":"Thunderbolt Squadron",	"pts":175, "upgrades":[], "units":"2 Thunderbolt Fighters"},
+			{"id":550, "name":"Marauder Squadron",		"pts":250, "upgrades":[], "units":"2 Maurader bombers"}
 		]},
 		{"name":"TITAN LEGIONS", "formations":[
-			{"id":553, "name":"Reaver", "units":"1 Reaver Class Titan",	"pts":650, "upgrades":[]},
 			{"id":554, "name":"Warhound", "units":"1 Warhound Class Titan",		"pts":275, "upgrades":[]},
-			{"id":555, "name":"Warhound Pack", "units":"2 Warhound Class Titans",	"pts":500, "upgrades":[]},
+			{"id":555, "name":"Warhound Pack", "units":"2x Warhound Class Titan",	"pts":500, "upgrades":[]},
+			{"id":553, "name":"Reaver", "units":"1 Reaver Class Titan",	"pts":650, "upgrades":[]},
 			{"id":552, "name":"Warlord", "units":"1 Warlord Class Titan", "pts":825, "upgrades":[]}
 		]}
 	],
@@ -41,24 +43,27 @@
 		{"id":24, "name":"Annihilator",		"pts":0},
 		{"id":25, "name":"Destructor",		"pts":0},
 		{"id":28, "name":"Landspeeder",		"pts":0},
-		{"id":29, "name":"Tornado",		"pts":0},
-		{"id":30, "name":"Typhoon",		"pts":10},
-      
+		{"id":29, "name":"Landspeeder Tornado",		"pts":0},
+		{"id":30, "name":"Landspeeder Typhoon",		"pts":10},
+
 		{"id":15, "name":"Captain",		"pts":50},
 		{"id":16, "name":"Chaplain", 		"pts":50},
 		{"id":17, "name":"Librarian", 		"pts":50},
 		{"id":18, "name":"Supreme Commander",	"pts":100},
+
 		{"id":21, "name":"Dreadnought", 					"pts":50},
 		{"id":22, "name":"Hunter", 						"pts":75},
 		{"id":23, "name":"Land Raider", 					"pts":75},
+		{"id":27, "name":"2x Land Raider", 					"pts":125},
 		{"id":26, "name":"Razorback",						"pts":25},
-		{"id":27, "name":"2 Snipers",						"pts":25},
-    {"id":40, "name":"4 Snipers",						"pts":50},  
-		{"id":31, "name":"Vindicator",						"pts":50}
+		{"id":40, "name":"Scouts",						"pts":0},
+		{"id":41, "name":"Scout Snipers",						"pts":10},
+		{"id":31, "name":"Vindicator",						"pts":50},
+		{"id":32, "name":"2x Vindicator",					"pts":75}
 	],
 	"formationConstraints":[
 		{"max":1, "name":"Spacecraft", "from":[541,542]},
-		{"maxPercent":33, "name":"Navy & Titans", "from":[549,550,552,553,554,555]}
+		{"maxPercent":33, "name":"Thunderhawks, Navy & Titans", "from":[545,549,550,552,553,554,555]}
 	],
 	"upgradeConstraints":[
 		{"max":1, "name":"Transport", "from":[11,12]},
@@ -69,9 +74,8 @@
 		{"max":1, "perArmy":true, "from":[18]},
 		{"max":2, "from":[21]},
 		{"max":1, "from":[22]},
-    {"max":1, "from":[27,40]},
-		{"max":4, "from":[23]},
-		{"max":1, "from":[27]},
-		{"max":2, "from":[31]}
+    {"min":4, "max":4, "from":[40,41], "appliesTo":[539]},
+		{"max":2, "from":[23,27]},
+		{"max":1, "from":[31,32]}
 	]
 }

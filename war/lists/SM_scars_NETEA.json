@@ -1,54 +1,62 @@
 {
 	"id":"White Scars",
-	"version":"NetEA Tournament Pack 2016",
-	"by":"lindstrom, last edit 11/02/2016 Kyussinchains",
+	"version":"NetEA Tournament Pack 2018",
+	"by":"lindstrom, last edit 23/08/2018 Kyrt",
+	"notes":["The Thunderhawk counts towards the 1/3 points limit, but other Space Marine Fleet units do not"],
+
 	"sections":[
-		{"name":"DETACHMENTS", "formations":[
-			{"id":500, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18]},
-			{"id":501, "name":"Bike", 			"pts":375, "upgrades":[15,16,17,18]},
+		{"name":"WHITE SCAR DETACHMENTS", "formations":[
+			{"id":501, "name":"Bike", 			"pts":325, "upgrades":[15,16,17,18]},
+			{"id":511, "name":"Tactical",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,38,11,12,31,36,37]},
+			{"id":500, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18,36,37]},
+			{"id":507, "name":"Scout",			"pts":150, "upgrades":[15,16,17,18,38,11,12]},
+			{"id":512, "name":"Terminator",		"pts":575, "units":"4 Terminators, 4 Land Raiders", "upgrades":[15,16,17,18,31,36,37]},
 			{"id":504, "name":"Land Speeder",				"pts":200, "upgrades":[15,16,17,18]},
-			{"id":505, "name":"Landing Craft",				"pts":350, "upgrades":[]},
-			{"id":506, "name":"Predator",					"pts":250, "upgrades":[15,16,17,18,31,35]},
-			{"id":507, "name":"Scout",			"pts":150, "units":"4 Scouts", "upgrades":[15,16,17,18,33,34,11,12]},
-			{"id":509, "name":"Strike Cruiser",			"pts":200, "upgrades":[]},
-			{"id":510, "name":"Battle Barge",				"pts":350, "upgrades":[]}, 
-			{"id":511, "name":"Tactical",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,33,11,12,31]},
-			{"id":512, "name":"Terminator",		"pts":650, "units":"4 Terminators + 4 Land Raiders", "upgrades":[15,16,17,18,31]},
+			{"id":506, "name":"Predator",					"pts":250, "upgrades":[15,16,17,18,31,36,37]},
+			{"id":515, "name":"Whirlwinds",				"pts":275, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,31,36,37]}
+		]},
+		{"name":"SPACE MARINE  FLEET", "formations":[
 			{"id":513, "name":"Thunderhawk",				"pts":200, "upgrades":[]},
-			{"id":515, "name":"Whirlwinds",				"pts":300, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,31,35]}
+			{"id":505, "name":"Landing Craft",				"pts":350, "upgrades":[]},
+			{"id":509, "name":"Strike Cruiser",			"pts":200, "upgrades":[]},
+			{"id":510, "name":"Battle Barge",				"pts":350, "upgrades":[]}
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
-			{"id":518, "name":"Marauder Bombers",		"pts":250, "units":"2 Bombers", "upgrades":[]},
-			{"id":517, "name":"Thunderbolt Fighters",	"pts":175, "units":"2 Fighters", "upgrades":[]}
+			{"id":517, "name":"Thunderbolt Fighters",	"pts":175, "units":"2 Fighters", "upgrades":[]},
+			{"id":518, "name":"Marauder Bombers",		"pts":250, "units":"2 Bombers", "upgrades":[]}
 		]},
 		{"name":"TITAN LEGIONS", "formations":[
-			{"id":522, "name":"Warhound ",		"pts":275, "units":"1 Warhound Class Titans"},
-			{"id":524, "name":"Warhound Pack",			"pts":500, "units":"2 Warhound Class Titans"}
-		]}	
+			{"id":522, "name":"Warhound ",		"pts":275, "units":"1 Warhound Class Titan"},
+			{"id":524, "name":"Warhound Pack",			"pts":500, "units":"2x Warhound Class Titan"}
+		]}
 	],
 	"upgrades":[
 		{"id":11, "name":"Rhinos",			"pts":0},
 		{"id":12, "name":"Drop Pods",		"pts":0},
-		{"id":13, "name":"Attack Bike", 	"pts":0},
-		{"id":14, "name":"Bike Unit",		"pts":0},
+		{"id":13, "name":"White Scar Attack Bike",	"pts":0},
+		{"id":14, "name":"White Scar Bikes",				"pts":0},
 		{"id":24, "name":"Annihilator",	"pts":0},
 		{"id":25, "name":"Destructor",		"pts":0},
 		{"id":28, "name":"Landspeeder",	"pts":0},
 		{"id":29, "name":"Tornado",		"pts":0},
-		{"id":30, "name":"Typhoon",		"pts":25},
+		{"id":30, "name":"Typhoon",		"pts":10},
 		{"id":15, "name":"Captain",		"pts":50},
 		{"id":16, "name":"Chaplain", 		"pts":50},
 		{"id":17, "name":"Librarian", 		"pts":50},
 		{"id":18, "name":"Supreme Commander",	"pts":100},
 		{"id":31, "name":"Hunter", 					"pts":75},
-		{"id":32, "name":"Land Raider", 				"pts":100},
-		{"id":33, "name":"Razorback",					"pts":25},
-		{"id":34, "name":"Sniper",						"pts":25},
-		{"id":35, "name":"Vindicator",					"pts":50}
+		{"id":32, "name":"Land Raider", 				"pts":75},
+		{"id":33, "name":"2x Land Raider", 			"pts":125},
+		{"id":34, "name":"Scout",					"pts":0},
+		{"id":35, "name":"Scout Sniper",					"pts":10},
+		{"id":36, "name":"White Scar Vindicator",					"pts":50},
+		{"id":37, "name":"2x White Scar Vindicator",				"pts":75},
+		{"id":38, "name":"Razorback",					"pts":25}
+
 	],
 	"formationConstraints":[
 		{"max":1, "name":"Spacecraft", "from":[509,510]},
-		{"maxPercent":33, "name":"Navy & Titans", "from":[517,518,524,522]}
+		{"maxPercent":33, "name":"Thunderhawks, Navy & Titans", "from":[513,517,518,524,522]}
 	],
 	"upgradeConstraints":[
 		{"max":1, "name":"Transport", "from":[11,12]},
@@ -58,9 +66,8 @@
 		{"max":1, "name":"Cmdr", "from":[15,16,17,18]},
 		{"max":1, "perArmy":true, "from":[18]},
 		{"max":1, "from":[31]},
-		{"max":4, "from":[32]},
-		{"max":1, "from":[34]},
-		{"max":2, "from":[35]}
+		{"max":2, "from":[32,33]},
+		{"max":1, "from":[36,37]},
+		{"min":4, "max":4, "from":[34,35], "appliesTo": [507]}
 	]
 }
-
