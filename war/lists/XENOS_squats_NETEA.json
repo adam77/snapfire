@@ -1,98 +1,555 @@
 {
-	"id":"Thurgrim's Stronghold Squats",
-	"version":"Thurgrims Stronghold 1.5",
-	"notes":[
-		"If transport Upgrade is chosen, then you must take exactly enough transports of only one kind to transport all units in the formation."
-	],
-	"by":"Iron Bloke, last update 2015-06-02 atension",
-	"sections":[
-		{"name":"SQUAT INDIVIDUALS", "formations":[
-			{"id":500, "name":"Pithead", 				"pts":50}
-		]},
-		{"name":"SQUAT BROTHERHOODS & GUILDS", "formations":[
-			{"id":501, "name":"Warrior Brotherhood", 	"pts":300, "upgrades":[1,2,3,4,7,8,9,34,50,51], "units":"1 Hearthguard unit"},
-			{"id":502, "name":"Berzerker Brotherhood", 				"pts":175, "upgrades":[1,2,3,4,7,8,34], "units":"1 Hearthguard unit"}
-		]},
-		{"name":"SQUAT SUPPORT FORMATIONS", "formations":[
-			{"id":511, "name":"Tarantula", 	"pts":175, "units":"5 Tarantula units"},
-			{"id":512, "name":"Robot", 	"pts":225, "units":"5 Robot units"},
-			{"id":513, "name":"Thudd Gun", 	"pts":225, "units":"6 Thudd Gun units"},
-			{"id":514, "name":"Thunderfire", 	"pts":-50,"upgrades":[14,19]},
-			{"id":515, "name":"Mole Mortar", 	"pts":175, "units":"6 Mole Mortar units"},
-			{"id":516, "name":"Bikers Guild", 	"pts":225},
-			{"id":530, "name":"Overlord", 	"pts":25 ,"upgrades":[20]},
-			{"id":517, "name":"Iron Hawk", 	"pts":200}
-		]},
-		{"name":"WAR ENGINE FORMATIONS", "formations":[
-			{"id":531, "name":"Goliath", 	"pts":0,"upgrades":[21]},
-			{"id":533, "name":"Colossus", 	"pts":450, "units":"1 Colossus","upgrades":[9]},
-			{"id":534, "name":"Cyclops", 	"pts":475, "units":"1 Cyclops","upgrades":[9]},
-			{"id":535, "name":"Land Train", "pts":200, "units":"1 Land Train Engine","upgrades":[9,30,31,32,33]}
-		]}
-	],
-	"upgrades":[
-		{"id":1, "name":"Rhino", "pts":0},
-		{"id":2, "name":"Terminte Tunneller", "pts":0},
-		{"id":3, "name":"Mole Tunneller", "pts":50},
-		{"id":4, "name":"Hellbore Tunneller", "pts":125},
-
-		{"id":5, "name":"Guildmaster", "pts":0},
-		{"id":6, "name":"Grand Warlord", "pts":50},
-
-		{"id":7, "name":"Brotherhood Warlord", "pts":75},
-		{"id":8, "name":"Grand Warlord", "pts":125},
-		{"id":9, "name":"Living Ancestor", "pts":50},
-
-		{"id":10, "name":"9 Warrior units", "pts":0},
-		{"id":11, "name":"14 Warrior units", "pts":100},
-		{"id":12, "name":"5 Berzerker units", "pts":0},
-		{"id":13, "name":"7 Berzerker units", "pts":25},
-		{"id":14, "name":"Thunderfire", "pts":75},
-		{"id":15, "name":"Guild Bike unit", "pts":0},
-		{"id":16, "name":"Guild trike", "pts":0},
-		{"id":17, "name":"Iron Hawk", "pts":0},
-		{"id":18, "name":"Iron Eagle", "pts":25},
-        {"id":19, "name":"4 Warrior units", "pts":100},
-		{"id":20, "name":"Overlord Airship", "pts":225},
-		{"id":21, "name":"Goliath Mega-Cannon", "pts":150},
-
-		{"id":30, "name":"Berserker Battle Car", "pts":50},
-		{"id":31, "name":"Bomb Battle Car", "pts":125},
-		{"id":32, "name":"Dragon Battle Car", "pts":75},
-		{"id":33, "name":"Mortar Battle Car", "pts":50},
-        {"id":34, "name":"Leviathan", "pts":375},
-
-		{"id":50, "name":"4 Rapier units", "pts":100},
-		{"id":51, "name":"4 Thunderer units", "pts":100}
-
-
-	],
-	"formationConstraints":[
-		{"max":2, "name":"Support Formations", "from":[511,512,513,514,515,516,517,530], "forEach":[501,502], "name2":"Brotherhood"},
-		{"maxPercent":33.4, "name":"War Engine Formations", "from":[531,532,533,534,535]},
-		{"max":1, "from":[500]},
-		{"max":3, "from":[506]},
-		{"max":1, "from":[513]}
-
-	],
-	"upgradeConstraints":[
-		{"max":1, "name":"Warlord", "from":[7,8]},
-		{"max":1,  "from":[8], "perArmy": true},
-		{"max":1,  "from":[9], "perArmy": true},
-
-		{"min":0, "max":1, "from":[34], "appliesTo":[501]},
-		{"min":0, "max":1, "from":[34], "appliesTo":[502]},
-		{"min":1, "max":1, "from":[10,11], "appliesTo":[501]},
-		{"min":1, "max":1, "from":[12,13], "appliesTo":[502]},
-		{"min":2, "max":3, "from":[14], "appliesTo":[514]},
-		{"min":6, "max":6, "from":[15,16], "appliesTo":[516]},
-		{"max":3, "from":[16], "appliesTo":[516]},
-		{"min":1, "max":1, "from":[5,6], "appliesTo":[516]},
-		{"min":4, "max":4, "from":[17,18], "appliesTo":[517]},
-
-		{"min":1, "max":3, "from":[20], "appliesTo":[530]},
-		{"min":2, "max":3, "from":[21], "appliesTo":[531]},
-
-		{"min":2, "max":4, "from":[30,31,32,33], "appliesTo":[535]}
-	]
+  "id": "Grindel Stronghold Squats",
+  "version": "1.7",
+  "notes": ["If a Living Ancestor is added to a Warrior Brotherhood it must be on a Warlord unit."],
+  "by": "Dave",
+  "sections": [{
+      "name": "Brotherhoods",
+      "formations": [
+        {
+          "id": 100,
+          "name": "Berserker",
+          "pts": 25,
+          "upgrades": [1, 28, 29]
+        },
+        {
+          "id": 101,
+          "name": "Berserker (M)",
+          "pts": 25,
+          "upgrades": [1, 28, 29]
+        },
+        {
+          "id": 102,
+          "name": "Berserker (L)",
+          "pts": 0,
+          "upgrades": [1, 28, 29]
+        },
+        {
+          "id": 110,
+          "name": "Thunderer",
+          "pts": 25,
+          "upgrades": [12, 16, 8, 28, 29]
+        },
+        {
+          "id": 111,
+          "name": "Thunderer (M)",
+          "pts": 25,
+          "upgrades": [12, 16, 8, 28, 29]
+        },
+        {
+          "id": 112,
+          "name": "Thunderer (L)",
+          "pts": 0,
+          "upgrades": [12, 16, 8, 28, 29]
+        },
+        {
+          "id": 120,
+          "name": "Warrior",
+          "pts": 20,
+          "upgrades": [1, 20, 12, 16, 4, 10, 28, 29]
+        },
+        {
+          "id": 121,
+          "name": "Warrior (M)",
+          "pts": 15,
+          "upgrades": [1, 20, 12, 16, 4, 10, 28, 29]
+        },
+        {
+          "id": 122,
+          "name": "Warrior (L)",
+          "pts": -15,
+          "upgrades": [1, 20, 12, 16, 4, 10, 28, 29]
+        }
+      ]
+    },
+    {
+      "name": "Support Formations",
+      "formations": [{
+          "id": 130,
+          "name": "Artillery Battery",
+          "pts": 25,
+          "upgrades": [11, 14, 15]
+        },
+        {
+          "id": 131,
+          "name": "Artillery Battery (M)",
+          "pts": 25,
+          "upgrades": [11, 14, 15]
+        },
+        {
+          "id": 132,
+          "name": "Artillery Battery (L)",
+          "pts": 0,
+          "upgrades": [11, 14, 15]
+        },
+        {
+          "id": 140,
+          "name": "Gyrocopter Wing",
+          "pts": 20,
+          "upgrades": [9, 13, 18]
+        },
+        {
+          "id": 141,
+          "name": "Gyrocopter Wing (M)",
+          "pts": 15,
+          "upgrades": [9, 13, 18]
+        },
+        {
+          "id": 142,
+          "name": "Gyrocopter Wing (L)",
+          "pts": -15,
+          "upgrades": [9, 13, 18]
+        },
+        {
+          "id": 150,
+          "name": "Guild Robot Squadron",
+          "pts": 25,
+          "upgrades": [2, 3]
+        },
+        {
+          "id": 160,
+          "name": "Guild Squadron",
+          "pts": 25,
+          "upgrades": [5, 6]
+        },
+        {
+          "id": 161,
+          "name": "Guild Squadron (M)",
+          "pts": 25,
+          "upgrades": [5, 6]
+        },
+        {
+          "id": 162,
+          "name": "Guild Squadron (L)",
+          "pts": 0,
+          "upgrades": [5, 6]
+        },
+        {
+          "id": 170,
+          "name": "Thunderfire Battery",
+          "pts": 25,
+          "upgrades": [17]
+        }
+      ]
+    },
+    {
+      "name": "War Engines",
+      "formations": [{
+          "id": 180,
+          "name": "Air Attack Corps",
+          "pts": 250,
+          "units": "Overlord",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 181,
+          "name": "Air Attack Corps (M)",
+          "pts": 475,
+          "units": "2x Overlords",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 182,
+          "name": "Air Attack Corps (L)",
+          "pts": 675,
+          "units": "3x Overlords",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 190,
+          "name": "Colossus",
+          "pts": 550,
+          "units": "Colossus<br>Recon Iron Eagle",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 200,
+          "name": "Cyclops",
+          "pts": 550,
+          "units": "Cyclops",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 210,
+          "name": "Land Train",
+          "pts": 175,
+          "units": "Land Train",
+          "upgrades": [21, 22, 23, 24, 25, 26, 27, 10, 4]
+        },
+        {
+          "id": 220,
+          "name": "Leviathan",
+          "pts": 400,
+          "units": "Leviathan",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 230,
+          "name": "Super-Heavy Artillery Battery",
+          "pts": 175,
+          "units": "Goliath",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 231,
+          "name": "Super-Heavy Artillery Battery (M)",
+          "pts": 325,
+          "units": "2x Goliaths",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 232,
+          "name": "Super-Heavy Artillery Battery (L)",
+          "pts": 450,
+          "units": "3x Goliaths",
+          "upgrades": [4, 10]
+        }
+      ]
+    }
+  ],
+  "upgrades": [{
+      "id": 1,
+      "name": "Berserkers",
+      "pts": 20
+    },
+    {
+      "id": 2,
+      "name": "Colossus Class Robot",
+      "pts": 40
+    },
+    {
+      "id": 3,
+      "name": "Conqueror Class Robot",
+      "pts": 40
+    },
+    {
+      "id": 4,
+      "name": "Grand Warlord",
+      "pts": 50
+    },
+    {
+      "id": 5,
+      "name": "Guild Bikers",
+      "pts": 20
+    },
+    {
+      "id": 6,
+      "name": "Guild Trike",
+      "pts": 25
+    },
+    {
+      "id": 7,
+      "name": "Guildmaster",
+      "pts": 75
+    },
+    {
+      "id": 8,
+      "name": "Hearthguard",
+      "pts": 50
+    },
+    {
+      "id": 9,
+      "name": "Iron Eagle",
+      "pts": 60
+    },
+    {
+      "id": 10,
+      "name": "Living Ancestor",
+      "pts": 50
+    },
+    {
+      "id": 11,
+      "name": "Mole Mortar",
+      "pts": 25
+    },
+    {
+      "id": 12,
+      "name": "Rapier",
+      "pts": 25
+    },
+    {
+      "id": 13,
+      "name": "Steel Hawk",
+      "pts": 60
+    },
+    {
+      "id": 14,
+      "name": "Tarantula",
+      "pts": 25
+    },
+    {
+      "id": 15,
+      "name": "Thudd Gun",
+      "pts": 25
+    },
+    {
+      "id": 16,
+      "name": "Thunderers",
+      "pts": 40
+    },
+    {
+      "id": 17,
+      "name": "Thunderfire",
+      "pts": 75
+    },
+    {
+      "id": 18,
+      "name": "War Hawk",
+      "pts": 60
+    },
+    {
+      "id": 19,
+      "name": "Warlord",
+      "pts": 75
+    },
+    {
+      "id": 20,
+      "name": "Warriors",
+      "pts": 20
+    },
+    {
+      "id": 21,
+      "name": "Berserker Battlecar",
+      "pts": 50
+    },
+    {
+      "id": 22,
+      "name": "Dragon Battlecar",
+      "pts": 75
+    },
+    {
+      "id": 23,
+      "name": "Fire Shield Battlecar",
+      "pts": 75
+    },
+    {
+      "id": 24,
+      "name": "Skyhammer Battlecar",
+      "pts": 75
+    },
+    {
+      "id": 25,
+      "name": "Mortar Battlecar",
+      "pts": 75
+    },
+    {
+      "id": 26,
+      "name": "Iron Eagle Battlecar (and 1x Recon Iron Eagle)",
+      "pts": 100
+    },
+    {
+      "id": 27,
+      "name": "Bomb Battlecar",
+      "pts": 125
+    },
+    {
+      "id": 28,
+      "name": "Rhinos",
+      "pts": 0
+    },
+    {
+      "id": 29,
+      "name": "Tunnelers",
+      "pts": 0
+    }
+  ],
+  "formationConstraints": [{
+      "name": "Support Formations",
+      "from": [130, 131, 132, 140, 141, 142, 150, 160, 161, 162, 170],
+      "forEach": [100, 101, 102, 110, 111, 112, 120, 121, 122],
+      "max": 2,
+      "name2": "Brotherhood"
+    },
+    {
+      "name": "War Engines",
+      "from": [180, 181, 182, 190, 200, 210, 220, 230, 231, 232],
+      "maxPercent": 33
+    }
+  ],
+  "upgradeConstraints": [{
+      "from": [1],
+      "min": 5,
+      "appliesTo": [100]
+    },
+    {
+      "from": [1],
+      "min": 10,
+      "appliesTo": [101]
+    },
+    {
+      "from": [1],
+      "min": 15,
+      "appliesTo": [102]
+    },
+    {
+      "from": [2, 3],
+      "min": 5,
+      "max": 5,
+      "appliesTo": [150]
+    },
+    {
+      "from": [4],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "from": [5, 6],
+      "min": 5,
+      "appliesTo": [160]
+    },
+    {
+      "from": [5, 6],
+      "min": 10,
+      "appliesTo": [161]
+    },
+    {
+      "from": [5, 6],
+      "min": 15,
+      "appliesTo": [162]
+    },
+    {
+      "from": [7],
+      "min": 1,
+      "appliesTo": [160]
+    },
+    {
+      "from": [7],
+      "min": 2,
+      "appliesTo": [161]
+    },
+    {
+      "from": [7],
+      "min": 3,
+      "appliesTo": [162]
+    },
+    {
+      "from": [8],
+      "min": 1,
+      "appliesTo": [100]
+    },
+    {
+      "from": [8],
+      "max": 1,
+      "appliesTo": [110]
+    },
+    {
+      "from": [8],
+      "min": 2,
+      "appliesTo": [101]
+    },
+    {
+      "from": [8],
+      "max": 2,
+      "appliesTo": [111]
+    },
+    {
+      "from": [8],
+      "min": 3,
+      "appliesTo": [102]
+    },
+    {
+      "from": [8],
+      "max": 3,
+      "appliesTo": [112]
+    },
+    {
+      "from": [8, 19],
+      "min": 1,
+      "max": 1,
+      "appliesTo": [120]
+    },
+    {
+      "from": [8, 19],
+      "min": 2,
+      "max": 2,
+      "appliesTo": [121]
+    },
+    {
+      "from": [8, 19],
+      "min": 3,
+      "max": 3,
+      "appliesTo": [122]
+    },
+    {
+      "from": [9, 13, 18],
+      "min": 3,
+      "appliesTo": [140]
+    },
+    {
+      "from": [9, 13, 18],
+      "min": 6,
+      "appliesTo": [141]
+    },
+    {
+      "from": [9, 13, 18],
+      "min": 9,
+      "appliesTo": [142]
+    },
+    {
+      "from": [10],
+      "max": 1,
+      "perArmy": true
+    },
+    {
+      "from": [11, 14, 15],
+      "min": 5,
+      "appliesTo": [130]
+    },
+    {
+      "from": [11, 14, 15],
+      "min": 10,
+      "appliesTo": [131]
+    },
+    {
+      "from": [11, 14, 15],
+      "min": 15,
+      "appliesTo": [132]
+    },
+    {
+      "from": [16],
+      "min": 5,
+      "appliesTo": [110]
+    },
+    {
+      "from": [16],
+      "min": 10,
+      "appliesTo": [111]
+    },
+    {
+      "from": [16],
+      "min": 15,
+      "appliesTo": [112]
+    },
+    {
+      "from": [17],
+      "min": 2,
+      "max": 3,
+      "appliesTo": [170]
+    },
+    {
+      "from": [20],
+      "min": 9,
+      "appliesTo": [120]
+    },
+    {
+      "from": [20],
+      "min": 18,
+      "appliesTo": [121]
+    },
+    {
+      "from": [20],
+      "min": 27,
+      "appliesTo": [122]
+    },
+    {
+      "from": [21, 22, 23, 24, 25, 26, 27],
+      "min": 1,
+      "max": 4,
+      "appliesTo": [210]
+    },
+    {
+      "from": [28, 29], "max": 1, "appliesTo": [100, 101, 102, 110, 111, 112,
+      120, 121, 122]
+    }
+  ]
 }

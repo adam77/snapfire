@@ -1,0 +1,107 @@
+{
+   "id": "Death Watch",
+   "version": "V1.3",
+   "by": "Norto",
+   "notes":["If using transports you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible.",
+   "Drop pods require space craft. Also check the transport notes for access within a Watch Company.",
+   "Land Raider Crusader may carry 3 Infantry or 2 Terminators."],
+   "sections": [
+        	{"name": "DEATH WATCH DETACHMENTS", "formations": [
+            	{"id": 500, "name": "Watch Company", 			"pts": 50, "upgrades": [1,2,3,4,5,8,15,16,23,24,25,33,34,35] },
+	    	{"id": 503, "name": "Strike Team - Land Speeders", 	"pts": 200, "units": "", "upgrades": [2,3,4] }
+	  	]},
+	   
+        	{"name": "DEATH WATCH SUPPORT DETACHMENTS", "formations": [
+            	{"id": 600, "name": "Inquisitorial Warband", 			"pts": 175, "upgrades": [] },
+		{"id": 601, "name": "Inquisitorial Storm Trooper Platoon",   	"pts": 300, "units": "8 Inquisitorial Storm Trooper, 4 Chimeras", "upgrades": [36] }
+
+		
+		]},
+	   
+        	{"name": "RESTRICTED SUPPORT FORMATIONS", "formations": [
+            	{"id": 700, "name": "Thunderbolt Fighters", 			"pts": 150, "units": "2 Thunderbolt Fighters", "upgrades": [] },
+            	{"id": 701, "name": "Maurader Bombers", 			"pts": 250, "units": "2 Maurader Bombers", "upgrades": [] },
+		{"id": 603, "name": "Thunderhawk Gunship", 			"pts": 200, "upgrades": [] },
+		{"id": 504, "name": "Deathwatch Landing Craft", 		"pts": 350, "units": "1 Deathwatch Landing Craft aircraft", "upgrades": [] },
+		{"id": 604, "name": "Inquisitorial Black ship", 		"pts": 175, "upgrades": []}
+         	]}
+		
+   ],
+   "upgrades": [
+		{"id": 1, "name": "Watch Master", 							"pts":100},
+		{"id": 2, "name": "Librarian", 								"pts":50 },
+		{"id": 3, "name": "Captain", 								"pts":50 },
+		{"id": 4, "name": "Chaplain", 								"pts":50 },
+		{"id": 6, "name": "Inquisitor", 							"pts":0},
+		{"id": 5, "name": "Venerable Dreadnought",						"pts":50 },
+		{"id": 8, "name": "Hunter",			 					"pts":75 },
+
+		{"id": 9, "name":  "Warrior Acolyte",	 						"pts":0  },
+		{"id": 10, "name": "Death Cult Assassins", 						"pts":20 },
+		{"id": 11, "name": "4 Valkyries", 							"pts":150 },
+		{"id": 12, "name": "4 Chimeras", 							"pts":100 },
+		{"id": 14, "name": "Drop pods", 							"pts":0  },
+		{"id": 15, "name": "Rhinos", 								"pts":0  },
+		{"id": 16, "name": "Razorback", 							"pts":25 },
+		{"id": 17, "name": "Stormraven", 							"pts":50 },
+		{"id": 18, "name": "Land Raider", 							"pts":50 },
+		{"id": 19, "name": "Land Raider Crusader", 						"pts":50 },
+		{"id": 20, "name": "Land Raider Redeemer", 						"pts":50 },
+		{"id": 33, "name": "2x Land Raider", 							"pts":125 },
+		{"id": 34, "name": "2x Land Raider Crusader", 						"pts":125 },
+		{"id": 35, "name": "2x Land Raider Redeemer", 						"pts":125 },
+		{"id": 21, "name": "3 Arvus Lighters", 							"pts":0},
+		{"id": 22, "name": "3 Chimeras", 							"pts":0},
+		
+		{"id": 23, "name": "Land Raider", 							"pts":75 },
+		{"id": 24, "name": "Land Raider Crusader", 						"pts":75 },
+		{"id": 25, "name": "Land Raider Redeemer", 						"pts":75 },
+
+		{"id": 30, "name": "Inquisitorial Black ship", 						"pts":175 }, 
+		{"id": 31, "name": "Landspeeder Typhoon",			 			"pts":10 },
+		{"id": 32, "name": "Landspeeder Tornado",			 			"pts":0 },
+		
+		{"id": 36, "name": "Hydra",			 					"pts":50 },
+		{"id": 41, "name": "Veteran",					 			"pts":50 },
+		{"id": 42, "name": "Watch Sergeant",			 				"pts":50 },
+		{"id": 43, "name": "Black Shield",					 		"pts":50 },
+		{"id": 44, "name": "Watch Terminator",				 			"pts":75 },
+		{"id": 45, "name": "Assault Bike",			 				"pts":50 },
+		{"id": 46, "name": "Vanguard Assault Veteran ",				 		"pts":75 },
+
+		{"id": 50, "name": "No Transports",				 			"pts":0},
+		{"id": 51, "name": "2 Corvus Black Stars",			 			"pts":50},
+		{"id": 52, "name": "3 Corvus Black Stars",			 			"pts":75},
+		{"id": 53, "name": "4 Corvus Black Stars",			 			"pts":100},
+		{"id": 54, "name": "Drop Pods",			 					"pts":0}
+	],
+   "formationConstraints": [
+      {"max": 3, "from": [502]},
+      {"max": 1, "from": [604]},
+      {"maxPercent": 33.34, "name": "Restricted Support Formations", "from": [700,603,604,504]},
+      {"max": 2, "name": "DEATH WATCH SUPPORT DETACHMENTS", "from": [600,601,605], "forEach": [500,501,502,503], "name2": "DEATH WATCH DETACHMENTS" }
+   ],
+   "upgradeConstraints": [
+      	  {"max": 1, "perArmy": true, "from": [1]},
+      	  {"max": 1, "perArmy": true, "from": [30]},
+
+	  {"min": 1, "max": 1, "from": [6], "appliesTo": [600,601,605]},
+	  {"min": 4, "max": 4, "from": [41,42,43,44,45,46], "appliesTo": [500] },
+	  {"max": 1, "from": [1,2,3,4], "appliesTo": [500,501,503] },
+	  {"max": 1, "from": [1], "appliesTo": [500,600,605]},
+	  {"max": 1, "from": [13], "appliesTo": [500] },
+	  {"max": 3, "from": [18,19,20], "appliesTo": [500] },	
+	  {"max": 1, "from": [36], "appliesTo": [601] },	
+	  {"max": 2, "from": [18,19,20], "appliesTo": [501] },	
+	  {"max": 1, "from": [33,34,35], "appliesTo": [500] },	
+	  {"max": 1, "from": [33,34,35], "appliesTo": [501] },		  
+	  {"min": 5, "max": 5, "from": [32,31], "appliesTo": [503]},		  
+	  {"min": 6, "max": 6, "from": [9,10], "appliesTo": [600]},
+	  {"max": 2, "from": [10], "appliesTo": [600]},
+	  {"max": 4, "from": [14,15], "appliesTo": [500]},
+	  {"max": 8, "from": [16], "appliesTo": [500]},
+	  {"min": 1, "max": 1, "from": [22,21], "appliesTo": [600]},
+	  {"min": 1, "max": 1, "from": [50,51,52,53,54,15], "appliesTo": [500]},
+	  {"max": 1, "from": [11,12], "appliesTo": [601]}
+   ]
+}
