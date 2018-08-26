@@ -2,7 +2,7 @@
    "id": "Adepta Sororitas",
    "version": "V1.2(2018) - Developmental",
    "by": "Mard",
-   "notes":["If Using transports (Immolator, Repressor, Rhinos, Civilian Light Vehicles, Valkyries, Aquilas, Arvus) you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible."],
+   "notes":["If Using transports (Immolator, Repressor, Rhinos, Valkyries) you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible."],
    
    "sections": [
         {"name": "COMPANY FORMATIONS", "formations": [
@@ -18,13 +18,14 @@
         {"name": "COMPANY SUPPORT FORMATION", "formations": [
             {"id": 510, "name": "Inquisitor Hereticus Retinue", "pts": 200, "units": "Inquisitor", "upgrades": [21,13,42,24,25,26,38] },
             {"id": 511, "name": "Conclave", "pts": 250, "units": "6 Arco-Flagellant Units", "upgrades": [15] },
-            {"id": 512, "name": "Pentinence", "pts": 10, "upgrades": [15] }     
+            {"id": 512, "name": "Pentinence", "pts": 10, "upgrades": [15] },   
+            {"id": 513, "name": "Orbital Support", "pts": 150, "units": "Luna Class Cruiser", "upgrades": [] } 
          ]},
 	   
         {"name": "WAR ENGINES AND IMPERIAL NAVY", "formations": [
             {"id": 520, "name": "Lightning Squadron", "pts": 150, "units": "2 Lightning Strike Fighters", "upgrades": [] },
             {"id": 521, "name": "Knight Crusader", "pts": 0, "upgrades": [] },
-	    {"id": 524, "name": "Emperors Chapel", "pts": 200 , "units": "Cathedral of Purification", "upgrades": [] },
+	    {"id": 524, "name": "Emperors Chapel", "pts": 200 , "units": "Emperors Chapel", "upgrades": [] },
 	    {"id": 522, "name": "Cathedral of Purification", "pts": 550 , "units": "Cathedral of Purification", "upgrades": [] },
             {"id": 523, "name": "Sanctum Pattern Reaver Titan", "pts": 650 , "units": "1 Warlord (Sanctum Pattern)", "upgrades": [] }
          ]}
@@ -75,7 +76,7 @@
       {"max": 1, "from": [510]},
       
       {"maxPercent": 33, "name": "Aircraft and Spacecraft", "from": [520,521,522,523,524]},
-      {"max": 1, "name": "Support Formations", "from": [510,511,512], "forEach": [500,501,502,503,504,505,506], "name2": "Company" }
+      {"max": 1, "name": "Support Formations", "from": [510,511,512,513], "forEach": [500,501,502,503,504,505,506], "name2": "Company" }
    ],
    "upgradeConstraints": [
       	  {"max": 1, "from": [19]},
