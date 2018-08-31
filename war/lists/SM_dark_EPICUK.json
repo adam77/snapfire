@@ -1,6 +1,6 @@
 {
 "id":"Dark Angels",
-"version":"Epic-UK 070414",
+"version":"Epic-UK 120618",
 "by":"Epic-UK",
 "notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1) The formation may be dropped from a purchansed Space Ship at no additional cost. 2) It may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 3) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks."],
 "sections":[
@@ -17,12 +17,12 @@
                         {"id":509,"name":"Spaceship","pts":0,"upgrades":[29,30]},
                         {"id":510,"name":"Tactical","pts":300,"units":"6 Tactical units plus Transport","upgrades":[11,12,13,14,18,32,19,31,15,21,22]},
                         {"id":511,"name":"Deathwing","pts":350,"units":"4 Deathwing Terminator units","upgrades":[11,12,13,14,18,32,20,15]},
-                        {"id":512,"name":"Thunderhawk","pts":200,"units":"1 Thunderhawk gunship"},
                         {"id":513,"name":"Vindicator","pts":250,"units":"4 Vindicators","upgrades":[11,12,13,14,19,31]},
                         {"id":514,"name":"Whirlwind","pts":300,"units":"4 Whirlwinds","upgrades":[11,12,13,14,19,31]}
                         ]},
 		{"name":"Support","formations":[
-                        {"id":515,"name":"Nephilim","pts":200,"units":"2 Nephilim Fighters","upgrades":[]}
+                        {"id":512,"name":"Thunderhawk","pts":200,"units":"1 Thunderhawk gunship"},
+                        {"id":515,"name":"Nephilim","pts":225,"units":"2 Nephilim Fighters","upgrades":[]}
 						]}
                 ],
                 "upgrades":[
