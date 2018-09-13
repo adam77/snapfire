@@ -1,108 +1,89 @@
 {
 	"id":"FIR IOLARION ELDAR TITAN CLAN",
-	"version":"2.2.1",
-	"by":"Parintachin, last edit 2013-10-30",
+	"version":"4.2.4",
+	"by":"Mrdiealot",
 	"notes":["This list is marked as 'Experimental'"],
 	"sections":[
-		{"name":"INDIVIDUALS", "formations":[
-			{"id":500, "name":"Gate of Vaul",	"pts":150,		"upgrades":[]}
+		{"name":"Gate", "formations":[
+			{"id":500, "name":"Wraithgate",	"pts":50,		"upgrades":[]}
 		]},
 		{"name":"ELDAR TITAN WARHOSTS", "formations":[
-			{"id":510, "name":"Warlock Titan", "units":"1 Warlock Titan", "pts":725, "upgrades":[40]},
-			{"id":512, "name":"Phantom Titan", "units":"1 Phantom Titan", "pts":650, "upgrades":[80]},
-			{"id":513, "name":"Revenant Titan Host" , "units":"Each Revenant Titan is armed with 2 weapons, Revenant Pulse Lasers or Revenant Sonic Lances, in any combination.", "pts":0, "upgrades":[81,39]}
+			{"id":510, "name":"Warlock Titan", "units":"1 Warlock Titan", "pts":825, "upgrades":[31]},
+			{"id":511, "name":"Phantom Titan", "units":"1 Phantom Titan", "pts":750, "upgrades":[31,30]}
+
 		]},	
-		{"name":"CRAFTWORLD ALLIES", "formations":[
-			{"id":520, "name":"Guardian Troupe", "units":"5 Guardian Units", "pts":200},
-			{"id":521, "name":"Wraithlord Troupe", "units":"6 Wraithlords", "pts":300},
-			{"id":522, "name":"Ranger Troupe", "pts":0, "upgrades":[11]},
-			{"id":524, "name":"Nightwing", "units":"3 Nightwing Interceptors", "pts":300},
-			{"id":525, "name":"Phoenix Bomber","pts":400, "units":"3 Phoenix Bombers"},
-			{"id":526, "name":"Vampire Hunter","pts":250, "units":"1 Vampire Hunter"},
-			{"id":527, "name":"Wraithship",	"pts":150},
-			{"id":528, "name":"Dragonship",	"pts":300},
-		 	{"id":530, "name":"Knight Troupe",	"pts":300, "upgrades":[]}
+		{"name":"CRAFTWORLD TROUPES", "formations":[
+			{"id":512, "name":"Revenant Titan Twins" , "units":"2 Revenant Titans", "pts":650, "upgrades":[32]},
+			{"id":513, "name":"Revenant Titan Single" , "units":"1 Revenant Titan", "pts":350, "upgrades":[]},
+			{"id":514, "name":"Wraithknight Troupe" , "units":"Three Wraithknights", "pts":350, "upgrades":[]},
+			{"id":515, "name":"Wasp Walker Troupe" , "pts":-100, "upgrades":[50]}
+
+		]},
+		
+		{"name":"SUPPORT UNITS", "formations":[
+			{"id":520, "name":"Nightwing Interceptors" , "pts":75, "upgrades":[40]},
+			{"id":521, "name":"Phoenix Bombers", "pts":25, "upgrades":[41]},
+			{"id":522, "name":"Lagganath Vampire Hunter", "units":"One Lagganath Vampire Hunter", "pts":300, "upgrades":[]},
+			{"id":523, "name":"Spacecraft", "pts":0, "upgrades":[42,43]}
+
 		]}
 	],
 	"upgrades":[
-		{"id":11, "name":"Ranger",		"pts":25},
-		{"id":13, "name":"War Walker",	"pts":25},
-		{"id":15, "name":"Dire Avenger",		"pts":50},
-		{"id":16, "name":"Striking Scorpion",	"pts":50},
-		{"id":17, "name":"Howling Banshee",	"pts":50},
-		{"id":18, "name":"Fire Dragon",		"pts":50},
-		{"id":19, "name":"Warp Spider",		"pts":50},
-		{"id":20, "name":"Dark Reaper",		"pts":50},
-		{"id":21, "name":"Swooping Hawk",		"pts":50},
-		{"id":22, "name":"Shining Spear",		"pts":50},
-		{"id":24, "name":"Guardians",				"pts":0},
-		{"id":25, "name":"Heavy Weapon Platform",	"pts":0},
-		{"id":27, "name":"Jetbike", 	"pts":0},
-		{"id":28, "name":"Vyper", 		"pts":0},
+		{"id":10, "name":"Titan Pulsar",	"pts":0},
+		{"id":11, "name":"Power Fist",	"pts":0},
+		{"id":12, "name":"Psychic Lance",	"pts":25},
+		{"id":13, "name":"Fusion Lance",	"pts":25},
+		{"id":14, "name":"Tremor Cannon",	"pts":25},
+		{"id":15, "name":"Titan D-Cannon",	"pts":0},
+		{"id":16, "name":"Titan Bright Lance",	"pts":0},
+		{"id":17, "name":"Starcannon",	"pts":0},
 		
-		{"id":30, "name":"Falcon",		"pts":50},
-		{"id":31, "name":"Fire Storm",	"pts":50},
-		{"id":32, "name":"Fire Prism",	"pts":65},
+		{"id":20, "name":"Sonic Lance Pair",	"pts":0},
+		{"id":21, "name":"Revenant Pulse Laser Pair",	"pts":0},
 		
-		{"id":34, "name":"Cobra",			"pts":0},
-		{"id":35, "name":"Scorpion",		"pts":0},
-		{"id":36, "name":"Storm Serpent",	"pts":200},
+		{"id":25, "name":"2 x Heavy Wraithcannon",	"pts":0},
+		{"id":26, "name":"Heavy Wraithcannon and Ghostglaive",	"pts":0},
+		{"id":27, "name":"Heavy Wraithcannon and Scattershield",	"pts":0},
+		{"id":28, "name":"Ghostglaive and Scattershield",	"pts":0},
 		
-		{"id":41, "name":"Wave Serpent",	"pts":50},
-		{"id":66, "name":"Wave Serpent",	"pts":0},
-		{"id":42, "name":"Falcon",			"pts":65},
-		{"id":45, "name":"Wraithguards", "pts": 0},
-		{"id":46, "name":"3 Wraithguards", "pts": 150},
-
-		{"id":55, "name":"3 Support Weapon Platforms", "pts":50},
-		{"id":57, "name":"2 Wraithguard", "pts": 100},                    
-		{"id":58, "name":"3 Wraithguard", "pts": 150},
-		{"id":59, "name":"3 Wraithlords", "pts":175},
-
-		{"id":63, "name":"Farseer",	"pts":50},
-		{"id":65, "name":"6 Wave Serpents",	"pts":300},
-		{"id":67, "name":"3 Vyper Jetbikes",	"pts":100},
-		{"id":68, "name":"4 Guardian units, 2 Wave Serpents",	"pts":150},
-		{"id":69, "name":"Hornet",	"pts":35},
-
-		{"id":70, "name":"Titan Pulsar",	"pts":50},
-		{"id":71, "name":"Power Fist",	"pts":50},
-		{"id":72, "name":"Psychic Lance",	"pts":75},
-		{"id":73, "name":"Fusion Lance",	"pts":75},
-		{"id":74, "name":"Tremor Cannon",	"pts":75},
-		{"id":75, "name":"D-Cannon",	"pts":75},
+		{"id":30, "name":"Titan Exarch", 	"pts":50},
+		{"id":31, "name":"Bonesinger", 		"pts":50},
+		{"id":32, "name":"Spiritstones", 	"pts":50},
 		
-		{"id":39, "name":"Titan Exarch", 	"pts":50},
-		{"id":40, "name":"Titan Autarch", 	"pts":75},
-		{"id":80, "name":"Webway",	"pts":75},
-
-		{"id":81, "name":"Revenant Titan", "pts":325},
-
-		{"id":90, "name":"D-Cannon Platform", "pts":0},
-		{"id":91, "name":"Shadow Weaver Platform", "pts":0},
-		{"id":92, "name":"Vibro Cannon Platform", "pts":0},
+		{"id":40, "name":"Nightwing Interceptor", 	"pts":75},
+		{"id":41, "name":"Phoenix Bomber", 	"pts":100},
+		{"id":42, "name":"Wraithship", 	"pts":150},
+		{"id":43, "name":"Dragonship", 	"pts":300},
 		
-		{"id":95, "name":"Fire Gale", "pts":0},
-		{"id":96, "name":"Towering Destroyer", "pts":0},
-		{"id":97, "name":"Bright Stallion", "pts":25}
+		{"id":50, "name":"Wasp Walker", 	"pts":75}
+		
 	],
 	"formationConstraints":[
-		{"max":2, "name":"Allies", "from":[520,521,522,524,525,526,527,528,530], "forEach":[510,512,513], "name2":"Warhost"},
-		{"max":1, "from":[500]},
-		{"max":1, "name":"Spacecraft", "from":[527,528]}		
+		{"max":2, "name":"CRAFTWORLD TROUPES", "from":[512,513,514,515], "forEach":[510,511], "name2":"WARHOSTS"},
+		{"max":1, "from":[510]},
+		{"maxPercent":33, "name":"SUPPORT UNITS", "from":[520,521,522,523]},
+		{"max":1, "name":"Spacecraft", "from":[523]}		
 	],
 	"upgradeConstraints":[
-		{"min":2, "max":2, "from":[70,72,71,73,74,75], "appliesTo":[510]},
-		{"min":2, "max":2, "from":[70,71,73,74,75], "appliesTo":[512]},
-		{"max":1, "perArmy":true, "from":[76]},
-		{"max":1, "perArmy":true, "from":[40]},
-		{"max":1, "from":[39]},
-		{"max":1, "from":[80]},
-		{"min":1, "max":2, "from":[81], "appliesTo":[513]},
+		{"min":2, "max":2, "from":[10,11,12,13,14,15,16,17], "appliesTo":[510]},
+		{"max":1, "from":[12], "appliesTo":[510]},
+		{"min":2, "max":2, "from":[10,11,13,14,15,16,17], "appliesTo":[511]},
+		{"max":1, "from":[13], "appliesTo":[510,511]},
+		{"max":1, "perArmy":true, "from":[31]},
+		{"max":1, "from":[30,31], "appliesTo":[510,511]},
+
+		{"min":2, "max":2, "from":[20,21], "appliesTo":[512]},
+		{"min":1, "max":1, "from":[20,21], "appliesTo":[513]},
 		
-		{"min":5, "max":5, "from":[90,91,92], "appliesTo":[520]},
-		{"min":6, "max":8, "from":[11], "appliesTo":[522]},
-		{"min":6, "max":6, "from":[27,28], "appliesTo":[523]},
-		{"min":3, "max":3, "from":[95,96,97], "appliesTo":[530]}		
+		{"min":3, "max":3, "from":[25,26,27,28], "appliesTo":[514]},
+		
+		{"min":4, "max":6, "from":[50], "appliesTo":[515]},
+		
+		{"max":1, "from":[32], "appliesTo":[512]},
+	
+		{"min":2, "max":3, "from":[40], "appliesTo":[520]},
+		{"min":2, "max":3, "from":[41], "appliesTo":[521]},
+		{"min":1, "max":1, "from":[42,43], "appliesTo":[523]}
+
 	]
 }
