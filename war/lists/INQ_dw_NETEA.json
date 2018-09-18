@@ -7,7 +7,7 @@
    "Land Raider Crusader may carry 3 Infantry or 2 Terminators."],
    "sections": [
         	{"name": "DEATH WATCH DETACHMENTS", "formations": [
-            	{"id": 500, "name": "Watch Company", 			"pts": 50, "upgrades": [1,2,3,4,5,8,15,16,23,24,25,33,34,35] },
+            	{"id": 500, "name": "Watch Company", 			"pts": 50, "upgrades": [1,2,3,4,5,15,16,23,24,25,33,34,35] },
 	    	{"id": 503, "name": "Strike Team - Land Speeders", 	"pts": 200, "units": "", "upgrades": [2,3,4] }
 	  	]},
 	   
