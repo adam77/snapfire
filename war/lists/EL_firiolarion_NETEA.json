@@ -1,28 +1,27 @@
 {
 	"id":"FIR IOLARION ELDAR TITAN CLAN",
-	"version":"4.2.4",
+	"version":"4.2.6",
 	"by":"Mrdiealot",
 	"notes":["This list is marked as 'Experimental'"],
 	"sections":[
 		{"name":"Gate", "formations":[
 			{"id":500, "name":"Wraithgate",	"pts":50,		"upgrades":[]}
 		]},
-		{"name":"ELDAR TITAN WARHOSTS", "formations":[
+		{"name":"Battle Titan Formations", "formations":[
 			{"id":510, "name":"Warlock Titan", "units":"1 Warlock Titan", "pts":825, "upgrades":[31]},
 			{"id":511, "name":"Phantom Titan", "units":"1 Phantom Titan", "pts":750, "upgrades":[31,30]}
 
 		]},	
-		{"name":"CRAFTWORLD TROUPES", "formations":[
-			{"id":512, "name":"Revenant Titan Twins" , "units":"2 Revenant Titans", "pts":650, "upgrades":[32]},
-			{"id":513, "name":"Revenant Titan Single" , "units":"1 Revenant Titan", "pts":350, "upgrades":[]},
-			{"id":514, "name":"Wraithknight Troupe" , "units":"Three Wraithknights", "pts":350, "upgrades":[]},
-			{"id":515, "name":"Wasp Walker Troupe" , "pts":-100, "upgrades":[50]}
-
+		{"name":"Scout Titan Formations / / Max 1 for each Battle Titan Formation", "formations":[
+			{"id":512, "name":"Revenant Titan Twins" , "units":"2 Revenant Titans", "pts":650, "upgrades":[]},
+			{"id":513, "name":"Revenant Titan Single" , "units":"1 Revenant Titan", "pts":350, "upgrades":[]}
 		]},
 		
-		{"name":"SUPPORT UNITS", "formations":[
-			{"id":520, "name":"Nightwing Interceptors" , "pts":75, "upgrades":[40]},
-			{"id":521, "name":"Phoenix Bombers", "pts":25, "upgrades":[41]},
+		{"name":"SUPPORT UNITS / / Max 33%", "formations":[
+			{"id":514, "name":"Wraithknight Troupe" , "units":"Three Wraithknights", "pts":350, "upgrades":[]},
+			{"id":515, "name":"Wraithlord Troupe" , "pts":-150, "upgrades":[50]},
+			{"id":520, "name":"Nightwing Interceptors" , "pts":300, "units":"Three Nightwing Interceptors", "upgrades":[]},
+			{"id":521, "name":"Phoenix Bombers", "pts":325, "units":"Three Phoenix Bombers", "upgrades":[]},
 			{"id":522, "name":"Lagganath Vampire Hunter", "units":"One Lagganath Vampire Hunter", "pts":300, "upgrades":[]},
 			{"id":523, "name":"Spacecraft", "pts":0, "upgrades":[42,43]}
 
@@ -36,32 +35,32 @@
 		{"id":14, "name":"Tremor Cannon",	"pts":25},
 		{"id":15, "name":"Titan D-Cannon",	"pts":0},
 		{"id":16, "name":"Titan Bright Lance",	"pts":0},
-		{"id":17, "name":"Starcannon",	"pts":0},
+		{"id":17, "name":"Titan Suncannon",	"pts":0},
 		
 		{"id":20, "name":"Sonic Lance Pair",	"pts":0},
 		{"id":21, "name":"Revenant Pulse Laser Pair",	"pts":0},
+		{"id":22, "name":"Suncannon Pair",	"pts":0},
 		
-		{"id":25, "name":"2 x Heavy Wraithcannon",	"pts":0},
-		{"id":26, "name":"Heavy Wraithcannon and Ghostglaive",	"pts":0},
-		{"id":27, "name":"Heavy Wraithcannon and Scattershield",	"pts":0},
-		{"id":28, "name":"Ghostglaive and Scattershield",	"pts":0},
+		{"id":25, "name":"3 x 2 Heavy Wraithcannons",	"pts":0},
+		{"id":26, "name":"3 x Suncannon",	"pts":0},
+		{"id":28, "name":"3 x Ghostglaive and Scattershield",	"pts":0},
 		
 		{"id":30, "name":"Titan Exarch", 	"pts":50},
 		{"id":31, "name":"Bonesinger", 		"pts":50},
-		{"id":32, "name":"Spiritstones", 	"pts":50},
-		
-		{"id":40, "name":"Nightwing Interceptor", 	"pts":75},
-		{"id":41, "name":"Phoenix Bomber", 	"pts":100},
+
 		{"id":42, "name":"Wraithship", 	"pts":150},
 		{"id":43, "name":"Dragonship", 	"pts":300},
-		
-		{"id":50, "name":"Wasp Walker", 	"pts":75}
+	
+		{"id":50, "name":"Wraithlord Harrier", 	"pts":100},
+		{"id":51, "name":"Wraithlord Harbringer", 	"pts":100},
+		{"id":52, "name":"Wraithseer", 	"pts":150}
 		
 	],
 	"formationConstraints":[
-		{"max":2, "name":"CRAFTWORLD TROUPES", "from":[512,513,514,515], "forEach":[510,511], "name2":"WARHOSTS"},
+		{"max":1, "name":"Scout Titan Formations", "from":[512,513], "forEach":[510,511], "name2":"Battle Titan Formations"},
 		{"max":1, "from":[510]},
-		{"maxPercent":33, "name":"SUPPORT UNITS", "from":[520,521,522,523]},
+		{"max":1, "from":[513]},
+		{"maxPercent":34, "name":"SUPPORT UNITS", "from":[514,515,520,521,522,523]},
 		{"max":1, "name":"Spacecraft", "from":[523]}		
 	],
 	"upgradeConstraints":[
@@ -72,17 +71,16 @@
 		{"max":1, "perArmy":true, "from":[31]},
 		{"max":1, "from":[30,31], "appliesTo":[510,511]},
 
-		{"min":2, "max":2, "from":[20,21], "appliesTo":[512]},
-		{"min":1, "max":1, "from":[20,21], "appliesTo":[513]},
+		{"min":2, "max":2, "from":[20,21,22], "appliesTo":[512]},
+		{"min":1, "max":1, "from":[20,21,22], "appliesTo":[513]},
 		
-		{"min":3, "max":3, "from":[25,26,27,28], "appliesTo":[514]},
+		{"min":1, "max":1, "from":[25,26,28], "appliesTo":[514]},
 		
-		{"min":4, "max":6, "from":[50], "appliesTo":[515]},
+		{"min":4, "max":5, "from":[50,51,52], "appliesTo":[515]},
+		{"max":1, "from":[52], "appliesTo":[515]},
 		
 		{"max":1, "from":[32], "appliesTo":[512]},
 	
-		{"min":2, "max":3, "from":[40], "appliesTo":[520]},
-		{"min":2, "max":3, "from":[41], "appliesTo":[521]},
 		{"min":1, "max":1, "from":[42,43], "appliesTo":[523]}
 
 	]
