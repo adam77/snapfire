@@ -1,0 +1,126 @@
+{
+	"id":"Questoris Mechanicus",
+	"version":"v1.53 <a href=\"http://www.taccmd.tacticalwargames.net/viewtopic.php?f=22&t=33209\">TCMD forum</a>",
+	"by":"MrDieAlot",
+	"notes":[],
+	"sections":[
+		{"name":"Questoris Lances", "formations":[
+			{"id":500, "name":"Questoris", 		"pts":75, "upgrades":[100,101,102,103,104,105,140,141,142,143,144,149,145,146,150,151,152,153,154,159,155,156]}
+		]},
+		{"name":"Cerastus Lances / / Max 1 Cerastus Lance per Questoris Lance", "formations":[
+			{"id":501, "name":"Cerastus",	"pts":300,  "upgrades":[113,114,115,116]}
+	    ]},
+		{"name":"Arminger Lances / / Max 1 Arminger Lance per Questoris or Cerastus Lance", "formations":[
+			{"id":502, "name":"Arminger",			"pts":150, "upgrades":[]}
+		]},
+		{"name":"Relic Lances / / Max 1 of each Relic Lance per Army", "formations":[
+			{"id":503, "name":"Questoris Reliquae",	"pts":50,  "upgrades":[160,161,165,166,163,164]},
+			{"id":504, "name":"Acastus Reliquae",	"pts":50,  "upgrades":[]}
+		]},
+		{"name":"Allies / / Max 1 per Questoris Lance / / Max 33%", "formations":[
+			{"id":510, "name":"Skitarii",		"pts":325,  "upgrades":[], "units":"2 Secutors, 8 Hypaspists, 1 Ordinatus Minorus-Corvus"},
+
+			{"id":512, "name":"Dune Crawlers",		"pts":200,  "upgrades":[]},
+			
+            {"id":514, "name":"Thunderbolt Squadron",				"pts":175,  "upgrades":[], "units":"2 Thunderbolts"},
+            {"id":515, "name":"Maruder Squadron",				"pts":225,  "upgrades":[], "units":"2 Maruder Bombers"},
+			
+			{"id":520, "name":"Warhound Scout Titan Pack",	"pts":500, "upgrades":[], "units":"2 Warhound Titans"},
+			{"id":521, "name":"Legio Metalica Reaver Titan",			"pts":600, "upgrades":[], "units":"1 Legio Metalica Reaver Titan"},
+			{"id":522, "name":"Legio Metalica Warlord Titan", 		"pts":775, "upgrades":[],"units":"1 Legio Metalica Warlord"}
+			
+		]}
+	],	
+	
+	"upgrades":[
+	
+		{"id":100, "name":"Knight-Paladin (Questoris Battle Cannon, 2 Hvy Stubbers, Questoris Shock Lance, Reaper Chainsword)",								"pts":75},
+		{"id":101, "name":"Knight-Errant (Thermal Cannon, Hvy Stubber, Thunderstrike Gauntlet)",															"pts":75},
+		{"id":102, "name":"Knight-Crusader (Questoris Battle Cannon, Gatling Cannon, 2 Hvy Stubbers, Icarus Autocannon)",									"pts":75},
+		{"id":103, "name":"Knight-Gallant (Icarus Autocannon, Hvy Stubber, Questoris Shock Lance, Thunderstrike Gauntlet, Reaper Chainsword)",				"pts":75},
+		{"id":104, "name":"Knight-Warden (Gatling Cannon, Ironstorm Missiles, Hvy Stubber, Reaper Chainsword)",												"pts":75},	
+		{"id":105, "name":"Knight-Preceptor (Las-Impulsor, Hvy Stubber, Thunderstrike Gauntlet)",															"pts":75},	
+				
+		{"id":110, "name":"Cerastus Knight-Lancer (Cerastus Shock Lance, Ion Gauntlet Shield)",																"pts":0},
+		{"id":111, "name":"Cerastus Knight-Castigator (Castigator Cannon, Tempest Warblade)",																"pts":0},
+		{"id":112, "name":"Cerastus Knight-Acheron (Flame Cannon, Reaper Chainfist)",																		"pts":0},
+		{"id":113, "name":"Cerastus Knight-Lancer w. Seneschal (Cerastrus Shock Lance, Ion Gauntlet Shield)",												"pts":25},
+		{"id":114, "name":"Cerastus Knight-Castigator w. Seneschal (Castigator Cannon, Tempest Warblade)",													"pts":25},
+		{"id":115, "name":"Cerastus Knight-Acheron w. Seneschal (Flame Cannon, Reaper Chainfist)",															"pts":25},
+		{"id":116, "name":"Cerastus Knight-Atrapos w. Seneschal (Atrapos Lascutter, Graviton Singularity Cannon, Ionic Shield)",							"pts":75},
+
+		{"id":120, "name":"4 Knight-Warglaive (Thermal Spear, Reaper Chain-Cleaver)",			 															"pts":0},	
+		{"id":121, "name":"4 Knight-Helverin (2 Autocannons)",																								"pts":0},
+		
+		{"id":140, "name":"Knight-Paladin w. Seneschal (Questoris Battle Cannon, 2 Hvy Stubbers, Questoris Shock Lance, Reaper Chainsword)",				"pts":100},
+		{"id":141, "name":"Knight-Errant w. Seneschal (Thermal Cannon, Hvy Stubber, Thunderstrike Gauntlet)",												"pts":100},
+		{"id":142, "name":"Knight-Crusader w. Seneschal (Questoris Battle Cannon, Gatling Cannon, 2 Hvy Stubbers, Icarus Autocannon)",						"pts":100},
+		{"id":143, "name":"Knight-Gallant w. Seneschal (Icarus Autocannon, Hvy Stubber, Questoris Shock Lance, Thunderstrike Gauntlet, Reaper Chainsword)","pts":100},
+		{"id":144, "name":"Knight-Warden w. Seneschal (Gatling Cannon, Ironstorm Missiles, Hvy Stubber, Reaper Chainsword)",								"pts":100},		
+		{"id":145, "name":"Knight-Valiant w. Seneschal (Conflagration C., Thundercoil H., Siegebreaker C., 4 Shieldbreaker M., Melta Guns, Ion A.)",		"pts":150},
+		{"id":146, "name":"Knight-Castellan w. Seneschal (Vulcano Lance, Plasma Decimator, 2 Siegebreaker C., 2 Shieldbreaker M., Melta Guns)",				"pts":150},	
+		{"id":149, "name":"Knight-Preceptor w Seneschal (Las-Impulsor, Hvy Stubber, Thunderstrike Gauntlet)",												"pts":100},
+
+		{"id":150, "name":"Knight-Paladin w. Baron (Questoris Battle Cannon, 2 Hvy Stubbers, Questoris Shock Lance, Reaper Chainsword)",					"pts":150},
+		{"id":151, "name":"Knight-Errant w. Baron (Thermal Cannon, Hvy Stubber, Thunderstrike Gauntlet)",													"pts":150},
+		{"id":152, "name":"Knight-Crusader w. Baron (Questoris Battle Cannon, Gatling Cannon, 2 Hvy Stubbers, Icarus Autocannon)", 							"pts":150},
+		{"id":153, "name":"Knight-Gallant w. Baron (Icarus Autocannon, Hvy Stubber, Questoris Shock Lance, Thunderstrike Gauntlet, Reaper Chainsword)",	"pts":150},
+		{"id":154, "name":"Knight-Warden w. Baron (Gatling Cannon, Ironstorm Missiles, Hvy Stubber, Reaper Chainsword)",									"pts":150},	
+		{"id":155, "name":"Knight-Valiant w. Baron (Conflagration C., Thundercoil H., Siegebreaker C., 4 Shieldbreaker M., Melta Guns, Ion A.)",			"pts":200},
+		{"id":156, "name":"Knight-Castellan w. Baron  (Vulcano Lance, Plasma Decimator, 2 Siegebreaker C., 2 Shieldbreaker M., Melta Guns)",				"pts":200},
+		{"id":159, "name":"Knight-Preceptor w Baron (Las-Impulsor, Hvy Stubber, Thunderstrike Gauntlet)",													"pts":150},
+		
+		{"id":160, "name":"Questoris Relic Knight-Styrix (Volkite Chieroville, Rad Cleanser, Siege Claw)",													"pts":100},
+		{"id":161, "name":"Questoris Relic Knight-Magaera (Lightning C, Rad Cleanser, Siege Claw, Ionic Shield)",											"pts":100},
+		{"id":163, "name":"Acastus Knight-Mechanicum w. Seneschal (2 Acastus Conversion Beamers, Rad Cleanser, Ionic Shield)",								"pts":175},
+		{"id":164, "name":"Acastus Knight-Porphyrion w. Seneschal (2 Magna Lascannons, 2 Autocannons, Helios Defense Missiles)",							"pts":175},
+		{"id":165, "name":"Questoris Relic Knight-Styrix w. Seneschal (Volkite Chieroville, Rad Cleanser, Siege Claw)",										"pts":125},
+		{"id":166, "name":"Questoris Relic Knight-Magaera w. Seneschal (Lightning C, Rad Cleanser, Siege Claw, Ionic Shield)",								"pts":125},
+		
+		{"id":170, "name":"Onager Dune Crawler with Eradication Beamer",			 																		"pts":0},	
+		{"id":171, "name":"Onager Dune Crawler with Icarus Array",																							"pts":0}
+		
+    ],
+	"formationConstraints":[
+		{"max":1, "name":"", "from":[501], "forEach":[500], "name2":"Questoris Lance"},
+		{"max":1, "name":"", "from":[502], "forEach":[500,501], "name2":"Questoris or Cerastus Lance"},
+		{"max":1, "name":"", "from":[510,512,513,514,515,520,521,522,530], "forEach":[500], "name2":"Questoris Lance"},
+		{"maxPercent":34, "name":"Mechanicus Allies", "from":[510,512,513,514,515,520,521,522,530]},
+		{"max":1, "perArmy":true, "from":[503]},
+		{"max":1, "perArmy":true, "from":[504]},
+		{"max":1, "perArmy":true, "from":[530]}
+		
+	],
+	"upgradeConstraints":[
+		{"min":0, "max":1, "from":[140,141,142,143,144,149,145,146,150,151,152,153,154,159,155,156], "appliesTo":[500]},
+
+		{"min":3, "max":5, "from":[100,101,102,103,104,105,140,141,142,143,144,149,145,146,150,151,152,153,154,159,155,156], "appliesTo":[500]},		
+		
+		{"max":1, "perArmy":true, "from":[150,151,152,153,154,155,156,157,158,159]},
+		
+	
+		{"min":2, "max":2, "from":[110,111,112], "appliesTo":[501]},
+		
+		{"min":1, "max":1, "from":[113,114,115,116], "appliesTo":[501]},
+
+		{"min":0, "max":1, "from":[113,114,115,116], "appliesTo":[501]},
+		
+		{"max":1, "perArmy":true, "from":[116]},
+		
+		
+		{"min":1, "max":1, "from":[120,121], "appliesTo":[502]},
+		
+	
+		{"min":2, "max":4, "from":[160,161,165,166,163,164], "appliesTo":[503]},	
+		
+		{"min":0, "max":1, "from":[165,166,163,164], "appliesTo":[503]},
+		
+
+		{"min":4, "max":4, "from":[170,171], "appliesTo":[512]},
+		
+		
+		{"min":2, "max":2, "from":[164,163], "appliesTo":[504]}
+	
+				
+	]
+}
