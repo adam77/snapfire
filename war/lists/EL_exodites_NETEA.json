@@ -1,0 +1,89 @@
+{
+	"id":"Eldar Exodites",
+	"version":"Experimental",
+	"by":"",
+	"sections":[
+		{"name":"Eldar Exodite Indivuals", "formations":[
+			{"id":511, "name":"Webway Portal",	"pts":0,	"upgrades":[32]}
+		]},
+		{"name":"Eldar Exodite Warhosts", "formations":[
+			{"id":521, "name":"Dragon Rider Warhost","pts":300, "upgrades":[10,11]},
+			{"id":522, "name":"Creature Tamer Warhost","pts":300, "upgrades":[11]}
+		]},
+
+		{"name":"Eldar Exodite troupes", "formations":[
+			{"id":531, "name":"Raptor Rider Troupe","pts":200, "upgrades":[]},
+			{"id":532, "name":"Megadons Troupe","pts":200, "upgrades":[]},
+			{"id":533, "name":"Ranger","pts":0, "upgrades":[21]},
+			{"id":534, "name":"Megadon Guard Troupe","pts":200, "upgrades":[]},
+			{"id":535, "name":"War Walker","pts":50, "upgrades":[24]},
+			{"id":536, "name":"Sacred Megadon Troupe","pts":0, "upgrades":[25,26]},
+			{"id":537, "name":"Exodite Warriors","pts":250, "upgrades":[30]}
+		]},
+
+		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
+			{"id":540, "name":"Nightwings",			"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
+			{"id":541, "name":"Phoenix Bombers",		"pts":325, "units":"3 Phoenix Bombers", "upgrades":[]},
+			{"id":542, "name":"Giant Carnosaur",		"pts":350, "units":"Giant Carnosaur", "upgrades":[]},
+			{"id":543, "name":"Giant Megadon",		"pts":600, "units":"Giant Megadon", "upgrades":[]},
+			{"id":544, "name":"Eldar Knights",		"pts":300, "upgrades":[]},
+			{"id":545, "name":"Wraithship",			"pts":150, "units":"Wraithship", "upgrades":[]},
+			{"id":546, "name":"Dragonship",			"pts":300, "units":"Dragonship", "upgrades":[]}
+
+		]}
+	],
+	"upgrades":[
+		{"id":10, "name":"Exodite Lord ",				"pts":100},
+		{"id":11, "name":"Exodite Noble",				"pts":25},
+		{"id":12, "name":"Dragon Riders",				"pts":0},
+		{"id":13, "name":"Pteradon Riders",				"pts":0},
+		{"id":14, "name":"Desert Tamers",				"pts":0},
+		{"id":15, "name":"Raptor Riders",				"pts":0},
+		{"id":16, "name":"Wraithskulls",				"pts":0},
+		{"id":17, "name":"Venom",					"pts":25},
+		{"id":18, "name":"Falcon",					"pts":50},
+		{"id":19, "name":"Megadons",					"pts":0},
+		{"id":20, "name":"Skywatcher Megadons",				"pts":0},
+		{"id":21, "name":"Ranger",					"pts":25},
+		{"id":22, "name":"Megadons with Scatter Laser",			"pts":50},
+		{"id":23, "name":"Megadon with D-Cannon",			"pts":50},
+		{"id":24, "name":"War Walkers",					"pts":25},
+		{"id":25, "name":"Maiden Sword Megadons",			"pts":200},
+		{"id":26, "name":"Maiden Spirit Megadons",			"pts":200},
+		{"id":27, "name":"Exodite Warrior",				"pts":0},
+		{"id":28, "name":"Farseer",					"pts":0},
+		{"id":29, "name":"Megadon Mounted Heavy Weapons",		"pts":0},
+		{"id":30, "name":"3 Additional Megadon Mounted Heavy Weapons",	"pts":50},
+		{"id":32, "name":"Webway Portal",				"pts":50},
+		{"id":33, "name":"Jungle Tamers",				"pts":0},
+		{"id":34, "name":"Megadon with Heavy Weapon",			"pts":0},
+		{"id":35, "name":"Fire Gales",					"pts":0},
+		{"id":36, "name":"Towering Destroyers",				"pts":0},
+		{"id":37, "name":"Bright Stallions",				"pts":25}
+
+	],
+	"formationConstraints":[
+		{"max":2, "name":"Exodite troupes", "from":[531,532,533,534,535,536,537], "forEach":[521,522], "name2":"Exodite Warhosts"},
+		{"maxPercent":33, "name":"Aircraft & Titans", "from":[540,541,542,543,544,545]},		
+		{"max":1, "name":"Spacecraft", "from":[545,546]},
+	  	{"max": 1, "perArmy": true, "from": [511]}
+
+	],
+	"upgradeConstraints":[
+	  	{"max": 1, "perArmy": true, "from": [10]},
+	  	{"max": 2, "from": [20]},
+	  	{"max": 1, "from": [10,11]},
+	  	{"min":8, "max":8, "from": [12,13], "appliesTo": [521]},
+	  	{"min":8, "max":8, "from": [14,33], "appliesTo": [522]},
+	  	{"min":6, "max":6, "from": [15,16], "appliesTo": [531]},
+	  	{"min":5, "max":5, "from": [19,20], "appliesTo": [532]},
+	  	{"min":4, "max":6, "from": [21], "appliesTo": [533]},
+	  	{"min":3, "max":3, "from": [34], "appliesTo": [534]},
+	  	{"min":4, "max":6, "from": [24], "appliesTo": [535]},
+	  	{"min":1, "max":3, "from": [25,26], "appliesTo": [536]},
+	  	{"min":1, "max":1, "from": [28], "appliesTo": [537]},
+	  	{"min":5, "max":5, "from": [27,22,23], "appliesTo": [537]},
+	  	{"min":3, "max":3, "from": [35,36,37], "appliesTo": [544]},
+	  	{"min":1, "max":2, "from": [32], "appliesTo": [511]}
+	]
+}
