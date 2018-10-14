@@ -1,0 +1,98 @@
+{
+	"id":"Eldar Corsairs",
+	"version":"Experimental",
+	"by":"Kyussinchains",
+	"sections":[
+		{"name":"Eldar Corsair Core Formations", "formations":[
+			{"id":511, "name":"Corsair Warband",	"pts":250,	"units":"8 Corsairs",	"upgrades":[14,15,18,19]},
+			{"id":512, "name":"Voidstorm Warband",	"pts":300,	"units":"4 Voidstorms",	"upgrades":[15]}
+		]},	
+		{"name":"Eldar Corsair Support Formations", "formations":[
+			{"id":521, "name":"Ghost Walkers","pts":125, "units":"4 Ghost Walkers", "upgrades":[13]},
+			{"id":522, "name":"Cloud Dancers","pts":225, "units":"6 Cloud Dancers", "upgrades":[16]},
+			{"id":523, "name":"Wasp Squadron","pts":200, "units":"4 Wasp Walkers", "upgrades":[16]},
+			{"id":524, "name":"Hornet Squadron","pts":225, "units":"5 Hornets", "upgrades":[16]},
+			{"id":525, "name":"Balestrike Band","pts":250, "units":"4 Balestrikes", "upgrades":[15]},
+			{"id":526, "name":"Falcon Formation","pts":25, "upgrades":[16]}
+
+		]},
+
+		{"name":"Eldar Corsair Elite Formations", "formations":[
+			{"id":531, "name":"Lynx Squadron","pts":300, "units":"2 Lynx Heavy Grav Tanks", "upgrades":[16,17]},
+			{"id":532, "name":"0-1 Harlequin Troop","pts":450, "units":"5 Players", "upgrades":[36,37]},
+			{"id":533, "name":"0-1 Kabal Syndicate","pts":250, "units":"Dracon", "upgrades":[]}
+
+		]},
+
+		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
+			{"id":540, "name":"Nightwings",			"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
+			{"id":541, "name":"Void Dragon Phoenix Bombers","pts":325, "units":"3 Phoenix Bombers", "upgrades":[]},
+			{"id":542, "name":"Vampire Raider",		"pts":200, "upgrades":[]},
+			{"id":543, "name":"Vampire Hunter",		"pts":200, "upgrades":[]},
+			{"id":544, "name":"Eclipse Cruiser",		"pts":150, "units":"Eclipse Cruiser", "upgrades":[]},
+			{"id":545, "name":"Void Dragon Battleship",	"pts":300, "units":"Void Dragon Battleship", "upgrades":[]}
+		]}
+	],
+	"upgrades":[
+		{"id":10, "name":"Corsair Prince",		"pts":100},
+		{"id":11, "name":"Felarch",			"pts":0},
+		{"id":12, "name":"Void Dreamer",		"pts":50},
+		{"id":13, "name":"Sniper Ability",		"pts":50},
+		{"id":14, "name":"Shimmershield",		"pts":50},
+		{"id":15, "name":"Corsair Jumpacks",		"pts":50},
+		{"id":16, "name":"Spirit Stones",		"pts":25},
+		{"id":17, "name":"Kinetic Shroud",		"pts":50},
+		{"id":18, "name":"Venom",			"pts":25},
+		{"id":19, "name":"Falcon",			"pts":50},
+		{"id":20, "name":"6 Dark Eldar Warriors",			"pts":0},
+		{"id":21, "name":"8 Dark Eldar Warriors",			"pts":50},
+		{"id":22, "name":"6 Dark Eldar Warriors and 2 Wyches",		"pts":50},
+		{"id":23, "name":"Firestrorm",					"pts":50},
+		{"id":24, "name":"Warp Hunter",					"pts":50},
+		{"id":25, "name":"3 Raiders",					"pts":0},
+		{"id":26, "name":"2 Raiders, 2 Venoms",				"pts":25},
+		{"id":27, "name":"1 Raider, 4 Venoms",				"pts":50},
+		{"id":28, "name":"6 Venoms",					"pts":75},
+		{"id":29, "name":"4 Raiders",					"pts":0},
+		{"id":30, "name":"3 Raiders, 2 Venoms",				"pts":25},
+		{"id":31, "name":"2 Raider, 4 Venoms",				"pts":50},
+		{"id":32, "name":"1 Raider 6 Venoms",				"pts":75},
+		{"id":33, "name":"8 Venoms",					"pts":100},
+		{"id":34, "name":"Troop Leader",				"pts":0},
+		{"id":35, "name":"Shadowseer",					"pts":50},
+		{"id":36, "name":"Death Jester",				"pts":50},
+		{"id":37, "name":"Solitaire",					"pts":125}
+
+	],
+	"formationConstraints":[
+		{"max":2, "name":"Support", "from":[521,522,523,524,525,526], "forEach":[511,512], "name2":"Core"},
+		{"max":1, "name":"Elite", "from":[531,532,533], "forEach":[511,512], "name2":"Core"},
+		{"max":1, "from":[532]},
+		{"max":1, "from":[533]},
+		{"maxPercent":33, "name":"Aircraft & Titans", "from":[540,541,542,543,544,545]},		
+		{"max":1, "name":"Spacecraft", "from":[544,545]}	
+
+
+
+	
+	],
+	"upgradeConstraints":[
+	  	{"max": 1, "perArmy": true, "from": [10]},
+	  	{"max": 1, "perArmy": true, "from": [532]},
+	  	{"max": 1, "perArmy": true, "from": [533]},
+	  	{"max": 1, "from": [13]},
+		{"max": 1, "from": [14]},
+		{"max": 2, "from": [36]},
+		{"max": 1, "from": [37]},
+		{"max": 1, "from": [15]},
+		{"max": 1, "from": [16]},
+		{"max": 1, "from": [17]},
+	  	{"min":1, "max":1, "from": [34,35], "appliesTo": [532]},
+	  	{"min":1, "max":1, "from": [20,21,22], "appliesTo": [533]},
+	  	{"min":1, "max":1, "from": [25,26,27,28,29,30,31,32,33], "appliesTo": [533]},
+	  	{"min":4, "max":4, "from": [19,23,24], "appliesTo": [526]},
+	  	{"max":1, "from": [23,24], "appliesTo": [526]},
+	  	{"min":1, "max":1, "from": [11,10,12], "appliesTo": [511,512,525]},
+	  	{"min":1, "max":1, "from": [11], "appliesTo": [522]}
+	]
+}
