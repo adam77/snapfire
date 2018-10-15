@@ -1,0 +1,774 @@
+{
+  "id": "Hive Fleet Dagon",
+  "version": "4.5 <a href=\"http://www.taccmd.tacticalwargames.net/viewtopic.php?f=21&t=32946\">TCMD forum</a>",
+  "by": "Argol & MrDieAlot",
+  "sections": [
+    {
+      "name": "Primary Nexus Swarms",
+      "formations": [
+        {
+          "id": 501,
+          "name": "Hive Nexus Swarm (3-5 Instinctive Swarms)",
+          "pts": 400,
+		  "units": "Dagon Dominatrix",
+          "upgrades": [
+			101,
+			102,
+			103,
+			104,
+			105,
+			107,
+			108,
+			109,
+			110,
+			111,
+			112,
+			113,
+			114,
+			115,
+			116,
+			117,
+			118
+
+          ]
+        },
+        {
+          "id": 502,
+          "name": "Major Swarm (3-5 Instinctive Swarms)",
+          "pts": 150,
+          "upgrades": [
+		  	101,
+			102,
+			103,
+			104,
+			105,
+			107,
+			108,
+			109,
+			110,
+			111,
+			112,
+			113,
+			114,
+			115,
+			116,
+			117,
+			118,
+			120
+
+          ]
+        },
+        {
+          "id": 503,
+          "name": "Minor Swarm (2-4 Instinctive Swarms)",
+          "pts": 100,
+          "upgrades": [
+			101,
+			102,
+			103,
+			104,
+			105,
+			107,
+			108,
+			109,
+			110,
+			113,
+			114,
+			115,
+			116,
+			117,
+			118,
+			120
+          ]
+        }      
+      ]
+    },
+	{
+      "name": "Secondary Nexus Swarms (One Secondary Nexus Swarm may be taken for each Primary Nexus Swarm)",
+      "formations": [
+	    {
+          "id": 509,
+          "name": "Attack Swarm (1-2 Instinctive Swarms)",
+          "pts": 0,
+          "upgrades": [
+			101,
+			102,
+			103,
+			104,
+			105,
+			110,
+			111,
+			112,
+			113,
+			114,
+			115,
+			116
+		  
+          ]
+		},
+          {
+          "id": 504,
+          "name": "Infestation Swarm (1-2 Instinctive Swarms)",
+          "pts": 0,
+           "upgrades": [
+            101,
+			102,
+			103,
+			104,
+			105,
+            117,
+			118
+          ]
+        },
+        {
+          "id": 505,
+          "name": "Harasser Swarm (1-2 Instinctive Swarms)",
+          "pts": 0,
+          "upgrades": [
+            109,
+			107,
+            130
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Common Independent Swarms (One Common Independent Swarm may be taken for each Primary Nexus Swarm. // Max 33% of the list may be taken from this section)",
+      "formations": [
+        {
+          "id": 506,
+          "name": "Genestealer Swarm",
+          "pts": 0,
+          "upgrades": [
+            140,
+            141
+          ]
+    },
+    {
+          "id": 507,
+          "name": "Lictor Swarm",
+          "pts": 100,
+          "upgrades": [
+            142
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Rare Independent Swarms (One Rare Independent Swarm may be taken for each Primary Nexus Swarm. // Max 33% of the list may be taken from this section)",
+      "formations": [
+    {
+          "id": 510,
+          "name": "Bio-Titan",
+          "pts": 0,
+          "upgrades": [
+          ]
+    },
+    {
+          "id": 511,
+          "name": "Bio-Vessel",
+          "pts": 0,
+          "upgrades": [
+          ]
+      }
+      ]
+    }
+  ],
+  "upgrades": [
+    {
+      "id": 101,
+      "name": "Gaunts (4 Termagaunts)",
+      "pts": 50
+    },
+	    {
+      "id": 102,
+      "name": "Gaunts (3 Termagaunts, 1 Hormagaunt)",
+      "pts": 50
+    },
+	    {
+      "id": 103,
+      "name": "Gaunts (2 Termagaunts, 2 Hormagaunts)",
+      "pts": 50
+    },
+	    {
+      "id": 104,
+      "name": "Gaunts (1 Termagaunts, 3 Hormagaunts)",
+      "pts": 50
+    },
+	    {
+      "id": 105,
+      "name": "Gaunts (4 Hormagaunts)",
+      "pts": 50
+    },
+    {
+      "id": 107,
+      "name": "Bio-Bomber (2 Harpies)",
+      "pts": 100
+    },
+    {
+      "id": 108,
+      "name": "Biovores (4 Biovores)",
+      "pts": 75
+    },
+    {
+      "id": 109,
+      "name": "Gargoyles (4 Dagon Gargoyles)",
+      "pts": 50
+    },
+    {
+      "id": 110,
+      "name": "Carnifex (3 Carnifex)",
+      "pts": 100
+    },
+    {
+      "id": 111,
+      "name": "Bio-Support (3 Dagon Dactylis)",
+      "pts": 125
+    },
+    {
+      "id": 112,
+      "name": "Bio-Support (3 Dagon Exocrine)",
+      "pts": 125
+    },
+    {
+      "id": 113,
+      "name": "Bio-Attack (2 Dagon Haruspex)",
+      "pts": 75
+    },
+    {
+      "id": 114,
+      "name": "Bio-Attack (2 Malefactors)",
+      "pts": 75
+    },
+    {
+      "id": 115,
+      "name": "Hierodule (1 Barbed Hierodule)",
+      "pts": 125
+    },
+    {
+      "id": 116,
+      "name": "Hierodule (1 Scythed Hierodule)",
+      "pts": 125
+    },
+    {
+      "id": 117,
+      "name": "Burrower (1 Trygon)",
+      "pts": 50
+    },
+		{
+      "id": 118,
+      "name": "Burrower (3 Dagon Raveners)",
+      "pts": 50
+    },
+    {
+      "id": 120,
+      "name": "Mycetic Spore // May transport Termagaunts, Hormagaunts, Biovores, Carnifex, Raveners, Hive Tyrants, Dagon Overlord, Tyranid Warriors, Zoanthropes // Transported units may not have Wings",
+      "pts": 50
+    },
+    {
+      "id": 130,
+      "name": "Harridan",
+      "pts": 150
+    },
+    {
+      "id": 140,
+      "name": "Genestealers",
+      "pts": 25
+    },
+    {
+      "id": 141,
+      "name": "Broodlord",
+      "pts": 25
+    },
+    {
+      "id": 142,
+      "name": "Dagon Lictors",
+      "pts": 25
+    },
+    {
+      "id": 150,
+      "name": "Harpies",
+      "pts": 50
+    },
+    {
+      "id": 160,
+      "name": "Dagon Hierophant",
+      "pts": 350
+    },
+    {
+      "id": 161,
+      "name": "Hydraphant",
+      "pts": 550
+    },
+    {
+      "id": 170,
+      "name": "Razorfiend (May carry 2 Mycetic Spores including cargo)",
+      "pts": 150
+    },
+    {
+      "id": 171,
+      "name": "Hive Ship (May carry 5 Mycetic Spores including cargo)",
+      "pts": 250
+    },
+    {
+      "id": 201,
+      "name": "Tyranid Warriors",
+      "pts": 0
+    },
+    {
+      "id": 202,
+      "name": "Zoanthrope",
+      "pts": 0
+    },
+    {
+      "id": 203,
+      "name": "Hive Tyrant",
+      "pts": 0
+    },
+    {
+      "id": 204,
+      "name": "Dagon Overlord",
+      "pts": 100
+    },
+	{
+      "id": 205,
+      "name": "Dagon Overlord Shrike (Wings)",
+      "pts": 100
+    },
+	{
+      "id": 209,
+      "name": "Barbed Hierodule",
+      "pts": 0
+    },
+	{
+      "id": 210,
+      "name": "Scythed Hierodule",
+      "pts": 0
+    },
+    {
+      "id": 211,
+      "name": "Tyranid Warrior Shrikes (Wings)",
+      "pts": 0
+    },
+    {
+      "id": 213,
+      "name": "Hive Tyrant Shrike (Wings)",
+      "pts": 0
+    },
+	{
+      "id": 214,
+      "name": "Trygon Prime",
+      "pts": 150
+    },
+	{
+      "id": 215,
+      "name": "3 Ravener Alphas",
+      "pts": 100
+    },
+		{
+      "id": 216,
+      "name": "Barbed Hierodule Prime",
+      "pts": 150
+    },
+		{
+      "id": 217,
+      "name": "Scythed Hierodule Prime",
+      "pts": 150
+    }
+  ],
+  "formationConstraints": [
+    {
+      "max": 1,
+      "from": [
+        501
+      ]
+    },
+    {
+      "max": 1,
+      "from": [
+        511
+      ]
+    },
+    {
+      "maxPercent": 33,
+      "name": "Common Independent Swarms",
+      "from": [
+		506,
+        507
+      ]
+    },
+    {
+      "max": 1,
+      "name": "Secondary Nexus Swarms",
+      "from": [
+        504,
+        505,
+		509
+      ],
+      "forEach": [
+        501,
+        502,
+        503
+      ],
+      "name2": "Primary Nexus Swarm"
+	},
+    {
+      "max": 1,
+      "name": "Common Independent Swarms",
+      "from": [
+        506,
+        507
+      ],
+      "forEach": [
+        501,
+        502,
+        503
+      ],
+      "name2": "Primary Nexus Swarm"
+	},
+	{
+      "maxPercent": 33,
+      "name": "Rare Independent Swarms",
+      "from": [
+        508,
+        510,
+        511,
+		512,
+		513
+      ]
+    },
+    {
+      "max": 1,
+      "name": "Rare Independent Swarms",
+      "from": [
+        508,
+        510,
+        511
+      ],
+      "forEach": [
+        501,
+        502,
+        503
+      ],
+      "name2": "Primary Nexus Swarm"
+    }
+  ],
+  "upgradeConstraints": [
+  
+    {
+      "max": 1,
+      "name": "Mycetic Spore",
+      "from": [
+		120
+      ],
+      "appliesTo": [
+        502,
+		503
+      ]
+    },
+    {
+      "max": 5,
+	  "perArmy": true,
+      "name": "Mycetic Spore",
+      "from": [
+		120
+      ]
+	},
+	{
+      "max": 1,
+      "perArmy": true,
+      "from": [
+        204,
+		205
+      ]
+    },
+	{
+      "max": 1,
+      "perArmy": true,
+      "from": [
+        300,
+        301
+      ]
+    },
+	{
+	  "min": 3,
+      "max": 5,
+      "from": [
+        101,
+        102,
+        103,
+        104,
+        105,
+		107,
+        108,
+        109,
+        110,
+        111,
+        112,
+		113,
+		114,
+		115,
+		116,
+		117,
+		118
+      ],
+      "appliesTo": [
+        501
+      ]
+    },
+    {
+      "max": 1,
+      "min": 1,
+      "from": [
+        203,
+        204,
+		205,
+        213
+      ],
+      "appliesTo": [
+        502
+      ]
+    },
+    {
+      "max": 3,
+      "min": 3,
+      "from": [
+        201,
+        202,
+        211
+      ],
+      "appliesTo": [
+        502
+      ]
+    },
+    {
+      "max": 5,
+      "min": 3,
+      "from": [
+        101,
+        102,
+        103,
+        104,
+        105,
+		107,
+        108,
+        109,
+        110,
+        111,
+        112,
+		113,
+		114,
+		115,
+		116,
+		117,
+		118,
+        120
+      ],
+      "appliesTo": [
+        502
+      ]
+    },
+    {
+      "max": 3,
+      "min": 3,
+      "from": [
+        201,
+        202,
+        211
+      ],
+      "appliesTo": [
+        503
+      ]
+    },
+    {
+      "max": 2,
+      "from": [
+        202
+      ],
+      "appliesTo": [
+        503
+      ]
+    },
+    {
+      "max": 4,
+      "min": 2,
+      "from": [
+        101,
+        102,
+        103,
+        104,
+        105,
+		107,
+        108,
+        109,
+        110,
+		113,
+		114,
+		115,
+		116,
+		117,
+		118,
+        120
+      ],
+      "appliesTo": [
+        503
+      ]
+    },
+	{
+      "max": 1,
+      "min": 1,
+      "from": [
+		216,
+		217
+      ],
+      "appliesTo": [
+        509
+      ]
+    },
+	{
+      "max": 2,
+      "min": 1,
+      "from": [
+        101,
+        102,
+        103,
+        104,
+        105,
+		110,
+		111,
+		112,
+		113,
+		114,
+		115,
+		116
+      ],
+      "appliesTo": [
+        509
+      ]
+    },
+	{
+      "max": 1,
+      "min": 1,
+      "from": [
+        215,
+        214
+      ],
+      "appliesTo": [
+        504
+      ]
+    },
+    {
+      "max": 2,
+      "min": 1,
+      "from": [
+        101,
+        102,
+		103,
+		104,
+		105,
+        117,
+		118
+      ],
+      "appliesTo": [
+        504
+      ]
+    },
+	{
+      "max": 1,
+      "min": 0,
+      "from": [
+        101,
+        102,
+		103,
+		104,
+		105
+      ],
+      "appliesTo": [
+        504
+      ]
+    },
+    {
+      "max": 1,
+      "min": 1,
+      "from": [
+        130
+      ],
+      "appliesTo": [
+        505
+      ]
+    },
+    {
+      "max": 2,
+      "min": 1,
+      "from": [
+        109,
+		107
+      ],
+      "appliesTo": [
+        505
+      ]
+    },
+    {
+      "max": 9,
+      "min": 6,
+      "from": [
+        140
+      ],
+      "appliesTo": [
+        506
+      ]
+    },
+    {
+      "max": 1,
+      "min": 1,
+      "from": [
+        141
+      ],
+      "appliesTo": [
+        506
+      ]
+    },
+    {
+      "max": 7,
+      "min": 5,
+      "from": [
+        142
+      ],
+      "appliesTo": [
+        507
+      ]
+    },
+    {
+      "max": 4,
+      "min": 2,
+      "from": [
+        150
+      ],
+      "appliesTo": [
+        508
+      ]
+    },
+    {
+      "max": 1,
+      "min": 1,
+      "from": [
+        160,
+        161
+      ],
+      "appliesTo": [
+        510
+      ]
+    },
+    {
+      "max": 1,
+      "min": 1,
+      "from": [
+        170,
+        171
+      ],
+      "appliesTo": [
+        511
+      ]
+    }
+  ]
+}

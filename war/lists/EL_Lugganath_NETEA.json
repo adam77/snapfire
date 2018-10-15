@@ -1,0 +1,109 @@
+{
+	"id":"Craftworld Lugganath",
+	"version":"v1.3 <a href=\"http://www.tacticalwargames.net/taccmd/viewtopic.php?f=24&p=628761#p628761\">TCMD forum</a>",
+	"by":"Mrdiealot",
+	"sections":[
+		{"name":"Webway Portal and Avatar of Khaine", "formations":[
+			{"id":500, "name":"Wraithgate",	"pts":50, "units":"1 Wraithgate",		"upgrades":[]},
+			{"id":501, "name":"Avatar",		"pts":0, "units":"1 Avatar of Khaine",		"upgrades":[]}
+		]},
+		
+		{"name":"Lugganath Warhosts (Max one Aspect Warrior Warhost for each Guardian Warhost)", "formations":[
+			{"id":510, "name":"Guardian Warhost",		 			"pts":250,	"units":"5 Guardians, 5 Lugganath Venoms",	"upgrades":[21,22]},
+			{"id":511, "name":"Aspect Warrior Warhost", 			"pts":250, "upgrades":[10,11,12]}
+		]},	
+		
+		{"name":"Lugganath Troupes (Max two Troupes for each Warhost)", "formations":[
+			{"id":520, "name":"Wasp Walkers",			"pts":150, "units":"4 Corsair Wasp Walkers", "upgrades":[]},
+			{"id":521, "name":"Ghost Walkers",			"pts":150, "units":"4 Corsair Ghost Walkers", "upgrades":[]},
+			{"id":522, "name":"Warp Spiders",			"pts":250, 	"units":"6 Warp Spiders", "upgrades":[10,13]},
+			{"id":523, "name":"Lugganath Wraithguard",	"pts":275,	"units":"3 D-Scythe Wraithguard, 3 Wave Serpents", "upgrades":[42]},
+			{"id":524, "name":"Swords of Vaul",			"pts":250, 	"upgrades":[42]},
+			{"id":525, "name":"Engine of Vaul",			"pts":50,	 "upgrades":[50,51]}
+		]},
+		
+			{"name":"Harlequin Saedaths (Max one Harlequin Saedath for every two Warhosts)", "formations":[
+			{"id":532, "name":"Serpent's Blood",			"pts":300, 	"units":"1 Harlequin Avatar, 4 Harlequin Skyweavers, 2 Voidweavers", "upgrades":[]},
+			{"id":530, "name":"Devourer's Thirst",			"pts":300, "units":"1 Master Mime, 6 Mimes", "upgrades":[]},
+			{"id":531, "name":"Cegorath's Revenge",			"pts":400, "units":"1 Harlequin Avatar, 4 Harlequins Troupes, 2 Death Jesters, 6 Harlequin Venoms", "upgrades":[]},
+			{"id":533, "name":"Isha's Tears",				"pts":450, "units":"1 Harlequin Avatar, 1 Shadowseer, 4 Death Jesters, 2 Harlequin Troupes, 6 Harlequin Venoms", "upgrades":[]},
+			{"id":534, "name":"Dance Without End",			"pts":550, "units":"1 Harlequin Avatar, 1 Shadowseer, 1 Solitaire, 2 Death Jesters, 3 Harlequin Troupes, 2 Mimes, 8 Harlequin Venoms", "upgrades":[]}
+		]},
+		
+		{"name":"Fir-Iolarion Titans, Wraithknights and Eldar Navy (Max 33%)", "formations":[
+			{"id":540, "name":"Nightwings",	"pts":225, "units":"2 Nightwing Interceptors", "upgrades":[]},
+			{"id":541, "name":"Phantom Titan",	"pts":775,  "units":"1 Fir-Iolarion Phantom Titan", "upgrades":[]},
+			{"id":542, "name":"Vampire Hunter","pts":225, "units":"1 Vampire Hunter", "upgrades":[]},
+			{"id":543, "name":"Wraithknights","pts":350, "units":"3 Lugganath Wraithknights", "upgrades":[]},
+			{"id":544, "name":"Hemlock Wraithfighters",	"pts":225, "units":"2 Hemlock Wraithfighters", "upgrades":[]},
+			{"id":545, "name":"Wraithship",	"pts":150, "upgrades":[]},
+			{"id":546, "name":"Dragonship",	"pts":300, "upgrades":[]}
+		]}
+	],
+	"upgrades":[
+		{"id":10, "name":"Autarch",					"pts":50},
+		{"id":11, "name":"Dire Avenger Exarch",		"pts":25},
+		{"id":12, "name":"Dark Reaper Exarch",		"pts":25},
+		{"id":13, "name":"Warp Spider Exarch",		"pts":25},
+		
+
+		{"id":21, "name":"1 Farseer",				"pts":25},
+		{"id":22, "name":"Jetbike",					"pts":25},
+		
+
+		{"id":30, "name":"Dire Avenger",			"pts":0},
+		{"id":31, "name":"Dark Reaper",				"pts":0},
+
+		{"id":33, "name":"2 Wave Serpents",			"pts":0},
+		{"id":34, "name":"4 Falcons",				"pts":75},
+
+	
+		{"id":40, "name":"Falcon",					"pts":0},
+		{"id":41, "name":"Warp Hunter",				"pts":0},
+		{"id":42, "name":"Firestorm",				"pts":50},
+		
+
+		{"id":50, "name":"Cobra", 					"pts":200},
+		{"id":51, "name":"Storm Serpent", 			"pts":200}
+	],
+	
+	"formationConstraints":[
+		{"min":1, "max":1, "from":[500]},
+		{"min":1, "max":1, "from":[501]},
+	
+		{"max":1, "name":"Aspect Warrior Warhost", "from":[511], "forEach":[510], "name2":"Guardian Warhost"},
+		{"max":2, "name":"Troupes", "from":[520,521,522,523,524,525], "forEach":[510,511], "name2":"Warhost"},
+		
+		{"max":0.5, "name":"Harlequin Saedaths", "from":[530,531,532,533,534], "forEach":[510,511], "name2":"Warhost"},
+		{"max":1, "from":[530]},
+		{"max":1, "from":[531]},
+		{"max":2, "from":[532]},
+		{"max":1, "from":[533]},
+		{"max":1, "from":[534]},
+		
+		{"maxPercent":34, "name":"Fir-Iolarion Titans, Wraithknights and Eldar Navy", "from":[540,541,542,543,544,545,546]},		
+		{"max":1, "name":"Spacecraft", "from":[545,546]}		
+	],
+	"upgradeConstraints":[
+		{"max":1, "perArmy":true, "from":[10]},	
+		
+		{"max":1, "from":[21], "appliesTo":[510]},
+		{"max":6, "from":[22], "appliesTo":[510]},
+		
+
+		{"min":4, "max":4, "from":[30,31], "appliesTo":[511]},
+		{"min":1, "max":1, "from":[33,34], "appliesTo":[511]},
+		{"max":1, "from":[11,12],  "appliesTo":[511]},
+		
+		{"max":1, "from":[13],  "appliesTo":[522]},
+	
+		{"min":5, "max":5, "from":[40,41], "appliesTo":[524]},
+		{"max":2, "from":[41], "appliesTo":[524]},
+		
+		{"max":1, "from":[42], "appliesTo":[511,523,524]},
+		
+		{"min":1, "max":3, "from":[51,50], "appliesTo":[525]}
+		
+
+	]
+}
