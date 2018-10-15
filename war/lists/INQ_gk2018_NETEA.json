@@ -1,23 +1,21 @@
 {
    "id": "Grey Knights",
-   "version": "V1.3.2",
+   "version": "Draft",
    "by": "Norto",
    "notes":["If using transports you must take exactly enough to carry all units in the formation after any upgrades have been added. No transport spaces may be left over if possible.",
    "Drop pods require space craft.",
-   "Land Raider Crusader may carry 2 Terminators or 3 Grey Knights.",
+   "Land Raider Crusader may carry 2 Terminators or 3 Grey Knights."],
    "sections": [
         	{"name": "GREY KNIGHTS CORE FORMATIONS", "formations": [
-            	{"id": 500, "name": "Grey Knights Strike Team", 		"pts": 300, "units": "6 Grey Knights", "upgrades": [1,2,3,4,5,6,7,14,15,16,17,27] },
-            	{"id": 501, "name": "Grey Knights Terminators", 		"pts": 375, "units": "4 Grey Knights Terminators", "upgrades": [1,2,3,4,5,6,17,18,19,20] },
+            	{"id": 500, "name": "Grey Knights Strike Team", 		"pts": 300, "units": "6 Grey Knights", "upgrades": [1,2,3,4,5,6,7,14,15,16,17] },
 	    	{"id": 502, "name": "Inquisitorial Warband", 			"pts": 175, "units": "Inqusitor", "upgrades": [21,22] }
 	  	]},
 	   
         	{"name": "SUPPORT FORMATIONS", "formations": [
+		{"id": 501, "name": "Grey Knights Terminators", 		"pts": 375, "units": "4 Grey Knights Terminators", "upgrades": [1,2,3,4,5,6,17,18,19,20] },
             	{"id": 600, "name": "Grey Knights Interceptor Squad", 		"pts": 225, "units": "4 Grey Knights Interceptor", "upgrades": [1,2,3,4,5,6,17] },
-		{"id": 601, "name": "Grey Knights Purgation Squad",   		"pts": 275, "units": "4 Grey Knights Purgation plus transports", "upgrades": [1,2,3,4,5,6,7,14,15,16,17,18,19,20,27] },
+		{"id": 601, "name": "Grey Knights Purgation Squad",   		"pts": 275, "units": "4 Grey Knights Purgation plus transports", "upgrades": [1,2,3,4,5,6,7,14,15,16,17,18,19,20] },
 		{"id": 602, "name": "Grey Knights Land Raider", 	  	"pts": 50, "upgrades": [7] },
-
-		{"id": 605, "name": "Grey Knights Landing Craft", 		"pts": 350, "units": "1 Grey Knigths Landing Craft", "upgrades": [] },
 		{"id": 606, "name": "Grey Knights Space Craft", 		"pts": 0, "upgrades": [] },
 		{"id": 607, "name": "Stormraven Flight", 		 	"pts": 325, "units": "4 Grey Knights Stormraven Gunships", "upgrades": [] }
 		
@@ -25,8 +23,9 @@
 	   
         	{"name": "RESTRICTED SUPPORT FORMATIONS", "formations": [
             	{"id": 700, "name": "Stormtalons", 				"pts": 200, "units": "2 Stormtalon Gunships", "upgrades": [] },
-		{"id": 603, "name": "Grey Knights Thunderhawk Gunship", 	"pts": 200, "upgrades": [] },
-		{"id": 604, "name": "Grey Knights Thunderhawk Transporters", 	"pts": 75, "upgrades": [26] }
+            	{"id": 701, "name": "Thunderhawk Gunship", 			"pts": 200, "units": "1 Thunderhawk Gunship", "upgrades": [] },
+		{"id": 604, "name": "Thunderhawk Transporters", 		"pts": 75, "upgrades": [26] },
+            	{"id": 702, "name": "Landing Craft", 				"pts": 350, "units": "1 Landing Craft", "upgrades": [] }
          	]}
 		
    ],
@@ -50,7 +49,7 @@
 		{"id": 14, "name": "Drop pods", 							"pts":0  },
 		{"id": 15, "name": "Rhinos", 								"pts":0  },
 		{"id": 16, "name": "Razorback", 							"pts":25 },
-		{"id": 17, "name": "Stormraven", 							"pts":50 },
+		{"id": 17, "name": "Stormraven", 							"pts":75 },
 		{"id": 18, "name": "Land Raider", 							"pts":50 },
 		{"id": 19, "name": "Land Raider Crusader", 						"pts":50 },
 		{"id": 20, "name": "Land Raider Redeemer", 						"pts":50 },
@@ -73,15 +72,15 @@
    "formationConstraints": [
       {"max": 3, "from": [502]},
       {"max": 1, "from": [606]},
-      {"maxPercent": 33.34, "name": "Restricted Support Formations", "from": [700,603,604]},
-      {"max": 2, "name": "Support Formations", "from": [600,601,602,603,604,605,606,607], "forEach": [500,501,502], "name2": "Core Formation" }
+      {"maxPercent": 33.34, "name": "Restricted Support Formations", "from": [700,604,701,702]},
+      {"max": 2, "name": "Support Formations", "from": [600,601,602,603,605,606,607,501], "forEach": [500,502], "name2": "Core Formation" }
    ],
    "upgradeConstraints": [
       	  {"max": 1, "perArmy": true, "from": [1,4,29]},
       	  {"max": 1, "perArmy": true, "from": [4]},
       	  {"max": 1, "perArmy": true, "from": [30]},
 	  {"max": 1, "from": [1,2,3,4], "appliesTo": [500,501,600,601,602,607] },
-	  {"max": 3, "from": [5,6], "appliesTo": [500,501,600,601] },
+	  {"max": 2, "from": [5,6], "appliesTo": [500,501,600,601] },
 	  {"max": 1, "from": [7,8], "appliesTo": [500,601] },
 	  {"min": 1, "max": 1, "from": [30,31], "appliesTo": [606] },
 

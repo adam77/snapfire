@@ -20,10 +20,19 @@ var Force = {
 								},
 								calcPoints:function() {
 									var total = this.type.pts;
+									var counted = {}
+
 									this.upgrades.each(function(u) {
-										total += u.pts;
+											if (Array.isArray(u.pts)) {
+												counted[u.name] = counted[u.name] == undefined ? 0 : counted[u.name] + 1;
+												total += u.pts[counted[u.name] % u.pts.length];
+											}
+											else {
+												total += u.pts;
+											}
 									});
-									return total;				
+
+									return total;
 								},
 								canRemove:function(upgradeType) {
 									// check minimum constraint
@@ -31,8 +40,8 @@ var Force = {
 									if (constraint) {
 										var total = this.upgrades.countAll( constraint.from );
 										return total > constraint.min;
-									}	
-									return true;								
+									}
+									return true;
 								},
 								cannotAdd:function(upgradeType) {
 									var why = [];
@@ -40,7 +49,7 @@ var Force = {
 									var allUpgrades = Force.allUpgrades();
 									this.type.constraintsOn(upgradeType).each( function(c) {
 										why.push( ArmyList.canAddUpgrade( c.perArmy ? allUpgrades : upgrades, c ) );
-									});										
+									});
 									return why.without('');
 								},
 								cannotSwap:function(upgradeType,swapType) {
@@ -49,11 +58,11 @@ var Force = {
 									var allUpgrades = Force.allUpgrades().remove( upgradeType );
 									this.type.constraintsOn(swapType).each( function(c) {
 										why.push( ArmyList.canAddUpgrade( c.perArmy ? allUpgrades : upgrades, c ) );
-									});										
+									});
 									return why.without('');
 								}
 							};
-		this.formations.push( formation );			
+		this.formations.push( formation );
 		return formation;
 	},
 	getWarnings:function(){
@@ -96,7 +105,7 @@ var Force = {
 			x.upgrades.uniq().each( function(u) {
 				out += '~' + u.id + 'x' + x.count(u);
 			});
-		});	
+		});
 		return out;
 	},
 	unpickle:function(pickled) {
@@ -113,14 +122,14 @@ var Force = {
 						currentFormation = Force.addFormation( ArmyList.formationForId(id), true );
 					}
 					else {
-						var count = parseInt(x.split('x')[1]);			
+						var count = parseInt(x.split('x')[1]);
 						for (var i=0;i<count;i++) {
 							currentFormation.upgrades.push( ArmyList.upgradeForId(id) );
 						}
 					}
-				}			
+				}
 			});
-			return name;	
+			return name;
 		}
 		catch(err) {
 			alert('Sorry, there was an error loading the army.');
@@ -145,5 +154,3 @@ var Force = {
 		return txt;
 	}
 };
-
-

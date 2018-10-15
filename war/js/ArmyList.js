@@ -3,15 +3,15 @@ var ArmyList = {
 	data:{},
 	allFormations:[],
 	allNonFixedFormations:[],
-	init:function(input) {		
+	init:function(input) {
 
 		this.data = input;
 		this.allNonFixedFormations = input.sections.pluck('formations').flatten();
 		this.allFormations = input.fixedFormations ? input.fixedFormations.concat( this.allNonFixedFormations )
 														  		 : this.allNonFixedFormations;
-			
+
 		// FORMATION UPGRADES...
-		this.allFormations.each( function(formation) {	
+		this.allFormations.each( function(formation) {
 			// fill in empty upgrade lists
 			if (!formation.upgrades) formation.upgrades = [];
 
@@ -35,7 +35,7 @@ var ArmyList = {
 			// set some useful properties and defaults
 			if (!constraint.min && constraint.max) constraint.min = 0;
 			if (constraint.min && !constraint.max) constraint.max = 1000000;
-                        if (!constraint.name && constraint.perPoints) constraint.name = constraint.from[0].name;                         
+                        if (!constraint.name && constraint.perPoints) constraint.name = constraint.from[0].name;
 			constraint.mandatory = constraint.min && !constraint.perArmy;
 			constraint.mandatoryWithOptions = constraint.mandatory && constraint.from.length > 1;
 		});
@@ -51,7 +51,7 @@ var ArmyList = {
 			// set some useful properties and defaults
                         if (!constraint.min && constraint.max) constraint.min = 0;
 			if (constraint.min && !constraint.max) constraint.max = 1000000;
-                        if (!constraint.name && constraint.perPoints) constraint.name = constraint.from[0].name; 
+                        if (!constraint.name && constraint.perPoints) constraint.name = constraint.from[0].name;
 		});
 
 		// FORMATIONS... add some useful properties/functions...
@@ -67,7 +67,7 @@ var ArmyList = {
 			});
 
 			// upgrade constraints...
-			formation.upgradeConstraints = 
+			formation.upgradeConstraints =
 				ArmyList.data.upgradeConstraints.filter( function(x){
 					return x.appliesTo.member(formation);
 				});
@@ -75,7 +75,7 @@ var ArmyList = {
 				formation.upgradeConstraints.filter( function(x){
 					return x.mandatory;
 				});
-			formation.mandatoryConstraint = function(upgrade){		
+			formation.mandatoryConstraint = function(upgrade){
 				return formation.mandatoryUpgradeConstraints.find( function(constraint){
 						return constraint.from.member(upgrade);
 					});
@@ -99,12 +99,18 @@ var ArmyList = {
 					}
 				});
 				return defaults;
-			};		
+			};
 			// cost including any mandatory upgrades... add them in too!
 			var total = 0;
 			formation.mandatoryUpgradeConstraints.each( function(x) {
-				total += x.min * x.from[0].pts;
-			});		
+				if (Array.isArray(x.from[0].pts)) {
+					for(var i=0; i < x.min; i++) {
+						total += x.from[0].pts[i % x.from[0].pts.length];
+					}
+				} else {
+					total += x.min * x.from[0].pts;
+				}
+			});
 			formation.cost = formation.pts + total;
 		});
 	},
@@ -132,7 +138,7 @@ var ArmyList = {
             }
             return x;
         },
-	violated:function(pts,formations,constraint) {		
+	violated:function(pts,formations,constraint) {
 		if (constraint.perPoints && constraint.max) {
                         var slots = ArmyList.roundUp(pts,constraint.perPoints) / constraint.perPoints;
 			var tooMany = formations.countAll(constraint.from) > slots * constraint.max;
@@ -142,7 +148,7 @@ var ArmyList = {
                         var slots = ArmyList.roundUp(pts,constraint.perPoints) / constraint.perPoints;
                         var tooFew = formations.countAll(constraint.from) < slots * constraint.min;
 			if (tooFew) return 'less than ' +constraint.min+ ' ' +constraint.name+ ' per ' +constraint.perPoints+ ' points';
-		}		
+		}
 		if (constraint.forEach && constraint.max) {
 			var tooMany = formations.countAll(constraint.from) > formations.countAll(constraint.forEach) * constraint.max;
 			if (tooMany) return 'more than ' +constraint.max+' '+constraint.name+ ' per ' +constraint.name2;
@@ -186,5 +192,3 @@ var ArmyList = {
             return mandatoryFormations;
         }
 };
-
-

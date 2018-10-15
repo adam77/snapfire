@@ -19,7 +19,7 @@
 			{"id":563, "name":"Thunderbolt Squadron",	"pts":150, "units":"2 Thunderbolts", "upgrades":[]},
 			{"id":564, "name":"Marauder Squadron",		"pts":250, "units":"2 Marauders", "upgrades":[]},
 			{"id":565, "name":"Orbital Support",		"pts":200, "units":"One Ark Mechanicus Battleship", "upgrades":[]},
-			{"id":566, "name":"Skitarii Demi-Century",	"pts":200, "units":"2 Secutor, 8 Hypaspists", "upgrades":[]},
+			{"id":566, "name":"Skitarii Demi-Century",	"pts":250, "units":"2 Secutor, 8 Hypaspists", "upgrades":[]},
 			{"id":567, "name":"Lysander Fighter",		"pts":75,	 "upgrades":[]}	
 		]}
 	],

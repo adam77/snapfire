@@ -1,7 +1,7 @@
 {
 	"id":"Traitor Titan Legions",
-	"version":"NetEA v1.8",
-	"notes":["One Lesser Daemon Engine formation may be taken for each Battle Titan, Greater Daemon Possession and Greater Daemon Engine Model."],
+	"version":"NetEA v1.9",
+	"notes":[],
 	"by":"IJW Wartrader and MrDieAlot",
 	"sections":[
 		{"name":"BATTLE TITANS", "formations":[
@@ -23,7 +23,7 @@
 			{"id":514, "name":"REPUGNANT (Chaos Reaver Titan of Nurgle)",			"pts":600, "upgrades":[31,32,33,34,35,44,45,46,47,64,65,66,67,300,301,302,303,304,309]},
 			{"id":515, "name":"MUTATOR (Chaos Reaver Titan of Tzeentch)",			"pts":600, "upgrades":[31,32,33,34,35,41,42,43,60,61,62,63,300,301,302,303,304,308]}
 		]},
-		{"name":"GREATER DAEMON ENGINES", "formations":[
+		{"name":"GREATER DAEMON ENGINES One Greater Daemon Engine formation may be taken for each Battle Titan and Greater Daemon Possession", "formations":[
 			{"id":551, "name":"FORGEHOUND (Chaos Warhound of Chaos Undivided)",		"pts":300, "units":"One Forgehound Chaos Warhound", "upgrades":[]},
 			{"id":552, "name":"FORGEHOUND Pack (Chaos Warhounds of Chaos Undivided)",	"pts":550, "units": "Two Forgehound Chaos Warhounds", "upgrades":[]},
 			
