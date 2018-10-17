@@ -1,0 +1,105 @@
+{
+	"id":"Alpha XX Legion",
+	"by":"MrDieAlot",
+	"version":"v1.73 <a href=\"http://www.taccmd.tacticalwargames.net/viewtopic.php?f=82&t=33226\">TCMD forum</a>",
+	"notes":[],
+	"sections":[
+		{"name":"Alpha Legion Core formations / / One Alpha Legion Marines formation may be taken per Cultist Coven formation", "formations": [
+			{ "id":511, "name":"Cultist Coven", "units":"11 Alpha Legion Cultists", "pts":200, "upgrades":[39,40,44,41,37] },
+			{ "id":512, "name":"Alpha Legion Marines", "pts":0, "upgrades":[30,34,35,31] }
+		]},
+		{"name":"Alpha Legion Elite Formatons / / One Alpha Legion Elite formation may be taken per Alpha Legion Core formation", "formations": [
+			{ "id":521, "name":"Alpha Legion Headhunter Kill Team", "pts":225, "units":"4 Headhunter units w. Transport", "upgrades":[31] },
+			{ "id":522, "name":"Alpha Legion Destroyers", "pts":225,"units":"4 Alpha Legion Destroyers", "upgrades":[] },
+			{ "id":523, "name":"Lernaean Terminators", "pts":300,"units":"4 Lernaean Terminators", "upgrades":[38] },
+			{ "id":524, "name":"Alpha Legion Predators", "pts":225, "units":"4 Alpha Legion Predators", "upgrades":[30] }
+		]},
+			{"name":"Alpha Legion Cultist Formatons / / One Alpha Legion Cultist formation may be taken per Alpha Legion Core formation", "formations": [
+			{ "id":531, "name":"Cult Riders", "pts":175, "units":"6 Rough Riders, 1 Daemonic Icon", "upgrades":[41] },
+			{ "id":532, "name":"Cult Mutants", "pts":150, "units":"6 Mutants, 2 Chaos Spawn, 1 Daemonic Icon", "upgrades":[41] },
+			{ "id":533, "name":"Cult Macharius", "pts":300, "units":"3 Macharius", "upgrades":[41] },
+			{ "id":534, "name":"Cult Artillery", "pts":150, "units":"4 Thudd Guns, 4 Light Transporters", "upgrades":[41,37] },
+			{ "id":535, "name":"Cult Hydras", "pts":150, "units":"3 Hydras", "upgrades":[41] }
+		]},
+		{"name":"Alpha Legion Support Formations / / One Alpha Legion Support formation may be taken per Alpha Legion Core formation / / Max 33%", "formations":[
+			{ "id":541, "name":"Strike Cruiser", "pts":150, "units":"1 Strike Cruiser", "upgrades":[] },
+			{ "id":543, "name":"Thunderhawk", "pts":250, "units":"1 Thunderhawk", "upgrades":[] },
+			{ "id":544, "name":"Fire Raptors", "pts":250, "units":"2 Fire Raptors", "upgrades":[] },
+			{ "id":545, "name":"Lightning Interceptors", "pts":150, "units":"2 Lightning Interceptors", "upgrades":[] },
+			{ "id":546, "name":"Super Heavy Tank Company (Glaive)", "pts":50, "upgrades":[50] },
+			{ "id":547, "name":"Super Heavy Tank Company (Fellblade)", "pts":50, "upgrades":[51] },
+			{ "id":548, "name":"Super Heavy Tank Company (Falchion)", "pts":50, "upgrades":[52] }		
+		]},
+			{"name":"Many Heads of the Hydra", "formations": [
+			{ "id":500, "name":"''I'm Alpharius!''", "pts":0, "upgrades":[11] },
+			{ "id":501, "name":"Lesser Daemon Pool", "pts":0, "upgrades":[12] }
+		]}
+	],
+	"upgrades":[
+		{ "id":11, "name":"Army benefits from the ''I'm Alpharius!'' special rule", "pts":75 },
+		{ "id":12, "name":"Lesser Daemon", "pts":15 },
+
+		{ "id":20, "name":"Alpha Legion Sorcerer", "pts":0 },
+		{ "id":21, "name":"Alpha Legion Lord", "pts":0 },
+		{ "id":23, "name":"1 Alpha Legion Cultist w. Daemonic Icon", "pts":0 },
+		{ "id":26, "name":"1 Alpha Legion Aspiring Champion w. Daemonic Icon", "pts":25},
+		{ "id":27, "name":"1 Alpha Legion Daemon Prince w. Daemonic Icon", "pts":100},
+		{ "id":28, "name":"1 Alpha Legion Daemon Prince w. Wings, Daemonic Icon", "pts":100},
+		
+		{ "id":30, "name":"2 Vindicators", "pts":50 },
+		{ "id":31, "name":"2 Alpha Legion Dreadnoughts", "pts":75 },
+		{ "id":32, "name":"8 Alpha Legion Marines w. Transport", "pts":325 },
+		{ "id":33, "name":"4 Alpha Legion Marines, 4 Alpha Legion Havocs w. Transport", "pts":375 },
+		{ "id":34, "name":"4 Land Raiders", "pts":200 },
+		{ "id":35, "name":"3 Land Raiders and 1 Land Raider Proteus", "pts":225 },
+
+		{ "id":37, "name":"1 Hydra", "pts":50 },
+		{ "id":38, "name":"2 Spartan Assault Tanks", "pts":175 },
+		{ "id":39, "name":"3 Rapiers", "pts":50 },
+		{ "id":40, "name":"6 Light Transports", "pts":30 },
+		{ "id":41, "name":"3 Chaos Hounds", "pts":25 },
+		
+		{ "id":44, "name":"9 Light Transports", "pts":45 },
+
+		{ "id":50, "name":"Glaive", "pts":250 },
+		{ "id":51, "name":"Fellblade", "pts":250 },
+		{ "id":52, "name":"Falchion", "pts":250 }
+
+
+								
+	],
+	"formationConstraints":[
+		{"max":1, "name":"Alpha Legion Marines Formation", "from":[512], "forEach":[511], "name2":"Cultist Coven Formation"},
+		{"max":1, "name":"Alpha Legion Elite Formation", "from":[521,522,523,524], "forEach":[511,512], "name2":"Alpha Legion Core Formation"},
+		{"max":1, "name":"Alpha Legion Cultist Formation", "from":[531,532,533,534,535], "forEach":[511,512], "name2":"Alpha Legion Core Formation"},
+		{"max":1, "name":"Alpha Legion Support Formation", "from":[541,543,544,545,546,547,548], "forEach":[511,512], "name2":"Alpha Legion Core Formation"},
+		{"maxPercent":34, "name":"Alpha Legion Support Formations", "from":[541,543,544,545,546,547,548]},
+		{"max":1, "perArmy":true, "from":[500]},
+		{"max":1, "perArmy":true, "from":[501]},
+		{"max":1, "perArmy":true, "from":[541]}
+	],
+	"upgradeConstraints":[
+		{"min":1, "max":1, "from":[23,26,27,28], "appliesTo":[511]},
+		{"min":1, "max":1, "from":[32,33], "appliesTo":[512]},
+		{"min":1, "max":1, "from":[21,20], "appliesTo":[512,521,522,523]},
+		
+		{"min":0, "max":1, "from":[30], "appliesTo":[512,523,524]},
+		{"min":0, "max":1, "from":[34,35], "appliesTo":[512]},
+		
+		{"min":0, "max":1, "from":[31], "appliesTo":[512,521]},
+		
+		{"min":0, "max":1, "from":[37], "appliesTo":[511,534]},
+		{"min":0, "max":1, "from":[38], "appliesTo":[523]},
+		{"min":0, "max":1, "from":[39], "appliesTo":[511]},
+		{"min":0, "max":1, "from":[41], "appliesTo":[511,531,532,533,534,535]},
+		
+		{"min":0, "max":1, "from":[40,44], "appliesTo":[511]},
+		{"min":0, "max":1, "from":[40], "appliesTo":[532,534]},
+		
+		{"min":2, "max":3, "from":[50], "appliesTo":[546]},
+		{"min":2, "max":3, "from":[51], "appliesTo":[547]},
+		{"min":2, "max":3, "from":[52], "appliesTo":[548]},
+		
+		{"max":1, "perArmy":true, "from":[11,27,28]}
+	]
+}
