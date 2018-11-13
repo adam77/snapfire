@@ -1,0 +1,117 @@
+{
+
+	"id":"Red Corsairs",
+	"version":"3.5 - Approved - 2018 Playtest Version",
+	"by":"Kyussinchains, last update 2018-11-13",
+	"notes":["You may only include Blood Slaughterer, Brass Scorpion, Silver Tower, Blight Drone and Daemon Knight formations if the force also includes at least one Cult Marine formation or upgrade dedicated to the appropriate chaos power'",
+	"Formations deploying by drop pod or Rhino must take just enough to transport the entire formation.",
+	"Add one free Lesser Daemon to Daemon pool per Daemonic Pact"],
+	"sections":[
+		{"name":"Daemon Pool", "formations": [
+			{ "id":500, "name":"Daemon Pool", "pts":0, "upgrades":[11,12] }
+		]},
+		{"name":"Red Corsairs Core Formations", "formations": [
+			{ "id":501, "name":"Hounds Squadron", "pts":300, "units":"8 Chaos Space Marine Bike units", "upgrades":[13,14] },
+			{ "id":502, "name":"Terminator Retinue", "pts":100	, "units":"", "upgrades":[50,15,16,18,19,22,13,28,14,35] },
+			{ "id":503, "name":"Renegade Warband", "pts":275, "upgrades":[13,14,15,16,17,18,19,20,22,28,35] }
+		]},
+		{"name":"Red Corsairs Support Formatons", "formations": [
+			{ "id":510, "name":"Armoured Company", "pts":0, "upgrades":[51,19,18,22,28] },
+			{ "id":511, "name":"Spaceship", "pts":0},
+			{ "id":512, "name":"Chaos Thunderhawk", "units":"1 Chaos Thunderhawk Gunship", "pts":200},
+			{ "id":513, "name":"Chosen", "units":"4 Chaos Chosen units", "pts":125, "upgrades":[15,16,17,20,13] },
+			{ "id":514, "name":"Khornate Cult Marines", "units":"8 Khorne Berzerker units", "pts":275, "upgrades":[15,16,17,20,13,28] },
+			{ "id":515, "name":"Tzeenchian Cult Marines", "units":"6 Thousand Sons units", "pts":275, "upgrades":[15,16,17,20,13,28] },
+			{ "id":516, "name":"Nurglesque Cult Marines", "units":"6 Plague Marine units", "pts":275, "upgrades":[15,16,17,20,13,28] },
+			{ "id":517, "name":"Slaaneeshi Cult Marines", "units":"6 Noise Marine units", "pts":275, "upgrades":[15,16,17,20,13,28] },
+			{ "id":518, "name":"Defiler Assaut Force", "units":"4 Defilers", "pts":275, "upgrades":[] },
+			{ "id":519, "name":"Blood Slaughterer Pack", "units":"5 Blood Slaughterers", "pts":225, "upgrades":[] },
+			{ "id":520, "name":"Brass Scorpion Onlsaught", "units":"2 Brass Scorpions", "pts":275, "upgrades":[] },
+			{ "id":521, "name":"Silver Tower Circle", "units":"4 Silver Towers", "pts":325, "upgrades":[] },
+			{ "id":522, "name":"Blight Drone Swarm", "units":"6 Blight Drones", "pts":300, "upgrades":[] },
+			{ "id":523, "name":"Daemon Knight Pavane", "units":"4 Daemon Knights", "pts":250, "upgrades":[] },
+			{ "id":524, "name":"Raptor Cult", "pts":35, "upgrades":[54,13] }
+		]},
+		{"name":"Chaos Navy Aircraft", "formations":[
+			{ "id":531, "name":"Three Hellblade Interceptors", "pts":200},
+			{ "id":532, "name":"Two Hell Talon Fighter-Bombers", "pts":225},
+			{ "id":533, "name":"One Harbinger Bomber", "pts":400}
+		
+		]}
+	],
+	"upgrades":[
+		{ "id":11, "name":"Greater daemon", "pts":50 },
+		{ "id":12, "name":"Daemonic Beasts", "pts":15 },
+		{ "id":13, "name":"Daemonic Pact", "pts":25 },
+		{ "id":14, "name":"Icon Bearer", "pts":25 },
+		{ "id":15, "name":"Chaos Champion", "pts":50 },
+		{ "id":16, "name":"Chaos Dreadnought", "pts":50 },
+		{ "id":17, "name":"Chaos Drop Pod", "pts":5 },
+		{ "id":18, "name":"Chaos Hunter", "pts":50 },
+		{ "id":19, "name":"Chaos Land Raider", "pts":[75, 50] },
+		{ "id":20, "name":"Chaos Rhino", "pts":10 },
+		
+		{ "id":22, "name":"Chaos Vindicator", "pts":[35, 15, 25] },
+
+		{ "id":23, "name":"8 Chaos Space Marine units", "pts":0 },
+		{ "id":24, "name":"4 Chaos Space Marine units, 4 Khorne Berzerker units", "pts":50 },
+		{ "id":25, "name":"4 Chaos Space Marine units, 4  Noise Marine units", "pts":50 },
+		{ "id":26, "name":"4 Chaos Space Marine units, 4 Plague Marine units", "pts":50 },
+		{ "id":27, "name":"4 Chaos Space Marine units, 4 Thousand Sons units", "pts":50 },
+		{ "id":36, "name":"4 Chaos Space Marine units, 4 Havoc units", "pts":50 },
+		{ "id":37, "name":"4 Havoc units, 4 Khorne Berzerker units", "pts":100 },
+		{ "id":38, "name":"4 Havoc units, 4  Noise Marine units", "pts":100 },
+		{ "id":39, "name":"4 Havoc units, 4 Plague Marine units", "pts":100 },
+		{ "id":40, "name":"4 Havoc units, 4 Thousand Sons units", "pts":100 },
+		{ "id":28, "name":"Defiler", "pts":75 },
+		{ "id":35, "name":"Obliterators", "pts":75 },
+
+		{ "id":50, "name":"Terminator unit", "pts":50 },
+		{ "id":51, "name":"Chaos Predator", "pts":50 },
+		{ "id":52, "name":"Chaos Strike Cruiser", "pts":200 },
+		{ "id":53, "name":"Chaos Battle Barge", "pts":350 },
+		{ "id":54, "name":"Raptor Unit", "pts":35 },
+
+		{ "id":90, "name":"Chaos Lord", "pts":0 },
+		{ "id":91, "name":"Sorceror Lord", "pts":0 },
+		{ "id":92, "name":"Chaos Warlord", "pts":50 },
+		{ "id":93, "name":"Swap the chaos Lord and his unit for a Daemon Prince", "pts":50 }
+	],
+	"formationConstraints":[
+		{"max":1, "from":[500]},
+		{"max":1, "name":"spaceship","from":[511]},
+		{"max":2, "name":"Support formations", "from":[510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525], "forEach":[501,502,503], "name2":"Core Formation"},
+		{"maxPercent":33.34, "name":"Chaos Navy and Titan Formations", "from":[531,532,533,540,541,542]}
+	],
+	"upgradeConstraints":[
+		{"min":1, "max":1, "from":[90,91,92], "appliesTo":[501,524]},
+		{"min":1, "max":1, "from":[90,91], "appliesTo":[516,517]},
+		{"min":1, "max":1, "from":[90], "appliesTo":[514]},
+		{"min":1, "max":1, "from":[91], "appliesTo":[515]},
+		
+	
+		{"min":1, "max":1, "from":[90,91,92,93], "appliesTo":[502,503,525]},
+		{"min":1, "max":1, "from":[23,24,25,26,27,36,37,38,39,40], "appliesTo":[503]},
+
+		{"max":1, "from":[13]},
+		{"max":1, "from":[14]},
+		{"max":1, "from":[15]},
+		{"max":3, "from":[16]},
+		{"max":1, "from":[18]},
+		{"max":4, "from":[19], "appliesTo":[502,503]},
+		{"max":3, "from":[21]},
+		{"max":3, "from":[22]},
+		{"max":1, "from":[23,24,25,26]},
+		{"max":1, "perArmy":true, "from":[93]},
+		{"max":1, "perArmy":true, "from":[92]},
+		{"max":3, "from":[28]},
+		{"max":1, "from":[34]},
+		{"max":3, "from":[35]},
+
+		{"min":4, "max":6, "from":[50], "appliesTo":[502]},
+		{"min":4, "max":8, "from":[51,19], "appliesTo":[510]},
+		{"min":1, "max":1, "from":[52,53], "appliesTo":[511]},
+		{"min":4, "max":8, "from":[54], "appliesTo":[524]}
+
+	]
+}
