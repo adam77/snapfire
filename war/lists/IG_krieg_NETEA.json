@@ -32,8 +32,7 @@
 		{"name":"TITAN LEGIONS", "formations":[
 			{ "id":536, "name":"Warlord Titan", "pts":850, "upgrades":[] },
 			{ "id":537, "name":"Reaver Titan", "pts":650, "upgrades":[] },
-			{ "id":538, "name":"Warhound Pack", "pts":500, "units":"2 Warhounds", "upgrades":[] },
-			{ "id":539, "name":"Warhound Titan", "pts":275, "upgrades":[] }
+			{ "id":538, "name":"Warhound Pack", "pts":500, "units":"2 Warhounds", "upgrades":[] }
 		]}	
 	],
 	"upgrades":[
