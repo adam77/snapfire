@@ -1,7 +1,7 @@
 {
 	"id":"Baran Siege Masters",
-	"version":"NetEA Tournament Pack 2014",
-	"by":"Iron Bloke, last edit 2014-02-10 Kyussinchains",
+	"version":"NetEA Tournament Pack (2018-09-17) ",
+	"by":"Iron Bloke",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
 		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[31,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
@@ -12,7 +12,7 @@
 			{"id":500, "name":"Artillery Company", 			"pts":425, "upgrades":[], "units":"9 Götterdämmerung Howitzers, 9 Gun Emplacements"},
 			{"id":503, "name":"Bombard Battery",				"pts":250, "upgrades":[], "units":"3 Bombards"},
 			{"id":506, "name":"Deathstrike Missile Battery",	"pts":200, "upgrades":[], "units":"2 Deathstrike Missile Launchers"},
-			{"id":502, "name":"Flak Battery", 			"pts":100, "upgrades":[], "units":"3 Blitzen AA Guns"},
+			{"id":502, "name":"Flak Battery", 			"pts":150, "upgrades":[], "units":"3 Blitzen AA Guns"},
 			{"id":509, "name":"Heavy Tank Platoon",			"pts":300, "upgrades":[], "units":"6 Ragnarok Heavy Tanks"},
 			{"id":508, "name":"Light Tank Platoon",			"pts":150, "upgrades":[], "units":"6 Siegfried Light Tanks"},
 			{"id":505, "name":"Rough Rider Platoon",			"pts":150, "upgrades":[], "units":"6 Rough Riders"},
