@@ -1,6 +1,6 @@
 {
 	"id":"Blood Angels",
-	"version":"V3.0 <a href=\"http://www.tacticalwargames.net/taccmd/viewtopic.php?f=73&t=33127\">TCMD forum</a>",
+	"version":"V3.1 <a href=\"hhttp://taccmd.tacticalwargames.net/viewtopic.php?f=73&t=33805\">TCMD forum</a>",
 	"by":"Kyussinchains && freefall",
 	
 "sections":[
@@ -8,19 +8,19 @@
 {"name":"DETACHMENTS", "formations":[
 			
 {"id":534, "name":"Death Company", "units": "4 Death Company Units plus Transport",	"pts":250, "upgrades":[41,13]},
-{"id":532, "name":"Assault Detachment", 		"pts":0,   "upgrades":[11,30,60,31,32,33,14,71,18,53]},
+{"id":532, "name":"Assault Detachment", 		"pts":0,   "upgrades":[11,30,60,31,32,33,14,71,18,53,26]},
 {"id":533, "name":"Bike Detachment", 			"pts":200, "upgrades":[30,31,32,33]},
 
-{"id":535, "name":"Devastator Detachment", "pts":250, "units":"4 Devastator Units plus Transport", "upgrades":[30,31,32,33,14,71,18,53,21,80,81,82,22,83,84,85,23,26,42,43]},	
+{"id":535, "name":"Devastator Detachment", "pts":250, "units":"4 Blood Angels Devastator Units plus Transport", "upgrades":[30,31,32,33,14,71,18,53,21,80,81,82,22,83,84,85,23,26,42,43]},	
 {"id":536, "name":"Land Speeders",			"pts":200, "upgrades":[30,31,32,33]},
 {"id":537, "name":"Landing Craft",			"pts":350, "upgrades":[]},
 {"id":538, "name":"Predators",				"pts":275, "upgrades":[30,31,32,33,23]},
 
 {"id":539, "name":"Scout Detachment",			"pts":150, "units":"4 Scouts plus Transport", "upgrades":[70,30,31,32,33,42,43]},
 {"id":540, "name":"Spacecraft",				"pts":200, "upgrades":[]}, 
-{"id":541, "name":"Stormraven",				"pts":325, "units":"4 Stormraven Gunships", "upgrades":[]},
+{"id":541, "name":"Stormraven",				"pts":300, "units":"4 Stormraven Gunships", "upgrades":[]},
 {"id":542, "name":"Tactical Detachment",		"pts":275, "units":"6 Blood Angels Tacticals plus Transport", "upgrades":[30,31,32,33,14,71,18,53,21,80,81,82,22,83,84,85,23,26,42,43]},
-{"id":543, "name":"Terminator Detachment",		"pts":350, "units":"4 Terminators", "upgrades":[30,31,32,33,14,71,18,53,21,80,81,82,22,83,84,85,26]}
+{"id":543, "name":"Terminator Detachment",		"pts":350, "units":"4 Blood Angels Terminators", "upgrades":[30,31,32,33,14,71,18,53,21,80,81,82,22,83,84,85,26]}
 
 		]},
 
@@ -32,14 +32,15 @@
 	
 "upgrades":[
 		
-{"id":11, "name":"Blood Angels Assault Marine Unit",		"pts":50},
+{"id":11, "name":"4 Blood Angels Assault Marine Units",		"pts":200},
+{"id":50, "name":"6 Blood Angels Assault Marine Units",		"pts":250},
 {"id":12, "name":"Battlebarge",					"pts":150},
 {"id":13, "name":"Death Company Dreadnought",			"pts":75},
 {"id":14, "name":"Furioso Dreadnought (2x Power Fist)", 			"pts":50},
 {"id":71, "name":"Furioso Dreadnought (Frag Cannon)", 			"pts":50},
 {"id":15, "name":"2 Land Speeders",				"pts":100},
 {"id":16, "name":"Blood Angels Bike Unit",			"pts":0},
-{"id":17, "name":"Attack Bike",					"pts":0},
+{"id":17, "name":"Blood Angels Attack Bike",					"pts":0},
 {"id":18, "name":"Vindicator",			"pts":50},
 {"id":53, "name":"2 Vindicators",			"pts":75},
 {"id":70, "name":"Sniper",				"pts":10},
@@ -102,7 +103,7 @@
 		
 {"max":6, "name":"Razorbacks", "from":[24,25]},
 {"min":1, "max":1, "from":[32], "appliesTo":[534]},	
-{"min":4, "max":6, "from":[11], "appliesTo":[532]},	
+{"min":1, "max":1, "from":[11,50], "appliesTo":[532]},	
 {"max":1, "name":"Cmdr", "from":[30,60,31,32,33]},
 		
 {"max":1, "perArmy":true, "from":[30,60]},		
