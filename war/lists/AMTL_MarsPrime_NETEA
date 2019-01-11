@@ -6,9 +6,9 @@
 	"sections":[
 
 		{"name":"Core Formations", "formations": [
-			{ "id":501, "name":"Secutarii Titan Guard", "pts":275, "upgrades":[64,63,61,65,69,96,97] },
-			{ "id":502, "name":"Vanguard Maniple", "pts":225, "units":"8 Skitarii Vanguard", "upgrades":[64,63,61,65,69,96,97] },
-			{ "id":503, "name":"Servitor Maniple", "pts":225, "units":"10 Battle Servitors", "upgrades":[61,69]}
+			{ "id":501, "name":"Secutarii Titan Guard", "pts":275, "upgrades":[64,63,61,65,69] },
+			{ "id":502, "name":"Vanguard Maniple", "pts":225, "units":"8 Skitarii Vanguard", "upgrades":[64,63,61,65,69] },
+			{ "id":503, "name":"Servitor Maniple", "pts":200, "units":"10 Battle Servitors", "upgrades":[61,69]}
 		]},
 		{"name":"Support Formations", "formations": [
 			{ "id":510, "name":"Ranger Centuria", "pts":50, "upgrades":[65] },
@@ -20,11 +20,8 @@
 			{ "id":516, "name":"Onager Cohort", "pts":0, "upgrades":[56,57] },
 			{ "id":517, "name":"Destroyer Maniple", "pts":225, "units":"6 Kataphron Destroyers", "upgrades":[61,70] },
 			{ "id":518, "name":"Breacher Maniple", "pts":225, "units":"6 Kataphron Breachers", "upgrades":[61,70] },
-			{ "id":519, "name":"Kastelan Maniple", "pts":225, "upgrades":[62]}
-
-		]},
-		{"name":"Gryphonne IV Skitarii SupportT", "formations":[
-			{"id":571, "name":"Ordinatus Minorus", "pts":300, "units":"2 Ordinatus Minorus", "upgrades":[]}
+			{ "id":519, "name":"Kastelan Maniple", "pts":225, "upgrades":[62]},
+			{ "id":520, "name":"Warglaive Armiger Knights", "pts":175, "upgrades":[]}
 		]},
 
 		{"name":"Collegia Titanica Support", "formations":[
@@ -36,7 +33,7 @@
 
 		{"name":"Mars Prime Navy ", "formations":[
 			{ "id":552, "name":"Lightning Primaris", "pts":175, "units":"2 Lightning Primaris", "upgrades":[] },
-			{ "id":551, "name":"Avenger Strike Fighters", "pts":225, "units":"2 Avenger Strike Fighters", "upgrades":[] }
+			{ "id":551, "name":"Avenger Strike Fighters", "pts":200, "units":"2 Avenger Strike Fighters", "upgrades":[] }
 		]},
 		{"name":"Spacecraft", "formations":[
 			{ "id":561, "name":"Ark Mechanicus Battleship", "pts":200, "upgrades":[] }
@@ -87,7 +84,7 @@
 
 		{"id":45, "name":"Kataphron Breacher",							"pts":0},
 		{"id":46, "name":"Kataphron Destroyer",							"pts":0},
-		{"id":50, "name":"Kastelan Robots - Heavy phosphor blaster",				"pts":0},
+		{"id":50, "name":"Kastelan Robots",							"pts":0},
 		{"id":51, "name":"Kastelan Robots - Incendine combustor and Kastelan fists",		"pts":0},
 		{"id":52, "name":"Ironstrider Ballistarius - Twin Cognis Autocannon",			"pts":0},
 		{"id":53, "name":"Ironstrider Ballistarius - Twin Cognis Lascannon",			"pts":0},
@@ -103,16 +100,17 @@
 		{"id":93, "name":"Ordinatus Majoris - Sonic Disruptor",					"pts":0},
 		{"id":94, "name":"Ordinatus Majoris - Nova Cannon",					"pts":0},
 		{"id":95, "name":"Ordinatus Majoris - Hellfire Missiles",				"pts":50},
-		{"id":96, "name":"Questorius 2 Knight-Styrix",						"pts":200},
-		{"id":97, "name":"4x Warglaive Armiger Knights",					"pts":200}
+		{"id":96, "name":"4x Warglaive Armiger Knights - Warglaive Configuration",			"pts":0},
+		{"id":97, "name":"4x Warglaive Armiger Knights - Helverin Configuration",			"pts":0}
 
 
 	],
 	"formationConstraints":[
 		{"max":1, "from":[561]},
-		{"max":2, "name":"SUPPORT FORMATIONS", "from":[510,511,512,513,514,515,517,518,519,516], "forEach":[501,502,503], "name2":"CORE FORMATIONS"},
-		{"maxPercent":34, "from":[531,532,541,542,543,544,551,552,561,571]},
-		{"max":1, "perArmy":true, "from":[501]}
+		{"max":2, "name":"SUPPORT FORMATIONS", "from":[510,511,512,513,514,515,517,518,519,516,520], "forEach":[501,502,503], "name2":"CORE FORMATIONS"},
+		{"maxPercent":34, "from":[531,532,541,542,543,544,551,552,561]},
+		{"max":1, "perArmy":true, "from":[501]},
+		{"max":2, "perArmy":true, "from":[520]}
 	],
 	"upgradeConstraints":[
 		{"min":4, "max":4, "from":[13,14,15,16], "appliesTo":[544]},
@@ -123,19 +121,20 @@
     		{"min":2, "max":2, "from":[14,25,26,27,28,29,30,31,32,33,34,35,37,38], "appliesTo":[571]},
     		{"max":1, "from":[80]},
 		{"max":1, "perArmy":true, "from":[64]},
-		{"max":1, "perArmy":true, "from":[96,97,98,99]},
 	{"min":2, "max":2, "from":[13,14,15,16], "appliesTo":[543]},
 		{"max":4, "from":[70]},
 		{"max":1, "from":[77]},
+		{"max":1, "from":[62]},
 		{"max":7, "from":[69]},
 		{"max":1, "from":[82]},
 	  	{"min":8, "max":8, "from": [55,60], "appliesTo": [501]},
 	  	{"min":6, "max":6, "from": [54], "appliesTo": [515]},
 	  	{"min":6, "max":6, "from": [52,53], "appliesTo": [514]},
-	  	{"min":5, "max":5, "from": [50,51], "appliesTo": [519]},
+	  	{"min":5, "max":5, "from": [50], "appliesTo": [519]},
 	  	{"min":3, "max":3, "from": [91,92], "appliesTo": [531]},
 	  	{"min":1, "max":1, "from": [93,94,95], "appliesTo": [532]},
 	  	{"max":3, "from": [71], "appliesTo": [531]},
+	  	{"min":1, "max":1, "from": [96,97], "appliesTo": [520]},
 	  	{"max":1, "from": [71], "appliesTo": [532]},
 	  	{"max":2, "from": [65], "appliesTo": [501,502]},
 		{"min":4, "max":6, "from":[57,56], "appliesTo": [516]},
