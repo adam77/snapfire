@@ -1,6 +1,6 @@
 {
    "id": "NetEA Tau Vior'la",
-   "version": "2.0",
+   "version": "2.1",
    "by": "Kyussinchains",
    "sections": 
    [
@@ -32,6 +32,7 @@
             {"id": 522, "name": "Razorshark Squadron", "pts": 200, "units": "3 Razorshark strike Fighters"},
             {"id": 528, "name": "Sun Shark Squadron", "pts": 200, "units": "2 Sun Shark Bombers"},
             {"id": 525, "name": "Orca Dropship", "pts": 150},
+            {"id": 524,"name": "Manta Dropship","pts": 575,"upgrades": []},
             {"id": 526, "name": "Spacecraft", "pts": 225, "units": "1 Protector Class II Cruiser"}
             
          ]
@@ -79,7 +80,7 @@
    "formationConstraints": 
    [ 
       { "max": 1, "from": [ 526 ] }, 
-      { "maxPercent": 33, "name": "Air Caste Formations", "from": [ 522, 525, 526, 528 ] }, 
+      { "maxPercent": 33.34, "name": "Air Caste Formations", "from": [ 522, 525, 526, 528, 524 ] }, 
       { "max": 2, "name": "Support Groups", "from": [ 511, 512, 501, 515, 517], "forEach": [ 502, 513 ], "name2": "Cadre" } 
    ], 
    "upgradeConstraints": 
