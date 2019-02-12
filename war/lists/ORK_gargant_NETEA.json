@@ -72,10 +72,9 @@
                
 {"min":3, "max":3, "name":"Gargant Weapons", "from":[21,24,42,28,27,23,29], "appliesTo":[534]},
 {"max":1, "from":[29], "appliesTo":[534]},
-{"max":2, "from":[24,27], "appliesTo":[534]},
-{"min":3, "max":3, "name":"Gargant Weapons", "from":[21,42,28,23,29,26,25,22,31,30], "appliesTo":[533]},
-{"max":1, "from":[21,42,28,23,29], "appliesTo":[533]},
-{"max":2, "from":[26,25,22,31,30], "appliesTo":[533]},
+{"max":2, "from":[24,27], "ap pliesTo":[534]},
+{"min":1, "max":1, "name":"Great Gargant Belly Weapons", "from":[21,42,28,23,29], "appliesTo":[533]},
+{"min":2, "max":2, "name":"Great Gargant Arm Weapons", "from":[26,25,22,31,30], "appliesTo":[533]},
 {"min":3, "max":3, "name":"Gargant Weapons", "from":[21,24,42,28,27,23,29], "appliesTo":[535]},
 {"max":1, "from":[29], "appliesTo":[535]},
 {"max":2, "from":[24,27], "appliesTo":[535]},
