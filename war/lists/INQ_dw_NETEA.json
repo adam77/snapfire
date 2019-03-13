@@ -8,7 +8,7 @@
    "sections": [
         	{"name": "DEATH WATCH DETACHMENTS", "formations": [
             	
-		{"id": 500, "name": "Watch Company", 			"pts": 50, "upgrades": [1,2,3,4,5,15,16,23,24,25,33,34,35] },
+		{"id": 500, "name": "Watch Company", 			"pts": 50, "upgrades": [1,2,3,4,5,15,16,23,24,25,33,34,35,41,42,43,44,45,46] },
 	    	{"id": 503, "name": "Strike Team - Land Speeders", 	"pts": 200, "units": "", "upgrades": [2,3,4] }
 	  	]},
 	   
