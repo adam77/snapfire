@@ -14,7 +14,7 @@
 	   
         	{"name": "DEATH WATCH SUPPORT DETACHMENTS", "formations": [
             	{"id": 600, "name": "Inquisitorial Warband", 			"pts": 175, "upgrades": [36] },
-		{"id": 602, "name": "Inquisitorial Warband", 			"pts": 175, "upgrades": [36] },
+		
 		{"id": 601, "name": "0 -1 Inquisitorial Storm Trooper Platoon",   	"pts": 250, "units": "8 Inquisitorial Storm Trooper, 4 Chimeras", "upgrades": [36] }
 
 		
@@ -82,7 +82,7 @@
    "formationConstraints": [
       {"max": 3, "from": [502]},
       {"max": 1, "from": [604]},
-      {"min:":1, "max":1, "from": [602]},
+      {"min":1, "name":"Inquisitorial Warband", "from":[600]},
       {"maxPercent": 33.34, "name": "Restricted Support Formations", "from": [700,603,604,504]},
       {"max": 2, "name": "DEATH WATCH SUPPORT DETACHMENTS", "from": [600,601,602,605], "forEach": [500,501,502,503], "name2": "DEATH WATCH DETACHMENTS" }
    ],
