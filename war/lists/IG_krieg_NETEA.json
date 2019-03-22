@@ -6,7 +6,7 @@
 		{"name":"DEATH KORPS CORE COMPANIES", "formations":[
 			{ "id":501, "name":"Regimental HQ", "pts":400, "units":"Death Korps Supreme Commander, 19 Death Korps Infantry" , "upgrades":[102,107,105,108,109,111,114,121,122] },
 			{ "id":502, "name":"Infantry Company", "pts":300, "units":"Death Korps Commander, 19 Death Korps Infantry", "upgrades":[102,107,105,108,109,111,114,121,122] },
-			{ "id":503, "name":"Death Rider Company", "pts":275, "units":"12 Death Korps Rough Riders", "upgrades":[102,105,109,111,114,121,122] }
+			{ "id":503, "name":"Death Rider Company", "pts":250, "units":"12 Death Korps Rough Riders", "upgrades":[102,105,109,111,114,121,122] }
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
 			{ "id":511, "name":"Grenadiers Platoon", "pts":200, "units":"8 Death Korps Grenadiers", "upgrades":[51,53] },
