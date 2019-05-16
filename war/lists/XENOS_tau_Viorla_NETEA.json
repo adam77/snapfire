@@ -1,6 +1,6 @@
 {
    "id": "NetEA Tau Vior'la",
-   "version": "2.1",
+   "version": "2.2",
    "by": "Kyussinchains",
    "sections": 
    [
@@ -64,7 +64,7 @@
       
       {"id": 70, "name": "Heavy Rail Cannon", "pts": 0 }, 
       {"id": 71, "name": "Nexus Missile Array", "pts": 0 }, 
-      {"id": 72, "name": "Pulse-Ordinance Multi-Driver", "pts": 50 }, 
+      {"id": 72, "name": "Pulse-Ordinance Multi-Driver", "pts": 0 }, 
  
       {"id": 80, "name": "4 Pathfinder units, 2 Devilfish", "pts": 200 },
       {"id": 81, "name": "6 Pathfinder units", "pts": 200 },
