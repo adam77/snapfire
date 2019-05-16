@@ -9,8 +9,9 @@
          "formations": 
          [
             
-            {"id": 502, "name": "Vior'la Fire Warrior Cadre", "pts": 225, "upgrades": [35, 31, 32, 33, 41, 46, 51]},
-            {"id": 513, "name": "Pathfinder Group", "pts": 0, "upgrades": [41, 82, 83]}
+            {"id": 502, "name": "Fire Warrior Breacher Cadre", "pts": 225, "upgrades": [35, 31, 32, 33, 41, 46]},
+            {"id": 513, "name": "Pathfinder Group", "pts": 0, "upgrades": [41, 82, 83]},
+            {"id": 504, "name": "Vior'la XV8 Crisis Suit Cadre", "pts": 300, "upgrades": [41]}
             
          ]
       },
@@ -50,16 +51,18 @@
       {"id": 43, "name": "XV95 Ghostkeel Battlesuit unit", "pts": 25 },
       {"id": 46, "name": "Skyray", "pts": 75 }, 
       
-      {"id": 51, "name": "XV8 Crisis Battlesuit unit", "pts": 50},
-      {"id": 54, "name": "8 Fire Warrior units", "pts": 0 },
-      {"id": 56, "name": "6 Fire Warrior units, 2 Pathfinder units", "pts": 25 },
-      {"id": 55, "name": "6 Fire Warrior units, 3 Devilfish", "pts": 0 }, 
-      {"id": 57, "name": "4 Fire Warrior units, 2 Pathfinder units, 3 Devilfish", "pts": 25 }, 
+      {"id": 51, "name": "6 XV8 Crisis Battlesuit units", "pts": 0},
+      {"id": 52, "name": "7 XV8 Crisis Battlesuit units", "pts": 50},
+      {"id": 53, "name": "8 XV8 Crisis Battlesuit units", "pts": 75},
+      {"id": 54, "name": "8 Fire Warrior Breacher units", "pts": 0 },
+      {"id": 56, "name": "6 Fire Warrior Breacher units, 2 Pathfinder units", "pts": 25 },
+      {"id": 55, "name": "6 Fire Warrior Breacher units, 3 Devilfish", "pts": 0 }, 
+      {"id": 57, "name": "4 Fire Warrior Breacher units, 2 Pathfinder units, 3 Devilfish", "pts": 25 }, 
       
-      {"id": 60, "name": "10 Fire Warrior units", "pts": 50 }, 
-      {"id": 63, "name": "8 Fire Warrior units, 2 Pathfinder units", "pts": 75 }, 
-      {"id": 61, "name": "8 Fire Warrior units, 4 Devilfish", "pts": 75 },
-      {"id": 64, "name": "6 Fire Warrior units, 2 Pathfinder units, 4 Devilfish", "pts": 100 }, 
+      {"id": 60, "name": "10 Fire Warrior Breacher  units", "pts": 50 }, 
+      {"id": 63, "name": "8 Fire Warrior Breacher units, 2 Pathfinder units", "pts": 75 }, 
+      {"id": 61, "name": "8 Fire Warrior Breacher units, 4 Devilfish", "pts": 75 },
+      {"id": 64, "name": "6 Fire Warrior Breacher units, 2 Pathfinder units, 4 Devilfish", "pts": 100 }, 
       {"id": 62, "name": "XV15 Stealthsuit unit", "pts": 0 }, 
       
       {"id": 70, "name": "Heavy Rail Cannon", "pts": 0 }, 
@@ -93,10 +96,10 @@
       { "max": 3, "from": [ 43 ] }, 
       { "max": 2, "from": [ 51 ] }, 
       { "max": 3, "from": [ 82, 83 ] }, 
-      { "max": 1, "from": [ 52, 53 ] },      
+      { "min": 1, "max": 1, "from": [ 51, 52, 53 ], "appliesTo": [504] },      
       { "max": 1, "from": [ 32, 31 ], "appliesTo": [ 502 ] },       
       { "max": 1, "min": 1, "from": [ 54, 56, 55, 57, 60, 63, 61, 64 ], "appliesTo": [ 502 ] }, 
-      { "max": 1, "min": 1, "from": [ 34 ], "appliesTo": [ 501 ] } ,
+      { "max": 1, "min": 1, "from": [ 34 ], "appliesTo": [ 501, 504 ] } ,
       { "max": 1, "min": 1, "from": [ 80, 81 ], "appliesTo": [ 513 ] }, 
       { "max": 1, "min": 1, "from": [ 70, 71, 72 ], "appliesTo": [ 511 ] }, 
       { "max": 4, "min": 3, "from": [ 90, 91, 92 ], "appliesTo": [ 501 ] },
