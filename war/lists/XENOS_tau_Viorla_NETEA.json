@@ -82,7 +82,7 @@
    [ 
       { "max": 1, "from": [ 526 ] }, 
       { "maxPercent": 33.34, "name": "Air Caste Formations", "from": [ 522, 525, 526, 528, 524 ] }, 
-      { "max": 2, "name": "Support Groups", "from": [ 511, 512, 501, 515, 517], "forEach": [ 502, 513 ], "name2": "Cadre" } 
+      { "max": 2, "name": "Support Groups", "from": [ 511, 512, 501, 515, 517], "forEach": [ 502, 513, 504 ], "name2": "Cadre" } 
    ], 
    "upgradeConstraints": 
    [ 
