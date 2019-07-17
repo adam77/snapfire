@@ -1,6 +1,6 @@
 {
    "id": "Nazdreg Ug Urdgrub's Bad Moon Waaagh",
-   "version": "1.0",  
+   "version": "1.01",  
    "notes": ["If the army includes any great gargants, the Warlord must be in one of them. Otherwize the Warlord will join a Nobz or Gargant unit.",
    "Each ork Boyz unit added to a warband allows the inclusion of one free grotz unit"],
    "by": "Kyussinchains",
@@ -36,7 +36,7 @@
          "name": "AIRCRAFT, SPACECRAFT &amp; GARGANTS",
          "formations": [
             {"id": 517, "name": "Fighta Skwadron", "pts": 0, "upgrades": [49]},
-            {"id": 518, "name": "Bommer Skwadron", "pts": 0, "upgrades": [50]},
+            {"id": 518, "name": "Bommer", "pts": 175, "upgrades": []},
             {"id": 522, "name": "Gargant", "pts": 650, "upgrades": [81]},
             {"id": 523, "name": "Great Gargant", "pts": 850, "upgrades": [81]}
          ]
@@ -78,7 +78,7 @@
    "formationConstraints": [
       {"max": 1, "name": "Spacecraft", "from": [520]},
       {"max": 1, "name": "Tellyporta", "from": [599]},
-      {"maxPercent": 33, "name": "War Engines & Allies", "from": [517,518,522,523]}
+      {"maxPercent": 33.34, "name": "War Engines & Aircraft", "from": [517,518,522,523]}
    ],
    "upgradeConstraints": [
       {"max": 1, "from": [81], "perArmy": true},
@@ -128,7 +128,7 @@
       {"min": 15, "from": [43], "appliesTo": [515]},
       {"max": 3, "from": [64], "appliesTo": [515]},
       {"max": 9, "min": 3, "from": [49], "appliesTo": [517]},
-      {"max": 3, "min": 2, "from": [70], "appliesTo": [518]},
+      
       {"max": 1, "min": 1, "from": [80,91], "appliesTo": [520]}
    ]
 }
