@@ -1,38 +1,32 @@
 {
-	"id":"ADEPTUS MECHANICUS – Mars Prime Skitarii Legion",
-	"version":"Fan List",
+	"id":"ADEPTUS MECHANICUS – Mars Prime Explorator Fleet",
+	"version":"Version 0.003 (Fan List)",
 	"by":"Norto",
-	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
+	"notes":["Characters replace units in the formation."],
 	"sections":[
 
 		{"name":"Core Formations", "formations": [
-			{ "id":501, "name":"Secutarii Titan Guard", "pts":275, "upgrades":[64,63,61,65,69] },
-			{ "id":502, "name":"Vanguard Maniple", "pts":225, "units":"8 Skitarii Vanguard", "upgrades":[64,63,61,65,69] },
-			{ "id":503, "name":"Servitor Maniple", "pts":200, "units":"10 Battle Servitors", "upgrades":[61,69]}
+			{ "id":501, "name":"Vanguard Maniple", "pts":225, "units":"10 Skitarii Vanguard.", "upgrades":[61,63,64,96,97]}
 		]},
 		{"name":"Support Formations", "formations": [
-			{ "id":510, "name":"Ranger Centuria", "pts":50, "upgrades":[65] },
-			{ "id":511, "name":"Sicarian Infiltrators", "pts":250, "units":"8 Sicarian Infiltrators", "upgrades":[61,70] },
-			{ "id":512, "name":"Sicarian Rustalkers", "pts":250, "units":"8 Sicarian Rustalkers", "upgrades":[61,70] },
-			{ "id":513, "name":"Fulgurite Electro-Priests", "pts":200, "units":"6 Fulgurite Electro-Priests", "upgrades":[70] },
-			{ "id":514, "name":"Ironstrider Cavaliers", "pts":250, "upgrades":[] },			
-			{ "id":515, "name":"Sydonian Dragoons", "pts":200, "upgrades":[] },
-			{ "id":516, "name":"Onager Cohort", "pts":0, "upgrades":[56,57] },
-			{ "id":517, "name":"Destroyer Maniple", "pts":225, "units":"6 Kataphron Destroyers", "upgrades":[61,70] },
-			{ "id":518, "name":"Breacher Maniple", "pts":225, "units":"6 Kataphron Breachers", "upgrades":[61,70] },
-			{ "id":519, "name":"Kastelan Maniple", "pts":225, "upgrades":[62]},
-			{ "id":520, "name":"Warglaive Armiger Knights", "pts":175, "upgrades":[]}
-		]},
+			{ "id":510, "name":"Ranger Centuria", "pts":25, "upgrades":[65] },
+			{ "id":514, "name":"Ironstrider Cavaliers", "pts":50, "upgrades":[52,53] },			
+			{ "id":515, "name":"Sydonian Dragoons", "pts":50, "upgrades":[54] }
 
-		{"name":"Collegia Titanica Support", "formations":[
-			{"id":541, "name":"Warlord Titan", 		"pts":725, "upgrades":[80,82,83,84]},
-			{"id":542, "name":"Reaver Titan",		"pts":575, "upgrades":[80,82,83,84]},
-			{"id":543, "name":"Warhound Titan",		"pts":275, "upgrades":[80,82]},
-			{"id":544, "name":"Warhound Titan Pack",	"pts":500, "upgrades":[80,82]}
 		]},
-
+		{"name":"Elite Formations", "formations": [
+			{ "id":511, "name":"Sicarian Infiltrators", "pts":225, "units":"6 Sicarian Infiltrators", "upgrades":[61,95,94,97] },
+			{ "id":512, "name":"Sicarian Rustalkers", "pts":225, "units":"6 Sicarian Rustalkers", "upgrades":[61,95,94,97] },
+			{ "id":513, "name":"Fulgurite Electro-Priests", "pts":225, "units":"6 Fulgurite Electro-Priests", "upgrades":[61,95,94,97] },
+			{ "id":516, "name":"Onager Cohort", "pts":0, "upgrades":[77,40] },
+			{ "id":517, "name":"Destroyer Maniple", "pts":225, "units":"6 Kataphron Destroyers", "upgrades":[61,95] },
+			{ "id":518, "name":"Breacher Maniple", "pts":225, "units":"6 Kataphron Breachers", "upgrades":[61,95] },
+			{ "id":519, "name":"Kastelan Maniple", "pts":225, "units":"5 Kastelan Robots and a Cybernetica Datasmith.", "upgrades":[] }
+		]},
 		{"name":"Mars Prime Navy ", "formations":[
-			{ "id":552, "name":"Lightning Primaris", "pts":175, "units":"2 Lightning Primaris", "upgrades":[] },
+			{ "id":552, "name":"Knight Support", "pts":400, "upgrades":[93] }
+		]},
+		{"name":"Mars Prime Navy ", "formations":[
 			{ "id":551, "name":"Avenger Strike Fighters", "pts":200, "units":"2 Avenger Strike Fighters", "upgrades":[] }
 		]},
 		{"name":"Spacecraft", "formations":[
@@ -41,33 +35,11 @@
 
 	],
 	"upgrades":[	
-		{"id":13, "name":"Inferno Gun", 		"pts":0},
-		{"id":14, "name":"Vulcan Megabolter",		"pts":0},
-		{"id":15, "name":"Plasma Blastgun",		"pts":0},
-		{"id":16, "name":"Turbo-laser Destructor",	"pts":25},
-		{"id":30, "name":"Apocalypse Missile Launcher",	"pts":25},
-		{"id":25, "name":"Laser Burner",		"pts":0},
-		{"id":26, "name":"Corvus Assault Pod",		"pts":0},
-		{"id":27, "name":"Carapace Landing Pad",	"pts":0},
-		{"id":28, "name":"Plasma Cannon",		"pts":25},
-		{"id":29, "name":"Gatling Blaster",		"pts":25},
-		{"id":31, "name":"Close Combat Weapon",		"pts":25},
-		{"id":32, "name":"Melta Cannon",		"pts":50},
-		{"id":33, "name":"Laser Blaster",		"pts":50},
-		{"id":34, "name":"Volcano Cannon",		"pts":50},
-		{"id":35, "name":"Plasma Destructor",		"pts":75},
-		{"id":36, "name":"Support Missile",		"pts":75},
-		{"id":37, "name":"Quake Cannon",		"pts":75},
-		{"id":38, "name":"Minorus Support Missile", "pts":50},
-		{"id":80, "name":"Single Weapon System Surcharge", 	"pts":25},
-		{"id":82, "name":"Veteran Princeps",		"pts":25},
-		{"id":83, "name":"Carapace Multi-Lasers",	"pts":50},
-		{"id":84, "name":"Sacred Icon",			"pts":50},
 
-		{"id":61, "name":"Tech-Priest Dominus",							"pts":50},
-		{"id":62, "name":"Cybernetica Datasmith",						"pts":50},
-		{"id":63, "name":"Magos",								"pts":50},
-		{"id":64, "name":"Archmagos",								"pts":100},
+		{"id":61, "name":"Tech-Priest Dominus",							"pts":25},
+		{"id":62, "name":"Cybernetica Datasmith",						"pts":25},
+		{"id":63, "name":"Magos",								"pts":25},
+		{"id":64, "name":"Archmagos",								"pts":75},
 		{"id":65, "name":"Skitarii Rangers",							"pts":25},
 		{"id":66, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":50},
 		{"id":67, "name":"Ironstrider Ballistarius - Twin Cognis Autocannon",			"pts":50},
@@ -77,8 +49,8 @@
 		{"id":70, "name":"Terrax Pattern Termite Assault Drill",				"pts":25},
 		{"id":71, "name":"Tech-Priest Enginseer",						"pts":50},
 		{"id":73, "name":"Skitarii Servitors",							"pts":10},
-		{"id":77, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":50},
-		{"id":40, "name":"Onager Dunecrawler - Neutron Laser and a Cognis Heavy Stubber",	"pts":50},
+		{"id":77, "name":"Onager Dunecrawler - Icarus array",					"pts":50},
+		{"id":40, "name":"Onager Dunecrawler - Neutron Laser",					"pts":50},
 		{"id":43, "name":"Ordinatus Minorus - Ulator Sonic Destroyer",				"pts":150},
 		{"id":72, "name":"Ordinatus Minorus - Bellacosa Volcano cannon",			"pts":150},
 
@@ -86,60 +58,57 @@
 		{"id":46, "name":"Kataphron Destroyer",							"pts":0},
 		{"id":50, "name":"Kastelan Robots",							"pts":0},
 		{"id":51, "name":"Kastelan Robots - Incendine combustor and Kastelan fists",		"pts":0},
-		{"id":52, "name":"Ironstrider Ballistarius - Twin Cognis Autocannon",			"pts":0},
-		{"id":53, "name":"Ironstrider Ballistarius - Twin Cognis Lascannon",			"pts":0},
-		{"id":54, "name":"Sydonian Dragoon",							"pts":0},
+		{"id":52, "name":"Ironstrider Ballistarius - Twin Cognis Autocannon",			"pts":25},
+		{"id":53, "name":"Ironstrider Ballistarius - Twin Cognis Lascannon",			"pts":25},
+		{"id":54, "name":"Sydonian Dragoon",							"pts":25},
 		{"id":55, "name":"Secutarii Hoplite",							"pts":0},
 		{"id":56, "name":"Onager Dunecrawler - Daedalus Missile Launcher",			"pts":50},
 		{"id":57, "name":"Onager Dunecrawler - Neutron Laser and a Cognis Heavy Stubber",	"pts":50},
-		{"id":58, "name":"Questorius Knight-Styrix",						"pts":0},
-		{"id":59, "name":"Questorius Knight-Magaera",						"pts":0},
-		{"id":60, "name":"Secutarii Peltasts",							"pts":0},
+		{"id":58, "name":"Knight Paladin",							"pts":0},
+		{"id":59, "name":"Knight Errant ",							"pts":0},
+		{"id":60, "name":"Knight Warden ",							"pts":0},
 		{"id":91, "name":"Ordinatus Minorus - Bellacosa Volcano cannon",			"pts":0},
 		{"id":92, "name":"Ordinatus Minorus - Ulator Sonic Destroyer",				"pts":0},
-		{"id":93, "name":"Ordinatus Majoris - Sonic Disruptor",					"pts":0},
-		{"id":94, "name":"Ordinatus Majoris - Nova Cannon",					"pts":0},
-		{"id":95, "name":"Ordinatus Majoris - Hellfire Missiles",				"pts":50},
-		{"id":96, "name":"4x Warglaive Armiger Knights - Warglaive Configuration",			"pts":0},
-		{"id":97, "name":"4x Warglaive Armiger Knights - Helverin Configuration",			"pts":0}
+		{"id":93, "name":"Seneschal",								"pts":25},
+		{"id":94, "name":"3 Skorpius Duneriders",						"pts":75},
+		{"id":95, "name":"3 Terrax Pattern Termite Assault Drills",				"pts":75},
+		{"id":96, "name":"5 Skorpius Duneriders",						"pts":125},
+		{"id":97, "name":"Skorpius Disintegrator",						"pts":25}
 
 
 	],
 	"formationConstraints":[
 		{"max":1, "from":[561]},
-		{"max":2, "name":"SUPPORT FORMATIONS", "from":[510,511,512,513,514,515,517,518,519,516,520], "forEach":[501,502,503], "name2":"CORE FORMATIONS"},
-		{"maxPercent":34, "from":[531,532,541,542,543,544,551,552,561]},
-		{"max":1, "perArmy":true, "from":[501]},
-		{"max":2, "perArmy":true, "from":[520]}
+		{"max":1, "name":"SUPPORT FORMATIONS", "from":[510,514,515], "forEach":[501,502,503], "name2":"CORE FORMATIONS"},
+		{"max":2, "name":"ELITE FORMATIONS", "from":[511,512,513,517,518,519,516,520], "forEach":[501,502,503], "name2":"CORE FORMATIONS"},
+		{"maxPercent":34, "from":[552,551,561]}
 	],
 	"upgradeConstraints":[
-		{"min":4, "max":4, "from":[13,14,15,16], "appliesTo":[544]},
-		{"min":3, "max":3, "from":[30,13,14,15,16,25,26,27,28,29,31,32,33,34,35,36,37], "appliesTo":[542]},
-		{"min":4, "max":4, "from":[16,13,14,15,25,26,27,28,29,30,31,32,33,34,35,36,37], "appliesTo":[541]},
 
-
-    		{"min":2, "max":2, "from":[14,25,26,27,28,29,30,31,32,33,34,35,37,38], "appliesTo":[571]},
     		{"max":1, "from":[80]},
 		{"max":1, "perArmy":true, "from":[64]},
-	{"min":2, "max":2, "from":[13,14,15,16], "appliesTo":[543]},
+		{"min":2, "max":2, "from":[13,14,15,16], "appliesTo":[543]},
 		{"max":4, "from":[70]},
-		{"max":1, "from":[77]},
 		{"max":1, "from":[62]},
 		{"max":7, "from":[69]},
 		{"max":1, "from":[82]},
-	  	{"min":8, "max":8, "from": [55,60], "appliesTo": [501]},
-	  	{"min":6, "max":6, "from": [54], "appliesTo": [515]},
-	  	{"min":6, "max":6, "from": [52,53], "appliesTo": [514]},
+
+		{"max":1, "from":[96]},
+		{"max":3, "from":[97]},
+		{"max":1, "from":[95,94]},
+		
+	  	{"min":4, "max":8, "from": [54], "appliesTo": [515]},
+	  	{"min":4, "max":8, "from": [52,53], "appliesTo": [514]},
 	  	{"min":5, "max":5, "from": [50], "appliesTo": [519]},
 	  	{"min":3, "max":3, "from": [91,92], "appliesTo": [531]},
 	  	{"min":1, "max":1, "from": [93,94,95], "appliesTo": [532]},
 	  	{"max":3, "from": [71], "appliesTo": [531]},
 	  	{"min":1, "max":1, "from": [96,97], "appliesTo": [520]},
 	  	{"max":1, "from": [71], "appliesTo": [532]},
-	  	{"max":2, "from": [65], "appliesTo": [501,502]},
-		{"min":4, "max":6, "from":[57,56], "appliesTo": [516]},
+		{"min":5, "max":7, "from":[77,40], "appliesTo": [516]},
 		{"max":1, "from":[56], "appliesTo": [516]},
 		{"min":4, "max":6, "from":[65], "appliesTo": [510]},
+		{"min":4, "max":4, "from":[58,59,60], "appliesTo": [552]},
 		{"max":1, "from":[61,63,64]}
 	]
 }
