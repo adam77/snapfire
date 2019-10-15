@@ -1,0 +1,95 @@
+{
+	"id":"Tallarn Desert Raiders",
+	"version":"Version 0.08",
+	"by":"Norto",
+	"sections":[
+		{"name":"Tallarn Companies", "formations":[
+			{"id":500, "name":"Infantry Company", 			"pts":200, "upgrades":[16,17,20,21,15], "units":"10 Imperial Guard Infantry units"},
+			{"id":501, "name":"Mechanized Infantry Company", 	"pts":175, "upgrades":[16,17,20,21,15,22], "units":"10 Imperial Guard Infantry units"},
+			{"id":502, "name":"Mukaali Assault Company", 		"pts":300, "upgrades":[16,17,20,21,15]}
+		]},
+		{"name":"Tallarn Support Formations", "formations":[
+			{"id":511, "name":"Sentinel Platoon", 			"pts":150, "upgrades":[], "units":"8 Tallarn Sentinels"},
+			{"id":512, "name":"Fire Support Platoon",		"pts":200, "upgrades":[25,17,20,26], "units":"4 Fire Support Units"},
+			{"id":513, "name":"Light Artillery Platoon",		"pts":200, "upgrades":[26,20], "units":"4 Chimeras, and 4 Thudd Gun units"},
+			{"id":514, "name":"Desert Raiders Platoon",		"pts":175, "upgrades":[27,28], "units":"4 Stormtrooper units, and 4 Sniper units"},
+			{"id":515, "name":"Hellhound Squadron",			"pts":0,   "upgrades":[26]},
+			{"id":516, "name":"Griffon Squadron", 			"pts":0,   "upgrades":[26]},
+			{"id":517, "name":"Anti-Aircraft Platoon",		"pts":175, "upgrades":[], "units":"4 Sabre Platforms and 4 Chimeras"},
+			{"id":518, "name":"Rough Rider Platoon",		"pts":175, "upgrades":[], "units":"1 Calvary Commander character, and 6 Rough Rider units"},
+			{"id":519, "name":"Tauros Platoon",			"pts":200, "upgrades":[], "units":"4 Tauros and 4 Tauros Venator"},
+			{"id":520, "name":"Conqueror Platoon",			"pts":325, "upgrades":[], "units":"6 Leman Russ Conquerors"}
+		]},
+		{"name":"Imperial Navy", "formations":[
+			{"id":531, "name":"Thunderbolt Squadron",		"pts":175, "upgrades":[], "units":"2 Thunderbolts"},
+			{"id":532, "name":"Destroyer Squadron",			"pts":275, "upgrades":[], "units":"2 Marauder Destroyers"}
+		]},
+		{"name":"Knights", "formations":[
+			{"id":533, "name":"Questoris Knights",		"pts":0, "upgrades":[37]}
+		]}
+	],
+	"upgrades":[
+		{"id":11, "name":"Supreme Commander",				"pts":50},
+		{"id":12, "name":"Cavalry Supreme Commander",			"pts":50},
+		{"id":13, "name":"Commander",					"pts":0},
+		{"id":14, "name":"Cavalry Commander ",				"pts":0},
+		{"id":15, "name":"Add 4 Fire Support units",			"pts":100},
+		{"id":16, "name":"Sniper Units",				"pts":25},
+		{"id":17, "name":"Add 1 Saber Platform",			"pts":25},
+		{"id":18, "name":"3 Griffons",					"pts":50},
+		{"id":19, "name":"6 Griffons",					"pts":100},
+		{"id":20, "name":"Add 3 Griffons",				"pts":50},
+		{"id":21, "name":"Add 3 Hellhounds",				"pts":100},
+		{"id":22, "name":"Chimeras",					"pts":25},
+		{"id":23, "name":"Mukaali Cavalry ",				"pts":0},
+		{"id":24, "name":"Mukaali Cavalry Support",			"pts":0},
+		{"id":25, "name":"Add 2 Chimeras",				"pts":50},
+		{"id":26, "name":"Add 1 Saber Platform and 1 Chimera",		"pts":50},
+		{"id":27, "name":"Add 4 Chimeras",				"pts":100},
+		{"id":28, "name":"Teleport",					"pts":50},
+		{"id":29, "name":"3 Hellhounds",				"pts":150},
+		{"id":30, "name":"6 Hellhounds",				"pts":250},
+		{"id":31, "name":"3 Griffons",					"pts":100},
+		{"id":32, "name":"6 Griffons",					"pts":175},
+		{"id":37, "name":"Questoris Knights",				"pts":175},
+		{"id":34, "name":"2 Ogryns",					"pts":50},
+		{"id":35, "name":"Hydra",					"pts":50},
+		{"id":36, "name":"Valkyrie Transport",				"pts":150}
+	],
+	"formationConstraints":[
+		{"max":2, "name":"Support Formations", "from":[511,512,513,5143,515,516,517,518,519,520], "forEach":[500,501,502], "name2":"Company"},
+		{"maxPercent":33, "name":"Titans & Navy", "from":[531,532,533]},
+		{"max":1, "from":[508]},
+		{"max":1, "from":[506]},
+		{"max":1, "from":[512]}
+
+	],
+	"upgradeConstraints":[
+		{"max":1, "perArmy":true, "from":[11,12]},
+		{"min":1, "max":1, "from":[13,11], "appliesTo":[500,501]},
+		{"min":2, "max":4, "from":[16], "appliesTo":[500,501]},
+		{"min":7, "max":12, "from":[22], "appliesTo":[501]},
+
+		{"min":1, "max":1, "from":[14,12], "appliesTo":[502]},
+		{"min":9, "max":9, "from":[23,24], "appliesTo":[502]},
+		{"min":0, "max":1, "from":[15]},
+		{"min":0, "max":1, "from":[17]},
+		{"min":0, "max":1, "from":[18]},
+		{"min":0, "max":1, "from":[19]},
+		{"min":0, "max":1, "from":[20]},
+		{"min":0, "max":1, "from":[21]},
+		{"min":0, "max":2, "from":[16], "appliesTo":[502]},
+
+		{"min":0, "max":1, "from":[25]},
+		{"min":0, "max":1, "from":[26,17]},
+		{"min":0, "max":1, "from":[27,28]},
+		
+		{"min":1, "max":1, "from":[29,30], "appliesTo":[515]},
+
+		{"min":1, "max":1, "from":[31,32], "appliesTo":[516]},
+
+		{"min":2, "max":3, "from":[37], "appliesTo":[533]},
+
+		{"max":3, "name":"Upgrades", "from":[15,17,18,19,20,21]}
+	]
+}
