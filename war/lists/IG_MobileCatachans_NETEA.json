@@ -1,10 +1,9 @@
 {
 	"id":"Mobile Forces of Catachan",
-	"version":"Mobile Forces of Catachan 0.4.3 Experimental",
+	"version":"Mobile Forces of Catachan 0.4.3 Developmental",
 	"notes": [
 	"Mobile Forces of Catachan may include 1 Commissar per 500 points or part thereof after the first 500 points",
-	"If the Valkyrie upgrade is chosen, then you must purchase enough Valkyries to transport the entire formation.",
-	"Please leave feedback if you play this list here: http://www.tacticalwargames.net/taccmd/viewtopic.php?f=74&t=29780"],
+	"Please leave feedback if you play this list here: http://www.taccmd.tacticalwargames.net/viewtopic.php?f=74&t=34099"],
 	"by":"Largo",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
@@ -22,9 +21,9 @@
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
 			{"id":520, "name":"Lightning Squadron",			"pts":150, "upgrades":[], "units":"2 Lightning Strike Fighter"},
-			{"id":521, "name":"Thunderbolt Flight",			"pts":150, "upgrades":[], "units":"2 Thunderbolt Fighters"},
-			{"id":522, "name":"Marauder Bombers",			"pts":250, "upgrades":[], "units":"2 Marauders"},
-			{"id":523, "name":"Spacecraft",				"pts":150, "upgrades":[]}
+			{"id":521, "name":"Thunderbolt Squadron",		"pts":150, "upgrades":[]},
+			{"id":522, "name":"Marauder Bombers",			"pts":225, "upgrades":[], "units":"2 Marauders"},
+			{"id":523, "name":"Spacecraft",				"pts":125, "upgrades":[]}
 		]}
 	],
 	"upgrades":[
@@ -40,16 +39,16 @@
 
 		{"id":22, "name":"Add 2 Vulture Punisher",					"pts":75},
 		{"id":23, "name":"Add 2 Vultures",						"pts":100},
-		{"id":24, "name":"Add 1 Vulture 1 Vulture Tornado",				"pts":100},
+		{"id":24, "name":"Add 1 Vulture, 1 Vulture Tornado",				"pts":100},
 		{"id":25, "name":"Add 2 Vulture Tornados",					"pts":100},
 
 		{"id":26, "name":"Vulture Tornado",						"pts":25},
 		{"id":27, "name":"Sky Talons",							"pts":25},
 		{"id":28, "name":"Add six Imperial Guard Infantry units and 3 Valkyries",	"pts":150},
 
-		{"id":31, "name":"1 Catachan Sentinel Drop Sentinel",				"pts":50},
-		{"id":32, "name":"1 Catachan Sentinel Support Sentinel",			"pts":50},
-		{"id":33, "name":"1 Support Sentinel 1 Drop Sentinel",				"pts":50},
+		{"id":31, "name":"1 Catachan Sentinel, 1 Drop Sentinel",			"pts":50},
+		{"id":32, "name":"1 Catachan Sentinel, 1 Support Sentinel",			"pts":50},
+		{"id":33, "name":"1 Support Sentinel, 1 Drop Sentinel",				"pts":50},
 		{"id":34, "name":"2 Catachan Sentinels",					"pts":50},
 		{"id":35, "name":"2 Support Sentinel ",						"pts":50},
 		{"id":36, "name":"2 Drop Sentinels",						"pts":50},
@@ -62,9 +61,13 @@
 		{"id":51, "name":"4 Imperial Guard Fire Support Units", 			"pts":0},
 		{"id":52, "name":"4 Imperial Guard Mortar Units",				"pts":0},
 
+		{"id":61, "name":"2 Thunderbolt Fighters",					"pts":0},
+		{"id":62, "name":"3 Thunderbolt Fighters",					"pts":75},
+
 
 		{"id":98, "name":"Lunar Class Cruiser",						"pts":0},
-		{"id":99, "name":"Emperor Class Battleship",					"pts":50}
+		{"id":99, "name":"Emperor Class Battleship",					"pts":75}
+
 		],
 	"formationConstraints":[
 		{"max":2, "name":"Support Formations", "from":[501,502,503,504,505,506], "forEach":[511,512,513], "name2":"Company"},
@@ -86,6 +89,7 @@
 		{"max":1, "from":[22,23,24,25], "appliesTo": [511,512,513,502,505,506]},
 		{"max":1, "from":[18,19], "appliesTo": [511,512,513,502]},
 		{"max":1, "from":[31,32,33,34,35,36], "appliesTo": [511,512,513,502]},
+		{"min":1, "from":[61,62], "appliesTo": [521]},
 		{"max":1, "from":[15]},
 		{"max":1, "from":[13]},
 		{"max":1, "from":[14]},
