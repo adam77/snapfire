@@ -1,12 +1,13 @@
 {
 	"id":"ADEPTUS MECHANICUS – Explorator Fleet",
-	"version":"Version 0.04",
+	"version":"Version 0.05",
 	"by":"Norto",
-	"notes":["Arch Magos, Magos and Tech Priests replace units in the formation when taken as an upgrade.", "1 Dominus Knight Castellan up to each 1500 points."],
+	"notes":["Arch Magos, Magos and Tech Priests replace units in the formation when taken as an upgrade."],
 	"sections":[
 
 		{"name":"Core Formations", "formations": [
-			{ "id":501, "name":"Vanguard Maniple", "pts":250, "units":"12 Skitarii Vanguard.", "upgrades":[61,63,64,65,96,97]}
+			{ "id":501, "name":"Vanguard Maniple", "pts":250, "upgrades":[61,63,64,65,96,97]},
+			{ "id":502, "name":"Skorpius Cohort", "pts":25, "upgrades":[98]}
 		]},
 		{"name":"Support Formations", "formations": [
 			{ "id":510, "name":"Ranger Centuria", "pts":25, "upgrades":[65] },
@@ -21,7 +22,7 @@
 			{ "id":516, "name":"Onager Cohort", "pts":0, "upgrades":[77,40] },
 			{ "id":517, "name":"Destroyer Maniple", "pts":225, "units":"6 Kataphron Destroyers", "upgrades":[61,95] },
 			{ "id":518, "name":"Breacher Maniple", "pts":225, "units":"6 Kataphron Breachers", "upgrades":[61,95] },
-			{ "id":519, "name":"Kastelan Maniple", "pts":225, "units":"5 Kastelan Robots and a Cybernetica Datasmith.", "upgrades":[] }
+			{ "id":519, "name":"Kastelan Maniple", "pts":275, "units":"5 Kastelan Robots and a Cybernetica Datasmith.", "upgrades":[] }
 		]},
 		{"name":"Knights Support", "formations":[
 			{ "id":552, "name":"Knight Detachment", "pts":25, "upgrades":[58,59,93]}
@@ -72,22 +73,24 @@
 		{"id":58, "name":"Knight Paladin",							"pts":90},
 		{"id":59, "name":"Knight Errant",							"pts":100},
 		{"id":60, "name":"Knight Crusader",							"pts":115},
-		{"id":99, "name":"Dominus Knight Castellan",						"pts":125},
-		{"id":91, "name":"Ordinatus Minorus - Bellacosa Volcano cannon",			"pts":0},
-		{"id":92, "name":"Ordinatus Minorus - Ulator Sonic Destroyer",				"pts":0},
+		{"id":12, "name":"12 Skitarii Vanguard",						"pts":0},
+		{"id":13, "name":"8 Skitarii Vanguard, 4 Secutarii Peltasts",				"pts":50},
+		{"id":14, "name":"8 Skitarii Vanguard, 4 Secutarii Hoplites",				"pts":50},
+		{"id":15, "name":"4 Skitarii Vanguard, 4 Secutarii Peltasts, 4 Skitarii Hoplites",	"pts":100},
 		{"id":93, "name":"Seneschal",								"pts":25},
 		{"id":94, "name":"Skorpius Duneriders",							"pts":15},
 		{"id":95, "name":"Terrax Pattern Termite Assault Drills",				"pts":15},
 		{"id":96, "name":"Skorpius Duneriders",							"pts":15},
-		{"id":97, "name":"Skorpius Disintegrator",						"pts":25}
+		{"id":97, "name":"Skorpius Disintegrator",						"pts":35},
+		{"id":98, "name":"Skorpius Disintegrator",						"pts":35}
 
 
 	],
 	"formationConstraints":[
 		{"max":1, "from":[561]},
-		{"max":1, "name":"SUPPORT FORMATIONS", "from":[510,514,515], "forEach":[501,502,503], "name2":"CORE FORMATIONS"},
-		{"max":2, "name":"ELITE FORMATIONS", "from":[511,512,513,517,518,519,516,520], "forEach":[501,502,503], "name2":"CORE FORMATIONS"},
-		{"maxPercent":34, "from":[523,524,526,552,551,561]}
+		{"max":1, "name":"SUPPORT FORMATIONS", "from":[510,514,515], "forEach":[501,502], "name2":"CORE FORMATIONS"},
+		{"max":2, "name":"ELITE FORMATIONS", "from":[511,512,513,517,518,519,516,520], "forEach":[501,502], "name2":"CORE FORMATIONS"},
+		{"maxPercent":34, "from":[524,523,526,551,552,561]}
 	],
 	"upgradeConstraints":[
 
@@ -101,6 +104,8 @@
 		{"max":1, "from":[93]},
 		{"max":3, "from":[97]},
 		{"min":0, "max":2, "from": [65], "appliesTo": [501]},
+		{"min":5, "max":8, "from": [98], "appliesTo": [502]},
+		{"min":1, "max":1, "from": [12,13,14,15], "appliesTo": [501]},
 	  	{"min":4, "max":8, "from": [54], "appliesTo": [515]},
 	  	{"min":4, "max":8, "from": [52,53], "appliesTo": [514]},
 	  	{"min":3, "max":3, "from": [91,92], "appliesTo": [531]},
