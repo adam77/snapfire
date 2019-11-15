@@ -1,137 +1,110 @@
 {
-   "id": "Tau Vior'la",
-   "version": "1.2 Revisted",
-   "by": "Borka",
+   "id": "NetEA Tau Vior'la",
+   "version": "2.3",
+   "by": "Kyussinchains",
    "sections": 
    [
       {
          "name": "Tau Core Formations",
          "formations": 
          [
-            {"id": 502, "name": "Fire Warrior Cadre", "pts": 225, "upgrades": [33,37,41,21,22,23,24,25,31,46]},
-            {"id": 501, "name": "Heavy Battlesuit group", "pts": 25, "upgrades": [46,90,91,92] },
-	    {"id": 503, "name": "Pathfinder Group", "pts": 175, "upgrades": [24]}
+            
+            {"id": 502, "name": "Fire Warrior Breacher Cadre", "pts": 225, "upgrades": [35, 31, 32, 33, 41, 46, 47]},
+            {"id": 513, "name": "Pathfinder Group", "pts": 0, "upgrades": [41, 82, 83]},
+            {"id": 504, "name": "Vior'la XV8 Crisis Suit Cadre", "pts": 300, "upgrades": [41]}
+            
          ]
       },
       {
          "name": "Support Formations",
          "formations": 
          [
-
-            {"id": 511, "name": "Stealth Group", "pts": 225, "upgrades": []},  
-            {"id": 512, "name": "Armour Support Group", "pts": 225, "units": "4 Hammerheads", "upgrades": [26,46]},  
-	    {"id": 513, "name": "Crisis Battlesuit", "pts": 0, "upgrades": [] },                   
-            {"id": 514, "name": "KV128 Stormsurge Formation", "pts": 250, "units": "2 KV128 Stormsurge Battlesuit units"},
-            {"id": 515, "name": "KX139 Ta'unar Supremacy", "pts": 275, "units": "1 KX139 Ta'unar Supremacy Battlesuit unit", "upgrades": []},   
-	    {"id": 516, "name": "Skysweep Group", "pts": 250, "units": "3 Skyray Air Defense Gunships"}, 
-            {"id": 517, "name": "Broadside Group", "pts": 300, "units": "6 XV88 Broadside battlesuits", "upgrades": [23] }      
+            {"id": 512, "name": "Broadside Group", "pts": 300, "units": "6 XV88 Broadside battlesuits", "upgrades": [41] },
+            {"id": 501, "name": "Heavy Battlesuit Cadre", "pts": 25, "upgrades": [90, 91, 92] },
+            {"id": 517, "name": "Stealth Group", "pts": 225, "upgrades": []},                     
+            {"id": 515, "name": "KV128 Stormsurge Formation", "pts": 250, "units": "2 KV128 Stormsurge Battlesuit units"},
+            {"id": 511, "name": "KX139 Ta'unar Supremacy", "pts": 225, "units": "1 KX139 Ta'unar Supremacy Battlesuit unit", "upgrades": []}            
          ]
       },
       {
          "name": "Air Caste Formations",
          "formations": 
          [
-            {"id": 522, "name": "Razorshark Squadron", "pts": 175, "units": "3 Razorshark strike Fighters"},
-            {"id": 523, "name": "Sun Shark Squadron", "pts": 200, "units": "2 Sun Shark Bombers"},
-            {"id": 524, "name": "Orca Dropship", "pts": 150, "units": "1 Orca Dropship"},
-            {"id": 525, "name": "Manta Dropship", "pts": 600, "units": "1 Manta Dropship", "upgrades": [25]},   
-            {"id": 526, "name": "Spacecraft", "pts": 200, "units": "1 Protector Class II Cruiser"}
-
+            {"id": 522, "name": "Razorshark Squadron", "pts": 200, "units": "3 Razorshark strike Fighters"},
+            {"id": 528, "name": "Sun Shark Squadron", "pts": 200, "units": "2 Sun Shark Bombers"},
+            {"id": 525, "name": "Orca Dropship", "pts": 150},
+            {"id": 524,"name": "Manta Dropship","pts": 575,"upgrades": []},
+            {"id": 526, "name": "Spacecraft", "pts": 225, "units": "1 Protector Class II Cruiser"}
+            
          ]
       }
    ],
    "upgrades": 
-   [      
-      {"id": 26, "name": "Rail gun Surcharge", "pts": 25 },
-      {"id": 21, "name": "Fireblade", "pts": 50 },
-      {"id": 22, "name": "Add two Firesight Marksman units and up to one Devilfish", "pts": 75 },
-      {"id": 24, "name": "Piranha ", "pts": 25 },
-      {"id": 23, "name": "2 Gun Drones ", "pts": 25 },
-      {"id": 25, "name": "Shas'o ", "pts": 100 },
-      {"id": 31, "name": "Replace 2 FW/BT with 2 Crisis Battlesuits and 1 Shas'o Commander", "pts": 150 },
+   [
+      {"id": 31, "name": "Shas'o Commander", "pts": 100 },
       {"id": 32, "name": "Cadre Fireblade", "pts": 50 }, 
       {"id": 33, "name": "Ethereal", "pts": 50 }, 
       {"id": 34, "name": "Shas'el Commander", "pts": 25 },
       {"id": 35, "name": "Bonded Team", "pts": 25 },
-      {"id": 36, "name": "Crisis Suits", "pts": 50 },
-      {"id": 37, "name": "Replace 2 FW/BT with 2 Crisis Battlesuits and 1 Shas'el Commander", "pts": 75 },
-      {"id": 41, "name": "Broadside Battle Suit", "pts": 50 },
-      {"id": 42, "name": "Stealth Drones", "pts": 25 },
+      
+      {"id": 41, "name": "2 Gun Drones", "pts": 25 },
       {"id": 43, "name": "XV95 Ghostkeel Battlesuit unit", "pts": 25 },
       {"id": 46, "name": "Skyray", "pts": 100 }, 
+      {"id": 47, "name": "3 XV88 Broadside Battlesuits", "pts": 150 }, 
       
-      {"id": 51, "name": "XV8 Crisis Battlesuit unit", "pts": 50},
-      {"id": 52, "name": "XV9 Hazard Battlesuit unit", "pts": 75},
-
-      {"id": 54, "name": "8 Fire Warrior units", "pts": 0 },
-      {"id": 55, "name": "6 Fire Warrior units, 3 Devilfish", "pts": 0 }, 
-      {"id": 56, "name": "8 Breacher Teams", "pts": 0},
-      {"id": 57, "name": "6 Breacher Teams, 3 Devilfish", "pts": 0}, 
-
-      {"id": 58, "name": "9 Fire Warrior units", "pts": 25 }, 
-      {"id": 59, "name": "9 Breacher Teams", "pts": 25 }, 
-      {"id": 60, "name": "10 Fire Warrior units", "pts": 50 }, 
-      {"id": 61, "name": "10 Breacher Teams", "pts": 50 }, 
-      {"id": 62, "name": "11 Fire Warrior units", "pts": 75 }, 
-      {"id": 63, "name": "11 Breacher Teams", "pts": 75 }, 
-      {"id": 64, "name": "12 Fire Warrior units", "pts": 100 }, 
-      {"id": 65, "name": "12 Breacher Teams", "pts": 100 }, 
-
-      {"id": 66, "name": "10 Fire Warrior units, 4 Devilfish", "pts": 75 }, 
-      {"id": 67, "name": "10 Breacher Team units, 4 Devilfish", "pts": 75 },
-      {"id": 68, "name": "12 Fire Warrior units, 5 Devilfish", "pts": 125 }, 
-      {"id": 69, "name": "12 Breacher Team units, 5 Devilfish", "pts": 125 }, 
-      {"id": 73, "name": "XV15 Stealthsuit unit", "pts": 0 }, 
+      {"id": 51, "name": "6 XV8 Crisis Battlesuit units", "pts": 0},
+      {"id": 52, "name": "7 XV8 Crisis Battlesuit units", "pts": 50},
+      {"id": 53, "name": "8 XV8 Crisis Battlesuit units", "pts": 75},
+      {"id": 54, "name": "8 Fire Warrior Breacher units", "pts": 0 },
+      {"id": 56, "name": "6 Fire Warrior Breacher units, 2 Pathfinder units", "pts": 25 },
+      {"id": 55, "name": "6 Fire Warrior Breacher units, 3 Devilfish", "pts": 0 }, 
+      {"id": 57, "name": "4 Fire Warrior Breacher units, 2 Pathfinder units, 3 Devilfish", "pts": 25 }, 
+      
+      {"id": 60, "name": "10 Fire Warrior Breacher  units", "pts": 50 }, 
+      {"id": 63, "name": "8 Fire Warrior Breacher units, 2 Pathfinder units", "pts": 75 }, 
+      {"id": 61, "name": "8 Fire Warrior Breacher units, 4 Devilfish", "pts": 75 },
+      {"id": 64, "name": "6 Fire Warrior Breacher units, 2 Pathfinder units, 4 Devilfish", "pts": 100 }, 
+      {"id": 62, "name": "XV15 Stealthsuit unit", "pts": 0 }, 
       
       {"id": 70, "name": "Heavy Rail Cannon", "pts": 0 }, 
       {"id": 71, "name": "Nexus Missile Array", "pts": 0 }, 
       {"id": 72, "name": "Pulse-Ordinance Multi-Driver", "pts": 0 }, 
  
-      {"id": 80, "name": "4 Pathfinder units, 2 Devilfishes", "pts": 0 },
-      {"id": 81, "name": "5 Pathfinder units", "pts": 0 },
-      {"id": 82, "name": "3 Pathfinder units, 2 Tetras", "pts": 0 },
-      {"id": 83, "name": "2 Pathfinder units, 1 Devilfish, 2 Tetras", "pts": 0 },
-            
+      {"id": 80, "name": "4 Pathfinder units, 2 Devilfish", "pts": 200 },
+      {"id": 81, "name": "6 Pathfinder units", "pts": 200 },
+      {"id": 82, "name": "Tetra", "pts": 25 },
+      {"id": 83, "name": "Pirhana", "pts": 25 },
+                  
       {"id": 90, "name": "XV104 Riptide ", "pts": 100 },
       {"id": 91, "name": "XV107 R'Varna ", "pts": 100 },
-      {"id": 92, "name": "XV109 Y'Vahra ", "pts": 75 }
+      {"id": 92, "name": "XV109 Y'Vahra ", "pts": 100 }
    ], 
    "formationConstraints": 
    [ 
       { "max": 1, "from": [ 526 ] }, 
-      { "maxPercent": 33, "name": "Air Caste Formations", "from": [ 522, 523, 524, 525, 526 ] }, 
-      { "max": 2, "name": "Support Groups", "from": [ 511, 512, 513, 514, 515, 516, 517], "forEach": [ 501, 502 ], "name2": "Cadre" } 
+      { "maxPercent": 33.34, "name": "Air Caste Formations", "from": [ 522, 525, 526, 528, 524 ] }, 
+      { "max": 2, "name": "Support Groups", "from": [ 511, 512, 501, 515, 517], "forEach": [ 502, 513, 504 ], "name2": "Cadre" } 
    ], 
    "upgradeConstraints": 
    [ 
-      { "max": 1, "perArmy": true, "from": [ 31,25], "name": "Cmdr"  },  
+      { "max": 1, "perArmy": true, "from": [ 31 ], "name": "Cmdr"  },  
       { "max": 1, "perArmy": true, "from": [ 33 ], "name": "Ethereal"  },  
       { "max": 1, "from": [ 32 ] }, 
-      { "max": 1, "from": [ 26 ] }, 
-      { "max": 1, "from": [ 31,37 ] }, 
-      { "max": 1, "from": [ 22 ] }, 
-      { "max": 1, "from": [ 21 ] }, 
-      { "max": 1, "from": [ 23 ] }, 
       { "max": 1, "from": [ 35 ] }, 
       { "max": 1, "from": [ 46 ] },  
-      { "max": 3, "from": [ 41 ] },
-      { "max": 1, "from": [ 42 ] },      
-      { "max": 3, "from": [ 43 ] },
-      { "max": 3, "from": [ 24 ] }, 
+      { "max": 1, "from": [ 41 ] },
+      { "max": 1, "from": [ 42 ] }, 
+      { "max": 1, "from": [ 47 ] }, 
+      { "max": 3, "from": [ 43 ] }, 
       { "max": 2, "from": [ 51 ] }, 
-      { "max": 2, "from": [ 52 ] },    
-      { "max": 4, "from": [ 90,91,92 ] },   
-      { "max": 1, "from": [ 32, 31 ], "appliesTo": [ 502 ] },    
-      { "min": 6, "max": 6, "from": [ 73,43 ], "appliesTo": [ 511 ] }, 
-      { "min": 6, "max": 6, "from": [ 36 ], "appliesTo": [ 513 ] }, 
-      { "min": 1, "max": 1, "from": [ 34,25 ], "appliesTo": [ 513 ] }, 
-      { "max": 3, "from": [ 43 ], "appliesTo": [ 511 ] },      
-      { "min": 1, "max": 1, "from": [ 80, 81,82,83 ], "appliesTo": [ 503 ] },   
-      { "max": 1, "min": 1, "from": [ 54,56,55,57,58,59,60,61,62,63,64,65,66,67,68,69], "appliesTo": [ 502 ] }, 
-      { "max": 1, "min": 1, "from": [ 34 ], "appliesTo": [ 501 ] } ,
-      { "max": 1, "min": 1, "from": [ 70, 71, 72 ], "appliesTo": [ 515 ] }, 
+      { "max": 3, "from": [ 82, 83 ] }, 
+      { "min": 1, "max": 1, "from": [ 51, 52, 53 ], "appliesTo": [504] },      
+      { "max": 1, "from": [ 32, 31 ], "appliesTo": [ 502 ] },       
+      { "max": 1, "min": 1, "from": [ 54, 56, 55, 57, 60, 63, 61, 64 ], "appliesTo": [ 502 ] }, 
+      { "max": 1, "min": 1, "from": [ 34 ], "appliesTo": [ 501, 504 ] } ,
+      { "max": 1, "min": 1, "from": [ 80, 81 ], "appliesTo": [ 513 ] }, 
+      { "max": 1, "min": 1, "from": [ 70, 71, 72 ], "appliesTo": [ 511 ] }, 
       { "max": 4, "min": 3, "from": [ 90, 91, 92 ], "appliesTo": [ 501 ] },
-      { "min": 4, "max": 8, "from": [36], "appliesTo": [ 518 ] }, 
-      { "min": 1, "max": 1, "from": [34,31], "appliesTo": [ 518 ] }
+      { "max": 6, "min": 6, "from": [ 62, 43 ], "appliesTo": [ 517 ] } 
    ]
 }

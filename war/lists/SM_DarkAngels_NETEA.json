@@ -1,61 +1,59 @@
 {
 	"id":"Dark Angels",
-	"version":"NetEA Dark Angels 1.81",
+	"version":"NetEA Dark Angels v1.9 <a href=\"http://www.taccmd.tacticalwargames.net/viewtopic.php?f=73&t=32991\">TCMD forum</a>",
 	"by":"Mrdiealot",
 "sections":[
 		{"name":"Dark Angles Core Detachments", "formations": [
             { "id":501, "name":"Tacticals", "units":"6 Tacticals plus Transport",        "pts":275, "upgrades":[13,14,16,17,19,31] },
 			{ "id":532, "name":"Land Raiders", "units":"3 Land Raiders",   "pts":250, "upgrades":[13,14,16,30] }
    	 ]},
-	 		{"name":"Dark Angles Support Detachments (Two Support Detachments may be taken for each Core Detachment // if any Core Detachment countains a Grand Master)", "formations": [
-            { "id":502, "name":"Scout Infiltrators", "units":"4 Space Marine Sniper Scouts",        "pts":175, "upgrades":[13,14] },
-            { "id":503, "name":"Assaults", "units":"6 Assault Marines",        "pts":250, "upgrades":[13,14] },
+	 		{"name":"Dark Angles Support Detachments (Three Support Detachments may be taken for each Core Detachment)", "formations": [
+            { "id":502, "name":"Scout Infiltrators", "units":"4 Space Marine Sniper Scouts, 2 Rhinos",        "pts":200, "upgrades":[17] },
+            { "id":503, "name":"Assaults", "units":"6 Dark Angels Assault Marines, 1 Dark Angels Captain",        "pts":275, "upgrades":[] },
             { "id":504, "name":"Devastators", "units":"4 Dark Angels Devastators plus Transport",        "pts":250, "upgrades":[13,14,17,19,31] },
-			{ "id":531, "name":"Predators", "units":"4 Predator Destructors", "pts":250, "upgrades":[13,14,31] },
+			{ "id":531, "name":"Predators", "units":"4 Predator Destructors", "pts":200, "upgrades":[13,14,31] },
 	        { "id":533, "name":"Siege Breachers", "units":"3 Land Raider Ares", "pts":275, "upgrades":[13,14,20] },
 			{ "id":534, "name":"Whirlwinds", "units":"4 Whirlwinds", "pts":275, "upgrades":[29] }
      ]},
 	 		{"name":"Deathwing & Ravenwing Strike Detachments", "formations": [
-		    { "id":511, "name":"Deathwing Terminators", "units":"4 Deathwing Terminators",        "pts":350, "upgrades":[13,14,16,22] },
-			{ "id":521, "name":"Ravenwing", "units":"4x Ravenwing Land Speeders",        "pts":325, "upgrades":[13,14,15,16] }
+		    { "id":511, "name":"Deathwing Terminators", "units":"4 Deathwing Terminators",        "pts":350, "upgrades":[13,14,15,16,22] },
+			{ "id":521, "name":"Ravenwing Attack", "units":"1x Ravenwing Black Knights, 3x Ravenwing Land Speeder",        "pts":350, "upgrades":[13,14,15,16] }
      ]},
-	 		{"name":"Deathwing & Ravenwing Specialist Detachments (Two Specialist Detachments may be taken for each Strike Detachment // if any Strike Detachment countains a Grand Master)", "formations": [
-			{ "id":513, "name":"Deathwing Overwatch", "units":"4 Deathwing Cyclone Terminators",        "pts":375, "upgrades":[13,14] },
-			{ "id":513, "name":"Deathwing Knights", "units":"4 Deathwing Knights, 1 Interrogator Chaplain",        "pts":375, "upgrades":[] },
-			{ "id":514, "name":"Deathwing Dreadnoughts", "units":"5 Deathwing Dreadnoughts plus Transport",        "pts":325, "upgrades":[] },	  
-			{ "id":522, "name":"Ravenwing Auxilia",       "pts":200, "upgrades":[] }
+	 		{"name":"Deathwing & Ravenwing Specialist Detachments (Three Specialist Detachments may be taken for each Strike Detachment)", "formations": [
+			{ "id":513, "name":"Deathwing Overwatch", "units":"4 Deathwing Cyclone Terminators",        "pts":350, "upgrades":[13,14] },
+			{ "id":514, "name":"Deathwing Knights", "units":"4 Deathwing Knights, 2 Interrogator Chaplains",        "pts":400, "upgrades":[] },
+			{ "id":515, "name":"Deathwing Dreadnoughts", "units":"5 Deathwing Dreadnoughts plus Transport",        "pts":300, "upgrades":[] },	  
+			{ "id":522, "name":"Ravenwing Support",       "pts":200, "upgrades":[] }
      ]},
-	 		{"name":"Dreadwing Relic Detachments (One Relic may be taken for each 3 Core or Strike Detachments. One Relic may be taken if the army contains a Grand Master. )", "formations": [
-            { "id":535, "name":"Relic Deimos", "units":"3 Deimos Vindicator Laser Destroyers",  "pts":400, "upgrades":[] },
-		    { "id":536, "name":"Relic Fellglaive",      "pts":50, "upgrades":[34] }
+	 		{"name":"Dreadwing Relic Detachments (The army may contain a maximum of one Dreadwing Relic Detachment)", "formations": [
+            { "id":535, "name":"Relic Deimos", "units":"4 Predator Executioners, 3 Deimos Vindicator Laser Destroyers",  "pts":400, "upgrades":[29] },
+		    { "id":536, "name":"Relic Glaive",      "pts":50, "upgrades":[34] }
      ]},
 	 		{"name":"Dark Angels Navy (Max 33%)", "formations": [
-	        { "id":523, "name":"Ravenwing Nephilim", "units":"2 Ravenwing Nephilim Interceptors",        "pts":200, "upgrades":[] },
+	        { "id":523, "name":"Ravenwing Nephilim", "units":"2 Ravenwing Nephilim Interceptors",        "pts":225, "upgrades":[] },
 		    { "id":524, "name":"Ravenwing Dark Talon", "units":"2 Ravenwing Dark Talons",        "pts":225, "upgrades":[] },
-	        { "id":542, "name":"Thunderhawk Transporters",        "pts":25, "upgrades":[21] },
+	        { "id":542, "name":"Thunderhawk Transporter",        "pts":50, "upgrades":[21] },
             { "id":543, "name":"Strike Cruiser",        "pts":0, "upgrades":[35,36] }
      ]}
   ],
 	"upgrades":[
-		{"id":13, "name":"Captain",		"pts":50},
+		{"id":13, "name":"Dark Angels Captain",		"pts":50},
 		{"id":14, "name":"Librarian",	"pts":50},
 		{"id":15, "name":"Interrogator Chaplain",		"pts":50},
 		{"id":16, "name":"Grand Master", 	"pts":100},
-		{"id":17, "name":"Dark Angels Razorback w Lascannon and Twin Plasma Guns", 	"pts":30},
+		{"id":17, "name":"Dark Angels Razorback", 	"pts":25},
 		{"id":19, "name":"2 Mortis Dreadnoughts", 		"pts":75},
 		{"id":20, "name":"3 Vindicators", 			"pts":100},
-		{"id":21, "name":"Thunderhawk Transport", 			"pts":125},
+		{"id":21, "name":"Dark Angels Thunderhawk Transporter", 			"pts":125},
 		{"id":22, "name":"4 Deathwing Land Raiders", 			"pts":225},	
 		{"id":25, "name":"Ravenwing Bikes",		"pts":0},
 		{"id":26, "name":"Ravenwing Attack Bike",	"pts":0},
-		{"id":27, "name":"Ravenwing Tornado",		"pts":0},
-		{"id":28, "name":"Ravenwing Venegance",	"pts":15},
+		{"id":27, "name":"5 Ravenwing Tornado",		"pts":0},
+		{"id":28, "name":"5 Ravenwing Venegance",	"pts":50},
 		{"id":29, "name":"2 Hunters","pts":125},
 		{"id":30, "name":"6 Tacticals",		"pts":175},
-		{"id":31, "name":"2 Stalkers",		"pts":75},
-		{"id":32, "name":"4 Deimos Predators with Plasma Destroyers",		"pts":25},
-		{"id":33, "name":"4 Deimos Predators with Heavy Conversion Beamers",		"pts":0},
-		{"id":34, "name":"Fellglaive",		"pts":300},
+		{"id":31, "name":"2 Dark Angels Stalkers",		"pts":100},
+		{"id":34, "name":"Glaive",		"pts":250},
 		{"id":35, "name":"Strike Cruiser",		"pts":200},
 		{"id":36, "name":"Battle Barge",		"pts":350}
 
@@ -63,7 +61,13 @@
 	],
 	"formationConstraints":[
 	
-	{"maxPercent":33, "name":"Dark Angels Navy", "from":[523,524,542,543]},
+	{"max":3, "name":"Dark Angels Support Detachments", "from":[502,503,504,531,533,534], "forEach":[501,532], "name2":"Dark Angels Core Detachments"},
+	
+	{"max":3, "name":"Deathwing & Ravenwing Specialist Detachments", "from":[513,514,515,522], "forEach":[511,521], "name2":"Deathwing & Ravenwing Strike Detachments"},
+	
+	{"maxPercent":34, "name":"Dark Angels Navy", "from":[523,524,542,543]},
+	
+	{"max":1, "perArmy":true, "from":[535,536]},
 	
 	{"max":1, "perArmy":true, "from":[543]}
 	
@@ -73,12 +77,12 @@
 	{"max":1, "perArmy":true, "from":[16]},
 	
 	{"min":4, "max":4, "from":[25,26], "appliesTo":[521]},
-	{"min":5, "max":5, "from":[27,28], "appliesTo":[522]},
+	{"min":1, "max":1, "from":[27,28], "appliesTo":[522]},
 	
 	{"min":0, "max":1, "from":[24], "appliesTo":[521]},
 	{"min":0, "max":1, "from":[13,14,15,16], "appliesTo":[501,502,503,504,511,512,513,521,532,533]},
-	{"min":0, "max":6, "from":[17,18], "appliesTo":[501]},
-	{"min":0, "max":4, "from":[17,18], "appliesTo":[504]},
+	{"min":0, "max":6, "from":[17], "appliesTo":[501]},
+	{"min":0, "max":4, "from":[17], "appliesTo":[502,504]},
 	{"min":0, "max":1, "from":[19], "appliesTo":[501,504]},
 	{"min":0, "max":1, "from":[20], "appliesTo":[533]},
 		
@@ -86,9 +90,8 @@
 	{"min":0, "max":1, "from":[29], "appliesTo":[534,535]},
 	{"min":0, "max":1, "from":[31], "appliesTo":[501,504,531]},
 	{"min":0, "max":1, "from":[30], "appliesTo":[532]},
-	{"min":1, "max":1, "from":[33,32], "appliesTo":[535]},
-	{"min":1, "max":2, "from":[34], "appliesTo":[536]},
-	{"min":2, "max":3, "from":[21], "appliesTo":[542]},
+	{"min":2, "max":3, "from":[34], "appliesTo":[536]},
+	{"min":1, "max":3, "from":[21], "appliesTo":[542]},
 	{"min":1, "max":1, "from":[35,36], "appliesTo":[543]}
 
 	]

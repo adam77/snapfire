@@ -8,7 +8,7 @@
    "sections": [
         	{"name": "GREY KNIGHTS CORE FORMATIONS", "formations": [
             	{"id": 500, "name": "Grey Knights Strike Team", 		"pts": 300, "units": "6 Grey Knights", "upgrades": [1,2,3,4,5,6,7,14,15,16,17] },
-	    	{"id": 502, "name": "Inquisitorial Warband", 			"pts": 175, "units": "Inqusitor", "upgrades": [21,22] }
+	    	{"id": 502, "name": "Inquisitorial Warband", 			"pts": 175, "units": "Inqusitor", "upgrades": [22] }
 	  	]},
 	   
         	{"name": "SUPPORT FORMATIONS", "formations": [
@@ -17,7 +17,9 @@
 		{"id": 601, "name": "Grey Knights Purgation Squad",   		"pts": 275, "units": "4 Grey Knights Purgation plus transports", "upgrades": [1,2,3,4,5,6,7,14,15,16,17,18,19,20] },
 		{"id": 602, "name": "Grey Knights Land Raider", 	  	"pts": 50, "upgrades": [7] },
 		{"id": 606, "name": "Grey Knights Space Craft", 		"pts": 0, "upgrades": [] },
-		{"id": 607, "name": "Stormraven Flight", 		 	"pts": 325, "units": "4 Grey Knights Stormraven Gunships", "upgrades": [] }
+		{"id": 608, "name": "Inquisitorial Stormtroopers", 		"pts": 175, "units": "1 Inquisitor stand, 7 Inquisitorial Stormtroopers stands", "upgrades": [] },	
+		{"id": 609, "name": "Grey Knight Purifiers", 			"pts": 350, "units": "4 Grey Knight Purifiers", "upgrades": [1,2,4,5,6,15,16,17,18,19,20] },	
+		{"id": 607, "name": "Stormraven Flight", 		 	"pts": 300, "units": "4 Grey Knights Stormraven Gunships", "upgrades": [] }
 		
 		]},
 	   
@@ -31,9 +33,9 @@
    ],
    "upgrades": [
 		{"id": 1, "name": "Grand Master", 					"pts":75},
-		{"id": 2, "name": "Librarian", 						"pts":25 },
+		{"id": 2, "name": "Librarian", 						"pts":50 },
 		{"id": 3, "name": "Brother Captain", 					"pts":0 },
-		{"id": 4, "name": "Grand Master with Brotherhood Champion", 		"pts":125 },
+		{"id": 4, "name": "Grand Master with Paladin Escort", 			"pts":125 },
 		
 		{"id": 5, "name": "Grey Knights Dreadnought",				"pts":50 },
 		{"id": 6, "name": "Nemesis Dreadknight", 				"pts":75 },
@@ -53,8 +55,10 @@
 		{"id": 18, "name": "Land Raider", 							"pts":50 },
 		{"id": 19, "name": "Land Raider Crusader", 						"pts":50 },
 		{"id": 20, "name": "Land Raider Redeemer", 						"pts":50 },
-		{"id": 21, "name": "3 Arvus Lighters", 							"pts":0},
+		
 		{"id": 22, "name": "3 Chimeras", 							"pts":0},
+	   	{"id": 40, "name": "4 Rhinos", 								"pts":0},
+	   	{"id": 41, "name": "4 Valkyries", 							"pts":175},
 		
 		{"id": 23, "name": "Land Raider", 							"pts":75 },
 		{"id": 24, "name": "Land Raider Crusader", 						"pts":75 },
@@ -72,6 +76,7 @@
    "formationConstraints": [
       {"max": 3, "from": [502]},
       {"max": 1, "from": [606]},
+      {"max": 1, "from": [609]},
       {"maxPercent": 33.34, "name": "Restricted Support Formations", "from": [700,604,701,702]},
       {"max": 2, "name": "Support Formations", "from": [600,601,602,603,605,606,607,501], "forEach": [500,502], "name2": "Core Formation" }
    ],
@@ -83,7 +88,8 @@
 	  {"max": 2, "from": [5,6], "appliesTo": [500,501,600,601] },
 	  {"max": 1, "from": [7,8], "appliesTo": [500,601] },
 	  {"min": 1, "max": 1, "from": [30,31], "appliesTo": [606] },
-
+	  {"min": 1, "max": 1, "from": [3,1,4,2], "appliesTo": [609] },
+	  {"min": 1, "max": 1, "from": [40,41], "appliesTo": [608] },
 
 
 	  {"min": 0, "max": 1, "from": [15,14,27], "appliesTo": [500] },
@@ -111,11 +117,11 @@
 	  {"min": 0, "max": 1, "from": [7], "appliesTo": [602] },
 	  
 	  {"min": 4, "max": 4, "from": [23,24,25], "appliesTo": [602] },
-	  {"max": 1, "from": [21,22], "appliesTo": [502] },
+	  
 	  {"min": 6,"max": 6, "from": [9,10], "appliesTo": [502] },
 	  {"max": 2, "from": [10,11,12], "appliesTo": [502] },
 	  {"max": 1, "from": [13], "appliesTo": [502] },
-	  {"min": 1, "max": 1, "from": [21,22], "appliesTo": [502] },
+	  {"min": 1, "max": 1, "from": [22], "appliesTo": [502] },
 	  
 	  {"min": 1,"max": 2, "from": [26], "appliesTo": [604] }
 		  
