@@ -72,7 +72,7 @@
    "formationConstraints": [
       {"max": 1,"from": [525]},
       {"maxPercent": 33,"name": "War Engines & Allies","from": [521,522,523,524,525,526]},
-      {"max": 3,"name": "Support Groups","from": [516,514,518,512,517,513],"forEach": [532,531],"name2": "Cadre"}
+      {"max": 3,"name": "Support Groups","from": [515,516,514,518,512,517,513],"forEach": [532,531],"name2": "Cadre"}
    ],
    "upgradeConstraints": [
       {"max": 8,"min": 4,"from": [17],"appliesTo": [532]},
@@ -100,4 +100,3 @@
       {"max": 1,"min": 1,"from": [85,86],"appliesTo": [516]}
    ]
 }
-
