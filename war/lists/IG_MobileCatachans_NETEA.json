@@ -1,29 +1,33 @@
 {
 	"id":"Mobile Forces of Catachan",
-	"version":"Mobile Forces of Catachan 0.4.3 Developmental",
+	"version":"Mobile Forces of Catachan 0.4.4 Developmental",
 	"notes": [
 	"Mobile Forces of Catachan may include 1 Commissar per 500 points or part thereof after the first 500 points",
-	"Please leave feedback if you play this list here: http://www.taccmd.tacticalwargames.net/viewtopic.php?f=74&t=34099"],
-	"by":"Largo",
+    	"First Commissar must join the Airborne Regimental HQ, if present. Remaining Commissar must join Airborne Ogryn Companies, if present. Armyforge does not enforce these rules.",
+	"Please leave feedback here: http://www.taccmd.tacticalwargames.net/viewtopic.php?f=74&t=34099",
+	"by: LargoW"
+	],
+	
 	"sections":[
 		{"name":"COMPANIES", "formations":[
-			{"id":511, "name":"Airborne Regimental HQ", 			"pts":210, "upgrades":[13,14,28,18,19,20,21,22,23,24,25,31,32,33,34,35,36,27], "units":"7 Infantry Units and 1 Supreme Commander"},
-			{"id":512, "name":"Airborne Infantry Company",			"pts":110, "upgrades":[13,14,28,18,19,20,21,22,23,24,25,31,32,33,34,35,36,27], "units":"7 Infantry Units and 1 Commander"},
-			{"id":513, "name":"Airborne Ogryn Company",			"pts":115, "upgrades":[13,14,28,18,19,20,21,22,23,24,25,31,32,33,34,35,36,27], "units":"5 Ogryn Units and 1 Commander"}
+			{"id":511, "name":"Airborne Regimental HQ", 			"pts":260, "upgrades":[13,14,15,28,18,19,20,21,22,23,24,25,31,32,33,34,35,36,27], "units":"7 Infantry Units and 1 Supreme Commander"},
+			{"id":512, "name":"Airborne Infantry Company",			"pts":160, "upgrades":[13,14,15,28,18,19,20,21,22,23,24,25,31,32,33,34,35,36,27], "units":"7 Infantry Units and 1 Commander"}
+			
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
-			{"id":501, "name":"Sentinels",				"pts":25, "upgrades":[40,41,42,27]},
-			{"id":502, "name":"Airborne Support Platoons",		"pts":120, "upgrades":[28,18,19,20,21,22,23,24,25,31,32,33,34,35,36,27], "units":"1 Imperial Guard Infantry Unit, 1 Imperial Guard Commander"},
-			{"id":503, "name":"0-1 Veterans",			"pts":200, "upgrades":[], "units":"8 Veterans"},
-			{"id":504, "name":"Airborne Storm Trooper Platoon",	"pts":350, "upgrades":[], "units":"8 Stormtroopers, 4 Valkyries"},
-			{"id":505, "name":"Vulture Punishers",			"pts":300, "upgrades":[22,23,24,25], "units":"6 Vulture Punishers"},
-			{"id":506, "name":"Vultures",				"pts":300, "upgrades":[22,23,24,25], "units":"4 Vultures"}	
+			{"id":501, "name":"Sentinels",				"pts":25, "upgrades":[15,40,41,42,27,31,32,33,34,35,36]},
+			{"id":502, "name":"Airborne Support Platoons",		"pts":145, "upgrades":[15,28,18,19,20,21,22,23,31,32,33,34,35,36,27], "units":"1 Imperial Guard Infantry Unit, 1 Imperial Guard Commander"},
+			{"id":503, "name":"0-1 Veterans",			"pts":200, "upgrades":[15], "units":"8 Veterans"},
+			{"id":504, "name":"Airborne Storm Trooper Platoon",	"pts":350, "upgrades":[15], "units":"8 Stormtroopers, 4 Valkyries"},
+			{"id":513, "name":"Airborne Ogryn Company",		"pts":135, "upgrades":[15,18,19,22,23,24,25], "units":"4 Ogryn Units and 1 Bone 'ead"},
+			{"id":505, "name":"Vulture Punishers",			"pts":300, "upgrades":[15,22,23,24,25], "units":"6 Vulture Punishers"},
+			{"id":506, "name":"Vultures",				"pts":300, "upgrades":[15,22,23], "units":""}
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
 			{"id":520, "name":"Lightning Squadron",			"pts":150, "upgrades":[], "units":"2 Lightning Strike Fighter"},
 			{"id":521, "name":"Thunderbolt Squadron",		"pts":150, "upgrades":[]},
-			{"id":522, "name":"Marauder Bombers",			"pts":225, "upgrades":[], "units":"2 Marauders"},
-			{"id":523, "name":"Spacecraft",				"pts":125, "upgrades":[]}
+			{"id":522, "name":"Marauder Bombers",			"pts":250, "upgrades":[], "units":"2 Marauders"},
+			{"id":523, "name":"Spacecraft",				"pts":150, "upgrades":[]}
 		]}
 	],
 	"upgrades":[
@@ -31,58 +35,50 @@
 		{"id":12, "name":"Vendetta",							"pts":35},
 		{"id":13, "name":"Add two Fire Support Squad units and a Valkyrie",		"pts":75},
 		{"id":14, "name":"Add two Mortar units and a Valkyrie",				"pts":75},
-
+        	{"id":15, "name":"Commissar",							"pts":0},
+        
 		{"id":18, "name":"1 Ogryn and 1 Valkyrie",					"pts":50},
 		{"id":19, "name":"2 Ogryns and 2 Valkyries",					"pts":100},
 		{"id":20, "name":"1 Sniper and 1 Valkyrie",					"pts":50},
 		{"id":21, "name":"2 Snipers and 1 Valkyrie",					"pts":75},
-
-		{"id":22, "name":"Add 2 Vulture Punisher",					"pts":75},
+		{"id":22, "name":"Add 2 Vulture Punishers",					"pts":75},
 		{"id":23, "name":"Add 2 Vultures",						"pts":100},
 		{"id":24, "name":"Add 1 Vulture, 1 Vulture Tornado",				"pts":100},
 		{"id":25, "name":"Add 2 Vulture Tornados",					"pts":100},
-
-		{"id":26, "name":"Vulture Tornado",						"pts":25},
 		{"id":27, "name":"Sky Talons",							"pts":25},
 		{"id":28, "name":"Add six Imperial Guard Infantry units and 3 Valkyries",	"pts":150},
-
 		{"id":31, "name":"1 Catachan Sentinel, 1 Drop Sentinel",			"pts":50},
 		{"id":32, "name":"1 Catachan Sentinel, 1 Support Sentinel",			"pts":50},
 		{"id":33, "name":"1 Support Sentinel, 1 Drop Sentinel",				"pts":50},
 		{"id":34, "name":"2 Catachan Sentinels",					"pts":50},
 		{"id":35, "name":"2 Support Sentinel ",						"pts":50},
 		{"id":36, "name":"2 Drop Sentinels",						"pts":50},
-
 		{"id":40, "name":"Catachan Sentinels",						"pts":25},
 		{"id":41, "name":"Support Sentinel ",						"pts":25},
 		{"id":42, "name":"Drop Sentinels",						"pts":25},
-
-
 		{"id":51, "name":"4 Imperial Guard Fire Support Units", 			"pts":0},
 		{"id":52, "name":"4 Imperial Guard Mortar Units",				"pts":0},
-
 		{"id":61, "name":"2 Thunderbolt Fighters",					"pts":0},
 		{"id":62, "name":"3 Thunderbolt Fighters",					"pts":75},
-
-
+        	{"id":71, "name":"Vulture",							"pts":0},
+       		{"id":72, "name":"Vulture Tornado",						"pts":0},
 		{"id":98, "name":"Lunar Class Cruiser",						"pts":0},
-		{"id":99, "name":"Emperor Class Battleship",					"pts":75}
-
-		],
+		{"id":99, "name":"Emperor Class Battleship",					"pts":50}
+	],
 	"formationConstraints":[
-		{"max":2, "name":"Support Formations", "from":[501,502,503,504,505,506], "forEach":[511,512,513], "name2":"Company"},
+		{"max":2, "name":"Support Formations", "from":[501,502,503,504,505,506,513], "forEach":[511,512], "name2":"Company"},
 		{"maxPercent":33, "name":"Navy", "from":[520,521,522,523]},
 		{"max":1, "from":[503]},
+		{"max":1, "from":[511]},
 		{"max":1, "from":[523]}
 	],
 	"upgradeConstraints":[
 		{"max":1, "from":[14], "perArmy":true},
 		{"min":4, "from":[11,12], "appliesTo": [511,512]},
-		{"min":6, "from":[11,12], "appliesTo": [513]},
+		{"min":4, "from":[11], "appliesTo": [513]},
 		{"min":1, "max":1, "from":[51,52], "appliesTo": [502]},
-		{"min":3, "from":[11,12], "appliesTo": [502]},
-		
-
+		{"min":3, "from":[11], "appliesTo": [502]},
+		{"max":1, "from":[15], "appliesTo": [501,502,503,504,505,506,511,512,513]},
 		{"max":2, "from":[12]},
 		{"max":3, "from":[13,14,28,18,19,20,21,22,23,24,25,31,32,33,34,35,36], "appliesTo": [511,512,513,502]},
 		{"max":1, "from":[20,21], "appliesTo": [511,512,513,502]},
@@ -90,13 +86,13 @@
 		{"max":1, "from":[18,19], "appliesTo": [511,512,513,502]},
 		{"max":1, "from":[31,32,33,34,35,36], "appliesTo": [511,512,513,502]},
 		{"min":1, "from":[61,62], "appliesTo": [521]},
-		{"max":1, "from":[15]},
 		{"max":1, "from":[13]},
 		{"max":1, "from":[14]},
 		{"max":1, "from":[28]},
-		
-		{"min":4, "max":6, "from":[40,41,42], "appliesTo": [501]},
-
+		{"min":4, "max":4, "from":[40,41,42], "appliesTo": [501]},
+       		{"min":4, "max":4, "from":[71,72], "appliesTo": [506]},
+        	{"max":2, "from":[72], "appliesTo": [506]},
+        
 		{"min":1, "max":1, "from":[98,99], "appliesTo": [523]}
 	]
 }
