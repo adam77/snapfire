@@ -119,9 +119,11 @@ var Force = {
 				else {
 					var id = parseInt(x.split('x')[0]);
 					if (id >= 500) {
+						console.log('Adding formation with ID: '+id);
 						currentFormation = Force.addFormation( ArmyList.formationForId(id), true );
 					}
 					else {
+						console.log('Adding upgrade with ID: '+id);
 						var count = parseInt(x.split('x')[1]);
 						for (var i=0;i<count;i++) {
 							currentFormation.upgrades.push( ArmyList.upgradeForId(id) );
@@ -132,6 +134,7 @@ var Force = {
 			return name;
 		}
 		catch(err) {
+			console.log(err);
 			alert('Sorry, there was an error loading the army.');
 		}
 	},
