@@ -118,9 +118,13 @@ var Force = {
 				}
 				else {
 					var id = parseInt(x.split('x')[0]);
-					if (id >= 500) {
+					// Explicitly check whether the ID is intended to represent a formation or an upgrade.
+					// Historically it was assumed id >= 500 was a formation, but this constraint is only enforced on load not on creation.
+					// This meant some lists had formation IDs < 500 which consequently didn't load.
+					var f = ArmyList.formationForId(id);
+					if (id >= 500 || f != null) {
 						console.log('Adding formation with ID: '+id);
-						currentFormation = Force.addFormation( ArmyList.formationForId(id), true );
+						currentFormation = Force.addFormation(f , true );
 					}
 					else {
 						console.log('Adding upgrade with ID: '+id);
