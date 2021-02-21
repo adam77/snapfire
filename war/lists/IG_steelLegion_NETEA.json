@@ -20,13 +20,13 @@
 			{"id":507, "name":"Super-Heavy Tank Platoon", 			"pts":200, "upgrades":[]},
 			{"id":508, "name":"Orbital Support",				"pts":150, "upgrades":[]},
 			{"id":509, "name":"Flak Battery",				"pts":150, "upgrades":[], "units":"3 Hydra"},
-			{"id":510, "name":"Vulture Squadron",				"pts":300, "upgrades":[], "units":"4 Vultures"}
+			{"id":510, "name":"Vulture Squadron",				"pts":300, "upgrades":[], "units":"4 Vultures"},
 			{"id":511, "name":"Basilisk Battery",				"pts":225, "upgrades":[], "units":"3 Basilisks"}
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
 			{"id":519, "name":"Thunderbolt Fighters",	"pts":150, "upgrades":[], "units":"2 Thunderbolts"},
-			{"id":520, "name":"Marauder Bombers",		"pts":250, "upgrades":[], "units":"2 Marauders"}
-			{"id":529, "name":"Orbital support",		"pts":150, "upgrades":[]},
+			{"id":520, "name":"Marauder Bombers",		"pts":250, "upgrades":[], "units":"2 Marauders"},
+			{"id":529, "name":"Orbital support",		"pts":150, "upgrades":[]}
 		]},
 		{"name":"TITAN LEGIONS", "formations":[
 			{"id":522, "name":"Warlord Class Titan",	"pts":825, "upgrades":[]},
@@ -59,9 +59,9 @@
 		{"id":33, "name":"Sniper",					"pts":25},
 		{"id":34, "name":"Ogryn",					"pts":25},
 		{"id":35, "name":"Hydra",					"pts":50},
-		{"id":36, "name":"Valkyrie Transport",				"pts":150}
-		{"id":38, "name":"Chimera Transport",				"pts":100}
-		{"id":50, "name":"Lunar Class Cruiser",				"pts":0}
+		{"id":36, "name":"Valkyrie Transport",				"pts":150},
+		{"id":38, "name":"Chimera Transport",				"pts":100},
+		{"id":50, "name":"Lunar Class Cruiser",				"pts":0},
 		{"id":51, "name":"Emperor Class Battleship",			"pts":0}
 	],
 	"formationConstraints":[
@@ -69,7 +69,7 @@
 		{"maxPercent":33, "name":"Titans & Navy", "from":[519,520,522,523,524,526]},
 		{"max":1, "from":[508]},
 		{"max":1, "from":[506]},
-		{"max":1, "from":[512]}
+		{"max":1, "from":[512]},
 		{"max":1, "from":[529]}
 
 	],
