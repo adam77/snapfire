@@ -22,7 +22,7 @@
 
 		]},
 		{"name":"ALLIES & LORDS OF WAR", "formations":[
-		    {"id":701, "name":"Imperial Navy Avenger Wing",	         "pts":250, "upgrades":[], "units":"2 Avenger Strike Fighter units"},
+		    {"id":701, "name":"Imperial Navy Avenger Wing",	         "pts":250, "upgrades":[], "units":"2 Avenger Strike Fighter units"}
                     {"id":702, "name":"Imperial Navy Primaris-Lightning Wing",   "pts":225, "upgrades":[], "units":"2 Primaris-Lightning Fighter units"},
 	            {"id":703, "name":"Super Heavy Tank Destroyer",              "pts":250, "upgrades":[], "units":"1 Mechanicum Falchion"},
 		    {"id":704, "name":"Ordinatus Majoris",                       "pts":450, "upgrades":[], "units":"1 Ordinatus Majoris"}
@@ -33,15 +33,15 @@
 	"upgrades":[
 		{"id":11, "name":"Archmagos Prime",				"pts":100},
 		{"id":12, "name":"Magos Prime",					"pts":50},
-                {"id":13, "name":"Tech Priest",					"pts":25},
+                {"id":13, "name":"Tech Priest",                                 "pts":25},
 		{"id":14, "name":"Transport: Triaros",				"pts":75},
 	        {"id":15, "name":"Transport: Land Raider",			"pts":75},
-                {"id":16, "name":"Krios Battle Tank",			        "pts":50},
+                {"id":16, "name":"Krios Battle Tank",                           "pts":50},
 	        {"id":17, "name":"Thanatar",					"pts":75},
 	        {"id":19, "name":"Scyllax",				        "pts":50},
 	        {"id":51, "name":"Tech Priest",					"pts":0},
 	        {"id":52, "name":"Myrmidon Secutors",				"pts":0},
-                {"id":53, "name":"Myrmidon Destructors",			"pts":0},	
+                {"id":53, "name":"Myrmidon Destructors",                        "pts":0},	
 	        {"id":54, "name":"Tarantula Sentry Guns",			"pts":0},
 	        {"id":55, "name":"Karacnos Assault Tanks",			"pts":50}
 	        {"id":55, "name":"Hyperios Sentry Guns",			"pts":50}
