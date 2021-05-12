@@ -12,7 +12,7 @@
          ]},
 		{"name":"SUPPORT DETACHMENTS", "formations":[
 			{"id":600, "name":"Vulturax Maniple",				"pts":250, "upgrades":[], 	"units":"6 Vulturax Stratos-Automata"},
-			{"id":601, "name":"Thanatar Maniple",				"pts":200, "upgrades":[13,22]},
+			{"id":601, "name":"Thanatar Maniple",				"pts":200, "upgrades":[11,12,13,22]},
 			{"id":602, "name":"Krios Battle Tank Squadron",			"pts":300, "upgrades":[18,19]},
 			{"id":603, "name":"Karacnos Assault Squadron", 			"pts":300, "upgrades":[], 	"units":"4 Karacnos Assault Tanks"},
 			{"id":604, "name":"Myrmidon Sect",				"pts":300, "upgrades":[14,15,16,17,18,19,22,52,53]},
@@ -76,7 +76,7 @@
 		
 	],
 	"upgradeConstraints":[
-		{"min":0, "max":1, "from":[11,12], "appliesTo":[500,501,504]},
+		{"min":0, "max":1, "from":[11,12], "appliesTo":[500,501,504,601]},
 		
 	        {"min":0, "max":3, "from":[13], 	"appliesTo":[501,502,503,601]},
 	        {"min":0, "max":3, "from":[14], 	"appliesTo":[500,501,502]},
