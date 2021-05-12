@@ -1,21 +1,21 @@
 {
 	"id":"Mechanicum Taghmata",
-	"version":"Heresy v 0.4.?",
+	"version":"Heresy v 0.8.?",
 	"by":"freefall, updated by spaal574",
 	"sections":[
 		{"name":"LINE DETACHMENTS", "formations":[
-			{"id":500, "name":"Adsecularis Covenant", 		"pts":150, "upgrades":[11,12,14,15,16,19], "units":"10 Tech-Thrall units"},
-			{"id":501, "name":"Thallax Cohort", 			"pts":300, "upgrades":[11,12,13,14,15,16,19], "units":"6 Thallax units" },
-			{"id":502, "name":"Ursarax Cohort", 			"pts":250, "upgrades":[13,14,15], "units":"6 Ursarax units"}, 
+			{"id":500, "name":"Adsecularis Covenant", 		"pts":150, "upgrades":[11,12,14,15,16,17,18,19,22], "units":"10 Tech-Thrall units"},
+			{"id":501, "name":"Thallax Cohort", 			"pts":300, "upgrades":[11,12,13,14,15,16,17,18,19,22], "units":"6 Thallax units" },
+			{"id":502, "name":"Ursarax Cohort", 			"pts":250, "upgrades":[13,14,15,16,17], "units":"6 Ursarax units"}, 
 			{"id":503, "name":"Vorax Maniple", 			"pts":250, "upgrades":[13], "units":"6 Vorax Battle-Automata"},
-			{"id":504, "name":"Castelax Cohort",			"pts":275, "upgrades":[11,12,17,19], "units":"5 Castellax Battle-Automata units"}
+			{"id":504, "name":"Castellax Cohort",			"pts":275, "upgrades":[11,12,20,21,22], "units":"5 Castellax Battle-Automata units"}
          ]},
 		{"name":"SUPPORT DETACHMENTS", "formations":[
 			{"id":600, "name":"Vulturax Maniple",				"pts":250, "upgrades":[], 	"units":"6 Vulturax Stratos-Automata"},
-			{"id":601, "name":"Thanatar Maniple",				"pts":200, "upgrades":[13,19], 	"units":"3 Thanatar Battle-Automata"},
-			{"id":602, "name":"Krios Battle Tank Squadron",			"pts":300, "upgrades":[16], 	"units":"5 Krios Battle Tank"},
+			{"id":601, "name":"Thanatar Maniple",				"pts":200, "upgrades":[13,20,21,22]},
+			{"id":602, "name":"Krios Battle Tank Squadron",			"pts":300, "upgrades":[18,19]},
 			{"id":603, "name":"Karacnos Assault Squadron", 			"pts":300, "upgrades":[], 	"units":"4 Karacnos Assault Tanks"},
-			{"id":604, "name":"Myrmidon Sect",				"pts":300, "upgrades":[14,15,16,19, 52,53]},
+			{"id":604, "name":"Myrmidon Sect",				"pts":300, "upgrades":[14,15,16,17,18,19,22,52,53]},
 			{"id":605, "name":"Tarantula Battery",				"pts":125, "upgrades":[54,55,56]},
 			{"id":606, "name":"Minotaur Artillery Battery",			"pts":350, "upgrades":[], 	"units":"3 Minotaur Artillery Tank"},
 			{"id":607, "name":"Ordinatus Minorus Tormenta",			"pts":500, "upgrades":[57,58]}
@@ -35,11 +35,22 @@
 		{"id":11, "name":"Archmagos Prime",				"pts":100},
 		{"id":12, "name":"Magos Prime",					"pts":50},
    		{"id":13, "name":"Tech Priest",					"pts":25},
-		{"id":14, "name":"Transport: Triaros",				"pts":75},
-		{"id":15, "name":"Transport: Land Raider",			"pts":75},
-        	{"id":16, "name":"Krios Battle Tank",				"pts":50},
-		{"id":17, "name":"Thanatar",					"pts":75},
-		{"id":19, "name":"Scyllax",					"pts":50},
+		
+		{"id":14, "name":"Transport: Triaros",					"pts":75},
+		{"id":15, "name":"Transport: Land Raider W/2 x Twin Lascannon",		"pts":75},
+		{"id":16, "name":"Transport: Land Raider W/2 x Flamestorm Cannon",	"pts":75},
+		{"id":17, "name":"Transport: Land Raider W/2 x Twin Multimelta",	"pts":75},
+		
+        	{"id":30, "name":"Krios Battle Tank",				"pts":0},
+        	{"id":31, "name":"Krios Venator",				"pts":0},
+		
+        	{"id":18, "name":"Krios Battle Tank",				"pts":50},
+        	{"id":19, "name":"Krios Venator",				"pts":50},
+		
+		{"id":20, "name":"Thanatar W/Hellex Plasma Mortar",		"pts":75},
+		{"id":21, "name":"Thanatar W/Sollex Heavy Lascannon",		"pts":75},
+		
+		{"id":22, "name":"Scyllax",					"pts":50},
 	
 		{"id":51, "name":"Tech Priest",					"pts":0},
 		{"id":52, "name":"Myrmidon Secutors",				"pts":0},
@@ -64,26 +75,31 @@
 	"upgradeConstraints":[
 		{"min":0, "max":1, "from":[11,12], "appliesTo":[500,501,504]},
 		
-        {"min":0, "max":3, "from":[13], "appliesTo":[501,502,503,601]},
-        {"min":0, "max":3, "from":[14], "appliesTo":[500,501,502]},
-        {"min":0, "max":4, "from":[14], "appliesTo":[604]},
-        {"min":0, "max":6, "from":[15], "appliesTo":[500,501,502]},
-        {"min":0, "max":8, "from":[15], "appliesTo":[604]},
+	        {"min":0, "max":3, "from":[13], "appliesTo":[501,502,503,601]},
+	        {"min":0, "max":3, "from":[14], "appliesTo":[500,501,502]},
+        	{"min":0, "max":4, "from":[14], "appliesTo":[604]},
+	        {"min":0, "max":6, "from":[15,16,17], "appliesTo":[500,501,502]},
+        	{"min":0, "max":8, "from":[15,16,17], "appliesTo":[604]},
 
-        {"min":0, "max":3, "from":[16], "appliesTo":[500,501,602,604]},
-        {"min":0, "max":3, "from":[17], "appliesTo":[504]},
-        {"min":0, "max":4, "from":[19], "appliesTo":[500,501,504,601,604]},
+	        {"min":0, "max":3, "from":[18,19], "appliesTo":[500,501,602,604]},
+       		{"min":0, "max":3, "from":[20,21], "appliesTo":[504]},
+        	{"min":0, "max":4, "from":[22], "appliesTo":[500,501,504,601,604]},
 
-        {"min":2, "max":5, "from":[51], "appliesTo":[500,504] },
+       		{"min":2, "max":5, "from":[51], "appliesTo":[500,504] },
 
-        {"min":6, "max":6, "from":[52,53], "appliesTo":[604] },
-        {"min":5, "max":5, "from":[54,55,56], "appliesTo":[605] },
-	
-	
-        {"min":3, "max":3, "from":[57,58], "appliesTo":[607] },
-        {"min":1, "max":1, "from":[59,60,61], "appliesTo":[704] },
 		
-        {"max":1, "perArmy":true, "from":[11]}
+        	{"min":3, "max":3, "from":[20,21], 	"appliesTo":[601] },
+		
+        	{"min":5, "max":5, "from":[30,31], 	"appliesTo":[602] },
+		
+        	{"min":6, "max":6, "from":[52,53], 	"appliesTo":[604] },
+        	{"min":5, "max":5, "from":[54,55,56], 	"appliesTo":[605] },
+	
+	
+        	{"min":3, "max":3, "from":[57,58], 	"appliesTo":[607] },
+        	{"min":1, "max":1, "from":[59,60,61], 	"appliesTo":[704] },
+		
+        	{"max":1, "perArmy":true, "from":[11]}
 	
 				
 	]
