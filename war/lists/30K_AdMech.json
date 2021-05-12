@@ -37,7 +37,7 @@
    		{"id":13, "name":"Tech Priest",					"pts":25},
 		
 		{"id":14, "name":"Transport: Triaros",					"pts":75},
-		{"id":15, "name":"Transport: Land Raider w/ 2x Twin Lascannon",	"pts":75},
+		{"id":15, "name":"Transport: Land Raider w/ 2x Twin Lascannon",		"pts":75},
 		{"id":16, "name":"Transport: Land Raider w/ 2x Flamestorm Cannon",	"pts":75},
 		{"id":17, "name":"Transport: Land Raider w/ 2x Twin Multimelta",	"pts":75},
 		
@@ -65,7 +65,7 @@
 		{"id":57, "name":"Ordinatus Minoris Tormenta w/ Belicosa Volcano Cannon",	"pts":0},
 		{"id":58, "name":"Ordinatus Minoris Tormenta w/ Ulator Sonic Destroyer",	"pts":0},
 		
-		{"id":59, "name":"Ordinatus Majoris w/ Sonic Disruptor",			"pts":0},
+		{"id":59, "name":"Ordinatus Majoris w/ Sonic Disruptor",		"pts":0},
 		{"id":60, "name":"Ordinatus Majoris w/ 6x Golgothan Missiles",		"pts":0},
 		{"id":61, "name":"Ordinatus Majoris w/ Nova Cannon",			"pts":0}
     ],
