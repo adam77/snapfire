@@ -37,9 +37,9 @@
    		{"id":13, "name":"Tech Priest",					"pts":25},
 		
 		{"id":14, "name":"Transport: Triaros",					"pts":75},
-		{"id":15, "name":"Transport: Land Raider w/ 2 x Twin Lascannon",	"pts":75},
-		{"id":16, "name":"Transport: Land Raider w/ 2 x Flamestorm Cannon",	"pts":75},
-		{"id":17, "name":"Transport: Land Raider w/ 2 x Twin Multimelta",	"pts":75},
+		{"id":15, "name":"Transport: Land Raider w/ 2x Twin Lascannon",	"pts":75},
+		{"id":16, "name":"Transport: Land Raider w/ 2x Flamestorm Cannon",	"pts":75},
+		{"id":17, "name":"Transport: Land Raider w/ 2x Twin Multimelta",	"pts":75},
 		
         	{"id":30, "name":"Krios Battle Tank",				"pts":0},
         	{"id":31, "name":"Krios Venator",				"pts":0},
