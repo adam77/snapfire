@@ -1,6 +1,6 @@
 {
 	"id":"Mechanicum Taghmata",
-	"version":"Heresy v 0.3.?",
+	"version":"Heresy v 0.4.?",
 	"by":"freefall, updated by spaal574",
 	"sections":[
 		{"name":"LINE DETACHMENTS", "formations":[
@@ -11,14 +11,14 @@
 			{"id":504, "name":"Castelax Cohort",			"pts":275, "upgrades":[11,12,17,19], "units":"5 Castellax Battle-Automata units"}
          ]},
 		{"name":"SUPPORT DETACHMENTS", "formations":[
-			{"id":600, "name":"Vulturax Maniple",				"pts":250, "upgrades":[], "units":"6 Vulturax Stratos-Automata"},
-			{"id":601, "name":"Thanatar Maniple",				"pts":200, "upgrades":[13,19], "units":"3 Thanatar Battle-Automata"},
-			{"id":602, "name":"Krios Battle Tank Squadron",			"pts":300, "upgrades":[16], "units":"5 Krios Battle Tank"},
-			{"id":603, "name":"Karacnos Assault Squadron", 			"pts":300, "upgrades":[], "units":"4 Karacnos Assault Tanks"},
+			{"id":600, "name":"Vulturax Maniple",				"pts":250, "upgrades":[], 	"units":"6 Vulturax Stratos-Automata"},
+			{"id":601, "name":"Thanatar Maniple",				"pts":200, "upgrades":[13,19], 	"units":"3 Thanatar Battle-Automata"},
+			{"id":602, "name":"Krios Battle Tank Squadron",			"pts":300, "upgrades":[16], 	"units":"5 Krios Battle Tank"},
+			{"id":603, "name":"Karacnos Assault Squadron", 			"pts":300, "upgrades":[], 	"units":"4 Karacnos Assault Tanks"},
 			{"id":604, "name":"Myrmidon Sect",				"pts":300, "upgrades":[14,15,16,19, 52,53]},
-			{"id":605, "name":"Tarantula Battery",				"pts":125, "upgrades":[54,55]},
-			{"id":606, "name":"Minotaur Artillery Battery",			"pts":350, "upgrades":[], "units":"3 Minotaur Artillery Tank"},
-			{"id":607, "name":"Ordinatus Minorus Tormenta",			"pts":500, "upgrades":[], "units":"3 Ordinatus Minorus"}
+			{"id":605, "name":"Tarantula Battery",				"pts":125, "upgrades":[54,55,56]},
+			{"id":606, "name":"Minotaur Artillery Battery",			"pts":350, "upgrades":[], 	"units":"3 Minotaur Artillery Tank"},
+			{"id":607, "name":"Ordinatus Minorus Tormenta",			"pts":500, "upgrades":[57,58]}
 			
 
 		]},
@@ -26,7 +26,7 @@
 			{"id":701, "name":"Imperial Navy Avenger Wing",		        "pts":250, "upgrades":[], "units":"2 Avenger Strike Fighter units"},
 			{"id":702, "name":"Imperial Navy Primaris-Lightning Wing", 	"pts":225, "upgrades":[], "units":"2 Primaris-Lightning Fighter units"},
 			{"id":703, "name":"Super Heavy Tank Destroyer",			"pts":250, "upgrades":[], "units":"1 Mechanicum Falchion"},
-			{"id":704, "name":"Ordinatus Majoris",				"pts":450, "upgrades":[], "units":"1 Ordinatus Majoris"}
+			{"id":704, "name":"Ordinatus Majoris",				"pts":450, "upgrades":[59,60,61]}
 		
          ]}
 	],	
@@ -44,8 +44,16 @@
 		{"id":51, "name":"Tech Priest",					"pts":0},
 		{"id":52, "name":"Myrmidon Secutors",				"pts":0},
 		{"id":53, "name":"Myrmidon Destructors",			"pts":0},	
-		{"id":54, "name":"Tarantula Sentry Guns",			"pts":0},
-		{"id":55, "name":"Hyperios Sentry Guns",			"pts":50}
+		{"id":54, "name":"Tarantula Sentry Guns w/Heavy bolter", 	"pts":0},
+		{"id":55, "name":"Tarantula Sentry Guns w/Lascannon",		"pts":0},
+		{"id":56, "name":"Hyperios Sentry Guns",			"pts":50},
+		
+		{"id":57, "name":"Ordinatus Minoris Tormenta W/Belicosa Volcano Cannon",	"pts":0},
+		{"id":58, "name":"Ordinatus Minoris Tormenta W/Ulator Sonic Destroyer",		"pts":0},
+		
+		{"id":59, "name":"Ordinatus Majoris W/Sonic Disruptor",			"pts":0},
+		{"id":60, "name":"Ordinatus Majoris W/6x Golgothan Missiles",		"pts":0},
+		{"id":61, "name":"Ordinatus Majoris W/Nova Cannon",			"pts":0}
     ],
 	"formationConstraints":[
 		{"max":3, "name":"Support Detachment", "from":[600,601,602,603,604,605,606,607], "forEach":[500,501,502,503,504], "name2":"Cohort"},
@@ -69,7 +77,11 @@
         {"min":2, "max":5, "from":[51], "appliesTo":[500,504] },
 
         {"min":6, "max":6, "from":[52,53], "appliesTo":[604] },
-        {"min":5, "max":5, "from":[54,55], "appliesTo":[605] },
+        {"min":5, "max":5, "from":[54,55,56], "appliesTo":[605] },
+	
+	
+        {"min":3, "max":3, "from":[57,58], "appliesTo":[607] },
+        {"min":1, "max":1, "from":[59,60,61], "appliesTo":[704] },
 		
         {"max":1, "perArmy":true, "from":[11]}
 	
