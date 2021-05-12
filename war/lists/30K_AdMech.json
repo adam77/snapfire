@@ -37,7 +37,7 @@
    		{"id":13, "name":"Tech Priest",					"pts":25},
 		
 		{"id":14, "name":"Transport: Triaros",					"pts":75},
-		{"id":15, "name":"Transport: Land Raider w/ 2 x Twin Lascannon",		"pts":75},
+		{"id":15, "name":"Transport: Land Raider w/ 2 x Twin Lascannon",	"pts":75},
 		{"id":16, "name":"Transport: Land Raider w/ 2 x Flamestorm Cannon",	"pts":75},
 		{"id":17, "name":"Transport: Land Raider w/ 2 x Twin Multimelta",	"pts":75},
 		
@@ -50,6 +50,9 @@
 		{"id":20, "name":"Thanatar w/ Hellex Plasma Mortar",		"pts":75},
 		{"id":21, "name":"Thanatar w/ Sollex Heavy Lascannon",		"pts":75},
 		
+		{"id":32, "name":"Thanatar w/ Hellex Plasma Mortar",		"pts":0},
+		{"id":33, "name":"Thanatar w/ Sollex Heavy Lascannon",		"pts":0},
+		
 		{"id":22, "name":"Scyllax",					"pts":50},
 	
 		{"id":51, "name":"Tech Priest",					"pts":0},
@@ -60,7 +63,7 @@
 		{"id":56, "name":"Hyperios Sentry Guns",			"pts":50},
 		
 		{"id":57, "name":"Ordinatus Minoris Tormenta w/ Belicosa Volcano Cannon",	"pts":0},
-		{"id":58, "name":"Ordinatus Minoris Tormenta w/ Ulator Sonic Destroyer",		"pts":0},
+		{"id":58, "name":"Ordinatus Minoris Tormenta w/ Ulator Sonic Destroyer",	"pts":0},
 		
 		{"id":59, "name":"Ordinatus Majoris w/ Sonic Disruptor",			"pts":0},
 		{"id":60, "name":"Ordinatus Majoris w/ 6x Golgothan Missiles",		"pts":0},
@@ -75,20 +78,20 @@
 	"upgradeConstraints":[
 		{"min":0, "max":1, "from":[11,12], "appliesTo":[500,501,504]},
 		
-	        {"min":0, "max":3, "from":[13], "appliesTo":[501,502,503,601]},
-	        {"min":0, "max":3, "from":[14], "appliesTo":[500,501,502]},
-        	{"min":0, "max":4, "from":[14], "appliesTo":[604]},
-	        {"min":0, "max":6, "from":[15,16,17], "appliesTo":[500,501,502]},
-        	{"min":0, "max":8, "from":[15,16,17], "appliesTo":[604]},
+	        {"min":0, "max":3, "from":[13], 	"appliesTo":[501,502,503,601]},
+	        {"min":0, "max":3, "from":[14], 	"appliesTo":[500,501,502]},
+        	{"min":0, "max":4, "from":[14],	 	"appliesTo":[604]},
+	        {"min":0, "max":6, "from":[15,16,17], 	"appliesTo":[500,501,502]},
+        	{"min":0, "max":8, "from":[15,16,17], 	"appliesTo":[604]},
 
-	        {"min":0, "max":3, "from":[18,19], "appliesTo":[500,501,602,604]},
-       		{"min":0, "max":3, "from":[20,21], "appliesTo":[504]},
-        	{"min":0, "max":4, "from":[22], "appliesTo":[500,501,504,601,604]},
+	        {"min":0, "max":3, "from":[18,19], 	"appliesTo":[500,501,602,604]},
+       		{"min":0, "max":3, "from":[20,21], 	"appliesTo":[504]},
+        	{"min":0, "max":4, "from":[22], 	"appliesTo":[500,501,504,601,604]},
 
-       		{"min":2, "max":5, "from":[51], "appliesTo":[500,504] },
+       		{"min":2, "max":5, "from":[51], 	"appliesTo":[500,504] },
 
 		
-        	{"min":3, "max":3, "from":[20,21], 	"appliesTo":[601] },
+        	{"min":3, "max":3, "from":[32,33], 	"appliesTo":[601] },
 		
         	{"min":5, "max":5, "from":[30,31], 	"appliesTo":[602] },
 		
