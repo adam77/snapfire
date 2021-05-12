@@ -68,7 +68,7 @@
 
         {"min":2, "max":5, "from":[51], "appliesTo":[500,504] },
 
-        {"min":6, "max":6, "from":[52,53], "appliesTo":[603] },
+        {"min":5, "max":5, "from":[52,53], "appliesTo":[603] },
         {"min":3, "max":5, "from":[54,55], "appliesTo":[604] },
 		
         {"max":1, "perArmy":true, "from":[11]}			
