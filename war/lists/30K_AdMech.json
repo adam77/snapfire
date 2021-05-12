@@ -37,9 +37,9 @@
    		{"id":13, "name":"Tech Priest",					"pts":25},
 		
 		{"id":14, "name":"Transport: Triaros",					"pts":75},
-		{"id":15, "name":"Transport: Land Raider W/2 x Twin Lascannon",		"pts":75},
-		{"id":16, "name":"Transport: Land Raider W/2 x Flamestorm Cannon",	"pts":75},
-		{"id":17, "name":"Transport: Land Raider W/2 x Twin Multimelta",	"pts":75},
+		{"id":15, "name":"Transport: Land Raider w/ 2 x Twin Lascannon",		"pts":75},
+		{"id":16, "name":"Transport: Land Raider w/ 2 x Flamestorm Cannon",	"pts":75},
+		{"id":17, "name":"Transport: Land Raider w/ 2 x Twin Multimelta",	"pts":75},
 		
         	{"id":30, "name":"Krios Battle Tank",				"pts":0},
         	{"id":31, "name":"Krios Venator",				"pts":0},
@@ -47,24 +47,24 @@
         	{"id":18, "name":"Krios Battle Tank",				"pts":50},
         	{"id":19, "name":"Krios Venator",				"pts":50},
 		
-		{"id":20, "name":"Thanatar W/Hellex Plasma Mortar",		"pts":75},
-		{"id":21, "name":"Thanatar W/Sollex Heavy Lascannon",		"pts":75},
+		{"id":20, "name":"Thanatar w/ Hellex Plasma Mortar",		"pts":75},
+		{"id":21, "name":"Thanatar w/ Sollex Heavy Lascannon",		"pts":75},
 		
 		{"id":22, "name":"Scyllax",					"pts":50},
 	
 		{"id":51, "name":"Tech Priest",					"pts":0},
 		{"id":52, "name":"Myrmidon Secutors",				"pts":0},
 		{"id":53, "name":"Myrmidon Destructors",			"pts":0},	
-		{"id":54, "name":"Tarantula Sentry Guns w/Heavy bolter", 	"pts":0},
-		{"id":55, "name":"Tarantula Sentry Guns w/Lascannon",		"pts":0},
+		{"id":54, "name":"Tarantula Sentry Guns w/ Heavy bolter", 	"pts":0},
+		{"id":55, "name":"Tarantula Sentry Guns w/ Lascannon",		"pts":0},
 		{"id":56, "name":"Hyperios Sentry Guns",			"pts":50},
 		
-		{"id":57, "name":"Ordinatus Minoris Tormenta W/Belicosa Volcano Cannon",	"pts":0},
-		{"id":58, "name":"Ordinatus Minoris Tormenta W/Ulator Sonic Destroyer",		"pts":0},
+		{"id":57, "name":"Ordinatus Minoris Tormenta w/ Belicosa Volcano Cannon",	"pts":0},
+		{"id":58, "name":"Ordinatus Minoris Tormenta w/ Ulator Sonic Destroyer",		"pts":0},
 		
-		{"id":59, "name":"Ordinatus Majoris W/Sonic Disruptor",			"pts":0},
-		{"id":60, "name":"Ordinatus Majoris W/6x Golgothan Missiles",		"pts":0},
-		{"id":61, "name":"Ordinatus Majoris W/Nova Cannon",			"pts":0}
+		{"id":59, "name":"Ordinatus Majoris w/ Sonic Disruptor",			"pts":0},
+		{"id":60, "name":"Ordinatus Majoris w/ 6x Golgothan Missiles",		"pts":0},
+		{"id":61, "name":"Ordinatus Majoris w/ Nova Cannon",			"pts":0}
     ],
 	"formationConstraints":[
 		{"max":3, "name":"Support Detachment", "from":[600,601,602,603,604,605,606,607], "forEach":[500,501,502,503,504], "name2":"Cohort"},
