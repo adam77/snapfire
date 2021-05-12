@@ -1,31 +1,32 @@
 {
 	"id":"Mechanicum Taghmata",
 	"version":"Heresy v 0.3.?",
-	"by":"freefall",
+	"by":"freefall, updated by spaal574",
 	"sections":[
 		{"name":"LINE DETACHMENTS", "formations":[
-		    {"id":500, "name":"Adsecularis Covenant", 		"pts":150, "upgrades":[11,12,14,15,16,19],    "units":"10 Tech-Thrall units"},
-		    {"id":501, "name":"Thallax Cohort",                 "pts":300, "upgrades":[11,12,13,14,15,16,19], "units":"6 Thallax units" },
-		    {"id":502, "name":"Ursarax Cohort", 	        "pts":250, "upgrades":[13,14,15],             "units":"6 Ursarax units"}, 
-		    {"id":503, "name":"Vorax Maniple",                  "pts":250, "upgrades":[13],                   "units":"6 Vorax Battle-Automata"},
-		    {"id":504, "name":"Castelax Cohort", 	        "pts":275, "upgrades":[11,12,17,19],          "units":"5 Castellax Battle-Automata units"}
+			{"id":500, "name":"Adsecularis Covenant", 		"pts":150, "upgrades":[11,12,14,15,16,19], "units":"10 Tech-Thrall units"},
+			{"id":501, "name":"Thallax Cohort", 			"pts":300, "upgrades":[11,12,13,14,15,16,19], "units":"6 Thallax units" },
+			{"id":502, "name":"Ursarax Cohort", 			"pts":250, "upgrades":[13,14,15], "units":"6 Ursarax units"}, 
+			{"id":503, "name":"Vorax Maniple", 			"pts":250, "upgrades":[13], "units":"6 Vorax Battle-Automata"},
+			{"id":504, "name":"Castelax Cohort",			"pts":275, "upgrades":[11,12,17,19], "units":"5 Castellax Battle-Automata units"}
          ]},
 		{"name":"SUPPORT DETACHMENTS", "formations":[
-                    {"id":600, "name":"Vultarax Maniple",               "pts":250, "upgrades":[],                     "units":"6 Vultarax Stratos-Automata"},
-		    {"id":601, "name":"Thanatar Maniple",               "pts":200, "upgrades":[13,19],                "units":"3 Thanatar Battle-Automata"},
-		    {"id":602, "name":"Krios Battle Tank Squadron",     "pts":300, "upgrades":[16],                   "units":"5 Krios Battle Tank"},
-	            {"id":603, "name":"Myrmidon Sect",                  "pts":300, "upgrades":[14,15,16,19, 52,53]},
-		    {"id":604, "name":"Tarantula Battery",              "pts":125, "upgrades":[54,55]},
-	            {"id":605, "name":"Karacnos Assault Squadron",      "pts":350, "upgrades":[],                     "units":"4 Karacnos Assault Tanks"},
-	            {"id":606, "name":"Minotaur Artillery Battery",     "pts":350, "upgrades":[],                     "units":"3 Minotaur Artillery Tank"},
-		    {"id":607, "name":"Ordinatus Minorus Tormenta",     "pts":500, "upgrades":[],                     "units":"3 Ordinatus Minorus"}
+			{"id":600, "name":"Vulturax Maniple",				"pts":250, "upgrades":[], "units":"6 Vulturax Stratos-Automata"},
+			{"id":601, "name":"Thanatar Maniple",				"pts":200, "upgrades":[13,19], "units":"3 Thanatar Battle-Automata"},
+			{"id":602, "name":"Krios Battle Tank Squadron",			"pts":300, "upgrades":[16], "units":"5 Krios Battle Tank"},
+			{"id":603, "name":"Karacnos Assault Squadron", 			"pts":300, "upgrades":[], "units":"4 Karacnos Assault Tanks"},
+			{"id":604, "name":"Myrmidon Sect",				"pts":300, "upgrades":[14,15,16,19, 52,53]},
+			{"id":605, "name":"Tarantula Battery",				"pts":125, "upgrades":[54,55]},
+			{"id":606, "name":"Minotaur Artillery Battery",			"pts":350, "upgrades":[], "units":"3 Minotaur Artillery Tank"},
+			{"id":607, "name":"Ordinatus Minorus Tormenta",			"pts":500, "upgrades":[], "units":"3 Ordinatus Minorus"}
+			
 
 		]},
 		{"name":"ALLIES & LORDS OF WAR", "formations":[
-		    {"id":701, "name":"Imperial Navy Avenger Wing",	         "pts":250, "upgrades":[], "units":"2 Avenger Strike Fighter units"}
-                    {"id":702, "name":"Imperial Navy Primaris-Lightning Wing",   "pts":225, "upgrades":[], "units":"2 Primaris-Lightning Fighter units"},
-	            {"id":703, "name":"Super Heavy Tank Destroyer",              "pts":250, "upgrades":[], "units":"1 Mechanicum Falchion"},
-		    {"id":704, "name":"Ordinatus Majoris",                       "pts":450, "upgrades":[], "units":"1 Ordinatus Majoris"}
+			{"id":701, "name":"Imperial Navy Avenger Wing",		        "pts":250, "upgrades":[], "units":"2 Avenger Strike Fighter units"},
+			{"id":702, "name":"Imperial Navy Primaris-Lightning Wing", 	"pts":225, "upgrades":[], "units":"2 Primaris-Lightning Fighter units"},
+			{"id":703, "name":"Super Heavy Tank Destroyer",			"pts":250, "upgrades":[], "units":"1 Mechanicum Falchion"},
+			{"id":704, "name":"Ordinatus Majoris",				"pts":450, "upgrades":[], "units":"1 Ordinatus Majoris"}
 		
          ]}
 	],	
@@ -33,19 +34,19 @@
 	"upgrades":[
 		{"id":11, "name":"Archmagos Prime",				"pts":100},
 		{"id":12, "name":"Magos Prime",					"pts":50},
-                {"id":13, "name":"Tech Priest",                                 "pts":25},
+   		{"id":13, "name":"Tech Priest",					"pts":25},
 		{"id":14, "name":"Transport: Triaros",				"pts":75},
-	        {"id":15, "name":"Transport: Land Raider",			"pts":75},
-                {"id":16, "name":"Krios Battle Tank",                           "pts":50},
-	        {"id":17, "name":"Thanatar",					"pts":75},
-	        {"id":19, "name":"Scyllax",				        "pts":50},
-	        {"id":51, "name":"Tech Priest",					"pts":0},
-	        {"id":52, "name":"Myrmidon Secutors",				"pts":0},
-                {"id":53, "name":"Myrmidon Destructors",                        "pts":0},	
-	        {"id":54, "name":"Tarantula Sentry Guns",			"pts":0},
-	        {"id":55, "name":"Karacnos Assault Tanks",			"pts":50}
-	        {"id":55, "name":"Hyperios Sentry Guns",			"pts":50}
-        ],
+		{"id":15, "name":"Transport: Land Raider",			"pts":75},
+        	{"id":16, "name":"Krios Battle Tank",				"pts":50},
+		{"id":17, "name":"Thanatar",					"pts":75},
+		{"id":19, "name":"Scyllax",					"pts":50},
+	
+		{"id":51, "name":"Tech Priest",					"pts":0},
+		{"id":52, "name":"Myrmidon Secutors",				"pts":0},
+		{"id":53, "name":"Myrmidon Destructors",			"pts":0},	
+		{"id":54, "name":"Tarantula Sentry Guns",			"pts":0},
+		{"id":55, "name":"Hyperios Sentry Guns",			"pts":50}
+    ],
 	"formationConstraints":[
 		{"max":3, "name":"Support Detachment", "from":[600,601,602,603,604,605,606,607], "forEach":[500,501,502,503,504], "name2":"Cohort"},
 		{"maxPercent":33, "name":"ALLIES & LORDS OF WAR", "from":[701,702,703,704]},
@@ -53,25 +54,25 @@
 		
 	],
 	"upgradeConstraints":[
-		
-	{"min":0, "max":1, "from":[11,12], "appliesTo":[500,501,504]},
+		{"min":0, "max":1, "from":[11,12], "appliesTo":[500,501,504]},
 		
         {"min":0, "max":3, "from":[13], "appliesTo":[501,502,503,601]},
         {"min":0, "max":3, "from":[14], "appliesTo":[500,501,502]},
-        {"min":0, "max":4, "from":[14], "appliesTo":[603]},
+        {"min":0, "max":4, "from":[14], "appliesTo":[604]},
         {"min":0, "max":6, "from":[15], "appliesTo":[500,501,502]},
-        {"min":0, "max":8, "from":[15], "appliesTo":[603]},
+        {"min":0, "max":8, "from":[15], "appliesTo":[604]},
 
-        {"min":0, "max":3, "from":[16], "appliesTo":[500,501,602,603]},
+        {"min":0, "max":3, "from":[16], "appliesTo":[500,501,602,604]},
         {"min":0, "max":3, "from":[17], "appliesTo":[504]},
-        {"min":0, "max":4, "from":[19], "appliesTo":[500,501,504,601,603]},
+        {"min":0, "max":4, "from":[19], "appliesTo":[500,501,504,601,604]},
 
         {"min":2, "max":5, "from":[51], "appliesTo":[500,504] },
 
-        {"min":5, "max":5, "from":[52,53], "appliesTo":[603] },
-        {"min":3, "max":5, "from":[54,55], "appliesTo":[604] },
+        {"min":6, "max":6, "from":[52,53], "appliesTo":[604] },
+        {"min":5, "max":5, "from":[54,55], "appliesTo":[605] },
 		
-        {"max":1, "perArmy":true, "from":[11]}			
-	]
+        {"max":1, "perArmy":true, "from":[11]}
 	
+				
+	]
 }
