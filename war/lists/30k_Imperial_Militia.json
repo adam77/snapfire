@@ -71,8 +71,8 @@
 		{"id":52, "name":"Feral Warriors",			"pts":50},
 		{"id":53, "name":"Traitors",				"pts":50},
 				
-		{"id":60, "name":"Discipline Master",			"pts":300},
-		{"id":61, "name":"Rogue Psyker",			"pts":150}		
+		{"id":60, "name":"Discipline Master",			"pts":0},
+		{"id":61, "name":"Rogue Psyker",			"pts":0}		
 		
 	],
 	"formationConstraints":[
