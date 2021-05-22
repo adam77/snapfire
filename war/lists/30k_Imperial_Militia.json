@@ -1,6 +1,6 @@
 {
 	"id":"Imperial Militia for 30k",
-	"version":"v0.65",
+	"version":"v0.8",
 	"by":"by Norto, Updated by spaal574",
 	"notes":["Line Detachments and Support Detachments may only take a total of four upgrades per detachment.",
 		" ",
@@ -10,8 +10,7 @@
 		"You can either choose Heavy Transports(Gorgon Heavy Transporter) or Transports(Arvus Lighter OR Auxilia Rhino OR Land Raider Proteus) for a formation, not both.",
 		"Transports count towards the number of upgrade allowances of a formation.",
 		" ",
-		"Only one Discipline Master(they are free) per 500 points.",
-		"If the army includes Militia Command Squad then the first one must be attached to formation, if a Militia Command Squad is not present in the Army he must be placed in the most expensive Imperial Militia Line Formation",
+		"If the army includes Militia Command Squad then the first Discipline Master must be attached to formation, if a Militia Command Squad is not present in the Army he must be placed in the most expensive Imperial Militia Line Formation",
 		"Any further Discipline Masters may be attached to any other Imperial Militia formations.If you have more Discipline Masters than formations, any excess are lost.",
 		"A Rogue Psyker may be exchanged for a Discipline Master in a formation that has taken the Traitors Provenance upgrade."],
 	
@@ -83,6 +82,8 @@
 	],
 	"upgradeConstraints":[
 		
+		{"max":1, "from":[60,61],"perPoints":500},
+
 		{"min":0, "max":1, "from":[60,61], "appliesTo":[500]},
 		{"min":0, "max":1, "from":[60,61], "appliesTo":[501]},
 		{"min":0, "max":1, "from":[60], "appliesTo":[502]},
