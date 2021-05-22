@@ -1,30 +1,37 @@
 {
 	"id":"Imperial Militia for 30k",
-	"version":"v0.5",
+	"version":"v0.65",
 	"by":"by Norto, Updated by spaal574",
 	"notes":["Line Detachments and Support Detachments may only take a total of four upgrades per detachment.",
+		" ",
 		"You can only have 2 different types of provenances per army (Feral Warriors, Survivors Of The DAoT,etc...).",
+		" ",
 		"When using Transports you must take exactly enough to carry all units(rounding up) in the formation after any upgrades have been added.",
 		"You can either choose Heavy Transports(Gorgon Heavy Transporter) or Transports(Arvus Lighter OR Auxilia Rhino OR Land Raider Proteus) for a formation, not both.",
-		"Transports count towards the number of upgrade allowances of a formation."],
+		"Transports count towards the number of upgrade allowances of a formation.",
+		" ",
+		"Only one Discipline Master(they are free) per 500 points.",
+		"If the army includes Militia Command Squad then the first one must be attached to formation, if a Militia Command Squad is not present in the Army he must be placed in the most expensive Imperial Militia Line Formation",
+		"Any further Discipline Masters may be attached to any other Imperial Militia formations.If you have more Discipline Masters than formations, any excess are lost.",
+		"A Rogue Psyker may be exchanged for a Discipline Master in a formation that has taken the Traitors Provenance upgrade."],
 	
 	"sections":[
 		{"name":"LINE DETACHMENTS", "formations":[
-			{"id":500, "name":"Militia Command Squad ", 				"pts":225, "upgrades":[2,8,9,10,1,3,4,7,50,51,52,53], "units":"1 Force Commander and 7 Militia Auxiliaries units"},
-			{"id":501, "name":"Inducted Levy Squad", 				"pts":100, "upgrades":[4,50,51,52,53], "units":"10 Levy Auxiliaries"},
-			{"id":502, "name":"Militia Motorcycle Squad", 				"pts":175, "upgrades":[50,51,52], "units":"1 Motorcycle Commander unit and 7 Militia Biker units"},
-			{"id":503, "name":"Militia Grenadier Squad", 				"pts":175, "upgrades":[2,8,9,10,50,51,52,53], "units":"8 Militia Grenadier Units"},
-			{"id":504, "name":"Militia Infantry Squad", 				"pts":125, "upgrades":[2,8,9,10,1,3,4,7,50,51,52,53], "units":"1 Platoon Command and 7 Militia Auxiliaries units"}
+			{"id":500, "name":"Militia Command Squad", 				"pts":225, "upgrades":[60,61,7,8,9,10,1,3,4,5,50,51,52,53], "units":"1 Force Commander and 7 Militia Auxiliaries units"},
+			{"id":501, "name":"Inducted Levy Squad", 				"pts":100, "upgrades":[60,61,4,50,51,52,53], "units":"10 Levy Auxiliaries"},
+			{"id":502, "name":"Militia Motorcycle Squad", 				"pts":175, "upgrades":[60,61,60,50,51,52], "units":"1 Motorcycle Commander unit and 7 Militia Biker units"},
+			{"id":503, "name":"Militia Grenadier Squad", 				"pts":175, "upgrades":[60,61,7,8,9,10,50,51,52,53], "units":"8 Militia Grenadier Units"},
+			{"id":504, "name":"Militia Infantry Squad", 				"pts":125, "upgrades":[60,61,7,8,9,10,1,3,4,5,50,51,52,53], "units":"1 Platoon Command and 7 Militia Auxiliaries units"}
 		]},
 		{"name":"SUPPORT DETACHMENTS", "formations":[
 			{"id":600, "name":"Orbital Support",						"pts":0, "upgrades":[]},
-			{"id":601, "name":"Auxilia Cavalry Squad",					"pts":175, "upgrades":[50,51,52,53], "units":"6 Cavalry Auxiliary units"},
-			{"id":602, "name":"Auxilia Sentinel Scout Squadron",				"pts":100, "upgrades":[], "units":"4 Auxilia Sentinel units "},
-			{"id":603, "name":"Auxilia Rapier Battery",					"pts":100, "upgrades":[50,51,52,53], "units":"4 Auxilia Rapier Platform units"},
-			{"id":604, "name":"Auxilia Malcador Heavy Tank Squadron",			"pts":350, "upgrades":[]},
-			{"id":605, "name":"Auxiliary Battle Tank Attack Squadron",			"pts":350, "upgrades":[]},
-			{"id":606, "name":"Auxilia Heavy Ordnance Battery",				"pts":200, "upgrades":[]},
-			{"id":607, "name":"Auxilia Super Heavy Tank",					"pts":200, "upgrades":[]}
+			{"id":601, "name":"Auxilia Cavalry Squad",					"pts":175, "upgrades":[60,61,50,51,52,53], "units":"6 Cavalry Auxiliary units"},
+			{"id":602, "name":"Auxilia Sentinel Scout Squadron",				"pts":100, "upgrades":[60], "units":"4 Auxilia Sentinel units "},
+			{"id":603, "name":"Auxilia Rapier Battery",					"pts":100, "upgrades":[60,61,50,51,52,53], "units":"4 Auxilia Rapier Platform units"},
+			{"id":604, "name":"Auxilia Malcador Heavy Tank Squadron",			"pts":350, "upgrades":[60]},
+			{"id":605, "name":"Auxiliary Battle Tank Attack Squadron",			"pts":350, "upgrades":[60]},
+			{"id":606, "name":"Auxilia Heavy Ordnance Battery",				"pts":200, "upgrades":[60]},
+			{"id":607, "name":"Auxilia Super Heavy Tank",					"pts":200, "upgrades":[60]}
 
 		]},
 		{"name":"LORDS OF WAR", "formations":[
@@ -36,11 +43,11 @@
 	
 	"upgrades":[
 		{"id":1, "name":"Add 4 Militia Fire Support units",	"pts":100},
-		{"id":2, "name":"Gorgon (Transport)",			"pts":125},
 		{"id":3, "name":"Add 4 Militia Auxiliary units",	"pts":50},
 		{"id":4, "name":"Add 4 Ogryn Brute units",		"pts":150},
-	
-		{"id":7, "name":"Add 4 Recon Auxillary units",			"pts":75},
+		{"id":5, "name":"Add 4 Recon Auxillary units",		"pts":75},
+		
+		{"id":7, "name":"Gorgon (Transport)",				"pts":125},
 		{"id":8, "name":"Arvus Lighter (Transport)",			"pts":25},
 		{"id":9, "name":"Auxilia Rhinos (Transport)",			"pts":12.5},
 		{"id":10, "name":"Auxilia Land Raider Proteus (Transport)",	"pts":50},
@@ -76,12 +83,27 @@
 	],
 	"upgradeConstraints":[
 		
-		{"min":0, "max":4, "from":[1,3,4,7,50,51,52,53,54], "appliesTo":[500]},
-		{"min":0, "max":4, "from":[1,3,4,7,50,51,52,53,54], "appliesTo":[501]},
-		{"min":0, "max":4, "from":[1,3,4,7,50,51,52,53,54], "appliesTo":[503]},
-		{"min":0, "max":4, "from":[1,3,4,7,50,51,52,53,54], "appliesTo":[504]},
+		{"min":0, "max":1, "from":[60,61], "appliesTo":[500]},
+		{"min":0, "max":1, "from":[60,61], "appliesTo":[501]},
+		{"min":0, "max":1, "from":[60], "appliesTo":[502]},
+		{"min":0, "max":1, "from":[60,61], "appliesTo":[503]},
+		{"min":0, "max":1, "from":[60,61], "appliesTo":[504]},
+		
+		{"min":0, "max":1, "from":[60,61], "appliesTo":[601]},
+		{"min":0, "max":1, "from":[60], "appliesTo":[602]},		
+		{"min":0, "max":1, "from":[60,61], "appliesTo":[603]},
+		{"min":0, "max":1, "from":[60], "appliesTo":[604]},
+		{"min":0, "max":1, "from":[60], "appliesTo":[605]},
+		{"min":0, "max":1, "from":[60], "appliesTo":[606]},
+		{"min":0, "max":1, "from":[60], "appliesTo":[607]},
+		
+		
+		{"min":0, "max":4, "from":[1,3,4,5,50,51,52,53,54], "appliesTo":[500]},
+		{"min":0, "max":4, "from":[1,3,4,5,50,51,52,53,54], "appliesTo":[501]},
+		{"min":0, "max":4, "from":[1,3,4,5,50,51,52,53,54], "appliesTo":[503]},
+		{"min":0, "max":4, "from":[1,3,4,5,50,51,52,53,54], "appliesTo":[504]},
 			
-		{"min":0, "max":2, "from":[2], "appliesTo":[500,503,504]},
+		{"min":0, "max":2, "from":[7], "appliesTo":[500,503,504]},
 		{"min":0, "max":1, "from":[4], "appliesTo":[501]},
 		{"min":3, "max":3, "from":[12,13], "appliesTo":[606]},
 		{"min":1, "max":1, "from":[16,19], "appliesTo":[607]},
@@ -95,7 +117,7 @@
 		{"min":0, "max":1, "from":[1], "appliesTo":[500,504]},
 		{"min":0, "max":1, "from":[3], "appliesTo":[500,504]},
 		{"min":0, "max":1, "from":[4], "appliesTo":[500,504]},
-		{"min":0, "max":1, "from":[7], "appliesTo":[500,504]},
+		{"min":0, "max":1, "from":[5], "appliesTo":[500,504]},
 		{"min":0, "max":1, "from":[50,51,52,53], "appliesTo":[500,501,503,504,601,603]},
 		{"min":0, "max":1, "from":[50,51,52], "appliesTo":[502]}
 		
