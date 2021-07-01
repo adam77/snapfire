@@ -109,25 +109,25 @@
         {
           "id": 160,
           "name": "Guild Squadron",
-          "pts": 25,
+          "pts": 0,
           "upgrades": [5, 6]
         },
         {
           "id": 161,
           "name": "Guild Squadron (M)",
-          "pts": 25,
+          "pts": -25,
           "upgrades": [5, 6]
         },
         {
           "id": 162,
           "name": "Guild Squadron (L)",
-          "pts": 0,
+          "pts": -75,
           "upgrades": [5, 6]
         },
         {
           "id": 170,
           "name": "Thunderfire Battery",
-          "pts": 25,
+          "pts": 100,
           "upgrades": [17]
         }
       ]
@@ -172,7 +172,7 @@
         {
           "id": 210,
           "name": "Land Train",
-          "pts": 175,
+          "pts": 225,
           "units": "Land Train",
           "upgrades": [21, 22, 23, 24, 25, 26, 27, 10, 4]
         },
@@ -186,21 +186,21 @@
         {
           "id": 230,
           "name": "Super-Heavy Artillery Battery",
-          "pts": 175,
+          "pts": 150,
           "units": "Goliath",
           "upgrades": [4, 10]
         },
         {
           "id": 231,
           "name": "Super-Heavy Artillery Battery (M)",
-          "pts": 325,
+          "pts": 275,
           "units": "2x Goliaths",
           "upgrades": [4, 10]
         },
         {
           "id": 232,
           "name": "Super-Heavy Artillery Battery (L)",
-          "pts": 450,
+          "pts": 375,
           "units": "3x Goliaths",
           "upgrades": [4, 10]
         }
@@ -290,7 +290,7 @@
     {
       "id": 17,
       "name": "Thunderfire",
-      "pts": 75
+      "pts": 25
     },
     {
       "id": 18,
@@ -380,6 +380,21 @@
       "from": [1],
       "min": 15,
       "appliesTo": [102]
+    },
+    {
+      "from": [12],
+      "max": 3,
+      "appliesTo": [110, 120]
+    },
+    {
+      "from": [12],
+      "max": 6,
+      "appliesTo": [111, 121]
+    },
+    {
+      "from": [12],
+      "max": 9,
+      "appliesTo": [112, 122]
     },
     {
       "from": [2, 3],
