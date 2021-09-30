@@ -8,8 +8,8 @@
 			{"id":512, "name":"Great Drake",	"pts":50,	"upgrades":[]}
 		]},
 		{"name":"Eldar Exodite Warhosts", "formations":[
-			{"id":521, "name":"Exodite Dragon Knights","pts":300, "upgrades":[10,11]},
-			{"id":522, "name":"Exodite Wind Knights","pts":225, "upgrades":[10,11]}
+			{"id":521, "name":"Exodite Dragon Knights","pts":300, "upgrades":[9,10,11]},
+			{"id":522, "name":"Exodite Wind Knights","pts":225, "upgrades":[9,10,11]}
 		]},
 
 		{"name":"Eldar Exodite troupes", "formations":[
@@ -19,9 +19,9 @@
 			{"id":539, "name":"Great Megadons","pts":0, "upgrades":[40,41]},
 			{"id":533, "name":"Outcast Rangers ","pts":0, "upgrades":[21]},
 			{"id":535, "name":"War Walker","pts":50, "upgrades":[24]},
-			{"id":536, "name":"Raptor Herder ","pts":225, "upgrades":[10,11]},
-			{"id":537, "name":"Exodite Militia","pts":250, "upgrades":[30]},
-			{"id":534, "name":"Dragon Keeper","pts":225, "upgrades":[10,11]},
+			{"id":536, "name":"Raptor Herder ","pts":225, "upgrades":[9,10,11]},
+			{"id":537, "name":"Exodite Militia","pts":150, "upgrades":[30]},
+			{"id":534, "name":"Dragon Keeper","pts":225, "upgrades":[9,10,11]},
 			{"id":555, "name":"Huntsmen","pts":175, "units":"5 Huntsmen", "upgrades":[11]}
 		]},
 
@@ -37,7 +37,8 @@
 		]}
 	],
 	"upgrades":[
-		{"id":10, "name":"Exodite Dragon Prince",			"pts":100},
+		{"id":9, "name":"Exodite Dragon King",				"pts":100},
+		{"id":10, "name":"Exodite Dragon Prince",			"pts":25},
 		{"id":11, "name":"Dragonsinger",				"pts":25},
 		{"id":12, "name":"8 Exodite Dragon Knights",			"pts":0},
 		{"id":13, "name":"Pteradon Riders",				"pts":0},
@@ -69,10 +70,10 @@
 		{"id":41, "name":"Thundersaurs",				"pts":200},
 		{"id":42, "name":"6 Raptor Herders",				"pts":0},
 		{"id":43, "name":"8 Raptor Herders",				"pts":50},
-		{"id":44, "name":"6 Dragon Keepers",				"pts":0},
-		{"id":45, "name":"8 Dragon Keepers",				"pts":50},
+		{"id":44, "name":"6 Dragon Warders",				"pts":0},
+		{"id":45, "name":"8 Dragon Warders",				"pts":50},
 		{"id":46, "name":"2 Corsair Nightwing Interceptors",		"pts":0},
-		{"id":47, "name":"3 Nightwing Interceptors",			"pts":75},
+		{"id":47, "name":"3 Corsair Nightwing Interceptors",		"pts":75},
 		{"id":48, "name":"2 Void Dragon Phoenix Bombers",		"pts":0},
 		{"id":49, "name":"3 Void Dragon Phoenix Bombers",		"pts":100}
 
@@ -90,10 +91,10 @@
 
 	],
 	"upgradeConstraints":[
-	  	{"max": 1, "perArmy": true, "from": [10]},
+	  	{"max": 1, "perArmy": true, "from": [9]},
 	  	{"max": 2, "from": [20]},
 		{"max": 1, "from": [30]},
-	  	{"max": 1, "from": [10,11]},
+	  	{"max": 1, "from": [9,10,11]},
 	  	{"min":1, "max":1, "from": [12], "appliesTo": [521]},
 	  	{"min":1, "max":1, "from": [14,33,38], "appliesTo": [522]},
 	  	{"min":1, "max":1, "from": [15], "appliesTo": [531]},
