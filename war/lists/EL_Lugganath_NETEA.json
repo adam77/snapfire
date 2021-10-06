@@ -1,6 +1,6 @@
 {
 	"id":"Craftworld Lugganath Fanlist",
-	"version":"v1.3",
+	"version":"v1.31",
 	"by":"",
 	"sections":[
 		{"name":"Webway Portal and Avatar of Khaine", "formations":[
@@ -9,7 +9,7 @@
 		]},
 		
 		{"name":"Lugganath Warhosts (Max one Aspect Warrior Warhost for each Guardian Warhost)", "formations":[
-			{"id":510, "name":"Guardian Warhost",		 		"pts":250, "units":"5 Guardians, 5 Lugganath Venoms",	"upgrades":[21,22]},
+			{"id":510, "name":"Guardian Warhost",		 		"pts":250, "units":"1 Farseer, 4 Guardians, 5 Lugganath Venoms",	"upgrades":[22]},
 			{"id":511, "name":"Aspect Warrior Warhost", 			"pts":250, "upgrades":[10,11,12]}
 		]},	
 		
@@ -17,25 +17,25 @@
 			{"id":520, "name":"Wasp Walkers",			"pts":150, "units":"4 Corsair Wasp Walkers", "upgrades":[]},
 			{"id":521, "name":"Ghost Walkers",			"pts":150, "units":"4 Corsair Ghost Walkers", "upgrades":[]},
 			{"id":522, "name":"Warp Spiders",			"pts":250, "units":"6 Warp Spiders", "upgrades":[10,13]},
-			{"id":523, "name":"Wraithguard",		"pts":275, "units":"3 Wraithguard, 3 Wave Serpents", "upgrades":[42]},
-			{"id":524, "name":"Swords of Vaul",			"pts":250, "upgrades":[42]},
+			{"id":523, "name":"Wraithguard",			"pts":275, "units":"3 Wraithguard, 3 Wave Serpents", "upgrades":[42]},
+			{"id":524, "name":"Swords of Vaul",			"pts":0, "upgrades":[]},
 			{"id":525, "name":"Engine of Vaul",			"pts":50,  "upgrades":[50,51]}
 		]},
 		
 			{"name":"Harlequin Saedaths (Max one Harlequin Saedath for every two Warhosts)", "formations":[
-			{"id":535, "name":"Laughing Circus",			"pts":300, "units":"1 Harlequin Avatar, 5 Harlequin Troupe, 5 Starweavers", "upgrades":[]},
+			{"id":535, "name":"Laughing Circus",			"pts":250, "units":"1 Harlequin Avatar, 5 Harlequin Troupe, 5 Starweavers", "upgrades":[]},
 			{"id":532, "name":"Serpent's Blood",			"pts":300, "units":"1 Harlequin Avatar, 4 Harlequin Skyweavers, 2 Voidweavers", "upgrades":[]},
 			{"id":530, "name":"Devourer's Thirst",			"pts":300, "units":"1 Master Mime, 6 Mimes", "upgrades":[]},
-			{"id":531, "name":"Cegorath's Revenge",			"pts":400, "units":"1 Harlequin Avatar, 4 Harlequins Troupes, 2 Death Jesters, 6 Starweavers", "upgrades":[]},
-			{"id":533, "name":"Isha's Tears",			"pts":450, "units":"1 Harlequin Avatar, 1 Shadowseer, 4 Death Jesters, 2 Harlequin Troupes, 6 Starweavers", "upgrades":[]},
-			{"id":534, "name":"Dance Without End",			"pts":550, "units":"1 Harlequin Avatar, 1 Shadowseer, 1 Solitaire, 2 Death Jesters, 3 Harlequin Troupes, 2 Mimes, 8 Starweavers", "upgrades":[]}
+			{"id":531, "name":"Cegorath's Revenge",			"pts":350, "units":"1 Harlequin Avatar, 4 Harlequins Troupes, 2 Death Jesters, 6 Starweavers", "upgrades":[]},
+			{"id":533, "name":"Isha's Tears",			"pts":400, "units":"1 Harlequin Avatar, 1 Shadowseer, 4 Death Jesters, 2 Harlequin Troupes, 6 Starweavers", "upgrades":[]},
+			{"id":534, "name":"Dance Without End",			"pts":500, "units":"1 Harlequin Avatar, 1 Shadowseer, 1 Solitaire, 2 Death Jesters, 3 Harlequin Troupes, 2 Mimes, 8 Starweavers", "upgrades":[]}
 		]},
 		
 		{"name":"Fir-Iolarion Titans, Wraithknights and Eldar Navy (Max 33%)", "formations":[
 			{"id":540, "name":"Corsair Nightwings",			"pts":225, "upgrades":[]},
 			{"id":544, "name":"Corsair Void Dragon Phoenix",	"pts":225, "upgrades":[]},
 			{"id":541, "name":"Revenants",				"pts":650, "units":"2 Revenant Titans", "upgrades":[]},
-			{"id":543, "name":"Wraithknights",			"pts":350, "units":"3 Lugganath Wraithknights", "upgrades":[]},
+			{"id":543, "name":"Wraithknights",			"pts":300, "units":"3 Lugganath Wraithknights", "upgrades":[]},
 			{"id":545, "name":"Corsair Eclipse Cruiser",		"pts":200, "upgrades":[]}
 		]}
 	],
@@ -57,8 +57,8 @@
 		{"id":34, "name":"4 Falcons",				"pts":75},
 
 	
-		{"id":40, "name":"Falcons",				"pts":0},
-		{"id":41, "name":"Fire Prisms",				"pts":15},
+		{"id":40, "name":"Falcons",				"pts":50},
+		{"id":41, "name":"Fire Prisms",				"pts":65},
 		{"id":42, "name":"Firestorm",				"pts":50},
 		
 
@@ -109,10 +109,11 @@
 		
 		{"max":1, "from":[13],  "appliesTo":[522]},
 	
-		{"min":5, "max":5, "from":[40,41], "appliesTo":[524]},
+		{"min":5, "max":5, "from":[40,41,42], "appliesTo":[524]},
 
 		
-		{"max":1, "from":[42], "appliesTo":[511,523,524]},
+		{"max":2, "from":[42], "appliesTo":[524]},
+		{"max":1, "from":[42], "appliesTo":[511,523]},
 		
 		{"min":1, "max":3, "from":[51,50], "appliesTo":[525]}
 		
