@@ -1,108 +1,114 @@
 {
-	"id":"Solar Auxilia V 0.1.3",
-	"version":"Heresy V 0.1.3",
-	"by":"J.Barr AKA Fattdex. Updated by Mard",
+	"id":"Solar Auxilia V 0.9.0",
+	"version":"Heresy V 0.9.0",
+	"by":"J.Barr AKA Fattdex. Updated by Mard, Remade from 0 by spaal574",
+	"notes":["Each detachment may purchase up to three upgrades, each upgrade can only be chosen once per detachment.",
+	"When using Transports you must take exactly enough to carry all units(rounding up) in the formation after any upgrades have been added.",
+	"You can't mix transport upgrades in the same formation, transports count towards the number of upgrade allowances of a formation.",
+	"Dracosan Transports and Stormlord units may only transport units from their own formation (the rules for War Engine transports do not apply to them bought as an upgrade)",
+	"Only one Legate Commander(they are free) per 500 points.",
+	"If the army includes a Command Retinue, then the first Legate Commander must be attached to the Command Retinue formation.",
+	"Any further Legate Commanders may be attached to any other Solar Auxilia formations.If you have more Legate Commanders than formations, any excess are lost."],
+
 	"sections":[
 		{"name":"SOLAR AUXILIA DETACHMENTS", "formations":[
-			{"id":500, "name":"Leman Russ Strike Squadron", 				"pts":350, "upgrades":[99]},
-			{"id":501, "name":"Solar Auxilia Infantry Terico", 				"pts":150, "upgrades":[14,15,16,17,18,19,38,39,99], "units":"1x Auxilia Tactical Command Section, 7x Solar Auxilia Lasrifle units"},
-			{"id":502, "name":"Solar Auxilia Veletaris Storm Cohort", 		"pts":200, "upgrades":[14,15,16,38,39,99], "units":"1x Auxilia Tactical Command Section, 7x Veletaris Storm units"}
+			{"id":500, "name":"Solar Auxilia Command Retinue", 		"pts":300, "upgrades":[38,31,32,33,30,35,36,37], "units":"1x Lord Marshall unit"},
+			{"id":501, "name":"Solar Auxilia Strike Squadron", 		"pts":350, "upgrades":[38]},
+			{"id":502, "name":"Solar Auxilia Infantry Tercio", 		"pts":150, "upgrades":[38,31,32,33,30,34,35,36,37], "units":"1x Auxilia Tactical Command Section, 7x Solar Auxilia Infantry Section units"},
+			{"id":503, "name":"Solar Auxilia Veletaris Storm Cohort", 	"pts":200, "upgrades":[38,31,32,33,35,36,37], "units":"1x Auxilia Tactical Command Section"}
 		]},
 		{"name":"SUPPORT DETACHMENTS", "formations":[
-			{"id":601, "name":"Orbital Support",							"pts":0, "upgrades":[]},
-			{"id":602, "name":"Auxilia Artillery Tank Battery",				"pts":250, "upgrades":[]},
-			{"id":603, "name":"Auxilia Super Heavy Tank",					"pts":200, "upgrades":[]},
-			{"id":604, "name":"Auxilia Super Heavy Tank Platoon",			"pts":500, "upgrades":[]},
-			{"id":605, "name":"Auxilia Tank Hunter Squadron",				"pts":250, "upgrades":[], "units":"3x Valdor Tank Hunters"},
-			{"id":606, "name":"Leman Russ Assault Squadron",				"pts":200, "upgrades":[]},
-			{"id":607, "name":"Tarantula Sentry Gun Battery",				"pts":125, "upgrades":[], "units":"4x Tarantula, 1x Tarantula Hyperios"},
-			{"id":608, "name":"Auxilia Malcador Squadron",					"pts":200, "upgrades":[]}
+			{"id":600, "name":"Solar Auxilia Orbital Support",		"pts":0, "upgrades":[]},
+			{"id":601, "name":"Solar Auxilia Artillery Tank Battery",	"pts":0, "upgrades":[38]},
+			{"id":602, "name":"Solar Auxilia Malcador Squadron",		"pts":350, "upgrades":[38]},
+			{"id":603, "name":"Solar Auxilia Super Heavy Tank",		"pts":200, "upgrades":[38]},
+			{"id":604, "name":"Solar Auxilia Super Heavy Tank Squadron",	"pts":500, "upgrades":[38]},			
+			{"id":605, "name":"Auxilia Tank Hunter Squadron",		"pts":250, "upgrades":[38], "units":"3x Valdor Tank Hunters"},
+			{"id":606, "name":"Solar Auxilia Close Support Squadron",	"pts":200, "upgrades":[38]},
+			{"id":607, "name":"Solar Auxilia Tarantula Battery",		"pts":125, "upgrades":[], "units":"4x Tarantula units, 1x Tarantula Hyperios unit"}
 
 		]},
-		{"name":"ALLIES & LORDS OF WAR", "formations":[
-			{"id":701, "name":"Imperial Navy Avenger Wing",							"pts":250, "upgrades":[], "units":"2 Avenger Strike Fighter units"},
-			{"id":702, "name":"Imperial Navy Primaris-Lightning Wing",				"pts":225, "upgrades":[], "units":"2 Primaris-Lightning Fighter units"},
-			{"id":703, "name":"Warhound Scout Titan",						"pts":275, "upgrades":[], "units":"1 Warhound Scout Titan unit"},
-			{"id":704, "name":"Warhound Scout Titan Pack",					"pts":500, "upgrades":[], "units":"2 Warhound Scout Titan units"},
-			{"id":705, "name":"Reaver Titan",								"pts":675, "upgrades":[], "units":"1 Reaver Titan unit"},
-			{"id":706, "name":"Warlord Titan",								"pts":850, "upgrades":[], "units":"1 Warlord Titan"}
-		]}
+		{"name":"LORDS OF WAR", "formations":[
+			{"id":701, "name":"Imperial Navy Avenger Wing",			"pts":250, "upgrades":[], "units":"2 Avenger Strike Fighter units"},
+			{"id":702, "name":"Imperial Navy Primaris-Lightning Wing",	"pts":225, "upgrades":[], "units":"2 Primaris-Lightning Fighter units"}
+		]}		
 	],	
 	
 	"upgrades":[
-		{"id":11, "name":"Leman Russ Battle Tank",										"pts":0},
-		{"id":12, "name":"Leman Russ Exterminator Tank",								"pts":0},
-		{"id":13, "name":"Leman Russ Vanquisher Tank",									"pts":25},
-		{"id":14, "name":"Transport: Auxilia Dracosan Armoured Transport",				"pts":75},
-		{"id":15, "name":"Transport: Auxilia Stormlord Transport",						"pts":200},
-		{"id":16, "name":"Ogryn Charonite Squad: 2x Orgryn Charonite units",			"pts":75},
-		{"id":17, "name":"Rapier Battery: 4x Rapier Laser Destroyer",					"pts":100},
-		{"id":18, "name":"Auxilia Squad: 4x Auxilia Flamer units",						"pts":75},
-		{"id":19, "name":"Auxilia Squad: 4x Veletaris Storm units",						"pts":75},
-		{"id":20, "name":"3 Basilisk",													"pts":0},
-		{"id":21, "name":"3 Bombard",													"pts":0},
-		{"id":22, "name":"3 Medusa",													"pts":0},
-		{"id":23, "name":"Baneblade",													"pts":0},
-		{"id":24, "name":"Shadowsword",													"pts":0},
-		{"id":25, "name":"Stormsword",													"pts":0},
-		{"id":26, "name":"Stormblade",													"pts":0},
-		{"id":27, "name":"Stormhammer",													"pts":0},
-		{"id":28, "name":"3x Baneblade",												"pts":0},
-		{"id":29, "name":"3x Shadowsword",												"pts":0},
-		{"id":30, "name":"3x Stormsword",												"pts":0},
-		{"id":31, "name":"3x Stormblade",												"pts":0},
-		{"id":32, "name":"3x Stormhammer",												"pts":0},
-		{"id":33, "name":"Leman Russ Demolisher",										"pts":0},
-		{"id":34, "name":"Leman Russ Incenerator",										"pts":0},
-		{"id":35, "name":"Leman Russ Executioner",										"pts":25},
-		{"id":36, "name":"Malcador ",													"pts":0},
-		{"id":37, "name":"Malcador Infernus",											"pts":0},
-		{"id":38, "name":"Infantry Support Tank: Malcador Infernus",					"pts":50},
-		{"id":39, "name":"Infantry Support Tank: Leman Russ Demolisher",				"pts":50},
 		
+		{"id":5, "name":"7x Veletaris Storm Sections units w/power axes ",		"pts":0},
+		{"id":6, "name":"7x Veletaris Storm Sections units w/volkite chargers",		"pts":0},
 		
+		{"id":7, "name":"Leman Russ Battle Tank",			"pts":0},
+		{"id":8, "name":"Leman Russ Exterminator Tank",			"pts":0},
+		{"id":9, "name":"Leman Russ Vanquisher Tank",			"pts":25},
+		{"id":10, "name":"Leman Russ Executioner Tank",			"pts":25},
+		{"id":11, "name":"Leman Russ Incinerator Tank",			"pts":0},
+		{"id":12, "name":"Leman Russ Demolisher Tank",			"pts":0},
 		
-		{"id":67, "name":"Dauntless Class Light Cruiser",								"pts":150},
-		{"id":68, "name":"Emperor Class Battleship",									"pts":300},
-		{"id":99, "name":"Lord Marshall",												"pts":100}
+		{"id":13, "name":"Dauntless Class Light Cruiser",		"pts":150},
+		{"id":14, "name":"Emperor Class Battleship",			"pts":300},
 		
+		{"id":15, "name":"3x Basilisk",					"pts":250},
+		{"id":16, "name":"3x Bombard",					"pts":250},
+		{"id":17, "name":"3x Medusa",					"pts":250},
+		
+		{"id":18, "name":"Malcador Heavy Tank",				"pts":0},
+		{"id":19, "name":"Malcador Infernus Special Weapons Tank",	"pts":0},
+		
+		{"id":20, "name":"Baneblade",					"pts":0},
+		{"id":21, "name":"Shadowsword",					"pts":0},
+		{"id":22, "name":"Stormsword",					"pts":0},
+		{"id":23, "name":"Stormblade",					"pts":0},
+		{"id":24, "name":"Stormhammer",					"pts":0},
 
-
+		{"id":25, "name":"3x Baneblade",				"pts":0},
+		{"id":26, "name":"3x Shadowsword",				"pts":0},
+		{"id":27, "name":"3x Stormsword",				"pts":0},
+		{"id":28, "name":"3x Stormblade",				"pts":0},
+		{"id":29, "name":"3x Stormhammer",				"pts":0},
 		
-
+		{"id":30, "name":"Solar Auxilia Support : 4 Veletaris Storm Sections/Auxilia Flamer Sections in any combination", 	"pts":75},
 		
+		{"id":31, "name":"Infantry Support Tank : Leman Russ Demolisher",			"pts":50},
+		{"id":32, "name":"Infantry Support Tank : Malcador Infernus Special Weapons Tank",	"pts":50},
+		
+		{"id":33, "name":"Ogryn Charonite Squad : 2x Ogryn Charonite Units",			"pts":75},
+		
+		{"id":34, "name":"Rapier Battery : 4x Solar Auxilia Rapier Platform units",		"pts":100},
+		
+		{"id":35, "name":"Transport : Auxilia Dracosan Armoured Transport",			"pts":75},
+		{"id":36, "name":"Transport : Auxilia Stormlord Transport",				"pts":200},
+		{"id":37, "name":"Transport : Arvus Lighter Orbital Shuttle Units",			"pts":25},
+		
+		{"id":38, "name":"Legate Commander",			"pts":0}	
 	],
 	"formationConstraints":[
-		{"max":2, "name":"Support Detachment", "from":[601,602,603,604,605,606,607,608], "forEach":[500,501,502], "name2":"Detachment"},
-		{"maxPercent":33, "name":"ALLIES & LORDS OF WAR", "from":[701,702,703,704,705,706]},
-		{"max":1, "from":[601]}
-		
+		{"max":2, "name":"Support Detachment", "from":[600,601,602,603,604,605,606,607], "forEach":[500,501,502,503], "name2":"Detachment"},
+		{"maxPercent":33, "name":"LORDS OF WAR", "from":[701,702,703,704,705,706]},
+		{"max":1, "from":[500]},
+		{"max":1, "from":[600]}
 	],
 	"upgradeConstraints":[
+		{"max":2, 	"from":[31,32], "appliesTo":[500,502,503]},
+		{"max":1, 	"from":[33], "appliesTo":[500,502,503]}, 
+		{"max":1, 	"from":[34], "appliesTo":[500,502,503]},
+		{"max":1, 	"from":[30], "appliesTo":[500,502]}, 
+		{"min":0, "max":3, 	"from":[30,33,34], "appliesTo":[500,502,503]}, 
+
+		{"min":1, 	"from":[5,6], "appliesTo":[500,503]},
+		{"min":6, 	"from":[7,8,9], "appliesTo":[501]},
+		{"max":1, 	"from":[9], "appliesTo":[501]},
 		
-		{"min":0, "max":1, "from":[99], "appliesTo":[500,501,502]},
-		{"min":6, "max":6, "from":[11,12,13], "appliesTo":[500]},
+		{"min":1, 	"from":[13,14], "appliesTo":[600]},
+		{"min":1, 	"from":[15,16,17], "appliesTo":[601]},
+		{"min":5, 	"from":[18,19], "appliesTo":[602]},
 		
-		{"min":0, "max":4, "from":[14,15], "appliesTo":[501,502]},
-		{"min":0, "max":1, "from":[16], "appliesTo":[501,502]},
-		{"min":0, "max":1, "from":[17], "appliesTo":[501]},
-		{"min":0, "max":1, "from":[18,19], "appliesTo":[501]},
-		{"min":0, "max":3, "from":[14,15], "appliesTo":[502]},
+		{"min":1, 	"from":[20,21,22,23,24], "appliesTo":[603]},
+		{"min":1, 	"from":[25,26,27,28,29], "appliesTo":[604]},
 		
-		{"min":1, "max":1, "from":[67,68], "appliesTo":[601]},
-		{"min":1, "max":1, "from":[20,21,22], "appliesTo":[602]},
-		{"min":1, "max":1, "from":[23,24,25,26,27], "appliesTo":[603]},
-		{"min":1, "max":1, "from":[28,29,30,31,32], "appliesTo":[604]},
-		{"min":3, "max":3, "from":[33,34,35], "appliesTo":[606]},
-		
-		{"min":0, "max":2, "from":[38,39], "appliesTo":[501,502]},
-		{"min":3, "max":3, "from":[36,37], "appliesTo":[608]},
-		
-		
-		{"max":1, "from":[13]},
-		{"max":1, "from":[35]},
-		{"max":1, "perArmy":true, "from":[99]}
-	
-				
+		{"min":3, 	"from":[11,12,10], "appliesTo":[606]},
+		{"max":1, 	"from":[10], "appliesTo":[606]},
+		{"max":1, 	"from":[38], "appliesTo":[500,501,502,503,600,601,602,603,604,605,606,607]}
 	]
 }

@@ -1,0 +1,64 @@
+{
+	"id":"Legio Custodes",
+	"version":"v0.9.0",
+	"by":"spaal574",
+	"sections":[
+		{"name":"LINE DETACHMENTS", "formations":[
+			{"id":500, "name":"Hykanatoi Detachment",		"pts":0,   "upgrades":[1,2,5,16]},
+			{"id":501, "name":"Kataphraktoi Detachment",		"pts":300, "upgrades":[2],		"units":"6x Custodes Agamatus units"}
+		]},
+		{"name":"SUPPORT DETACHMENTS", "formations":[
+			{"id":600, "name":"Tharanatoi Detachment",		"pts":375, "upgrades":[1,2,5,17],	"units":"4x Aquilion Terminators"},
+			{"id":601, "name":"Ephoroi Detachment",			"pts":325, "upgrades":[], 	        "units":"4x Ephoroi Custodes"},
+			{"id":602, "name":"Venatari Detachment",		"pts":350, "upgrades":[], 	        "units":"4x Venatari Squads"},
+			{"id":603, "name":"Sisters Detachment",			"pts":250, "upgrades":[5],         	"units":"4x Sisters of Silence"},
+			{"id":604, "name":"Morotoi Detachment",			"pts":350, "upgrades":[]},
+			{"id":605, "name":"Pallas Grav-Attack Squadron",	"pts":250, "upgrades":[],         	"units":"3x Pallas Grav-Attack Vehicles"},
+			{"id":606, "name":"Caladius Grav-Tank Squadron",	"pts":325, "upgrades":[], 	        "units":"3x Caladius Grav-Tanks"}
+		]},
+		{"name":"LORDS OF WAR", "formations":[
+			{"id":701, "name":"Orion Assault Squadron",		"pts":0,   "upgrades":[70]},
+			{"id":702, "name":"Ares Strike Squadron",		"pts":275, "upgrades":[],		"units":"2x Ares Gun-Ships"}
+		]}
+	],	
+	"upgrades":[
+		{"id":1, "name":"Captain-General",			"pts":100},
+		{"id":2, "name":"Senior Officer: Tribune",		"pts":25},
+
+		{"id":5, "name":"Teleport",				"pts":50},
+    
+		{"id":15, "name":"Coronus Grav-Carrier units",		"pts":75},
+		{"id":16, "name":"3x Coronus Grav-Carrier units",	"pts":225},
+		{"id":17, "name":"4x Coronus Grav-Carrier units",	"pts":300},
+
+		{"id":50, "name":"6x Sentinel Guard",			"pts":350},
+		{"id":51, "name":"6x Custodian Guard units",		"pts":350},
+		{"id":52, "name":"6x Sagittarum Custodes",		"pts":350},
+    
+		{"id":60, "name":"Contemptor-Achilles Dreadnought",	"pts":0},
+		{"id":61, "name":"Contemptor-Galatus Dreadnought",	"pts":0},
+		{"id":62, "name":"Telemon Heavy Dreadnought",		"pts":0},
+
+		{"id":70, "name":"Orion Assault Ship",			"pts":300}
+	],
+	"formationConstraints":[
+		{"max":3, "name":"SUPPORT DETACHMENTS", "from":[600,601,602,603,604,605,606], "forEach":[500,501], "name2":"LINE DETACHMENTS"},
+		{"maxPercent":50, "name":"LORDS OF WAR", "from":[701,702]}
+	],
+	"upgradeConstraints":[
+		{"max":1, "from":[1,2], "appliesTo":[500,600]},
+    
+		{"min":1, "from":[50,51,52],    "appliesTo":[500]},
+		{"min":4, "from":[60,61,62],    "appliesTo":[604]},
+		{"min":1, "max":2, "from":[70], "appliesTo":[701]},
+    
+		{"max":1, "from":[2], "appliesTo":[501]},
+		{"max":1, "from":[5], "appliesTo":[500,600,603]},
+    
+		{"max":1, "from":[16], "appliesTo":[500]},
+		{"max":1, "from":[17], "appliesTo":[600]},
+		{"max":1, "from":[5,17], "appliesTo":[600]},
+
+		{"max":1, "perArmy":true, "from":[1]}
+	]
+}
