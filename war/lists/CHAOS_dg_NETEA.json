@@ -1,112 +1,118 @@
 
 {
    "id": "Death Guard",
-   "version": "NetEA V0.4.2",
-   "by": "IJW Wartrader based on Kyussinchains' 0.2 file - last edit 4 January 2017 10:09:40 GMT by IJW Wartrader",
-   "notes":["1) If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 4. No transport spaces may be left over if possible. Rhinos count towards the number of upgrade allowances of a formation. 2) Each formation may select a maximum of four upgrades of different types. 3) Formations marked with a * have Initiative 2+."],
+   "version": "NetEA V0.7.2 <a href='http://www.tacticalwargames.net/taccmd/viewtopic.php?f=82&t=34027'>Taccoms Thread</a>",
+   "by": "IJW Wartrader based on Kyussinchains' 0.2 file - last edit 9 October 2019 at 11:53:45 BST by IJW Wartrader",
+   "notes":["If Using Rhinos you must take exactly enough to carry all units in the formation after any upgrades have been added, to a maximum of 4. No transport spaces may be left over if possible. Rhinos count towards the number of upgrade allowances of a formation.","Each formation may select a maximum of four upgrades of different types.","Formations marked with a * have Initiative 2+."],
    
    "sections": [
     {"name": "CORE", "formations": [
-      {"id": 501, "name": "Plague Marine Retinue", "pts": 300, "upgrades": [52,60,56,77,90,65,63,89,57,78,81,53,66,87,64]},
-      {"id": 509, "name": "Armoured Company", "pts": 0, "upgrades": [28,29,87,77,57,78,81]},
-      {"id": 511, "name": "Armoured Assault Company", "pts": 250, "units": "6 Death Guard Vindicators", "upgrades": [87,77,57,78,81]},
-      {"id": 551, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
+      {"id": 501, "name": "Plague Marine Retinue", "pts": 300, "upgrades": [14,17,16,32,41,46,48,43,44,45,52,53,54,51,49,56,42]},
+      {"id": 503, "name": "Armoured Assault Company", "pts": 250, "units": "6 Death Guard Vindicators", "upgrades": [56,41,52,53,54]},
+      {"id": 551, "name": "Daemon Pool", "pts": 0, "upgrades": [61,62]}
       ]},
       
     {"name": "ELITE", "formations": [
-			{"id": 503, "name": "Grave Warden Terminators", "pts": 400, "units": "4 Grave Warden Terminators", "upgrades": [52,60,56,77,63,89,57,78,81,53]},
-			{"id": 510, "name": "Blight Drone Swarm*", "pts": 250, "units": "5 Blight Drones", "upgrades": []}		
+			{"id": 511, "name": "Blight Drone Swarm*", "pts": 200, "units": "4 Blight Drones", "upgrades": []},
+			{"id": 510, "name": "Blightlord Terminators", "pts": 325, "units": "4 Blightlord Terminators", "upgrades": [14,17,16,33,32,41,44,45,52,53,54,51]}
 			]},
 	  
     {"name": "SUPPORT", "formations": [
-      {"id": 504, "name": "Plague Zombie Infestation*", "pts": 175, "units": "3+2D6 Plague Zombies", "upgrades": []},
-      {"id": 505, "name": "Contagion Towers*", "pts": 325, "units": "4 Contagion Towers", "upgrades": [64,57,78,81]},
-      {"id": 502, "name": "Death Guard Chosen", "units": "4 Plague Marine Chosen", "pts": 200, "upgrades": [52,60,56,90,63,89,66]},
-      {"id": 508, "name": "Plague Towers*", "pts": 0, "upgrades": [88,65,63,89,57,78,81]},
-      {"id": 506, "name": "Walker Horde", "pts": 275, "upgrades": [63,89,90]}
+      {"id": 525, "name": "Armoured Company", "pts": 0, "upgrades": [55,57,56,41,52,53,54]},
+      {"id": 521, "name": "Contagion Towers*", "pts": 325, "units": "4 Contagion Towers", "upgrades": [42,44,45,52,53,54]},
+      {"id": 522, "name": "Death Guard Chosen", "units": "4 Plague Marine Chosen", "pts": 175, "upgrades": [17,16,32,46,48,44,45,52,53,54,49]},
+      {"id": 523, "name": "Plague Towers*", "pts": 0, "upgrades": [28,43,44,45,52,53,54]},
+      {"id": 520, "name": "Plague Zombie Infestation*", "pts": 175, "units": "3+2D6 Plague Zombies", "upgrades": []},
+      {"id": 526, "name": "Plaguereaper Company", "pts": 25, "upgrades": [47,41,43,44,45,52,54]},
+      {"id": 524, "name": "Walker Horde", "pts": 275, "upgrades": [44,45,52,53,54,46,48]}
       ]},
       
     {"name": "WAR ENGINES", "formations": [
-        {"id": 507, "name": "Plague Reapers", "pts": 25, "upgrades": [38,77]},
-        {"id": 522, "name": "Fester Titan", "pts": 275, "upgrades": []},
-        {"id": 521, "name": "Repugnant Titan", "pts": 625, "upgrades": []},
-        {"id": 520, "name": "Plaguelord Titan", "pts": 850, "upgrades": []}
+        {"id": 540, "name": "<s>Plague Reapers</s>", "pts": 25, "upgrades": [47,41]},
+        {"id": 541, "name": "Fester Titan", "pts": 275, "upgrades": []},
+        {"id": 542, "name": "Repugnant Titan", "pts": 625, "upgrades": []},
+        {"id": 543, "name": "Plaguelord Titan", "pts": 850, "upgrades": []}
     ]},
       
     {"name": "CHAOS NAVY", "formations": [
       {"id": 530, "name": "Hellblades*", "pts": 200, "units": "3 Hellblade Fighters", "upgrades": []},
       {"id": 531, "name": "Helltalons*", "pts": 225, "units": "2 Helltalon Fighter-Bombers", "upgrades": []},
-      {"id": 533, "name": "Plague Ship*", "pts": 200, "upgrades": []}
+      {"id": 532, "name": "Plague Ship*", "pts": 200, "upgrades": []}
       ]}
    ],
    
    "upgrades": [
-    {"id": 17, "name": "Plague Lord", "pts": 0},
-    {"id": 18, "name": "Nurgle Sorcerer Lord", "pts": 0},
-    {"id": 19, "name": "Death Guard Daemon Prince", "pts": 50},
-    {"id": 20, "name": "Lord of Pestilence (Supreme Commander)", "pts": 50},
-    {"id": 21, "name": "Death Guard Daemon Prince (Supreme Commander)", "pts": 100},
-    {"id": 34, "name": "7 Plague Marines", "pts": 0},
-    {"id": 35, "name": "4 Plague Marines, 3 Havocs", "pts": 25},
-    {"id": 53, "name": "Death Guard Land Raider", "pts": 75}, 
-    {"id": 60, "name": "Icon Bearer", "pts": 25},
-    {"id": 52, "name": "Chaos Champion", "pts": 50},
-    {"id": 56, "name": "Daemonic Pact (includes 1 Lesser Daemon)", "pts": 25},
-    {"id": 77, "name": "1+1d3 Nurgling Swarms", "pts": 50},
-    {"id": 64, "name": "Plague Tower (uses a Support Formation slot)", "pts": 325},
-    {"id": 88, "name": "Plague Tower", "pts": 350},
-    {"id": 65, "name": "Contagion Tower", "pts": 75}, 
-    {"id": 63, "name": "Death Guard Dreadnought", "pts": 50}, 
-    {"id": 89, "name": "Death Guard Assault Dreadnought", "pts": 50}, 
-    {"id": 57, "name": "Defiler", "pts": 75}, 
-    {"id": 78, "name": "Desecrator", "pts": 75}, 
-	{"id": 81, "name": "Plague Hulk", "pts": 75},
-    {"id": 90, "name": "Chaos Spawn", "pts": 25},
-	{"id": 84, "name": "Defiler", "pts": 0},
-	{"id": 85, "name": "Desecrator", "pts": 0},
-	{"id": 86, "name": "Plague Hulk", "pts": 0},
-    {"id": 50, "name": "Great Unclean One", "pts": 50},
-    {"id": 51, "name": "Lesser Daemon (Plaguebearers, Beasts of Nurgle)", "pts": 15},
-    {"id": 38, "name": "Plague Reaper", "pts": 175},
-    {"id": 27, "name": "Death Guard Predator", "pts": 50},
-	{"id": 66, "name": "Death Guard Rhino", "pts": 10},
-	{"id": 28, "name": "Death Guard Predator", "pts": 50},
-	{"id": 87, "name": "Death Guard Vindicator", "pts": 35},
-	{"id": 29, "name": "Death Guard Land Raider", "pts": 75}
+    {"id": 11, "name": "Vectorium Lord", "pts": 0},
+    {"id": 12, "name": "Plaguecaster Lord", "pts": 0},
+    {"id": 13, "name": "Daemon Prince", "pts": 50},
+    {"id": 14, "name": "Lord of Contagion (Supreme Commander)", "pts": 50},
+    {"id": 16, "name": "Blightbringer Icon Bearer", "pts": 25},
+    {"id": 17, "name": "Chaos Champion", "pts": 50},
+    {"id": 20, "name": "7 Plague Marines", "pts": 0},
+    {"id": 21, "name": "4 Plague Marines, 3 Havocs", "pts": 25},
+	{"id": 22, "name": "Defiler", "pts": 0},
+	{"id": 23, "name": "Desecrator", "pts": 0},
+	{"id": 24, "name": "Plague Hulk", "pts": 0},
+	{"id": 26, "name": "Blightlord Terminator", "pts": 0},
+	{"id": 27, "name": "Deathshroud Terminator", "pts": 0},
+	{"id": 28, "name": "Plague Tower", "pts": 350},
+    {"id": 31, "name": "ZZZZZZ removed ZZZZZZZZ Nurgle's Rot", "pts": 25},
+    {"id": 32, "name": "Daemonic Pact & Nurgle's Rot (No LD!)", "pts": 25},
+    {"id": 33, "name": "Teleportarium", "pts": 50},
+    {"id": 41, "name": "Nurgling Infestation (3 Nurgling Swarms)", "pts": 40},
+    {"id": 42, "name": "Plague Tower (uses a Support Formation slot)", "pts": 325},
+    {"id": 43, "name": "Contagion Tower", "pts": 75}, 
+    {"id": 44, "name": "(Walkers) Death Guard Dreadnought (Fist & AC)", "pts": 50}, 
+    {"id": 45, "name": "(Walkers) Death Guard Dreadnought (Chem Launchers)", "pts": 50}, 
+    {"id": 46, "name": "(Beasts) Chaos Spawn", "pts": 30},
+    {"id": 47, "name": "Plague Reaper", "pts": 175},
+    {"id": 48, "name": "(Beasts) Beasts of Nurgle", "pts": 30},
+	{"id": 49, "name": "Death Guard Rhino", "pts": 10},
+    {"id": 51, "name": "Death Guard Land Raider", "pts": 75}, 
+    {"id": 52, "name": "(Walkers) Defiler", "pts": 75}, 
+    {"id": 53, "name": "<s>(Walkers) Desecrator</s>", "pts": 75}, 
+	{"id": 54, "name": "(Walkers) Plague Hulk", "pts": 75},
+	{"id": 55, "name": "Death Guard Predator", "pts": 50},
+	{"id": 56, "name": "Death Guard Vindicator", "pts": 35},
+	{"id": 57, "name": "Death Guard Land Raider", "pts": 75},
+    {"id": 61, "name": "Great Unclean One", "pts": 50},
+    {"id": 62, "name": "Lesser Daemon (Plaguebearers)", "pts": 15}
    ],
    
    "formationConstraints": [
     {"min": 1, "from": [501]},
     {"max": 1, "from": [551]},
-    {"max": 1, "from": [533]},
-    {"maxPercent": 33.33, "name": "War Engines & Allies", "from": [507,520,521,522,530,531,533]},
-    {"max": 2, "name": "Support Formations", "from": [502,504,505,506,508], "forEach": [501], "name2": "Plague Marine Retinue" },
-	  {"max": 1, "name": "Elite Formation", "from": [503,510], "forEach": [501], "name2": "Plague Marine Retinue" }
+    {"max": 1, "from": [532]},
+    {"maxPercent": 33.33, "name": "War Engines & Allies", "from": [540,543,542,541,530,531,532]},
+    {"max": 2, "name": "Support Formations", "from": [520,521,523,524,525,526], "forEach": [501], "name2": "Plague Marine Retinue" },
+	  {"max": 1, "name": "Elite Formation", "from": [510,511], "forEach": [501], "name2": "Plague Marine Retinue" }
    ],
    
    "upgradeConstraints": [
 	  
-	  {"max": 1, "perArmy": true, "from": [20,21]},
-    {"max": 1, "perArmy": true, "from": [19,21]},
-    {"max": 1, "min": 1, "from": [17,18,19,20,21], "appliesTo": [501]},
-    {"max": 1, "min": 1, "from": [17,18], "appliesTo": [502]},
-	  {"max": 1, "min": 1, "from": [17,18,19,20,21], "appliesTo": [503]},
-    {"max": 1, "min": 1, "from": [34,35], "appliesTo": [501]},
-	  {"max": 3, "from": [57,78,81], "appliesTo": [501,503,505,508,509,511]}, 
-	  {"max": 4, "from": [53], "appliesTo": [501,503]}, 
-	  {"max": 3, "from": [64], "appliesTo": [501,505]}, 
-	  {"max": 3, "from": [63,89], "appliesTo": [501,502,503,506,508]}, 
-	  {"max": 3, "from": [90], "appliesTo": [501,502,506]},
-    {"max": 4, "from": [66], "appliesTo": [501,502]},
-    {"max": 3, "from": [65], "appliesTo": [501,508]}, 	  
-	   {"max": 1, "from": [60], "appliesTo": [501,502,503]},
-    {"max": 1, "from": [52], "appliesTo": [501,502,503]},
-    {"max": 1, "from": [56], "appliesTo": [501,502,503]},
-    {"max": 1, "from": [77], "appliesTo": [501,503,507,509,511]},
-    {"max": 3, "min": 1, "from": [38], "appliesTo": [507]},
-	  {"max": 3, "min": 1, "from": [88], "appliesTo": [508]},
-	  {"max": 4, "min": 4, "from": [84,85,86], "appliesTo": [506]},
-	  {"max": 3, "from": [87], "appliesTo": [501,509,511]},
-	  {"max": 7, "min": 4, "from": [28,29], "appliesTo": [509]}
+	  {"max": 1, "perArmy": true, "from": [14]},
+    {"max": 1, "perArmy": true, "from": [13]},
+    {"max": 1, "min": 1, "from": [12,11,13], "appliesTo": [501]},
+	  {"max": 1, "min": 1, "from": [12,11,13], "appliesTo": [510]},
+	{"max": 1, "from": [31], "appliesTo": [501,522,510,511]},
+    {"max": 1, "min": 1, "from": [20,21], "appliesTo": [501]},
+	  {"max": 4, "from": [51], "appliesTo": [501,510]}, 
+	  {"max": 3, "from": [42], "appliesTo": [501,521]}, 
+	  {"max": 3, "from": [44,45,52,53,54], "appliesTo": [501,522,510,521,524,523,525,526,503]}, 
+	  {"max": 3, "from": [46,48], "appliesTo": [501,522,524]},
+    {"max": 4, "from": [49], "appliesTo": [501]},
+    {"max": 2, "from": [49], "appliesTo": [522]},
+    {"max": 3, "from": [43], "appliesTo": [501,523,526]}, 	  
+	   {"max": 1, "from": [16], "appliesTo": [501,522,510]},
+    {"max": 1, "from": [17], "appliesTo": [501,522,510]},
+    {"max": 1, "from": [32], "appliesTo": [501,522,510]},
+    {"max": 1, "from": [33], "appliesTo": [510]},
+    {"max": 1, "from": [41], "appliesTo": [501,510,540,525,526,503]},
+    {"max": 3, "min": 1, "from": [47], "appliesTo": [540]},
+    {"max": 3, "min": 1, "from": [47], "appliesTo": [526]},
+	  {"max": 3, "min": 1, "from": [28], "appliesTo": [523]},
+	  {"max": 4, "min": 4, "from": [22,23,24], "appliesTo": [524]},
+	  {"max": 3, "from": [56], "appliesTo": [501,525,503]},
+	  {"max": 7, "min": 4, "from": [55,57], "appliesTo": [525]}
    ]
 }
