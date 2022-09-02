@@ -6,8 +6,8 @@
 		{"name":"COMPANIES", "formations":[
 		 	{"id":517, "name":"Artillery Company",	"pts":600, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]},
 			{"id":516, "name":"Super-Heavy Tank Company", "pts":500, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]},
-			{"id":515, "name":"Tank Company", "pts":280, "upgrades":[51,52,53,54,55,56,57,61,62,63,64], "units":"6 Thunderer"},
-			{"id":514, "name":"Tank Company", "pts":425,  "upgrades":[51,52,53,54,55,56,57,61,62,63,64], "units":"10 Thunderer"}
+			{"id":515, "name":"Tank Company", "pts":280, "upgrades":[51,52,53,54,55,56,57,61,62,63,64]},
+			{"id":514, "name":"Tank Company", "pts":425,  "upgrades":[51,52,53,54,55,56,57,61,62,63,64]}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
 			{"id":502, "name":"Artillery Battery",	"pts":250},
