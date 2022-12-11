@@ -1,7 +1,7 @@
 {
 	"id":"Scions of Iron",
-	"version":"NetEA Tournament Pack 2016",
-	"by":"Iron Bloke, last update 2016-06-14 Kyussinchains",
+	"version":"NetEA Tournament Pack 2022",
+	"by":"Iron Bloke, last update 2022-12-11 Abetillo",
 	"sections":[
 		{"name":"SCIONS OF IRON DETACHMENTS", "formations": [
 			{ "id":502, "name":"Bike", "pts":175, "upgrades":[55,56,57,61,62,63] },
