@@ -1,15 +1,15 @@
 {
 	"id":"Steel Legion",
-	"version":"NetEA Army Compendium v2014",
-	"by":"Kyussinchains",
+	"version":"NetEA Tournament Pack 2022",
+	"by":"Kyussinchains, last update 2022-12-11 Abetillo",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
-			{"id":512, "name":"Regimental HQ", 			"pts":475, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Supreme Commander, 12 Infantry, 7 Chimera"},
-			{"id":513, "name":"Infantry Company", 			"pts":250, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry"},
-			{"id":514, "name":"Mechanised Infantry Company", 	"pts":400, "upgrades":[26,27,28,29,30,31,32,33,34,35], "units":"Commander, 12 Infantry, 7 Chimera"},
-			{"id":515, "name":"Tank Company", 			"pts":650, "upgrades":[26,27,28,29,30,31,32,33,34,35]},
-			{"id":516, "name":"Super-Heavy Tank Company", 		"pts":500, "upgrades":[26,27,28,29,30,31,32,33,34,35]},
-		 	{"id":517, "name":"Artillery Company", 			"pts":550, "upgrades":[26,27,28,29,30,31,32,33,34,35]}
+			{"id":512, "name":"Regimental HQ", 			"pts":475, "upgrades":[26,27,28,29,30,31,32,33,34,39,40,35], "units":"Supreme Commander, 12 Infantry, 7 Chimera"},
+			{"id":513, "name":"Infantry Company", 			"pts":250, "upgrades":[26,27,28,29,30,31,32,33,34,39,40,35], "units":"Commander, 12 Infantry"},
+			{"id":514, "name":"Mechanised Infantry Company", 	"pts":400, "upgrades":[26,27,28,29,30,31,32,33,34,39,40,35], "units":"Commander, 12 Infantry, 7 Chimera"},
+			{"id":515, "name":"Tank Company", 			"pts":650, "upgrades":[26,27,28,29,30,31,32,33,34,39,40,35]},
+			{"id":516, "name":"Super-Heavy Tank Company", 		"pts":500, "upgrades":[26,27,28,29,30,31,32,33,34,39,40,35]},
+		 	{"id":517, "name":"Artillery Company", 			"pts":550, "upgrades":[26,27,28,29,30,31,32,33,34,39,40,35]}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
 			{"id":500, "name":"Rough Rider Platoon", 			"pts":150, "upgrades":[], "units":"6 Rough Riders"},
@@ -61,6 +61,8 @@
 		{"id":35, "name":"Hydra",					"pts":50},
 		{"id":36, "name":"Valkyrie Transport",				"pts":150},
 		{"id":38, "name":"Chimera Transport",				"pts":100},
+		{"id":39, "name":"2x Sniper",					"pts":50},
+		{"id":40, "name":"2x Ogryn",					"pts":50},
 		{"id":50, "name":"Lunar Class Cruiser",				"pts":0},
 		{"id":51, "name":"Emperor Class Battleship",			"pts":0}
 	],
@@ -80,7 +82,7 @@
 		{"min":1, "max":1, "from":[14,15], "appliesTo":[507]},
 		{"min":9, "max":9, "from":[20,21], "appliesTo":[517]},
 		{"min":1, "max":1, "from":[23,24], "appliesTo":[508]},
-		{"max":3, "name":"Upgrades", "from":[27,28,29,30,31,32,33,34,35,37]},
+		{"max":3, "name":"Upgrades", "from":[27,28,29,30,31,32,33,34,35,37,39,40]},
 		{"max":1, "from":[12]},
 		{"max":1, "from":[27]},
 		{"max":1, "from":[28]},
@@ -88,8 +90,8 @@
 		{"max":1, "from":[30]},
 		{"max":3, "from":[31]},
 		{"max":1, "from":[32]},
-		{"max":1, "from":[33]},
-		{"max":2, "from":[34]},
+		{"max":1, "from":[33,39]},
+		{"max":1, "from":[34,40]},
 		{"max":1, "from":[35]},
 		{"max":1, "from":[36,38]}
 	]
