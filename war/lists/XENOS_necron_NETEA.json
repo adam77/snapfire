@@ -55,7 +55,7 @@
       {"max": 1, "from": [802]},
       {"max": 1, "from": [803]},
       {"max": 2, "from": [805]},
-      {"maxPercent": 33'34, "name": "War Engines & Allies", "from": [602,506,802,803,804,805]},
+      {"maxPercent": 33.34, "name": "War Engines & Allies", "from": [602,506,802,803,804,805]},
       {"max": 3, "name": "Necron Support", "from": [501,502,503,504,505], "forEach": [701], "name2": "Necron Phalanx"}
    ],
    "upgradeConstraints": [
