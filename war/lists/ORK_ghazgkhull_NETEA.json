@@ -1,7 +1,7 @@
 {
    "id": "Ghazgkhull Thraka's War Horde",
    "version": "NetEA Tournament Pack 2022",  
-   "notes": ["If the army includes any Great Gargants, the Warlord must be in one of them. Otherwize the Warlord will join a Nobz or Gargant unit. If there isn't any of these three, the Warlord can join any unit."],
+   "notes": ["If the army includes any Great Gargants, the Warlord must be in one of them. Otherwize the Warlord will join a Nobz or Gargant unit. If there isn't any of those three, the Warlord can join any unit."],
    "by": "Iron Bloke, Last update 20122-12-14 Abetillo",
    "sections": [
       {
@@ -22,9 +22,9 @@
             {"id": 512, "name": "Mekboy Stompamob ('Uge)", "pts": 125, "upgrades": [81,57,60,61,70,71,77]},
             {"id": 503, "name": "Stormboyz Warhorde", "pts": 0, "upgrades": [81,52,51,53,54,55,59]},
             {"id": 550, "name": "Kommando Warhorde", "pts": 0, "upgrades": [81,51,52,53,54,55,59]},
-            {"id": 500, "name": "Warband", "pts": 200, "units": "2 Nobz, 6 Boyz, 2 Grotz", "upgrades": [81,50,82,51,52,53,54,55,56,57,58,59,60,61,62,64,66,67,68,70,71,72,73,81]},
-            {"id": 501, "name": "Warband (Big)", "pts": 350, "units": "4 Nobz, 12 Boyz, 4 Grotz", "upgrades": [81,50,82,51,52,53,54,55,56,57,58,59,60,61,62,64,66,67,68,70,71,72,73,81]},
-            {"id": 502, "name": "Warband ('Uge)", "pts": 500, "units": "6 Nobz, 18 Boyz, 6 Grotz", "upgrades": [81,50,82,51,52,53,54,55,56,57,58,59,60,61,62,64,66,67,68,70,71,72,73,81]}
+            {"id": 500, "name": "Warband", "pts": 200, "units": "2 Nobz, 6 Boyz, 2 Grotz", "upgrades": [81,50,82,51,52,53,54,55,56,57,58,59,60,61,62,64,66,67,68,70,71,72,73]},
+            {"id": 501, "name": "Warband (Big)", "pts": 350, "units": "4 Nobz, 12 Boyz, 4 Grotz", "upgrades": [81,50,82,51,52,53,54,55,56,57,58,59,60,61,62,64,66,67,68,70,71,72,73]},
+            {"id": 502, "name": "Warband ('Uge)", "pts": 500, "units": "6 Nobz, 18 Boyz, 6 Grotz", "upgrades": [81,50,82,51,52,53,54,55,56,57,58,59,60,61,62,64,66,67,68,70,71,72,73]}
          ]
       },
       {
@@ -61,8 +61,8 @@
       {"id": 71, "name": "Stompa (with 3x Big guns)", "pts": 50},
       {"id": 72, "name": "Battlefortress", "pts": 115},
       {"id": 73, "name": "Gunfortress", "pts": 125},
-      {"id": 77, "name": "Supa Stompa (with 3x Soopagunz)", "pts": 275},
-      {"id": 78, "name": "Supa Stompa (with 2x Soopagunz and Mega-Choppa)", "pts": 275},
+      {"id": 77, "name": "Supa-Stompa (with 2x Soopagunz and Mega-Choppa)", "pts": 275},
+      {"id": 78, "name": "Supa-Stompa (with 3x Soopagunz)", "pts": 275},
       {"id": 43, "name": "Big Gunz", "pts": 25},
       {"id": 49, "name": "Fighta Bomba", "pts": 50},
       {"id": 80, "name": "Kill Kroozer", "pts": 0},
@@ -85,11 +85,11 @@
       {"min":2,"max":2,"from":[93,96],"appliesTo":[523]},
       {"max":1,"from":[96],"appliesTo":[523]},
       {"max": 2, "from": [64], "appliesTo": [500,514]},
-      {"max": 1, "from": [68], "appliesTo": [500,504,507,513]},
+      {"max": 1, "from": [66,67,68], "appliesTo": [500,504,507,513]},
       {"max": 4, "from": [64], "appliesTo": [501]},
-      {"max": 2, "from": [68], "appliesTo": [501,505,508,514]},
+      {"max": 2, "from": [66,67,68], "appliesTo": [501,505,508,514]},
       {"max": 6, "from": [64], "appliesTo": [502]},
-      {"max": 3, "from": [68], "appliesTo": [502,506,509,515]},
+      {"max": 3, "from": [66,67,68], "appliesTo": [502,506,509,515]},
       {"min": 6, "from": [52], "appliesTo": [503]},
       {"min": 6, "from": [51], "appliesTo": [550]},
       {"min": 8, "from": [53,54,55], "appliesTo": [504], "name": "Bikes"},
