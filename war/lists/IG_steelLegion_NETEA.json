@@ -61,12 +61,12 @@
 		{"id":36, "name":"Valkyrie Transport",				"pts":150},
 		{"id":38, "name":"Chimera Transport",				"pts":100},
 		{"id":50, "name":"Lunar Class Cruiser",				"pts":0},
-		{"id":51, "name":"Emperor Class Battleship",			"pts":0}
+		{"id":51, "name":"Emperor Class Battleship",			"pts":0},
 		
 		{"id":60, "name":"2x Sniper",					"pts":50},
 		{"id":61, "name":"2x Ogryn",					"pts":50},
 		{"id":62, "name":"2x Hellhound",				"pts":50},
-		{"id":63, "name":"3x Hellhound",				"pts":75},
+		{"id":63, "name":"3x Hellhound",				"pts":75}
 	],
 	"formationConstraints":[
 		{"max":2, "name":"Support Formations", "from":[500,501,502,505,506,507,508,509,510,511], "forEach":[512,513,514,515,516,517], "name2":"Company"},
