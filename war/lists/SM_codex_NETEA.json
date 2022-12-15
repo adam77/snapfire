@@ -57,7 +57,7 @@
 		{"id":23, "name":"Land Raider", 					"pts":75},
 		{"id":27, "name":"2x Land Raider", 					"pts":125},
 		{"id":26, "name":"Razorback (Twin Laser Canon)",			"pts":25},
-		{"id":28, "name":"Razorback (Twin Heavy Bolter)"			"pts":25},
+		{"id":28, "name":"Razorback (Twin Heavy Bolter)",			"pts":25},
 		{"id":41, "name":"Snipers",						"pts":10},
 		{"id":31, "name":"Vindicator",						"pts":50},
 		{"id":32, "name":"2x Vindicator",					"pts":75}
