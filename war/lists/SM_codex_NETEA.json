@@ -79,7 +79,7 @@
 		{"max":1, "from":[22]},
    		{"max":4, "from":[41], "appliesTo":[539]},
 		{"max":2, "from":[23,27], "appliesTo":[543,544]},
-		{"max":1, "from":[27], "appliesTo":[534]},
+		{"max":1, "from":[23,27], "appliesTo":[534]},
 		{"max":1, "from":[31,32]}
 	]
 }
