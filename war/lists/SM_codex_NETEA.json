@@ -6,11 +6,11 @@
 
 	"sections":[
 		{"name":"SPACE MARINE DETACHMENTS", "formations":[
-			{"id":543, "name":"Tactical",		"pts":275, "units":"6 Tacticals plus transport", "upgrades":[15,16,17,18,26,28,20,21,22,23,27,31,32,11,12]},
+			{"id":543, "name":"Tactical",		"pts":275, "units":"6 Tacticals plus transport", "upgrades":[15,16,17,18,26,33,20,21,22,23,27,31,32,11,12]},
 			{"id":532, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18,31,32]},
-			{"id":534, "name":"Devastator",		"pts":250, "units":"4 Devastators plus transport", "upgrades":[15,16,17,18,26,28,20,21,22,23,27,11,12]},
+			{"id":534, "name":"Devastator",		"pts":250, "units":"4 Devastators plus transport", "upgrades":[15,16,17,18,26,33,20,21,22,23,27,11,12]},
 			{"id":533, "name":"Bike", 			"pts":200, "upgrades":[15,16,17,18]},
-			{"id":539, "name":"Scout",			"pts":150, "units":"4 Scout units plus transport", "upgrades":[15,16,17,18,26,28,11,12]},
+			{"id":539, "name":"Scout",			"pts":150, "units":"4 Scout units plus transport", "upgrades":[15,16,17,18,26,33,11,12]},
 			{"id":544, "name":"Terminator",		"pts":350, "units":"4 Terminators", "upgrades":[15,16,17,18,20,21,31,32,23,27]},
 			{"id":535, "name":"Land Raider",			"pts":325, "units":"4 Land Raiders", "upgrades":[15,16,17,18,22,31,32]},
 			{"id":536, "name":"Land Speeder",			"pts":200, "upgrades":[15,16,17,18]},
@@ -57,7 +57,7 @@
 		{"id":23, "name":"Land Raider", 					"pts":75},
 		{"id":27, "name":"2x Land Raider", 					"pts":125},
 		{"id":26, "name":"Razorback (Twin Laser Canon)",			"pts":25},
-		{"id":28, "name":"Razorback (Twin Heavy Bolter)",			"pts":25},
+		{"id":33, "name":"Razorback (Twin Heavy Bolter)",			"pts":25},
 		{"id":41, "name":"Snipers",						"pts":10},
 		{"id":31, "name":"Vindicator",						"pts":50},
 		{"id":32, "name":"2x Vindicator",					"pts":75}
@@ -74,11 +74,12 @@
 		{"max":1, "name":"Cmdr", "from":[15,16,17,18]},
 		{"max":1, "perArmy":true, "from":[18]},
 		{"max":2, "from":[20,21]},
-		{"max":4, "from":[26,28], "appliesTo":[534,539]},
-		{"max":6, "from":[26,28], "appliesTo":[543]},
+		{"max":4, "from":[26,33], "appliesTo":[534,539]},
+		{"max":6, "from":[26,33], "appliesTo":[543]},
 		{"max":1, "from":[22]},
    		{"max":4, "from":[41], "appliesTo":[539]},
-		{"max":2, "from":[23,27]},
+		{"max":2, "from":[23,27], "appliesTo":[543,544]},
+		{"max":1, "from":[27], "appliesTo":[534]},
 		{"max":1, "from":[31,32]}
 	]
 }
