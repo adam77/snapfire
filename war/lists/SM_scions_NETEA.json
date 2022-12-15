@@ -13,7 +13,7 @@
 			{ "id":508, "name":"Scout", "pts":150, "units":"4 Scout units plus transport", "upgrades":[55,56,57,61,62,63,81,82,103] },
 			{ "id":509, "name":"Spacecraft", "pts":150},
 			{ "id":511, "name":"Tactical", "pts":200, "units":"4 Tactical units plus transport", "upgrades":[97,98,96,55,56,57,100,81,82] },
-			{ "id":512, "name":"Terminator", "pts":350, "units":"4 Terminator units", "upgrades":[55,56,57,71,72,73,76,77,78,79,204,205,206,207,208,209,] },
+			{ "id":512, "name":"Terminator", "pts":350, "units":"4 Terminator units", "upgrades":[55,56,57,71,72,73,76,77,78,79,204,205,206,207,208,209] },
 			{ "id":513, "name":"Thunderhawk Transporters", "pts":50, "upgrades":[111] },
 			{ "id":514, "name":"Vindicator", "pts":25, "upgrades":[55,56,57,96,97,98,100] },
 			{ "id":515, "name":"Whirlwind", "pts":275, "units":"4 Whirlwinds", "upgrades":[55,56,57,100] }
