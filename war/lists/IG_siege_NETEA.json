@@ -1,8 +1,8 @@
 {
-	"id":"Baran Siege Masters",
-	"version":"NetEA Tournament Pack (2022-04-22) ",
+	"id": "Baran Siege Masters",
+	"version": "NetEA Tournament Pack (2022-04-22) ",
 	"notes": ["Even if the Sappers are split, all eight Sappers units must be purchased"]
-	"by":"Iron Bloke, last update 2022-12-15 Abetillo",
+	"by": "Iron Bloke, last update 2022-12-15 Abetillo",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
 		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[14,31,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
