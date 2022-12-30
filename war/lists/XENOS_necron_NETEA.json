@@ -1,11 +1,10 @@
 {
    "id": "Necrons",
-   "version": "NetEA Tournament Pack 2013",
-   "by": "Iron Bloke, last update 2013-10-23 Parintachin",
+   "version": "NetEA Tournament Pack 2022",
+   "by": "Iron Bloke, last update 2022-12-11 Abetillo",
    "notes": ["A Warbarque in the army may be given the Supreme Commander ability if a C’tan is not fielded."],
    "sections": [
       {"name": "INDIVIDUALS", "formations": [
-            {"id": 602, "name": "C`Tan", "pts": 0, "upgrades": []},
             {"id": 601, "name": "Tomb Complex", "pts": 75, "upgrades": []}
          ]
       },
@@ -18,16 +17,17 @@
       {"name": "NECRON SUPPORT",
          "formations": [
             {"id": 505, "name": "Armored Phalanx", "pts": 300, "units": "6 Obelisks"},
-            {"id": 502, "name": "Eques Maniple", "pts": 350, "upgrades": [104,103]},
+            {"id": 502, "name": "Eques Maniple", "pts": 300, "upgrades": [104,103]},
             {"id": 503, "name": "Monolith Maniple", "pts": 25, "upgrades": [105,106]},
             {"id": 504, "name": "Monolith Phalanx", "pts": 275, "units": "3 Monoliths", "upgrades": [105]},
-            {"id": 506, "name": "Pylon", "pts": 200, "upgrades": []},
             {"id": 501, "name": "Venator Maniple", "pts": 200, "units": "6 Flayed Ones", "upgrades": [104,100,103,101]}
          ]
       },
       {"name": "HARVESTERS",
          "formations": [
-            {"id": 803, "name": "Harvester Engine", "pts": 750},
+            {"id": 602, "name": "C`Tan", "pts": 0, "upgrades": []},
+            {"id": 803, "name": "Harvester Engine", "pts": 600},
+            {"id": 506, "name": "Pylon", "pts": 200, "upgrades": []},
             {"id": 802, "name": "Spacecraft", "units":"One Scythe Class Harvester", "pts": 350},
             {"id": 805, "name": "Warbarque", "pts": 300, "upgrades": [107]}
          ]
@@ -55,8 +55,8 @@
       {"max": 1, "from": [802]},
       {"max": 1, "from": [803]},
       {"max": 2, "from": [805]},
-      {"maxPercent": 33, "name": "War Engines & Allies", "from": [602,506,802,803,804,805]},
-      {"max": 3, "name": "Necron Support", "from": [501,502,503,504,505,506], "forEach": [701], "name2": "Necron Phalanx"}
+      {"maxPercent": 33.34, "name": "War Engines & Allies", "from": [602,506,802,803,804,805]},
+      {"max": 3, "name": "Necron Support", "from": [501,502,503,504,505], "forEach": [701], "name2": "Necron Phalanx"}
    ],
    "upgradeConstraints": [
    	{"max": 1, "from": [107], "perArmy": true},

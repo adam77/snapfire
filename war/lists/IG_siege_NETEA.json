@@ -1,23 +1,25 @@
 {
-	"id":"Baran Siege Masters",
-	"version":"NetEA Tournament Pack (2018-09-17) ",
-	"by":"Iron Bloke",
+	"id": "Baran Siege Masters",
+	"version": "NetEA Tournament Pack (2022-04-22) ",
+	"notes": ["Even if the Sappers are split, all eight Sappers units must be purchased"]
+	"by": "Iron Bloke, last update 2022-12-15 Abetillo",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
-		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[31,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
-			{"id":512, "name":"Regimental HQ", "pts":225, "upgrades":[31,32,29,34,33,28,30], "units":"Supreme Commander, 9 Siege Infantry"}
+		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[14,31,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
+			{"id":512, "name":"Regimental HQ", "pts":225, "upgrades":[14,31,32,29,34,33,28,30], "units":"Supreme Commander, 9 Siege Infantry"}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
-			{"id":501, "name":"Artillery Battery", 			"pts":150, "upgrades":[], "units":"3 Götterdämmerung Howitzers, 3 Bruenhilde"},
-			{"id":500, "name":"Artillery Company", 			"pts":425, "upgrades":[], "units":"9 Götterdämmerung Howitzers, 9 Gun Emplacements"},
-			{"id":503, "name":"Bombard Battery",				"pts":250, "upgrades":[], "units":"3 Bombards"},
-			{"id":506, "name":"Deathstrike Missile Battery",	"pts":200, "upgrades":[], "units":"2 Deathstrike Missile Launchers"},
-			{"id":502, "name":"Flak Battery", 			"pts":150, "upgrades":[], "units":"3 Blitzen AA Guns"},
-			{"id":509, "name":"Heavy Tank Platoon",			"pts":300, "upgrades":[], "units":"6 Ragnarok Heavy Tanks"},
-			{"id":508, "name":"Light Tank Platoon",			"pts":150, "upgrades":[], "units":"6 Siegfried Light Tanks"},
-			{"id":505, "name":"Rough Rider Platoon",			"pts":150, "upgrades":[], "units":"6 Rough Riders"},
-			{"id":510, "name":"Sapper Platoon",				"pts":250, "upgrades":[], "units":"8 Sapper Units"},
-			{"id":507, "name":"Super-heavy Tank Platoon", 		"pts":200, "upgrades":[]}
+			{"id":501, "name":"Artillery Battery", 			"pts":150, "upgrades":[14], "units":"3 Götterdämmerung Howitzers, 3 Bruenhilde"},
+			{"id":500, "name":"Artillery Company", 			"pts":425, "upgrades":[14], "units":"9 Götterdämmerung Howitzers, 9 Gun Emplacements"},
+			{"id":503, "name":"Bombard Battery",				"pts":250, "upgrades":[14], "units":"3 Bombards"},
+			{"id":506, "name":"Deathstrike Missile Battery",	"pts":200, "upgrades":[14], "units":"2 Deathstrike Missile Launchers"},
+			{"id":502, "name":"Flak Battery", 			"pts":150, "upgrades":[14], "units":"3 Blitzen AA Guns"},
+			{"id":509, "name":"Heavy Tank Platoon",			"pts":300, "upgrades":[14], "units":"6 Ragnarok Heavy Tanks"},
+			{"id":508, "name":"Light Tank Platoon",			"pts":150, "upgrades":[14], "units":"6 Siegfried Light Tanks"},
+			{"id":505, "name":"Rough Rider Platoon",			"pts":150, "upgrades":[14], "units":"6 Rough Riders"},
+			{"id":510, "name":"Sapper Platoon",				"pts":250, "upgrades":[14], "units":"8 Sapper Units"},
+			{"id":511, "name":"Sapper Platoon (split)",			"pts":10, "upgrades":[14,13]},
+			{"id":507, "name":"Super-heavy Tank Platoon", 		"pts":200, "upgrades":[14]}
 		]},
 		{"name":"SIEGE REGIMENT FORTIFICATIONS", "formations":[
 			{"id":530, "name":"Fortified Position",	"pts":75, "upgrades":[], "units":"Up to 50cm trenches, 50cm razor wire, plus 6 Gun Emplacements."}
@@ -30,6 +32,9 @@
 	"upgrades":[
 		{"id":12, "name":"Gun Emplacements",			"pts":0},
 		{"id":11, "name":"Bruenhilde",				"pts":0},
+		{"id":13, "name":"Sappers unit",			"pts":30}
+		{"id":14, "name":"Commissar",				"pts":0}
+		
 		{"id":17, "name":"Baneblade",					"pts":0},
 		{"id":18, "name":"Shadowsword",				"pts":0},
 		{"id":28, "name":"Siege Infantry Platoon (6 Siege Infantry)","pts":75},
@@ -39,12 +44,13 @@
 		{"id":32, "name":"Griffon Battery (3 Griffons)",		"pts":50},
 		{"id":33, "name":"2 Sniper units",							"pts":50},
 		{"id":34, "name":"Sniper unit",								"pts":25}
+		
 	],
 	"formationConstraints":[
 		{"maxPercent":25, "name":"Navy", "from":[519,520]},
-		{"max":2, "name":"Support Formations", "from":[500,501,502,503,505,506,507,508,509,510], "forEach":[512,513], "name2":"Regiment Company"},
+		{"max":2, "name":"Support Formations", "from":[500,501,502,503,505,506,507,508,509,510,511], "forEach":[512,513], "name2":"Regiment Company"},
 		{"max":1, "from":[506]},
-		{"max":1, "from":[510]},
+		{"max":1, "from":[510,511]},
 		{"min":1, "max":1, "from":[512]},
 		{"max":1, "name":"Fortification", "from":[530], "forEach":[512,513], "name2":"Regiment Company"}
 	],
@@ -52,6 +58,9 @@
 		{"min":1, "max":1, "from":[12,11], "appliesTo":[502]},
 		{"min":1, "max":1, "from":[17,18], "appliesTo":[507]},
 		{"max":3, "name":"Upgrades", "from":[28,29,30,31,32,33,34]},
+		{"max":8, "name":"Sappers unit", "from":[13], "forEach":[511], "name2":"Sapper Platoon (split)"
+		{"max":8, "from":[13]},
+		{"max":1, "from":[14]},
 		{"max":1, "from":[28]},
 		{"max":1, "from":[29]},
 		{"max":1, "from":[30]},
