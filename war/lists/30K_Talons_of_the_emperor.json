@@ -1,0 +1,119 @@
+{
+	"id":"Talons of The Emperor",
+	"version":"Epichammer Horus Heresy v1.86",
+	"by":"spaal574",
+	"sections":[
+		{"name":"LINE DETACHMENTS", "formations":[
+			{"id":500, "name":"Hykanatoi Detachment",	"pts":0,   "upgrades":[100,102,2,3]},
+			{"id":501, "name":"Sisters Detachment",		"pts":0,   "upgrades":[100,105,106,102,110,112,113,114,115,116]}
+		]},
+		{"name":"SUPPORT DETACHMENTS", "formations":[
+			{"id":600, "name":"Eidikoùs Detachment",                    "pts":0, "upgrades":[100,102,2,3]},
+			{"id":601, "name":"Tharanatoi Detachment",                  "pts":800, "upgrades":[100,102,2,3]},
+			{"id":602, "name":"Morotoi Detachment",                     "pts":0, "upgrades":[42,43,44,45]},
+			{"id":603, "name":"Telemon Heavy Dreadnought Detachment",   "pts":0, "upgrades":[48,49,50]},
+			{"id":604, "name":"Pallas Grav-Attack Squadron",            "pts":0, "upgrades":[51]},
+			{"id":605, "name":"Caladius Grav-Tank Squadron",            "pts":0, "upgrades":[52,53]},
+			{"id":606, "name":"Kataphraktoi Detachment",                "pts":525, "upgrades":[]}
+		]},
+		{"name":"LORDS OF WAR", "formations":[
+			{"id":701, "name":"Orion Assault Squadron",		"pts":0,   "upgrades":[60]},
+			{"id":702, "name":"Ares Strike Squadron",		"pts":525, "upgrades":[],		"units":"2x Ares Gun-Ships"},
+			{"id":703, "name":"Equinox Interceptor Squadron",	"pts":525, "upgrades":[],		"units":"2x Equinox Interceptors"},
+			{"id":704, "name":"Costantin Valdor",			"pts":900, "upgrades":[101,102]},
+			{"id":705, "name":"Jenetia Krole",			"pts":700, "upgrades":[100,105,106,102,110,112,113,114,115,116],	"units":"Jenetia Krole and 5 Oblivion Knight Cadre"}
+		]}
+	],	
+	"upgrades":[
+		{"id":1, "name":"Costantin Valdor",           		"pts":0},
+		{"id":2, "name":"Tribune",	                     	"pts":200},
+		{"id":3, "name":"Senior Officer: Shield Captain",	"pts":75},
+    
+    
+		{"id":20, "name":"6x Sentinel Guard",	      		"pts":700},
+		{"id":21, "name":"6x Custodian Guard units",		"pts":700},
+    
+		{"id":25, "name":"6x Sisters of Silence Prosecutors",	"pts":500},
+		{"id":26, "name":"6x Sisters of Silence Vigilators",	"pts":500},
+    
+		{"id":30, "name":"4x Sagittarum Custodes",	  	"pts":800},
+		{"id":31, "name":"4x Ephoroi Custodes",		       	"pts":800},
+		{"id":32, "name":"4x Venatari Custodes",	    	"pts":800},
+
+		{"id":33, "name":"Aquilion Terminators w/Lastrum Stormbolter and Solarite Power Gauntlet",	"pts":0},
+		{"id":34, "name":"Aquilion Terminators w/TL Adrathic Destructor and Solarite Power Gauntlet",	"pts":0},
+		{"id":35, "name":"Aquilion Terminators w/Infernum Firepike and Solarite Power Gauntlet",	"pts":0},
+		{"id":36, "name":"Aquilion Terminators w/Lastrum Stormbolter and Solarite Power Talons",	"pts":0},
+		{"id":37, "name":"Aquilion Terminators w/TL Adrathic Destructor and Solarite Power Talons",	"pts":0},
+		{"id":38, "name":"Aquilion Terminators w/Infernum Firepike and Solarite Power Talons",		"pts":0},
+    
+    
+		{"id":42, "name":"Contemptor-Achilles Dreadnought w/Lastrum Stormbolter",		"pts":200},
+		{"id":43, "name":"Contemptor-Achilles Dreadnought w/Adrathic Destructor",		"pts":200},
+		{"id":44, "name":"Contemptor-Achilles Dreadnought w/Infernum Incinerator",		"pts":200},
+		{"id":45, "name":"Contemptor-Galatus Dreadnought",					"pts":200},
+    
+		{"id":48, "name":"Telemon Heavy Dreadnought w/Arachnus Heavy Blaze Cannon",		"pts":375},
+		{"id":49, "name":"Telemon Heavy Dreadnought w/Illiastus Accelerator Cannon",		"pts":375},
+		{"id":50, "name":"Telemon Heavy Dreadnought w/Telemon Caestus",				"pts":375},
+    
+    
+		{"id":51, "name":"Pallas Grav-Attack Vehicles",						"pts":175},
+		{"id":52, "name":"Callidus Grav-Tanks w/TL Arachnus Heavy Blaze Cannon",		"pts":250},
+		{"id":53, "name":"Callidus Grav-Tanks w/TL Illiastus Accelerator Cannon",		"pts":250},
+    
+    
+		{"id":55, "name":"Custodes Agamatus units w/Lastrum Boltcannon",			"pts":0},
+		{"id":56, "name":"Custodes Agamatus units w/Adrathic Devastator",			"pts":0},
+		{"id":57, "name":"Custodes Agamatus units w/Coravae Las-pulsar",			"pts":0},
+    
+		{"id":60, "name":"Orion Assault Ship",							"pts":300},
+    
+		{"id":70, "name":"Custodian Guard",							"pts":0},    
+    
+		{"id":100, "name":"Teleport",                                                                   "pts":50},
+    
+		{"id":101, "name":"Coronus Grav-Carriers",                                                      "pts":250},
+		{"id":102, "name":"Coronus Grav-Carriers  w/Teleport",                                          "pts":300},
+    
+		{"id":105, "name":"Kharon Grav-Carriers w/Hellion Heavy Cannon Array",                          "pts":125},
+		{"id":106, "name":"Kharon Grav-Carriers w/TL Multi-melta",                                      "pts":125},
+    
+		{"id":110, "name":"Specialist Cadres: Oblivion Knight Cadre",                                   "pts":60},
+		{"id":112, "name":"Specialist Cadres: Sister Of Silence Pursuers",				"pts":75},
+		{"id":113, "name":"Specialist Cadres: Sister Of Silence Seekers w/Heavy Flamers",		"pts":60},
+		{"id":114, "name":"Specialist Cadres: Sister Of Silence Seekers w/Assault Grenade Launchers",   "pts":60},
+		{"id":115, "name":"Specialist Cadres: Exruciatus Cadre",                                        "pts":100},
+		{"id":116, "name":"Specialist Cadres: Oblivion Knight Centura",                                 "pts":60}
+	
+  ],
+	"formationConstraints":[
+		{"max":3, "name":"SUPPORT DETACHMENTS", "from":[600,601,602,603,604,605,606], "forEach":[500,501], "name2":"LINE DETACHMENTS"},
+		{"maxPercent":50, "name":"LORDS OF WAR", "from":[701,702,703,704,705]},
+		{"max":1,   "perArmy":true,  "from":[704]},
+		{"max":1,   "perArmy":true,  "from":[705]}
+	],
+	"upgradeConstraints":[
+  		{"max":1,	"max":1,	"from":[2,3],	"appliesTo":[500,501,600,601]},
+		
+		{"max":1,	"max":1,	"from":[100],	"appliesTo":[500,501,600,601,705]},
+		{"min":0,	"max":6,	"from":[110,112,113,114,115,116],	"appliesTo":[501,705]},
+		
+		{"min":1,	"max":1,	"from":[20,21],		"appliesTo":[500]},
+		{"min":1,	"max":1,	"from":[25,26], 	"appliesTo":[501]},
+		
+		{"min":1,	"max":1,	"from":[30,31,32],	"appliesTo":[600]},
+		{"min":4,	"from":[33,34,35,36,37,38],		"appliesTo":[601]},
+		{"min":2,	"max":3,	"from":[42,43,44,45],	"appliesTo":[602]},
+		{"min":1,	"max":2,	"from":[48,49,50],	"appliesTo":[603]},
+		{"min":2,	"max":3,	"from":[51],		"appliesTo":[604]},
+		{"min":2,	"max":3,	"from":[52,53], 	"appliesTo":[605]},
+		{"min":3,	"max":3,	"from":[55,56,57], 	"appliesTo":[606]},
+		
+		{"min":1,	"max":3,	"from":[60], 		"appliesTo":[701]},
+		{"min":1,	"max":1,	"from":[1], 		"appliesTo":[704]},
+		{"min":3,	"max":3,	"from":[70,33,34,35,36,37,38], 	"appliesTo":[704]},
+    
+		{"min":0,	"max":1,	"perArmy":true,	"from":[1,2]}
+	]
+}

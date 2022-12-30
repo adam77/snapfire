@@ -1,0 +1,288 @@
+{
+	"id":"Imperial Fists Legion(30k Era)",
+	"version":"Heresy V1(last update list 22 June 2020)",
+	"by":"spaal574",
+	"notes":["Line detachments and support detachments may choose up to four upgrades and (only) one transport option may be selected.",
+	"When using Transports you must take exactly enough to carry all units(rounding up) in the formation after any upgrades have been added.",
+	"You can't mix transport upgrades in the same formation, transports count towards the number of upgrade allowances of a formation."],
+	"sections":[
+		{"name":"LINE DETACHMENTS", "formations":[
+			{"id":500, "name":"Legion Tactical Detachment",		"pts":0, "upgrades":[5,6,125,126,127, 100,101,103, 110,111,112,114,115, 130,131,132,133, 135,136, 140,141,142,143,145,147, 150,151, 153,154,155,156,157,158,159,160,161, 165,167,169,175, 180,181,182, 185, 190, 120]},
+			{"id":501, "name":"Legion Terminator Detachment",	"pts":0, "upgrades":[15, 5,6,125,126,127, 102,103,104, 110,111,112,114,115, 140,141,142,143,145,147, 150,151, 153,154,155,156,157,158,159,160,161, 165,167,169,175, 180,181,182, 185, 190,  120]},
+			{"id":502, "name":"Legion Assault Marine Detachment",	"pts":300, "upgrades":[5,6,125,126,127, 100], "units":"8x Assault Squads"},
+			{"id":503, "name":"Legion Breacher Detachment",		"pts":300, "upgrades":[5,6,125,126,127, 100,101,103,104, 110,111,112,114,115, 140,141,142,143,145,147, 150,151, 153,154,155,156,157,158,159,160,161, 165,167,169,175, 180,181,182, 185, 190,  120], "units":"8x Breacher Squads"}
+		]},
+		{"name":"SUPPORT DETACHMENTS", "formations":[
+			{"id":596, "name":"Phalanx Warder Detachment",		"pts":350, "upgrades":[125,126,127, 100,104, 110,111,114,115, 150,151, 153,154,155,156,157,158,159,160,161, 165,167,169,175, 180,181,182, 185, 190], "units":"8x Phalanx Warder Squad units"},
+			{"id":597, "name":"Templar Brethren Detachment",	"pts":400, "upgrades":[100,101, 110,111,114,115], "units":"5x Templar Brethren units and 1x Templar Brethren with Centurion (Champion) upgrade"},
+			{"id":598, "name":"Castellum Stronghold",		"pts":250, "upgrades":[], "units":"1x Castellum Stronghold plus Defensive Obstacles"},
+			{"id":599, "name":"Primus Redoubt",			"pts":300, "upgrades":[], "units":"1x Primus Redoubt plus Defensive Obstacles"},
+
+			{"id":600, "name":"Legion Space Craft",			"pts":0, "upgrades":[]},
+			{"id":601, "name":"Legion Artillery Squadron",		"pts":0, "upgrades":[120]},
+			
+			{"id":602, "name":"Legion Assault Marine Squad",	"pts":175, "upgrades":[125,126,127, 100], "units":"4x Assault Squads"},
+			{"id":603, "name":"Legion Breacher Squad",		"pts":225, "upgrades":[125,126,127, 100,101,103,104, 110,111,112,114,115], "units":"4x Breacher Squads"},
+			{"id":604, "name":"Legion Reconnaissance Squad",	"pts":150, "upgrades":[125,126,127, 100,101,103], "units":"4x Reconnaissance Squads Squads"},
+			{"id":605, "name":"Legion Rapier Weapons Battery",	"pts":-60, "upgrades":[100]},
+			{"id":606, "name":"Legion Destroyer Detachment",	"pts":225, "upgrades":[125,126,127, 100], "units":"4x Destroyer Squads units"},
+			
+			{"id":607, "name":"Legion Dreadnought Talon",		"pts":0, "upgrades":[125,126,127, 40,41, 100]},
+			{"id":608, "name":"Legion Leviathan Dreadnought Talon",	"pts":0, "upgrades":[125,126,127, 100]},
+			{"id":609, "name":"Legion Contemptor Dreadnought Talon", "pts":0, "upgrades":[125,126,127, 45,46,143,145, 210,211,212,213,214,215,216,217, 100]},
+
+			{"id":610, "name":"Legion Land Speeder Squadron",	"pts":200, "upgrades":[125,126,127]},
+			{"id":611, "name":"Legion Javelin Attack Squadron",	"pts":250, "upgrades":[125,126,127]},
+			{"id":612, "name":"Legion Outrider Detachment",		"pts":0, "upgrades":[125,126,127]},
+			{"id":613, "name":"Legion Sky Hunter Attack Squadron",	"pts":175, "upgrades":[125,126,127], "units":"5x Scimitar Jet Bike units"},
+
+			{"id":614, "name":"Legion Predator Strike Squadron",	"pts":0, "upgrades":[125,126,127, 65,66,67,68,69,70,71,72,73, 165,167,169,175, 120]},
+			{"id":615, "name":"Legion Sicaran Battle Squadron",	"pts":0, "upgrades":[125,126,127, 80,81,82, 120]},
+			{"id":616, "name":"Legion Land Raider Squadron",	"pts":0, "upgrades":[125,126,127, 95,96,112, 120]},
+			{"id":617, "name":"Legion Sabre Strike Squadron",	"pts":275, "upgrades":[125,126,127], "units":"4x Sabre Strike Tanks"},
+			{"id":618, "name":"Legion Vindicator Squadron",		"pts":0, "upgrades":[125,126,127, 98, 151, 120]},
+
+			{"id":619, "name":"Legion Storm Eagle Attack Wing",	"pts":0, "upgrades":[300]},
+			{"id":620, "name":"Legion Thunderhawk Gunship",		"pts":0, "upgrades":[]},
+			{"id":621, "name":"Legion Thunderhawk Transport Wing",	"pts":0, "upgrades":[301]}
+		]},
+		{"name":"LORDS OF WAR", "formations":[
+			{"id":700, "name":"Rogal Dorn, Praetorian of Terra",	"pts":450, "upgrades":[100,101, 110,111,112,114,115,150,151, 153,154,155,156,157,158,159,160,161, 165,167,169,175, 180,181,182, 185, 190, 120], "units":"7 Tactical Marine (Boltguns) units"},
+			{"id":701, "name":"Legion Super Heavy Tank Squadron",	"pts":700, "upgrades":[125,126,127], "units":"3x Fellblade"},	
+
+			{"id":704, "name":"Legion Gunship Wing",		"pts":300, "upgrades":[], "units":"2x Fire Raptor units"},
+			{"id":705, "name":"Legion Interceptor Attack Wing",	"pts":250, "upgrades":[], "units":"2x Xiphon Interceptor"},
+			{"id":706, "name":"Legion Stormbird",			"pts":450, "upgrades":[], "units":"1x Stormbird Heavy Attack Ship"},
+			
+			{"id":707, "name":"Legion Super Heavy Tank",		"pts":0, "upgrades":[]},
+			{"id":708, "name":"Legion Super Heavy Tank Destroyer",	"pts":300, "upgrades":[], "units":"1x Falchion unit"},
+			{"id":709, "name":"Legion Super Heavy Tank Battery",	"pts":0, "upgrades":[]}
+		]}
+	],	
+	"upgrades":[
+		{"id":1, "name":"Rogal Dorn, Primarch of the Iron Fists",		"pts":0},
+    
+		{"id":5, "name":"Praetor : Lord Commander",				"pts":100},
+		{"id":6, "name":"Praetor : Lieutenant Commander",			"pts":50},
+    
+		{"id":10, "name":"8x Tactical Squads",					"pts":275},
+		{"id":11, "name":"8x Despoiler Squads",					"pts":275},
+		
+		{"id":15, "name":"Terminator Units",					"pts":75},
+		
+		{"id":30, "name":"Battle Barge",					"pts":300},
+		{"id":31, "name":"Strike Cruiser",					"pts":200},
+
+		{"id":35, "name":"4x Medusa",						"pts":250},
+		{"id":36, "name":"4x Basilisk",						"pts":300},
+		{"id":37, "name":"4x Whirlwind",					"pts":325},
+		
+		{"id":40, "name":"Dreadnought w/TL Missile Launcher and TL Lascannon",	"pts":50},
+		{"id":41, "name":"Dreadnought w/TL Autocannon & Power Fist",		"pts":50},
+		
+		
+		{"id":42, "name":"Leviathan Dreadnought",				"pts":75},
+		
+		{"id":200, "name":"Leviathan Arms : Siege Claw",			"pts":0},
+		{"id":201, "name":"Leviathan Arms : Siege Drill",			"pts":0},
+		{"id":202, "name":"Leviathan Arms : Cyclonic Melta Lance",		"pts":0},
+		{"id":203, "name":"Leviathan Arms : Storm Cannon",			"pts":0},
+		{"id":204, "name":"Leviathan Arms : Grav-flux Bombard",			"pts":0},
+		
+		
+		{"id":45, "name":"Contemptor Dreadnought",				"pts":60},
+		{"id":46, "name":"Contemptor Dreadnought w/Havoc Launcher",		"pts":65},
+	
+		{"id":210, "name":"Contemptor Arms : Close Combat Weapon",		"pts":0},
+		{"id":211, "name":"Contemptor Arms : TL Heavy Bolter",			"pts":0},
+		{"id":212, "name":"Contemptor Arms : Plasma Cannon",			"pts":0},
+		{"id":213, "name":"Contemptor Arms : Heavy Conversion Beamer",		"pts":0},
+		{"id":214, "name":"Contemptor Arms : Kheres Assault Cannon",		"pts":0},
+		{"id":215, "name":"Contemptor Arms : TL Autocannon",			"pts":0},
+		{"id":216, "name":"Contemptor Arms : Multi-Melta",			"pts":0},
+		{"id":217, "name":"Contemptor Arms : TL Lascannon",			"pts":0},		
+		
+		
+		{"id":50, "name":"Javelin Attack Speeder w/Multi-Melta",		"pts":0},
+		{"id":51, "name":"Javelin Attack Speeder w/Plasma Cannon", 		"pts":0},
+		
+		{"id":55, "name":"Javelin Attack Speeder w/TL Lascannon",		"pts":0},
+		{"id":56, "name":"Javelin Attack Speeder w/TL Cyclone Missile Launcher", "pts":0},
+		
+		{"id":61, "name":"5x Outrider Bike units",				"pts":175},
+		{"id":62, "name":"5x Attack Bike units", 				"pts":175},
+		
+		{"id":65, "name":"Predator w/TL Lascannon 2x Heavy Bolters",		"pts":60},
+		{"id":66, "name":"Predator w/TL Lascannon 2x Lascannon",		"pts":60},
+		{"id":67, "name":"Predator w/TL Lascannon 2x Heavy Flamers",		"pts":60},
+		{"id":68, "name":"Predator w/Predator Cannon 2x Heavy Bolters",		"pts":60},
+		{"id":69, "name":"Predator w/Predator Cannon 2x Lascannon",		"pts":60},
+		{"id":70, "name":"Predator w/Predator Cannon 2x Heavy Flamers",		"pts":60},
+		{"id":71, "name":"Predator w/Flamestorm Cannon 2x Heavy Bolters",	"pts":60},
+		{"id":72, "name":"Predator w/Flamestorm Cannon 2x Lascannon",		"pts":60},
+		{"id":73, "name":"Predator w/Flamestorm Cannon 2x Heavy Flamers",	"pts":60},
+		
+		{"id":80, "name":"Sicaran Battle Tank",					"pts":75},
+		{"id":81, "name":"Sicaran Venator",					"pts":75},
+		{"id":82, "name":"Sicaran Omega Tank Destroyer",			"pts":75},
+		
+		{"id":85, "name":"Typhon",						"pts":150},
+		{"id":90, "name":"Cerberus",						"pts":150},
+
+		{"id":95, "name":"Land Raider Phobos",					"pts":80},
+		{"id":96, "name":"Land Raider Proteus",					"pts":80},
+		
+		{"id":98, "name":"Vindicator Siege Tank",				"pts":50},
+
+		{"id":300, "name":"Storm Eagle Attack Ship units",			"pts":125},
+		{"id":301, "name":"Thunderhawk Transporter units",			"pts":100},
+		{"id":302, "name":"Thunderhawk Gunship unit",				"pts":250},
+		
+		{"id":303, "name":"Fellblade unit",					"pts":250},
+		{"id":304, "name":"Glaive unit",					"pts":250},
+		
+		{"id":305, "name":"3x Typhon Heavy Siege Tanks",			"pts":400},
+		{"id":306, "name":"3x Cerberus Tank Destroyer units",			"pts":400},
+		
+		
+		
+		{"id":100, "name":"Drop Assault : Transport the entire formation in Drop Pods",	"pts":0},
+		{"id":101, "name":"Standard Transport : Rhino Armoured Carriers",		"pts":0},
+		{"id":102, "name":"Teleport",							"pts":50},
+		
+		{"id":103, "name":"Assault Claw : Kharybdis Assault Claws",			"pts":75},
+		{"id":104, "name":"Assault Ram : Caestus Assault Rams",				"pts":50},  
+
+		{"id":110, "name":"Heavy Transport : Land Raider Phobos",			"pts":75},  
+		{"id":111, "name":"Heavy Transport : Land Raider Proteus",			"pts":75},  
+		{"id":112, "name":"Armoury Assets  : Land Raider Achilles",			"pts":100}, 
+		{"id":113, "name":"Armoury Assets  : Land Raider Achilles",			"pts":25}, 
+		{"id":114, "name":"Heavy Transport : Spartan Tank",				"pts":125},  
+		{"id":115, "name":"Heavy Transport : Mastodon",					"pts":200},   
+    
+		{"id":120, "name":"Hyperios : Hyperios Whirlwind",				"pts":75},  
+    
+		{"id":125, "name":"Centurion : Librarian",					"pts":50},   
+		{"id":126, "name":"Centurion : Chaplain",					"pts":50},   
+		{"id":127, "name":"Centurion : Champion",					"pts":50},    
+    
+		{"id":130, "name":"Rapier Battery : Rapier Laser Destroyer",			"pts":50},
+		{"id":131, "name":"Rapier Battery : Quad Mortar",				"pts":50},
+		{"id":132, "name":"Rapier Battery : Quad Heavy Bolter",				"pts":50},
+		{"id":133, "name":"Rapier Battery : Graviton Cannon",				"pts":50},
+
+		{"id":135, "name":"Support Squads : Tactical Support",				"pts":25},
+		{"id":136, "name":"Support Squads : Heavy Support",				"pts":50},
+    
+		{"id":140, "name":"Dreadnought : Dreadnought w/TL Missile Launcher and TL Lascannon",	"pts":50},
+		{"id":141, "name":"Dreadnought : Dreadnought w/TL Autocannon & Power Fist",		"pts":50},
+		{"id":142, "name":"Dreadnought : Contemptor Dreadnought",				"pts":60},
+		{"id":143, "name":"Armoury Assets : Deredeo Dreadnought w/Autocannon Battery",		"pts":100},
+		{"id":144, "name":"Armoury Assets : Deredeo Dreadnought w/Autocannon Battery",		"pts":40},
+		{"id":145, "name":"Armoury Assets : Deredeo Dreadnought w/Hellfire Plasma Cannon",	"pts":100},
+		{"id":146, "name":"Armoury Assets : Deredeo Dreadnought w/Hellfire Plasma Cannon",	"pts":40},
+		{"id":147, "name":"Dreadnought : Leviathan Dreadnought",				"pts":100},
+		
+		{"id":150, "name":"Tank : Vindicator",							"pts":50},
+		{"id":151, "name":"Armoury Assets : Vindicator Laser Destroyer",			"pts":70},
+		{"id":152, "name":"Armoury Assets : Vindicator Laser Destroyer",			"pts":20},
+		
+		{"id":153, "name":"Tank : Predator w/TL Lascannon 2x Heavy Bolters",			"pts":60},
+		{"id":154, "name":"Tank : Predator w/TL Lascannon 2x Lascannon",			"pts":60},
+		{"id":155, "name":"Tank : Predator w/TL Lascannon 2x Heavy Flamers",			"pts":60},
+		{"id":156, "name":"Tank : Predator w/Predator Cannon 2x Heavy Bolters",			"pts":60},
+		{"id":157, "name":"Tank : Predator w/Predator Cannon 2x Lascannon",			"pts":60},
+		{"id":158, "name":"Tank : Predator w/Predator Cannon 2x Heavy Flamers",			"pts":60},
+		{"id":159, "name":"Tank : Predator w/Flamestorm Cannon 2x Heavy Bolters",		"pts":60},
+		{"id":160, "name":"Tank : Predator w/Flamestorm Cannon 2x Lascannon",			"pts":60},
+		{"id":161, "name":"Tank : Predator w/Flamestorm Cannon 2x Heavy Flamers",		"pts":60},
+		
+		{"id":165, "name":"Armoury Assets : Predator Infernus",					"pts":80},
+		{"id":166, "name":"Armoury Assets : Predator Infernus",					"pts":20},
+		{"id":167, "name":"Armoury Assets : Predator Executioner w/Plasma Destroyer",		"pts":80},
+		{"id":168, "name":"Armoury Assets : Predator Executioner w/Plasma Destroyer",		"pts":20},
+		{"id":169, "name":"Armoury Assets : Predator Executioner w/Heavy Conversion Beamer",	"pts":80},
+		{"id":170, "name":"Armoury Assets : Predator Executioner w/Heavy Conversion Beamer",	"pts":20},
+		{"id":175, "name":"Armoury Assets : Whirlwind Scorpius",				"pts":80},
+		{"id":176, "name":"Armoury Assets : Whirlwind Scorpius",				"pts":20},
+		
+		{"id":180, "name":"Tank : Sicaran Battle Tank",				"pts":80},
+		{"id":181, "name":"Tank : Sicaran Venator",				"pts":80},
+		{"id":182, "name":"Tank : Sicaran Omega Tank Destroyer",		"pts":80},
+		
+		{"id":185, "name":"Tank : Typhon",					"pts":150},
+		{"id":190, "name":"Tank : Cerberus",					"pts":150}
+	],
+	"formationConstraints":[
+		{"max":3, "name":"Support Detachment", "from":[596,597,598,599,600,601,602,603,604,605,606,607,608,609,610,611,612,613,614,615,616,617,618,619,620,621], "forEach":[500,501,502,503], "name2":"Detachment"},
+		{"maxPercent":33, "name":"LORDS OF WAR", "from":[700,701,704,705,706,707,708,709]},
+		{"max":1, "perPoints":2000, "from":[601]},
+		{"max":1, "perPoints":4000, "from":[606]},
+		{"max":1, "from":[600]}
+	],
+	"upgradeConstraints":[    
+		{"min":0, "max":1, "from":[5,6,125,126,127], "appliesTo":[500,501,502,503, 596,602,603,604,606,607,608,609,610,611,612,613,614,615,616,617,618]},
+		
+		{"min":0, "max":2, "from":[112,113, 143,144,145,146, 151, 165,166,167,168,169,170, 175,176], "appliesTo":[500,501,502,503, 596,602,603,604,609,614,616,618]},	
+		
+		{"min":0, "max":1, "from":[100], "appliesTo":[500,502,503, 596,597,602,603,604,605,606,607,608,609]},
+		
+		{"min":0, "max":2, "from":[140,141,142,143,144,145,146,147], "appliesTo":[500,501,503]},
+		
+		{"min":0, "max":4, "from":[130,131,132,133], "appliesTo":[500]},
+		
+		{"min":0, "max":4, "from":[135,136], "appliesTo":[500]},
+		
+		{"min":0, "max":1, "from":[120], "appliesTo":[500,501,503, 601,614,615,616,618]},
+		
+		{"min":0, "max":2, "from":[150,151,152, 153,154,155,156,157,158,159,160,161, 165,166,167,168,169,170,175,176, 180,181,182, 185, 190], "appliesTo":[500,501,503,596]},
+		
+		
+		
+		{"min":0, "max":1, "from":[102], "appliesTo":[501]},
+		
+		{"min":1, "max":1, "from":[10,11], "appliesTo":[500]},
+		
+		{"min":4, "max":6, "from":[15], "appliesTo":[501]},
+		
+
+		{"min":1, "max":1, "from":[30,31], "appliesTo":[600]},
+		{"min":1, "max":1, "from":[35,36,37], "appliesTo":[601]},
+		
+		{"min":6, "max":6, "from":[130,131,132,133], "appliesTo":[605]},
+		
+		
+		{"min":4, "max":6, "from":[40,41],			"appliesTo":[607]},
+		
+		{"min":3, "max":3, "from":[42],				"appliesTo":[608]},
+		{"min":6, "max":6, "from":[200,201,202,203,204],	"appliesTo":[608]},
+		
+		{"min":4, "max":6,  "from":[45,46,143,145],			"appliesTo":[609]},
+		{"min":4, "max":12, "from":[210,211,212,213,214,215,216,217],	"appliesTo":[609]},
+		
+
+		{"min":5, "max":5, "from":[50,51], "appliesTo":[610]},
+		{"min":5, "max":5, "from":[55,56], "appliesTo":[611]},
+		
+		{"min":1, "max":1, "from":[61,62], "appliesTo":[612]},
+		
+		{"min":4, "max":6, "from":[65,66,67,68,69,70,71,72,73, 165,167,169,175], "appliesTo":[614]},
+		
+		{"min":4, "max":6, "from":[80,81,82], "appliesTo":[615]},
+		
+		{"min":4, "max":6, "from":[95,96,112], "appliesTo":[616]},
+		
+		{"min":4, "max":6, "from":[98,151], "appliesTo":[618]},
+		
+		{"min":1, "max":3, "from":[300], "appliesTo":[619]},
+		{"min":1, "max":1, "from":[302], "appliesTo":[620]},
+		{"min":1, "max":3, "from":[301], "appliesTo":[621]},
+		
+		{"min":1, "max":1, "from":[303,304], "appliesTo":[707]},
+		{"min":1, "max":1, "from":[305,306], "appliesTo":[709]},
+		
+		{"min":1, "from":[1], "appliesTo":[700]},
+		
+		{"max":1, "perArmy":true, "from":[1,5]}
+	]
+}

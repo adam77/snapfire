@@ -1,0 +1,170 @@
+{
+	"id":"Daemonic Hordes",
+	"version":"Heresy v1",
+	"by":"freefall updated by spaal574",
+	"sections":[
+		{"name":"SPECIAL SELECTIONS", "formations":[
+			{"id":1000, "name":"Warp Rift", 	"pts":75, "upgrades":[]}
+		]},
+		{"name":"DAEMONIC HORDES", "formations":[
+			{"id":500, "name":"Murder Tide",	"pts":250, "upgrades":[95,99, 111,112,113,114, 200,201,202,203]},
+			{"id":600, "name":"Putrid Legion",	"pts":250, "upgrades":[96,99, 121,122,123,124, 200,201,202,203]},
+			{"id":700, "name":"Depraved Host",	"pts":250, "upgrades":[97,99, 131,132,133,134, 200,201,202,203]},
+			{"id":800, "name":"Change Coven",	"pts":250, "upgrades":[98,99, 141,142,143,144, 200,201,202,203]}
+		]},
+		{"name":"GREATER DAEMON HORDES", "formations":[
+			{"id":501, "name":"Khorne Greater Daemons",		"pts":0, "upgrades":[95]},
+       			{"id":601, "name":"Nurgle Greater Daemons",		"pts":0, "upgrades":[96]},
+			{"id":701, "name":"Slaanesh Greater Daemons",		"pts":0, "upgrades":[97]},
+		 	{"id":801, "name":"Tzeentch Greater Daemons",		"pts":0, "upgrades":[98]}
+		]},
+		{"name":"FOLLOWERS OF CHAOS", "formations":[
+			{"id":502, "name":"Followers of Khorne",		"pts":0, "upgrades":[112,113,114, 200,201,202,203]},
+        		{"id":602, "name":"Followers of Nurgle",		"pts":0, "upgrades":[122,123,124, 200,201,202,203]},
+			{"id":702, "name":"Followers of Slaanesh",		"pts":0, "upgrades":[132,133,134, 200,201,202,203]},
+		 	{"id":802, "name":"Followers of Tzeentch",		"pts":0, "upgrades":[142,143,144, 200,201,202,203]},
+			
+		 	{"id":901, "name":"Undivided: Fury Flight",		"pts":0, "upgrades":[170, 200,201,202,203]},
+		 	{"id":902, "name":"Undivided: Spawn Pack",		"pts":0, "upgrades":[171, 200,201,202,203]},
+		 	{"id":903, "name":"Undivided: Soulgrinder Maniple",	"pts":0, "upgrades":[172, 200,201,202,203]}
+		]} 
+	],	
+	"upgrades":[
+		{"id":10, "name":"Khorne Daemon Prince",	"pts":50},
+		{"id":11, "name":"Nurgle Daemon Prince",	"pts":50},
+		{"id":12, "name":"Slaanesh Daemon Prince",	"pts":50},
+		{"id":13, "name":"Tzeentch Daemon Prince",	"pts":50},
+		
+		{"id":95,  "name":"Bloodthirster of Khorne",	"pts":200},
+		{"id":96,  "name":"Great Unclean One",		"pts":200},
+		{"id":97,  "name":"Keeper of Secrets",		"pts":200},
+		{"id":98,  "name":"Lord of Change",		"pts":200},
+		{"id":99,  "name":"Daemonic Overlord",		"pts":0},
+
+		
+		{"id":109, "name":"Bloodletters",		"pts":0},
+		{"id":110, "name":"Bloodletter Herald",		"pts":0},
+		{"id":111, "name":"Bloodletters",		"pts":25},
+		{"id":112, "name":"Fleshhounds",		"pts":25},
+		{"id":113, "name":"Bloodcrushers",		"pts":50},
+		{"id":114, "name":"Skull Cannon",		"pts":50},
+
+		{"id":119, "name":"Plaguebearers",		"pts":0},
+		{"id":120, "name":"Plaguebearer Herald",	"pts":0},
+		{"id":121, "name":"Plaguebearers",		"pts":25},
+		{"id":122, "name":"Nurglings",			"pts":25},
+		{"id":123, "name":"Beast of Nurgle",		"pts":50},
+		{"id":124, "name":"Plague Drone",		"pts":50},
+
+		{"id":129, "name":"Daemonettes",		"pts":0},
+		{"id":130, "name":"Daemonette Herald",		"pts":0},
+		{"id":131, "name":"Daemonettes",		"pts":25},
+		{"id":132, "name":"Seekers",			"pts":25},
+		{"id":133, "name":"Seeker Chariot",		"pts":50},
+		{"id":134, "name":"Fiends",			"pts":50},
+		
+		{"id":139, "name":"Horrors",			"pts":0},
+		{"id":140, "name":"Horror Herald",		"pts":0},
+		{"id":141, "name":"Horrors",			"pts":25},
+		{"id":142, "name":"Screamers",			"pts":25},
+		{"id":143, "name":"Flamers",			"pts":25},
+		{"id":144, "name":"Burning Chariot",		"pts":50},
+	
+		{"id":170, "name":"Furies",			"pts":25},
+		{"id":171, "name":"Chaos Spawn",		"pts":50},
+		{"id":172, "name":"Soulgrinder",		"pts":75},
+		
+		{"id":200, "name":"Chaos Gift: Chaos Altar",	"pts":100},
+		{"id":201, "name":"Chaos Gift: Furies",		"pts":25},
+		{"id":202, "name":"Chaos Gift: Chaos Spawn",	"pts":50},
+		{"id":203, "name":"Chaos Gift: Soulgrinder",	"pts":75}
+	],
+	"formationConstraints":[
+		{"max":1, "from":[1000]},
+		
+		{"max":1, "name":"Khorne Greater Deamons",	"from":[501], "forEach":[500], "name2":"Khorne Deamonic Hordes"},
+		{"max":1, "name":"Followers of Khorne",		"from":[502], "forEach":[500], "name2":"Khorne Deamonic Hordes"},
+		
+		{"max":1, "name":"Nurgle Greater Deamons", 	"from":[601], "forEach":[600], "name2":"Nurgle Deamonic Hordes"},
+		{"max":1, "name":"Followers of Nurgle", 	"from":[602], "forEach":[600], "name2":"Nurgle Deamonic Hordes"},	
+		
+		{"max":1, "name":"Slaanesh Greater Deamons", 	"from":[701], "forEach":[700], "name2":"Slaanesh Deamonic Hordes"},
+		{"max":1, "name":"Followers of Slaanesh", 	"from":[702], "forEach":[700], "name2":"Slaanesh Deamonic Hordes"},
+		
+		{"max":1, "name":"Tzeentch Greater Deamons", 	"from":[801], "forEach":[800], "name2":"Tzeentch Deamonic Hordes"},
+		{"max":1, "name":"Followers of Tzeentch", 	"from":[802], "forEach":[800], "name2":"Tzeentch Deamonic Hordes"}
+	],
+	"upgradeConstraints":[
+		{"max":1, "perArmy":true, "from":[10]},
+		{"max":1, "perArmy":true, "from":[11]},
+		{"max":1, "perArmy":true, "from":[12]},
+		{"max":1, "perArmy":true, "from":[13]},
+		{"max":1, "perArmy":true, "from":[99]},
+		
+		{"min":0, "max":1, "from":[99], "appliesTo":[500,600,700,800]},
+		
+		{"min":1,	"from":[110,10], "appliesTo":[500]},
+		{"min":5,	"from":[109], "appliesTo":[500]},
+		
+		{"min":1, "max":3, "from":[95], "appliesTo":[501]},
+		{"min":0, "max":1, "from":[95], "appliesTo":[500]},
+		{"min":0, "max":6, "from":[111,112], "appliesTo":[500]},
+		{"min":0, "max":6, "from":[113,114], "appliesTo":[500]},
+		
+		{"min":6, "max":9, "from":[112,113,114], "appliesTo":[502]},
+		{"min":0, "max":9, "from":[112], "appliesTo":[502]},
+		{"min":0, "max":9, "from":[113], "appliesTo":[502]},
+		{"min":0, "max":9, "from":[114], "appliesTo":[502]},
+		
+		{"min":1,	"from":[120,11], "appliesTo":[600]},
+		{"min":5,	"from":[119], "appliesTo":[600]},
+		
+		{"min":1, "max":3, "from":[96], "appliesTo":[601]},
+		{"min":0, "max":1, "from":[96], "appliesTo":[600]},
+		{"min":0, "max":6, "from":[121,122], "appliesTo":[600]},
+		{"min":0, "max":6, "from":[123,124], "appliesTo":[600]},
+		
+		{"min":6, "max":9, "from":[122,123,124], "appliesTo":[602]},
+		{"min":0, "max":9, "from":[122], "appliesTo":[602]},
+		{"min":0, "max":9, "from":[123], "appliesTo":[602]},
+		{"min":0, "max":9, "from":[124], "appliesTo":[602]},
+
+		
+		{"min":1,	"from":[130,12], "appliesTo":[700]},
+		{"min":5,	"from":[129], "appliesTo":[700]},
+		
+		{"min":1, "max":3, "from":[97], "appliesTo":[701]},
+		{"min":0, "max":1, "from":[97], "appliesTo":[700]},
+		{"min":0, "max":6, "from":[131,132], "appliesTo":[700]},
+		{"min":0, "max":6, "from":[133,134], "appliesTo":[700]},
+
+		{"min":6, "max":9, "from":[132,133,134], "appliesTo":[702]},
+		{"min":0, "max":9, "from":[132], "appliesTo":[702]},
+		{"min":0, "max":9, "from":[133], "appliesTo":[702]},
+		{"min":0, "max":9, "from":[134], "appliesTo":[702]},
+		
+		
+		{"min":1,	"from":[140,13], "appliesTo":[800]},
+		{"min":5,	"from":[139],	 "appliesTo":[800]},
+		
+		{"min":1, "max":3, "from":[98], "appliesTo":[801]},
+		{"min":0, "max":1, "from":[98], "appliesTo":[800]},
+		{"min":0, "max":6, "from":[141,142,143], "appliesTo":[800]},
+		{"min":0, "max":6, "from":[144], "appliesTo":[800]},
+
+		{"min":6, "max":9, "from":[142,143,144], "appliesTo":[802]},
+		{"min":0, "max":9, "from":[142], "appliesTo":[802]},
+		{"min":0, "max":9, "from":[143], "appliesTo":[802]},
+		{"min":0, "max":9, "from":[144], "appliesTo":[802]},
+
+
+		{"min":6, "max":8, "from":[170], "appliesTo":[901]},
+		{"min":4, "max":6, "from":[171], "appliesTo":[902]},
+		{"min":4, "max":6, "from":[172], "appliesTo":[903]},
+		
+		{"min":0, "max":1, "name":"Gifts of Chaos",  "from":[200], "appliesTo":[500,600,700,800,502,602,702,802,901,902,903]},
+		{"min":0, "max":3, "name":"Gifts of Chaos",  "from":[201], "appliesTo":[500,600,700,800,502,602,702,802,901,902,903]},
+		{"min":0, "max":3, "name":"Gifts of Chaos",  "from":[202], "appliesTo":[500,600,700,800,502,602,702,802,901,902,903]},
+		{"min":0, "max":3, "name":"Gifts of Chaos",  "from":[203], "appliesTo":[500,600,700,800,502,602,702,802,901,902,903]}
+	]
+}

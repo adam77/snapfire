@@ -1,6 +1,6 @@
 {
-	"id":"Solar Auxilia V 0.9.0",
-	"version":"Heresy V 0.9.0",
+	"id":"Solar Auxilia",
+	"version":"Heresy v1",
 	"by":"J.Barr AKA Fattdex. Updated by Mard, Remade from 0 by spaal574",
 	"notes":["Each detachment may purchase up to three upgrades, each upgrade can only be chosen once per detachment.",
 	"When using Transports you must take exactly enough to carry all units(rounding up) in the formation after any upgrades have been added.",
@@ -16,7 +16,7 @@
 			{"id":501, "name":"Solar Auxilia Strike Squadron", 		"pts":350, "upgrades":[38]},
 			{"id":502, "name":"Solar Auxilia Infantry Tercio", 		"pts":150, "upgrades":[38,31,32,33,30,34,35,36,37], "units":"1x Auxilia Tactical Command Section, 7x Solar Auxilia Infantry Section units"},
 			{"id":503, "name":"Solar Auxilia Veletaris Storm Cohort", 	"pts":200, "upgrades":[38,31,32,33,35,36,37], "units":"1x Auxilia Tactical Command Section"}
-		]},
+	]},
 		{"name":"SUPPORT DETACHMENTS", "formations":[
 			{"id":600, "name":"Solar Auxilia Orbital Support",		"pts":0, "upgrades":[]},
 			{"id":601, "name":"Solar Auxilia Artillery Tank Battery",	"pts":0, "upgrades":[38]},
@@ -26,18 +26,15 @@
 			{"id":605, "name":"Auxilia Tank Hunter Squadron",		"pts":250, "upgrades":[38], "units":"3x Valdor Tank Hunters"},
 			{"id":606, "name":"Solar Auxilia Close Support Squadron",	"pts":200, "upgrades":[38]},
 			{"id":607, "name":"Solar Auxilia Tarantula Battery",		"pts":125, "upgrades":[], "units":"4x Tarantula units, 1x Tarantula Hyperios unit"}
-
-		]},
+	]},
 		{"name":"LORDS OF WAR", "formations":[
 			{"id":701, "name":"Imperial Navy Avenger Wing",			"pts":250, "upgrades":[], "units":"2 Avenger Strike Fighter units"},
 			{"id":702, "name":"Imperial Navy Primaris-Lightning Wing",	"pts":225, "upgrades":[], "units":"2 Primaris-Lightning Fighter units"}
-		]}		
+	]}		
 	],	
-	
 	"upgrades":[
-		
 		{"id":5, "name":"7x Veletaris Storm Sections units w/power axes ",		"pts":0},
-		{"id":6, "name":"7x Veletaris Storm Sections units w/volkite chargers",		"pts":0},
+		{"id":6, "name":"7x Veletaris Storm Sections units w/volkyte chargers",		"pts":0},
 		
 		{"id":7, "name":"Leman Russ Battle Tank",			"pts":0},
 		{"id":8, "name":"Leman Russ Exterminator Tank",			"pts":0},
