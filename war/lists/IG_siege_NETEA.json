@@ -1,7 +1,10 @@
 {
 	"id": "Baran Siege Masters",
 	"version": "NetEA Tournament Pack (2022-04-22) ",
-	"notes": ["Even if the Sappers are split, all eight Sappers units must be purchased"]
+	"notes": [
+		 "Even if the Sappers are split, all eight Sappers units must be purchased"
+		 "One Commissar character can be added per five hundred points"
+		 ],
 	"by": "Iron Bloke, last update 2022-12-15 Abetillo",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
