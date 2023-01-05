@@ -1,7 +1,7 @@
 {
 	"id":"Salamanders",
-	"version":"NetEA Tournament Pack 2013",
-	"by":"Iron Bloke, last update 2013-10-24 Parintachin",
+	"version":"NetEA Tournament Pack (2023-01-03)",
+	"by":"Iron Bloke, last update 2023-01-05 Abetillo",
 	"sections":[
 		{"name":"SALAMANDER DETACHMENTS", "formations": [
 			{ "id":501, "name":"Devastator", "pts":250, "units":"4 Devastator units", "upgrades":[11,12,51,52,53,54,71,72,73,74,75,84,85,81,82,102] },
@@ -13,7 +13,7 @@
 			{ "id":507, "name":"Terminator", "pts":325, "units":"4 Terminator units", "upgrades":[51,52,53,54,71,72,73,74,75,96,84,85,60,61,62,63,64] },
 			{ "id":508, "name":"Thunderhawk", "pts":250},
 			{ "id":509, "name":"Vindicator", "pts":225, "units":"4 Vindicators", "upgrades":[51,52,53,54,71,72,73,74,75] },
-			{ "id":510, "name":"Whirlwind", "pts":300, "units":"4 Whirlwinds", "upgrades":[51,52,53,54,71,72,73,74,75,96] }
+			{ "id":510, "name":"Whirlwind", "pts":275, "units":"4 Whirlwinds", "upgrades":[51,52,53,54,71,72,73,74,75,96] }
 		]},
 		{"name":"SALAMANDER RESTRICTED FORMATIONS", "formations": [
 			{ "id":521, "name":"Assault", "pts":150, "units":"4 Assault units", "upgrades":[51,52,53,54,71,72,73,74,75] },
@@ -55,14 +55,14 @@
 		{ "id":91, "name":"Predator Incinerator", "pts":50 },
 		{ "id":92, "name":"Hunter", "pts":75 },
 		{ "id":96, "name":"Land Raider Helios", "pts":100 },
-		{ "id":60, "name":"4 Land Raiders or Redeemers", "pts":325 },
-		{ "id":61, "name":"3 Land Raiders or Redeemers, 1 Helios", "pts":350 },
-		{ "id":62, "name":"2 Land Raiders or Redeemers, 2 Helios", "pts":375 },
-		{ "id":63, "name":"1 Land Raider or Redeemer, 3 Helios", "pts":400 },
-		{ "id":64, "name":"4 Land Raider Helios", "pts":425 },
+		{ "id":60, "name":"4 Land Raiders or Redeemers", "pts":250 },
+		{ "id":61, "name":"3 Land Raiders or Redeemers, 1 Helios", "pts":275 },
+		{ "id":62, "name":"2 Land Raiders or Redeemers, 2 Helios", "pts":300 },
+		{ "id":63, "name":"1 Land Raider or Redeemer, 3 Helios", "pts":325 },
+		{ "id":64, "name":"4 Land Raider Helios", "pts":350 },
 
-		{ "id":81, "name":"Razorback (twin lascannon)", "pts":25 },
-		{ "id":82, "name":"Razorback (twin heavy bolter)", "pts":25 },
+		{ "id":81, "name":"Razorback (Twin Lascannon)", "pts":25 },
+		{ "id":82, "name":"Razorback (Twin Heavy Bolter)", "pts":25 },
 		{ "id":84, "name":"Hellfire Dreadnought", "pts":50 },
 		{ "id":85, "name":"Vulcan Dreadnought", "pts":50 },
 		{ "id":101, "name":"Sniper", "pts":50 },
@@ -73,7 +73,7 @@
 		{"max":1, "from":[505]},
 		{"max":1, "from":[521]},
 		{"max":1, "from":[522]},
-		{"maxPercent":33, "name":"Navy, Titans & Restricted", "from":[521,522,523,531,532,541,542,543,544]}
+		{"maxPercent":33.34, "name":"Imperial Ally and Salamander Restricted Formations", "from":[521,522,523,531,532,541,542,543,544]}
 	],
 	"upgradeConstraints":[
 		{"max":1, "from":[60,61,62,63,64]},
