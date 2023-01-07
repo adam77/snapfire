@@ -92,9 +92,9 @@
 		
 		{"min":6, "max":6, "from":[27,28], "appliesTo":[503]},
 		{"min":7, "max":7, "from":[24,25], "appliesTo":[511,512]},
-		{"min":6, "max":6, "from":[15,16,17,18,19,20,21,22], "appliesTo":[501]},
+		{"min":6, "max":6, "from":[15,16,17,18,19,20,21,22][42+41], "appliesTo":[501]},
 		
-		{"max":1, "from":[42+42,2x41], "forEach":[15,16,17,18,20], "name2":"Aspect Warrior unit without Mounted or Jump Packs"},
+		{"max":1, "from":[42+42,41], "forEach":[15,16,17,18,20], "name2":"Aspect Warrior unit without Mounted or Jump Packs"},
 		
 		{"min":4, "max":6, "from":[13], "appliesTo":[502]},
 		{"min":4, "max":6, "from":[12], "appliesTo":[500]},
