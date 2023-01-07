@@ -1,11 +1,11 @@
 {
 	"id":"13TH BLACK CRUSADE BLACK LEGION",
-	"version":"2014 Armybook Edition",
+	"version":"netEA Tournament Pack (2023-01-03)",
 	"notes":
-		["If a Daemon Prince is selected, then it replaces a Chaos Marine unit.", 
+		["If a Daemon Prince is selected, then it also replaces the Chaos Marine unit the Lord is in.", 
 		"Maximum one Daemon Prince per faction present in the army",
 		"Add one free Lesser Daemon to Daemon pool per Daemonic Pact"],
-		"by":"Iron Bloke, last edit 2013-10-16 Parintachin",
+		"by":"Iron Bloke, last edit 2023-01-07 Abetillo",
 	"sections":[
 		{"name":"DAEMONS", "formations":[
 			{"id":551, "name":"Daemon Pool", "pts":0, "upgrades":[50,51]}
@@ -31,7 +31,7 @@
 			{"id":533, "name":"Devastation Class Cruiser",	"pts":150, "upgrades":[]}, 
 			{"id":534, "name":"Despoiler Class Battleship","pts":250, "upgrades":[]}
 		]},
-		{"name":"WAR ENGINE FORMATIONS", "formations":[
+		{"name":"CHAOS WAR ENGINE FORMATIONS", "formations":[
 			{"id":522, "name":"Banelord Titan",		"pts":800, "upgrades":[]},
 			{"id":523, "name":"Death Wheel Squadron",	"pts":0, "upgrades":[23]},
 			{"id":521, "name":"Decimators", "pts":0, "upgrades":[25,57]},
@@ -80,7 +80,7 @@
 		{"max":1, "name":"Elite Formation", "from":[503,504], "forEach":[501], "name2":"Retinue"},
 		{"max":2, "name":"Support Formations", "from":[508,509,510, 511], "forEach":[501,502], "name2":"Retinue or Armoured Company"},
 		{"max":1, "from":[551]},
-		{"maxPercent":33, "name":"Titans & Navy", "from":[530,531,532,533,534,521,522,523,524,525]}
+		{"maxPercent":33.34, "name":"Chaos Navy and War Engines", "from":[530,531,532,533,534,521,522,523,524,525]}
 	],
 	"upgradeConstraints":[
 		{"min":1, "max":1, "from":[15,11,12,13,14]},
