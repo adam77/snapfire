@@ -8,8 +8,8 @@
 	"by": "Iron Bloke, last update 2023-01-08 Abetillo",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
-		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[14,31,35,36,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
-			{"id":512, "name":"Regimental HQ", "pts":225, "upgrades":[14,31,35,36,32,29,34,33,28,30], "units":"Supreme Commander, 9 Siege Infantry"}
+		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[13,14,31,35,36,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
+			{"id":512, "name":"Regimental HQ", "pts":225, "upgrades":[13,31,35,36,32,29,34,33,28,30], "units":"Supreme Commander, Commissar, 9 Siege Infantry"}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
 			{"id":501, "name":"Artillery Battery", 			"pts":150, "upgrades":[14], "units":"3 Götterdämmerung Howitzers, 3 Bruenhilde"},
