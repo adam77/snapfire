@@ -7,8 +7,8 @@
 		{"name":"COMPANIES", "formations":[
 		 	{"id":517, "name":"Artillery Company",	"pts":550, "upgrades":[14,51,52,53,54,58,59,55,56,57,61,62,63,64]},
 			{"id":516, "name":"Super-heavy Tank Company", "pts":500, "upgrades":[14,51,52,53,54,58,59,55,56,57,61,62,63,64]},
-			{"id":514, "name":"Tank Company", "pts":425,  "upgrades":[14,51,52,53,54,58,59,55,56,57,61,62,63,64]}
-			{"id":515, "name":"Tank Company", "pts":280, "upgrades":[14,51,52,53,54,58,59,55,56,57,61,62,63,64]},
+			{"id":514, "name":"Tank Company", "pts":425,  "upgrades":[14,51,52,53,54,58,59,55,56,57,61,62,63,64]},
+			{"id":515, "name":"Tank Company", "pts":280, "upgrades":[14,51,52,53,54,58,59,55,56,57,61,62,63,64]}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
 			{"id":502, "name":"Artillery Battery", "upgrades":[14],	"pts":250},
@@ -28,8 +28,8 @@
 		]},
 		{"name":"IMPERIAL NAVY ASSETS", "formations":[
 			{"id":520, "name":"Marauder Bombers", "pts":250, "units":"2x Marauders"},
-			{"id":519, "name":"Thunderbolt Fighters", "pts":150, "units":"2x Thunderbolts"}
-			{"id":510, "name":"Orbital Support", "pts":150},
+			{"id":519, "name":"Thunderbolt Fighters", "pts":150, "units":"2x Thunderbolts"},
+			{"id":510, "name":"Orbital Support", "pts":150}
 		]},
 		{"name":"TITAN LEGION BATTLEGROUPS", "formations":[
 			{"id":523, "name":"Reaver", "pts":650, "units":"1 Reaver Class Titan"},
