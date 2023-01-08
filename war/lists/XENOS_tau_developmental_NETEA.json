@@ -1,15 +1,15 @@
 {
    "id": "Tau Third Phase Expansion",
    "version": "6.8 Approved",
-   "by": "Iron Bloke, latest edit 2023-01-07 Abetillo",
+   "by": "Iron Bloke, latest edit 2023-01-08 Abetillo",
    "sections": [
-      { "name": "CADRES",
+      { "name": "TAU CADRES",
          "formations": [
             {"id": 532,"name": "Crisis Battlesuit Cadre","pts": 25,"upgrades": [17,35]},
             {"id": 531,"name": "Fire Warrior Cadre","pts": 225,"upgrades": [62,63,60,35,80,81,82,83,84,61,54,55]}
          ]
       },
-      {"name": "SUPPORT GROUPS",
+      {"name": "TAU SUPPORT FORMATIONS",
          "formations": [
             {"id": 516,"name": "Armour Support Group","pts": 0,"upgrades": [80,81,82,83,84,55]},
             {"id": 514,"name": "Broadside Group","pts": 300,"units": "6 XV88 Broadsides","upgrades": [35]},
@@ -20,7 +20,7 @@
             {"id": 513,"name": "Stealth Group","pts": 225,"units": "6 XV15 Stealth Units","upgrades": [35]}
          ]
       },
-      { "name": "AIR CASTE",
+      { "name": "AIR CASTE FORMATIONS",
          "formations": [
             {"id": 521,"name": "Barracuda Squadron","pts": 150,"units": "2 Barracuda Fighters","upgrades": []},
             {"id": 524,"name": "Manta Dropship","pts": 650,"upgrades": []},
@@ -78,12 +78,12 @@
       {"id": 96,"name": "4 Hammerhead Gunships (3 Ionhead, 1 Railhead)","pts": 225},
       {"id": 97,"name": "4 Hammerhead Gunships (1 Fusionhead, 1 Ionhead, 2 Railhead)","pts": 225},
       {"id": 98,"name": "4 Hammerhead Gunships (1 Fusionhead, 2 Ionhead, 1 Railhead)","pts": 225},
-      {"id": 99,"name": "4 Hammerhead Gunships (2 Fusionhead, 1 Ionhead, 1 Railhead)","pts": 225},
+      {"id": 99,"name": "4 Hammerhead Gunships (2 Fusionhead, 1 Ionhead, 1 Railhead)","pts": 225}
    ],
    "formationConstraints": [
       {"max": 1,"from": [525]},
-      {"maxPercent": 33.34,"name": "Air Caste","from": [521,522,523,524,525,526]},
-      {"max": 3,"name": "Support Groups","from": [515,516,514,518,512,517,513],"forEach": [532,531],"name2": "Cadre"}
+      {"maxPercent": 33.34,"name": "Air Caste Formations","from": [521,522,523,524,525,526]},
+      {"max": 3,"name": "Support Formations","from": [515,516,514,518,512,517,513],"forEach": [532,531],"name2": "Cadre"}
    ],
    "upgradeConstraints": [
       {"max": 8,"min": 4,"from": [17],"appliesTo": [532]},
@@ -91,9 +91,9 @@
       {"max": 1,"perArmy": true,"from": [51]},
       {"max": 1,"perArmy": true,"from": [60]},
       {"max": 1,"from": [50,51],"appliesTo": [532],"name": "Cmdr"},
-      {"max": 1,"from": [34,35,36],"appliesTo": [532,531,512,515,513],"name": "Drone"},
+      {"max": 1,"from": [35],"appliesTo": [532,531,512,515,513]},
       {"max": 1,"from": [60],"appliesTo": [531]},
-      {"max": 1,"min": 1,"from": [31,32,64,65,66,67],"appliesTo": [531],"name": "Warriors"},
+      {"max": 1,"min": 1,"from": [31,32,64,65,66,67],"appliesTo": [531]},
       {"max": 1,"from": [55],"appliesTo": [531,516]},
       {"max": 1,"from": [61],"appliesTo": [531]},
       {"max": 1,"from": [54],"appliesTo": [531,512,515]},
