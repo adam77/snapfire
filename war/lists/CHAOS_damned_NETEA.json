@@ -79,10 +79,6 @@
 	],
 	"formationConstraints":[
 		{"max":1, "name":"Support Coven", "from":[501,502,503,504,541,542,551,552,553,554,555,556,557,558,559,560,561], "forEach":[531], "name2":"Coven"},
-		{"max":1, "name":"Khorne Demon Engine", "from":[551,552], "forEach":[81], "name2":"Khorne dedicated Coven"},
-		{"max":1, "name":"Nurgle Demon Engine", "from":[553,554], "forEach":[82], "name2":"Nurgle dedicated Coven"},
-		{"max":1, "name":"Slaanesh Demon Engine", "from":[555,556], "forEach":[83], "name2":"Slaanesh dedicated Coven"},
-		{"max":1, "name":"Tzeentch Demon Engine", "from":[557,558,559], "forEach":[84], "name2":"Tzeentch dedicated Coven"},
 		{"max":2, "from":[536]},
 		{"max":1, "from":[537]}
 	],
