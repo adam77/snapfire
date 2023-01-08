@@ -1,7 +1,7 @@
 {
 	"id":"Alaitoc Craftworld",
 	"version":"NetEA Tournament Pack (2023-01-03)",
-	"notes":["When purchasing transports for Aspect Warrior formations, only the minimum needed to transport the entire formation can be added"],
+	"notes":["When purchasing transports for Aspect Warrior formations, only the minimum needed to transport the entire formation may be added"],
 	"by":"Iron Bloke, last updated 2023-01-08 by Abetillo",
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
@@ -93,9 +93,7 @@
 		{"min":6, "max":6, "from":[27,28], "appliesTo":[503]},
 		{"min":7, "max":7, "from":[24,25], "appliesTo":[511,512]},
 		{"min":6, "max":6, "from":[15,16,17,18,19,20,21,22], "appliesTo":[501]},
-		
-		{"max":1, "name":"transport capacity", "from":[41,42], "forEach":[15,16,17,18,20], "name2":"Aspect Warrior unit without Mounted or Jump Packs"},
-		
+		{"max":6, "from":[41,42], "appliesTo":[501]},
 		{"min":4, "max":6, "from":[13], "appliesTo":[502]},
 		{"min":4, "max":6, "from":[12], "appliesTo":[500]},
 		{"min":1, "max":1, "from":[47,48,49], "appliesTo":[510]}
