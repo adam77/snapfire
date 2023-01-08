@@ -11,7 +11,7 @@
 			{"id":500, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18,36,37]},
 			{"id":507, "name":"Scout",		"pts":150, "upgrades":[15,16,17,18,35,38,39,11,12]},
 			{"id":512, "name":"Terminator",		"pts":575, "units":"4 Terminators, 4 Land Raiders", "upgrades":[15,16,17,18,31,36,37]},
-			{"id":504, "name":"Land Speeder"	"pts":200, "upgrades":[15,16,17,18]},
+			{"id":504, "name":"Land Speeder",	"pts":200, "upgrades":[15,16,17,18]},
 			{"id":506, "name":"Predator",		"pts":250, "upgrades":[15,16,17,18,31,36,37]},
 			{"id":515, "name":"Whirlwinds",		"pts":275, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,31,36,37]}
 		]},
