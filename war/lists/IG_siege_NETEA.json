@@ -1,15 +1,15 @@
 {
 	"id": "Baran Siege Masters",
-	"version": "NetEA Tournament Pack (2022-04-22) ",
-	"notes": [
-		 "Even if the Sappers are split, all eight Sappers units must be purchased"
-		 "One Commissar character can be added per five hundred points"
-		 ],
-	"by": "Iron Bloke, last update 2022-12-15 Abetillo",
+	"version": "NetEA Tournament Pack (2023-01-03) ",
+	"notes":[
+		"Even if the Sappers are split, all eight Sappers units must be purchased",
+		"One Commissar character can be added per five hundred points"
+		],
+	"by": "Iron Bloke, last update 2023-01-08 Abetillo",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
-		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[14,31,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
-			{"id":512, "name":"Regimental HQ", "pts":225, "upgrades":[14,31,32,29,34,33,28,30], "units":"Supreme Commander, 9 Siege Infantry"}
+		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[14,31,35,36,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
+			{"id":512, "name":"Regimental HQ", "pts":225, "upgrades":[14,31,35,36,32,29,34,33,28,30], "units":"Supreme Commander, 9 Siege Infantry"}
 		]},
 		{"name":"SUPPORT FORMATIONS", "formations":[
 			{"id":501, "name":"Artillery Battery", 			"pts":150, "upgrades":[14], "units":"3 Götterdämmerung Howitzers, 3 Bruenhilde"},
@@ -27,7 +27,7 @@
 		{"name":"SIEGE REGIMENT FORTIFICATIONS", "formations":[
 			{"id":530, "name":"Fortified Position",	"pts":75, "upgrades":[], "units":"Up to 50cm trenches, 50cm razor wire, plus 6 Gun Emplacements."}
 		]},
-		{"name":"IMPERIAL NAVY", "formations":[
+		{"name":"IMPERIAL NAVY AIRCRAFT", "formations":[
 			{"id":520, "name":"Marauder Bombers",		"pts":250, "upgrades":[], "units":"2 Marauders"},
 			{"id":519, "name":"Thunderbolt Fighters",	"pts":150, "upgrades":[], "units":"2 Thunderbolts"}
 		]}
@@ -40,17 +40,21 @@
 		
 		{"id":17, "name":"Baneblade",					"pts":0},
 		{"id":18, "name":"Shadowsword",				"pts":0},
+
 		{"id":28, "name":"Siege Infantry Platoon (6 Siege Infantry)","pts":75},
 		{"id":29, "name":"Rapier Platoon (3 Rapier laser destroyer units)",			"pts":75},
 		{"id":30, "name":"Thudd Gun Platoon (3 Guns)",			"pts":75},
-		{"id":31, "name":"Hellhound Squadron (3 Hellhounds)",	"pts":100},
+		{"id":31, "name":"1 Hellhound",					"pts":25},
+		{"id":35, "name":"2 Hellhounds",				"pts":50},
+		{"id":36, "name":"3 Hellhounds",				"pts":75}
 		{"id":32, "name":"Griffon Battery (3 Griffons)",		"pts":50},
-		{"id":33, "name":"2 Sniper units",							"pts":50},
 		{"id":34, "name":"Sniper unit",								"pts":25}
+		{"id":33, "name":"2 Sniper units",							"pts":50},
+		
 		
 	],
 	"formationConstraints":[
-		{"maxPercent":25, "name":"Navy", "from":[519,520]},
+		{"maxPercent":25, "name":"Imperial Navy Aircraft", "from":[519,520]},
 		{"max":2, "name":"Support Formations", "from":[500,501,502,503,505,506,507,508,509,510,511], "forEach":[512,513], "name2":"Regiment Company"},
 		{"max":1, "from":[506]},
 		{"max":1, "from":[510,511]},
@@ -60,16 +64,17 @@
 	"upgradeConstraints":[
 		{"min":1, "max":1, "from":[12,11], "appliesTo":[502]},
 		{"min":1, "max":1, "from":[17,18], "appliesTo":[507]},
-		{"max":3, "name":"Upgrades", "from":[28,29,30,31,32,33,34]},
+		{"max":3, "name":"Upgrades", "from":[28,29,30,31,35,36,32,33,34]},
 		{"max":8, "name":"Sappers unit", "from":[13], "forEach":[511], "name2":"Sapper Platoon (split)"
 		{"max":8, "from":[13]},
 		{"max":1, "from":[14]},
 		{"max":1, "from":[28]},
 		{"max":1, "from":[29]},
 		{"max":1, "from":[30]},
-		{"max":1, "from":[31]},
+		{"max":1, "name":"Hellhound upgrade" "from":[31,35,36]},
 		{"max":1, "from":[32]},
+		{"max":1, "from":[33,34]}
 		{"max":1, "name":"Sniper upgrade", "from":[34,33]},
-		{"max":1, "from":[35]}
+		
 	]
 }
