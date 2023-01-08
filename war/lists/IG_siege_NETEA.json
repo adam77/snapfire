@@ -2,8 +2,8 @@
 	"id": "Baran Siege Masters",
 	"version": "NetEA Tournament Pack (2023-01-03) ",
 	"notes":[
-		"Even if the Sappers are split, all eight Sappers units must be purchased when taking the Sapper Platoon",
-		"One Commissar character can be added per five hundred points"
+		"Even if the Sappers units are split between formations, all eight Sappers units must be purchased with the Platoon",
+		"One Commissar character can be added per five hundred points, or part thereof"
 		],
 	"by": "Iron Bloke, last update 2023-01-08 Abetillo",
 	"sections":[
@@ -63,7 +63,7 @@
 		{"min":1, "max":1, "from":[12,11], "appliesTo":[502]},
 		{"min":1, "max":1, "from":[17,18], "appliesTo":[507]},
 		{"max":3, "name":"Upgrades", "from":[28,29,30,31,35,36,32,34,33]},
-		{"max":8, "name":"Sappers unit", "from":[13], "forEach":[511], "name2":"Sapper Platoon (split)"},
+		{"max":8, "perArmy":true, "name":"Sappers unit", "from":[13], "forEach":[511], "name2":"Sapper Platoon (split)"},
 		{"min":8, "max":8, "from":[13], "appliesTo":[510]},
 		{"max":1, "from":[14]},
 		{"max":1, "from":[28]},
