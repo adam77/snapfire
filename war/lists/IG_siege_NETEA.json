@@ -35,10 +35,10 @@
 	"upgrades":[
 		{"id":12, "name":"Gun Emplacements",			"pts":0},
 		{"id":11, "name":"Bruenhilde",				"pts":0},
-		{"id":13, "name":"Sappers unit",			"pts":30}
-		{"id":14, "name":"Commissar",				"pts":0}
+		{"id":13, "name":"Sappers unit",			"pts":30},
+		{"id":14, "name":"Commissar",				"pts":0},
 		
-		{"id":17, "name":"Baneblade",					"pts":0},
+		{"id":17, "name":"Baneblade",				"pts":0},
 		{"id":18, "name":"Shadowsword",				"pts":0},
 
 		{"id":28, "name":"Siege Infantry Platoon (6 Siege Infantry)","pts":75},
@@ -46,12 +46,10 @@
 		{"id":30, "name":"Thudd Gun Platoon (3 Guns)",			"pts":75},
 		{"id":31, "name":"1 Hellhound",					"pts":25},
 		{"id":35, "name":"2 Hellhounds",				"pts":50},
-		{"id":36, "name":"3 Hellhounds",				"pts":75}
+		{"id":36, "name":"3 Hellhounds",				"pts":75},
 		{"id":32, "name":"Griffon Battery (3 Griffons)",		"pts":50},
-		{"id":34, "name":"Sniper unit",								"pts":25}
-		{"id":33, "name":"2 Sniper units",							"pts":50},
-		
-		
+		{"id":34, "name":"Sniper unit",								"pts":25},
+		{"id":33, "name":"2 Sniper units",							"pts":50}
 	],
 	"formationConstraints":[
 		{"maxPercent":25, "name":"Imperial Navy Aircraft", "from":[519,520]},
@@ -65,7 +63,7 @@
 		{"min":1, "max":1, "from":[12,11], "appliesTo":[502]},
 		{"min":1, "max":1, "from":[17,18], "appliesTo":[507]},
 		{"max":3, "name":"Upgrades", "from":[28,29,30,31,35,36,32,34,33]},
-		{"max":8, "name":"Sappers unit", "from":[13], "forEach":[511], "name2":"Sapper Platoon (split)"
+		{"max":8, "name":"Sappers unit", "from":[13], "forEach":[511], "name2":"Sapper Platoon (split)",
 		{"max":8, "from":[13]},
 		{"max":1, "from":[14]},
 		{"max":1, "from":[28]},
@@ -73,8 +71,8 @@
 		{"max":1, "from":[30]},
 		{"max":1, "name":"Hellhound upgrade", "from":[31,35,36]},
 		{"max":1, "from":[32]},
-		{"max":1, "from":[33,34]}
-		{"max":1, "name":"Sniper upgrade", "from":[34,33]},
+		{"max":1, "from":[33,34]},
+		{"max":1, "name":"Sniper upgrade", "from":[34,33]}
 		
 	]
 }
