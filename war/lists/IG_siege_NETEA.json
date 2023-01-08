@@ -2,7 +2,7 @@
 	"id": "Baran Siege Masters",
 	"version": "NetEA Tournament Pack (2023-01-03) ",
 	"notes":[
-		"Even if the Sappers are split, all eight Sappers units must be purchased",
+		"Even if the Sappers are split, all eight Sappers units must be purchased when taking the Sapper Platoon",
 		"One Commissar character can be added per five hundred points"
 		],
 	"by": "Iron Bloke, last update 2023-01-08 Abetillo",
@@ -20,7 +20,7 @@
 			{"id":509, "name":"Heavy Tank Platoon",			"pts":300, "upgrades":[14], "units":"6 Ragnarok Heavy Tanks"},
 			{"id":508, "name":"Light Tank Platoon",			"pts":150, "upgrades":[14], "units":"6 Siegfried Light Tanks"},
 			{"id":505, "name":"Rough Rider Platoon",			"pts":150, "upgrades":[14], "units":"6 Rough Riders"},
-			{"id":510, "name":"Sapper Platoon",				"pts":250, "upgrades":[14], "units":"8 Sapper Units"},
+			{"id":510, "name":"Sapper Platoon",				"pts":10, "upgrades":[14]},
 			{"id":511, "name":"Sapper Platoon (split)",			"pts":10, "upgrades":[14,13]},
 			{"id":507, "name":"Super-heavy Tank Platoon", 		"pts":200, "upgrades":[14]}
 		]},
@@ -64,7 +64,7 @@
 		{"min":1, "max":1, "from":[17,18], "appliesTo":[507]},
 		{"max":3, "name":"Upgrades", "from":[28,29,30,31,35,36,32,34,33]},
 		{"max":8, "name":"Sappers unit", "from":[13], "forEach":[511], "name2":"Sapper Platoon (split)"},
-		{"max":8, "from":[13], "appliesTo":[510]},
+		{"min":8, "max":8, "from":[13], "appliesTo":[510]},
 		{"max":1, "from":[14]},
 		{"max":1, "from":[28]},
 		{"max":1, "from":[29]},
@@ -74,5 +74,5 @@
 		{"max":1, "from":[33,34]},
 		{"max":1, "name":"Sniper upgrade", "from":[34,33]}
 		
-	],
+	]
 }
