@@ -1,6 +1,7 @@
 {
 	"id":"Steel Legion",
-	"version":"NetEA Tournament Pack 2022",
+	"version":"NetEA Tournament Pack (2023-01-03)",
+	"notes":["One Commissar character can be added per five hundred points"],
 	"by":"Kyussinchains, last update 2022-12-11 Abetillo",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
@@ -53,10 +54,10 @@
 		{"id":28, "name":"Infantry Platoon (6 Infantry)",		"pts":100},
 		{"id":29, "name":"Tank Squadron (3 Leman Russ)",		"pts":175},
 		{"id":30, "name":"Tank Squadron (3 Demolishers)",		"pts":175},
-		{"id":31, "name":"Hellhound",					"pts":25},
+		{"id":31, "name":"1x Hellhound",				"pts":25},
 		{"id":32, "name":"Griffon Battery (3 Griffons)",		"pts":50},
-		{"id":33, "name":"Sniper",					"pts":25},
-		{"id":34, "name":"Ogryn",					"pts":25},
+		{"id":33, "name":"1x Sniper",					"pts":25},
+		{"id":34, "name":"1x Ogryn",					"pts":25},
 		{"id":35, "name":"Hydra",					"pts":50},
 		{"id":36, "name":"Valkyrie Transport",				"pts":150},
 		{"id":38, "name":"Chimera Transport",				"pts":100},
@@ -89,12 +90,11 @@
 		{"max":1, "from":[12]},
 		{"max":1, "from":[27]},
 		{"max":1, "from":[28]},
-		{"max":1, "from":[29]},
-		{"max":1, "from":[30]},
-		{"max":1, "from":[31,62,63]},
+		{"max":1, "name":"Leman Russ upgrade", "from":[29,30]},
+		{"max":1, "name":"Hellhound upgrade", "from":[31,62,63]},
 		{"max":1, "from":[32]},
-		{"max":1, "from":[33,60]},
-		{"max":1, "from":[34,61]},
+		{"max":1, "name":"Sniper upgrade", "from":[33,60]},
+		{"max":1, "name":"Ogryn upgrade","from":[34,61]},
 		{"max":1, "from":[35]},
 		{"max":1, "from":[36,38]}
 	]
