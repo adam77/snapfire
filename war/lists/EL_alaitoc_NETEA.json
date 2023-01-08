@@ -92,7 +92,7 @@
 		
 		{"min":6, "max":6, "from":[27,28], "appliesTo":[503]},
 		{"min":7, "max":7, "from":[24,25], "appliesTo":[511,512]},
-		{"min":6, "max":6, "from":[15,16,17,18,19,20,21,22],2x[42], "appliesTo":[501]},
+		{"min":6, "max":6, "from":[15,16,17,18,19,20,21,22], "appliesTo":[501]},
 		
 		{"max":1, "from":[41][42], "forEach":[15,16,17,18,20], "name2":"Aspect Warrior unit without Mounted or Jump Packs"},
 		
