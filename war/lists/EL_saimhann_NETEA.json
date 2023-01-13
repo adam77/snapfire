@@ -1,7 +1,7 @@
 {
 	"id": "Saim-Hann Craftworld",
-	"version": "Tournament Pack",
-	"by": "Parintachin",
+	"version":"NetEA Tournament Pack (2023-01-03)",
+	"by": "Parintachin, last edit 2023-01-13 Abetillo",
 	"notes": ["All infantry units in Aspect Warrior formations (apart from Swooping Hawks and Warp Spiders) must be transported in Wave Serpents and/or Falcons, or be entering play via a Webway Portal."],
 	"sections": [
 		{
@@ -308,8 +308,8 @@
 			"name2": "Wild Rider Clan"
 		},
 		{
-			"maxPercent": 33,
-			"name": "Aircraft & Titans",
+			"maxPercent": 33.34,
+			"name": "Spacecraft, Aircraft & Titans",
 			"from": [210, 220, 230, 240, 250]
 		},
 		{
