@@ -1,8 +1,8 @@
 {
 	"id":"Iron Warriors",
-	"version":"NetEA v3.1 *UNDER DEVELOPMENT*",
+	"version":"NetEA Tournament Pack (2023-01-03)",
 	"notes":["If a Daemon Prince is selected, then it replaces the unit with an Iron Warrior Lord."],
-	"by":"Onyx",
+	"by":"Onyx, last update 2023-01-07 Abetillo",
 	"sections":[
 		{"name":"CORE", "formations":[
 			{"id":501, "name":"Iron Warriors Company", 	"pts":300, "units":"6 Chaos Space Marines and 2 Havocs", "upgrades":[53,54,59,61,62,63,66,67,68]},
@@ -32,7 +32,7 @@
 			{"id":533, "name":"Devastation Class Cruiser",	"pts":150, "upgrades":[]}, 
 			{"id":534, "name":"Despoiler Class Battleship","pts":250, "upgrades":[]}
 		]},
-		{"name":"DARK MECHANICUM", "formations":[
+		{"name":"CHAOS WAR ENGINES", "formations":[
 			{"id":520, "name":"Siegelord Titan",		"pts":850, "upgrades":[]},
 			{"id":521, "name":"Ravager Titan",			"pts":650, "upgrades":[]},
 			{"id":522, "name":"Ordinatus Medrengard",			"pts":625, "upgrades":[]}
@@ -67,7 +67,7 @@
 		{"max":1, "name":"Spacecraft", "from":[533,534]},
 		{"max":1, "name":"Siege Assault Formation", "from":[503,504,510,511,512,513,514], "forEach":[501,502,540,541], "name2":"Core formation"},
 		{"max":2, "name":"Siege Support Formations", "from":[505,506,507,508,509], "forEach":[501,502,540,541], "name2":"Core Formation"},
-		{"maxPercent":33, "name":"Dark Mechanicus & Chaos Navy", "from":[530,531,532,533,534,520,521,522]}
+		{"maxPercent":33.34, "name":"Chaos Navy and War Engine Formations", "from":[530,531,532,533,534,520,521,522]}
 	],
 	"upgradeConstraints":[
 		{"min":1, "max":1, "from":[17,19,20], "appliesTo":[501,503,510,512,513]},

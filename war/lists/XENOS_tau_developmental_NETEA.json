@@ -1,17 +1,17 @@
 {
    "id": "Tau Third Phase Expansion",
    "version": "6.8 Approved",
-   "by": "Iron Bloke, latest edit 2015-08-16 Kyrt",
+   "by": "Iron Bloke, latest edit 2023-01-08 Abetillo",
    "sections": [
-      { "name": "CADRES",
+      { "name": "TAU CADRES",
          "formations": [
             {"id": 532,"name": "Crisis Battlesuit Cadre","pts": 25,"upgrades": [17,35]},
-            {"id": 531,"name": "Fire Warrior Cadre","pts": 225,"upgrades": [62,63,60,35,80,81,82,61,54,55]}
+            {"id": 531,"name": "Fire Warrior Cadre","pts": 225,"upgrades": [62,63,60,35,80,81,82,83,84,61,54,55]}
          ]
       },
-      {"name": "SUPPORT GROUPS",
+      {"name": "TAU SUPPORT FORMATIONS",
          "formations": [
-            {"id": 516,"name": "Armour Support Group","pts": 0,"upgrades": [87,88,89,55]},
+            {"id": 516,"name": "Armour Support Group","pts": 0,"upgrades": [80,81,82,83,84,55]},
             {"id": 514,"name": "Broadside Group","pts": 300,"units": "6 XV88 Broadsides","upgrades": [35]},
             {"id": 518,"name": "Kroot Kindred","pts": 175,"units": "Kroot Master Shaper","upgrades": [58,59]},
             {"id": 512,"name": "Pathfinder Group","pts": 200,"units": "4 Pathfinders, 2 Devilfish","upgrades": [35,54]},
@@ -20,7 +20,7 @@
             {"id": 513,"name": "Stealth Group","pts": 225,"units": "6 XV15 Stealth Units","upgrades": [35]}
          ]
       },
-      { "name": "AIR CASTE",
+      { "name": "AIR CASTE FORMATIONS",
          "formations": [
             {"id": 521,"name": "Barracuda Squadron","pts": 150,"units": "2 Barracuda Fighters","upgrades": []},
             {"id": 524,"name": "Manta Dropship","pts": 650,"upgrades": []},
@@ -48,7 +48,6 @@
       {"id": 51,"name": "Shas'o","pts": 100},
       {"id": 54,"name": "3 Piranhas","pts": 75},
       {"id": 55,"name": "Skyray","pts": 100},
-      {"id": 22,"name": "Hammerhead gunship","pts": 50},
       {"id": 58,"name": "3 Kroot Hound Packs","pts": 50},
       {"id": 59,"name": "3 Krootox Herds","pts": 50},
       {"id": 19,"name": "9 Kroot Warriors","pts": 0},
@@ -60,28 +59,41 @@
       {"id": 12,"name": "Custodian Class Battleship","pts": 25},
 
       {"id": 80,"name": "2 Hammerhead Gunships (Ionhead)","pts": 75},
-      {"id": 81,"name": "1 Hammerhead Gunship (Rail- or Fusionhead)","pts": 50},
-      {"id": 82,"name": "2 Hammerhead Gunships (Rail- or Fusionhead)","pts": 100},
+      {"id": 81,"name": "1 Hammerhead Gunship (Fusionhead)","pts": 50},
+      {"id": 82,"name": "1 Hammerhead Gunship (Railhead)","pts": 50},
+      {"id": 83,"name": "2 Hammerhead Gunships (Fusionhead)","pts": 100},
+      {"id": 84,"name": "2 Hammerhead Gunships (Railhead)","pts": 100},
 
-      {"id": 85,"name": "4 Hammerhead Gunships (Ion- or Fusionhead)","pts": 200},
-      {"id": 86,"name": "4 Hammerhead Gunship (Railhead)","pts": 225},
-      {"id": 87,"name": "2 extra Hammerhead Gunships (Ionhead)","pts": 75},
-      {"id": 88,"name": "1 extra Hammerhead Gunship (Rail- or Fusionhead)","pts": 50},
-      {"id": 89,"name": "2 extra Hammerhead Gunships (Rail- or Fusionhead)","pts": 100}
+      {"id": 85,"name": "4 Hammerhead Gunships (Fusionhead)","pts": 200},
+      {"id": 86,"name": "4 Hammerhead Gunships (Ionhead)","pts": 200},
+      {"id": 87,"name": "4 Hammerhead Gunships (Railhead)","pts": 225},
+      {"id": 88,"name": "4 Hammerhead Gunships (1 Fusionhead, 3 Ionhead)","pts": 200},
+      {"id": 89,"name": "4 Hammerhead Gunships (2 Fusionhead, 2 Ionhead)","pts": 200},
+      {"id": 90,"name": "4 Hammerhead Gunships (3 Fusionhead, 1 Ionhead)","pts": 200},
+      {"id": 91,"name": "4 Hammerhead Gunships (1 Fusionhead, 3 Railhead)","pts": 225},
+      {"id": 92,"name": "4 Hammerhead Gunships (2 Fusionhead, 2 Railhead)","pts": 225},
+      {"id": 93,"name": "4 Hammerhead Gunships (3 Fusionhead, 1 Railhead)","pts": 225},
+      {"id": 94,"name": "4 Hammerhead Gunships (1 Ionhead, 3 Railhead)","pts": 225},
+      {"id": 95,"name": "4 Hammerhead Gunships (2 Ionhead, 2 Railhead)","pts": 225},
+      {"id": 96,"name": "4 Hammerhead Gunships (3 Ionhead, 1 Railhead)","pts": 225},
+      {"id": 97,"name": "4 Hammerhead Gunships (1 Fusionhead, 1 Ionhead, 2 Railhead)","pts": 225},
+      {"id": 98,"name": "4 Hammerhead Gunships (1 Fusionhead, 2 Ionhead, 1 Railhead)","pts": 225},
+      {"id": 99,"name": "4 Hammerhead Gunships (2 Fusionhead, 1 Ionhead, 1 Railhead)","pts": 225}
    ],
    "formationConstraints": [
       {"max": 1,"from": [525]},
-      {"maxPercent": 33,"name": "War Engines & Allies","from": [521,522,523,524,525,526]},
-      {"max": 3,"name": "Support Groups","from": [515,516,514,518,512,517,513],"forEach": [532,531],"name2": "Cadre"}
+      {"maxPercent": 33.34,"name": "Air Caste Formations","from": [521,522,523,524,525,526]},
+      {"max": 3,"name": "Support Formations","from": [515,516,514,518,512,517,513],"forEach": [532,531],"name2": "Cadre"}
    ],
    "upgradeConstraints": [
       {"max": 8,"min": 4,"from": [17],"appliesTo": [532]},
       {"max": 1,"min": 1,"from": [50,51],"appliesTo": [532]},
       {"max": 1,"perArmy": true,"from": [51]},
+      {"max": 1,"perArmy": true,"from": [60]},
       {"max": 1,"from": [50,51],"appliesTo": [532],"name": "Cmdr"},
-      {"max": 1,"from": [34,35,36],"appliesTo": [532,531,512,515,513],"name": "Drone"},
+      {"max": 1,"from": [35],"appliesTo": [532,531,512,515,513]},
       {"max": 1,"from": [60],"appliesTo": [531]},
-      {"max": 1,"min": 1,"from": [31,32,64,65,66,67],"appliesTo": [531],"name": "Warriors"},
+      {"max": 1,"min": 1,"from": [31,32,64,65,66,67],"appliesTo": [531]},
       {"max": 1,"from": [55],"appliesTo": [531,516]},
       {"max": 1,"from": [61],"appliesTo": [531]},
       {"max": 1,"from": [54],"appliesTo": [531,512,515]},
@@ -90,14 +102,13 @@
       {"max": 1,"from": [63],"appliesTo": [531]},
       {"max": 1,"from": [58],"appliesTo": [518]},
       {"max": 1,"from": [59],"appliesTo": [518]},
-      {"max": 1,"from": [80,81,82]},
-      {"max": 1,"from": [87,88,89]},
+      {"max": 1,"from": [80,81,82,83,84]},
       {"max": 1,"min": 1,"from": [19,20],"appliesTo": [ 518]},
       {"max": 6,"min": 6,"from": [25,26],"appliesTo": [515]},
       {"max": 1,"from": [70],"appliesTo": [522]},
-      {"max": 3,"from": [60,55,61,35,54,56,62,63,64,65,66,67,80,81,82],"appliesTo": [531,532]},
+      {"max": 3,"from": [60,55,61,35,54,56,62,63,64,65,66,67,80,81,82,83,84],"appliesTo": [531,532]},
       {"max": 1,"min": 1,"from": [11,12],"appliesTo": [525]},
-      {"max": 1,"min": 1,"from": [85,86],"appliesTo": [516]}
+      {"max": 1,"min": 1,"from": [85,86,87,88,89,90,91,92,93,94,95,96,97,98,99],"appliesTo": [516]}
    ]
 }
 

@@ -1,7 +1,7 @@
 {
    "id": "Burning Death Speed Freeks",
-   "version": "NetEA Tournament Pack 2013",
-   "by": "berzerkmonkey, last update 2015-04-21 Kyussinchains",
+   "version": "NetEA Tournament Pack (2022-04-22)",
+   "by": "berzerkmonkey, last update 2023-01-04 Abetillo",
    "sections": [
       {
          "name": "FORMATIONS",
@@ -11,6 +11,7 @@
                "name": "Blitz Brigade",
                "pts": 10,
                "upgrades": [
+		  31,     
                   66,
                   20,
                   21,
@@ -29,6 +30,7 @@
                "name": "Blitz Brigade (Big)",
                "pts": -30,
                "upgrades": [
+                  31,     
                   66,
                   20,
                   21,
@@ -47,6 +49,7 @@
                "name": "Blitz Brigade ('Uge)",
                "pts": -70,
                "upgrades": [
+                  31,     
                   66,
                   20,
                   21,
@@ -65,6 +68,7 @@
                "name": "Fortress Mob",
                "pts": 275,
                "upgrades": [
+                  31,     
                   66,
                   76,
                   79,
@@ -78,6 +82,7 @@
                "name": "Fortress Mob (Big)",
                "pts": 475,
                "upgrades": [
+                  31,     
                   66,
                   76,
                   79,
@@ -91,6 +96,7 @@
                "name": "Fortress Mob ('Uge)",
                "pts": 675,
                "upgrades": [
+                  31,     
                   66,
                   76,
                   79,
@@ -116,6 +122,7 @@
                "name": "Kult of Speed",
                "pts": 0,
                "upgrades": [
+		  31,     
                   20,
                   21,
                   22,
@@ -130,6 +137,7 @@
                "name": "Kult of Speed (Big)",
                "pts": -50,
                "upgrades": [
+                  31,     
                   20,
                   21,
                   22,
@@ -144,6 +152,7 @@
                "name": "Kult of Speed ('Uge)",
                "pts": -100,
                "upgrades": [
+                  31,     
                   20,
                   21,
                   22,
@@ -159,6 +168,7 @@
                "pts": 100,
                "units": "3 Boyz, 4 Trukks",
                "upgrades": [
+		  31,     
                   67,
                   68,
                   20,
@@ -180,7 +190,8 @@
                "pts": 175,
                "units": "6 Boyz, 8 Trukks",
                "upgrades": [
-                  66,
+                  31,     
+                  67,
                   68,
                   20,
                   21,
@@ -201,6 +212,8 @@
                "pts": 250,
                "units": "9 Boyz, 12 Trukks",
                "upgrades": [
+		  31,     
+                  67,     
                   68,
                   20,
                   21,
@@ -220,26 +233,26 @@
                "name": "Warbike Outriders",
                "pts": 150,
                "units": "5 Scout Warbikes",
-               "upgrades": []
+               "upgrades": [31]
             },
             {
                "id": 510,
                "name": "Warbike Outriders (Big)",
                "pts": 250,
                "units": "10 Scout Warbikes",
-               "upgrades": []
+               "upgrades": [31]
             },
             {
                "id": 511,
                "name": "Warbike Outriders ('Uge)",
                "pts": 350,
                "units": "15 Scout Warbikes",
-               "upgrades": []
+               "upgrades": [31]
             }
          ]
       },
       {
-         "name": "AIRCRAFT and SPACECRAFT",
+         "name": "ORK AIRCRAFT FORMATIONS",
          "formations": [
             {
                "id": 516,
@@ -259,6 +272,11 @@
       }
    ],
    "upgrades": [
+      {
+         "id": 31,
+         "name": "Mekboy Bad Ork Bikerboy",
+         "pts": 0
+      },
       {
          "id": 11,
          "name": "Nobz",
@@ -340,11 +358,6 @@
          "pts": 50
       },
       {
-         "id": 95,
-         "name": "Gunfortress",
-         "pts": 125
-      },
-      {
          "id": 56,
          "name": "Battlefortress",
          "pts": 0
@@ -359,6 +372,11 @@
          "name": "Battlefortress",
          "pts": 115
       },
+      {
+         "id": 95,
+         "name": "Gunfortress",
+         "pts": 125
+      },   
       {
          "id": 65,
          "name": "Fighta Bomba",
@@ -375,8 +393,8 @@
          ]
       },
       {
-         "maxPercent": 33,
-         "name": "War Engines & Allies",
+         "maxPercent": 33.34,
+         "name": "Ork Aircraft Formations",
          "from": [
             516,
             517
@@ -384,6 +402,13 @@
       }
    ],
    "upgradeConstraints": [
+      {
+	      "max": 1, 
+	      "from": [
+	    31
+	 ], 
+	      "perArmy": true
+      },
       {
          "max": 1,
          "min": 1,
@@ -563,16 +588,6 @@
          "name": "Wagonz"
       },
       {
-         "max": 1,
-         "from": [
-            95
-         ],
-         "appliesTo": [
-            506,
-            512
-         ]
-      },
-      {
          "min": 8,
          "from": [
             74,
@@ -583,16 +598,6 @@
             507
          ],
          "name": "Wagonz"
-      },
-      {
-         "max": 2,
-         "from": [
-            95
-         ],
-         "appliesTo": [
-            507,
-            513
-         ]
       },
       {
          "min": 12,
@@ -607,30 +612,11 @@
          "name": "Wagonz"
       },
       {
-         "max": 3,
-         "from": [
-            95
-         ],
-         "appliesTo": [
-            508,
-            514
-         ]
-      },
-      {
          "max": 2,
          "min": 2,
          "from": [
             56,
             57
-         ],
-         "appliesTo": [
-            512
-         ]
-      },
-      {
-         "max": 1,
-         "from": [
-            91
          ],
          "appliesTo": [
             512
@@ -648,29 +634,11 @@
          ]
       },
       {
-         "max": 2,
-         "from": [
-            91
-         ],
-         "appliesTo": [
-            513
-         ]
-      },
-      {
          "max": 6,
          "min": 6,
          "from": [
             56,
             57
-         ],
-         "appliesTo": [
-            514
-         ]
-      },
-      {
-         "max": 3,
-         "from": [
-            91
          ],
          "appliesTo": [
             514

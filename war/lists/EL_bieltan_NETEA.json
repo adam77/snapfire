@@ -1,7 +1,8 @@
 {
 	"id":"Biel-Tan Craftworld",
-	"version":"Biel-Tan Craftworld (v4.2)",
-	"by":"Iron Bloke, last edit 2016-09-27 Kyussinchains",
+	"version":"NetEA Tournament Pack (2023-01-03)",
+	"notes":["When purchasing Wave Serpents or Falcons for Aspect Warrior formations, only the minimum needed to transport the entire formation may be added"],
+	"by":"Iron Bloke, last edit 2023-01-13 Abetillo",
 	"sections":[
 		{"name":"INDIVIDUALS", "formations":[
 			{"id":507, "name":"Wraithgate",	"pts":50,		"upgrades":[]},
@@ -21,7 +22,7 @@
       {"id":501, "name":"War Walker Troupe",				"pts":50, "upgrades":[13]},
 			{"id":502, "name":"Windrider Troupe",				"pts":200}
 		]},
-		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
+		{"name":"SPACECRAFT, AIRCRAFT & TITANS", "formations":[
 			{"id":520, "name":"Nightwings",	"pts":300, "units":"3 Nightwing Interceptors", "upgrades":[]},
 			{"id":518, "name":"Phantom Titan",	"pts":750, "upgrades":[]},
 			{"id":521, "name":"Phoenix Bombers","pts":325, "units":"3 Phoenix Bombers", "upgrades":[]},
@@ -47,6 +48,7 @@
 		{"id":25, "name":"Heavy Weapon Platform",	"pts":0},
 		{"id":27, "name":"Jetbikes", 	"pts":0},
 		{"id":28, "name":"Vyper", 		"pts":0},
+		
 		{"id":30, "name":"Falcon",		"pts":50},
 		{"id":31, "name":"Fire Storm",	"pts":50},
 		{"id":32, "name":"Fire Prism",	"pts":65},
@@ -54,6 +56,7 @@
 		{"id":35, "name":"Scorpion",		"pts":250},
 		{"id":36, "name":"Storm Serpent",	"pts":250},
 		{"id":37, "name":"Void Spinner",	"pts":275},
+		
 		{"id":39, "name":"Exarch", 	"pts":25},
 		{"id":40, "name":"Autarch", 	"pts":75},
 		{"id":41, "name":"Wave Serpent",	"pts":50},
@@ -68,7 +71,7 @@
 		{"max":1, "from":[507]},
 		{"max":1, "from":[508]},
 		{"max":1, "from":[517]},
-		{"maxPercent":33, "name":"Aircraft & Titans", "from":[515,516,517,518,519,520,521,522]},		
+		{"maxPercent":33.34, "name":"Spacecraft, Aircraft & Titans", "from":[515,516,517,518,519,520,521,522]},		
 		{"max":1, "name":"Spacecraft", "from":[515,516]}		
 	],
 	"upgradeConstraints":[
@@ -76,7 +79,7 @@
 		{"max":2, "from":[31]},	
 		{"max":1, "from":[47]},	
     {"min":4, "max":6, "from":[13], "appliesTo":[501]},
-		{"max":1, "name":"Wraithguard", "from":[45,46]},	
+		{"max":1, "name":"Wraithguard upgrades", "from":[45,46]},	
 		{"max":1, "from":[43]},	
 		{"max":1, "perArmy":true, "from":[40]},	
 		{"max":2, "name":"Exarchs", "from":[39,40]},

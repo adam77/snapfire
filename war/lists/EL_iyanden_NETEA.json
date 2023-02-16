@@ -1,8 +1,8 @@
 {
 	"id":"Iyanden Craftworld",
-	"version":"4.2",
-	"by":"Mic Fair",
-	"notes":["This list is marked as 'Developmental'"],
+	"version":"NetEA Tournament Pack (2023-01-03)",
+	"by":"Mic Fair, last edit 2023-01-13 Abetillo",
+	"notes":["When purchasing Wave Serpents or Falcons for Aspect Warrior formations, only the minimum needed to transport the entire formation may be added"],
 	"sections":[
 		{"name":"IYANDEN CRAFTWORLD INDIVIDUALS", "formations":[
 			{"id":500, "name":"Avatar",										"pts":0,		"upgrades":[]},
@@ -26,7 +26,7 @@
 			
 			
 		]},
-		{"name":"SPACESHIPS, AIRCRAFT & TITANS", "formations":[
+		{"name":"SPACECRAFT, AIRCRAFT & TITANS", "formations":[
 			{"id":801, "name":"Spacecraft",							"pts":0, "upgrades":[]},
 			{"id":802, "name":"Nightwing Interceptors",				"pts":300, "upgrades":[], "units":"3x Nightwing Interceptors"},
 			{"id":803, "name":"Phoenix Bombers",					"pts":325, "upgrades":[], "units":"3x Phoenix Bombers"},
@@ -90,7 +90,7 @@
 		{"max":1, "from":[500]},
 		{"max":1, "from":[501]},
 		{"max":1, "from":[801]},
-		{"maxPercent":33, "name":"Aircraft & Titans", "from":[801,802,803,804,805,806,807]}				
+		{"maxPercent":33.34, "name":"Spacecraft, Aircraft & Titans", "from":[801,802,803,804,805,806,807]}				
 	],
 	"upgradeConstraints":[
 	

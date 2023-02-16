@@ -1,12 +1,9 @@
 {
 	"id":"Lost And The Damned",
-	"version":"NetEA Army Compendium v20120208",
+	"version":"NetEA Tournament Pack (2023-01-03)",
 	"notes":[
-		"If a Daemon Prince is selected, then it replaces a Cultist unit.",
-		"If a Coven is given transport, then you must take exactly enough Chimera and/or Land Transporters to transport all units in the formation.",
-		"Daemon Engines must be either factionless or of the same faction as their associated Coven."
-	],
-	"by":"Iron Bloke",
+		"If a Coven is given transports, then exactly enough Chimera and/or Land Transporters to transport all units in the formation must be taken."],
+	"by":"Iron Bloke, last update 2023-01-08 Abetillo",
 	"sections":[
 		{"name":"FORMATIONS", "formations":[
 			{"id":531, "name":"Stigmatus Coven",					"pts":35, "upgrades":[11,12,13,31,43,33,34,35,38,39,36,40,41,42,30,32]},
@@ -25,56 +22,62 @@
 		]},
 		{"name":"DAEMON ENGINES", "formations":[
 			{"id":551, "name":"Khorne Lord of Battles",			"pts":0, 						"upgrades":[54]},
-			{"id":552, "name":"Khorne Assault Engines",			"pts":300, "units":"4 Demonic Assault Engines", "upgrades":[]},
-			{"id":553, "name":"Nurgle Plague Tower",				"pts":0, 						"upgrades":[56]},
+			{"id":552, "name":"Khorne Assault Engines",			"pts":300, "units":"4 Demonic Assault Engines",		"upgrades":[]},
+			{"id":553, "name":"Nurgle Plague Tower",			"pts":0, 						"upgrades":[56]},
 			{"id":554, "name":"Nurgle Contagion Towers",			"pts":300, "units":"4 Contagion Towers", 		"upgrades":[]},
-			{"id":555, "name":"Slaanesh Scout Titans",				"pts":0, 						"upgrades":[58,59]},
+			{"id":555, "name":"Slaanesh Scout Titans",			"pts":0, 						"upgrades":[58,59]},
 			{"id":556, "name":"Slaanesh Daemon Knights",			"pts":275, "units":"4 Daemon Knights", 			"upgrades":[]},
-			{"id":557, "name":"Tzeentch Firelord",					"pts":0, 						"upgrades":[61]},
-			{"id":558, "name":"Tzeentch Doomwings",				"pts":150, "units":"3 Doomwings", 				"upgrades":[]},
+			{"id":557, "name":"Tzeentch Firelord",				"pts":0, 						"upgrades":[61]},
+			{"id":558, "name":"Tzeentch Doomwings",				"pts":150, "units":"3 Doomwings", 			"upgrades":[]},
 			{"id":559, "name":"Tzeentch Silver Towers",			"pts":325, "units":"4 Silver Towers", 			"upgrades":[]},
-			{"id":560, "name":"Hellfire Cannons",					"pts":200, "units":"4 Hellfire Cannons", 		"upgrades":[]},
-			{"id":561, "name":"Defilers",							"pts":250, "units":"4 Defilers", 				"upgrades":[]}
+			{"id":560, "name":"Hellfire Cannons",				"pts":200, "units":"4 Hellfire Cannons", 		"upgrades":[]},
+			{"id":561, "name":"Defilers",					"pts":250, "units":"4 Defilers", 			"upgrades":[]}
 		]}
 	],
 	"upgrades":[
-		{"id":30, "name":"Chimera",					"pts":25},
+		
 		{"id":54, "name":"Lord of Battles", "pts":400},
 		{"id":56, "name":"Plague Tower", "pts":325},
 		{"id":61, "name":"Firelord", "pts":150},
 		{"id":58, "name":"Questor", "pts":275},
 		{"id":59, "name":"Subjugator", "pts":225},
+		
 		{"id":11, "name":"Cultists", 		"pts":15},
 		{"id":12,	"name":"Mutants", 		"pts":15},
 		{"id":13, "name":"Big Mutants", 	"pts":35},
+		{"id":33, "name":"Chaos Spawn",				"pts":25},
+		{"id":34, "name":"Chaos Hounds",				"pts":10},
+		{"id":35, "name":"Chaos Altar",				"pts":150},
+		
 		{"id":15, "name":"Demagogue", 		"pts":0},
 		{"id":16, "name":"Chaos Marine Aspiring Champion", "pts":0},
 		{"id":17, "name":"Daemon Prince", 	"pts":50},
 		{"id":18, "name":"Demagogue (Arch Heretic)", 		"pts":0},
 		{"id":19, "name":"Aspiring Champion (Arch Heretic)", "pts":0},
 		{"id":20, "name":"Daemon Prince (Arch Heretic)", 	"pts":50},
+		{"id":31, "name":"Icon Bearer",				"pts":50},
+		
 		{"id":85,	"name":"(Chaos Undivided)",	"pts":0},
 		{"id":81,	"name":"(Khorne)",			"pts":0},
 		{"id":82,	"name":"(Nurgle)",			"pts":0},
 		{"id":83,	"name":"(Slaanesh)",			"pts":0},
 		{"id":84,	"name":"(Tzeentch)",			"pts":0},
-		{"id":31, "name":"Icon Bearer",				"pts":50},	
+					
 		{"id":32, "name":"Land Transporter",			"pts":10},
-		{"id":33, "name":"Chaos Spawn",				"pts":25},
-		{"id":34, "name":"Chaos Hounds",				"pts":10},
-		{"id":35, "name":"Chaos Altar",				"pts":150},
-		{"id":36, "name":"Traitor Fire Support",		"pts":25},
-		{"id":40, "name":"Traitor Griffon",			"pts":35},
-		{"id":41, "name":"Traitor Hellhound",			"pts":50},
-		{"id":42, "name":"Traitor Hydra",				"pts":50},
-		{"id":43, "name":"Daemonic Pact",				"pts":25},
-		{"id":51, "name":"Greater Daemon", 			"pts":75},
-		{"id":52, "name":"Lesser Daemon", 				"pts":20},
+		{"id":30, "name":"Chimera",				"pts":25},
+		
+		{"id":36, "name":"Support Squad",			"pts":25},
+		{"id":40, "name":"Griffon",				"pts":35},
+		{"id":41, "name":"Hellhound",				"pts":50},
+		{"id":42, "name":"Hydra",				"pts":50},
 		{"id":38, "name":"Leman Russ", 				"pts":70},
-		{"id":39, "name":"Leman Russ Demolisher", 		"pts":70}
+		{"id":39, "name":"Leman Russ Demolisher", 		"pts":70},
+		
+		{"id":43, "name":"Daemonic Pact",			"pts":25},
+		{"id":51, "name":"Greater Daemon", 			"pts":75},
+		{"id":52, "name":"Lesser Daemon", 			"pts":20}
 	],
 	"formationConstraints":[
-		{"maxPercent":100, "from":[501,502,503,504,541,542,551,552,553,554,555,556,557,558,559,560,561]},
 		{"max":1, "name":"Support Coven", "from":[501,502,503,504,541,542,551,552,553,554,555,556,557,558,559,560,561], "forEach":[531], "name2":"Coven"},
 		{"max":2, "from":[536]},
 		{"max":1, "from":[537]}
@@ -94,7 +97,7 @@
 		{"min":1, "max":1, "from":[85,81,82,83,84], "appliesTo":[531]},
 		{"max":1, "name":"Arch Heretic", "perArmy":true, "from":[18,19,20]},
 		{"min":1, "max":1, "from":[15,16,17,18,19,20], "appliesTo":[531]},
-		{"min":11, "max":19, "name":"Cultists", "from":[11,12,13], "appliesTo":[531]},
+		{"min":11, "max":19, "name":"Cultists plus Mutants", "from":[11,12,13], "appliesTo":[531]},
 		{"min":1, "max":2, "from":[58,59], "appliesTo":[555]},
 		{"min":1, "max":3, "from":[61], "appliesTo":[557]},
 		{"min":1, "max":3, "from":[56], "appliesTo":[553]},
