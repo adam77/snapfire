@@ -69,7 +69,7 @@
   {"id":92,"name":"Acastus Knight","pts":300}
 ],
 "formationConstraints":[
-        {"min":1,"from":[501]},
+        
         {"max":1, "perArmy":true, "from":[521]},
         {"max":1, "perArmy":true, "from":[531]},
         {"max":3,"name":"Support Formations","from":[521,522,523,524],"forEach":[501,502,503,505,506,507],"name2":"Companies"}
