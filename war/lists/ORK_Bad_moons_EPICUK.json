@@ -130,13 +130,13 @@
 				{
 					"id": 522,
 					"name": "Gargant",
-					"pts": 650,
+					"pts": 600,
 					"upgrades": [81]
 				},
 				{
 					"id": 523,
 					"name": "Great Gargant",
-					"pts": 850,
+					"pts": 825,
 					"upgrades": [81]
 				}
 			]
