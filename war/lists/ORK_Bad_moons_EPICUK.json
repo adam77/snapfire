@@ -12,19 +12,19 @@
 			"formations": [{
 					"id": 500,
 					"name": "Bad Moons Warband",
-					"pts": 5,
+					"pts": -25,
 					"upgrades": [81, 50, 20, 82, 10, 12, 13, 14, 57, 60, 61, 71, 72, 43, 68, 69]
 				},
 				{
 					"id": 501,
 					"name": "Bad Moons Warband (Big)",
-					"pts": -40,
+					"pts": -150,
 					"upgrades": [81, 50, 20, 82, 10, 12, 13, 14, 57, 60, 61, 71, 72, 43, 68, 69]
 				},
 				{
 					"id": 502,
 					"name": "Bad Moons Warband ('Uge)",
-					"pts": -85,
+					"pts": -250,
 					"upgrades": [81, 50, 20, 82, 10, 12, 13, 14, 57, 60, 61, 71, 72, 43, 68, 69]
 				},
 				{
@@ -89,14 +89,14 @@
 				},
 				{
 					"id": 510,
-					"name": "Mekboy Stompamob",
-					"pts": 75,
+					"name": "Mekboy Walker mob",
+					"pts": 25,
 					"upgrades": [81, 68, 69, 71, 72, 57, 60, 61]
 				},
 				{
 					"id": 511,
-					"name": "Mekboy Stompamob (Big)",
-					"pts": 100,
+					"name": "Mekboy Walker mob (Big)",
+					"pts": -25,
 					"upgrades": [81, 68, 69, 71, 72, 57, 60, 61]
 				},
 				{
@@ -371,15 +371,23 @@
 		},
 		{
 			"min": 4,
-			"max": 8,
 			"from": [11],
 			"appliesTo": [503]
 		},
 		{
 			"min": 2,
-			"max": 2,
 			"from": [20],
 			"appliesTo": [503]
+		},
+			       {
+			"min": 8,
+			"from": [11],
+			"appliesTo": [533]
+		},
+		{
+			"min": 4,
+			"from": [20],
+			"appliesTo": [533]
 		},
 		{
 			"min": 4,
@@ -403,10 +411,16 @@
 			"appliesTo": [531]
 		},
 		{
-			"min": 1,
-			"max": 3,
+			"min": 2,
+			
 			"from": [15, 16],
 			"appliesTo": [505]
+		},
+			       {
+			"min": 4,
+			
+			"from": [15, 16],
+			"appliesTo": [532]
 		},
 		{
 			"min": 4,
@@ -427,7 +441,7 @@
 			"name": "Wagonz"
 		},
 		{
-			"min": 3,
+			"min": 4,
 			"from": [71, 72],
 			"appliesTo": [510]
 		},
@@ -513,7 +527,7 @@
 		},
 
 		{
-			"min": 6,
+			"min": 8,
 			"from": [71, 72],
 			"appliesTo": [511]
 		},
