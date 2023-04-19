@@ -13,7 +13,7 @@
 "formations":[
     {"id":521,"name":"Hierophant","pts":250,"units":"1 Hierophant","upgrades":[10,11,50,51,52,53]},
 	{"id":522,"name":"Hierodule Brood","pts":350,"units":"3 Hierodules","upgrades":[10]},
-	{"id":523,"name":"Haridan","pts":250,"units":"1 Haridan","upgrades":[12]},
+	{"id":523,"name":"Harridan","pts":250,"units":"1 Harridan","upgrades":[12]},
 	{"id":524,"name":"Burrowing Brood","pts":250,"units":"2 Trygons","upgrades":[13]},
 	{"id":525,"name":"Hive Nest","pts":200,"units":"1 Hive Nest and 1 Hierodule","upgrades":[10]}
 ]}
