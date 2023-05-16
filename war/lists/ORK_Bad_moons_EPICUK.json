@@ -1,134 +1,566 @@
 {
-   "id": "Nazdreg Ug Urdgrub's Bad Moon Waaagh",
-   "version": "1.01",  
-   "notes": ["If the army includes any great gargants, the Warlord must be in one of them. Otherwize the Warlord will join a Nobz or Gargant unit.",
-   "Each ork Boyz unit added to a warband allows the inclusion of one free grotz unit"],
-   "by": "Kyussinchains",
-   "sections": [
-      {
-         "name": "INDIVIDUALS",
-         "formations": [
-            {"id": 599, "name": "Tellyporta Array", "pts": 50, "upgrades": []}
-            ]
-      },
-      {
-         "name": "WAR HORDES",
-         "formations": [
-            {"id": 500, "name": "Bad Moons Warband", "pts": 5,  "upgrades": [81,50,20,82,10,12,13,14,57,60,61,62,64,71,72,43]},
-            {"id": 501, "name": "Bad Moons Warband (Big)", "pts": -40,  "upgrades": [81,50,20,82,10,12,13,14,57,60,61,62,64,71,72,43]},
-            {"id": 502, "name": "Bad Moons Warband ('Uge)", "pts": -85,  "upgrades": [81,50,20,82,10,12,13,14,57,60,61,62,64,71,72,43]},
-            {"id": 503, "name": "Flash Gitz", "pts": 110, "upgrades": [11,12]},
-            {"id": 504, "name": "'Eavy Walker Mob", "pts": 75, "upgrades": [81,13,14]},
-            {"id": 505, "name": "Mekboy 'Eavy Tanks Mob", "pts": 50, "upgrades": [81,15,16]},
-            {"id": 506, "name": "Meganobz", "pts": 25, "upgrades": [81,10,12]},
-            {"id": 507, "name": "Blitz Brigade", "pts": 10, "upgrades": [81,12,61,62,68,69]},
-            {"id": 508, "name": "Blitz Brigade (Big)", "pts": -30, "upgrades": [81,12,61,62,68,69]},
-            {"id": 509, "name": "Blitz Brigade ('Uge)", "pts": -70, "upgrades": [81,12,61,62,68,69]},
-            {"id": 520, "name": "Kroozer", "pts": 150, "upgrades": []},
-            {"id": 513, "name": "Mekboy Gunzmob", "pts": 0, "upgrades": [81,68,69,12,64,61,43]},
-            {"id": 514, "name": "Mekboy Gunzmob (Big)", "pts": -25, "upgrades": [81,68,69,12,64,61,43]},
-            {"id": 515, "name": "Mekboy Gunzmob ('Uge)", "pts": -50, "upgrades": [81,68,69,12,64,61,43]},
-            {"id": 510, "name": "Mekboy Stompamob", "pts": 75, "upgrades": [81,77,68,69,71,72,57,60,61]},
-            {"id": 511, "name": "Mekboy Stompamob (Big)", "pts": 100, "upgrades": [81,77,68,69,71,72,57,60,61]}
-            ]
-      },
-      {
-         "name": "AIRCRAFT, SPACECRAFT &amp; GARGANTS",
-         "formations": [
-            {"id": 517, "name": "Fighta Skwadron", "pts": 0, "upgrades": [49]},
-            {"id": 518, "name": "Bommer", "pts": 175, "upgrades": []},
-            {"id": 522, "name": "Gargant", "pts": 650, "upgrades": [81]},
-            {"id": 523, "name": "Great Gargant", "pts": 850, "upgrades": [81]}
-         ]
-      }
-   ],
-   "upgrades": [
-      {"id": 81, "name": "Warlord", "pts": 0},
-      {"id": 50, "name": "Boyz", "pts": 25},
-      {"id": 20, "name": "Grotz", "pts": 0},
-      {"id": 82, "name": "Boyz + Grotz", "pts": 25},
-      {"id": 10, "name": "Meganobz", "pts": 50},
-      {"id": 11, "name": "Flash Gits", "pts": 35},
-      {"id": 12, "name": "'Ardwagon", "pts": 50},
-      {"id": 13, "name": "Gorkanaut", "pts": 75},
-      {"id": 14, "name": "Morkanaut", "pts": 75},
-      {"id": 15, "name": "Kill Blasta", "pts": 125},
-      {"id": 16, "name": "Kill Bursta", "pts": 125},
-      {"id": 57, "name": "Killa Kan", "pts": 25},
-      {"id": 60, "name": "Dreadnought", "pts": 35},
-      {"id": 61, "name": "Flakwagon", "pts": 35},
-      {"id": 62, "name": "Gunwagon", "pts": 35},
-      {"id": 64, "name": "Nobz", "pts": 35},
-      {"id": 68, "name": "Oddboy - Zzap", "pts": 50},
-      {"id": 69, "name": "Oddboy - Soopagun", "pts": 50},
-      {"id": 71, "name": "Stompa", "pts": 50},
-      {"id": 72, "name": "Mega Dread", "pts": 50},
-      {"id": 77, "name": "Supa Stompa", "pts": 275},
-      {"id": 43, "name": "Big Gunz", "pts": 25},
-      {"id": 49, "name": "Fighta Bomba", "pts": 50},
-      {"id": 70, "name": "Bommer", "pts": 50},
-      {"id": 80, "name": "Kill Kroozer", "pts": 0},
-      {"id": 91, "name": "Battle Kroozer", "pts": 50},
-      {"id": 92, "name": "Soopagun", "pts": 0},
-      {"id": 93, "name": "Twin Soopagun", "pts": 0},
-      {"id": 94, "name": "Supa-Zzap Gun", "pts": 0},
-      {"id": 95, "name": "Mega Choppa", "pts": 0},
-      {"id": 96, "name": "Lifta droppa", "pts": 0}
-   ],
-   "formationConstraints": [
-      {"max": 1, "name": "Spacecraft", "from": [520]},
-      {"max": 1, "name": "Tellyporta", "from": [599]},
-      {"maxPercent": 33.34, "name": "War Engines & Aircraft", "from": [517,518,522,523]}
-   ],
-   "upgradeConstraints": [
-      {"max": 1, "from": [81], "perArmy": true},
-      {"min":3,"max":3,"from":[92,94,95],"appliesTo":[522]},
-      {"max":1,"from":[94,95],"appliesTo":[522]},
-      {"min":1,"max":1,"from":[92],"appliesTo":[523]},
-      {"min":2,"max":2,"from":[93,96],"appliesTo":[523]},
-      {"max":1,"from":[96],"appliesTo":[523]},
-      {"max": 2, "from": [64], "appliesTo": [514]},
-      {"max": 1, "from": [68,69], "appliesTo": [500,504,507,513]},
-      
-      {"max": 2, "from": [68,69], "appliesTo": [501,505,508,514]},
-      
-      {"max": 3, "from": [68,69], "appliesTo": [502,506,509,515]},
-      {"min":4,"max":8,"from":[11],"appliesTo":[503]},
-      {"min":2,"max":2,"from":[20],"appliesTo":[503]},
-      {"min":4,"max":6,"from":[10],"appliesTo":[506]},
-      {"min":2,"max":4,"from":[13,14],"appliesTo":[504]},
-      {"min":1,"max":3,"from":[15,16],"appliesTo":[505]},
-      {"min": 4, "from": [61,62], "appliesTo": [507], "name": "Wagonz"},
-      {"min": 8, "from": [61,62], "appliesTo": [508], "name": "Wagonz"},
-      {"min": 12, "from": [61,62], "appliesTo": [509], "name": "Wagonz"},
-      {"min": 3, "from": [71,72], "appliesTo": [510]},
-      
-      {"min": 2, "max":4, "from": [64,10], "appliesTo": [500]},
-      {"min": 4, "max":6, "from": [64,10], "appliesTo": [501]},
-      {"min": 6, "max":8, "from": [64,10], "appliesTo": [502]},
-      {"min": 5, "from": [50], "appliesTo": [500]},
-      {"min": 10, "from": [50], "appliesTo": [501]},
-      {"min": 15, "from": [50], "appliesTo": [502]},
-      {"min": 3, "from": [20], "appliesTo": [500]},
-      {"min": 6, "from": [20], "appliesTo": [501]},
-      {"min": 9, "from": [20], "appliesTo": [502]},
-      {"max": 2, "from": [10], "appliesTo": [500]},
-      {"max": 4, "from": [10], "appliesTo": [501]},
-      {"max": 6, "from": [10], "appliesTo": [502]},
-      
-      {"min": 5, "from": [], "appliesTo": []},
-      {"min": 10, "from": [], "appliesTo": []},
-      {"min": 15, "from": [], "appliesTo": []},
-      {"max": 1, "from": [77], "appliesTo": [510]},
-      {"min": 6, "from": [71,72], "appliesTo": [511]},
-      {"max": 2, "from": [77], "appliesTo": [511]},
-      {"min": 5, "from": [43], "appliesTo": [513]},
-      {"max": 1, "from": [64], "appliesTo": [513]},
-      {"min": 10, "from": [43], "appliesTo": [514]},
-      {"min": 15, "from": [43], "appliesTo": [515]},
-      {"max": 3, "from": [64], "appliesTo": [515]},
-      {"max": 9, "min": 3, "from": [49], "appliesTo": [517]},
-      
-      {"max": 1, "min": 1, "from": [80,91], "appliesTo": [520]}
-   ]
+	"id": "Nazdreg Ug Urdgrub's Bad Moon Waaagh",
+	"version": "1.05 - EpicUK Developmental",
+	"notes": ["If the army includes any great gargants, the Warlord must be in one of them. Otherwize the Warlord will join a Nobz or Gargant unit.",
+		"Each ork Boyz unit added to a warband allows the inclusion of one free grotz unit"
+	],
+	"by": "Reedar + Kyussinchains",
+	"sections": [
+
+		{
+			"name": "WAR HORDES",
+			"formations": [{
+					"id": 500,
+					"name": "Bad Moons Warband",
+					"pts": -25,
+					"upgrades": [81, 50, 20, 82, 10, 12, 13, 14, 57, 60, 61, 71, 72, 43, 68, 69]
+				},
+				{
+					"id": 501,
+					"name": "Bad Moons Warband (Big)",
+					"pts": -150,
+					"upgrades": [81, 50, 20, 82, 10, 12, 13, 14, 57, 60, 61, 71, 72, 43, 68, 69]
+				},
+				{
+					"id": 502,
+					"name": "Bad Moons Warband ('Uge)",
+					"pts": -250,
+					"upgrades": [81, 50, 20, 82, 10, 12, 13, 14, 57, 60, 61, 71, 72, 43, 68, 69]
+				},
+				{
+					"id": 503,
+					"name": "Flash Gitz",
+					"pts": 60,
+					"upgrades": [10, 11, 12]
+				},
+				{
+					"id": 533,
+					"name": "Flash Gitz (Big)",
+					"pts": 70,
+					"upgrades": [10, 11, 12]
+				},
+				{
+					"id": 504,
+					"name": "'Eavy Walker Mob",
+					"pts": 25,
+					"upgrades": [61, 81, 13, 14]
+				},
+				{
+					"id": 530,
+					"name": "'Eavy Walker Mob (Big)",
+					"pts": -25,
+					"upgrades": [61, 81, 13, 14]
+				},
+				{
+					"id": 531,
+					"name": "'Eavy Walker Mob ('Uge)",
+					"pts": -100,
+					"upgrades": [61, 81, 13, 14]
+				},
+				{
+					"id": 505,
+					"name": "Mekboy 'Eavy Tanks Mob",
+					"pts": 100,
+					"upgrades": [61, 81, 15, 16]
+				},
+				{
+					"id": 532,
+					"name": "Mekboy 'Eavy Tanks Mob (Big)",
+					"pts": 75,
+					"upgrades": [61, 81, 15, 16]
+				},
+				{
+					"id": 513,
+					"name": "Grot Horde",
+					"pts": 25,
+					"upgrades": [57, 43]
+				},
+				{
+					"id": 514,
+					"name": "Grot Horde (Big)",
+					"pts": 0,
+					"upgrades": [57, 43]
+				},
+				{
+					"id": 515,
+					"name": "Grot Horde ('Uge)",
+					"pts": -25,
+					"upgrades": [57, 43]
+				},
+				{
+					"id": 510,
+					"name": "Mekboy Walker mob",
+					"pts": 25,
+					"upgrades": [81, 68, 69, 71, 72, 57, 60, 61]
+				},
+				{
+					"id": 511,
+					"name": "Mekboy Walker mob (Big)",
+					"pts": -25,
+					"upgrades": [81, 68, 69, 71, 72, 57, 60, 61]
+				},
+				{
+					"id": 599,
+					"name": "Tellyporta Array",
+					"pts": 50,
+					"upgrades": []
+				}
+			]
+		},
+		{
+			"name": "AIRCRAFT, SPACECRAFT &amp; GARGANTS",
+			"formations": [{
+					"id": 520,
+					"name": "Spacecraft",
+					"pts": 100,
+					"upgrades": []
+				},
+				{
+					"id": 517,
+					"name": "Fighta Skwadron",
+					"pts": 0,
+					"upgrades": [49]
+				},
+				{
+					"id": 518,
+					"name": "Bommer",
+					"pts": 175,
+					"upgrades": []
+				},
+				{
+					"id": 522,
+					"name": "Gargant",
+					"pts": 600,
+					"upgrades": [81]
+				},
+				{
+					"id": 523,
+					"name": "Great Gargant",
+					"pts": 825,
+					"upgrades": [81]
+				}
+			]
+		}
+	],
+	"upgrades": [{
+			"id": 81,
+			"name": "Warlord",
+			"pts": 0
+		},
+		{
+			"id": 50,
+			"name": "Boyz",
+			"pts": 25
+		},
+		{
+			"id": 20,
+			"name": "Grotz",
+			"pts": 0
+		},
+		{
+			"id": 82,
+			"name": "Boyz + Grotz",
+			"pts": 25
+		},
+		{
+			"id": 10,
+			"name": "Meganobz",
+			"pts": 50
+		},
+		{
+			"id": 11,
+			"name": "Flash Gits",
+			"pts": 35
+		},
+		{
+			"id": 12,
+			"name": "'Ardwagon",
+			"pts": 75
+		},
+		{
+			"id": 13,
+			"name": "Gorkanaut",
+			"pts": 100
+		},
+		{
+			"id": 14,
+			"name": "Morkanaut",
+			"pts": 100
+		},
+		{
+			"id": 15,
+			"name": "Kill Blasta",
+			"pts": 100
+		},
+		{
+			"id": 16,
+			"name": "Kill Bursta",
+			"pts": 125
+		},
+		{
+			"id": 57,
+			"name": "Killa Kan",
+			"pts": 25
+		},
+		{
+			"id": 60,
+			"name": "Dreadnought",
+			"pts": 35
+		},
+		{
+			"id": 61,
+			"name": "Flakwagon",
+			"pts": 35
+		},
+		{
+			"id": 62,
+			"name": "Gunwagon",
+			"pts": 35
+		},
+		{
+			"id": 64,
+			"name": "Nobz",
+			"pts": 35
+		},
+		{
+			"id": 68,
+			"name": "Oddboy - Zzap",
+			"pts": 50
+		},
+		{
+			"id": 69,
+			"name": "Oddboy - Soopagun",
+			"pts": 50
+		},
+		{
+			"id": 71,
+			"name": "Stompa",
+			"pts": 50
+		},
+		{
+			"id": 72,
+			"name": "Mega Dread",
+			"pts": 50
+		},
+		{
+			"id": 77,
+			"name": "Supa Stompa",
+			"pts": 275
+		},
+		{
+			"id": 43,
+			"name": "Big Gunz",
+			"pts": 25
+		},
+		{
+			"id": 49,
+			"name": "Fighta Bomba",
+			"pts": 50
+		},
+		{
+			"id": 70,
+			"name": "Bommer",
+			"pts": 50
+		},
+		{
+			"id": 80,
+			"name": "Kill Kroozer",
+			"pts": 0
+		},
+		{
+			"id": 91,
+			"name": "Battle Kroozer",
+			"pts": 0
+		},
+		{
+			"id": 92,
+			"name": "Soopagun",
+			"pts": 0
+		},
+		{
+			"id": 93,
+			"name": "Twin Soopagun",
+			"pts": 0
+		},
+		{
+			"id": 94,
+			"name": "Supa-Zzap Gun",
+			"pts": 0
+		},
+		{
+			"id": 95,
+			"name": "Mega Choppa",
+			"pts": 0
+		},
+		{
+			"id": 96,
+			"name": "Lifta droppa",
+			"pts": 0
+		}
+	],
+	"formationConstraints": [{
+			"max": 1,
+			"name": "Spacecraft",
+			"from": [520]
+		},
+		{
+			"max": 3,
+			"name": "Tellyporta Array",
+			"from": [599]
+		},
+		{
+			"maxPercent": 33.34,
+			"name": "Gargants, Aircraft & Spacecraft",
+			"from": [520, 517, 518, 522, 523]
+		}
+	],
+	"upgradeConstraints": [{
+			"max": 1,
+			"from": [81],
+			"perArmy": true
+		},
+		{
+			"min": 3,
+			"max": 3,
+			"from": [92, 94, 95],
+			"appliesTo": [522]
+		},
+		{
+			"max": 1,
+			"from": [94, 95],
+			"appliesTo": [522]
+		},
+		{
+			"min": 1,
+			"max": 1,
+			"from": [92],
+			"appliesTo": [523]
+		},
+		{
+			"min": 2,
+			"max": 2,
+			"from": [93, 96],
+			"appliesTo": [523]
+		},
+		{
+			"max": 1,
+			"from": [96],
+			"appliesTo": [523]
+		},
+		{
+			"max": 2,
+			"from": [64],
+			"appliesTo": [514]
+		},
+		{
+			"max": 1,
+			"from": [68, 69],
+			"appliesTo": [500, 504, 507, 513]
+		},
+
+		{
+			"max": 2,
+			"from": [68, 69],
+			"appliesTo": [501, 505, 508, 514]
+		},
+
+		{
+			"max": 3,
+			"from": [68, 69],
+			"appliesTo": [502, 506, 509, 515]
+		},
+		{
+			"min": 4,
+			"from": [11],
+			"appliesTo": [503]
+		},
+		{
+			"min": 2,
+			"from": [20],
+			"appliesTo": [503]
+		},
+			       {
+			"min": 8,
+			"from": [11],
+			"appliesTo": [533]
+		},
+		{
+			"min": 4,
+			"from": [20],
+			"appliesTo": [533]
+		},
+		{
+			"min": 4,
+			"max": 6,
+			"from": [10],
+			"appliesTo": [506]
+		},
+		{
+			"min": 2,
+			"from": [13, 14],
+			"appliesTo": [504]
+		},
+		{
+			"min": 4,
+			"from": [13, 14],
+			"appliesTo": [530]
+		},
+		{
+			"min": 6,
+			"from": [13, 14],
+			"appliesTo": [531]
+		},
+		{
+			"min": 2,
+			
+			"from": [15, 16],
+			"appliesTo": [505]
+		},
+			       {
+			"min": 4,
+			
+			"from": [15, 16],
+			"appliesTo": [532]
+		},
+		{
+			"min": 4,
+			"from": [61, 62],
+			"appliesTo": [507],
+			"name": "Wagonz"
+		},
+		{
+			"min": 8,
+			"from": [61, 62],
+			"appliesTo": [508],
+			"name": "Wagonz"
+		},
+		{
+			"min": 12,
+			"from": [61, 62],
+			"appliesTo": [509],
+			"name": "Wagonz"
+		},
+		{
+			"min": 4,
+			"from": [71, 72],
+			"appliesTo": [510]
+		},
+
+		{
+			"min": 2,
+			"max": 4,
+			"from": [10],
+			"appliesTo": [500]
+		},
+		{
+			"min": 4,
+			"max": 6,
+			"from": [10],
+			"appliesTo": [501]
+		},
+		{
+			"min": 6,
+			"max": 8,
+			"from": [10],
+			"appliesTo": [502]
+		},
+		{
+			"min": 6,
+			"from": [50],
+			"appliesTo": [500]
+		},
+		{
+			"min": 12,
+			"from": [50],
+			"appliesTo": [501]
+		},
+		{
+			"min": 18,
+			"from": [50],
+			"appliesTo": [502]
+		},
+		{
+			"min": 2,
+			"from": [20],
+			"appliesTo": [500]
+		},
+		{
+			"min": 4,
+			"from": [20],
+			"appliesTo": [501]
+		},
+		{
+			"min": 6,
+			"from": [20],
+			"appliesTo": [502]
+		},
+		{
+			"min": 2,
+			"from": [20],
+			"appliesTo": [513]
+		},
+		{
+			"min": 4,
+			"from": [20],
+			"appliesTo": [514]
+		},
+		{
+			"min": 6,
+			"from": [20],
+			"appliesTo": [515]
+		},
+
+		{
+			"min": 5,
+			"from": [],
+			"appliesTo": []
+		},
+		{
+			"min": 10,
+			"from": [],
+			"appliesTo": []
+		},
+		{
+			"min": 15,
+			"from": [],
+			"appliesTo": []
+		},
+
+		{
+			"min": 8,
+			"from": [71, 72],
+			"appliesTo": [511]
+		},
+
+		{
+			"min": 6,
+			"from": [43, 57],
+			"appliesTo": [513]
+		},
+
+		{
+			"min": 12,
+			"from": [43, 57],
+			"appliesTo": [514]
+		},
+		{
+			"min": 18,
+			"from": [43, 57],
+			"appliesTo": [515]
+		},
+
+		{
+			"max": 9,
+			"min": 3,
+			"from": [49],
+			"appliesTo": [517]
+		},
+
+		{
+			"max": 1,
+			"min": 1,
+			"from": [80, 91],
+			"appliesTo": [520]
+		}
+	]
 }
