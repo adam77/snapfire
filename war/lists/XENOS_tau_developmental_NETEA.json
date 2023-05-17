@@ -1,11 +1,11 @@
 {
    "id": "Tau Third Phase Expansion",
-   "version": "6.8 Approved",
-   "by": "Iron Bloke, latest edit 2023-01-08 Abetillo",
+   "version": "NetEA Tournament Pack 2023-01-03",
+   "by": "Iron Bloke, latest edit 2023-05-16 Abetillo",
    "sections": [
       { "name": "TAU CADRES",
          "formations": [
-            {"id": 532,"name": "Crisis Battlesuit Cadre","pts": 25,"upgrades": [17,35]},
+            {"id": 532,"name": "Crisis Battlesuit Cadre","pts": 25,"upgrades": [34,35]},
             {"id": 531,"name": "Fire Warrior Cadre","pts": 225,"upgrades": [62,63,60,35,80,81,82,83,84,61,54,55]}
          ]
       },
@@ -33,6 +33,7 @@
    ],
    "upgrades": [
       {"id": 17,"name": "XV8 Crisis Battlesuit","pts": 50},
+      {"id": 34,"name": "2x XV8 Crisis Battlesuit","pts": 75},
       {"id": 35,"name": "2 Gun Drone units","pts": 25},
       {"id": 60,"name": "Ethereal","pts": 50},
       {"id": 61,"name": "2 Pathfinders, 1 Devilfish","pts": 100},
@@ -86,11 +87,12 @@
       {"max": 3,"name": "Support Formations","from": [515,516,514,518,512,517,513],"forEach": [532,531],"name2": "Cadre"}
    ],
    "upgradeConstraints": [
-      {"max": 8,"min": 4,"from": [17],"appliesTo": [532]},
+      {"max": 4,"min": 4,"from": [17],"appliesTo": [532]},
       {"max": 1,"min": 1,"from": [50,51],"appliesTo": [532]},
       {"max": 1,"perArmy": true,"from": [51]},
       {"max": 1,"perArmy": true,"from": [60]},
       {"max": 1,"from": [50,51],"appliesTo": [532],"name": "Cmdr"},
+      {"max": 1,"from": [34],"appliesTo": [532,531]},
       {"max": 1,"from": [35],"appliesTo": [532,531,512,515,513]},
       {"max": 1,"from": [60],"appliesTo": [531]},
       {"max": 1,"min": 1,"from": [31,32,64,65,66,67],"appliesTo": [531]},
@@ -106,7 +108,7 @@
       {"max": 1,"min": 1,"from": [19,20],"appliesTo": [ 518]},
       {"max": 6,"min": 6,"from": [25,26],"appliesTo": [515]},
       {"max": 1,"from": [70],"appliesTo": [522]},
-      {"max": 3,"from": [60,55,61,35,54,56,62,63,64,65,66,67,80,81,82,83,84],"appliesTo": [531,532]},
+      {"max": 3,"from": [60,55,61,34,35,54,56,62,63,64,65,66,67,80,81,82,83,84],"appliesTo": [531]},
       {"max": 1,"min": 1,"from": [11,12],"appliesTo": [525]},
       {"max": 1,"min": 1,"from": [85,86,87,88,89,90,91,92,93,94,95,96,97,98,99],"appliesTo": [516]}
    ]
