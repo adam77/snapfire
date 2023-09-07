@@ -1,28 +1,32 @@
 {
   "id":"House Devine Hedonic Crusade",
-  "version":"NetEA v0.2.1 (Developmental)",
-  "by":"Dave - 2023-08-22",
-  "notes":["(Up to a third of the points available may be spent on Chaos Navy and War Engine formations."],
+  "version":"2023-08-22",
+  "by":"Dave",
+  "notes":[
+    "Any one Vassal formation may be fielded per each House Devine Household formation.",
+    "Up to a third of the points available may be spent on Chaos Navy and War Engine formations.",
+    "Each Daemonic Pact adds one Lesser Daemon to the Daemon Pool."
+  ],
   "sections":[
     {"name":"House Devine Households", "formations":[
       {"id":500, "name":"Knight Household", "pts":55, "upgrades":[1,2,3,4,5]},
       {"id":501, "name":"Hell-Strider Household", "pts":0, "upgrades":[6,4]}
     ]},
     {"name":"Vassal Formations", "formations":[
-      {"id":502, "name":"Cultists", "upgrades":[7,8,9,10,11,12,13,14]},
+      {"id":502, "name":"Cultists", "pts":0, "upgrades":[9,10,11,12,13,14]},
       {"id":503, "name":"Debasers", "pts":75, "upgrades":[14]},
-      {"id":504, "name":"Noise Marines", "units":"6 Noise Marines, one with a Chaos Lord or Sorcerer Lord character", "pts":275, "upgrades":[15,12,13,15,14]}
+      {"id":504, "name":"Noise Marines", "units":"6 Noise Marines, one with a Chaos Lord or Sorcerer Lord character", "pts":275, "upgrades":[15,12,13,16,14]}
     ]},
     {"name":"Chaos Navy and War Engine Formations", "formations":[
-      {"id":504, "name":"Hell Blades", "pts":200, "units":"3 Hell Blades", "upgrades":[]},
-      {"id":505, "name":"Hell Talons", "pts":225, "units":"2 Hell Talons", "upgrades":[]},
-      {"id":508, "name":"Questor", "pts":275, "upgrades":[]},
-      {"id":507, "name":"Subjugator", "pts":225, "upgrades":[]},
-      {"id":508, "name":"Ravisher", "pts":650, "upgrades":[]},
-      {"id":509, "name":"Painlord", "pts":800, "upgrades":[]}
+      {"id":505, "name":"Hell Blades", "pts":200, "units":"3 Hell Blades", "upgrades":[]},
+      {"id":506, "name":"Hell Talons", "pts":225, "units":"2 Hell Talons", "upgrades":[]},
+      {"id":507, "name":"Questor", "pts":275, "upgrades":[]},
+      {"id":508, "name":"Subjugator", "pts":225, "upgrades":[]},
+      {"id":509, "name":"Ravisher", "pts":650, "upgrades":[]},
+      {"id":510, "name":"Painlord", "pts":800, "upgrades":[]}
     ]},
     {"name":"Daemon Pool", "formations":[
-      {"id":510, "name":"Daemon Pool", "pts":0, "upgrades":[17,18]}
+      {"id":511, "name":"Daemon Pool", "pts":0, "upgrades":[17,18]}
     ]}
   ],
   "upgrades":[
@@ -47,11 +51,12 @@
    ],
   "formationConstraints":[
     {"max":1, "name":"Vassal Formation", "from":[502,503,504], "forEach":[500,501], "name2":"House Devine Household"},
-    {"maxPercent":33.334, "name":"Chaos Navy and War Engine Formations", "from":[504,505,506,507,508,509]}
+    {"maxPercent":33.33, "name":"Chaos Navy and War Engine Formations", "from":[505,506,507,508,509,510]},
+    {"max":1, "name":"Daemon Pool", "from":[511]}
   ],
   "upgradeConstraints":[
     {"max":1, "perArmy":true, "from":[5]},
-    {"max":1, "from":[4], "appliesTo":[500,501]},
+    {"max":1, "from":[4, 5], "appliesTo":[500,501]},
     {"min":3, "max":6, "from":[1,2,3], "appliesTo":[500]},
     {"min":3, "max":6, "from":[6], "appliesTo":[501]},
     {"min":1, "max":1, "from":[7,8], "appliesTo":[502]},
