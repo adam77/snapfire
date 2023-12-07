@@ -2,7 +2,7 @@
 	"id":"Gryphonne IV Skitarii Legion",
 	"version":"NetEA Tournament Pack (2021-11-08)",
 	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
-	"by":"SpeakerToMachines, Norto, last edit by spaal574",
+	"by":"SpeakerToMachines, last edit by Norto",
 	"sections":[
 		{"name":"SKITARII CORE FORMATIONS", "formations":[
 			{"id":566, "name":"Skitarii Demi-Century",	"pts":225, "upgrades":[103,104,105,225,226,227,228,229,231,232,233,234,235,237,238]},
