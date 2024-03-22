@@ -1,23 +1,23 @@
 {
 	"id":"Gryphonne IV Skitarii Legion",
-	"version":"NetEA 2.1 (Approved Candidate version)",
+	"version":"NetEA Tournament Pack (2021-11-08)",
 	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
 	"by":"SpeakerToMachines, last edit by Norto",
 	"sections":[
 		{"name":"SKITARII CORE FORMATIONS", "formations":[
 			{"id":566, "name":"Skitarii Demi-Century",	"pts":225, "upgrades":[103,104,105,225,226,227,228,229,231,232,233,234,235,237,238]},
-			{"id":567, "name":"Sagitarii Demi-Century",	"pts":250, "units":"5 Sagitarii units",	 "upgrades":[103,104,214,225,226,227,228,229,231,232,233,234,235,237,238]}	
+			{"id":567, "name":"Sagitarii Demi-Century",	"pts":250, "units":"5 Sagitarii units",	 "upgrades":[103,104,105,214,225,226,227,228,229,231,232,233,234,235,237,238]}	
 		]},
 		{"name":"CENTURIO ORDINATUS FORMATIONS", "formations":[
-			{"id":571, "name":"Ordinatus Minorus",	"pts":50, "units":"2 Ordinatus Minorus", "upgrades":[225,226,227,228,229,231,232,233,234,235,237,238]},
-			{"id":572, "name":"Ordinatus Majorus",	"pts":350, "units":"1 Ordinatus Majorus",	 "upgrades":[]}	
+			{"id":571, "name":"Ordinatus Minorus",	"pts":50, "upgrades":[225,226,227,228,229,231,232,233,234,235,237,238]},
+			{"id":572, "name":"Ordinatus Majoris",	"pts":0, "upgrades":[]}	
 		]},
 		{"name":"SKITARII SUPPORT FORMATIONS", "formations":[
-			{"id":561, "name":"Crusader Scout Maniple",			"pts":125, "units":"4 Crusader Robots", "upgrades":[]},
-			{"id":562, "name":"Colossus Assault Maniple",			"pts":200, "units":"4 Colossus Robots", "upgrades":[]},
-			{"id":563, "name":"Praetorian Servitor Maniple",		"pts":250, "units":"5 Praetorian Combat Servitor units", "upgrades":[225,226,227,228,229,231,232,233,234,235,237,238]},
-			{"id":564, "name":"Avenger Squadron",		"pts":200, "units":"2 Avenger Strike Fighters", "upgrades":[]},
-			{"id":565, "name":"Orbital Support",		"pts":200, "units":"One Ark Mechanicus Battleship", "upgrades":[]}
+			{"id":561, "name":"Crusader Scout Maniple",		"pts":125, "units":"4 Crusader Robots", "upgrades":[]},
+			{"id":562, "name":"Colossus Assault Maniple",		"pts":200, "units":"4 Colossus Robots", "upgrades":[]},
+			{"id":563, "name":"Praetorian Servitor Maniple",	"pts":250, "units":"5 Praetorian Combat Servitor units", "upgrades":[225,226,227,228,229,231,232,233,234,235,237,238]},
+			{"id":564, "name":"Avenger Squadron",			"pts":200, "units":"2 Avenger Strike Fighters", "upgrades":[]},
+			{"id":565, "name":"Orbital Support",			"pts":200, "units":"One Ark Mechanicus Battleship", "upgrades":[]}
 		]},
 		{"name":"MECHANICUS ALLIES", "formations":[
 			{"id":502, "name":"Emperor Titan", 		"pts":1250,"upgrades":[82,83,84]},
@@ -25,18 +25,18 @@
 			{"id":504, "name":"Reaver Titan",		"pts":575, "upgrades":[80,82,83,84]},
 			{"id":551, "name":"Warhound Titan",		"pts":275, "upgrades":[80,82]},
 			{"id":552, "name":"Warhound Titan Pack",	"pts":500, "upgrades":[80,82]},
-      {"id":553, "name":"Cataphracti Support",	"pts":350, "upgrades":[]}
+			{"id":553, "name":"Cataphracti Support",	"pts":350, "upgrades":[]}
 		]}
 	],
 	"upgrades":[	
 		{"id":101, "name":"5 Gun Servitor Unit",		"pts":0},
-		{"id":102, "name":"5 Rapier Laser Destroyer Unit",	"pts":25},
+		{"id":102, "name":"3 Rapier Laser Destroyer Unit",	"pts":25},
 		{"id":103, "name":"Hydra",				"pts":50},
 		{"id":104, "name":"10 Chimedons",			"pts":175},
 		{"id":105, "name":"Magos Character",			"pts":50},
-		{"id":110, "name":"Ordinatus Mars (Sonic Disruptor)",		"pts":100},
-		{"id":111, "name":"Ordinatus Golgotha (Hellfire Missiles)",	"pts":150},
-		{"id":112, "name":"Ordinatus Armageddon (Nova Cannon)",		"pts":150},
+		{"id":110, "name":"Ordinatus Mars (Sonic Disruptor)",		"pts":450},
+		{"id":111, "name":"Ordinatus Golgotha (Hellfire Missiles)",	"pts":550},
+		{"id":112, "name":"Ordinatus Armageddon (Nova Cannon)",		"pts":500},
 		{"id":11, "name":"Imperator Configuration",	"pts":0},
 		{"id":12, "name":"Warmonger Configuration",	"pts":0},
 		{"id":13, "name":"Inferno Gun", 		"pts":0},
@@ -101,7 +101,7 @@
 		{"min":1, "max":1, "from":[301,302,303,304], "appliesTo":[566]},
 		{"min":2, "max":2, "from":[13,14,15,16], "appliesTo":[551]},
 		{"min":4, "max":4, "from":[13,14,15,16], "appliesTo":[552]},
-		{"min":2, "max":3, "from":[225,227,228,229,231,232,233,234,235,237,238], "appliesTo":[571]},
+		{"min":2, "max":3, "from":[225,226,227,228,229,231,232,233,234,235,237,238], "appliesTo":[571]},
 		{"min":1, "max":1, "from":[110,111,112], "appliesTo":[572]},
 		{"min":3, "max":3, "from":[13,14,15,16,25,26,27,28,29,30,31,32,33,34,35,36,37], "appliesTo":[504]},
 		{"min":4, "max":4, "from":[13,14,15,16,25,26,27,28,29,30,31,32,33,34,35,36,37], "appliesTo":[503]},
@@ -110,7 +110,7 @@
 		{"max":1, "from":[82]},
 		{"max":1, "from":[83]},
 		{"max":1, "from":[84]},
-    {"min":1, "max":1, "from":[240,241], "appliesTo":[553]},
-    {"min":2, "from":[239], "appliesTo":[553]}
+ 		{"min":1, "max":1, "from":[240,241], "appliesTo":[553]},
+ 		{"min":2, "from":[239], "appliesTo":[553]}
 	]
 }
