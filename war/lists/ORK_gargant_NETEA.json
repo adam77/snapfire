@@ -1,131 +1,151 @@
-{"id":"Orkimedes' Gargant Big Mob",
-"version":"Tournament Pack 2024-02-12",
-"by":"Abetillo",
-       
+{"id": "Orkimedes' Gargant Big Mob",
+"version": "NetEA Tournament Pack 2024-02-12",
+"by": "Abetillo, Last update 2024-03-29 Abetillo",
+"notes": ["A Mekboy Big Boss must be in the Gargant Formation with the highest point cost"],       
 "sections":[
                
 {"name":"GARGANT MOB GARGANT FORMATIONS", "formations":[
 
-{"id":532, "name":"Gargant",                         "pts":475, "upgrades":[36,38,40,43,34]},       
-{"id":533, "name":"Great Gargant",                   "pts":650, "upgrades":[36,38,40,43,34]},
-{"id":534, "name":"Mega Gargant",                    "pts":1000, "upgrades":[36,38,40,43,34]}]}
+{"id": 532, "name":"Gargant",                    "pts":475, "upgrades":[28,52,51,54,55,57,59,53]},       
+{"id": 533, "name":"Great Gargant",              "pts":650, "upgrades":[28,52,51,54,55,59,53,58]},
+{"id": 534, "name":"Mega Gargant",               "pts":1000, "upgrades":[28]}
 
-{"name":"GARGANT MOB SUPPORT AND AIRCRAFT FORMATIONS", "formations":[
+{"name":"GARGANT MOB SUPPORT FORMATIONS", "formations":[
 
-{"id":541, "name":"Kan Mob (Normal)",                                    "pts":0, "upgrades":[11,12,13,14]},
-{"id":542, "name":"Kan Mob (Big)",                                       "pts":-50, "upgrades":[11,12,13,14]},
-{"id":543, "name":"Kan Mob ('Uge)",                                      "pts":-100, "upgrades":[11,12,13,14]}
-{"id":544, "name":"Spacecraft",                                          "pts":0, "upgrades":[]} 
-{"id":545, "name":"Loota Warband (Normal)", "units":"6 Boyz, 2 Grotz",   "pts":125, "upgrades":[11,12,13,14,15,16,17,18,19,21]},   
-{"id":546, "name":"Loota Warband (Big)", "units":"12 Boyz, 4 Grotz",     "pts":225, "upgrades":[11,12,13,14,15,16,17,18,19,21]},
-{"id":547, "name":"Loota Warband ('Uge)", "units":"18 Boyz, 6 Grotz",    "pts":300, "upgrades":[11,12,13,14,15,16,17,18,19,21]},       
-{"id":548, "name":"Stompa Mob (Normal)",                                 "pts":25, "upgrades":[11,12,13,14,21]},
-{"id":549, "name":"Stompa Mob (Big)",                                    "pts":0, "upgrades":[11,12,13,14,21]},
-{"id":550, "name":"Stompa Mob (Uge)",                                    "pts":-25, "upgrades":[11,12,13,14,21]},  
-{"id":551, "name":"Supa Stompa Mob",                                     "pts":150, "upgrades":[11,12,13,14]}       
+{"id": 541, "name":"Kan Mob (Normal)",                                  "pts":0, "upgrades":[11,12,15,13,14]},
+{"id": 542, "name":"Kan Mob (Big)",                                     "pts":-50, "upgrades":[11,12,15,13,14]},
+{"id": 543, "name":"Kan Mob ('Uge)",                                    "pts":-100, "upgrades":[11,12,15,13,14]}
+{"id": 544, "name":"Kroozer",                                           "pts":0, "upgrades":[]} 
+{"id": 545, "name":"Loota Warband (Normal)", "units":"6 Boyz, 2 Grotz", "pts":125, "upgrades":[18,19,11,20,12,15,21,22,23,24,13,14,16,17]},   
+{"id": 546, "name":"Loota Warband (Big)", "units":"12 Boyz, 4 Grotz",   "pts":225, "upgrades":[18,19,11,20,12,15,21,22,23,24,13,14,16,17]},
+{"id": 547, "name":"Loota Warband ('Uge)", "units":"18 Boyz, 6 Grotz",  "pts":300, "upgrades":[18,19,11,20,12,15,21,22,23,24,13,14,16,17]},       
+{"id": 548, "name":"Stompa Mob (Normal)",                               "pts":25, "upgrades":[11,12,15,22,23,24,13,14]},
+{"id": 549, "name":"Stompa Mob (Big)",                                  "pts":0, "upgrades":[11,12,15,22,23,24,13,14]},
+{"id": 550, "name":"Stompa Mob ('Uge)",                                  "pts":-25, "upgrades":[11,12,15,22,23,24,13,14]},  
+{"id": 551, "name":"Supa Stompa Mob",                                   "pts":150, "upgrades":[11,12,15,13,14,52,51,54,56,55,59,53]}       
 
 ]},
                
 {"name":"GARGANT MOB AIRCRAFT", "formations":[
                      
-{"id":561, "name":"Fighta Bommers",     "pts":0, "upgrades":[29]},
-{"id":562, "name":"Bommer",     "pts":175, "upgrades":[]}
+{"id": 561, "name":"Fighta Sqwadron",     "pts":0, "upgrades":[29]},
+{"id": 562, "name":"Bommer",     "pts":175, "upgrades":[]}
 ]}],
        
 "upgrades":[
                
-{"id":11, "name":"Killa Kan",                   "pts":25},
-{"id":12, "name":"Dreadnoughts",                "pts":35},
-{"id":13, "name":"Stompas",                     "pts":50},
+{"id": 11, "name":"Killa Kan",                   "pts":25},
+{"id": 12, "name":"Dreadnought",                 "pts":35},
+{"id": 13, "name":"Stompa (with 2x Big guns and Kombat'Ammer)",   "pts":50},
+{"id": 14, "name":"Stompa (with 3x Big guns)",   "pts":50},       
        
-{"id":14, "name":"Flakwagon",                   "pts":35},
-{"id":15, "name":"Battlefortress",              "pts":115},
-{"id":16, "name":"Gunfortress",                 "pts":125},    
+{"id": 15, "name":"Flakwagon",                   "pts":35},
+{"id": 16, "name":"Battlefortress",              "pts":115},
+{"id": 17, "name":"Gunfortress",                 "pts":125},    
        
-{"id":17, "name":"Big Gunz",                    "pts":25},
-{"id":18, "name":"Boyz + Grotz",              "pts":25},
-{"id":19, "name":"Deth Koptas",                 "pts":35},
-{"id":20, "name":"Nobz",                        "pts":35},       
+{"id": 18, "name":"Big Gunz",                    "pts":25},
+{"id": 19, "name":"Boyz + Grotz",                "pts":25},
+{"id": 20, "name":"Deth Kopta",                  "pts":35},
+{"id": 21, "name":"Nobz",                        "pts":35},       
 
-{"id":21, "name":"Oddboy",                      "pts":50},
-
-{"id":26, "name":"KillKroozer",                 "pts":150},
-{"id":27, "name":"Battlekroozer",               "pts":200},
-{"id":28, "name":"Mekboy Big Boss",             "pts":0},
-{"id":29, "name":"Fighta-Bommers",              "pts":50},
+{"id": 22, "name":"Oddboy (with Power Fields)",  "pts":50},
+{"id": 23, "name":"Oddboy (with Soopagunz)",     "pts":50},
+{"id": 24, "name":"Oddboy (with Supa-Zzap-Gun)", "pts":50},
        
-{"id":31, "name":"Soopagun",                    "pts":0},
-{"id":32, "name":"Mega Choppa",                 "pts":0},
-{"id":33, "name":"Deth Kannon",                 "pts":0},
-{"id":34, "name":"Gatling Kannon",              "pts":0},
-{"id":35, "name":"Grot Mega Missile",           "pts":0},
-{"id":36, "name":"Lifta Droppa",                "pts":0},
-{"id":37, "name":"Twin Soopagun",               "pts":0},
-{"id":38, "name":"Mega Choppa",                 "pts":0},
-{"id":39, "name":"Mega Lobba",                  "pts":0},
-{"id":40, "name":"Snappa",                      "pts":0},
-{"id":41, "name":"Grot Ultra Missile",          "pts":0},
-{"id":42, "name":"Ultra Lobba",                 "pts":0},
-{"id":43, "name":"Soopa Zzap Gun",              "pts":0},
-
+{"id": 26, "name":"KillKroozer",                 "pts":150},
+{"id": 27, "name":"Battlekroozer",               "pts":200},
+{"id": 28, "name":"Mekboy Big Boss",             "pts":0},
+{"id": 29, "name":"Fighta Bommer",               "pts":50},
+       
+{"id": 31, "name":"Deth Kannon",                 "pts":75},
+{"id": 32, "name":"Krooz Missiles",              "pts":75},
+{"id": 33, "name":"Krusha",                      "pts":25},
+{"id": 34, "name":"Lifta-Droppa ",               "pts":75},
+{"id": 35, "name":"Supa-Lifta-Droppa",           "pts":50},
+{"id": 36, "name":"Twin Soopagun",               "pts":75},
+{"id": 37, "name":"Ultra-Lobba",                 "pts":75},
+{"id": 41, "name":"Gatling Cannon",              "pts":25},
+{"id": 42, "name":"Loadz o' Guns",               "pts":25},
+{"id": 43, "name":"Mega-Choppa",                 "pts":25},
+{"id": 44, "name":"Mega-Lobba",                  "pts":50},
+{"id": 45, "name":"Soopagun",                    "pts":50},
+{"id": 46, "name":"Snappa",                      "pts":25},
+{"id": 47, "name":"Supa-Zzap-Gun",               "pts":50},
 
        
-{"id":51, "name":"(Kustom) Flak Gunz",          "pts":25},
-{"id":52, "name":"(Kustom) Bigga Generatas",    "pts":50},
-{"id":53, "name":"(Kustom) Extra Armour",       "pts":75},
-{"id":54, "name":"(Kustom) Boss Nobz",          "pts":25}
+{"id": 51, "name":"Banna",                       "pts":25},
+{"id": 52, "name":"Big Gun or Skorcha Head",     "pts":0},
+{"id": 53, "name":"'Eavy Armour",                "pts":75}
+{"id": 54, "name":"Flak Gunz",                   "pts":25},
+{"id": 55, "name":"Gork or Mork Head",           "pts":50},
+{"id": 56, "name":"Kart",                        "pts":25},
+{"id": 57, "name":"Kart",                        "pts":50},
+{"id": 58, "name":"Kart",                        "pts":75},       
+{"id": 59, "name":"Ordz Duruk",                  "pts":50}       
 
 ],       
 "formationConstraints":[
                
 {"max":1, "name":"Spacecraft", "from":[544]},
 
-{"max":3, "name":"Support an Aircraft Formations", "from":[541,542,543,544,545,551,552,553,554,561,562], "forEach":[532,533,534], "name2":"Gargant"},
+{"max":3, "name":"Support and Aircraft Formations", "from":[541,542,543,544,545,546,547,548,549,550,551,561,562], "forEach":[532,533,534], "name2":"Gargant Formations"},
 {"maxPercent":33.34, "name":"Aircraft Formations", "from":[561,562]}
 ],
 
 "upgradeConstraints":[
                
-{"min":3, "max":3, "name":"Gargant Weapons", "from":[21,24,42,28,27,23,29], "appliesTo":[532,533]},
-{"max":1, "from":[29], "appliesTo":[534]},
-{"max":2, "from":[24,27], "appliesTo":[534]},
-{"min":1, "max":1, "name":"Great Gargant Belly Weapons", "from":[21,42,28,23,29], "appliesTo":[532,533]},
-{"min":2, "max":2, "name":"Great Gargant Arm Weapons", "from":[26,25,22,31,30], "appliesTo":[532,533]},
-{"min":3, "max":3, "name":"Gargant Weapons", "from":[21,24,42,28,27,23,29], "appliesTo":[551]},
+{"min":3, "max":3, "name":"Gargant and Supa-Stompa Weapons", "from":[41,33,42,43,46,44,45,35,47,31,32,34,36,37], "appliesTo":[532,533]},
+{"min":1, "max":1, "from":[55], "appliesTo":[534]},
+{"max":1, "name":"Belly mount only Weapons", "from":[46], "appliesTo":[532,533,551]},
+{"max":2, "name":"Arm mount only Weapons", "from":[32,33,34,35,43], "appliesTo":[532,533]},
+{"min":3, "max":3, "name":"Supa-Stompa Weapons", "from":[41,42,43,46,44,45,47], "appliesTo":[551]},
+{"max":2, "name":"Arm mount only Weapons", "from":[43], "appliesTo":[551]},
 
 
-{"max":2, "name":"Kustom Upgrades", "from":[36,38,40,43], "appliesTo":[532,533]},
-{"max":1, "name":"Kustom Upgrade", "from":[36,38,40,43], "appliesTo":[551]},
+{"max":2, "name":"Kustom Upgrades", "from":[52,51,54,55,57,59,53], "appliesTo":[532]},
+{"max":2, "name":"Kustom Upgrades", "from":[52,51,54,55,59,53,58], "appliesTo":[533]},       
+{"max":1, "name":"Kustom Upgrades", "from":[52,51,54,56,55,59,53], "appliesTo":[551]},
 
-{"min":8, "from":[11], "appliesTo":[541]},
-{"min":16, "from":[11], "appliesTo":[542]},
-{"min":24, "from":[11], "appliesTo":[543]},
-
-{"min":1, "max":1, "from":[11,17], "appliesTo":[545]},
-{"min":2, "max":2, "from":[11,17], "appliesTo":[546]},
-{"min":3, "max":3, "from":[11,17], "appliesTo":[547]},
-
-{"max":1, "from":[20], "appliesTo":[545]},
-{"max":2, "from":[20], "appliesTo":[546]},
-{"max":3, "from":[20], "appliesTo":[547]},
+{"max":1, "from":[51], "appliesTo":[532,533,551]},
+{"max":1, "from":[52], "appliesTo":[532,533,551]},
+{"max":1, "from":[53], "appliesTo":[532,533,551]},
+{"max":1, "from":[54], "appliesTo":[532,533,551]},
+{"max":1, "from":[55], "appliesTo":[532,533,551]},       
+{"max":1, "from":[59], "appliesTo":[532,533,551]},
+{"max":1, "from":[56], "appliesTo":[551]},       
+{"max":1, "from":[57], "appliesTo":[532]},
+{"max":1, "from":[58], "appliesTo":[533]},
        
+{"min":8, "from":[11,12], "appliesTo":[541]},
+{"min":16, "from":[11,12], "appliesTo":[542]},
+{"min":24, "from":[11,12], "appliesTo":[543]},
+       
+{"min":1, "from":[11,18], "appliesTo":[545]},
+{"min":2, "from":[11,18], "appliesTo":[546]},
+{"min":3, "from":[11,18], "appliesTo":[547]},
+{"max":1, "from":[16], "appliesTo":[545]},
+{"max":2, "from":[16], "appliesTo":[546]},
+{"max":3, "from":[16], "appliesTo":[547]},
+{"max":2, "from":[17], "appliesTo":[545]},
+{"max":4, "from":[17], "appliesTo":[546]},
+{"max":6, "from":[17], "appliesTo":[547]},             
 {"max":1, "from":[21], "appliesTo":[545]},
 {"max":2, "from":[21], "appliesTo":[546]},
-{"max":3, "from":[21], "appliesTo":[547]}, 
-{"max":1, "from":[21], "appliesTo":[548]},
-{"max":2, "from":[21], "appliesTo":[549]},
-{"max":3, "from":[21], "appliesTo":[550]},        
+{"max":3, "from":[21], "appliesTo":[547]},       
+{"max":1, "from":[22,23,24], "appliesTo":[545]},
+{"max":2, "from":[22,23,24], "appliesTo":[546]},
+{"max":3, "from":[22,23,24], "appliesTo":[547]},
+
+{"min":4, "from":[13,14], "appliesTo":[548]},
+{"min":8, "from":[13,14], "appliesTo":[549]},
+{"min":12, "from":[13,14], "appliesTo":[550]},       
+{"max":1, "from":[22,23,24], "appliesTo":[548]},
+{"max":2, "from":[22,23,24], "appliesTo":[549]},
+{"max":3, "from":[22,23,24], "appliesTo":[550]},   
 
 {"min":1, "max":1, "from":[26,27], "appliesTo":[544]},       
 {"max":1, "perArmy":true, "from":[28]}],
-       
-{"max":1, "from":[36], "appliesTo":[532,533]},
-{"max":1, "from":[38], "appliesTo":[532,533]},
-{"max":1, "from":[40], "appliesTo":[532,533]},
-{"max":1, "from":[43], "appliesTo":[532,533]},
-
-
-
+  
 {"min":3, "max":9, "from":[29], "appliesTo":[561]}
 
 }
