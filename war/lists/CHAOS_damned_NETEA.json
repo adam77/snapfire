@@ -1,9 +1,9 @@
 {
 	"id":"Lost And The Damned",
-	"version":"NetEA Tournament Pack (2023-01-03)",
+	"version":"NetEA Tournament Pack (2024-02-12)",
 	"notes":[
 		"If a Coven is given transports, then exactly enough Chimera and/or Land Transporters to transport all units in the formation must be taken."],
-	"by":"Iron Bloke, last update 2023-01-08 Abetillo",
+	"by":"Iron Bloke, last update 2024-03-29 Abetillo",
 	"sections":[
 		{"name":"FORMATIONS", "formations":[
 			{"id":531, "name":"Stigmatus Coven",					"pts":35, "upgrades":[11,12,13,31,43,33,34,35,38,39,36,40,41,42,30,32]},
@@ -29,7 +29,7 @@
 			{"id":556, "name":"Slaanesh Daemon Knights",			"pts":275, "units":"4 Daemon Knights", 			"upgrades":[]},
 			{"id":557, "name":"Tzeentch Firelord",				"pts":0, 						"upgrades":[61]},
 			{"id":558, "name":"Tzeentch Doomwings",				"pts":150, "units":"3 Doomwings", 			"upgrades":[]},
-			{"id":559, "name":"Tzeentch Silver Towers",			"pts":325, "units":"4 Silver Towers", 			"upgrades":[]},
+			{"id":559, "name":"Tzeentch Silver Towers",			"pts":300, "units":"4 Silver Towers", 			"upgrades":[]},
 			{"id":560, "name":"Hellfire Cannons",				"pts":200, "units":"4 Hellfire Cannons", 		"upgrades":[]},
 			{"id":561, "name":"Defilers",					"pts":250, "units":"4 Defilers", 			"upgrades":[]}
 		]}
