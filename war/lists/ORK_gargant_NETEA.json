@@ -9,6 +9,7 @@
 {"id": 532, "name":"Gargant",                    "pts":475, "upgrades":[28,52,51,54,55,57,59,53]},       
 {"id": 533, "name":"Great Gargant",              "pts":650, "upgrades":[28,52,51,54,55,59,53,58]},
 {"id": 534, "name":"Mega Gargant",               "pts":1000, "upgrades":[28]}
+]},
 
 {"name":"GARGANT MOB SUPPORT FORMATIONS", "formations":[
 
@@ -82,8 +83,8 @@
 {"id": 57, "name":"Kart",                        "pts":50},
 {"id": 58, "name":"Kart",                        "pts":75},       
 {"id": 59, "name":"Ordz Duruk",                  "pts":50}       
-
-],       
+],  
+  
 "formationConstraints":[
                
 {"max":1, "name":"Spacecraft", "from":[544]},
