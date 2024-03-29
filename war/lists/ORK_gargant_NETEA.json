@@ -15,8 +15,8 @@
 
 {"id": 541, "name":"Kan Mob (Normal)",                                  "pts":0, "upgrades":[11,12,15,13,14]},
 {"id": 542, "name":"Kan Mob (Big)",                                     "pts":-50, "upgrades":[11,12,15,13,14]},
-{"id": 543, "name":"Kan Mob ('Uge)",                                    "pts":-100, "upgrades":[11,12,15,13,14]}
-{"id": 544, "name":"Kroozer",                                           "pts":0, "upgrades":[]} 
+{"id": 543, "name":"Kan Mob ('Uge)",                                    "pts":-100, "upgrades":[11,12,15,13,14]},
+{"id": 544, "name":"Kroozer",                                           "pts":0, "upgrades":[]},
 {"id": 545, "name":"Loota Warband (Normal)", "units":"6 Boyz, 2 Grotz", "pts":125, "upgrades":[18,19,11,20,12,15,21,22,23,24,13,14,16,17]},   
 {"id": 546, "name":"Loota Warband (Big)", "units":"12 Boyz, 4 Grotz",   "pts":225, "upgrades":[18,19,11,20,12,15,21,22,23,24,13,14,16,17]},
 {"id": 547, "name":"Loota Warband ('Uge)", "units":"18 Boyz, 6 Grotz",  "pts":300, "upgrades":[18,19,11,20,12,15,21,22,23,24,13,14,16,17]},       
