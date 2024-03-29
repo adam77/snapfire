@@ -52,12 +52,13 @@
    ],
    "formationConstraints": [
       {"max": 1, "from": [601]},
+      {"max": 1, "from": [602]},
       {"max": 1, "from": [802]},
       {"maxPercent": 33.34, "name": "Necron Harvesters", "from": [602,506,802,803,804,805]},
       {"max": 3, "name": "Necron Support Formations", "from": [501,502,503,504,505], "forEach": [701], "name2": "Necron Phalanx"}
    ],
    "upgradeConstraints": [
-   	{"max": 1, "from": [107,108,602], "perArmy": true},
+   	{"max": 1, "from": [11,12,107,108], "perArmy": true},
       {"max": 1, "min": 1, "from": [11,12], "appliesTo": [602]},
       {"min": 1, "max": 1, "from": [104,108], "appliesTo": [701]},
       {"max": 3, "from": [100], "appliesTo": [701,501]},
