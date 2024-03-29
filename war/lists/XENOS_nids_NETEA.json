@@ -1,10 +1,10 @@
 {
    "id": "Tyranids",
-   "version": "NetEA Tournament Pack (2023-01-03)",
+   "version": "NetEA Tournament Pack (2024-02-12)",
    "notes":[
       "A symbiote character may only be added to a Hive Tyrant or Dominatrix unit."
    ],
-   "by": "Borka, last update 2023-01-11 Abetillo",
+   "by": "Borka, last update 2024-03-29 Abetillo",
    "sections": [
       {
          "name": "SYNAPSE SWARM FORMATIONS",
@@ -20,7 +20,7 @@
             {"id": 517, "name": "Biovore Swarm", "pts": 0, "upgrades": [16]},
             {"id": 518, "name": "Dactylis Swarm", "pts": 0, "upgrades": [31]},
             {"id": 519, "name": "Exocrine Swarm", "pts": 0,"upgrades": [28]},
-            {"id": 520, "name": "Genestealer Swarm", "pts": 0, "upgrades": [80,81]},
+            {"id": 520, "name": "Genestealer Swarm", "pts": 15, "upgrades": [80,81]},
             {"id": 524, "name": "Lictor Swarm", "pts": 10, "upgrades": [41]}
          ]
       },
@@ -30,7 +30,7 @@
             {"id": 521, "name": "Harridian Swarm", "pts": 0, "upgrades": [38,21]},
             {"id": 522, "name": "Hierodule Bio-Titan", "pts": 350, "upgrades": []},
             {"id": 523, "name": "Hierophant Bio-Titan", "pts": 525, "upgrades": []},
-            {"id": 526, "name": "Trygon Swarm", "pts": 30, "upgrades": [29,26]}
+            {"id": 526, "name": "Trygon Swarm", "pts": 10, "upgrades": [29,26]}
          ]
       }
    ],
@@ -71,8 +71,8 @@
 
       {"id": 41, "name": "Lictors", "pts": 35},
 
-      {"id": 35, "name": "Trygon", "pts": 60},
-      {"id": 29, "name": "Trygon", "pts": 65},
+      {"id": 35, "name": "Trygon", "pts": 50},
+      {"id": 29, "name": "Trygon", "pts": 60},
 
       {"id": 60, "name": "Bile Launcher", "pts": 0},
       {"id": 61, "name": "Bio-Titan Bio-Cannon", "pts": 0},
@@ -80,7 +80,7 @@
       {"id": 63, "name": "Pyro-Acid Spray", "pts": 0},
       {"id": 64, "name": "Razorclaw", "pts": 0},
 
-      {"id": 80, "name": "Genestealers", "pts": 25},
+      {"id": 80, "name": "Genestealers", "pts": 20},
       {"id": 81, "name": "Brood Lord", "pts": 25}
 
    ],
@@ -109,11 +109,11 @@
       {"min": 1, "from": [160,161,162], "appliesTo": [517]},
       {"max": 1, "min": 1, "from": [32,33,34], "appliesTo": [518]},
       {"min": 1	, "from": [280,281,282], "appliesTo": [519]},
-      {"min": 6, "from": [80], "appliesTo": [520]},
+      {"min": 8, "from": [80], "appliesTo": [520]},
       {"max": 1, "from": [81], "appliesTo": [520]},
       {"max": 3, "min": 1, "from": [38], "appliesTo": [521]},
       {"max": 6, "min": 4, "from": [41], "appliesTo": [524]},
-      {"max": 6, "min": 3, "from": [29], "appliesTo": [526]},
+      {"max": 6, "min": 4, "from": [29], "appliesTo": [526]},
       {"max": 2, "min": 2, "from": [64,60,61,62,63], "appliesTo": [522,523]},
       {"max": 1, "from": [60], "appliesTo": [522,523]},
       {"max": 1, "from": [61], "appliesTo": [522,523]},
