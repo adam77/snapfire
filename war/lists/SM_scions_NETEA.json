@@ -1,7 +1,7 @@
 {
 	"id": "Scions of Iron",
-	"version": "NetEA Tournament Pack (2022-04-22)",
-	"by": "Iron Bloke, last update 2023-1-5 Abetillo",
+	"version": "NetEA Tournament Pack (2024-02-12)",
+	"by": "Iron Bloke, last update 2024-04-20 Abetillo",
 	"sections":[
 		{"name":"SCIONS OF IRON DETACHMENTS", "formations": [
 			{ "id":502, "name":"Bike", "pts":175, "upgrades":[55,56,57,61,62,63] },
@@ -98,7 +98,7 @@
 		{"max":4, "from":[508]},
 		{"min":2, "max":4, "from":[111], "appliesTo":[513]},
 		{"min":4, "max":4, "from":[11,12], "appliesTo":[502]},
-		{"min":4, "max":4, "from":[71,72,204,205], "appliesTo":[505]},
+		{"min":4, "max":4, "from":[71,204,205], "appliesTo":[505]},
 		{"max":2, "from":[73,74,75,76,77,78,79,206,207,208,209], "appliesTo":[505]},
 		{"min":2, "max":4, "from":[97,98,96,200], "appliesTo":[511]},
 		{"min":1, "max":1, "from":[41,42], "appliesTo":[509]},
