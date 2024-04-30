@@ -1,29 +1,29 @@
 {
    "id": "Necrons",
-   "version": "NetEA Tournament Pack 2022",
-   "by": "Iron Bloke, last update 2022-12-11 Abetillo",
-   "notes": ["A Warbarque in the army may be given the Supreme Commander ability if a C’tan is not fielded."],
+   "version": "NetEA Tournament Pack (2024-02-12)",
+   "by": "Iron Bloke, last update 2024-03-29 Abetillo",
+   "notes": ["A Warbarque in the army may be given a Necron Overlord, or a Necron Lord may be replaced with a Necron Overlord, if a C’tan is not fielded."],
    "sections": [
-      {"name": "INDIVIDUALS", "formations": [
+      {"name": "NECRON INDIVIDUALS", "formations": [
             {"id": 601, "name": "Tomb Complex", "pts": 75, "upgrades": []}
          ]
       },
       {"name": "NECRON PHALANXES",
          "formations": [
-            {"id": 701, "name": "Infantry Phalanx", "pts": 225, "units": "Necron Lord, 6 Warriors", "upgrades": [102,100,103,101]
+            {"id": 701, "name": "Infantry Phalanx", "pts": 200, "units": "6x Warriors", "upgrades": [102,100,103,101]
             }
          ]
       },
-      {"name": "NECRON SUPPORT",
+      {"name": "NECRON SUPPORT FORMATIONS",
          "formations": [
-            {"id": 505, "name": "Armored Phalanx", "pts": 300, "units": "6 Obelisks"},
-            {"id": 502, "name": "Eques Maniple", "pts": 300, "upgrades": [104,103]},
+            {"id": 505, "name": "Armored Phalanx", "pts": 300, "units": "6x Obelisks"},
+            {"id": 502, "name": "Eques Maniple", "pts": 0, "upgrades": [104,109,110,107,103]},
             {"id": 503, "name": "Monolith Maniple", "pts": 25, "upgrades": [105,106]},
-            {"id": 504, "name": "Monolith Phalanx", "pts": 275, "units": "3 Monoliths", "upgrades": [105]},
-            {"id": 501, "name": "Venator Maniple", "pts": 200, "units": "6 Flayed Ones", "upgrades": [104,100,103,101]}
+            {"id": 504, "name": "Monolith Phalanx", "pts": 275, "units": "3x Monoliths", "upgrades": [105]},
+            {"id": 501, "name": "Venator Maniple", "pts": 200, "units": "6x Flayed Ones", "upgrades": [104,107,100,103,101]}
          ]
       },
-      {"name": "HARVESTERS",
+      {"name": "NECRON HARVESTERS",
          "formations": [
             {"id": 602, "name": "C`Tan", "pts": 0, "upgrades": []},
             {"id": 803, "name": "Harvester Engine", "pts": 600},
@@ -41,11 +41,12 @@
       {"id": 102, "name": "Immortals", "pts": 40},
       {"id": 103, "name": "Wraiths", "pts": 50},
       {"id": 104, "name": "Necron Lord", "pts": 25},
-      {"id": 109, "name": "Destroyers", "pts": 0},
-      {"id": 110, "name": "Heavy Destroyers","pts": 0},
+      {"id": 109, "name": "Destroyers", "pts": 50},
+      {"id": 110, "name": "Heavy Destroyers","pts": 50},
       {"id": 106, "name": "Monolith", "pts": 75},
       {"id": 105, "name": "Obelisk", "pts": 50},
-      {"id": 107, "name": "Supreme Commander", "pts": 50},
+      {"id": 107, "name": "Necron Overlord", "pts": 50},
+      {"id": 108, "name": "Necron Overlord", "pts": 75},
       {"id": 20, "name": "Abattoir", "pts": 0},
       {"id": 21, "name": "Aeonic Orb", "pts": 0}
    ],
@@ -53,21 +54,20 @@
       {"max": 1, "from": [601]},
       {"max": 1, "from": [602]},
       {"max": 1, "from": [802]},
-      {"max": 1, "from": [803]},
-      {"max": 2, "from": [805]},
-      {"maxPercent": 33.34, "name": "War Engines & Allies", "from": [602,506,802,803,804,805]},
-      {"max": 3, "name": "Necron Support", "from": [501,502,503,504,505], "forEach": [701], "name2": "Necron Phalanx"}
+      {"maxPercent": 33.34, "name": "Necron Harvesters", "from": [602,506,802,803,804,805]},
+      {"max": 3, "name": "Necron Support Formations", "from": [501,502,503,504,505], "forEach": [701], "name2": "Necron Phalanx"}
    ],
    "upgradeConstraints": [
-   	{"max": 1, "from": [107], "perArmy": true},
+   	{"max": 1, "from": [11,12,107,108], "perArmy": true},
       {"max": 1, "min": 1, "from": [11,12], "appliesTo": [602]},
+      {"min": 1, "max": 1, "from": [104,108], "appliesTo": [701]},
       {"max": 3, "from": [100], "appliesTo": [701,501]},
       {"max": 1, "from": [101], "appliesTo": [701,501]},
       {"max": 3, "from": [102], "appliesTo": [701]},
-      {"max": 3, "from": [103], "appliesTo": [701,501,502]},
-      {"max": 1, "from": [104], "appliesTo": [501,502]},
-      {"max": 6, "min": 6, "from": [109,110], "appliesTo": [502]},
-      {"max": 3, "min": 2, "from": [105], "appliesTo": [503]},
+      {"max": 3, "from": [103], "appliesTo": [701,501]},
+      {"max": 1, "from": [104,107], "appliesTo": [501,502]},
+      {"min": 6, "max": 9, "from": [109,110,103], "appliesTo": [502]},
+      {"min": 2, "max": 3, "from": [105], "appliesTo": [503]},
       {"max": 2, "min": 1, "from": [106], "appliesTo": [503]},
       {"max": 3, "from": [105], "appliesTo": [504]},
       {"min": 1, "max": 1, "from": [20,21], "appliesTo": [803]}

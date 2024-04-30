@@ -1,11 +1,11 @@
 {
 	"id": "Baran Siege Masters",
-	"version": "NetEA Tournament Pack (2023-01-03) ",
+	"version": "NetEA Tournament Pack (2024-02-12) ",
 	"notes":[
 		"All eight Sappers units must be purchased if taking any, plus the Platoon",
 		"One Commissar character can be added per five hundred points, or part thereof"
 		],
-	"by": "Iron Bloke, last update 2023-01-08 Abetillo",
+	"by": "Iron Bloke, last update 2024-03-29 Abetillo",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
 		 	{"id":513, "name":"Infantry Company", "pts":175, "upgrades":[13,14,31,35,36,32,29,34,33,28,30], "units":"Commander, 9 Siege Infantry"},
@@ -16,7 +16,7 @@
 			{"id":500, "name":"Artillery Company", 			"pts":425, "upgrades":[14], "units":"9 Götterdämmerung Howitzers, 9 Gun Emplacements"},
 			{"id":503, "name":"Bombard Battery",				"pts":250, "upgrades":[14], "units":"3 Bombards"},
 			{"id":506, "name":"Deathstrike Missile Battery",	"pts":200, "upgrades":[14], "units":"2 Deathstrike Missile Launchers"},
-			{"id":502, "name":"Flak Battery", 			"pts":150, "upgrades":[14], "units":"3 Blitzen AA Guns"},
+			{"id":502, "name":"Flak Battery", 			"pts":125, "upgrades":[14], "units":"3 Blitzen AA Guns"},
 			{"id":509, "name":"Heavy Tank Platoon",			"pts":300, "upgrades":[14], "units":"6 Ragnarok Heavy Tanks"},
 			{"id":508, "name":"Light Tank Platoon",			"pts":150, "upgrades":[14], "units":"6 Siegfried Light Tanks"},
 			{"id":505, "name":"Rough Rider Platoon",			"pts":150, "upgrades":[14], "units":"6 Rough Riders"},
@@ -24,7 +24,7 @@
 			{"id":507, "name":"Super-heavy Tank Platoon", 		"pts":200, "upgrades":[14]}
 		]},
 		{"name":"SIEGE REGIMENT FORTIFICATIONS", "formations":[
-			{"id":530, "name":"Fortified Position",	"pts":75, "upgrades":[], "units":"Up to 50cm trenches, 50cm razor wire, plus 6 Gun Emplacements."}
+			{"id":530, "name":"Fortified Position",	"pts":75, "upgrades":[], "units":"Up to 52cm trenches, 52cm razor wire, plus 6 Gun Emplacements."}
 		]},
 		{"name":"IMPERIAL NAVY AIRCRAFT", "formations":[
 			{"id":520, "name":"Marauder Bombers",		"pts":250, "upgrades":[], "units":"2 Marauders"},
