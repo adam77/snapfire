@@ -33,7 +33,7 @@
                 {"id":16, "name":"Attack Bikes", "pts":0},
                 {"id":17, "name":"Bikes", "pts":0},
                 {"id":18, "name":"Dreadnought PF", "pts":50},
-                {"id":20, "name":"Dreadnought LAS", "pts":50}
+                {"id":20, "name":"Dreadnought LAS", "pts":50},
                 {"id":19, "name":"Hunter", "pts":75},
                 {"id":21, "name":"Razorback HB", "pts":25},
                 {"id":22, "name":"Razorback LAS", "pts":25},
@@ -52,7 +52,7 @@
                 {"id":36, "name":"Land Raider Crusader", "pts":75}          
         ],
         "formationConstraints":[
-                {"maxPercent":33.34, "name":"Support Formations", "from":[512,515] },
+                {"maxPercent":33.34, "name":"Support Formations", "from":[512,515]},
                 {"min":1, "max":1, "from":[509]},
                 {"max":1, "perArmy":true, "from":[32]}
         ],
@@ -63,8 +63,8 @@
                 {"max":2, "from":[15], "appliesTo":[501,503,504,507,510,511]},
                 {"min":4, "max":6, "from":[15], "appliesTo":[513]},
                 {"min":5, "max":5, "from":[17,16], "appliesTo":[502]},
-                {"min":1, "max":2, "from":[34], "appliesTo":[514]}
-                {"min":4, "max":4, "from":[35,36], "appliesTo":[504]}   
+                {"min":1, "max":2, "from":[34], "appliesTo":[514]},
+                {"min":4, "max":4, "from":[35,36], "appliesTo":[504]},  
                 {"min":5, "max":5, "from":[23,24,25], "appliesTo":[505]},
                 {"min":2, "max":2, "from":[26,27], "appliesTo":[507]},
                 {"max":2, "from":[18,20], "appliesTo":[501,503,510,511]},
@@ -76,8 +76,7 @@
                 {"max":6, "from":[21,22], "appliesTo":[510]},
                 {"max":4, "from":[35,36], "appliesTo":[510,511]},
                 {"max":2, "from":[35,36], "appliesTo":[503]},
-                {"max":1, "from":[33], "appliesTo":[510]}
-                    
+                {"max":1, "from":[33], "appliesTo":[510]}                  
         ]
 }
 
