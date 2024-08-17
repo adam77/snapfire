@@ -5,7 +5,7 @@
    "sections": [
       { "name": "CADRES",
          "formations": [
-            {"id": 532,"name": "Crisis Battlesuit Cadre","pts": 25,"upgrades": [17,35]},
+            {"id": 532,"name": "Crisis Battlesuit Cadre","pts": 25,"upgrades": [35]},
             {"id": 531,"name": "Fire Warrior Cadre","pts": 225,"upgrades": [62,63,60,35,80,81,82,61,54,55]}
          ]
       },
@@ -33,6 +33,11 @@
    ],
    "upgrades": [
       {"id": 17,"name": "XV8 Crisis Battlesuit","pts": 50},
+      {"id": 70, "name": "4 XV8 Crisis Battlesuit units", "pts": 200},
+      {"id": 71, "name": "5 XV8 Crisis Battlesuit units", "pts": 250},
+      {"id": 72, "name": "6 XV8 Crisis Battlesuit units", "pts": 275},
+      {"id": 73, "name": "7 XV8 Crisis Battlesuit units", "pts": 325},
+      {"id": 74, "name": "8 XV8 Crisis Battlesuit units", "pts": 350},
       {"id": 35,"name": "2 Gun Drone units","pts": 25},
       {"id": 60,"name": "Ethereal","pts": 50},
       {"id": 61,"name": "2 Pathfinders, 1 Devilfish","pts": 100},
@@ -45,7 +50,7 @@
       {"id": 66,"name": "12 Fire Warriors","pts": 100},
       {"id": 67,"name": "12 Fire Warriors, 2 Devilfish","pts": 125},
       {"id": 50,"name": "Shas'el","pts": 25},
-      {"id": 51,"name": "Shas'o","pts": 100},
+      {"id": 51,"name": "Shas'o","pts": 75},
       {"id": 54,"name": "3 Piranhas","pts": 75},
       {"id": 55,"name": "Skyray","pts": 100},
       {"id": 22,"name": "Hammerhead gunship","pts": 50},
@@ -75,7 +80,7 @@
       {"max": 3,"name": "Support Groups","from": [515,516,514,518,512,517,513],"forEach": [532,531],"name2": "Cadre"}
    ],
    "upgradeConstraints": [
-      {"max": 8,"min": 4,"from": [17],"appliesTo": [532]},
+      {"max": 1,"min": 1,"from": [70,71,72,73,74],"appliesTo": [532]},
       {"max": 1,"min": 1,"from": [50,51],"appliesTo": [532]},
       {"max": 1,"perArmy": true,"from": [51]},
       {"max": 1,"from": [50,51],"appliesTo": [532],"name": "Cmdr"},
