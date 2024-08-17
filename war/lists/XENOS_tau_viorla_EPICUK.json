@@ -1,15 +1,18 @@
 {
-   "id": "EpicUK Tau Vior'la",
-   "version": "1.4",
-   "by": "Kyussinchains",
+   "id": "Epic UK Tau Vior'la",
+   "version": "1.42",
+   "by": "Xevious Red",
    "sections": 
    [
       {
          "name": "Tau Core Formations",
          "formations": 
          [
-            {"id": 501, "name": "Heavy Battlesuit Cadre", "pts": 25, "upgrades": [90, 91, 92] },
-            {"id": 502, "name": "Vior'la Fire Warrior Cadre", "pts": 225, "upgrades": [35, 31, 32, 33, 41, 46, 51, 52,53]}
+            
+            {"id": 502, "name": "Fire Warrior Breacher Cadre", "pts": 225, "upgrades": [35, 32, 33, 41, 46, 47]},
+            {"id": 517, "name": "Stealth Group", "pts": 225, "upgrades": []}, 
+            {"id": 504, "name": "Vior'la XV8 Crisis Suit Cadre", "pts": 300, "upgrades": [31, 41]}
+            
          ]
       },
       {
@@ -17,8 +20,9 @@
          "formations": 
          [
             {"id": 512, "name": "Broadside Group", "pts": 300, "units": "6 XV88 Broadside battlesuits", "upgrades": [41] },
-            {"id": 513, "name": "Pathfinder Group", "pts": 0, "upgrades": [41]},
-            {"id": 517, "name": "Stealth Group", "pts": 225, "upgrades": [42]},                     
+            {"id": 501, "name": "Heavy Battlesuit Cadre", "pts": 25, "upgrades": [90, 91, 92] },
+	    {"id": 513, "name": "Pathfinder Group", "pts": 200, "units": "4 Pathfinder units, 2 Devilfish",  "upgrades": [41]},
+                                
             {"id": 515, "name": "KV128 Stormsurge Formation", "pts": 250, "units": "2 KV128 Stormsurge Battlesuit units"},
             {"id": 511, "name": "KX139 Ta'unar Supremacy", "pts": 225, "units": "1 KX139 Ta'unar Supremacy Battlesuit unit", "upgrades": []}            
          ]
@@ -27,49 +31,48 @@
          "name": "Air Caste Formations",
          "formations": 
          [
-            {"id": 522, "name": "Razorshark Squadron", "pts": 175, "units": "3 Razorshark strike Fighters"},
-            {"id": 527, "name": "Tiger Shark AX-1-0 Squadron", "pts": 350, "units": "2 Tiger Shark AX-1-0"},
+            {"id": 522, "name": "Razorshark Squadron", "pts": 200, "units": "3 Razorshark strike Fighters"},
             {"id": 528, "name": "Sun Shark Squadron", "pts": 200, "units": "2 Sun Shark Bombers"},
             {"id": 525, "name": "Orca Dropship", "pts": 150},
-            {"id": 526, "name": "Spacecraft", "pts": 225, "units": "1 Protector Class II Cruiser"}
+            {"id": 524,"name": "Manta Dropship","pts": 650,"upgrades": []},
+            {"id": 526, "name": "Spacecraft", "pts": 200, "units": "1 Protector Class Cruiser"}
             
          ]
       }
    ],
    "upgrades": 
    [
-      {"id": 31, "name": "Shas'o Commander", "pts": 100 },
+      {"id": 31, "name": "Shas'o Commander", "pts": 50 },
       {"id": 32, "name": "Cadre Fireblade", "pts": 50 }, 
       {"id": 33, "name": "Ethereal", "pts": 50 }, 
       {"id": 34, "name": "Shas'el Commander", "pts": 25 },
       {"id": 35, "name": "Bonded Team", "pts": 25 },
       
       {"id": 41, "name": "2 Gun Drones", "pts": 25 },
-      {"id": 42, "name": "Stealth Drones", "pts": 25 },
       {"id": 43, "name": "XV95 Ghostkeel Battlesuit unit", "pts": 25 },
-      {"id": 46, "name": "Skyray", "pts": 75 }, 
+      {"id": 46, "name": "Skyray", "pts": 100 }, 
+      {"id": 47, "name": "3 XV88 Broadside Battlesuits", "pts": 150 }, 
       
-      {"id": 51, "name": "XV8 Crisis Battlesuit unit", "pts": 50},
-      {"id": 52, "name": "XV9 Hazard Battlesuit unit", "pts": 75},
-      {"id": 53, "name": "2 XV9 Hazard Battlesuit units", "pts": 125},
-      {"id": 54, "name": "8 Fire Warrior units", "pts": 0 },
-      {"id": 56, "name": "6 Fire Warrior units, 2 Pathfinder units", "pts": 25 },
-      {"id": 55, "name": "6 Fire Warrior units, 3 Devilfish", "pts": 0 }, 
-      {"id": 57, "name": "4 Fire Warrior units, 2 Pathfinder units, 3 Devilfish", "pts": 25 }, 
+      {"id": 51, "name": "6 XV8 Crisis Battlesuit units", "pts": 0},
+      {"id": 52, "name": "7 XV8 Crisis Battlesuit units", "pts": 50},
+      {"id": 53, "name": "8 XV8 Crisis Battlesuit units", "pts": 75},
+      {"id": 54, "name": "8 Fire Warrior Breacher units", "pts": 0 },
+      {"id": 55, "name": "6 Fire Warrior Breacher units, 3 Devilfish", "pts": 0 }, 
+      {"id": 56, "name": "8 Fire Warrior Breacher units, 3 Devilfish", "pts": 50 },
+      {"id": 57, "name": "10 Fire Warrior Breacher units, 1 Devilfish", "pts": 75 },
+       
       
-      {"id": 60, "name": "10 Fire Warrior units", "pts": 50 }, 
-      {"id": 63, "name": "8 Fire Warrior units, 2 Pathfinder units", "pts": 75 }, 
-      {"id": 61, "name": "8 Fire Warrior units, 4 Devilfish", "pts": 75 },
-      {"id": 64, "name": "6 Fire Warrior units, 2 Pathfinder units, 4 Devilfish", "pts": 100 }, 
+      {"id": 60, "name": "10 Fire Warrior Breacher  units", "pts": 50 },  
+      {"id": 61, "name": "8 Fire Warrior Breacher units, 4 Devilfish", "pts": 75 },
       {"id": 62, "name": "XV15 Stealthsuit unit", "pts": 0 }, 
       
       {"id": 70, "name": "Heavy Rail Cannon", "pts": 0 }, 
       {"id": 71, "name": "Nexus Missile Array", "pts": 0 }, 
-      {"id": 72, "name": "Pulse-Ordinance Multi-Driver", "pts": 50 }, 
+      {"id": 72, "name": "Pulse-Ordinance Multi-Driver", "pts": 0 }, 
  
-      {"id": 80, "name": "4 Pathfinder units, 2 Devilfishes", "pts": 200 },
-      {"id": 81, "name": "6 Pathfinder units", "pts": 200 },
-            
+      
+      
+                  
       {"id": 90, "name": "XV104 Riptide ", "pts": 100 },
       {"id": 91, "name": "XV107 R'Varna ", "pts": 100 },
       {"id": 92, "name": "XV109 Y'Vahra ", "pts": 100 }
@@ -77,8 +80,8 @@
    "formationConstraints": 
    [ 
       { "max": 1, "from": [ 526 ] }, 
-      { "maxPercent": 33, "name": "Air Caste Formations", "from": [ 522, 525, 526, 527, 528 ] }, 
-      { "max": 2, "name": "Support Groups", "from": [ 511, 512, 513, 515, 517], "forEach": [ 501, 502 ], "name2": "Cadre" } 
+      { "maxPercent": 33.34, "name": "Air Caste Formations", "from": [ 522, 525, 526, 528, 524 ] }, 
+      { "max": 2, "name": "Support Groups", "from": [ 513, 512, 501, 515, 511], "forEach": [ 502, 517, 504 ], "name2": "Cadre" } 
    ], 
    "upgradeConstraints": 
    [ 
@@ -88,14 +91,13 @@
       { "max": 1, "from": [ 35 ] }, 
       { "max": 1, "from": [ 46 ] },  
       { "max": 1, "from": [ 41 ] },
-      { "max": 1, "from": [ 42 ] },      
+      { "max": 1, "from": [ 42 ] }, 
+      { "max": 1, "from": [ 47 ] }, 
       { "max": 3, "from": [ 43 ] }, 
       { "max": 2, "from": [ 51 ] }, 
-      { "max": 1, "from": [ 52, 53 ] },      
-      { "max": 1, "from": [ 32, 31 ], "appliesTo": [ 502 ] },       
-      { "max": 1, "min": 1, "from": [ 54, 56, 55, 57, 60, 63, 61, 64 ], "appliesTo": [ 502 ] }, 
-      { "max": 1, "min": 1, "from": [ 34 ], "appliesTo": [ 501 ] } ,
-      { "max": 1, "min": 1, "from": [ 80, 81 ], "appliesTo": [ 513 ] }, 
+      { "min": 1, "max": 1, "from": [ 51, 52, 53 ], "appliesTo": [504] },             
+      { "max": 1, "min": 1, "from": [ 54, 55, 56, 57, 60, 61 ], "appliesTo": [ 502 ] }, 
+      { "max": 1, "min": 1, "from": [ 34 ], "appliesTo": [ 501, 504 ] } ,
       { "max": 1, "min": 1, "from": [ 70, 71, 72 ], "appliesTo": [ 511 ] }, 
       { "max": 4, "min": 3, "from": [ 90, 91, 92 ], "appliesTo": [ 501 ] },
       { "max": 6, "min": 6, "from": [ 62, 43 ], "appliesTo": [ 517 ] } 
