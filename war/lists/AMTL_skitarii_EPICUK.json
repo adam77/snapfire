@@ -1,19 +1,21 @@
 {
 	"id":"EpicUK Skitarii",
-	"version":"210115",
-	"notes":["When selecting the transport upgrade, you may choose enough chimeras to transport the formation with no slots left over, OR you may select one Gorgon"],
-	"by":"Kyussinchains",
+	"version":"170924",
+	"notes":["When selecting the transport upgrade, you may choose enough Skorpius Duneriders to transport the formation with no slots left over, OR you may select one Assault Minori OR Moles"],
+	"by":"Xevious_Red",
 	"sections":[
 		{"name":"SKITARII COHORTS", "formations":[
-			{"id":566, "name":"Skitarii",	"pts":225, "units":"1 Secutor units, 9 Hypaspist units", "upgrades":[101,102,103,104,105,106,107,108,109,110]}			
+			{"id":566, "name":"Skitarii",	"pts":200, "upgrades":[101,102,103,104,105,106,107,108,109,110,117]},
+			{"id":567, "name":"Sagitarii",	"pts":50, "upgrades":[101,103,104,105,108,109,110,117]}			
 		]},
 		{"name":"SKITARII MANIPLES", "formations":[
-			{"id":567, "name":"Sagitarii",	"pts":175, "units":"5 Sagitarii units",	 "upgrades":[101,103,104,105,106,107,108,109,110]},	
+				
 			{"id":561, "name":"Sentry",			"pts":150, "units":"4 Robots, 3 Rapiers", "upgrades":[101]},
-			{"id":563, "name":"Praetorian",		"pts":225, "units":"5 Praetorian units", "upgrades":[104,105,107,108,109,110]},
-			{"id":580, "name":"Cataphractii",			"pts":400, "units":"6 Leman Russ Tanks", "upgrades":[]},
+			{"id":563, "name":"Praetorian",		"pts":250, "units":"5 Praetorian units", "upgrades":[104,105,107,108,109,110,117]},
+			{"id":580, "name":"Cataphractii",			"pts":0, "upgrades":[103]},
 			{"id":571, "name":"Ordinatus Minoris",	"pts":50, "upgrades":[107,108,109,110,112,113,114]},
-			{"id":572, "name":"Ordinatus Majoris",	"pts":500, "units":"1 Ordinatus Majorus", "upgrades":[111,115,116]}	
+			{"id":572, "name":"Ordinatus Majoris",	"pts":350, "units":"1 Ordinatus Majorus", "upgrades":[111,115,116]},
+			{"id":577, "name":"Ironstrider Ballistarii",	"pts":175, "units":"6 Ironstrider Ballistarii", "upgrades":[]}
 		]},
 		{"name":"MECHANICUS ALLIES", "formations":[
 			
@@ -36,13 +38,15 @@
 	],
 	"upgrades":[	
 		{"id":101, "name":"3 Rapier Laser Destroyers",		"pts":50},
-		{"id":102, "name":"Magos",	"pts":50},
-		{"id":103, "name":"Hydra",				"pts":50},
-		{"id":104, "name":"Chimera",			"pts":25},
-		{"id":105, "name":"Gorgon",			"pts":75},
+		{"id":120, "name":"Magos",	"pts":50},
+		{"id":103, "name":"Icarus Onager",				"pts":50},
+		{"id":104, "name":"Skorpius Dunerider",			"pts":15},
+		{"id":105, "name":"Assault Minori",			"pts":100},
+		{"id":117, "name":"2 Moles",			"pts":75},
 		{"id":106, "name":"2 Sagitarii Units",			"pts":50},
-		{"id":111, "name":"Hellfire Missiles",	"pts":50},
-    {"id":115, "name":"Nova Cannon",		"pts":0},
+		{"id":107, "name":"Sagitarii",			"pts":25},
+		{"id":111, "name":"Hellfire Missiles",	"pts":100},
+    		{"id":115, "name":"Nova Cannon",		"pts":50},
 		{"id":116, "name":"Sonic Disruption Cannon",		"pts":0},
 		{"id":107, "name":"Minoris (3x Twin-Hydra Autocannons)",		"pts":125},
 		{"id":108, "name":"Minoris (Plasma Cannon)",		"pts":125},
@@ -50,7 +54,13 @@
 		{"id":110, "name":"Minoris (Apocalypse Missile Launcher)",	"pts":125},
 		{"id":112, "name":"Minoris (Quake Cannon)",			"pts":150},
 		{"id":113, "name":"Minoris (Volcano Cannon)",		"pts":150},
-		{"id":114, "name":"Minoris (Plasma Destructor)",		"pts":150}
+		{"id":114, "name":"Minoris (Plasma Destructor)",		"pts":150},
+		{"id":118, "name":"Onager (Eradicator)",		"pts":50},
+		{"id":119, "name":"Onager (Heavy Phosphor)",		"pts":50},
+		{"id":102, "name":"Techpriest",	"pts":0},
+		{"id":121, "name":"Hypaspist",	"pts":0},
+		{"id":122, "name":"Corpuscarii Electro Priest",	"pts":0},
+		{"id":123, "name":"Secutor",	"pts":25}
 		
 	],
 	"formationConstraints":[
@@ -62,14 +72,18 @@
 	"upgradeConstraints":[
 		{"max":3, "min":2, "from":[107,108,109,110,112,113,114], "appliesTo":[571]},
     {"max":1, "min":1, "from":[115,116,111], "appliesTo":[572]},
-		{"max":1, "from":[112,113,114], "appliesTo":[571]},
+		{"max":10, "min":5, "from":[107], "appliesTo":[567]},
+		{"max":8, "min":6, "from":[118,119], "appliesTo":[580]},
 		{"max":1, "from":[111], "appliesTo":[572]},
 		{"max":1, "from":[101]},
-		{"max":1,  "perArmy":true,  "from":[102]},
+		{"max":1,  "perArmy":true,  "from":[120]},
 		{"max":1, "from":[103]},
 		{"max":1, "from":[105]},
 		{"max":1, "from":[106]},
-		{"max":1, "from":[107,108,109,110], "appliesTo":[566,567,563]}
+		{"max":1, "from":[107,108,109,110], "appliesTo":[566,567,563]},
+		{"max":1, "min":1, "from":[102,120], "appliesTo":[566]},
+		{"max":10, "min":10, "from":[121,122,123], "appliesTo":[566]},
+		{"max":1, "from":[105,117], "appliesTo":[566,567,563]}
 		
 	]
 }
