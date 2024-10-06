@@ -5,15 +5,15 @@
 	"by":"Xevious_Red",
 	"sections":[
 		{"name":"SKITARII COHORTS", "formations":[
-			{"id":566, "name":"Skitarii",	"pts":200, "upgrades":[101,102,103,104,105,106,107,108,109,110,117]},
-			{"id":567, "name":"Sagitarii",	"pts":50, "upgrades":[101,103,104,105,108,109,110,117]}			
+			{"id":566, "name":"Skitarii",	"pts":200, "upgrades":[101,102,103,104,105,106,108,109,110,117]},
+			{"id":567, "name":"Sagitarii",	"pts":50, "upgrades":[101,103,104,105,107,108,109,110,117]}			
 		]},
 		{"name":"SKITARII MANIPLES", "formations":[
 				
 			{"id":561, "name":"Sentry",			"pts":150, "units":"4 Robots, 3 Rapiers", "upgrades":[101]},
-			{"id":563, "name":"Praetorian",		"pts":250, "units":"5 Praetorian units", "upgrades":[104,105,107,108,109,110,117]},
-			{"id":580, "name":"Cataphractii",			"pts":0, "upgrades":[103]},
-			{"id":571, "name":"Ordinatus Minoris",	"pts":50, "upgrades":[107,108,109,110,112,113,114]},
+			{"id":563, "name":"Praetorian",		"pts":250, "units":"5 Praetorian units", "upgrades":[104,105,108,109,110,117]},
+			{"id":580, "name":"Cataphractii",			"pts":0, "upgrades":[103,118,119]},
+			{"id":571, "name":"Ordinatus Minoris",	"pts":50, "upgrades":[108,109,110,112,113,114]},
 			{"id":572, "name":"Ordinatus Majoris",	"pts":350, "units":"1 Ordinatus Majorus", "upgrades":[111,115,116]},
 			{"id":577, "name":"Ironstrider Ballistarii",	"pts":175, "units":"6 Ironstrider Ballistarii", "upgrades":[]}
 		]},
@@ -48,7 +48,6 @@
 		{"id":111, "name":"Hellfire Missiles",	"pts":100},
     		{"id":115, "name":"Nova Cannon",		"pts":50},
 		{"id":116, "name":"Sonic Disruption Cannon",		"pts":0},
-		{"id":107, "name":"Minoris (3x Twin-Hydra Autocannons)",		"pts":125},
 		{"id":108, "name":"Minoris (Plasma Cannon)",		"pts":125},
 		{"id":109, "name":"Minoris (Turbo-laser Destructor)",	"pts":125},
 		{"id":110, "name":"Minoris (Apocalypse Missile Launcher)",	"pts":125},
@@ -66,12 +65,12 @@
 	"formationConstraints":[
 		{"max":1, "perArmy":true, "from":[565]},
 		{"max":1, "perArmy":true, "from":[572]},
-		{"max":3, "name":"Skitarii Maniples", "from":[567,561,563,571,572,580], "forEach":[566], "name2":"Skitarii Cohort"},
+		{"max":3, "name":"Skitarii Maniples", "from":[561,563,571,572,577,580], "forEach":[566,567], "name2":"Skitarii Cohort"},
 		{"maxPercent":33, "name":"Mechanicus Allies", "from":[503,504,552,576,564,575,565]}
 	],
 	"upgradeConstraints":[
-		{"max":3, "min":2, "from":[107,108,109,110,112,113,114], "appliesTo":[571]},
-    {"max":1, "min":1, "from":[115,116,111], "appliesTo":[572]},
+		{"max":3, "min":2, "from":[108,109,110,112,113,114], "appliesTo":[571]},
+    {"max":1, "min":1, "from":[116,115,111], "appliesTo":[572]},
 		{"max":10, "min":5, "from":[107], "appliesTo":[567]},
 		{"max":8, "min":6, "from":[118,119], "appliesTo":[580]},
 		{"max":1, "from":[111], "appliesTo":[572]},
@@ -80,9 +79,10 @@
 		{"max":1, "from":[103]},
 		{"max":1, "from":[105]},
 		{"max":1, "from":[106]},
-		{"max":1, "from":[107,108,109,110], "appliesTo":[566,567,563]},
+		{"max":1, "from":[108,109,110], "appliesTo":[566,567,563]},
 		{"max":1, "min":1, "from":[102,120], "appliesTo":[566]},
 		{"max":10, "min":10, "from":[121,122,123], "appliesTo":[566]},
+		{"max":2, "from":[123]},
 		{"max":1, "from":[105,117], "appliesTo":[566,567,563]}
 		
 	]
