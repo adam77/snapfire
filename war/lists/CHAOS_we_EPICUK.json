@@ -1,24 +1,24 @@
 {
    "id": "World Eaters",
-   "version": "Epic UK v160118",
+   "version": "Epic UK v031122",
    "by": "Kyussinchains",
    "notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1) The formation may be dropped via dreadclaws from a purchased Space Ship at no additional cost. 2) It may take sufficent Chaos Rhinos to transport it once other upgrades with transports have been purchased. 3) When Land Raiders are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add the minimum number of Rhinos to transport the remainder of the formation as per the plus transport option"],
    "sections": [
       {"name": "CORE", "formations": [
-            {"id": 501, "name": "World Eater Retinue", "pts": 275, "units": "8 Berserkers plus transport", "upgrades": [52,53,64,65,66,54,67,68,56,57,71,72,63,69,70,60]},
+            {"id": 501, "name": "World Eater Retinue", "pts": 275, "upgrades": [52,53,64,65,66,54,67,68,56,57,71,72,63,69,70,60,73]},
+	    {"id": 508, "name": "World Eater Juggernaughts", "pts": 350, "units": "8 Juggernaughts", "upgrades": [52,56,60]},  
             {"id": 551, "name": "Daemon Pool", "pts": 0, "upgrades": [50,51]}
          ]},
 	  {"name": "ELITE", "formations": [
 			{"id": 503, "name": "World Eater Terminators", "pts": 400, "units": "4 Terminators", "upgrades": [52,56,57,71,72,63,69,70,60,53,64,65,66]},
-			{"id": 508, "name": "World Eater Juggernaughts", "pts": 350, "units": "8 Juggernaughts", "upgrades": [56,60]},
-            {"id": 509, "name": "Bike Company", "pts": 350, "units": "8 Bikes", "upgrades": [56,60]}
+            {"id": 509, "name": "Bike Company", "pts": 350, "units": "8 Bikes", "upgrades": [52,56,60]}
         ]},
       {"name": "SUPPORT", "formations": [
             {"id": 504, "name": "Chaos Space Marines", "pts": 250, "units": "6 Chaos Marines, 3 Rhinos", "upgrades": [56]},
             {"id": 505, "name": "Daemonic Artillery", "pts": 200, "units": "4 Cannons of Khorne", "upgrades": []},
             {"id": 506, "name": "Daemonic Assault Engine Pack", "pts": 15, "upgrades": [37,63,69,70]},
             {"id": 507, "name": "Armoured Company", "pts": 0, "upgrades": [30,31,54,67,68,57,71,72]},
-            {"id": 510, "name": "Defiler Assault Pack", "pts": 250, "units": "4 World Eater Defilers", "upgrades": [63,69,70,57,71,72]},
+            {"id": 510, "name": "Defiler Assault Pack", "pts": 275, "units": "4 World Eater Defilers", "upgrades": [63,69,70,57,71,72]},
 	    {"id": 511, "name": "Brass Scorpions", "pts": 250, "units": "2 Chaos Brass Scorpions", "upgrades": []}
          ]},
       {"name": "CHAOS TITANS", "formations": [
@@ -63,22 +63,27 @@
 	  {"id": 30, "name": "Chaos Predator", "pts": 50},
       {"id": 31, "name": "Chaos Land Raider", "pts": 75},
 	  {"id": 41, "name": "Defiler", "pts": 65},
-      {"id": 39, "name": "Lord of Battles", "pts": 400}
+      {"id": 39, "name": "Lord of Battles", "pts": 400},
+	   {"id": 73, "name": "3 World Eater Daemonic Transports", "pts": 100},
+	   {"id": 74, "name": "8 Beserkers plus transports", "pts": 0},
+	   {"id": 75, "name": "6 Beserkers and 2 Destroyers, plus transports", "pts": 25}
    ],
    "formationConstraints": [
       {"max": 1, "from": [551]},
       {"max": 1, "from": [533]},
       {"maxPercent": 33, "name": "War Engines & Allies", "from": [520,521,522,530,531,533]},
-      {"max": 2, "name": "Support Formations", "from": [504,505,506,507,510,511], "forEach": [501], "name2": "Retinue"},
-	  {"max": 1, "name": "Elite Formation", "from": [503,508,509], "forEach": [501], "name2": "Retinue"}
+      {"max": 2, "name": "Support Formations", "from": [504,505,506,507,510,511], "forEach": [501,508], "name2": "Core Formation"},
+	  {"max": 1, "name": "Elite Formation", "from": [503,509], "forEach": [501,508], "name2": "Core Formation"}
    ],
    "upgradeConstraints": [
       {"max": 1, "perArmy": true, "from": [20]},
       {"max": 1, "perArmy": true, "from": [19,21]},
       {"max": 1, "min": 1, "from": [17,19,20,21], "appliesTo": [501,503]},
+	   {"max": 1, "min": 1, "from": [74,75], "appliesTo": [501]},
 	  {"max": 1, "min": 1, "from": [17,20], "appliesTo": [508,509]},
 	  {"max": 4, "from": [53,64,65,66,54,67,68,60,52,56,63,69,70,57,71,72], "appliesTo": [501,503,508,509,504,506,507,510],"name": "Upgrades"},
 	  {"max": 1, "from": [54,67,68], "appliesTo": [501,503]},
+	   {"max": 1, "from": [73], "appliesTo": [501]},
 	  {"max": 1, "from": [53,64,65,66], "appliesTo": [501,507]},
 	  {"max": 1, "from": [63,69,70], "appliesTo": [501,503,510,506]},
 	  {"max": 1, "from": [57,71,72], "appliesTo": [501,503,507,510,506]},
