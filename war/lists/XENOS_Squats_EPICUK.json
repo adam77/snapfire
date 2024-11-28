@@ -14,7 +14,7 @@
 		{"name":"SQUAT SUPPORT FORMATIONS", "formations":[
 			{"id":511, "name":"Heavy Support", 	"pts":200, "upgrades":[50]},
 			{"id":514, "name":"Thunderfire", 	"pts":175,"units":"3 Thunderfire cannons plus tractors"},
-			{"id":515, "name":"Thunderer", 	"pts":200, "units":"4 Thunderer units plus transport", "upgrades":[1,2,3,4,50]},
+			{"id":515, "name":"Thunderer", 	"pts":200, "units":"4 Thunderer units", "upgrades":[1,2,3,4,50]},
 			{"id":518, "name":"Overlord", 	"pts":25, "upgrades":[20]},
 			{"id":516, "name":"Bikers", 	"pts":225},
 			{"id":517, "name":"Iron Eagle", "units":"4 Iron Eagles", "pts":250}
