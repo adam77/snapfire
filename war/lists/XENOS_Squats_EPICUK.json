@@ -9,7 +9,7 @@
 		
 		{"name":"SQUAT BROTHERHOODS & GUILDS", "formations":[
 			{"id":501, "name":"Warrior Brotherhood", 	"pts":250, "upgrades":[1,2,3,4,7,8,9,14,50] },
-			{"id":502, "name":"Berzerker Brotherhood", 	"pts":200, "upgrades":[1,2,3,4,7,8], "units":"1 Hearthguard unit and 7 Berzerker units"}
+			{"id":502, "name":"Berserker Brotherhood", 	"pts":200, "upgrades":[1,2,3,4,7,8], "units":"1 Hearthguard unit and 7 Berzerker units"}
 		]},
 		{"name":"SQUAT SUPPORT FORMATIONS", "formations":[
 			{"id":511, "name":"Heavy Support", 	"pts":200, "upgrades":[50]},
@@ -61,7 +61,7 @@
 	
 		
 		{"id":60, "name":"Robot", "pts":0},
-		{"id":61, "name":"Thudd Gun", "pts":0},
+		{"id":61, "name":"Light Artillery", "pts":0},
 		{"id":62, "name":"Tarantula", "pts":0},
 		{"id":63, "name":"Mole Mortar", "pts":0}
 
