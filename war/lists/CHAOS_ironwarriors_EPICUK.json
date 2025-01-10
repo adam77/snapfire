@@ -35,7 +35,7 @@
                 {"name":"DARK MECHANICUS", "formations":[
                         {"id":520, "name":"Siegelord Titan",            "pts":800, "upgrades":[]},
                         {"id":521, "name":"Ravager Titan",                      "pts":650, "upgrades":[]},
-                        {"id":522, "name":"Ordinatus Chaotica",                       "pts":600, "upgrades":[]}
+                        {"id":522, "name":"Ordinatus Chaotica",                       "pts":625, "upgrades":[]}
                 ]}
         ],
         "upgrades":[
