@@ -22,7 +22,7 @@
 			{ "id":513, "name":"Tank Platoon", "pts":400, "upgrades":[] }
 		]},
 		{"name":"TRENCHWORKS", "formations":[
-			{ "id":526, "name":"Trenchworks", "pts":100, "units":"100cm of Trenches and Razor Wire, up to 3 bunkers", "upgrades":[] }
+			{ "id":526, "name":"Trenchworks", "pts":75, "units":"100cm of Trenches and Razor Wire, up to 3 bunkers", "upgrades":[] }
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
 			{ "id":531, "name":"Thunderbolt Fighters", "pts":150, "units":"2 Thunderbolts", "upgrades":[] },
