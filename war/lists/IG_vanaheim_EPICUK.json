@@ -1,6 +1,6 @@
 {
    "id": "Vanaheim 7th Air Cavalry",
-   "version": "Epic UK v15022013",
+   "version": "Epic UK v090625",
    "by": "Kyussinchains",
    "sections": [
       {
@@ -9,23 +9,27 @@
             {
                "id": 521,
                "name": "Regimental HQ",
-               "pts": 450,
-               "units": "Supreme Commander, 9 Vanaheim Troopers",
+               "pts": 375,
+               "units": "Supreme Commander, 3 Vanaheim Troopers",
                "upgrades": [
                   26,
                   27,
-                  28
+                  28,
+                  29,
+                  33
                ]
             },
             {
                "id": 522,
                "name": "Air Cavalry Company",
-               "pts": 400,
-               "units": "Commander, 9 Vanaheim Troopers",
+               "pts": 325,
+               "units": "Commander, 3 Vanaheim Troopers",
                "upgrades": [
                   26,
                   27,
-                  28
+                  28,
+                  29,
+                  33
                ]
             }
          ]
@@ -45,7 +49,7 @@
                "name": "Sentinel Squadron",
                "pts": 100,
                "upgrades": [
-                  29
+                  35
                ]
             },
             {
@@ -63,16 +67,14 @@
             {
                "id": 531,
                "name": "Thunderbolt Fighters",
-               "pts": 150,
-               "units": "2 Thunderbolts",
-               "upgrades": []
+               "pts": 0,
+               "upgrades": [13]
             },
             {
                "id": 532,
                "name": "Lightning Flight",
-               "pts": 150,
-               "units": "2 Lightning Fighters",
-               "upgrades": []
+               "pts": 0,
+               "upgrades": [14]
             },
             {
                "id": 533,
@@ -114,6 +116,31 @@
          "pts": 75
       },
       {
+         "id": 29,
+         "name": "Infantry Platoon (4 Troopers, 2 Valkyrie)",
+         "pts": 125
+      },
+      {
+         "id": 30,
+         "name": "2 Vanaheim Troopers",
+         "pts": 0
+      },
+      {
+         "id": 31,
+         "name": "2 Mortar Support",
+         "pts": 0
+      },
+      {
+         "id": 32,
+         "name": "2 Sniper Support",
+         "pts": 25
+      },
+      {
+         "id": 33,
+         "name": "Sniper Platoon (2 Snipers, 1 Valkyrie)",
+         "pts": 100
+      },
+      {
          "id": 11,
          "name": "Valkyrie",
          "pts": 0
@@ -122,6 +149,16 @@
          "id": 12,
          "name": "Vendetta",
          "pts": 0
+      },
+      {
+         "id": 13,
+         "name": "Thunderbolt",
+         "pts": 75
+      },
+      {
+         "id": 14,
+         "name": "Lightning Strike Fighter",
+         "pts": 75
       },
       {
          "id": 17,
@@ -139,9 +176,9 @@
          "pts": 50
       },
       {
-         "id": 29,
-         "name": "4 Valkyries",
-         "pts": 200
+         "id": 35,
+         "name": "2 Valkyries",
+         "pts": 100
       },
       {
          "id": 14,
@@ -217,7 +254,8 @@
       {
          "max": 1,
          "from": [
-            28
+            28,
+            29
          ],
          "appliesTo": [
             521,
@@ -229,7 +267,11 @@
          "from": [
             26,
             27,
-            28
+            28,
+            29,
+            31,
+            32,
+            33
          ],
          "appliesTo": [
             521,
@@ -248,11 +290,66 @@
          ]
       },
       {
-         "max": 5,
-         "min": 5,
+         "max": 4,
+         "min": 4,
          "from": [
             11,
             12
+         ],
+         "appliesTo": [
+            521,
+            522
+         ]
+      },
+      {
+         "max": 3,
+         "min": 2,
+         "from": [
+            13
+         ],
+         "appliesTo": [
+            531
+         ]
+      },
+      {
+         "max": 3,
+         "min": 2,
+         "from": [
+            14
+         ],
+         "appliesTo": [
+            532
+         ]
+      },
+      {
+         "max": 2,
+         "min": 2,
+         "from": [
+            30,
+            31,
+            32
+         ],
+         "appliesTo": [
+            521,
+            522
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            31,
+            27
+         ],
+         "appliesTo": [
+            521,
+            522
+         ]
+      },
+      {
+         "max": 1,
+         "from": [
+            32,
+            33
          ],
          "appliesTo": [
             521,
@@ -274,7 +371,7 @@
       {
          "max": 1,
          "from": [
-            29
+            35
          ],
          "appliesTo": [
             502
