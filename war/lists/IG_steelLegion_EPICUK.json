@@ -14,7 +14,7 @@
         {"name": "SUPPORT FORMATIONS", "formations": [
             {"id": 500, "name": "Rough Rider Platoon", "pts": 150, "units": "6 Rough Riders", "upgrades": [] },
             {"id": 501, "name": "Storm Trooper Platoon", "pts": 200, "units": "8 Storm Troopers", "upgrades": [36] },
-            {"id": 502, "name": "Artillery Battery", "pts": 250, "upgrades": [] },
+            {"id": 502, "name": "Artillery Battery", "pts": 225, "upgrades": [] },
             {"id": 505, "name": "Sentinel Squadron", "pts": 100, "units": "4 Sentinels", "upgrades": [] },
             {"id": 506, "name": "Deathstrike Missile Battery", "pts": 200, "units": "2 Deathstrike Missile Launchers", "upgrades": [] },
             {"id": 507, "name": "Super-heavy Tank Platoon", "pts": 200, "upgrades": [] },
@@ -58,8 +58,8 @@
       {"id": 21, "name": "Manticore", "pts": 0 },
       {"id": 36, "name": "Valkyrie Transport", "pts": 150 },
       {"id": 41, "name": "3 Basilisks", "pts": 0 },
-      {"id": 42, "name": "3 Bombards", "pts": 0 },
-      {"id": 43, "name": "3 Manticores", "pts": 0 },
+      {"id": 42, "name": "3 Bombards", "pts": 25 },
+      {"id": 43, "name": "3 Manticores", "pts": 25 },
       {"id": 23, "name": "Lunar Class", "pts": 0 },
       {"id": 24, "name": "Emperor Class", "pts": 50 }
    ],
