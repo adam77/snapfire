@@ -46,7 +46,7 @@
             {
                "id": 500,
                "name": "Siege Grand Battery",
-               "pts": 450,
+               "pts": 400,
                "units": "9 Howitzers",
                "upgrades": []
             },
@@ -173,7 +173,7 @@
       {
          "id": 34,
          "name": "Fortifications (50cm Trenches or Razor Wire, plus up to 6 gun emplacements or Bunkers)",
-         "pts": 100
+         "pts": 75
       },
       {
          "id": 12,
