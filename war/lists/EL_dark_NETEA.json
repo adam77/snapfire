@@ -15,12 +15,12 @@
 		{"name":"PARTISANS", "formations":[
 			{"id":501, "name":"Haemonculi Coven",			"pts":250, "upgrades":[53,93,94,74,78]},
 			{"id":502, "name":"Talos Swarm",				"pts":200, "upgrades":[72,74,78]},
-			{"id":503, "name":"Wych Cult",					"pts":200, "upgrades":[75,76,77,53,70]},
+			{"id":503, "name":"Wych Cult",					"pts":200, "upgrades":[75,76,77,53,70,71,72]},
 			{"id":504, "name":"Hellion Murder",				"pts":200, "upgrades":[53]},
 			{"id":505, "name":"Reaver Gang",				"pts":200, 	"upgrades":[53]},
 			{"id":506, "name":"Mandrake Throng",			"pts":225, "upgrades":[]},
 			{"id":507, "name":"Scourge Flight",				"pts":225, "upgrades":[53]},
-			{"id":508, "name":"Heavy Barges",				"pts":0,	"upgrades":[]}
+			{"id":508, "name":"Heavy Barges",				"pts":0,	"upgrades":[69]}
 		]},
 		{"name":"SPACESHIPS, AIRCRAFT & HORRORS", "formations":[
 			{"id":522, "name":"Torture Class Cruiser",		"pts":300, "upgrades":[]},
