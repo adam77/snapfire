@@ -26,7 +26,7 @@
             {"id": 524,"name": "Manta Dropship","pts": 650,"upgrades": []},
             {"id": 526,"name": "Orca Dropship","pts": 150,"upgrades": []},
             {"id": 525,"name": "Spacecraft","pts": 200,"upgrades": []},
-            {"id": 522,"name": "Tiger Shark Squadron","pts": 175,"units": "2 Tiger Sharks","upgrades": [70]},
+            {"id": 522,"name": "Tiger Shark Squadron","pts": 175,"units": "2 Tiger Sharks","upgrades": [75]},
             {"id": 523,"name": "AX-1-0 Squadron","pts": 350,"units": "2 Tiger Shark AX-1-0","upgrades": []}
          ]
       }
@@ -60,7 +60,7 @@
       {"id": 20,"name": "14 Kroot Warriors","pts": 75},
       {"id": 25,"name": "Tetra","pts": 0},
       {"id": 26,"name": "Piranha","pts": 0},
-      {"id": 70,"name": "6 Gun Drones","pts": 100},
+      {"id": 75,"name": "6 Gun Drones","pts": 100},
       {"id": 11,"name": "Protector Class Cruiser","pts": 0},
       {"id": 12,"name": "Custodian Class Battleship","pts": 25},
 
@@ -99,7 +99,7 @@
       {"max": 1,"from": [87,88,89]},
       {"max": 1,"min": 1,"from": [19,20],"appliesTo": [ 518]},
       {"max": 6,"min": 6,"from": [25,26],"appliesTo": [515]},
-      {"max": 1,"from": [70],"appliesTo": [522]},
+      {"max": 1,"from": [75],"appliesTo": [522]},
       {"max": 3,"from": [60,55,61,35,54,56,62,63,64,65,66,67,80,81,82],"appliesTo": [531,532]},
       {"max": 1,"min": 1,"from": [11,12],"appliesTo": [525]},
       {"max": 1,"min": 1,"from": [85,86],"appliesTo": [516]}
