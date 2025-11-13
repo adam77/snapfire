@@ -11,7 +11,7 @@
         {"id":502,"name":"Reaver Battle Titan","pts":650,"units":"1 Reaver Battle Titan","upgrades":[10,11,12]},
         {"id":503,"name":"Warhound Scout Team","pts":550,"units":"2 Warhound Scout Titans","upgrades":[]},
         {"id":506,"name":"Questoris Knights","pts":0,"upgrades":[20,21,22,90]},
-        {"id":507,"name":"Cerastus Knights","pts":0,"upgrades":[20,21,22,91]}
+        {"id":507,"name":"Cerastus Knights","pts":0,"upgrades":[20,21,91]}
         
 ]},
 {"name":"SUPPORT FORMATIONS",
@@ -19,7 +19,7 @@
         "id":521,"name":"Warmaster","pts":1500,"units":"1 Warmaster Support Titan","upgrades":[]},
         {"id":522,"name":"Warhound Scout Titan","pts":300,"units":"1 Warhound Scout Titan","upgrades":[]},
         {"id":523,"name":"Questoris Knight","pts":0,"upgrades":[20,21,22]},
-        {"id":524,"name":"Cerastus Knight","pts":0,"upgrades":[20,21,22]}
+        {"id":524,"name":"Cerastus Knight","pts":0,"upgrades":[20,21]}
 ]},
 {"name":"AUXILA",
 "formations":[
