@@ -1,7 +1,7 @@
 {
   "id":"Raven Guard",
-  "version":"NetEA 2018-04-23 *UNDER DEVELOPMENT*",
-  "by":"Dave",
+  "version":"NetEA 2026-02-04",
+  "by":"Dave, updated 2026-02-07 by antitimm",
   "notes":["Up to a third of the points available may be spent on Imperial Navy Aircraft and Titan Legion Battlegroup formations."],
   "sections":[
     {"name":"Raven Guard Detachments", "formations":[
@@ -51,7 +51,7 @@
 
     {"id":11, "name":"Ambush", "pts":50},
 
-    {"id":12, "name":"Bike", "pts":0},
+    {"id":12, "name":"Bike", "pts":10},
     {"id":13, "name":"Attack Bike", "pts":0},
 
     {"id":14, "name":"Land Speeder Tempest", "pts":50},
@@ -60,7 +60,9 @@
     {"id":16, "name":"Battle Barge", "pts":150},
 
     {"id":17, "name":"Sniper", "pts":10},
-    {"id":19, "name":"Land Speeder Storm", "pts":25}
+    {"id":19, "name":"Land Speeder Storm", "pts":25},
+
+    {"id":20, "name":"Multi-melta Attack Bike", "pts":10}
   ],
   "formationConstraints":[
     {"max":1, "name":"Terminator", "from":[511]},
@@ -85,7 +87,7 @@
 
     {"max":1, "from":[11], "appliesTo":[510]},
 
-    {"min":5,"max":5, "from":[12,13], "appliesTo":[520]},
+    {"min":5,"max":5, "from":[13,12,20], "appliesTo":[520]},
 
     {"max":1, "from":[15], "appliesTo":[521]},
 
