@@ -1,8 +1,8 @@
 {
    "id": "Ghazgkhull Thraka's War Horde",
-   "version": "NetEA Tournament Pack 2024-02-12",  
+   "version": "NetEA Tournament Pack 2026-02-4",  
    "notes": ["If the army includes any Great Gargants, the Warlord must be in one of them. Otherwise the Warlord will join a Nobz or Gargant unit. If there isn't any of those three, the Warlord can join any unit."],
-   "by": "Iron Bloke, Last update 2024-03-29 Abetillo",
+   "by": "Iron Bloke, Last update 2026-02-7 antitimm",
    "sections": [
       {
          "name": "WAR HORDES",
@@ -17,9 +17,9 @@
             {"id": 513, "name": "Mekboy Gunzmob", "pts": 0, "upgrades": [81,43,58,61,64,66,67,68]},
             {"id": 514, "name": "Mekboy Gunzmob (Big)", "pts": -25, "upgrades": [81,43,58,61,64,66,67,68]},
             {"id": 515, "name": "Mekboy Gunzmob ('Uge)", "pts": -50, "upgrades": [81,43,58,61,64,66,67,68]},
-            {"id": 510, "name": "Mekboy Stompamob", "pts": 25, "upgrades": [81,57,60,61,70,71,77,78]},
-            {"id": 511, "name": "Mekboy Stompamob (Big)", "pts": 0, "upgrades": [81,57,60,61,70,71,77,78]},
-            {"id": 512, "name": "Mekboy Stompamob ('Uge)", "pts": -25, "upgrades": [81,57,60,61,70,71,77]},
+            {"id": 510, "name": "Mekboy Stompamob", "pts": -25, "upgrades": [81,57,60,61,70,71,77,78]},
+            {"id": 511, "name": "Mekboy Stompamob (Big)", "pts": -100, "upgrades": [81,57,60,61,70,71,77,78]},
+            {"id": 512, "name": "Mekboy Stompamob ('Uge)", "pts": -175, "upgrades": [81,57,60,61,70,71,77]},
             {"id": 503, "name": "Stormboyz Warhorde", "pts": 0, "upgrades": [81,52,51,53,54,55,59]},
             {"id": 550, "name": "Kommando Warhorde", "pts": 0, "upgrades": [81,51,52,53,54,55,59]},
             {"id": 500, "name": "Warband", "pts": 200, "units": "2 Nobz, 6 Boyz, 2 Grotz", "upgrades": [81,50,82,51,52,53,54,55,56,57,58,59,60,61,62,64,66,67,68,70,71,72,73]},
