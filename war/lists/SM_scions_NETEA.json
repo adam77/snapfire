@@ -4,7 +4,7 @@
 	"by": "Iron Bloke, last update 2026-02-07 by antitimm",
 	"sections":[
 		{"name":"SCIONS OF IRON DETACHMENTS", "formations": [
-			{ "id":502, "name":"Bike", "pts":175, "upgrades":[55,56,57,61,62,63] },
+			{ "id":502, "name":"Bike", "pts":125, "upgrades":[55,56,57,61,62,63] },
 			{ "id":503, "name":"Heavy Tactical", "pts":175, "units":"4 Tactical units", "upgrades":[55,56,57,73,74,75,76,77,78,79,100]},
 			{ "id":504, "name":"Helios", "pts":425, "units":"4 Land Raider Helios", "upgrades":[55,56,57,100] },
 			{ "id":505, "name":"Land Raider", "pts":25, "upgrades":[55,56,57,73,74,75,76,77,78,79,100]},
@@ -35,8 +35,9 @@
 	],
 	"upgrades":[
 		{ "id":111,	"name":"Thunderhawk Transporter", "pts":100 },
-		{ "id":11, "name":"Bike Unit", "pts":0 },
+		{ "id":11, "name":"Bike Unit", "pts":10 },
 		{ "id":12, "name":"Attack Bike", "pts":0 },
+		{ "id":13, "name":"Multi-melta Attack Bike", "pts":10 },
 		{ "id":21, "name":"Land Raider", "pts":0 },
 		{ "id":22, "name":"Land Raider Crusader", "pts":0 },
 		{ "id":34, "name":"Predator Annihilator", "pts":0 },
@@ -97,7 +98,7 @@
 		{"max":4, "from":[103]},
 		{"max":4, "from":[508]},
 		{"min":2, "max":4, "from":[111], "appliesTo":[513]},
-		{"min":4, "max":4, "from":[11,12], "appliesTo":[502]},
+		{"min":4, "max":4, "from":[12,11,13], "appliesTo":[502]},
 		{"min":4, "max":4, "from":[71,204,205], "appliesTo":[505]},
 		{"max":2, "from":[73,74,75,76,77,78,79,206,207,208,209], "appliesTo":[505]},
 		{"min":2, "max":4, "from":[97,98,96,200], "appliesTo":[511]},
