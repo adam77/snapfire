@@ -15,7 +15,7 @@
 			{"id":535, "name":"Land Raider",			"pts":325, "units":"4 Land Raiders", "upgrades":[15,16,17,18,22,31,32]},
 			{"id":536, "name":"Land Speeder",			"pts":200, "upgrades":[15,16,17,18]},
 			{"id":538, "name":"Predator",				"pts":250, "upgrades":[15,16,17,18,22,31,32]},
-			{"id":546, "name":"Vindicator",			"pts":225, "units":"4 Vindicators", "upgrades":[15,16,17,18,22]},
+			{"id":546, "name":"Vindicator",			"pts":200, "units":"4 Vindicators", "upgrades":[15,16,17,18,22]},
 			{"id":547, "name":"Whirlwind",				"pts":275, "units":"4 Whirlwinds", "upgrades":[15,16,17,18,22]}
 		]},
 		{"name":"SPACE MARINE FLEET", "formations":[

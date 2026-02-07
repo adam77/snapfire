@@ -1,7 +1,7 @@
 {
 	"id":"Space Wolves",
-	"version":"NetEA Tournament pack",
-	"by":"uvenlord",
+	"version":"NetEA Tournament pack (2026-02-04)",
+	"by":"uvenlord, last update 2026-02-07 by antitimm",
 	"notes":[
 		"A minimum of one Great Company must be taken"
 			],
@@ -25,7 +25,7 @@
 			{"id":523, "name":"Predators",		"pts":250, "upgrades":[27,28,29,38]},
 			{"id":526, "name":"Strike Cruiser",		"pts":200, "upgrades":[]},
 			{"id":527, "name":"Thunderhawk",		"pts":200, "upgrades":[], "units":"Thunderhawk Gunship"},
-			{"id":524, "name":"Vindicators",		"pts":225, "upgrades":[27,28,29,38], "units":"4 Vindicators"},
+			{"id":524, "name":"Vindicators",		"pts":200, "upgrades":[27,28,29,38], "units":"4 Vindicators"},
 			{"id":525, "name":"Whirlwinds",		"pts":300, "upgrades":[27,28,29,38], "units":"4 Whirlwinds"}					
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[

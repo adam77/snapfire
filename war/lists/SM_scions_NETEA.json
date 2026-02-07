@@ -1,7 +1,7 @@
 {
 	"id": "Scions of Iron",
-	"version": "NetEA Tournament Pack (2024-02-12)",
-	"by": "Iron Bloke, last update 2024-04-20 Abetillo",
+	"version": "NetEA Tournament Pack (2026-02-04)",
+	"by": "Iron Bloke, last update 2026-02-07 by antitimm",
 	"sections":[
 		{"name":"SCIONS OF IRON DETACHMENTS", "formations": [
 			{ "id":502, "name":"Bike", "pts":175, "upgrades":[55,56,57,61,62,63] },
@@ -15,7 +15,7 @@
 			{ "id":511, "name":"Tactical", "pts":200, "units":"4 Tactical units plus transport", "upgrades":[97,98,96,55,56,57,100,81,82] },
 			{ "id":512, "name":"Terminator", "pts":350, "units":"4 Terminator units", "upgrades":[55,56,57,71,72,73,76,77,78,79,204,205,206,207,208,209] },
 			{ "id":513, "name":"Thunderhawk Transporters", "pts":50, "upgrades":[111] },
-			{ "id":514, "name":"Vindicator", "pts":25, "upgrades":[55,56,57,96,97,98,100] },
+			{ "id":514, "name":"Vindicator", "pts":0, "upgrades":[55,56,57,96,97,98,100] },
 			{ "id":515, "name":"Whirlwind", "pts":275, "units":"4 Whirlwinds", "upgrades":[55,56,57,100] }
 		]},
 		{"name":"SCIONS OF IRON AIRCRAFT FORMATIONS", "formations":[

@@ -1,7 +1,7 @@
 {
         "id":"Imperial Fists",
-        "version":"NetEA V1.3 - Developmental",
-        "by":"Kyussinchains",
+        "version":"NetEA Tournament Pack (2026-02-05)",
+        "by":"Kyussinchains, updated 2026-02-07 by antitimm",
 
         "notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1)The formation may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 2) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks, 3) A formation may exchange its 'plus transport' for 50cm x 2.5cm of minefields, trenches or razorwire and 2 bunkers for free "],
         "sections":[
@@ -15,7 +15,7 @@
                         { "id":504, "name":"Tactical", "units":"6 Tactical units",       "pts":275, "upgrades":[11,12,13,14,16,17,20,21,22,41,42,47,48,49,60,61,62] },
                         { "id":505, "name":"Terminators", "units":"4 Terminator units",         "pts":325, "upgrades":[11,12,13,14,17,22,41,42] },
                         { "id":506, "name":"Thunderfire Battery",                               "pts":250, "units":"4 Thunderfire Cannons", "upgrades":[15,17] },
-                        { "id":509, "name":"Vindicator",                          "pts":75, "upgrades":[11,12,13,14,16,22] },
+                        { "id":509, "name":"Vindicator",                          "pts":50, "upgrades":[11,12,13,14,16,22] },
                         { "id":510, "name":"Whirlwind Battery", "units":"4 Whirlwinds",                    "pts":300, "upgrades":[11,12,13,14,16,23] },
                         { "id":512, "name":"Fellblade", "units":"1 Fellblade",  "pts":325, "upgrades":[] },
                         { "id":513, "name":"Bastion", "units":"1 Bastion",        "pts":200, "upgrades":[15,48,49,70] }
