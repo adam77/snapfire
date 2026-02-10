@@ -7,6 +7,7 @@
 	"sections":[
 		{"name":"WHITE SCAR DETACHMENTS", "formations":[
 			{"id":501, "name":"Bike", 		"pts":250, "upgrades":[15,16,17,18]},
+			{"id":502, "name":"Bike (Close Assault)", 		"pts":245, "upgrades":[15,16,17,18]},
 			{"id":511, "name":"Tactical",		"pts":275, "units":"6 Tacticals", "upgrades":[15,16,17,18,38,39,11,12,31,36,37]},
 			{"id":500, "name":"Assault", 		"pts":175, "units":"4 Assault Units", "upgrades":[15,16,17,18,36,37]},
 			{"id":507, "name":"Scout",		"pts":150, "upgrades":[15,16,17,18,35,38,39,11,12]},
@@ -36,7 +37,7 @@
 		{"id":12, "name":"Drop Pods",		"pts":0},
 		{"id":13, "name":"White Scar Attack Bike",	"pts":0},
 		{"id":14, "name":"White Scar Bikes",				"pts":10},
-		{"id":15, "name":"Multi-melta Attack Bike",	"pts":10},
+		{"id":19, "name":"Multi-melta Attack Bike",	"pts":10},
 		{"id":24, "name":"Annihilator",	"pts":0},
 		{"id":25, "name":"Destructor",		"pts":0},
 		{"id":28, "name":"Landspeeder",	"pts":0},
@@ -63,7 +64,8 @@
 	"upgradeConstraints":[
 		{"max":1, "name":"Transport", "from":[11,12]},
 		{"min":5, "max":5, "from":[28,29,30], "appliesTo":[504]},
-		{"min":8, "max":8, "from":[13,14,15], "appliesTo":[501]},
+		{"min":8, "max":8, "from":[13,14,19], "appliesTo":[501]},
+		{"min":8, "max":8, "from":[14,19], "appliesTo":[502]},
 		{"min":4, "max":4, "from":[24,25], "appliesTo":[506]},
 		{"max":1, "name":"Cmdr", "from":[15,16,17,18]},
 		{"max":1, "perArmy":true, "from":[18]},
