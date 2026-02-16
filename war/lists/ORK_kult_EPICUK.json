@@ -86,13 +86,13 @@
             {
                "id": 519,
                "name": "Kill Kroozer",
-               "pts": 150,
+               "pts": 100,
                "upgrades": []
             },
             {
                "id": 520,
                "name": "Battle Kroozer",
-               "pts": 250,
+               "pts": 150,
                "upgrades": []
             }
          ]
