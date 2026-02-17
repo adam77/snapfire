@@ -1,21 +1,21 @@
 {
 	"id":"Space Wolves",
-	"version":"NetEA Tournament pack",
-	"by":"uvenlord",
+	"version":"NetEA Tournament pack (2026-02-04)",
+	"by":"uvenlord, last update 2026-02-07 by antitimm",
 	"notes":[
 		"A minimum of one Great Company must be taken"
 			],
 	"sections":[
 		{"name":"Great Company", "formations":[
-			{"id":501, "name":"Great Company", 		"pts":250, "units":"6 Grey Hunters", "upgrades":[10,13,14,15,16,17,21,22,36,35,37,38,11]}
+			{"id":501, "name":"Great Company", 		"pts":250, "units":"6 Grey Hunters", "upgrades":[10,13,14,15,16,17,21,41,22,42,36,35,37,47,38,11]}
 		]},
 		{"name":"HUNTING PACKS", "formations":[
-			{"id":514, "name":"Blood Claws Pack",		"pts":200, "upgrades":[27,28,29,14,37,34,35,11], "units":"6 Blood Claws"},
+			{"id":514, "name":"Blood Claws Pack",		"pts":200, "upgrades":[27,28,29,14,37,47,34,35,11], "units":"6 Blood Claws"},
 			{"id":517, "name":"Fenrisian Wolves",		"pts":150, "upgrades":[27,28,29], "units":"6 Fenrisian Wolves"},
-			{"id":513, "name":"Long Fangs Pack",		"pts":300, "upgrades":[10,27,28,29,21,22,38,11,34,35], "units":"4 Long Fangs"},
+			{"id":513, "name":"Long Fangs Pack",		"pts":300, "upgrades":[10,27,28,29,21,41,22,42,38,11,34,35], "units":"4 Long Fangs"},
 			{"id":515, "name":"Skyclaws Assault Pack",		"pts":225, "upgrades":[27,28,29,31], "units":"6 Sky Claws"},
 			{"id":516, "name":"Swiftclaw Bikes Pack",		"pts":200, "upgrades":[27,28,29]},
-			{"id":511, "name":"Wolf Guard Terminators",	"pts":325, "upgrades":[27,28,29,30,21,22,12,35,36], "units":"4 Wolf Guard Terminators"},
+			{"id":511, "name":"Wolf Guard Terminators",	"pts":325, "upgrades":[27,28,29,30,21,41,22,42,12,35,36], "units":"4 Wolf Guard Terminators"},
 			{"id":512, "name":"Wolf Scouts Pack",		"pts":225, "upgrades":[27,28,29,39,34], "units":"4 Wolf Scouts"}									
 		]},
 		{"name":"SUPPORT PACKS", "formations":[
@@ -25,7 +25,7 @@
 			{"id":523, "name":"Predators",		"pts":250, "upgrades":[27,28,29,38]},
 			{"id":526, "name":"Strike Cruiser",		"pts":200, "upgrades":[]},
 			{"id":527, "name":"Thunderhawk",		"pts":200, "upgrades":[], "units":"Thunderhawk Gunship"},
-			{"id":524, "name":"Vindicators",		"pts":225, "upgrades":[27,28,29,38], "units":"4 Vindicators"},
+			{"id":524, "name":"Vindicators",		"pts":200, "upgrades":[27,28,29,38], "units":"4 Vindicators"},
 			{"id":525, "name":"Whirlwinds",		"pts":300, "upgrades":[27,28,29,38], "units":"4 Whirlwinds"}					
 		]},
 		{"name":"IMPERIAL NAVY", "formations":[
@@ -55,6 +55,9 @@
 		{"id":21, "name":"Land Raider",	"pts":75},
 		{"id":22, "name":"Land Raider Crusader", "pts":75},
 		
+		{"id":41, "name":"2x Land Raider",	"pts":125},
+		{"id":42, "name":"2x Land Raider Crusader", "pts":125},
+
 		{"id":23, "name":"Predator Annihilator", "pts":0},
 		{"id":24, "name":"Predator Destructor", "pts":0},
 		
@@ -76,7 +79,8 @@
 		{"id":35, "name":"Venerable Dreadnought", "pts":75},
 		{"id":36, "name":"Dreadnought", "pts":50},
 		{"id":37, "name":"Vindicator", "pts":50},
-		{"id":38, "name":"Hunter", "pts":75}
+		{"id":38, "name":"Hunter", "pts":75},
+		{"id":47, "name":"2x Vindicator", "pts":75}
 		
 	],
 	"formationConstraints":[
@@ -96,8 +100,8 @@
 		{"min":0, "max":2, "from":[13,14,15,16,17], "appliesTo":[501]},
 		{"min":0, "max":1, "from":[16,17], "appliesTo":[501]},
 		{"min":5, "max":5, "from":[18,19,20], "appliesTo":[521]},
-		{"min":4, "max":4, "from":[21,22], "appliesTo":[522]},
-		{"min":0, "max":4, "from":[21,22], "appliesTo":[501,511,513,514]},
+		{"min":2, "max":2, "from":[21,22], "appliesTo":[522]},
+		{"min":0, "max":2, "from":[21,22,41,42], "appliesTo":[501,511,513,514]},
 		{"min":4, "max":4, "from":[23,24], "appliesTo":[523]},
 		{"min":1, "max":1, "from":[25,26], "appliesTo":[526]},
 		{"max":1, "name":"Cmdr", "from":[27,28,29,30]},
@@ -115,6 +119,6 @@
 		{"max":1, "from":[17]},
 		{"max":1, "from":[31]},
 		{"max":2, "from":[36]},
-		{"max":2, "from":[37]}
+		{"max":1, "from":[37,47]}
 	]
 }

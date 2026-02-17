@@ -1,12 +1,12 @@
 {
 	"id":"Gryphonne IV Skitarii Legion",
-	"version":"NetEA Tournament Pack (2021-11-08)",
+	"version":"NetEA Tournament Pack (2026-02-06)",
 	"notes":["If a Titan uses one weapon type only, then a Single Weapon System Surcharge upgrade must be purchased."],
-	"by":"SpeakerToMachines, last edit by Norto",
+	"by":"SpeakerToMachines, last edit by antitimm",
 	"sections":[
 		{"name":"SKITARII CORE FORMATIONS", "formations":[
-			{"id":566, "name":"Skitarii Demi-Century",	"pts":225, "upgrades":[103,104,105,225,226,227,228,229,231,232,233,234,235,237,238]},
-			{"id":567, "name":"Sagitarii Demi-Century",	"pts":250, "units":"5 Sagitarii units",	 "upgrades":[103,104,105,214,225,226,227,228,229,231,232,233,234,235,237,238]}	
+			{"id":566, "name":"Skitarii Demi-Century",	"pts":225, "upgrades":[103,104,113,105,225,226,227,228,229,231,232,233,234,235,237,238]},
+			{"id":567, "name":"Sagitarii Demi-Century",	"pts":250, "units":"5 Sagitarii units",	 "upgrades":[103,104,113,105,214,225,226,227,228,229,231,232,233,234,235,237,238]}	
 		]},
 		{"name":"CENTURIO ORDINATUS FORMATIONS", "formations":[
 			{"id":571, "name":"Ordinatus Minorus",	"pts":50, "upgrades":[225,226,227,228,229,231,232,233,234,235,237,238]},
@@ -15,7 +15,7 @@
 		{"name":"SKITARII SUPPORT FORMATIONS", "formations":[
 			{"id":561, "name":"Crusader Scout Maniple",		"pts":125, "units":"4 Crusader Robots", "upgrades":[]},
 			{"id":562, "name":"Colossus Assault Maniple",		"pts":200, "units":"4 Colossus Robots", "upgrades":[]},
-			{"id":563, "name":"Praetorian Servitor Maniple",	"pts":250, "units":"5 Praetorian Combat Servitor units", "upgrades":[225,226,227,228,229,231,232,233,234,235,237,238]},
+			{"id":563, "name":"Praetorian Servitor Maniple",	"pts":250, "units":"5 Praetorian Combat Servitor units", "upgrades":[113,225,226,227,228,229,231,232,233,234,235,237,238]},
 			{"id":564, "name":"Avenger Squadron",			"pts":200, "units":"2 Avenger Strike Fighters", "upgrades":[]},
 			{"id":565, "name":"Orbital Support",			"pts":200, "units":"One Ark Mechanicus Battleship", "upgrades":[]}
 		]},
@@ -30,13 +30,14 @@
 	],
 	"upgrades":[	
 		{"id":101, "name":"5 Gun Servitor Unit",		"pts":0},
-		{"id":102, "name":"3 Rapier Laser Destroyer Unit",	"pts":25},
+		{"id":102, "name":"3 Rapier Laser Destroyer Unit",	"pts":0},
 		{"id":103, "name":"Hydra",				"pts":50},
 		{"id":104, "name":"10 Chimedons",			"pts":175},
 		{"id":105, "name":"Magos Character",			"pts":50},
 		{"id":110, "name":"Ordinatus Mars (Sonic Disruptor)",		"pts":450},
 		{"id":111, "name":"Ordinatus Golgotha (Hellfire Missiles)",	"pts":550},
 		{"id":112, "name":"Ordinatus Armageddon (Nova Cannon)",		"pts":500},
+		{"id":113, "name":"Linked Neural Network (Self-Reliant)",	"pts":25},
 		{"id":11, "name":"Imperator Configuration",	"pts":0},
 		{"id":12, "name":"Warmonger Configuration",	"pts":0},
 		{"id":13, "name":"Inferno Gun", 		"pts":0},
@@ -110,6 +111,7 @@
 		{"max":1, "from":[82]},
 		{"max":1, "from":[83]},
 		{"max":1, "from":[84]},
+		{"max":1, "from":[113], "appliesTo":[563,566,567]},
  		{"min":1, "max":1, "from":[240,241], "appliesTo":[553]},
  		{"min":2, "from":[239], "appliesTo":[553]}
 	]
