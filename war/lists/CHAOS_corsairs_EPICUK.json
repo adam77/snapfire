@@ -11,7 +11,7 @@
 		]},
 		{"name":"Red Corsairs Core Formations", "formations": [
 			{ "id":501, "name":"Hounds Squadron", "pts":300, "units":"8 Chaos Space Marine Bike units", "upgrades":[13,14] },
-			{ "id":502, "name":"Terminator Retinue", "pts":100	, "units":"", "upgrades":[50,15,16,18,19,22,13,28,14,35] },
+			{ "id":502, "name":"Terminator Retinue", "pts":100	, "units":"", "upgrades":[50,15,16,19,22,13,28,14,35] },
 			{ "id":503, "name":"Renegade Warband", "pts":275, "upgrades":[13,14,15,16,17,18,19,20,22,28,35] }
 		]},
 		{"name":"Red Corsairs Support Formatons", "formations": [
@@ -27,7 +27,7 @@
 			{ "id":520, "name":"Brass Scorpion Onlsaught", "units":"2 Brass Scorpions", "pts":250, "upgrades":[] },
 			{ "id":521, "name":"Silver Tower Circle", "units":"4 Silver Towers", "pts":300, "upgrades":[] },
 			{ "id":522, "name":"Blight Drone Swarm", "units":"4 Blight Drones", "pts":200, "upgrades":[] },
-			{ "id":523, "name":"Daemon Knight Pavane", "units":"4 Daemon Knights", "pts":250, "upgrades":[] },
+			{ "id":523, "name":"Daemon Knight Pavane", "units":"4 Daemon Knights", "pts":300, "upgrades":[] },
 			{ "id":524, "name":"Raptor Cult", "pts":35, "upgrades":[54,13] }
 		]},
 		{"name":"Chaos Navy Aircraft", "formations":[
@@ -37,7 +37,7 @@
 	],
 	"upgrades":[
 		
-		{ "id":12, "name":"Minor Daemons", "pts":10 },
+		{ "id":12, "name":"Minor Daemons", "pts":15 },
 		{ "id":13, "name":"Daemonic Pact", "pts":25 },
 		{ "id":14, "name":"Icon Bearer", "pts":25 },
 		{ "id":15, "name":"Chaos Champion", "pts":50 },
