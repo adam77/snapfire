@@ -1,7 +1,7 @@
 {
    "id": "Burning Death Speed Freeks",
-   "version": "NetEA Tournament Pack (2026-02-05)",
-   "by": "berzerkmonkey, last update 2026-02-07 antitimm",
+   "version": "NetEA Tournament Pack",
+   "by": "berzerkmonkey, last update 2026-02-21 Abetillo",
    "sections": [
       {
          "name": "FORMATIONS",
@@ -361,7 +361,7 @@
       },
       {
          "id": 79,
-         "name": "Nobz (and a Trukk)",
+         "name": "Nobz with a Trukk",
          "pts": 35
       },
       {
@@ -442,7 +442,8 @@
          "from": [
             20,
             21,
-            22
+            22,
+			23
          ],
          "appliesTo": [
             500
@@ -492,7 +493,8 @@
          "from": [
             20,
             21,
-            22
+            22,
+			23
          ],
          "appliesTo": [
             501,
@@ -540,7 +542,8 @@
          "from": [
             20,
             21,
-            22
+            22,
+			23 
          ],
          "appliesTo": [
             502
@@ -576,7 +579,8 @@
          "from": [
             20,
             21,
-            22
+            22,
+			23 
          ],
          "appliesTo": [
             504
@@ -588,7 +592,8 @@
          "from": [
             20,
             21,
-            22
+            22,
+			23 
          ],
          "appliesTo": [
             505
