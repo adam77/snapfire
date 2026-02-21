@@ -1,22 +1,22 @@
 {
 	"id":"Space Wolves",
-	"version":"NetEA Tournament pack (2026-02-04)",
-	"by":"uvenlord, last update 2026-02-07 by antitimm",
+	"version":"NetEA Tournament pack",
+	"by":"uvenlord, last update 2026-02-21 by Abetillo",
 	"notes":[
 		"A minimum of one Great Company must be taken"
 			],
 	"sections":[
 		{"name":"Great Company", "formations":[
-			{"id":501, "name":"Great Company", 		"pts":250, "units":"6 Grey Hunters", "upgrades":[10,13,14,15,16,17,21,41,22,42,36,35,37,47,38,11]}
+			{"id":501, "name":"Great Company", 		"pts":250, "units":"6 Grey Hunters", "upgrades":[10,13,14,15,16,17,21,41,22,42,37,47,38,11,35,36]}
 		]},
 		{"name":"HUNTING PACKS", "formations":[
-			{"id":514, "name":"Blood Claws Pack",		"pts":200, "upgrades":[27,28,29,14,37,47,34,35,11], "units":"6 Blood Claws"},
+			{"id":514, "name":"Blood Claws Pack",		"pts":200, "upgrades":[27,28,29,14,37,47,11,35,36], "units":"6 Blood Claws"},
 			{"id":517, "name":"Fenrisian Wolves",		"pts":150, "upgrades":[27,28,29], "units":"6 Fenrisian Wolves"},
-			{"id":513, "name":"Long Fangs Pack",		"pts":300, "upgrades":[10,27,28,29,21,41,22,42,38,11,34,35], "units":"4 Long Fangs"},
+			{"id":513, "name":"Long Fangs Pack",		"pts":300, "upgrades":[10,27,28,29,21,41,22,42,38,11,35,36], "units":"4 Long Fangs"},
 			{"id":515, "name":"Skyclaws Assault Pack",		"pts":225, "upgrades":[27,28,29,31], "units":"6 Sky Claws"},
 			{"id":516, "name":"Swiftclaw Bikes Pack",		"pts":200, "upgrades":[27,28,29]},
 			{"id":511, "name":"Wolf Guard Terminators",	"pts":325, "upgrades":[27,28,29,30,21,41,22,42,12,35,36], "units":"4 Wolf Guard Terminators"},
-			{"id":512, "name":"Wolf Scouts Pack",		"pts":225, "upgrades":[27,28,29,39,34], "units":"4 Wolf Scouts"}									
+			{"id":512, "name":"Wolf Scouts Pack",		"pts":225, "upgrades":[27,28,29,34,39], "units":"4 Wolf Scouts"}									
 		]},
 		{"name":"SUPPORT PACKS", "formations":[
 			{"id":528, "name":"Landing Craft",		"pts":350, "upgrades":[], "units":"Landing Craft"},
@@ -93,7 +93,7 @@
 		{"max":1, "name":"Swiftclaw Bikes Pack", "from":[516], "forEach":[501], "name2":"Great Company"},
 		{"max":1, "name":"Fenrisian Wolfs", "from":[517], "forEach":[501], "name2":"Great Company"},
 		{"min":1, "name":"Great Company", "from":[501]},
-		{"maxPercent":33, "name":"Navy & Titans", "from":[549,550,552,553]}
+		{"maxPercent":33.34, "name":"Navy & Titans", "from":[549,550,552,553]}
 	],
 	"upgradeConstraints":[
 		{"max":1, "name":"Transport", "from":[11,12]},
