@@ -370,7 +370,7 @@
       {
          "id": 58,
          "name": "Battlewagon",
-         "pts": 35
+         "pts": 25
       },
       {
          "id": 59,
@@ -415,7 +415,7 @@
       {
          "id": 71,
          "name": "Stompa (3x Big Gunz)",
-         "pts": 75
+         "pts": 50
       },
       {
          "id": 72,
@@ -435,7 +435,7 @@
       {
          "id": 77,
          "name": "Supa Stompa (3x Soopaguns)",
-         "pts": 250
+         "pts": 300
       },
       {
          "id": 43,
@@ -450,12 +450,12 @@
       {
          "id": 90,
          "name": "Supa Stompa (2x Soopagun, 1x Mega Choppa)",
-         "pts": 250
+         "pts": 300
       },
       {
          "id": 91,
          "name": "Stompa (2x Big Gun, 1x Kombat 'Ammer)",
-         "pts": 75
+         "pts": 50
       },
       {
          "id": 92,
