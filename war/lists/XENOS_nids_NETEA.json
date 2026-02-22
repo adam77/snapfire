@@ -1,10 +1,11 @@
 {
    "id": "Tyranids",
-   "version": "NetEA Tournament Pack (2026-02-05)",
+   "version": "NetEA Tournament Pack",
    "notes":[
-      "A symbiote character may only be added to a Hive Tyrant or Dominatrix unit."
+      "A symbiote character may only be added to a Hive Tyrant or Dominatrix unit.",
+      "Up to one Dominatrix may be taken per full two thousand points."
    ],
-   "by": "Borka, last update 2026-02-07 antitimm",
+   "by": "Borka, last update 2026-02-21 Abetillo",
    "sections": [
       {
          "name": "TYRANID INDIVIDUALS",
@@ -24,7 +25,7 @@
          "name": "INDEPENDENT SWARM FORMATIONS",
          "formations": [
             {"id": 517, "name": "Biovore Swarm", "pts": 0, "upgrades": [16]},
-            {"id": 518, "name": "Dactylis Swarm", "pts": 0, "upgrades": [31]},
+            {"id": 518, "name": "Dactylis Swarm", "pts": 0, "upgrades": [27]},
             {"id": 519, "name": "Exocrine Swarm", "pts": 0,"upgrades": [28]},
             {"id": 520, "name": "Genestealer Swarm", "pts": 30, "upgrades": [80,81]},
             {"id": 524, "name": "Lictor Swarm", "pts": 10, "upgrades": [41]}
@@ -36,7 +37,7 @@
             {"id": 521, "name": "Harridian Swarm", "pts": 0, "upgrades": [38,21,90]},
             {"id": 522, "name": "Hierodule Bio-Titan", "pts": 350, "upgrades": []},
             {"id": 523, "name": "Hierophant Bio-Titan", "pts": 525, "upgrades": []},
-            {"id": 526, "name": "Trygon Swarm", "pts": -40, "upgrades": [29,26]}
+            {"id": 526, "name": "Trygon Swarm", "pts": 20, "upgrades": [29,26]}
          ]
       }
    ],
@@ -63,10 +64,9 @@
       {"id": 26, "name": "Raveners", "pts": 30},
 
       {"id": 27, "name": "Dactylis", "pts": 75},
-      {"id": 31, "name": "Dactylis", "pts": 100},
       {"id": 32, "name": "3 Dactylis (Small Swarm)", "pts": 250},
-      {"id": 33, "name": "6 Dactylis (Medium Swarm)", "pts": 450},
-      {"id": 34, "name": "9 Dactylis (Large Swarm)", "pts": 650},
+      {"id": 33, "name": "6 Dactylis (Medium Swarm)", "pts": 475},
+      {"id": 34, "name": "9 Dactylis (Large Swarm)", "pts": 675},
 
       {"id": 28, "name": "Exocrine", "pts": 50},
       {"id": 280, "name": "3 Exocrines (Small Swarm)", "pts": 175},
@@ -95,7 +95,7 @@
       {"max": 1, "name": "Brood Nest", "from":[400]},
       {"max": 1, "name": "Independent Swarm", "from":[517,518,519,520,524], "forEach":[500,501,502], "name2":"Synapse Swarm"},
       {"max": 2, "name": "Lictor Swarms", "from": [524]},
-      {"maxPercent": 33, "name": "War Engine Formations", "from": [521,522,523,526]}
+      {"maxPercent": 33.34, "name": "War Engine Formations", "from": [521,522,523,526]}
    ],
    "upgradeConstraints": [
       {"max": 1, "from": [10], "appliesTo": [500,501,502]},
@@ -121,7 +121,7 @@
       {"max": 1, "from": [81], "appliesTo": [520]},
       {"max": 3, "min": 1, "from": [38], "appliesTo": [521]},
       {"max": 6, "min": 4, "from": [41], "appliesTo": [524]},
-      {"max": 6, "min": 4, "from": [29], "appliesTo": [526]},
+      {"max": 6, "min": 3, "from": [29], "appliesTo": [526]},
       {"max": 2, "min": 2, "from": [64,60,61,62,63], "appliesTo": [522,523]},
       {"max": 1, "from": [60], "appliesTo": [522,523]},
       {"max": 1, "from": [61], "appliesTo": [522,523]},

@@ -1,8 +1,7 @@
 {
   "id": "Grindel Stronghold Squats",
-  "version": "1.7",
-  "notes": ["If a Living Ancestor is added to a Warrior Brotherhood it must be on a Warlord unit."],
-  "by": "Dave",
+  "version": "NetEA Tournament Pack",
+  "by": "Dave, last update 2026-02-22 Abetillo",  
   "sections": [{
       "name": "Brotherhoods",
       "formations": [
@@ -15,13 +14,13 @@
         {
           "id": 101,
           "name": "Berserker (M)",
-          "pts": 25,
+          "pts": 0,
           "upgrades": [1, 28, 29]
         },
         {
           "id": 102,
           "name": "Berserker (L)",
-          "pts": 0,
+          "pts": -25,
           "upgrades": [1, 28, 29]
         },
         {
@@ -33,99 +32,141 @@
         {
           "id": 111,
           "name": "Thunderer (M)",
-          "pts": 25,
+          "pts": 0,
           "upgrades": [12, 16, 8, 28, 29]
         },
         {
           "id": 112,
           "name": "Thunderer (L)",
-          "pts": 0,
+          "pts": -25,
           "upgrades": [12, 16, 8, 28, 29]
         },
         {
           "id": 120,
           "name": "Warrior",
           "pts": 20,
-          "upgrades": [1, 20, 12, 16, 4, 10, 28, 29]
+          "upgrades": [1, 20, 12, 16, 28, 29]
         },
         {
           "id": 121,
           "name": "Warrior (M)",
-          "pts": 15,
-          "upgrades": [1, 20, 12, 16, 4, 10, 28, 29]
+          "pts": -10,
+          "upgrades": [1, 20, 12, 16, 28, 29]
         },
         {
           "id": 122,
           "name": "Warrior (L)",
-          "pts": -15,
-          "upgrades": [1, 20, 12, 16, 4, 10, 28, 29]
+          "pts": -40,
+          "upgrades": [1, 20, 12, 16, 28, 29]
         }
       ]
     },
     {
       "name": "Support Formations",
       "formations": [{
-          "id": 130,
+          "id": 220,
+          "name": "Air Attack Corps",
+          "pts": 250,
+          "units": "Overlord",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 221,
+          "name": "Air Attack Corps (M)",
+          "pts": 450,
+          "units": "2x Overlords",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 222,
+          "name": "Air Attack Corps (L)",
+          "pts": 650,
+          "units": "3x Overlords",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 230,
           "name": "Artillery Battery",
           "pts": 25,
           "upgrades": [11, 14, 15]
         },
         {
-          "id": 131,
+          "id": 231,
           "name": "Artillery Battery (M)",
           "pts": 25,
           "upgrades": [11, 14, 15]
         },
         {
-          "id": 132,
+          "id": 232,
           "name": "Artillery Battery (L)",
           "pts": 0,
           "upgrades": [11, 14, 15]
         },
         {
-          "id": 140,
+          "id": 240,
           "name": "Gyrocopter Wing",
-          "pts": 20,
+          "pts": 45,
           "upgrades": [9, 13, 18]
         },
         {
-          "id": 141,
+          "id": 241,
           "name": "Gyrocopter Wing (M)",
           "pts": 15,
           "upgrades": [9, 13, 18]
         },
         {
-          "id": 142,
+          "id": 242,
           "name": "Gyrocopter Wing (L)",
           "pts": -15,
           "upgrades": [9, 13, 18]
         },
         {
-          "id": 150,
+          "id": 260,
           "name": "Guild Robot Squadron",
-          "pts": 25,
+          "pts": 0,
           "upgrades": [2, 3]
         },
         {
-          "id": 160,
+          "id": 270,
           "name": "Guild Squadron",
-          "pts": 0,
-          "upgrades": [5, 6]
-        },
-        {
-          "id": 161,
-          "name": "Guild Squadron (M)",
           "pts": -25,
           "upgrades": [5, 6]
         },
         {
-          "id": 162,
-          "name": "Guild Squadron (L)",
-          "pts": -75,
+          "id": 271,
+          "name": "Guild Squadron (M)",
+          "pts": -100,
           "upgrades": [5, 6]
         },
         {
-          "id": 170,
+          "id": 272,
+          "name": "Guild Squadron (L)",
+          "pts": -175,
+          "upgrades": [5, 6]
+        },
+        {
+          "id": 280,
+          "name": "Super-Heavy Artillery Battery",
+          "pts": 200,
+          "units": "Goliath",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 281,
+          "name": "Super-Heavy Artillery Battery (M)",
+          "pts": 300,
+          "units": "2x Goliaths",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 282,
+          "name": "Super-Heavy Artillery Battery (L)",
+          "pts": 400,
+          "units": "3x Goliaths",
+          "upgrades": [4, 10]
+        },
+        {
+          "id": 290,
           "name": "Thunderfire Battery",
           "pts": 100,
           "upgrades": [17]
@@ -135,73 +176,31 @@
     {
       "name": "War Engines",
       "formations": [{
-          "id": 180,
-          "name": "Air Attack Corps",
-          "pts": 250,
-          "units": "Overlord",
-          "upgrades": [4, 10]
-        },
-        {
-          "id": 181,
-          "name": "Air Attack Corps (M)",
-          "pts": 475,
-          "units": "2x Overlords",
-          "upgrades": [4, 10]
-        },
-        {
-          "id": 182,
-          "name": "Air Attack Corps (L)",
-          "pts": 675,
-          "units": "3x Overlords",
-          "upgrades": [4, 10]
-        },
-        {
-          "id": 190,
+          "id": 300,
           "name": "Colossus",
-          "pts": 550,
+          "pts": 600,
           "units": "Colossus<br>Recon Iron Eagle",
           "upgrades": [4, 10]
         },
         {
-          "id": 200,
+          "id": 310,
           "name": "Cyclops",
-          "pts": 550,
+          "pts": 600,
           "units": "Cyclops",
           "upgrades": [4, 10]
         },
         {
-          "id": 210,
+          "id": 320,
           "name": "Land Train",
-          "pts": 225,
+          "pts": 275,
           "units": "Land Train",
           "upgrades": [21, 22, 23, 24, 25, 26, 27, 10, 4]
         },
         {
-          "id": 220,
+          "id": 330,
           "name": "Leviathan",
           "pts": 400,
           "units": "Leviathan",
-          "upgrades": [4, 10]
-        },
-        {
-          "id": 230,
-          "name": "Super-Heavy Artillery Battery",
-          "pts": 150,
-          "units": "Goliath",
-          "upgrades": [4, 10]
-        },
-        {
-          "id": 231,
-          "name": "Super-Heavy Artillery Battery (M)",
-          "pts": 275,
-          "units": "2x Goliaths",
-          "upgrades": [4, 10]
-        },
-        {
-          "id": 232,
-          "name": "Super-Heavy Artillery Battery (L)",
-          "pts": 375,
-          "units": "3x Goliaths",
           "upgrades": [4, 10]
         }
       ]
@@ -351,19 +350,39 @@
       "id": 29,
       "name": "Tunnelers",
       "pts": 0
+    },
+    {
+      "id": 30,
+      "name": "Warlord with Grand Warlord",
+      "pts": 125
+    },
+    {
+      "id": 31,
+      "name": "Warlord with Grand Warlord and Living Ancestor",
+      "pts": 175
+    },
+    {
+      "id": 32,
+      "name": "Guildmaster with Grand Warlord",
+      "pts": 125
+    },
+    {
+      "id": 33,
+      "name": "Warlord with Living Ancestor",
+      "pts": 125
     }
   ],
   "formationConstraints": [{
       "name": "Support Formations",
-      "from": [130, 131, 132, 140, 141, 142, 150, 160, 161, 162, 170],
+      "from": [220, 221, 222, 230, 231, 232, 240, 241, 242, 260, 270, 271, 272, 280, 281, 282, 290],
       "forEach": [100, 101, 102, 110, 111, 112, 120, 121, 122],
       "max": 2,
       "name2": "Brotherhood"
     },
     {
       "name": "War Engines",
-      "from": [180, 181, 182, 190, 200, 210, 220, 230, 231, 232],
-      "maxPercent": 33
+      "from": [300, 310, 320, 330],
+      "maxPercent": 33.34
     }
   ],
   "upgradeConstraints": [{
@@ -400,42 +419,42 @@
       "from": [2, 3],
       "min": 5,
       "max": 5,
-      "appliesTo": [150]
+      "appliesTo": [260]
     },
     {
-      "from": [4],
+      "from": [4, 30, 31, 32],
       "max": 1,
       "perArmy": true
     },
     {
       "from": [5, 6],
       "min": 5,
-      "appliesTo": [160]
+      "appliesTo": [270]
     },
     {
       "from": [5, 6],
       "min": 10,
-      "appliesTo": [161]
+      "appliesTo": [271]
     },
     {
       "from": [5, 6],
       "min": 15,
-      "appliesTo": [162]
+      "appliesTo": [272]
     },
     {
-      "from": [7],
-      "min": 1,
-      "appliesTo": [160]
+      "from": [7,32],
+      "min": 1, "max":1,
+      "appliesTo": [270]
     },
     {
-      "from": [7],
-      "min": 2,
-      "appliesTo": [161]
+      "from": [7,32],
+      "min": 2, "max":2,
+      "appliesTo": [271]
     },
     {
-      "from": [7],
-      "min": 3,
-      "appliesTo": [162]
+      "from": [7,32],
+      "min": 3, "max":3,
+      "appliesTo": [272]
     },
     {
       "from": [8],
@@ -468,19 +487,19 @@
       "appliesTo": [112]
     },
     {
-      "from": [8, 19],
+      "from": [8, 19, 30, 31, 33],
       "min": 1,
       "max": 1,
       "appliesTo": [120]
     },
     {
-      "from": [8, 19],
+      "from": [8, 19, 30, 31, 33],
       "min": 2,
       "max": 2,
       "appliesTo": [121]
     },
     {
-      "from": [8, 19],
+      "from": [8, 19, 30, 31, 33],
       "min": 3,
       "max": 3,
       "appliesTo": [122]
@@ -488,37 +507,37 @@
     {
       "from": [9, 13, 18],
       "min": 3,
-      "appliesTo": [140]
+      "appliesTo": [240]
     },
     {
       "from": [9, 13, 18],
       "min": 6,
-      "appliesTo": [141]
+      "appliesTo": [241]
     },
     {
       "from": [9, 13, 18],
       "min": 9,
-      "appliesTo": [142]
+      "appliesTo": [242]
     },
     {
-      "from": [10],
+      "from": [10, 31, 33],
       "max": 1,
       "perArmy": true
     },
     {
       "from": [11, 14, 15],
       "min": 5,
-      "appliesTo": [130]
+      "appliesTo": [230]
     },
     {
       "from": [11, 14, 15],
       "min": 10,
-      "appliesTo": [131]
+      "appliesTo": [231]
     },
     {
       "from": [11, 14, 15],
       "min": 15,
-      "appliesTo": [132]
+      "appliesTo": [232]
     },
     {
       "from": [16],
@@ -539,7 +558,7 @@
       "from": [17],
       "min": 2,
       "max": 3,
-      "appliesTo": [170]
+      "appliesTo": [290]
     },
     {
       "from": [20],
@@ -560,7 +579,7 @@
       "from": [21, 22, 23, 24, 25, 26, 27],
       "min": 1,
       "max": 4,
-      "appliesTo": [210]
+      "appliesTo": [320]
     },
     {
       "from": [28, 29], "max": 1, "appliesTo": [100, 101, 102, 110, 111, 112,

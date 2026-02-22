@@ -1,7 +1,7 @@
 {
 	"id":"Salamanders",
-	"version":"NetEA Tournament Pack (2023-01-03)",
-	"by":"Iron Bloke, last update 2023-01-05 Abetillo",
+	"version":"NetEA Tournament Pack",
+	"by":"Iron Bloke, last update 2026-02-21 Abetillo",
 	"sections":[
 		{"name":"SALAMANDER DETACHMENTS", "formations": [
 			{ "id":501, "name":"Devastator", "pts":250, "units":"4 Devastator units", "upgrades":[11,12,51,52,53,54,71,72,73,74,75,84,85,81,82,102] },
@@ -12,7 +12,7 @@
 			{ "id":506, "name":"Tactical", "pts":275, "units":"6 Tactical units", "upgrades":[11,12,51,52,53,54,84,85,81,82,103,71,72,73,74,75] },
 			{ "id":507, "name":"Terminator", "pts":325, "units":"4 Terminator units", "upgrades":[51,52,53,54,71,72,73,74,75,96,84,85,60,61,62,63,64] },
 			{ "id":508, "name":"Thunderhawk", "pts":250},
-			{ "id":509, "name":"Vindicator", "pts":225, "units":"4 Vindicators", "upgrades":[51,52,53,54,71,72,73,74,75] },
+			{ "id":509, "name":"Vindicator", "pts":200, "units":"4 Vindicators", "upgrades":[51,52,53,54,71,72,73,74,75] },
 			{ "id":510, "name":"Whirlwind", "pts":275, "units":"4 Whirlwinds", "upgrades":[51,52,53,54,71,72,73,74,75,96] }
 		]},
 		{"name":"SALAMANDER RESTRICTED FORMATIONS", "formations": [
