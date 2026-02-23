@@ -1,7 +1,7 @@
 {
    "id": "Burning Death Speed Freeks",
    "version": "NetEA Tournament Pack",
-   "by": "berzerkmonkey, last update 2026-02-21 Abetillo",
+   "by": "berzerkmonkey, last update 2026-02-23 Abetillo",
    "sections": [
       {
          "name": "FORMATIONS",
@@ -296,7 +296,7 @@
       },
       {
          "id": 12,
-         "name": "Nobz with Warbike",
+         "name": "Nob Warbikes",
          "pts": 0
       },
 	  {
@@ -459,8 +459,6 @@
          "appliesTo": [
             500,
             503,
-            504,
-            505,
             506,
             512
          ],
@@ -510,6 +508,7 @@
          ],
          "appliesTo": [
             501,
+			504, 
             507,
             513
          ],
@@ -558,6 +557,7 @@
          ],
          "appliesTo": [
             502,
+			505, 
             508,
             514
          ],

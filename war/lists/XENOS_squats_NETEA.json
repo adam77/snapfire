@@ -1,7 +1,7 @@
 {
   "id": "Grindel Stronghold Squats",
   "version": "NetEA Tournament Pack",
-  "by": "Dave, last update 2026-02-22 Abetillo",  
+  "by": "Dave, last update 2026-02-23 Abetillo",  
   "sections": [{
       "name": "Brotherhoods",
       "formations": [
@@ -9,55 +9,55 @@
           "id": 100,
           "name": "Berserker",
           "pts": 25,
-          "upgrades": [1, 28, 29]
+          "upgrades": [1, 28, 29, 30]
         },
         {
           "id": 101,
           "name": "Berserker (M)",
           "pts": 0,
-          "upgrades": [1, 28, 29]
+          "upgrades": [1, 28, 29, 30]
         },
         {
           "id": 102,
           "name": "Berserker (L)",
           "pts": -25,
-          "upgrades": [1, 28, 29]
+          "upgrades": [1, 28, 29, 30]
         },
         {
           "id": 110,
           "name": "Thunderer",
           "pts": 25,
-          "upgrades": [12, 16, 8, 28, 29]
+          "upgrades": [12, 16, 8, 28, 29, 30]
         },
         {
           "id": 111,
           "name": "Thunderer (M)",
           "pts": 0,
-          "upgrades": [12, 16, 8, 28, 29]
+          "upgrades": [12, 16, 8, 28, 29, 30]
         },
         {
           "id": 112,
           "name": "Thunderer (L)",
           "pts": -25,
-          "upgrades": [12, 16, 8, 28, 29]
+          "upgrades": [12, 16, 8, 28, 29, 30]
         },
         {
           "id": 120,
           "name": "Warrior",
           "pts": 20,
-          "upgrades": [1, 20, 12, 16, 28, 29]
+          "upgrades": [20, 12, 28, 29, 30]
         },
         {
           "id": 121,
           "name": "Warrior (M)",
           "pts": -10,
-          "upgrades": [1, 20, 12, 16, 28, 29]
+          "upgrades": [20, 12, 28, 29, 30]
         },
         {
           "id": 122,
           "name": "Warrior (L)",
           "pts": -40,
-          "upgrades": [1, 20, 12, 16, 28, 29]
+          "upgrades": [20, 12, 28, 29, 30]
         }
       ]
     },
@@ -105,19 +105,19 @@
         {
           "id": 240,
           "name": "Gyrocopter Wing",
-          "pts": 45,
+          "pts": 75,
           "upgrades": [9, 13, 18]
         },
         {
           "id": 241,
           "name": "Gyrocopter Wing (M)",
-          "pts": 15,
+          "pts": 75,
           "upgrades": [9, 13, 18]
         },
         {
           "id": 242,
           "name": "Gyrocopter Wing (L)",
-          "pts": -15,
+          "pts": 75,
           "upgrades": [9, 13, 18]
         },
         {
@@ -249,7 +249,7 @@
     {
       "id": 9,
       "name": "Iron Eagle",
-      "pts": 60
+      "pts": 50
     },
     {
       "id": 10,
@@ -269,7 +269,7 @@
     {
       "id": 13,
       "name": "Steel Hawk",
-      "pts": 60
+      "pts": 50
     },
     {
       "id": 14,
@@ -294,7 +294,7 @@
     {
       "id": 18,
       "name": "War Hawk",
-      "pts": 60
+      "pts": 50
     },
     {
       "id": 19,
@@ -343,31 +343,36 @@
     },
     {
       "id": 28,
-      "name": "Rhinos",
-      "pts": 0
+      "name": "Rhino",
+      "pts": 10
     },
     {
       "id": 29,
-      "name": "Tunnelers",
-      "pts": 0
+      "name": "Termite",
+      "pts": 10
     },
     {
       "id": 30,
+      "name": "Mole",
+      "pts": 25
+    },
+    {
+      "id": 40,
       "name": "Warlord with Grand Warlord",
       "pts": 125
     },
     {
-      "id": 31,
+      "id": 41,
       "name": "Warlord with Grand Warlord and Living Ancestor",
       "pts": 175
     },
     {
-      "id": 32,
+      "id": 42,
       "name": "Guildmaster with Grand Warlord",
       "pts": 125
     },
     {
-      "id": 33,
+      "id": 43,
       "name": "Warlord with Living Ancestor",
       "pts": 125
     }
@@ -422,7 +427,7 @@
       "appliesTo": [260]
     },
     {
-      "from": [4, 30, 31, 32],
+      "from": [4, 40, 41, 42],
       "max": 1,
       "perArmy": true
     },
@@ -442,17 +447,17 @@
       "appliesTo": [272]
     },
     {
-      "from": [7,32],
+      "from": [7,42],
       "min": 1, "max":1,
       "appliesTo": [270]
     },
     {
-      "from": [7,32],
+      "from": [7,42],
       "min": 2, "max":2,
       "appliesTo": [271]
     },
     {
-      "from": [7,32],
+      "from": [7,42],
       "min": 3, "max":3,
       "appliesTo": [272]
     },
@@ -487,19 +492,19 @@
       "appliesTo": [112]
     },
     {
-      "from": [8, 19, 30, 31, 33],
+      "from": [8, 19, 40, 41, 43],
       "min": 1,
       "max": 1,
       "appliesTo": [120]
     },
     {
-      "from": [8, 19, 30, 31, 33],
+      "from": [8, 19, 40, 41, 43],
       "min": 2,
       "max": 2,
       "appliesTo": [121]
     },
     {
-      "from": [8, 19, 30, 31, 33],
+      "from": [8, 19, 40, 41, 43],
       "min": 3,
       "max": 3,
       "appliesTo": [122]
@@ -520,7 +525,7 @@
       "appliesTo": [242]
     },
     {
-      "from": [10, 31, 33],
+      "from": [10, 41, 43],
       "max": 1,
       "perArmy": true
     },
@@ -580,10 +585,6 @@
       "min": 1,
       "max": 4,
       "appliesTo": [320]
-    },
-    {
-      "from": [28, 29], "max": 1, "appliesTo": [100, 101, 102, 110, 111, 112,
-      120, 121, 122]
     }
   ]
 }
