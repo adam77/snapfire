@@ -105,19 +105,19 @@
         {
           "id": 240,
           "name": "Gyrocopter Wing",
-          "pts": 45,
+          "pts": 75,
           "upgrades": [9, 13, 18]
         },
         {
           "id": 241,
           "name": "Gyrocopter Wing (M)",
-          "pts": 15,
+          "pts": 75,
           "upgrades": [9, 13, 18]
         },
         {
           "id": 242,
           "name": "Gyrocopter Wing (L)",
-          "pts": -15,
+          "pts": 75,
           "upgrades": [9, 13, 18]
         },
         {
