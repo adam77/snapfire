@@ -10,9 +10,9 @@
 		{
 			"name": "WAR HORDES",
 			"formations": [
-				{"id": 500,"name": "Bad Moons Warband","pts": -25,"upgrades": [81, 50, 82, 10, 12, 13, 14, 57, 60, 61, 71, 72, 43, 67, 68, 69]},
-				{"id": 501,"name": "Bad Moons Warband (Big)","pts": -100,"upgrades": [81, 50, 82, 10, 12, 13, 14, 57, 60, 61, 71, 72, 43, 67, 68, 69]},
-				{"id": 502,"name": "Bad Moons Warband ('Uge)","pts": -175,"upgrades": [81, 50, 82, 10, 12, 13, 14, 57, 60, 61, 71, 72, 43, 67, 68, 69]},
+				{"id": 500,"name": "Bad Moons Warband","pts": -25,"upgrades": [81, 50, 82, 10, 11, 12, 13, 14, 57, 60, 61, 71, 72, 43, 67, 68, 69]},
+				{"id": 501,"name": "Bad Moons Warband (Big)","pts": -100,"upgrades": [81, 50, 82, 10, 11, 12, 13, 14, 57, 60, 61, 71, 72, 43, 67, 68, 69]},
+				{"id": 502,"name": "Bad Moons Warband ('Uge)","pts": -175,"upgrades": [81, 50, 82, 10, 11, 12, 13, 14, 57, 60, 61, 71, 72, 43, 67, 68, 69]},
 				{"id": 503,"name": "Flash Gitz","pts": 60,"upgrades": [10, 11, 12, 67]},
 				{"id": 533,"name": "Flash Gitz (Big)","pts": 70,"upgrades": [10, 11, 12, 67]},
 				{"id": 504,"name": "'Eavy Walker Mob","pts": 25,"upgrades": [61, 81, 13, 14]},
@@ -34,8 +34,8 @@
 				{"id": 520,"name": "Spacecraft","pts": 100,"upgrades": []},
 				{"id": 517,"name": "Fighta Skwadron","pts": 0,"upgrades": [49]},
 				{"id": 518,"name": "Bommer","pts": 175,"upgrades": []},
-				{"id": 522,"name": "Gargant","pts": 600,"upgrades": [81]},
-				{"id": 523, "name": "Great Gargant", "pts": 825, "upgrades": [81]}
+				{"id": 522,"name": "Gargant","pts": 650,"upgrades": [81]},
+				{"id": 523, "name": "Great Gargant", "pts": 850, "upgrades": [81]}
 			]
 		}
 	],
@@ -107,6 +107,9 @@
 		{"min": 2,"from": [20],"appliesTo": [500]},
 		{"min": 4,"from": [20],"appliesTo": [501]},
 		{"min": 6,"from": [20],"appliesTo": [502]},
+		{"max": 2,"from": [11],"appliesTo": [500]},
+		{"max": 4,"from": [11],"appliesTo": [501]},
+		{"max": 6,"from": [11],"appliesTo": [502]},
 		{"min": 2,"from": [20],"appliesTo": [513]},
 		{"min": 4,"from": [20],"appliesTo": [514]},
 		{"min": 6,"from": [20],"appliesTo": [515]},
