@@ -22,7 +22,7 @@
                         {"id":504, "name":"Chosen", "pts":125, "units":"4 Chaos Space Marine Chosen units", "upgrades":[62,58]},
                         {"id":511, "name":"Obliterators", "pts":425, "units":"5 Obliterators", "upgrades":[]},
 						{"id":515, "name":"Decimators", "pts":0, "units":"", "upgrades":[25,69,77,78,54,71,72,57,73,74]},
-                        {"id":513, "name":"Siegehammer", "pts":225, "units":"6 Iron Warrior Assault Marines", "upgrades":[62,63,70,54,71,72,58]},
+                        {"id":513, "name":"Siegehammer", "pts":225, "units":"6 Iron Warrior Assault Marines", "upgrades":[62,63,70,54,71,72,58,49]},
                         {"id":514, "name":"Dreadnought Pack", "pts":250, "units":"5 Chaos Dreadnoughts", "upgrades":[57,73,74,58]}
                 ]},
                 {"name":"CHAOS NAVY", "formations":[
@@ -61,6 +61,7 @@
 				{"id":74, "name":"3 Defilers", "pts":195},
                 {"id":58, "name":"Dreadclaw Drop Pod", "pts":5},
                 {"id":59, "name":"2 Havocs", "pts":75},
+				{"id":49, "name":"2 Iron Warrior Assault Marines", "pts":50},
 				{"id":82, "name":"4 Havocs and 2 Chaos Land Raiders", "pts":350},
 				{"id":83, "name":"6 Havocs and 3 Chaos Land Raiders", "pts":500},
                 {"id":61, "name":"Obliterator", "pts":75},
@@ -90,6 +91,7 @@
                 {"min":4, "max":6, "from":[32], "appliesTo":[503]},
                 {"min":1, "max":3, "from":[25], "appliesTo":[515]},
 				{"min":1, "max":1, "from":[82,83], "appliesTo":[505]},
+				{"max":1, "from":[49], "appliesTo":[513]},
 				{"max":4, "name":"Upgrades", "from":[63,70,54,71,72,57,73,74,61,75,76,69,77,78,53,79,80,81,90,91], "appliesTo":[501,502,503,504,505,506,507,513,514,515,541]},
                 {"max":1, "from":[53,79,80,81]},
                 {"max":1, "from":[54,71,72]},
