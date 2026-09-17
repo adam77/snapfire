@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
 	<link rel="icon" type="image/png" href="./favicon.ico">
 	<link rel="stylesheet" type="text/css" href="armyforge.css">
@@ -24,6 +25,18 @@ ul li a {
 	color:white;
 	padding:0.4em 3em;
 	text-shadow:-1px -1px 2px #777777;
+}
+@media (max-width:48em) {
+	#main ul li {
+		display:block;
+	}
+	/* the vertical rules only separate links that sit on one line */
+	ul li a {
+		display:block;
+		border-right:none;
+		padding:0.5em;
+		margin-bottom:0.75em;
+	}
 }
 	</style>
 </head>

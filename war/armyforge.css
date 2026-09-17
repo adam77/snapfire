@@ -95,3 +95,35 @@ h1 {
 	color:white;
 	text-shadow: -1px -1px 2px #777777;
 }
+
+/*//////////////////////////////// SMALL SCREENS ////////////////////////////////*/
+@media (max-width:48em) {
+	#main {
+		width:auto;
+		max-width:none;
+		padding:1em 0.5em;
+	}
+	/* stack the link columns, they are too narrow to sit side by side */
+	#ab, #ab > tbody, #ab > tbody > tr, #ab > tbody > tr > td,
+	#menu, #menu > tbody, #menu > tbody > tr, #menu > tbody > tr > td {
+		display:block;
+		width:auto;
+	}
+	#ab > tbody > tr > td,
+	#menu > tbody > tr > td {
+		padding:0 0 1em 0;
+	}
+	.list {
+		width:auto;
+	}
+	#menu {
+		margin-top:2em;
+	}
+	.but {
+		display:inline-block;
+		padding:1em;
+	}
+	p {
+		margin-top:2em;
+	}
+}
