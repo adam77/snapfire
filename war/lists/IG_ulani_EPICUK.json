@@ -68,6 +68,7 @@
       {"max": 1, "from": [30], "appliesTo": [521,522]},
       {"max": 3, "from": [26,27,28,29,30,31,32,37,38,39], "appliesTo": [521,522],"name": "Upgrades"},
       {"max": 1, "from": [14], "appliesTo": [522]},
+	  {"max": 1, "from": [36], "appliesTo": [509]},
 	  {"max": 1, "from": [33,34,35], "appliesTo": [521,522]},
       {"max": 6,"min": 6,"from": [11,12,13], "appliesTo": [522]},
       {"max": 1,"min": 1, "from": [23,24], "appliesTo": [504]},
