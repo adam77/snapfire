@@ -1,7 +1,7 @@
 {
   "id": "Grindel Stronghold Squats",
   "version": "NetEA Tournament Pack",
-  "by": "Dave, last update 2026-02-23 Abetillo",  
+  "by": "Dave, last update 2026-08-10 Abetillo",  
   "sections": [{
       "name": "Brotherhoods",
       "formations": [
@@ -192,7 +192,7 @@
         {
           "id": 320,
           "name": "Land Train",
-          "pts": 275,
+          "pts": 225,
           "units": "Land Train",
           "upgrades": [21, 22, 23, 24, 25, 26, 27, 10, 4]
         },
@@ -319,7 +319,7 @@
     {
       "id": 23,
       "name": "Fire Shield Battlecar",
-      "pts": 75
+      "pts": 100
     },
     {
       "id": 24,

@@ -1,7 +1,7 @@
 {
         "id":"Imperial Fists",
-        "version":"NetEA Tournament Pack (2026-02-05)",
-        "by":"Kyussinchains, updated 2026-02-07 by antitimm",
+        "version":"NetEA Tournament Pack",
+        "by":"Kyussinchains, updated 2026-08-10 by Abetillo",
 
         "notes":["Some formations include plus transport in their core units. When stated the following rules apply. 1)The formation may take sufficent Rhinos to transport it once other upgrades with transports have been purchased. 2) When both Land Raiders and Razorbacks are available the following process should be followed. Purchase up to the max allowed Land Raiders. Add any Rhinos as per the plus transport option. Replace each each rhino with up to 2 Razorbacks per rhino up to the maximum allowed Razorbacks, 3) A formation may exchange its 'plus transport' for 50cm x 2.5cm of minefields, trenches or razorwire and 2 bunkers for free "],
         "sections":[
@@ -16,7 +16,7 @@
                         { "id":505, "name":"Terminators", "units":"4 Terminator units",         "pts":325, "upgrades":[11,12,13,14,17,22,41,42] },
                         { "id":506, "name":"Thunderfire Battery",                               "pts":250, "units":"4 Thunderfire Cannons", "upgrades":[15,17] },
                         { "id":509, "name":"Vindicator",                          "pts":50, "upgrades":[11,12,13,14,16,22] },
-                        { "id":510, "name":"Whirlwind Battery", "units":"4 Whirlwinds",                    "pts":300, "upgrades":[11,12,13,14,16,23] },
+                        { "id":510, "name":"Whirlwind Battery", "units":"4 Whirlwinds",                    "pts":275, "upgrades":[11,12,13,14,16,23] },
                         { "id":512, "name":"Fellblade", "units":"1 Fellblade",  "pts":325, "upgrades":[] },
                         { "id":513, "name":"Bastion", "units":"1 Bastion",        "pts":200, "upgrades":[15,48,49,70] }
                 ]},
@@ -73,7 +73,7 @@
 
         ],
         "formationConstraints":[
-                {"maxPercent":33, "name":"Static Defenses, Navy & War Engines", "from":[521,522,523,531,532,541,542,543,544]},
+                {"maxPercent":33.34, "name":"Static Defenses, Navy & War Engines", "from":[521,522,523,531,532,541,542,543,544]},
                 {"max": 1, "name": "Hyperios Platforms", "from": [522], "forEach": [503], "name2": "Scout Detachment"},
                 {"max": 1, "name": "Tarantula Sentry Guns", "from": [523], "forEach": [503], "name2": "Scout Detachment"}
         ],
