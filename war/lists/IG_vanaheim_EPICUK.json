@@ -181,7 +181,7 @@
          "pts": 100
       },
       {
-         "id": 14,
+         "id": 34,
          "name": "Lunar Class Cruiser",
          "pts": 0
       },
@@ -381,7 +381,7 @@
          "max": 1,
          "min": 1,
          "from": [
-            14,
+            34,
             15
          ],
          "appliesTo": [
