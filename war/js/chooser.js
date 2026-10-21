@@ -28,6 +28,24 @@ Array.prototype.empty = function() {
 
 var ArmyforgeUI = {
 	urlData:{},
+	isTouch:('ontouchstart' in window),
+
+	// a touch screen has no hover, so the first tap opens the drop down and the
+	// next tap on the row runs the delete action
+	bindRowDropDown:function(row, dropDown, deleteHandler) {
+		row.observe('mouseover', function() { dropDown.show(); });
+		row.observe('mouseout', function() { dropDown.hide(); });
+		row.observe('click', function() {
+			if (ArmyforgeUI.isTouch && !dropDown.visible()) {
+				$$('div.dropDown').invoke('hide');
+				dropDown.show();
+				return;
+			}
+			dropDown.hide();
+			deleteHandler();
+		});
+	},
+
 	activate:function(id) {
 		var msgDiv = $('menuItemMsg' + id);
 		msgDiv.hide();	
@@ -312,9 +330,8 @@ var ArmyforgeUI = {
 		}
 	
 		dropDown.hide();
-		newRow.observe('mouseover', function() { dropDown.show(); });
-		newRow.observe('mouseout', function() { dropDown.hide(); });
-		newRow.observe('click', ArmyforgeUI.removeFormation.bind(this, formation));		
+		ArmyforgeUI.bindRowDropDown(newRow, dropDown,
+				ArmyforgeUI.removeFormation.bind(this, formation));
 
 		formation.upgrades.uniq().each( function(x) {
 			ArmyforgeUI.renderUpgrade( formation,x );
@@ -355,14 +372,16 @@ var ArmyforgeUI = {
 	
 
 		// delete event
-		newRow.observe('click', ArmyforgeUI.removeUpgrade.bind(this, upgradeType, formation));	
+		var removeHandler = ArmyforgeUI.removeUpgrade.bind(this, upgradeType, formation);
 		// dropdown
 		if (formation.type.replaceable(upgradeType)) {
 			var dropDown = ArmyforgeUI.createSwapPopup(formation, formation.type.optionsFor(upgradeType), upgradeType);
 			newCell.insert(dropDown);
 			dropDown.hide();
-			newRow.observe('mouseover', function() { dropDown.show(); });
-			newRow.observe('mouseout', function() { dropDown.hide(); });
+			ArmyforgeUI.bindRowDropDown(newRow, dropDown, removeHandler);
+		}
+		else {
+			newRow.observe('click', removeHandler);
 		}
 
 		// multiplier

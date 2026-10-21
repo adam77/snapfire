@@ -207,3 +207,47 @@ div.dropDown .listDiv table td {
 	width:40em;
 	height:10em;
 }
+
+/* SMALL SCREENS */
+@media (max-width:48em) {
+	body {
+		margin:0.5em;
+		display:flex;
+		flex-direction:column;
+	}
+	/* the army list is a fixed sidebar on desktop, it must not cover the orbat here */
+	#armyList {
+		position:static;
+		width:auto;
+		height:auto;
+		padding:0;
+		overflow:visible;
+		order:3;
+	}
+	#armyList .listDiv {
+		margin-top:1em;
+	}
+	.orbat, #notes, #plainTextDiv {
+		width:auto;
+	}
+	.orbat > * > tr > td, .orbat th {
+		padding-left:2mm;
+		padding-right:2mm;
+	}
+	.orbat > * > tr.orbatUpgrade > td {
+		padding-left:5mm;
+	}
+	#importDiv textarea {
+		width:100%;
+	}
+	/* the drop down has no positioned ancestor, so it spans the page width */
+	div.dropDown {
+		width:auto;
+		margin-left:0;
+		left:0.5em;
+		right:0.5em;
+	}
+	#orbatDiv {
+		margin-bottom:2em;
+	}
+}
