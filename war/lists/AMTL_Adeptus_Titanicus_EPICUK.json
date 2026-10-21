@@ -60,7 +60,7 @@
   {"id":73,"name":"Reaver Titan Chainfist","pts":0},
   {"id":74,"name":"Melta Cannon","pts":0},
   {"id":75,"name":"Volcano Cannon","pts":0},
-        {"id":80,"name":"Rocket Launcher","pts":0},
+        {"id":80,"name":"Vulcan Mega Bolter","pts":0},
         {"id":81,"name":"Scout Turbo Laser","pts":0},
         {"id":82,"name":"Plasma Blastgun","pts":0},
         {"id":83,"name":"Scout Inferno Gun","pts":0},
@@ -97,6 +97,6 @@
         {"max":1,"from":[22],"appliesTo":[506,507,523,524]},
         {"min":2,"max":2,"from":[70,71,72,73,74,75],"appliesTo":[502]},
         {"min":4,"max":4,"from":[80,81,82,83],"appliesTo":[503]},
-        {"min":2,"max":2,"from":[80,81,82,83],"appliesTo":[504]}
+        {"min":2,"max":2,"from":[80,81,82,83],"appliesTo":[522]}
 ]
 }
