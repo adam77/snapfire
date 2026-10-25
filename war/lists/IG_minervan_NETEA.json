@@ -2,7 +2,7 @@
 	"id":"Minervan Tank Legion",
 	"version":"NetEA Tournament Pack",
 	"notes":["One Commissar character may be added per five hundred points, or part thereof"],
-	"by":"Iron Bloke, Parintachin, Kyussinchains, last update 2026-08-10 by Abetillo",
+	"by":"Iron Bloke, Parintachin, Kyussinchains, last update 2026-10-25 by Abetillo",
 	"sections":[
 		{"name":"COMPANIES", "formations":[
 		 	{"id":517, "name":"Artillery Company",	"pts":550, "upgrades":[14,51,52,53,54,58,59,55,56,57,61,62,63,64]},
@@ -22,8 +22,7 @@
 			{"id":505, "name":"Mechanized Platoon",	"pts":300, "upgrades":[14,71], "units":"10x Infantry, 5x Chimera"},
 			{"id":504, "name":"Salamander Scout Platoon", "pts":100, "upgrades":[14,71], "units":"3x Salamanders"},
 			{"id":508, "name":"Storm Trooper Platoon", "pts":200, "upgrades":[14,70,72], "units":"8x Storm Troopers"},
-			{"id":503, "name":"Super-Heavy Tank Platoon", "upgrades":[14], "pts":200},
-			{"id":501, "name":"Tank Platoon", "pts":280, "upgrades":[14]},
+			{"id":503, "name":"Super-Heavy Tank Platoon", "upgrades":[14], "pts":200},			
 			{"id":507, "name":"Vulture Squadron", "pts":300, "upgrades":[14], "units":"4x Vultures"}
 		]},
 		{"name":"IMPERIAL NAVY ASSETS", "formations":[
@@ -87,19 +86,18 @@
 	],
 	"formationConstraints":[
 		{"maxPercent":33.34, "name":"Titans & Navy", "from":[522,523,526,524,519,520,510]},
-		{"max":2, "name":"Support Formations", "from":[501,502,503,504,505,506,507,508,509,511,512,527,528,529], "forEach":[514,515,516,517], "name2":"Company"},
+		{"max":2, "name":"Support Formations", "from":[502,503,504,505,506,507,508,509,511,512,527,528,529], "forEach":[514,515,516,517], "name2":"Company"},
 		{"max":1, "from":[510]},
 		{"max":1, "from":[509]}
 	],
 	"upgradeConstraints":[
 		{"min":9, "max":9, "from":[11,13], "appliesTo":[517]},
-		{"min":3, "max":3, "from":[15,16,17,18,19], "appliesTo":[516]},
-		{"min":6, "max":6, "from":[21,22,23,24,25,26,27,28], "appliesTo":[514]},
+		{"min":3, "max":3, "from":[15,16,17,18,19], "appliesTo":[516]},		
 		{"min":10, "max":10, "from":[21,22,23,24,25,26,27,28], "appliesTo":[515]},
 		{"min":1, "max":1, "from":[30,31], "appliesTo":[510]},
 		{"min":1, "max":1, "from":[15,16,17,18,19], "appliesTo":[503]},
 		{"min":1, "max":1, "from":[42,43], "appliesTo":[502]},
-		{"min":6, "max":6, "from":[81,82,83,84,85,86,87,88], "appliesTo":[501]},
+		{"min":6, "max":6, "from":[81,82,83,84,85,86,87,88], "appliesTo":[514]},
 		{"max":2, "name":"Rare variants", "from":[26,27,28]},
 		{"max":1, "name":"Rare variants", "from":[86,87,88]},
 		{"max":3, "name":"Upgrades", "from":[51,52,53,54,58,59,55,56,57]},
