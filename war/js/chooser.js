@@ -28,15 +28,20 @@ Array.prototype.empty = function() {
 
 var ArmyforgeUI = {
 	urlData:{},
-	isTouch:('ontouchstart' in window),
+	// the mobile view script in the head sets the "mobile" class before this script loads
+	mobileTouch:('ontouchstart' in window) && document.documentElement.className.indexOf('mobile') != -1,
 
-	// a touch screen has no hover, so the first tap opens the drop down and the
-	// next tap on the row runs the delete action
+	// in the mobile view a touch screen has no hover, so the first tap opens the
+	// drop down and the next tap on the row runs the delete action.
+	// A tap also sends mouseover before click, which opens the drop down, so
+	// read its state at touchstart.
 	bindRowDropDown:function(row, dropDown, deleteHandler) {
+		var openAtTouch = false;
+		row.observe('touchstart', function() { openAtTouch = dropDown.visible(); });
 		row.observe('mouseover', function() { dropDown.show(); });
 		row.observe('mouseout', function() { dropDown.hide(); });
 		row.observe('click', function() {
-			if (ArmyforgeUI.isTouch && !dropDown.visible()) {
+			if (ArmyforgeUI.mobileTouch && !openAtTouch) {
 				$$('div.dropDown').invoke('hide');
 				dropDown.show();
 				return;

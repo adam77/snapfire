@@ -97,33 +97,46 @@ h1 {
 }
 
 /*//////////////////////////////// SMALL SCREENS ////////////////////////////////*/
+/* the view toggle button only shows on touch screens */
+#viewToggle {
+	display:none;
+}
+@media (hover:none) and (pointer:coarse) {
+	#viewToggle {
+		display:block;
+		margin:0.5em auto;
+		padding:0.75em 1.5em;
+		font-size:1em;
+	}
+}
+/* these rules only apply when the user turns on the mobile view */
 @media (max-width:48em) {
-	#main {
+	.mobile #main {
 		width:auto;
 		max-width:none;
 		padding:1em 0.5em;
 	}
 	/* stack the link columns, they are too narrow to sit side by side */
-	#ab, #ab > tbody, #ab > tbody > tr, #ab > tbody > tr > td,
-	#menu, #menu > tbody, #menu > tbody > tr, #menu > tbody > tr > td {
+	.mobile #ab, .mobile #ab > tbody, .mobile #ab > tbody > tr, .mobile #ab > tbody > tr > td,
+	.mobile #menu, .mobile #menu > tbody, .mobile #menu > tbody > tr, .mobile #menu > tbody > tr > td {
 		display:block;
 		width:auto;
 	}
-	#ab > tbody > tr > td,
-	#menu > tbody > tr > td {
+	.mobile #ab > tbody > tr > td,
+	.mobile #menu > tbody > tr > td {
 		padding:0 0 1em 0;
 	}
-	.list {
+	.mobile .list {
 		width:auto;
 	}
-	#menu {
+	.mobile #menu {
 		margin-top:2em;
 	}
-	.but {
+	.mobile .but {
 		display:inline-block;
 		padding:1em;
 	}
-	p {
+	.mobile p {
 		margin-top:2em;
 	}
 }
