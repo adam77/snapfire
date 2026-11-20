@@ -30,7 +30,7 @@
 		{"name":"TITAN LEGIONS", "formations":[
 			{"id":552, "name":"Warlord Class Titan",	"pts":825, "upgrades":[]},
 			{"id":553, "name":"Reaver Class Titan",	"pts":650, "upgrades":[]}
-		]}
+		]},
 		{"name":"SPACE WOLF AIRCRAFT", "formations":[
 			{"id":555, "name":"Thunderhawk",		"pts":200, "upgrades":[], "units":"Thunderhawk Gunship"}
 		]}
