@@ -32,7 +32,7 @@
 			{"id":553, "name":"Reaver Class Titan",	"pts":650, "upgrades":[]}
 		]}
 		{"name":"SPACE WOLF AIRCRAFT", "formations":[
-			{"id":555, "name":"Thunderhawk",		"pts":200, "upgrades":[], "units":"Thunderhawk Gunship"},
+			{"id":555, "name":"Thunderhawk",		"pts":200, "upgrades":[], "units":"Thunderhawk Gunship"}
 		]}
 	],
 	"upgrades":[
