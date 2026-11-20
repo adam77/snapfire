@@ -207,3 +207,60 @@ div.dropDown .listDiv table td {
 	width:40em;
 	height:10em;
 }
+
+/* SMALL SCREENS */
+/* the view toggle button only shows on touch screens */
+#viewToggle {
+	display:none;
+}
+@media (hover:none) and (pointer:coarse) {
+	#viewToggle {
+		display:block;
+		margin:0.5em 0;
+		padding:0.75em 1.5em;
+		font-size:1em;
+	}
+}
+/* these rules only apply when the user turns on the mobile view */
+@media (max-width:48em) {
+	.mobile body {
+		margin:0.5em;
+		display:flex;
+		flex-direction:column;
+	}
+	/* the army list is a fixed sidebar on desktop, it must not cover the orbat here */
+	.mobile #armyList {
+		position:static;
+		width:auto;
+		height:auto;
+		padding:0;
+		overflow:visible;
+		order:3;
+	}
+	.mobile #armyList .listDiv {
+		margin-top:1em;
+	}
+	.mobile .orbat, .mobile #notes, .mobile #plainTextDiv {
+		width:auto;
+	}
+	.mobile .orbat > * > tr > td, .mobile .orbat th {
+		padding-left:2mm;
+		padding-right:2mm;
+	}
+	.mobile .orbat > * > tr.orbatUpgrade > td {
+		padding-left:5mm;
+	}
+	.mobile #importDiv textarea {
+		width:100%;
+	}
+	/* the drop down has no positioned ancestor, so it spans the page width */
+	.mobile div.dropDown {
+		width:auto;
+		margin-left:0;
+		left:0.5em;
+		right:0.5em;
+	}
+	.mobile #orbatDiv {
+		margin-bottom:2em;
+	}
+}

@@ -28,6 +28,29 @@ Array.prototype.empty = function() {
 
 var ArmyforgeUI = {
 	urlData:{},
+	// the mobile view script in the head sets the "mobile" class before this script loads
+	mobileTouch:('ontouchstart' in window) && document.documentElement.className.indexOf('mobile') != -1,
+
+	// in the mobile view a touch screen has no hover, so the first tap opens the
+	// drop down and the next tap on the row runs the delete action.
+	// A tap also sends mouseover before click, which opens the drop down, so
+	// read its state at touchstart.
+	bindRowDropDown:function(row, dropDown, deleteHandler) {
+		var openAtTouch = false;
+		row.observe('touchstart', function() { openAtTouch = dropDown.visible(); });
+		row.observe('mouseover', function() { dropDown.show(); });
+		row.observe('mouseout', function() { dropDown.hide(); });
+		row.observe('click', function() {
+			if (ArmyforgeUI.mobileTouch && !openAtTouch) {
+				$$('div.dropDown').invoke('hide');
+				dropDown.show();
+				return;
+			}
+			dropDown.hide();
+			deleteHandler();
+		});
+	},
+
 	activate:function(id) {
 		var msgDiv = $('menuItemMsg' + id);
 		msgDiv.hide();	
@@ -312,9 +335,8 @@ var ArmyforgeUI = {
 		}
 	
 		dropDown.hide();
-		newRow.observe('mouseover', function() { dropDown.show(); });
-		newRow.observe('mouseout', function() { dropDown.hide(); });
-		newRow.observe('click', ArmyforgeUI.removeFormation.bind(this, formation));		
+		ArmyforgeUI.bindRowDropDown(newRow, dropDown,
+				ArmyforgeUI.removeFormation.bind(this, formation));
 
 		formation.upgrades.uniq().each( function(x) {
 			ArmyforgeUI.renderUpgrade( formation,x );
@@ -355,14 +377,16 @@ var ArmyforgeUI = {
 	
 
 		// delete event
-		newRow.observe('click', ArmyforgeUI.removeUpgrade.bind(this, upgradeType, formation));	
+		var removeHandler = ArmyforgeUI.removeUpgrade.bind(this, upgradeType, formation);
 		// dropdown
 		if (formation.type.replaceable(upgradeType)) {
 			var dropDown = ArmyforgeUI.createSwapPopup(formation, formation.type.optionsFor(upgradeType), upgradeType);
 			newCell.insert(dropDown);
 			dropDown.hide();
-			newRow.observe('mouseover', function() { dropDown.show(); });
-			newRow.observe('mouseout', function() { dropDown.hide(); });
+			ArmyforgeUI.bindRowDropDown(newRow, dropDown, removeHandler);
+		}
+		else {
+			newRow.observe('click', removeHandler);
 		}
 
 		// multiplier
